@@ -1,0 +1,1 @@
+{"errors":[{"message":"Field \"author\" of type \"SiteSiteMetadataAuthor\" must have a selection of subfields. Did you mean \"author { ... }\"?","locations":[{"line":6,"column":7}]}]}

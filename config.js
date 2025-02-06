@@ -1,7 +1,7 @@
 const config = {
   gatsby: {
-    pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    pathPrefix: '/iol-lshh.github.io',
+    siteUrl: 'https://iol-lshh.github.io',
     gaTrackingId: null,
     trailingSlash: false,
   },

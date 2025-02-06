@@ -1,110 +1,125 @@
-require("dotenv").config();
-const queries = require("./src/utils/algolia");
-const config = require("./config");
-const plugins = [
-  'gatsby-plugin-sitemap',
-  'gatsby-plugin-sharp',
-  {
-    resolve: `gatsby-plugin-layout`,
-    options: {
-        component: require.resolve(`./src/templates/docs.js`)
-    }
-  },
-  'gatsby-plugin-emotion',
-  'gatsby-plugin-react-helmet',
-  {
-    resolve: "gatsby-source-filesystem",
-    options: {
-      name: "docs",
-      path: `${__dirname}/content/`
-    }
-  },
-  {
-    resolve: 'gatsby-plugin-mdx',
-    options: {
-      gatsbyRemarkPlugins: [
-        {
-          resolve: "gatsby-remark-images",
-          options: {
-            maxWidth: 1035,
-            sizeByPixelDensity: true
-          }
-        },
-        {
-          resolve: 'gatsby-remark-copy-linked-files'
-        }
-      ],
-      extensions: [".mdx", ".md"]
-    }
-  },
-  {
-    resolve: `gatsby-plugin-gtag`,
-    options: {
-      // your google analytics tracking id
-      trackingId: config.gatsby.gaTrackingId,
-      // Puts tracking script in the head instead of the body
-      head: true,
-      // enable ip anonymization
-      anonymize: false,
-    },
-  },
-];
-// check and add algolia
-if (config.header.search && config.header.search.enabled && config.header.search.algoliaAppId && config.header.search.algoliaAdminKey) {
-  plugins.push({
-    resolve: `gatsby-plugin-algolia`,
-    options: {
-      appId: config.header.search.algoliaAppId, // algolia application id
-      apiKey: config.header.search.algoliaAdminKey, // algolia admin key to index
-      queries,
-      chunkSize: 10000, // default: 1000
-    }}
-  )
-}
-// check and add pwa functionality
-if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
-  plugins.push({
-      resolve: `gatsby-plugin-manifest`,
-      options: {...config.pwa.manifest},
-  });
-  plugins.push({
-    resolve: 'gatsby-plugin-offline',
-    options: {
-      appendScript: require.resolve(`./src/custom-sw-code.js`),
-    },
-  });
-} else {
-  plugins.push('gatsby-plugin-remove-serviceworker');
-}
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+ */
 
-// check and remove trailing slash
-if (config.gatsby && !config.gatsby.trailingSlash) {
-  plugins.push('gatsby-plugin-remove-trailing-slashes');
-}
-
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
-  pathPrefix: config.gatsby.pathPrefix,
   siteMetadata: {
-    title: config.siteMetadata.title,
-    description: config.siteMetadata.description,
-    docsLocation: config.siteMetadata.docsLocation,
-    ogImage: config.siteMetadata.ogImage,
-    favicon: config.siteMetadata.favicon,
-    logo: { link: config.header.logoLink ? config.header.logoLink : '/', image: config.header.logo }, // backwards compatible
-    headerTitle: config.header.title,
-    githubUrl: config.header.githubUrl,
-    helpUrl: config.header.helpUrl,
-    tweetText: config.header.tweetText,
-    headerLinks: config.header.links,
-    siteUrl: config.gatsby.siteUrl,
+    title: `Iol-lshh's 상념 공간`,
+    author: {
+      name: `Iol-lshh`,
+      summary: `소프트웨어 엔지니어`,
+    },
+    description: `Iol-lshh의 블로그`,
+    siteUrl: `https://iol-lshh.github.io/`,
+    social: {
+      twitter: `kylemathews`,
+    },
   },
-  plugins: plugins,
-  flags: {
-    DEV_SSR: false,
-    FAST_DEV: false, // Enable all experiments aimed at improving develop server start time
-    PRESERVE_WEBPACK_CACHE: false, // (Umbrella Issue (https://gatsby.dev/cache-clearing-feedback)) · Use webpack's persistent caching and don't delete webpack's cache when changing gatsby-node.js & gatsby-config.js files.
-    PRESERVE_FILE_DOWNLOAD_CACHE: false, // (Umbrella Issue (https://gatsby.dev/cache-clearing-feedback)) · Don't delete the downloaded files cache when changing gatsby-node.js & gatsby-config.js files.
-    PARALLEL_SOURCING: false, // EXPERIMENTAL · (Umbrella Issue (https://gatsby.dev/parallel-sourcing-feedback)) · Run all source plugins at the same time instead of serially. For sites with multiple source plugins, this can speedup sourcing and transforming considerably.
-    FUNCTIONS: false // EXPERIMENTAL · (Umbrella Issue (https://gatsby.dev/functions-feedback)) · Compile Serverless functions in your Gatsby project and write them to disk, ready to deploy to Gatsby Cloud
-  }
-};
+  plugins: [
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `{
+              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+                nodes {
+                  excerpt
+                  html
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    date
+                  }
+                }
+              }
+            }`,
+            output: "/rss.xml",
+            title: "Gatsby Starter Blog RSS Feed",
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby Starter Blog`,
+        short_name: `Gatsby`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+  ],
+}

@@ -1,109 +1,125 @@
-const componentWithMDXScope = require('gatsby-plugin-mdx/component-with-mdx-scope');
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
+ */
 
-const path = require('path');
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const startCase = require('lodash.startcase');
+// Define the template for blog post
+const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
-const config = require('./config');
+/**
+ * @type {import('gatsby').GatsbyNode['createPages']}
+ */
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-
-  return new Promise((resolve, reject) => {
-    resolve(
-      graphql(
-        `
-          {
-            allMdx {
-              edges {
-                node {
-                  fields {
-                    id
-                  }
-                  tableOfContents
-                  fields {
-                    slug
-                  }
-                }
-              }
-            }
+  // Get all markdown blog posts sorted by date
+  const result = await graphql(`
+    {
+      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+        nodes {
+          id
+          fields {
+            slug
           }
-        `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors); // eslint-disable-line no-console
-          reject(result.errors);
         }
-
-        // Create blog posts pages.
-        result.data.allMdx.edges.forEach(({ node }) => {
-          createPage({
-            path: node.fields.slug ? node.fields.slug : '/',
-            component: path.resolve('./src/templates/docs.js'),
-            context: {
-              id: node.fields.id,
-            },
-          });
-        });
-      })
-    );
-  });
-};
-
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-      alias: {
-        $components: path.resolve(__dirname, 'src/components'),
-        buble: '@philpl/buble', // to reduce bundle size
-      },
-    },
-  });
-};
-
-exports.onCreateBabelConfig = ({ actions }) => {
-  actions.setBabelPlugin({
-    name: '@babel/plugin-proposal-export-default-from',
-  });
-};
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `Mdx`) {
-    const parent = getNode(node.parent);
-
-    let value = parent.relativePath.replace(parent.ext, '');
-
-    if (value === 'index') {
-      value = '';
+      }
     }
+  `)
 
-    if (config.gatsby && config.gatsby.trailingSlash) {
-      createNodeField({
-        name: `slug`,
-        node,
-        value: value === '' ? `/` : `/${value}/`,
-      });
-    } else {
-      createNodeField({
-        name: `slug`,
-        node,
-        value: `/${value}`,
-      });
-    }
-
-    createNodeField({
-      name: 'id',
-      node,
-      value: node.id,
-    });
-
-    createNodeField({
-      name: 'title',
-      node,
-      value: node.frontmatter.title || startCase(parent.name),
-    });
+  if (result.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
+    return
   }
-};
+
+  const posts = result.data.allMarkdownRemark.nodes
+
+  // Create blog posts pages
+  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
+  // `context` is available in the template as a prop and as a variable in GraphQL
+
+  if (posts.length > 0) {
+    posts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : posts[index - 1].id
+      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+
+      createPage({
+        path: post.fields.slug,
+        component: blogPost,
+        context: {
+          id: post.id,
+          previousPostId,
+          nextPostId,
+        },
+      })
+    })
+  }
+}
+
+/**
+ * @type {import('gatsby').GatsbyNode['onCreateNode']}
+ */
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
+
+/**
+ * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
+ */
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+
+  // Explicitly define the siteMetadata {} object
+  // This way those will always be defined even if removed from gatsby-config.js
+
+  // Also explicitly define the Markdown frontmatter
+  // This way the "MarkdownRemark" queries will return `null` even when no
+  // blog posts are stored inside "content/blog" instead of returning an error
+  createTypes(`
+    type SiteSiteMetadata {
+      author: Author
+      siteUrl: String
+      social: Social
+    }
+
+    type Author {
+      name: String
+      summary: String
+    }
+
+    type Social {
+      twitter: String
+    }
+
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+      fields: Fields
+    }
+
+    type Frontmatter {
+      title: String
+      description: String
+      date: Date @dateformat
+    }
+
+    type Fields {
+      slug: String
+    }
+  `)
+}

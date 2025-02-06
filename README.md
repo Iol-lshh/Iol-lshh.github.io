@@ -1,4 +1,4 @@
-# 추천 글
+# 글 목록
 - java
 	- [Java 문법](java/Java%20문법.md)
 	- [JPA](java/JPA.md)

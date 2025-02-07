@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Iol-lshh's 상념 공간`,
+    title: `Iol-lshh's`,
     author: {
       name: `Iol-lshh`,
       summary: `The Engineer, Aiming Fine.`,

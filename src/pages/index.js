@@ -8,7 +8,7 @@ import ScrollButtonContainer from "../components/button/scroll/updownScrollButto
 import PropTypes from "prop-types"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || ``
+  const siteTitle = data.site.siteMetadata?.title || `The Engineer, Aiming Fine.`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {

@@ -18,13 +18,14 @@ const SEO = ({ title, description, image, lang = "kr", meta = [], children }) =>
     `
   )
 
+  const metaTitle = title || `The Engineer, Aiming Fine.`
   const metaDescription = description || site.siteMetadata.description
   const metaImage = image || `https://avatars.githubusercontent.com/u/37289223?v=4`
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
-      title={title}
+      title={metaTitle}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
@@ -33,7 +34,7 @@ const SEO = ({ title, description, image, lang = "kr", meta = [], children }) =>
         },
         {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,

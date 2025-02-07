@@ -21,6 +21,7 @@ const Bio = () => {
           social {
             instagram
             github
+            linkedin
           }
         }
       }
@@ -29,6 +30,9 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
+  const social = data.site.siteMetadata?.social
+  const {instagram, github, linkedin} = social
+
 
   return (
     <div className="bio">
@@ -37,16 +41,28 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="https://avatars.githubusercontent.com/u/37289223?v=4"
-        width={50}
-        height={50}
-        quality={95}
+        width={75}
+        height={75}
+        quality={75}
         alt="Profile picture"
       />
       {author?.name && (
         <p>
-          <a href="https://github.com/Iol-lshh">{author.name}</a><br />
+          <strong>{author.name}</strong>
+          <br />
           {author?.summary || null}
+          <br />
+          <a href={`https://github.com/${github}`}>
+            <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" />
+          </a>
           {` `}
+          <a href={`https://www.linkedin.com/${linkedin}`}>
+            <img src="https://img.shields.io/badge/linkedin-007CC3?style=for-the-badge&logo=linkedin&logoColor=white" />
+          </a>
+          {` `}
+          <a href={`https://www.instagram.com/${instagram}`}>
+            <img src="https://img.shields.io/badge/instagram-FF0069?style=for-the-badge&logo=instagram&logoColor=white" />
+          </a>
         </p>
       )}
     </div>

@@ -12,13 +12,14 @@ module.exports = {
     title: `Iol-lshh's 상념 공간`,
     author: {
       name: `Iol-lshh`,
-      summary: `소프트웨어 엔지니어`,
+      summary: `The Engineer, Aiming Fine.`,
     },
     description: `Iol-lshh의 블로그`,
     siteUrl: `https://iol-lshh.github.io/`,
     social: {
       instagram: `l__sh.h`,
       github: `Iol-lshh`,
+      linkedin: `in/성혁-홍-06372b214`,
     },
   },
   plugins: [

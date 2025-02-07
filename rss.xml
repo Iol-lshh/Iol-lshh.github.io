@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 08:40:00 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 08:50:37 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;디자인 패턴-GoF&lt;/li&gt;
 &lt;li&gt;클린코드, 클린아키텍처-로버트 C. 마틴&lt;/li&gt;
@@ -168,62 +168,86 @@
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3db64352360607e9538cf15567d2ce0c/4b190/IMG_1391.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEDBQL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB0YsWBWPyFgT/xAAbEAACAgMBAAAAAAAAAAAAAAAAAQISAwQUIP/aAAgBAQABBQKqKLy9qaOvIdMz/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQIBAT8BY//EABgQAAMBAQAAAAAAAAAAAAAAAAABMQIg/9oACAEBAAY/AqyvmZJkiP/EAB0QAAICAQUAAAAAAAAAAAAAAAABESHxEHGRweH/2gAIAQEAAT8hmfaZEShRpu7LH1cAvAMaf//aAAwDAQACAAMAAAAQWO+D/8QAFhEBAQEAAAAAAAAAAAAAAAAAESAx/9oACAEDAQE/EByP/8QAFREBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQIBAT8QUR//xAAfEAEAAgEDBQAAAAAAAAAAAAABABHRIUFhUYGRobH/2gAIAQEAAT8QbRJeVfZbo621syiCoaCy20hS2psQhy9Smdw8y0G/15iTR5eZ/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;IMG 1391&quot;
-        title=&quot;&quot;
-        src=&quot;/static/3db64352360607e9538cf15567d2ce0c/828fb/IMG_1391.jpg&quot;
-        srcset=&quot;/static/3db64352360607e9538cf15567d2ce0c/ff44c/IMG_1391.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/3db64352360607e9538cf15567d2ce0c/c35b1/IMG_1391.avif 158w,
+/static/3db64352360607e9538cf15567d2ce0c/2c8de/IMG_1391.avif 315w,
+/static/3db64352360607e9538cf15567d2ce0c/5d31c/IMG_1391.avif 630w,
+/static/3db64352360607e9538cf15567d2ce0c/c9875/IMG_1391.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/3db64352360607e9538cf15567d2ce0c/81b7c/IMG_1391.webp 158w,
+/static/3db64352360607e9538cf15567d2ce0c/6ea66/IMG_1391.webp 315w,
+/static/3db64352360607e9538cf15567d2ce0c/8aab1/IMG_1391.webp 630w,
+/static/3db64352360607e9538cf15567d2ce0c/d00b9/IMG_1391.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/3db64352360607e9538cf15567d2ce0c/ff44c/IMG_1391.jpg 158w,
 /static/3db64352360607e9538cf15567d2ce0c/a6688/IMG_1391.jpg 315w,
 /static/3db64352360607e9538cf15567d2ce0c/828fb/IMG_1391.jpg 630w,
 /static/3db64352360607e9538cf15567d2ce0c/4b190/IMG_1391.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/3db64352360607e9538cf15567d2ce0c/828fb/IMG_1391.jpg&quot;
+            alt=&quot;IMG 1391&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[API 베스트 프렉티스]]></title><description><![CDATA[1. 리소스 상태 전이 메커니즘 진정한 무상태성은 각 요청이 완전한 컨텍스트를 포함해야 함. 서버는 요청 간 클라이언트 세션 상태를 유지하지 않음. 리소스 상태 전이가 애플리케이션 흐름을 주도함. 2. 하이퍼미디어 제어 (HATEOAS…]]></description><link>https://iol-lshh.github.io/pattern/API_베스트_프렉티스/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/API_베스트_프렉티스/</guid><pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6e4d0000be710cacaaea4adc43485d02/4b190/IMG_1381.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 125.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAZABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAEDAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAfYleJ1CCT1pGIX/xAAbEAACAgMBAAAAAAAAAAAAAAABEQACEiExQv/aAAgBAQABBQIh31nPbVgWO2RcpwwT/8QAFREBAQAAAAAAAAAAAAAAAAAAEAH/2gAIAQMBAT8BIf/EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAECAQE/ASn/xAAcEAACAgIDAAAAAAAAAAAAAAAAAREhECAxccL/2gAIAQEABj8CI9YY5ddFEp0c6//EABoQAAMBAQEBAAAAAAAAAAAAAAABESExQbH/2gAIAQEAAT8hZvIs66LR5OY1FwQNWEQ9CrcCTpNGrhUR9Tycn//aAAwDAQACAAMAAAAQe868/8QAFxEBAAMAAAAAAAAAAAAAAAAAEAERIf/aAAgBAwEBPxAlln//xAAWEQEBAQAAAAAAAAAAAAAAAAAQASH/2gAIAQIBAT8QI0//xAAfEAEAAgICAgMAAAAAAAAAAAABABEhMUGxUXFhgcH/2gAIAQEAAT8QVV0yFSvjEL2dU9DjhgoBYBWW4w8l/hNcgVvNbgV7esJ3Ei3AVXVxHNVIUMpWK+pv9ptHbP/Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;IMG 1381&quot;
-        title=&quot;&quot;
-        src=&quot;/static/6e4d0000be710cacaaea4adc43485d02/828fb/IMG_1381.jpg&quot;
-        srcset=&quot;/static/6e4d0000be710cacaaea4adc43485d02/ff44c/IMG_1381.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6e4d0000be710cacaaea4adc43485d02/c35b1/IMG_1381.avif 158w,
+/static/6e4d0000be710cacaaea4adc43485d02/2c8de/IMG_1381.avif 315w,
+/static/6e4d0000be710cacaaea4adc43485d02/5d31c/IMG_1381.avif 630w,
+/static/6e4d0000be710cacaaea4adc43485d02/c9875/IMG_1381.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/6e4d0000be710cacaaea4adc43485d02/81b7c/IMG_1381.webp 158w,
+/static/6e4d0000be710cacaaea4adc43485d02/6ea66/IMG_1381.webp 315w,
+/static/6e4d0000be710cacaaea4adc43485d02/8aab1/IMG_1381.webp 630w,
+/static/6e4d0000be710cacaaea4adc43485d02/d00b9/IMG_1381.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6e4d0000be710cacaaea4adc43485d02/ff44c/IMG_1381.jpg 158w,
 /static/6e4d0000be710cacaaea4adc43485d02/a6688/IMG_1381.jpg 315w,
 /static/6e4d0000be710cacaaea4adc43485d02/828fb/IMG_1381.jpg 630w,
 /static/6e4d0000be710cacaaea4adc43485d02/4b190/IMG_1381.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6e4d0000be710cacaaea4adc43485d02/828fb/IMG_1381.jpg&quot;
+            alt=&quot;IMG 1381&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;1. 리소스 상태 전이 메커니즘&lt;/h2&gt;
 &lt;ul&gt;
@@ -287,37 +311,52 @@
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[데이터 캐싱]]></title><description><![CDATA[이 다이어그램은 일반적인 아키텍처에서 데이터가 캐싱되는 위치를 설명합니다. 데이터는 여러 계층에 걸쳐 캐싱됩니다.  1. 클라이언트 애플리케이션 HTTP 응답은 브라우저에서 캐싱될 수 있습니다. 흐름: 처음 데이터 요청 시, HTTP…]]></description><link>https://iol-lshh.github.io/pattern/데이터_캐싱/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/데이터_캐싱/</guid><pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;이 다이어그램은 일반적인 아키텍처에서 데이터가 캐싱되는 위치를 설명합니다. 데이터는 &lt;strong&gt;여러 계층&lt;/strong&gt;에 걸쳐 캐싱됩니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a0a6dc7536bacab4b598584925cadb20/4b190/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 145.56962025316454%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAdABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAe6E01FBcouVoxs//8QAGhABAAIDAQAAAAAAAAAAAAAAAQAREBIhAv/aAAgBAQABBQJOYempQ3GGq1UZ55j/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAIAQMBAT8BViP/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAaEAACAgMAAAAAAAAAAAAAAAAAIQEQAiAx/9oACAEBAAY/Ah28a6Kdf//EABsQAQEBAAMBAQAAAAAAAAAAAAERACExQWFx/9oACAEBAAE/IfAc46zrHhlxPInhzo7E/cEFYLdTap9wTC7kJhne/9oADAMBAAIAAwAAABAnHg//xAAZEQEAAgMAAAAAAAAAAAAAAAABACEQMWH/2gAIAQMBAT8QV0YWLnE//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEhEBH/2gAIAQIBAT8Qypw6f//EABsQAQADAQEBAQAAAAAAAAAAAAEAETEhQWFR/9oACAEBAAE/EOpKBY9/WLgyCi6GXUNcD4lNgUDXXFX9gv6FlwgpjsM9/JeBW2q3KK4lQW+ryVvJ/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;데이터 캐싱 계층 다이어그램&quot;
-        title=&quot;&quot;
-        src=&quot;/static/a0a6dc7536bacab4b598584925cadb20/828fb/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg&quot;
-        srcset=&quot;/static/a0a6dc7536bacab4b598584925cadb20/ff44c/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a0a6dc7536bacab4b598584925cadb20/c35b1/1E652F5B-8F47-4D6B-921A-9D120439A12B.avif 158w,
+/static/a0a6dc7536bacab4b598584925cadb20/2c8de/1E652F5B-8F47-4D6B-921A-9D120439A12B.avif 315w,
+/static/a0a6dc7536bacab4b598584925cadb20/5d31c/1E652F5B-8F47-4D6B-921A-9D120439A12B.avif 630w,
+/static/a0a6dc7536bacab4b598584925cadb20/c9875/1E652F5B-8F47-4D6B-921A-9D120439A12B.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/a0a6dc7536bacab4b598584925cadb20/81b7c/1E652F5B-8F47-4D6B-921A-9D120439A12B.webp 158w,
+/static/a0a6dc7536bacab4b598584925cadb20/6ea66/1E652F5B-8F47-4D6B-921A-9D120439A12B.webp 315w,
+/static/a0a6dc7536bacab4b598584925cadb20/8aab1/1E652F5B-8F47-4D6B-921A-9D120439A12B.webp 630w,
+/static/a0a6dc7536bacab4b598584925cadb20/d00b9/1E652F5B-8F47-4D6B-921A-9D120439A12B.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a0a6dc7536bacab4b598584925cadb20/ff44c/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg 158w,
 /static/a0a6dc7536bacab4b598584925cadb20/a6688/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg 315w,
 /static/a0a6dc7536bacab4b598584925cadb20/828fb/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg 630w,
 /static/a0a6dc7536bacab4b598584925cadb20/4b190/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a0a6dc7536bacab4b598584925cadb20/828fb/1E652F5B-8F47-4D6B-921A-9D120439A12B.jpg&quot;
+            alt=&quot;데이터 캐싱 계층 다이어그램&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;데이터 캐싱 계층 다이어그램&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;1. &lt;strong&gt;클라이언트 애플리케이션&lt;/strong&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -385,169 +424,7 @@
 &lt;li&gt;&lt;strong&gt;복제 로그 (Replication Log)&lt;/strong&gt;: 데이터베이스 클러스터에서 복제 상태를 기록.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[GraalVM, JVM 비교]]></title><description><![CDATA[GraalVM이란? GraalVM 특징 네이티브 Java 코드 실행 GraalVM에서 Java 코드 실행 방식 GraalVM 아키텍처 AOT 컴파일 GraalVM vs JVM 1. GraalVM이란? GraalVM은 Ahead-Of-Time (AOT…]]></description><link>https://iol-lshh.github.io/java/GraalVM_vs_JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/GraalVM_vs_JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM이란?&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM 특징&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;네이티브 Java 코드 실행&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM에서 Java 코드 실행 방식&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM 아키텍처&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM vs JVM&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2&gt;1. GraalVM이란?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;은 &lt;strong&gt;Ahead-Of-Time (AOT) 컴파일&lt;/strong&gt; 기능을 가진 고성능 JDK입니다.&lt;/li&gt;
-&lt;li&gt;기존 JIT 컴파일러를 대체하는 &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통해 Java 애플리케이션의 성능을 크게 향상시킵니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;애플리케이션 지연(latency)&lt;/strong&gt; 을 줄이고, &lt;strong&gt;가비지 컬렉션 시간&lt;/strong&gt;을 단축하며, &lt;strong&gt;최대 처리량&lt;/strong&gt;을 높입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;2. GraalVM 특징&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;낮은 리소스 사용&lt;/strong&gt;: 네이티브 이미지는 런타임 시 기존 JVM이 필요 없으므로 메모리와 CPU 사용량이 적습니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;향상된 보안&lt;/strong&gt;: AOT 컴파일 시 정적 분석을 수행하여 런타임 클래스 로딩 및 리플렉션과 같은 공격 표면을 줄입니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;빠른 시작&lt;/strong&gt;: 네이티브 바이너리는 바이트코드 해석이나 JIT 컴파일이 필요 없으므로 즉시 시작됩니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;컴팩트한 패키징&lt;/strong&gt;: 네이티브 이미지는 필요한 애플리케이션 코드와 종속성만 포함하여 크기를 줄입니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;프레임워크 지원&lt;/strong&gt;: Quarkus, Micronaut, Spring Boot와 통합되어 최적화된 애플리케이션 제작 가능.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;클라우드 플랫폼 지원&lt;/strong&gt;: AWS Lambda, Google Cloud, Azure 등 주요 플랫폼에서 GraalVM을 지원.&lt;/li&gt;
-&lt;li&gt;GraalVM은 &lt;strong&gt;빠른 시작 시간&lt;/strong&gt;, &lt;strong&gt;낮은 메모리 사용량&lt;/strong&gt;, &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;, &lt;strong&gt;다중 언어 지원&lt;/strong&gt;을 제공하여 뛰어난 선택지로 자리 잡고 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;3. 네이티브 Java 코드 실행&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM의 개선점을 살펴보기 전에 &lt;strong&gt;JDK&lt;/strong&gt;가 네이티브 Java 코드를 실행하는 방식을 이해해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Java의 WORA 원칙&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;WORA&lt;/strong&gt;: 한 번 작성하면, 어디서나 실행 가능(Write Once, Run Anywhere).&lt;/li&gt;
-&lt;li&gt;Java 코드는 한 번 작성하면, 기계 유형에 상관없이 호환 가능한 JVM에서 실행할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;실행 프로세스&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;소스 코드&lt;/strong&gt; → JDK가 이를 &lt;strong&gt;바이트코드&lt;/strong&gt;로 컴파일.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;바이트코드&lt;/strong&gt; → JVM이 이를 실행.&lt;/li&gt;
-&lt;li&gt;JVM 내부 단계:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;   - &lt;strong&gt;클래스 로딩(Class Loading)&lt;/strong&gt;: 바이트코드를 로딩하여 실행 준비.
-   - &lt;strong&gt;바이트코드 검증(Byte Code Verification)&lt;/strong&gt;: 바이트코드가 안전한지 검증.
-   - &lt;strong&gt;JIT 컴파일(Just-In-Time Compilation)&lt;/strong&gt;: 런타임 시 바이트코드를 네이티브 코드로 변환하여 성능 최적화.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;실행 흐름&lt;/strong&gt;:  &lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;소스 코드 -&gt; JDK -&gt; 바이트코드 -&gt; JVM&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;4. GraalVM에서 Java 코드 실행 방식&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM은 Java의 기본 실행 방식을 따르지만, &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통합하여 JIT 및 AOT 컴파일 성능을 향상시킵니다.&lt;/li&gt;
-&lt;li&gt;기존 JVM의 C2 컴파일러를 대체하여 &lt;strong&gt;최적화된 컴파일&lt;/strong&gt; 및 &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;을 지원합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;5. GraalVM 아키텍처&lt;/h2&gt;
-&lt;h3&gt;1. &lt;strong&gt;Java HotSpot VM&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM의 기반 계층으로, 다음을 제공합니다:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  - &lt;strong&gt;JIT 컴파일&lt;/strong&gt;
-  - &lt;strong&gt;가비지 컬렉션&lt;/strong&gt;
-  - &lt;strong&gt;스레드 관리&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAAgAPtFWpEuoJKOhsAgBABoJQBOmUABfHr3QCtwUAAD+8hLet41lcxyzBe8meeY+NE1QC31nt6XV07NURDgm9OGZgd3tBl5Fgj9jPDYO5ZEmpY6hiaxYd4AAAA==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;graalvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp&quot;
-        srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
-/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
-/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
-/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;2. &lt;strong&gt;GraalVM 컴파일러 계층&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;다중 언어 JIT 컴파일러&lt;/strong&gt;로, Java 및 기타 언어에 최적화된 컴파일을 제공합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;을 지원하여 네이티브 이미지를 생성합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;3. &lt;strong&gt;언어 구현 프레임워크 계층&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM은 여러 프로그래밍 언어를 지원합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Truffle 프레임워크&lt;/strong&gt;와 &lt;strong&gt;LLVM 런타임&lt;/strong&gt;을 통해 다중 언어 런타임을 구축할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;6. AOT 컴파일&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일(Ahead-Of-Time Compilation)&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  - Java 애플리케이션을 런타임 이전에 네이티브 실행 파일로 변환.
-  - &lt;strong&gt;장점&lt;/strong&gt;:
-    - 빠른 시작 시간.
-    - 낮은 메모리 사용량.
-    - 런타임 공격 표면 감소로 보안 강화.
-  - Quarkus, Micronaut 같은 프레임워크에서 마이크로서비스를 최적화하는 데 사용됩니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;7. GraalVM vs JVM&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;기능&lt;/strong&gt;            &lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;                      &lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;기존 JVM&lt;/strong&gt;  &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;시작 시간&lt;/strong&gt;        &lt;/td&gt;
-&lt;td&gt;매우 빠름 (AOT 네이티브 이미지)&lt;/td&gt;
-&lt;td&gt;느림 (JIT 컴파일 필요)        &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;메모리 사용량&lt;/strong&gt;    &lt;/td&gt;
-&lt;td&gt;적음 (네이티브 이미지)           &lt;/td&gt;
-&lt;td&gt;많음                         &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;성능&lt;/strong&gt;            &lt;/td&gt;
-&lt;td&gt;향상된 컴파일러로 최적화&lt;/td&gt;
-&lt;td&gt;JIT로 최적화되었지만 GraalVM보다는 낮음&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;언어 지원&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;다중 언어 (Python, Ruby 등)      &lt;/td&gt;
-&lt;td&gt;Java 또는 JVM 언어 중심&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;애플리케이션 패키징&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;컴팩트한 네이티브 실행 파일&lt;/td&gt;
-&lt;td&gt;JVM 런타임 필요              &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;클라우드 지원&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;AWS Lambda 등 주요 플랫폼 지원   &lt;/td&gt;
-&lt;td&gt;제한적                       &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[JVM]]></title><description><![CDATA[Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 JDK…]]></description><link>https://iol-lshh.github.io/java/JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JVM]]></title><description><![CDATA[Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 JDK…]]></description><link>https://iol-lshh.github.io/java/JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 &lt;strong&gt;JDK(Java Development Kit)&lt;/strong&gt;, &lt;strong&gt;JRE(Java Runtime Environment)&lt;/strong&gt;, &lt;strong&gt;JVM(Java Virtual Machine)&lt;/strong&gt; 를 이해하는 것이 중요합니다.  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -684,67 +561,95 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.java&lt;/code&gt; 파일을 컴파일하여 생성된 바이트코드(&lt;code class=&quot;language-text&quot;&gt;.class&lt;/code&gt; 파일)를 기계어로 변환하는 역할을 담당합니다.&lt;/li&gt;
 &lt;li&gt;JVM은 **Java Runtime Environment (JRE)**의 일부입니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 422px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 28.48101265822785%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVR42mOITchITMm+cuXq//////79++/vHyDj0bGdOwoCthcGXZ7X9v/Pb6DIn98gcvLevaqVlVbt7bp1dbFz5jAYmzlq6pg5ung+fvwErujW9uWLPeSX+mtuCdW5tagLKPL7D8jQqnXrGKKjubKyGBISLFtbGVzcA3wDItW0TJetWAtS9OkTkLy9c+WqcKNNaS4bk53Wx1l9uX/7z9t3/7//qF67ViA316Wnx6S52bm7mwHo7JT0PCNT+yXLVv3+/u3NlcvPX77ZPrVtQ6zl7qrYzRnu6xLsnp46/u7GrVdnziRPmsSZne3V16dQVmbX2clgYe3m4Oyrpg20eQ3Qzh8/fwDJyxsWLPFQAFq+zE99VZjBh5tXf7x4+f/Zs5L58xliYsQKChgSE81bWhiCw+IiY5K9fMO279gNcvavX0DywaGtm9Jdt+X6bc3x3lEc8u3ty7//QaBv1y7pkhK9+nrlysqwGTMAsIbbhVXk6x0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png&quot;
-        srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/c26ae/IMG_1249.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/c35b1/IMG_1249.avif 158w,
+/static/dce7088f79788419b4325ef8155c1543/2c8de/IMG_1249.avif 315w,
+/static/dce7088f79788419b4325ef8155c1543/2a7b6/IMG_1249.avif 422w&quot;
+              sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/81b7c/IMG_1249.webp 158w,
+/static/dce7088f79788419b4325ef8155c1543/6ea66/IMG_1249.webp 315w,
+/static/dce7088f79788419b4325ef8155c1543/fc0b3/IMG_1249.webp 422w&quot;
+              sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/c26ae/IMG_1249.png 158w,
 /static/dce7088f79788419b4325ef8155c1543/6bdcf/IMG_1249.png 315w,
 /static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png 422w&quot;
-        sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
+            sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/4b190/IMG_1254.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQMA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAZkGl0cj/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECERATIf/aAAgBAQABBQK0hrWpTsXSsf/EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGn/8QAHRAAAQMFAQAAAAAAAAAAAAAAAQACMSAhMjNRcf/aAAgBAQAGPwLWITgQHWniwaPBR//EABkQAAMBAQEAAAAAAAAAAAAAAAABEVExEP/aAAgBAQABPyHibZNvXpUeaNVQl6I0Izz/2gAMAwEAAgADAAAAEDfP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxAb0tb/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EEnLL//EABwQAQADAAIDAAAAAAAAAAAAAAEAESEQMVFxsf/aAAgBAQABPxC/dHYueDUMGPi0gEUiqQPswHaYeoOp04//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/828fb/IMG_1254.jpg&quot;
-        srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/ff44c/IMG_1254.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/c35b1/IMG_1254.avif 158w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/2c8de/IMG_1254.avif 315w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/5d31c/IMG_1254.avif 630w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/c9875/IMG_1254.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/81b7c/IMG_1254.webp 158w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/6ea66/IMG_1254.webp 315w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/8aab1/IMG_1254.webp 630w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/d00b9/IMG_1254.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/ff44c/IMG_1254.jpg 158w,
 /static/5e19f495bc2d1946a95b7aa7ae99fb43/a6688/IMG_1254.jpg 315w,
 /static/5e19f495bc2d1946a95b7aa7ae99fb43/828fb/IMG_1254.jpg 630w,
 /static/5e19f495bc2d1946a95b7aa7ae99fb43/4b190/IMG_1254.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/828fb/IMG_1254.jpg&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h3&gt;WORA (Write Once Run Anywhere)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;자바 애플리케이션은 종종 &lt;strong&gt;WORA&lt;/strong&gt;라고 불립니다.&lt;/li&gt;
@@ -762,37 +667,52 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e0289e925e352c69b465b5b903c8a883/37523/IMG_1250.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAADHElEQVR42m2TS29aVxSF+Qv9DR2mf6BSJ82knXTUdBgpqlK1VZ9S+hpk0kSJceqGRmori9qNSWscq7gkPFxjTIzhgsHgCzbmggl2g8EQA7HlB+Z1L18PF8VKpF5p6+y7tffSWnudY+CFr9cbnJWDFp5kDcdyAZs/gz2QYXJOxi7lmE+UcK4U2Kmf6r2dTudFCAzPk0ajQbVa4/hwn0zxELNTYdId43dXmp/dm1g8SczeTW65jHw/c5VUqcDJ4RHrqZSYqwoyAzaG50mtViWdTqOsJ1jJ7jF0T8Y6m8Q0lWToYZ774ScMOze4Nfc5Rs8nRPIJfa7VatJpt8/kGf5P8pNaE6svjztSYNpfwGRPMh3IMROvYQ7exbRwB6W8q/dqYqj3kuSeRq9doafuiXiKelqm16qhiaBTormfxvtglH83Hon/guh9Bt1jke9BswjtHREFQbXSp9RnqNKN/UDnr4/oOK6gJr9DW7sIqUtkV638MevjN6sVs/U+Nu8ia/Ex/vF9hWPhW7blO6SWJpEXJzjcnBKA3YHkY9v7PL74CrtfnKO18Ablhwba8wYkyUZgS8ObqjKfqou9NXAFrMLtKaaDMwR8txkevs31mz9SiI33Pe8D9jgJD1H59QI1y2X2o59SDr3FUewdUrKN4JpCMJFgSUR0fYNYzEpodRx/3IISN7Po/hOPY4JqZpq+2jNTNE3Tz2g0TigUGZikiYWrGp1um1azodfCkQhSWNJztfvyHTy7Ntmnq2yUgsjbAZySnQdLNsIZH8lymORumJPW0aD7oEI95KYuudAqW3rpcT5PJBJFFgpUVTBsCc8zwogD/2usSpf40hriM0uM4bmfuOq6wE3vxxSrW/iDEU6zK+TvXic7fo1nkoOloMTsrBuj0cjY+Jj+agz9B5Rdfo/GjAHZ+zpvm6K8eSPBlb+v8a7pVT6wnKdYz7McW6OthCmNfsP2L19zHBCmhJeZ93gYGRnBYrEMALsCcHtrgnrqQ7KKCXMgzehiDrvsZCo2gk0e5ai5P9hZtYC2/oieCHVH0WulUhFFUcjlNnUf/gM0Tn7mhFDJJwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/e0289e925e352c69b465b5b903c8a883/f058b/IMG_1250.png&quot;
-        srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/c26ae/IMG_1250.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/c35b1/IMG_1250.avif 158w,
+/static/e0289e925e352c69b465b5b903c8a883/2c8de/IMG_1250.avif 315w,
+/static/e0289e925e352c69b465b5b903c8a883/5d31c/IMG_1250.avif 630w,
+/static/e0289e925e352c69b465b5b903c8a883/f7eb3/IMG_1250.avif 720w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/81b7c/IMG_1250.webp 158w,
+/static/e0289e925e352c69b465b5b903c8a883/6ea66/IMG_1250.webp 315w,
+/static/e0289e925e352c69b465b5b903c8a883/8aab1/IMG_1250.webp 630w,
+/static/e0289e925e352c69b465b5b903c8a883/bc514/IMG_1250.webp 720w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/c26ae/IMG_1250.png 158w,
 /static/e0289e925e352c69b465b5b903c8a883/6bdcf/IMG_1250.png 315w,
 /static/e0289e925e352c69b465b5b903c8a883/f058b/IMG_1250.png 630w,
 /static/e0289e925e352c69b465b5b903c8a883/37523/IMG_1250.png 720w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e0289e925e352c69b465b5b903c8a883/f058b/IMG_1250.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;1. 클래스 로더 (ClassLoader)&lt;/h2&gt;
 &lt;ul&gt;
@@ -802,37 +722,52 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;p&gt;  1. 로딩 (Loading)
   2. 연결 (Linking)
   3. 초기화 (Initialization)&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/d67ca/IMG_1251.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACrklEQVR42lVTa0hTYRjeH80UcfetLdEwb7nU4ZXsV1HQzUhL7G+RFoVUUD/6E5WU+iPKy8LWdhqt5i5nx2nbNGtJzMAIFhhYmplCKiKhNSYN3NN7jjc68PCc7/3O9/A87/cekUurgVdfAG+RHv495fCVl8BXWiy8c6kasEo5WIWMWAG3SglWpfgPLtpzyWXCd06NCiK+6N2RBk4mgTMhHq6krQIcW+LApiTDo5ajLy8XHB3g5FL0kAC3hm6FRNgbKNbDs00liIr8ZaUINd7BJ8JIS5OA0K2b+GZ5ineVR+DLSscYw2DcaAS7XQuTVExCq4I9amIS4jRqocabEwWOV+JXOIzlaBTrT2xlReCPly7Cl5OBWCyG6MICRVLDzAvybtcEGUrWKZXgGbnn1Lzg4UNYnp9HZG4OS7OzCBMiMzP4u7iI4fpzcIsT8YGEgzUnwUpS4BGiroIXdCg2wVKPRVxaKvz5OrwuyMeN7CzYdLvQvzsPXqq9zMnEQEUZRpqb8eWRAROMGW5yZ5NJYVdRb/U6dFPkbnLnWRcMVFdhrL8P44SxwUH8fD+E6cAbLE1NIXiqGv7cTET/hIUWhCcn4aSDfEQrca9WSdHlG5ckCL46XYsfk98xMTqK2elp/KZeLVILwpEIArU1sImTMNTQgOD5OgwcO4oucsPDTqPiUEo21jxe8LfMpKfBWVIMd0kRrup0sBQWoItg0xeCoTjPc3ci2NqKYbMZjr0VeJyYADMdNFFsRimFSb4JIy9oOXgA/TQSPoMBnMmEt1YrBi0WBFkW1v378CQ7A59DIXylFtirTuBBfBw6KGY7xTbQHPLcsYY2ci26T06M9XXoPHsGDDFzoR62K5dhv34ND+kPuidNQRu5by8vRUuqFnfFyWii0eHrTbJVbqQ1j9tyKf4BU/jz9VFL6EcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/f058b/IMG_1251.png&quot;
-        srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/c26ae/IMG_1251.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/c35b1/IMG_1251.avif 158w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/2c8de/IMG_1251.avif 315w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/5d31c/IMG_1251.avif 630w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/51250/IMG_1251.avif 714w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/81b7c/IMG_1251.webp 158w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/6ea66/IMG_1251.webp 315w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/8aab1/IMG_1251.webp 630w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/80c40/IMG_1251.webp 714w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/c26ae/IMG_1251.png 158w,
 /static/51ae8b9ec5559f6d199fb53cbb3869e1/6bdcf/IMG_1251.png 315w,
 /static/51ae8b9ec5559f6d199fb53cbb3869e1/f058b/IMG_1251.png 630w,
 /static/51ae8b9ec5559f6d199fb53cbb3869e1/d67ca/IMG_1251.png 714w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/f058b/IMG_1251.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h3&gt;1.1 로딩 (Loading)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;바이트코드(&lt;code class=&quot;language-text&quot;&gt;.class&lt;/code&gt; 파일)를 다양한 자원(예: 파일 시스템, JAR 파일, 네트워크)에서 메모리로 로드하는 과정입니다.&lt;/li&gt;
@@ -849,37 +784,52 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;p&gt;  1. &lt;code class=&quot;language-text&quot;&gt;findLoadedClass()&lt;/code&gt;를 호출하여 클래스가 이미 로드되었는지 확인합니다.
   2. 부모 클래스 로더에 요청을 위임합니다.
   3. 클래스를 찾을 수 없으면 &lt;code class=&quot;language-text&quot;&gt;findClass()&lt;/code&gt;를 호출하여 파일 시스템에서 클래스를 찾습니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/c67d4/IMG_1252.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 55.06329113924051%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACKElEQVR42oWT208TQRTG+Rc1MSa+mqiR1KjxQaOJPvnqGzH6YhQQVAKIlVIf6I1La0Ok9YKltqWwu/Syu93b7KWd/Tw7bekDD8zmy8w5c+bMnN/MToUhR9S6Zh3fDz+g1PiCfaE10mey4ygcLkDR/og4w1FQPvqKn80NUgLl5joqUkbMcc4xxflAGH+lNF5/u4aPWw+wmLtHuov5bEzYr5JXsVdbBkcfjXYR71I3sbT9EKuFp5jPxKh/NkkYhqEwBrwP0+pBcyRYTIUf+DDdNjRThmUbGG/MqSLPd2neQ0AxfjAcn0sY0sccBiuQ4Q9s4XO5CpO14LnDBRe1UcIhQ92WUKonsN9cxe+TJKpKDqXmGjGKE7MEulZDxNmeKvBU5MxIWYrdogoDhDycMDw4SeHlxhUsZIldOoa59G3BZzF3HzOJSyhWPwmGtVZeMFzJP8Hy7mMs7TwScV5gRWVOSvYDBrWnoGVU6cabMB1V9F3jiPwyLWAirt8PYNhtmu+KGNPpCEXIzjG0bRt2cIpg4Aifx3VYbgcuY2NKFzNkzIam0y62Km5UMkrEqw7m9aCYZUh6GTr5/b5z9hocTwPze9TrQq5vTBJargbVkrBXXRGs5tLTmE3dwtvNG3izeR2zxHJm/TKSP17A5454hxGziPX77B0aTyNefC5q5ONLicrWbRkHxxlU5d2RdkbKkz9Nf0pFnMKhk9eUAmqnRdRJ/+QCjju/zk74H6k/H4I3GVXvAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/f058b/IMG_1252.png&quot;
-        srcset=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/c26ae/IMG_1252.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/c35b1/IMG_1252.avif 158w,
+/static/3d0e924cda1137fe09e3285d56b35c21/2c8de/IMG_1252.avif 315w,
+/static/3d0e924cda1137fe09e3285d56b35c21/5d31c/IMG_1252.avif 630w,
+/static/3d0e924cda1137fe09e3285d56b35c21/196ee/IMG_1252.avif 723w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/81b7c/IMG_1252.webp 158w,
+/static/3d0e924cda1137fe09e3285d56b35c21/6ea66/IMG_1252.webp 315w,
+/static/3d0e924cda1137fe09e3285d56b35c21/8aab1/IMG_1252.webp 630w,
+/static/3d0e924cda1137fe09e3285d56b35c21/6c8c7/IMG_1252.webp 723w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/c26ae/IMG_1252.png 158w,
 /static/3d0e924cda1137fe09e3285d56b35c21/6bdcf/IMG_1252.png 315w,
 /static/3d0e924cda1137fe09e3285d56b35c21/f058b/IMG_1252.png 630w,
 /static/3d0e924cda1137fe09e3285d56b35c21/c67d4/IMG_1252.png 723w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/3d0e924cda1137fe09e3285d56b35c21/f058b/IMG_1252.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;위임 예제&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
@@ -980,38 +930,55 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;ul&gt;
 &lt;li&gt;실행 엔진은 각 클래스에 있는 코드를 실행합니다. 그러나 프로그램을 실행하기 전에 바이트코드를 기계어 명령어로 변환해야 합니다. JVM은 실행 엔진에서 &lt;strong&gt;인터프리터(Interpreter)&lt;/strong&gt; 또는 &lt;strong&gt;JIT 컴파일러&lt;/strong&gt;를 사용할 수 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/795feb412047a387190074d74c2dc3ea/8cdda/IMG_1253.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABn0lEQVR42oVSR6uCQQzc/38Se8OLChZUFNsHdj0pCBYsqHjRmx7sDR2Z8PbxyXtgYEh2k51sisKPvF4v0bvdDrFYDJFIBJlMBolEQuxKpYJCoSB2KBRCNBrFer3+eEtRzWYTZjQaDXmYy+UE+XxeYBgGSqWSJIjH4ygWiyiXy2i1WvKuXq+j0+lAWSwW2Gy2DzgcDtFOpxMul0vOtAna+my322G1WiWWPIFAAIrZzuczLpeL6OfzicFgAK/Xi81mg/1+L/dsxel0QjabhcfjwXa7xfV6lXfUh8MB1WoViiUsFguMRiMMh0PMZjP0ej34/X7cbjfpy3Q6FVIKSyUhz4xl8n6/L6QsXyWTSWnufD7HZDLBarWSABIyiA2nX5ObCZfLJcbjMbrd7iehFpZLYWaWzCA9Re0jIX0ssd1uyxA5jOPx+J1Q/8q8GiR0u9243+94PB6/PaRw2oqTqdVqAjaVGdPptEyXa8F1MPuCwaBMmHup14ya/lQqBcV+6FXQIJnP5/tzTzBe+7g2BG2uTzgchuIqsMFm8O6/+28+4g0dU+eePuTfFwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/795feb412047a387190074d74c2dc3ea/f058b/IMG_1253.png&quot;
-        srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/c26ae/IMG_1253.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/c35b1/IMG_1253.avif 158w,
+/static/795feb412047a387190074d74c2dc3ea/2c8de/IMG_1253.avif 315w,
+/static/795feb412047a387190074d74c2dc3ea/5d31c/IMG_1253.avif 630w,
+/static/795feb412047a387190074d74c2dc3ea/59707/IMG_1253.avif 945w,
+/static/795feb412047a387190074d74c2dc3ea/16f03/IMG_1253.avif 1168w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/81b7c/IMG_1253.webp 158w,
+/static/795feb412047a387190074d74c2dc3ea/6ea66/IMG_1253.webp 315w,
+/static/795feb412047a387190074d74c2dc3ea/8aab1/IMG_1253.webp 630w,
+/static/795feb412047a387190074d74c2dc3ea/a70f5/IMG_1253.webp 945w,
+/static/795feb412047a387190074d74c2dc3ea/2768a/IMG_1253.webp 1168w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/c26ae/IMG_1253.png 158w,
 /static/795feb412047a387190074d74c2dc3ea/6bdcf/IMG_1253.png 315w,
 /static/795feb412047a387190074d74c2dc3ea/f058b/IMG_1253.png 630w,
 /static/795feb412047a387190074d74c2dc3ea/40601/IMG_1253.png 945w,
 /static/795feb412047a387190074d74c2dc3ea/8cdda/IMG_1253.png 1168w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/795feb412047a387190074d74c2dc3ea/f058b/IMG_1253.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;실행 엔진 구성 요소&lt;/h3&gt;
 &lt;ul&gt;
@@ -1052,6 +1019,297 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;h2&gt;네이티브 메서드 라이브러리 (Native Method Libraries)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;실행 엔진에서 필요한 &lt;strong&gt;C/C++ 기반 네이티브 라이브러리&lt;/strong&gt;의 모음입니다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[GraalVM, JVM 비교]]></title><description><![CDATA[GraalVM이란? GraalVM 특징 네이티브 Java 코드 실행 GraalVM에서 Java 코드 실행 방식 GraalVM 아키텍처 AOT 컴파일 GraalVM vs JVM 1. GraalVM이란? GraalVM은 Ahead-Of-Time (AOT…]]></description><link>https://iol-lshh.github.io/java/GraalVM_vs_JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/GraalVM_vs_JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM이란?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM 특징&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;네이티브 Java 코드 실행&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM에서 Java 코드 실행 방식&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM 아키텍처&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM vs JVM&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;1. GraalVM이란?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;은 &lt;strong&gt;Ahead-Of-Time (AOT) 컴파일&lt;/strong&gt; 기능을 가진 고성능 JDK입니다.&lt;/li&gt;
+&lt;li&gt;기존 JIT 컴파일러를 대체하는 &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통해 Java 애플리케이션의 성능을 크게 향상시킵니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;애플리케이션 지연(latency)&lt;/strong&gt; 을 줄이고, &lt;strong&gt;가비지 컬렉션 시간&lt;/strong&gt;을 단축하며, &lt;strong&gt;최대 처리량&lt;/strong&gt;을 높입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;2. GraalVM 특징&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;낮은 리소스 사용&lt;/strong&gt;: 네이티브 이미지는 런타임 시 기존 JVM이 필요 없으므로 메모리와 CPU 사용량이 적습니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;향상된 보안&lt;/strong&gt;: AOT 컴파일 시 정적 분석을 수행하여 런타임 클래스 로딩 및 리플렉션과 같은 공격 표면을 줄입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;빠른 시작&lt;/strong&gt;: 네이티브 바이너리는 바이트코드 해석이나 JIT 컴파일이 필요 없으므로 즉시 시작됩니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;컴팩트한 패키징&lt;/strong&gt;: 네이티브 이미지는 필요한 애플리케이션 코드와 종속성만 포함하여 크기를 줄입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;프레임워크 지원&lt;/strong&gt;: Quarkus, Micronaut, Spring Boot와 통합되어 최적화된 애플리케이션 제작 가능.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;클라우드 플랫폼 지원&lt;/strong&gt;: AWS Lambda, Google Cloud, Azure 등 주요 플랫폼에서 GraalVM을 지원.&lt;/li&gt;
+&lt;li&gt;GraalVM은 &lt;strong&gt;빠른 시작 시간&lt;/strong&gt;, &lt;strong&gt;낮은 메모리 사용량&lt;/strong&gt;, &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;, &lt;strong&gt;다중 언어 지원&lt;/strong&gt;을 제공하여 뛰어난 선택지로 자리 잡고 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;3. 네이티브 Java 코드 실행&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM의 개선점을 살펴보기 전에 &lt;strong&gt;JDK&lt;/strong&gt;가 네이티브 Java 코드를 실행하는 방식을 이해해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Java의 WORA 원칙&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;WORA&lt;/strong&gt;: 한 번 작성하면, 어디서나 실행 가능(Write Once, Run Anywhere).&lt;/li&gt;
+&lt;li&gt;Java 코드는 한 번 작성하면, 기계 유형에 상관없이 호환 가능한 JVM에서 실행할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;실행 프로세스&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;소스 코드&lt;/strong&gt; → JDK가 이를 &lt;strong&gt;바이트코드&lt;/strong&gt;로 컴파일.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;바이트코드&lt;/strong&gt; → JVM이 이를 실행.&lt;/li&gt;
+&lt;li&gt;JVM 내부 단계:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;   - &lt;strong&gt;클래스 로딩(Class Loading)&lt;/strong&gt;: 바이트코드를 로딩하여 실행 준비.
+   - &lt;strong&gt;바이트코드 검증(Byte Code Verification)&lt;/strong&gt;: 바이트코드가 안전한지 검증.
+   - &lt;strong&gt;JIT 컴파일(Just-In-Time Compilation)&lt;/strong&gt;: 런타임 시 바이트코드를 네이티브 코드로 변환하여 성능 최적화.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;실행 흐름&lt;/strong&gt;:  &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;소스 코드 -&gt; JDK -&gt; 바이트코드 -&gt; JVM&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;4. GraalVM에서 Java 코드 실행 방식&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM은 Java의 기본 실행 방식을 따르지만, &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통합하여 JIT 및 AOT 컴파일 성능을 향상시킵니다.&lt;/li&gt;
+&lt;li&gt;기존 JVM의 C2 컴파일러를 대체하여 &lt;strong&gt;최적화된 컴파일&lt;/strong&gt; 및 &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;을 지원합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;5. GraalVM 아키텍처&lt;/h2&gt;
+&lt;h3&gt;1. &lt;strong&gt;Java HotSpot VM&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM의 기반 계층으로, 다음을 제공합니다:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  - &lt;strong&gt;JIT 컴파일&lt;/strong&gt;
+  - &lt;strong&gt;가비지 컬렉션&lt;/strong&gt;
+  - &lt;strong&gt;스레드 관리&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAAgAPtFWpEuoJKOhsAgBABoJQBOmUABfHr3QCtwUAAD+8hLet41lcxyzBe8meeY+NE1QC31nt6XV07NURDgm9OGZgd3tBl5Fgj9jPDYO5ZEmpY6hiaxYd4AAAA==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/c35b1/IMG_1265.avif 158w,
+/static/2af60833174db70a53b2c33bb63a1159/2c8de/IMG_1265.avif 315w,
+/static/2af60833174db70a53b2c33bb63a1159/5d31c/IMG_1265.avif 630w,
+/static/2af60833174db70a53b2c33bb63a1159/ec170/IMG_1265.avif 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
+/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
+/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
+/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
+/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
+/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
+/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp&quot;
+            alt=&quot;graalvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;graalvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;2. &lt;strong&gt;GraalVM 컴파일러 계층&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;다중 언어 JIT 컴파일러&lt;/strong&gt;로, Java 및 기타 언어에 최적화된 컴파일을 제공합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;을 지원하여 네이티브 이미지를 생성합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3. &lt;strong&gt;언어 구현 프레임워크 계층&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM은 여러 프로그래밍 언어를 지원합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Truffle 프레임워크&lt;/strong&gt;와 &lt;strong&gt;LLVM 런타임&lt;/strong&gt;을 통해 다중 언어 런타임을 구축할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;6. AOT 컴파일&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일(Ahead-Of-Time Compilation)&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  - Java 애플리케이션을 런타임 이전에 네이티브 실행 파일로 변환.
+  - &lt;strong&gt;장점&lt;/strong&gt;:
+    - 빠른 시작 시간.
+    - 낮은 메모리 사용량.
+    - 런타임 공격 표면 감소로 보안 강화.
+  - Quarkus, Micronaut 같은 프레임워크에서 마이크로서비스를 최적화하는 데 사용됩니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;7. GraalVM vs JVM&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;기능&lt;/strong&gt;            &lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;                      &lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;기존 JVM&lt;/strong&gt;  &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;시작 시간&lt;/strong&gt;        &lt;/td&gt;
+&lt;td&gt;매우 빠름 (AOT 네이티브 이미지)&lt;/td&gt;
+&lt;td&gt;느림 (JIT 컴파일 필요)        &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;메모리 사용량&lt;/strong&gt;    &lt;/td&gt;
+&lt;td&gt;적음 (네이티브 이미지)           &lt;/td&gt;
+&lt;td&gt;많음                         &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;성능&lt;/strong&gt;            &lt;/td&gt;
+&lt;td&gt;향상된 컴파일러로 최적화&lt;/td&gt;
+&lt;td&gt;JIT로 최적화되었지만 GraalVM보다는 낮음&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;언어 지원&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;다중 언어 (Python, Ruby 등)      &lt;/td&gt;
+&lt;td&gt;Java 또는 JVM 언어 중심&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;애플리케이션 패키징&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;컴팩트한 네이티브 실행 파일&lt;/td&gt;
+&lt;td&gt;JVM 런타임 필요              &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;클라우드 지원&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;AWS Lambda 등 주요 플랫폼 지원   &lt;/td&gt;
+&lt;td&gt;제한적                       &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다&lt;/li&gt;
+&lt;li&gt;테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGeO/KdIqFEg2A//8QAGhABAAIDAQAAAAAAAAAAAAAAAwECAAQTFP/aAAgBAQABBQLaulX6tgzMjsKkP2XNS02Dz0WfEWGcFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAACAgMAAwAAAAAAAAAAAAAAAQIREjGRMjNC/9oACAEBAAY/AmotpHk+EL3RNKbSPZLonJ2zOV2z66Yx0f/EABsQAQACAwEBAAAAAAAAAAAAAAEAESExYRBR/9oACAEBAAE/IaRQNHmmDdlCBxwDyJQJ8scsG13Wmd4FLqfZ/9oADAMBAAIAAwAAABADCDz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAeEAEAAgEEAwAAAAAAAAAAAAABABEhMVFx8GGhsf/aAAgBAQABPxDdgkRxxM3b6lzVFsVmFkGUpoixn4h0ABS3VmxARF6beIt1fJkAil7ctz//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/c35b1/IMG_1263.avif 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/2c8de/IMG_1263.avif 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/5d31c/IMG_1263.avif 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/c9875/IMG_1263.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/81b7c/IMG_1263.webp 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/6ea66/IMG_1263.webp 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/8aab1/IMG_1263.webp 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/d00b9/IMG_1263.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/ff44c/IMG_1263.jpg 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/a6688/IMG_1263.jpg 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg 800w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg&quot;
+            alt=&quot;test&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;test&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;깨끗한 테스트의 특징&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;단순함 (Simple)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트 자체에 복잡한 로직이 없어야 합니다.&lt;/li&gt;
+&lt;li&gt;테스트는 실행 흐름을 쉽게 이해할 수 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;불필요한 데이터 숨기기 (Hides Irrelevant Data)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트의 핵심 목적과 관련 없는 데이터는 숨기거나 단순화해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AAA 구조 준수 (Follows the AAA Structure)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Arrange&lt;/strong&gt;: 테스트 준비(데이터와 상태 설정).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Act&lt;/strong&gt;: 테스트 대상 코드 실행.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assert&lt;/strong&gt;: 실행 결과 검증.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;테스트 간 독립성 유지 (Isolated)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;각 테스트는 다른 테스트와 완전히 독립적이어야 합니다.&lt;/li&gt;
+&lt;li&gt;외부 상태나 공유 리소스에 의존하지 않아야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;설명적인 이름 (Descriptive Test Name)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트 이름만 보고도 테스트의 목적과 동작을 명확히 알 수 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;의미 있는 검증 (Meaningful Assertions)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;검증은 테스트의 핵심 목적과 직결되어야 하며, 불필요한 검증을 피해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;F.I.R.S.T. 원칙 준수 (F.I.R.S.T. Principle)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: 테스트는 빠르게 실행되어야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: 다른 테스트와 독립적이어야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: 어디서 실행하든 항상 같은 결과를 반환해야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: 테스트 결과는 성공 또는 실패로 명확히 나타나야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: 테스트는 코드를 작성하기 전에 설계되어야 합니다(TDD).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;현실적이고 대표적인 데이터 사용 (Uses Realistic and Representative Data)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;실제 환경과 유사한 데이터를 사용하여 테스트 신뢰성을 높입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
+&lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
+&lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JPA]]></title><description><![CDATA[JDBC vs JPA Spring Data JPA의 작동 방식 JPA와 ORM에 대한 베스트 프렉티스 가이드 1. JDBC vs JPA Java에서 관계형 데이터베이스를 사용할 때, JDBC(Java Database Connectivity)와 JPA…]]></description><link>https://iol-lshh.github.io/java/JPA/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JPA/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;JDBC vs JPA&lt;/li&gt;
 &lt;li&gt;Spring Data JPA의 작동 방식&lt;/li&gt;
@@ -1061,36 +1319,49 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;ul&gt;
 &lt;li&gt;Java에서 관계형 데이터베이스를 사용할 때, &lt;strong&gt;JDBC&lt;/strong&gt;(Java Database Connectivity)와 &lt;strong&gt;JPA&lt;/strong&gt;(Java Persistence API)는 두 가지 대표적인 접근 방식입니다. 두 방식 모두 데이터 영속화를 목적으로 하지만, 작동 방식에는 큰 차이가 있습니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 627px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/362f5/img_jpajdbc.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 133.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe9NYUCVSFD/xAAYEAADAQEAAAAAAAAAAAAAAAAAAUEQIP/aAAgBAQABBQLplWU//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFBABAAAAAAAAAAAAAAAAAAAAMP/aAAgBAQAGPwJP/8QAHBAAAgICAwAAAAAAAAAAAAAAADEBURBBESAh/9oACAEBAAE/IbPXDrGzawqOKQL0/wD/2gAMAwEAAgADAAAAEAAAMP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABsQAQACAwEBAAAAAAAAAAAAAAERIQAxQRBx/9oACAEBAAE/EFmlpycUCEx6wmLpyATG8AtvET4BEpvmbCqN9wBUT74b/PP/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jpa&quot;
-        title=&quot;&quot;
-        src=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/362f5/img_jpajdbc.jpg&quot;
-        srcset=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/ff44c/img_jpajdbc.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/c35b1/img_jpajdbc.avif 158w,
+/static/ced8f0c3f49709aa6bae94ec9c74937e/2c8de/img_jpajdbc.avif 315w,
+/static/ced8f0c3f49709aa6bae94ec9c74937e/b7f6b/img_jpajdbc.avif 627w&quot;
+              sizes=&quot;(max-width: 627px) 100vw, 627px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/81b7c/img_jpajdbc.webp 158w,
+/static/ced8f0c3f49709aa6bae94ec9c74937e/6ea66/img_jpajdbc.webp 315w,
+/static/ced8f0c3f49709aa6bae94ec9c74937e/c4111/img_jpajdbc.webp 627w&quot;
+              sizes=&quot;(max-width: 627px) 100vw, 627px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/ff44c/img_jpajdbc.jpg 158w,
 /static/ced8f0c3f49709aa6bae94ec9c74937e/a6688/img_jpajdbc.jpg 315w,
 /static/ced8f0c3f49709aa6bae94ec9c74937e/362f5/img_jpajdbc.jpg 627w&quot;
-        sizes=&quot;(max-width: 627px) 100vw, 627px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 627px) 100vw, 627px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/ced8f0c3f49709aa6bae94ec9c74937e/362f5/img_jpajdbc.jpg&quot;
+            alt=&quot;jpa&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jpa&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;JDBC&lt;/strong&gt; (Java Database Connectivity)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;정의&lt;/strong&gt;: 관계형 데이터베이스와 직접 상호작용하기 위한 Java의 저수준 API.&lt;/li&gt;
@@ -1136,36 +1407,49 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;ul&gt;
 &lt;li&gt;Spring Data JPA는 기본적인 CRUD 작업을 위한 구현을 제공하여 JPA 저장소 생성을 간소화하는 프레임워크입니다. 이는 Java Persistence API(JPA)를 기반으로 하며, 관계형 데이터베이스의 데이터 접근 계층 개발을 단순화합니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 330px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/de40d240cd19c7e161cd80940db7e379/80fc7/img_jpa.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 164.55696202531647%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAhABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMEAgX/xAAWAQADAAAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAfW5jNL1EzcuNuKp0KppICwD/8QAHBABAAICAwEAAAAAAAAAAAAAAgADETEBECES/9oACAEBAAEFAn6se5lw+lWEUtuHa3KUlZ1xuf/EABgRAAIDAAAAAAAAAAAAAAAAAAEQEiAh/9oACAEDAQE/AZhZT//EABcRAAMBAAAAAAAAAAAAAAAAAAEQESD/2gAIAQIBAT8BpVx//8QAHRAAAQQCAwAAAAAAAAAAAAAAAQACEDEgIUFhcf/aAAgBAQAGPwK1cDxcTUvDhodY/wD/xAAdEAACAgMAAwAAAAAAAAAAAAAAAREhEDFBUWGB/9oACAEBAAE/IYI0lCoiV8I9HtVp0QmmlqbHj4IeOEIexcQhIVWJ4PTNeP/aAAwDAQACAAMAAAAQ/AhMAA//xAAaEQEBAAIDAAAAAAAAAAAAAAABERAhIHGx/9oACAEDAQE/EECbvRPcOwTh/8QAGBEAAgMAAAAAAAAAAAAAAAAAESEBECD/2gAIAQIBAT8QGgqhMf/EACEQAQACAgEDBQAAAAAAAAAAAAEAESExQRBhoZGxwfDx/9oACAEBAAE/EOIiVeNfscxxF7Vz8SnZHuQE3As0eZwmybH1YwkXIISu+Y7FBoUPftADkwR2IekOKBhLVb9iAGgJ4zPEen//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jpa&quot;
-        title=&quot;&quot;
-        src=&quot;/static/de40d240cd19c7e161cd80940db7e379/80fc7/img_jpa.jpg&quot;
-        srcset=&quot;/static/de40d240cd19c7e161cd80940db7e379/ff44c/img_jpa.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/de40d240cd19c7e161cd80940db7e379/c35b1/img_jpa.avif 158w,
+/static/de40d240cd19c7e161cd80940db7e379/2c8de/img_jpa.avif 315w,
+/static/de40d240cd19c7e161cd80940db7e379/26537/img_jpa.avif 330w&quot;
+              sizes=&quot;(max-width: 330px) 100vw, 330px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/de40d240cd19c7e161cd80940db7e379/81b7c/img_jpa.webp 158w,
+/static/de40d240cd19c7e161cd80940db7e379/6ea66/img_jpa.webp 315w,
+/static/de40d240cd19c7e161cd80940db7e379/f2908/img_jpa.webp 330w&quot;
+              sizes=&quot;(max-width: 330px) 100vw, 330px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/de40d240cd19c7e161cd80940db7e379/ff44c/img_jpa.jpg 158w,
 /static/de40d240cd19c7e161cd80940db7e379/a6688/img_jpa.jpg 315w,
 /static/de40d240cd19c7e161cd80940db7e379/80fc7/img_jpa.jpg 330w&quot;
-        sizes=&quot;(max-width: 330px) 100vw, 330px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 330px) 100vw, 330px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/de40d240cd19c7e161cd80940db7e379/80fc7/img_jpa.jpg&quot;
+            alt=&quot;jpa&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jpa&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;1. 엔티티 매핑&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;엔티티 클래스를 정의하고 &lt;code class=&quot;language-text&quot;&gt;@Entity&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@Table&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;@Column&lt;/code&gt; 등의 JPA 애너테이션을 사용해 매핑합니다.&lt;/li&gt;
@@ -1758,106 +2042,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다&lt;/li&gt;
-&lt;li&gt;테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGeO/KdIqFEg2A//8QAGhABAAIDAQAAAAAAAAAAAAAAAwECAAQTFP/aAAgBAQABBQLaulX6tgzMjsKkP2XNS02Dz0WfEWGcFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAACAgMAAwAAAAAAAAAAAAAAAQIREjGRMjNC/9oACAEBAAY/AmotpHk+EL3RNKbSPZLonJ2zOV2z66Yx0f/EABsQAQACAwEBAAAAAAAAAAAAAAEAESExYRBR/9oACAEBAAE/IaRQNHmmDdlCBxwDyJQJ8scsG13Wmd4FLqfZ/9oADAMBAAIAAwAAABADCDz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAeEAEAAgEEAwAAAAAAAAAAAAABABEhMVFx8GGhsf/aAAgBAQABPxDdgkRxxM3b6lzVFsVmFkGUpoixn4h0ABS3VmxARF6beIt1fJkAil7ctz//2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;&quot;
-        src=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg&quot;
-        srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/ff44c/IMG_1263.jpg 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/a6688/IMG_1263.jpg 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;깨끗한 테스트의 특징&lt;/strong&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;단순함 (Simple)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트 자체에 복잡한 로직이 없어야 합니다.&lt;/li&gt;
-&lt;li&gt;테스트는 실행 흐름을 쉽게 이해할 수 있어야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;불필요한 데이터 숨기기 (Hides Irrelevant Data)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트의 핵심 목적과 관련 없는 데이터는 숨기거나 단순화해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;AAA 구조 준수 (Follows the AAA Structure)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Arrange&lt;/strong&gt;: 테스트 준비(데이터와 상태 설정).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Act&lt;/strong&gt;: 테스트 대상 코드 실행.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Assert&lt;/strong&gt;: 실행 결과 검증.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;테스트 간 독립성 유지 (Isolated)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;각 테스트는 다른 테스트와 완전히 독립적이어야 합니다.&lt;/li&gt;
-&lt;li&gt;외부 상태나 공유 리소스에 의존하지 않아야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;설명적인 이름 (Descriptive Test Name)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트 이름만 보고도 테스트의 목적과 동작을 명확히 알 수 있어야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;의미 있는 검증 (Meaningful Assertions)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;검증은 테스트의 핵심 목적과 직결되어야 하며, 불필요한 검증을 피해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;F.I.R.S.T. 원칙 준수 (F.I.R.S.T. Principle)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: 테스트는 빠르게 실행되어야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: 다른 테스트와 독립적이어야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: 어디서 실행하든 항상 같은 결과를 반환해야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: 테스트 결과는 성공 또는 실패로 명확히 나타나야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: 테스트는 코드를 작성하기 전에 설계되어야 합니다(TDD).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;현실적이고 대표적인 데이터 사용 (Uses Realistic and Representative Data)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;실제 환경과 유사한 데이터를 사용하여 테스트 신뢰성을 높입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
-&lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
-&lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성
@@ -1916,33 +2101,47 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/c1b63/dip_ioc.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 125.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAAsTAAALEwEAmpwYAAADiElEQVR42pVU2XajRhDV/39DXvKch8zzzEniWY4jeZnx2LIkQCC2Zm0aemPpBjQF2FkUv6SODqoGbi33VrE6/08bx/Evf3XxzAiy661zZ4bfnPjODL7a0a0R3B68pyPz02H898sriNS2nVIark3bxrh0wnhvu36Cg6xMiiolNCsZykWMBWMsTVPGWdM0AATwuSR5gpwYnUgWllx+MpL3D+5nI06p/GKlv2/DazvPSQVv+c7uaHx37W2RJwCcwASnAE7QiZcJEfX7LXq3MT4ZWUqbD8/o17VxZeZRhkuCeQVpPEpSRsthGFd939d1DVeMCylr6ESrjuB86OFfsaqUgsNNSiswcMIoqduubhqAvIDhLjgFKXJKvARZnnOKgmiubSGJcxZn+S/3/k+/bX/+YtlxAcSvhmHgnAMBEIIL4aHgeDp6oeejIC/ytgUSW6VaITgpKysiOz87IJyXFYi2WqSDEJC51xqOTlJt9v4dKGQEfz47N0bwaMkQq/9qPoEVCKV1PxsEwpR7Welj6ufwqwJMw7wuWAfWdLpRvZptAkPOxQP4eRxiwtY7F9SeKxrOc8tS8rkyjcxNcnoYxhECAXAaEv5qVVm6YTRli1PgllJWUS6bTkgphABecGxXeQAOY3QZkhGGJsvSWY/JwMnSdBGmiMzoeAtQhNAUXkjGBSEFHF/AwLPWChzVtVopKFDWrJYCmGAFksSvazlxDj3XEiLIuZCp7E4Pd4a/fraB3gcn2exO36xo73S8Heaez4jIGyP8aqHP348BZsBE3w/Lbq3A8XPm5dSNiZuU4CBSx2Xf6pcVKmV7CLGFCh8z3vWXUi1rGm4fU9t6c4HDJAMKhznbnHN8Bc+3mtmgeRgoOE4VT5MDb47AQhEhHAa6U9DnZWYuGlG3y5lTJoUEB5TERcEYB9p9y/RNA1YD9hnkAM5eetYtPT1+wM66aXhQZWbsPjn7kGIc7537d7IMabH37Y/u8YoWh5qjwP7oGFdJsOmaagIT/z6116qTGScm7EUaoCrrFCwKqcpCq4ZXBavweVCgFM6jWtJew5dkWM0dnoHnICUoJacgmeb01aBtN0Fb1zqEpyPy266bZRr/7hlW7vqA/nhyr7betRnD9P+TFdHWmJNCEqHFG1t1YY0eWqWn/QRTGhiGYVHyzPPz2+BFu+XTukuZnZAGPj9CALcgHy81DnvrRl+AfwAgqIgDpFvZKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;dip ioc&quot;
-        title=&quot;&quot;
-        src=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/f058b/dip_ioc.png&quot;
-        srcset=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/c26ae/dip_ioc.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/c35b1/dip_ioc.avif 158w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/2c8de/dip_ioc.avif 315w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/5d31c/dip_ioc.avif 630w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/59707/dip_ioc.avif 945w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/07e28/dip_ioc.avif 1200w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/81b7c/dip_ioc.webp 158w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/6ea66/dip_ioc.webp 315w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/8aab1/dip_ioc.webp 630w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/a70f5/dip_ioc.webp 945w,
+/static/a96f8ef0829c9c9c4164816fcddeacd0/92f8c/dip_ioc.webp 1200w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/c26ae/dip_ioc.png 158w,
 /static/a96f8ef0829c9c9c4164816fcddeacd0/6bdcf/dip_ioc.png 315w,
 /static/a96f8ef0829c9c9c4164816fcddeacd0/f058b/dip_ioc.png 630w,
 /static/a96f8ef0829c9c9c4164816fcddeacd0/40601/dip_ioc.png 945w,
 /static/a96f8ef0829c9c9c4164816fcddeacd0/c1b63/dip_ioc.png 1200w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a96f8ef0829c9c9c4164816fcddeacd0/f058b/dip_ioc.png&quot;
+            alt=&quot;dip ioc&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;4.1.4 컨테이너 구현&lt;/h3&gt;
 &lt;h4&gt;4.1.4.1. BeanFactory&lt;/h4&gt;
@@ -2196,33 +2395,47 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/36c33/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 26.58227848101266%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAtUlEQVR42mWP2w6EIAxE+f9f9EEjouLdeEPUzGaadONmH05aCsx0TN/3UOq6RtM0CCHgOA6pb87z/Ju9iTHC5HmOJEkwjiPmeZaeosR7/0NZlgKNFb2z1mIYBhiqUowbPc8D5xyyLBNoNk0Ttm3Duq5iuCyL9DpjJRTb9x2GYox737dEomCapiiKQrahIE15x6q9nq/rkr+ECxl+4Lp05pAxKNS2rUSpqkrQeF3Xfc98o2Iq/AHrkny8o7S/GQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;       &quot;
-        title=&quot;&quot;
-        src=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/f058b/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png&quot;
-        srcset=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/c26ae/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/c35b1/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.avif 158w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/2c8de/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.avif 315w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/5d31c/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.avif 630w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/59707/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.avif 945w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/c82bd/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.avif 946w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/81b7c/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.webp 158w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/6ea66/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.webp 315w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/8aab1/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.webp 630w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/a70f5/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.webp 945w,
+/static/e2863a2e58e7d6ec0e4dafbcce8d606d/30833/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.webp 946w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/c26ae/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png 158w,
 /static/e2863a2e58e7d6ec0e4dafbcce8d606d/6bdcf/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png 315w,
 /static/e2863a2e58e7d6ec0e4dafbcce8d606d/f058b/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png 630w,
 /static/e2863a2e58e7d6ec0e4dafbcce8d606d/40601/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png 945w,
 /static/e2863a2e58e7d6ec0e4dafbcce8d606d/36c33/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png 946w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e2863a2e58e7d6ec0e4dafbcce8d606d/f058b/%EC%84%B8%EA%B0%80%EC%A7%80%EC%A3%BC%EC%9A%94%EA%B3%84%EC%B8%B5.png&quot;
+            alt=&quot;       &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/Pasted%20image%2020250119160116.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -2241,33 +2454,47 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/7388e/mvc2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 81.0126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAADnElEQVR42n2Sa1DUVRjGN2k0LqLDl6amD+kC6dAHYwxkBCECQ8YbIGYzSUyAY6zmFAasoDCwa6IY0TiNDaY1NskaNwGLW7CwcgncVgQGBcJqhBDLALOQ/e//19n972Ro05l55nnPc97znPec96i+aPiJd070knGyj5wzA0z+eg+YY2BwgqzibtIKO8k42kNiSQ3RVR+xteITNlQWk1BSx9sfDAj0s09wc89v2Icq5ZgZ/5QWglKNBO1po7/vJvfHxngzvZ6XdlYSlVzFxoRvUOfn8lh1GOqGRFwuhrFcV0iIxsQL+8vx21dGqPZrRsb+QLW32EJ0egev5XUT+a6J0fG7WIaniHyvk/h8M/F5ZrbnWdiUbyTqWBXBuRWsyTWwPs2EX8EJnjLGscq0i8fPvspZ47Aw/NBCZFo7MdldRAjDH8bu8t3g70RndJB4xMwb75tJFNihbyfueCNrtTWs0V4gYr+JgBwDvqdyWP1ZAU8fzefzplFUmqLvWZXUTOBuI2vFlYcGx5kevsGO1AtsSPiKzcllxO2sYaXuMF7fbmVlcxLPtG5DXVjAeo2Z8L0drEttJyy1A8vQFKqhn2do6Jmg6fIt2vtuM3tfcjxurekmcdpLxGSa2JbeRbjewItn9ASfPs7q03rC9KXECn2Lto1NGSZKqkeUpvAfQ5ZlB9+xwZgVxsUZE3MCf8HH9ZOMTklMSsqaHbdFnqxsRGWzyUj/Ak4z2XIFdHmQlQnZB+Cg1oHBBA1Wbboyz84SEJx7CLmlxWE6v0KbTeGrV8HLC9nFBdnO7u7IbgKLngAPe+yG7OmJ7Ooq4ObIY8ECqK5+yFBS3o/6OnGUWFqyBKJegZBgCA2FwEBkf3+IjYWAAKGHQGQkLF6s5BcVPWTovK69UptOh7TiOST1ciRv9T/857PLhO6raL4+SD7eCmtSYWbm/5uCvWCrEyKWZm2U195AnpUVbc4J6cG+RwxlpV/03hnhyFAZh66f4+C1LwWXkj14juRLn4q50IRu13KuG9ANnaf1Vu+j38YmK03pn/6RJy++jsoQztKqGJZWb8e9MgaPqlg8amJwrdyCp4gXCV5YsRHV+ZdZKOLaX7rnG0pOw7qJyyIpAlV5NCsad7O5M4+wtkyCjGlEmLIIbztASGs68V2H8Wt8C5XdtHQdRcOVqKxWq2iu5Lzug0r11ww836TBuz6FZXVJqOuTBVLmwadhlwMrhemeKyeZnrvH33Wqu8CtmAIeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;mvc2&quot;
-        title=&quot;&quot;
-        src=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/f058b/mvc2.png&quot;
-        srcset=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/c26ae/mvc2.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/c35b1/mvc2.avif 158w,
+/static/e52cc9957665c3e28cf90cf973e10a71/2c8de/mvc2.avif 315w,
+/static/e52cc9957665c3e28cf90cf973e10a71/5d31c/mvc2.avif 630w,
+/static/e52cc9957665c3e28cf90cf973e10a71/59707/mvc2.avif 945w,
+/static/e52cc9957665c3e28cf90cf973e10a71/3b501/mvc2.avif 1104w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/81b7c/mvc2.webp 158w,
+/static/e52cc9957665c3e28cf90cf973e10a71/6ea66/mvc2.webp 315w,
+/static/e52cc9957665c3e28cf90cf973e10a71/8aab1/mvc2.webp 630w,
+/static/e52cc9957665c3e28cf90cf973e10a71/a70f5/mvc2.webp 945w,
+/static/e52cc9957665c3e28cf90cf973e10a71/ff749/mvc2.webp 1104w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/c26ae/mvc2.png 158w,
 /static/e52cc9957665c3e28cf90cf973e10a71/6bdcf/mvc2.png 315w,
 /static/e52cc9957665c3e28cf90cf973e10a71/f058b/mvc2.png 630w,
 /static/e52cc9957665c3e28cf90cf973e10a71/40601/mvc2.png 945w,
 /static/e52cc9957665c3e28cf90cf973e10a71/7388e/mvc2.png 1104w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e52cc9957665c3e28cf90cf973e10a71/f058b/mvc2.png&quot;
+            alt=&quot;mvc2&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h3&gt;3.2.2. 3계층 아키텍처&lt;/h3&gt;
 &lt;ul&gt;
@@ -2285,32 +2512,44 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/9a86a/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABMklEQVR42oVSiY6FMAj0/z90PV61ag9tq7IMG4xxdZeEtKUwDEdFF9m2jWKMosuyUAiBjuOglBJ578Wm/7A/SXV9lJwpc7CbZxrHkdZ1pX3fBbDvexqtpa5taeb/V0AEaXbnHE0MNAwDBdiYSSmFEvvgrTbE/AmojKDIXtdfAh5jEHDYwfDTdScQTsRmVMWq9+opCz4mBs7MTgN+yjZygnUInjwnRbK2aciYjwIev+gjwNpBAKZpkj5iYBhSSivfiwAHH6Qi52Zp2TvDkiUzwDAIAME58olAgEHPAbKPtuG1ZABa7p8xhhwPAz2yHHivRrfgcW1UEIxdUwEIFGwAcAdEi05AGLRHegdDOMF2tcN2Z4j3zj4nIJqKUhqeFFaj49Vo6ppaXmDYsDb4xxv9+0++AQQAXLtv6UYkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;        &quot;
-        title=&quot;&quot;
-        src=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/f058b/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png&quot;
-        srcset=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/c26ae/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/c35b1/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.avif 158w,
+/static/5a89169af43f589ceaa542cd2f6ea640/2c8de/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.avif 315w,
+/static/5a89169af43f589ceaa542cd2f6ea640/5d31c/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.avif 630w,
+/static/5a89169af43f589ceaa542cd2f6ea640/9983d/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.avif 792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/81b7c/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.webp 158w,
+/static/5a89169af43f589ceaa542cd2f6ea640/6ea66/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.webp 315w,
+/static/5a89169af43f589ceaa542cd2f6ea640/8aab1/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.webp 630w,
+/static/5a89169af43f589ceaa542cd2f6ea640/22975/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.webp 792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/c26ae/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png 158w,
 /static/5a89169af43f589ceaa542cd2f6ea640/6bdcf/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png 315w,
 /static/5a89169af43f589ceaa542cd2f6ea640/f058b/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png 630w,
 /static/5a89169af43f589ceaa542cd2f6ea640/9a86a/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png 792w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5a89169af43f589ceaa542cd2f6ea640/f058b/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.png&quot;
+            alt=&quot;        &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;3.3.2. 도메인 모델&lt;/h3&gt;
@@ -2323,32 +2562,44 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/c1328/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 49.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA/klEQVR42oVSgRKDIAj1/790WbOstMyK8Zh0bVcbd5wg8ICnhorkZaElJco5v8/ir9/+uh55V2IEDEUoYI0xih/GkbZto77vJTGEIEC+ayUnsX0LiEIFnTj5DDwMA2WeCoCI+a77DTjyJM451ie51h2TogDnPM/SELLvu9ypfQmYuCCGSPM0kfdegFtp4KiuLVWPh6yPOMBhn0HRTE+oOaMLd7yainIIxaodq7WVAAMEq8PGlmr/BcREKgBBHADYZmR+MS0a4R71BknKBy7QRYuh6h8clsfQeNKvVLj/mFB5+J76LMrfnRh8C4xfW36AqmKO3mfTNIUze/tFrgBf0boQ/SqHHA4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;     &quot;
-        title=&quot;&quot;
-        src=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/f058b/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png&quot;
-        srcset=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/c26ae/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/c35b1/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.avif 158w,
+/static/1d090a930e57f2ee2bed365fe6ae9942/2c8de/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.avif 315w,
+/static/1d090a930e57f2ee2bed365fe6ae9942/5d31c/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.avif 630w,
+/static/1d090a930e57f2ee2bed365fe6ae9942/95443/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.avif 866w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/81b7c/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.webp 158w,
+/static/1d090a930e57f2ee2bed365fe6ae9942/6ea66/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.webp 315w,
+/static/1d090a930e57f2ee2bed365fe6ae9942/8aab1/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.webp 630w,
+/static/1d090a930e57f2ee2bed365fe6ae9942/e299d/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.webp 866w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/c26ae/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png 158w,
 /static/1d090a930e57f2ee2bed365fe6ae9942/6bdcf/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png 315w,
 /static/1d090a930e57f2ee2bed365fe6ae9942/f058b/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png 630w,
 /static/1d090a930e57f2ee2bed365fe6ae9942/c1328/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png 866w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/1d090a930e57f2ee2bed365fe6ae9942/f058b/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%AA%A8%EB%8D%B8.png&quot;
+            alt=&quot;     &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;3.3.3. 테이블 모듈&lt;/h3&gt;
@@ -2368,63 +2619,87 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6029972c19d22229b8a45c5ab17c104c/c1328/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABF0lEQVR42pWSCZKEIAxFvf9FW0URd1Yz+WmxKHuZmVRFFuHlk6QiOmieJuo6RbrvaZ5nijHKGEIg5xz9x6qUklzy3osDjnHbNgGH4OUg5jib/SNwWRYax5GMMayyI9W2VD8eonbi/YkDTGcQeA7+CVrhcxzH5TAcHjkAQMaMpHUvCqF6XVfyZyqctc8g53gB7wawGQZSSlHLirXWsobijYGAIlhkMP5ZhiPfuPcWCIVIAZ49MEjmfLHntffPIuXn7/su/lVhSlFUWLsTcpzTgSfDERApyMXLqfoCTFfblG45V+58HhxAqH8BlkWBIzqU3S23zn3vV4Wwdw39JyCqhT5s6pqappHKYkQRsI+iZEh5seyIsg9/AB/uX8KdhQC3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;     &quot;
-        title=&quot;&quot;
-        src=&quot;/static/6029972c19d22229b8a45c5ab17c104c/f058b/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png&quot;
-        srcset=&quot;/static/6029972c19d22229b8a45c5ab17c104c/c26ae/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6029972c19d22229b8a45c5ab17c104c/c35b1/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.avif 158w,
+/static/6029972c19d22229b8a45c5ab17c104c/2c8de/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.avif 315w,
+/static/6029972c19d22229b8a45c5ab17c104c/5d31c/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.avif 630w,
+/static/6029972c19d22229b8a45c5ab17c104c/95443/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.avif 866w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/6029972c19d22229b8a45c5ab17c104c/81b7c/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.webp 158w,
+/static/6029972c19d22229b8a45c5ab17c104c/6ea66/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.webp 315w,
+/static/6029972c19d22229b8a45c5ab17c104c/8aab1/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.webp 630w,
+/static/6029972c19d22229b8a45c5ab17c104c/e299d/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.webp 866w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6029972c19d22229b8a45c5ab17c104c/c26ae/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png 158w,
 /static/6029972c19d22229b8a45c5ab17c104c/6bdcf/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png 315w,
 /static/6029972c19d22229b8a45c5ab17c104c/f058b/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png 630w,
 /static/6029972c19d22229b8a45c5ab17c104c/c1328/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png 866w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6029972c19d22229b8a45c5ab17c104c/f058b/%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%A8%EB%93%88.png&quot;
+            alt=&quot;     &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/160a3/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 79.74683544303798%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAABZElEQVR42pWTiXKDMAxE+f9/JE0zkwOahBuCOVQ/NUqddkipZzw2trSsVutI7mMcR5nnWdaMaZoWYyPb3LpuNWDnYwG1EeZ9A95ui4DO9QrinJPex3Vt+4gdhkHnvwCLopCPNJXSr2mSKKiNuq6lLEupq0plWwUYlhbGwaz1bAHMsky/VwOiWdM0ysLAYUfeU8kEcNC9aIoxIxZgtIRV7lklp5OkXg7OFBCqidel8hosMYOJsen7XldK/bofnywXsfmpDSAEwTrPMy3VvGfnlrfoQ7MFfqSLTFiH+nDfBpZ5aWySjSVs2Jt5TWPK/csJv7o8DE71AsR5AEwMWNjdVYAVXctz1UtfhAcLn9faEdlf6Tb6WCdVT7/nlWCRwv+M1boMayY5ZhkFtLfIRXsvzxJgHMexvG+38rbZyG63ewDAPpwPQBhcr1e5XC5q0P1+L+fzWb15OBz0/Hg8agXsuYfpkp6fSVfqNrIqGQAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;           &quot;
-        title=&quot;&quot;
-        src=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/f058b/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png&quot;
-        srcset=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/c26ae/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/c35b1/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.avif 158w,
+/static/19453bb3369196edefbb73e7fbab2fcc/2c8de/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.avif 315w,
+/static/19453bb3369196edefbb73e7fbab2fcc/5d31c/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.avif 630w,
+/static/19453bb3369196edefbb73e7fbab2fcc/95314/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.avif 682w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/81b7c/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.webp 158w,
+/static/19453bb3369196edefbb73e7fbab2fcc/6ea66/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.webp 315w,
+/static/19453bb3369196edefbb73e7fbab2fcc/8aab1/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.webp 630w,
+/static/19453bb3369196edefbb73e7fbab2fcc/57e27/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.webp 682w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/c26ae/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png 158w,
 /static/19453bb3369196edefbb73e7fbab2fcc/6bdcf/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png 315w,
 /static/19453bb3369196edefbb73e7fbab2fcc/f058b/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png 630w,
 /static/19453bb3369196edefbb73e7fbab2fcc/160a3/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png 682w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/19453bb3369196edefbb73e7fbab2fcc/f058b/%EB%8F%84%EB%A9%94%EC%9D%B8%EB%85%BC%EB%A6%AC%EB%B3%B5%EC%9E%A1%EB%8F%84%EA%B7%B8%EB%9E%98%ED%94%84.png&quot;
+            alt=&quot;           &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;3.4. 클린 아키텍처와 헥사고날 아키텍처&lt;/h2&gt;
@@ -2436,37 +2711,52 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;ul&gt;
 &lt;li&gt;도메인 중심 설계와 유사하며, 애플리케이션의 입력/출력을 명확히 정의.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/cc5e0/IMG_1257.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 73.41772151898735%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHSeNCaCjX/xAAZEAADAQEBAAAAAAAAAAAAAAAAAQIhEDH/2gAIAQEAAQUCdMT48Jwnz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAMBAQEBAAAAAAAAAAAAAAABIRExQaH/2gAIAQEAAT8hY58F5UbvIV635CNb007P/9oADAMBAAIAAwAAABAMD//EABcRAAMBAAAAAAAAAAAAAAAAAAABQVH/2gAIAQMBAT8QU2jP/8QAGBEAAgMAAAAAAAAAAAAAAAAAAREQITH/2gAIAQIBAT8Qtl5H/8QAGxABAAMBAQEBAAAAAAAAAAAAAQARITFRYUH/2gAIAQEAAT8Q4PO149ZeaJxP0j2CGXKhOGhn2ABSsAeH2MSldtZ//9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;layered&quot;
-        title=&quot;&quot;
-        src=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/828fb/IMG_1257.jpg&quot;
-        srcset=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/ff44c/IMG_1257.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/c35b1/IMG_1257.avif 158w,
+/static/aba244decf5dc8dfb1ffd58c5bec6953/2c8de/IMG_1257.avif 315w,
+/static/aba244decf5dc8dfb1ffd58c5bec6953/5d31c/IMG_1257.avif 630w,
+/static/aba244decf5dc8dfb1ffd58c5bec6953/41704/IMG_1257.avif 772w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/81b7c/IMG_1257.webp 158w,
+/static/aba244decf5dc8dfb1ffd58c5bec6953/6ea66/IMG_1257.webp 315w,
+/static/aba244decf5dc8dfb1ffd58c5bec6953/8aab1/IMG_1257.webp 630w,
+/static/aba244decf5dc8dfb1ffd58c5bec6953/ca172/IMG_1257.webp 772w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/ff44c/IMG_1257.jpg 158w,
 /static/aba244decf5dc8dfb1ffd58c5bec6953/a6688/IMG_1257.jpg 315w,
 /static/aba244decf5dc8dfb1ffd58c5bec6953/828fb/IMG_1257.jpg 630w,
 /static/aba244decf5dc8dfb1ffd58c5bec6953/cc5e0/IMG_1257.jpg 772w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2. Java API]]></title><description><![CDATA[2.1. 타입 2.1.1. 원시 타입 (Primitive Types) **원시 타입(Primitive Types)**은 자바에서 객체가 아닌 가장 기본적인 데이터 유형입니다. 언어에 의해 미리 정의된…]]></description><link>https://iol-lshh.github.io/java/basic_java/2_Java_API/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/2_Java_API/</guid><pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;2.1. 타입&lt;/h2&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/aba244decf5dc8dfb1ffd58c5bec6953/828fb/IMG_1257.jpg&quot;
+            alt=&quot;layered&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;layered&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2. Java API]]></title><description><![CDATA[2.1. 타입 2.1.1. 원시 타입 (Primitive Types) **원시 타입(Primitive Types)**은 자바에서 객체가 아닌 가장 기본적인 데이터 유형입니다. 언어에 의해 미리 정의된…]]></description><link>https://iol-lshh.github.io/java/basic_java/2_Java_API/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/2_Java_API/</guid><pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;2.1. 타입&lt;/h2&gt;
 &lt;h3&gt;2.1.1. 원시 타입 (Primitive Types)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;**원시 타입(Primitive Types)**은 자바에서 객체가 아닌 가장 기본적인 데이터 유형입니다.&lt;/li&gt;
@@ -2564,37 +2854,52 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;&lt;strong&gt;언박싱(Unboxing)&lt;/strong&gt;: 래퍼 클래스를 다시 기본 타입으로 변환하는 과정.&lt;/li&gt;
 &lt;li&gt;객체의 유연성이 필요한 경우가 아니라면, 성능을 위해 기본 타입을 사용하는 것이 권장됩니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/712de/IMG_1267.webp&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 44.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAwAwCdASoUAAkAPtFWo0uoJKMhsAgBABoJaQAAXBt2PLqQAP7sKHZY6pZBhvkwUQAAAA==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;boxing&quot;
-        title=&quot;&quot;
-        src=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/8aab1/IMG_1267.webp&quot;
-        srcset=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/81b7c/IMG_1267.webp 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/c35b1/IMG_1267.avif 158w,
+/static/a10f0b4fdfe046898551af32fdea2c03/2c8de/IMG_1267.avif 315w,
+/static/a10f0b4fdfe046898551af32fdea2c03/5d31c/IMG_1267.avif 630w,
+/static/a10f0b4fdfe046898551af32fdea2c03/ec170/IMG_1267.avif 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/81b7c/IMG_1267.webp 158w,
 /static/a10f0b4fdfe046898551af32fdea2c03/6ea66/IMG_1267.webp 315w,
 /static/a10f0b4fdfe046898551af32fdea2c03/8aab1/IMG_1267.webp 630w,
 /static/a10f0b4fdfe046898551af32fdea2c03/712de/IMG_1267.webp 828w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/81b7c/IMG_1267.webp 158w,
+/static/a10f0b4fdfe046898551af32fdea2c03/6ea66/IMG_1267.webp 315w,
+/static/a10f0b4fdfe046898551af32fdea2c03/8aab1/IMG_1267.webp 630w,
+/static/a10f0b4fdfe046898551af32fdea2c03/712de/IMG_1267.webp 828w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a10f0b4fdfe046898551af32fdea2c03/8aab1/IMG_1267.webp&quot;
+            alt=&quot;boxing&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;boxing&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;박싱시, 캐싱에 주의하세요&lt;/li&gt;
 &lt;/ul&gt;
@@ -3160,37 +3465,52 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/477af8c28fd25b13dcb2804b238907f0/4b190/IMG_1258.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 166.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAhABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMFBgEC/8QAGAEBAAMBAAAAAAAAAAAAAAAAAAECAwT/2gAMAwEAAhADEAAAAZ/Vj3RVrVJBJQ1aBl2zVZsojHXP/8QAHxAAAQIGAwAAAAAAAAAAAAAAAQADAgQRMTNCFCJB/9oACAEBAAEFAhK0JlaLhFem4ts72EJAh2dyrZ3IV//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BX//EABsRAAIBBQAAAAAAAAAAAAAAAAACEwMQEjFh/9oACAECAQE/AZWJnETMg6Ud2//EACEQAAAFAgcAAAAAAAAAAAAAAAABAhAREiEgMnFygZGh/9oACAEBAAY/AqZSfAmU9DP5hiwK5MvV17m//8QAHxAAAgMAAgIDAAAAAAAAAAAAAAERITFBUWGBcaHR/9oACAEBAAE/IWXo7sMSTPf9JOA9ZkaJTROOvycXFRoq1LxuBEQQuxrPLsZWdx7hx+D7o0f/2gAMAwEAAgADAAAAEJ/WvQwv/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREEH/2gAIAQMBAT8QKK8cZBZ//8QAGREBAQADAQAAAAAAAAAAAAAAAQARMWHx/9oACAECAQE/EOt0hSLY+LfF/8QAIBABAAICAgEFAAAAAAAAAAAAAQARIWExQVFxkaHB8P/aAAgBAQABPxACgVF3HvDY4owEZSHfV8fMbsaHmrjAkASuncYBdp5j1dGZZu+KgiwAXBc7ihoJXTEyHVlGuCATDXuHL61GD9nzOD0n/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;solid&quot;
-        title=&quot;&quot;
-        src=&quot;/static/477af8c28fd25b13dcb2804b238907f0/828fb/IMG_1258.jpg&quot;
-        srcset=&quot;/static/477af8c28fd25b13dcb2804b238907f0/ff44c/IMG_1258.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/477af8c28fd25b13dcb2804b238907f0/c35b1/IMG_1258.avif 158w,
+/static/477af8c28fd25b13dcb2804b238907f0/2c8de/IMG_1258.avif 315w,
+/static/477af8c28fd25b13dcb2804b238907f0/5d31c/IMG_1258.avif 630w,
+/static/477af8c28fd25b13dcb2804b238907f0/c9875/IMG_1258.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/477af8c28fd25b13dcb2804b238907f0/81b7c/IMG_1258.webp 158w,
+/static/477af8c28fd25b13dcb2804b238907f0/6ea66/IMG_1258.webp 315w,
+/static/477af8c28fd25b13dcb2804b238907f0/8aab1/IMG_1258.webp 630w,
+/static/477af8c28fd25b13dcb2804b238907f0/d00b9/IMG_1258.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/477af8c28fd25b13dcb2804b238907f0/ff44c/IMG_1258.jpg 158w,
 /static/477af8c28fd25b13dcb2804b238907f0/a6688/IMG_1258.jpg 315w,
 /static/477af8c28fd25b13dcb2804b238907f0/828fb/IMG_1258.jpg 630w,
 /static/477af8c28fd25b13dcb2804b238907f0/4b190/IMG_1258.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/477af8c28fd25b13dcb2804b238907f0/828fb/IMG_1258.jpg&quot;
+            alt=&quot;solid&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;solid&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h4&gt;2.4.2.1. 단일 책임 원칙 (Single Responsibility Principle, SRP)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&quot;클래스는 변경의 이유가 하나뿐이어야 한다.&quot;&lt;/strong&gt;&lt;/li&gt;
@@ -3336,37 +3656,52 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/90bc6238564481954184605ece47bc15/712de/IMG_1264.webp&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBQCdASoUAA4APtFWpkuoJKOhsAgBABoJaACdMoRwJoM4E//pf8B8R2jILU3r/++iYIAA/up8bzg6FBfgUN1ig7kKAyezayGrnz2YG21QQ3k3BECHN7LA7BZNZ7H5VvPIvG20quhf7TDTkMdINr9a3WbAmPAA&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/90bc6238564481954184605ece47bc15/8aab1/IMG_1264.webp&quot;
-        srcset=&quot;/static/90bc6238564481954184605ece47bc15/81b7c/IMG_1264.webp 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/90bc6238564481954184605ece47bc15/c35b1/IMG_1264.avif 158w,
+/static/90bc6238564481954184605ece47bc15/2c8de/IMG_1264.avif 315w,
+/static/90bc6238564481954184605ece47bc15/5d31c/IMG_1264.avif 630w,
+/static/90bc6238564481954184605ece47bc15/ec170/IMG_1264.avif 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/90bc6238564481954184605ece47bc15/81b7c/IMG_1264.webp 158w,
 /static/90bc6238564481954184605ece47bc15/6ea66/IMG_1264.webp 315w,
 /static/90bc6238564481954184605ece47bc15/8aab1/IMG_1264.webp 630w,
 /static/90bc6238564481954184605ece47bc15/712de/IMG_1264.webp 828w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/90bc6238564481954184605ece47bc15/81b7c/IMG_1264.webp 158w,
+/static/90bc6238564481954184605ece47bc15/6ea66/IMG_1264.webp 315w,
+/static/90bc6238564481954184605ece47bc15/8aab1/IMG_1264.webp 630w,
+/static/90bc6238564481954184605ece47bc15/712de/IMG_1264.webp 828w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/90bc6238564481954184605ece47bc15/8aab1/IMG_1264.webp&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;1.2. JVM 아키텍처&lt;/h2&gt;
 &lt;ul&gt;
@@ -3374,67 +3709,95 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.java&lt;/code&gt; 파일을 컴파일하여 생성된 바이트코드(&lt;code class=&quot;language-text&quot;&gt;.class&lt;/code&gt; 파일)를 기계어로 변환&lt;/li&gt;
 &lt;li&gt;JVM은 **Java Runtime Environment (JRE)**의 일부&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 422px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 28.48101265822785%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaklEQVR42mOITchITMm+cuXq//////79++/vHyDj0bGdOwoCthcGXZ7X9v/Pb6DIn98gcvLevaqVlVbt7bp1dbFz5jAYmzlq6pg5ung+fvwErujW9uWLPeSX+mtuCdW5tagLKPL7D8jQqnXrGKKjubKyGBISLFtbGVzcA3wDItW0TJetWAtS9OkTkLy9c+WqcKNNaS4bk53Wx1l9uX/7z9t3/7//qF67ViA316Wnx6S52bm7mwHo7JT0PCNT+yXLVv3+/u3NlcvPX77ZPrVtQ6zl7qrYzRnu6xLsnp46/u7GrVdnziRPmsSZne3V16dQVmbX2clgYe3m4Oyrpg20eQ3Qzh8/fwDJyxsWLPFQAFq+zE99VZjBh5tXf7x4+f/Zs5L58xliYsQKChgSE81bWhiCw+IiY5K9fMO279gNcvavX0DywaGtm9Jdt+X6bc3x3lEc8u3ty7//QaBv1y7pkhK9+nrlysqwGTMAsIbbhVXk6x0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png&quot;
-        srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/c26ae/IMG_1249.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/c35b1/IMG_1249.avif 158w,
+/static/dce7088f79788419b4325ef8155c1543/2c8de/IMG_1249.avif 315w,
+/static/dce7088f79788419b4325ef8155c1543/2a7b6/IMG_1249.avif 422w&quot;
+              sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/81b7c/IMG_1249.webp 158w,
+/static/dce7088f79788419b4325ef8155c1543/6ea66/IMG_1249.webp 315w,
+/static/dce7088f79788419b4325ef8155c1543/fc0b3/IMG_1249.webp 422w&quot;
+              sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/dce7088f79788419b4325ef8155c1543/c26ae/IMG_1249.png 158w,
 /static/dce7088f79788419b4325ef8155c1543/6bdcf/IMG_1249.png 315w,
 /static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png 422w&quot;
-        sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
+            sizes=&quot;(max-width: 422px) 100vw, 422px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/dce7088f79788419b4325ef8155c1543/fa5c1/IMG_1249.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/4b190/IMG_1254.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQMA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAZkGl0cj/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAECERATIf/aAAgBAQABBQK0hrWpTsXSsf/EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGn/8QAHRAAAQMFAQAAAAAAAAAAAAAAAQACMSAhMjNRcf/aAAgBAQAGPwLWITgQHWniwaPBR//EABkQAAMBAQEAAAAAAAAAAAAAAAABEVExEP/aAAgBAQABPyHibZNvXpUeaNVQl6I0Izz/2gAMAwEAAgADAAAAEDfP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxAb0tb/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EEnLL//EABwQAQADAAIDAAAAAAAAAAAAAAEAESEQMVFxsf/aAAgBAQABPxC/dHYueDUMGPi0gEUiqQPswHaYeoOp04//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/828fb/IMG_1254.jpg&quot;
-        srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/ff44c/IMG_1254.jpg 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/c35b1/IMG_1254.avif 158w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/2c8de/IMG_1254.avif 315w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/5d31c/IMG_1254.avif 630w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/c9875/IMG_1254.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/81b7c/IMG_1254.webp 158w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/6ea66/IMG_1254.webp 315w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/8aab1/IMG_1254.webp 630w,
+/static/5e19f495bc2d1946a95b7aa7ae99fb43/d00b9/IMG_1254.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/ff44c/IMG_1254.jpg 158w,
 /static/5e19f495bc2d1946a95b7aa7ae99fb43/a6688/IMG_1254.jpg 315w,
 /static/5e19f495bc2d1946a95b7aa7ae99fb43/828fb/IMG_1254.jpg 630w,
 /static/5e19f495bc2d1946a95b7aa7ae99fb43/4b190/IMG_1254.jpg 800w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5e19f495bc2d1946a95b7aa7ae99fb43/828fb/IMG_1254.jpg&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JVM은 다음의 세 가지 주요 서브시스템으로 구성
 &lt;ol&gt;
@@ -3444,37 +3807,52 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e0289e925e352c69b465b5b903c8a883/37523/IMG_1250.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAADHElEQVR42m2TS29aVxSF+Qv9DR2mf6BSJ82knXTUdBgpqlK1VZ9S+hpk0kSJceqGRmori9qNSWscq7gkPFxjTIzhgsHgCzbmggl2g8EQA7HlB+Z1L18PF8VKpF5p6+y7tffSWnudY+CFr9cbnJWDFp5kDcdyAZs/gz2QYXJOxi7lmE+UcK4U2Kmf6r2dTudFCAzPk0ajQbVa4/hwn0zxELNTYdId43dXmp/dm1g8SczeTW65jHw/c5VUqcDJ4RHrqZSYqwoyAzaG50mtViWdTqOsJ1jJ7jF0T8Y6m8Q0lWToYZ774ScMOze4Nfc5Rs8nRPIJfa7VatJpt8/kGf5P8pNaE6svjztSYNpfwGRPMh3IMROvYQ7exbRwB6W8q/dqYqj3kuSeRq9doafuiXiKelqm16qhiaBTormfxvtglH83Hon/guh9Bt1jke9BswjtHREFQbXSp9RnqNKN/UDnr4/oOK6gJr9DW7sIqUtkV638MevjN6sVs/U+Nu8ia/Ex/vF9hWPhW7blO6SWJpEXJzjcnBKA3YHkY9v7PL74CrtfnKO18Ablhwba8wYkyUZgS8ObqjKfqou9NXAFrMLtKaaDMwR8txkevs31mz9SiI33Pe8D9jgJD1H59QI1y2X2o59SDr3FUewdUrKN4JpCMJFgSUR0fYNYzEpodRx/3IISN7Po/hOPY4JqZpq+2jNTNE3Tz2g0TigUGZikiYWrGp1um1azodfCkQhSWNJztfvyHTy7Ntmnq2yUgsjbAZySnQdLNsIZH8lymORumJPW0aD7oEI95KYuudAqW3rpcT5PJBJFFgpUVTBsCc8zwogD/2usSpf40hriM0uM4bmfuOq6wE3vxxSrW/iDEU6zK+TvXic7fo1nkoOloMTsrBuj0cjY+Jj+agz9B5Rdfo/GjAHZ+zpvm6K8eSPBlb+v8a7pVT6wnKdYz7McW6OthCmNfsP2L19zHBCmhJeZ93gYGRnBYrEMALsCcHtrgnrqQ7KKCXMgzehiDrvsZCo2gk0e5ai5P9hZtYC2/oieCHVH0WulUhFFUcjlNnUf/gM0Tn7mhFDJJwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/e0289e925e352c69b465b5b903c8a883/f058b/IMG_1250.png&quot;
-        srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/c26ae/IMG_1250.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/c35b1/IMG_1250.avif 158w,
+/static/e0289e925e352c69b465b5b903c8a883/2c8de/IMG_1250.avif 315w,
+/static/e0289e925e352c69b465b5b903c8a883/5d31c/IMG_1250.avif 630w,
+/static/e0289e925e352c69b465b5b903c8a883/f7eb3/IMG_1250.avif 720w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/81b7c/IMG_1250.webp 158w,
+/static/e0289e925e352c69b465b5b903c8a883/6ea66/IMG_1250.webp 315w,
+/static/e0289e925e352c69b465b5b903c8a883/8aab1/IMG_1250.webp 630w,
+/static/e0289e925e352c69b465b5b903c8a883/bc514/IMG_1250.webp 720w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e0289e925e352c69b465b5b903c8a883/c26ae/IMG_1250.png 158w,
 /static/e0289e925e352c69b465b5b903c8a883/6bdcf/IMG_1250.png 315w,
 /static/e0289e925e352c69b465b5b903c8a883/f058b/IMG_1250.png 630w,
 /static/e0289e925e352c69b465b5b903c8a883/37523/IMG_1250.png 720w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e0289e925e352c69b465b5b903c8a883/f058b/IMG_1250.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;1.2.1. 클래스 로더 (ClassLoader)&lt;/h3&gt;
 &lt;ul&gt;
@@ -3505,37 +3883,52 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/d67ca/IMG_1251.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACrklEQVR42lVTa0hTYRjeH80UcfetLdEwb7nU4ZXsV1HQzUhL7G+RFoVUUD/6E5WU+iPKy8LWdhqt5i5nx2nbNGtJzMAIFhhYmplCKiKhNSYN3NN7jjc68PCc7/3O9/A87/cekUurgVdfAG+RHv495fCVl8BXWiy8c6kasEo5WIWMWAG3SglWpfgPLtpzyWXCd06NCiK+6N2RBk4mgTMhHq6krQIcW+LApiTDo5ajLy8XHB3g5FL0kAC3hm6FRNgbKNbDs00liIr8ZaUINd7BJ8JIS5OA0K2b+GZ5ineVR+DLSscYw2DcaAS7XQuTVExCq4I9amIS4jRqocabEwWOV+JXOIzlaBTrT2xlReCPly7Cl5OBWCyG6MICRVLDzAvybtcEGUrWKZXgGbnn1Lzg4UNYnp9HZG4OS7OzCBMiMzP4u7iI4fpzcIsT8YGEgzUnwUpS4BGiroIXdCg2wVKPRVxaKvz5OrwuyMeN7CzYdLvQvzsPXqq9zMnEQEUZRpqb8eWRAROMGW5yZ5NJYVdRb/U6dFPkbnLnWRcMVFdhrL8P44SxwUH8fD+E6cAbLE1NIXiqGv7cTET/hIUWhCcn4aSDfEQrca9WSdHlG5ckCL46XYsfk98xMTqK2elp/KZeLVILwpEIArU1sImTMNTQgOD5OgwcO4oucsPDTqPiUEo21jxe8LfMpKfBWVIMd0kRrup0sBQWoItg0xeCoTjPc3ci2NqKYbMZjr0VeJyYADMdNFFsRimFSb4JIy9oOXgA/TQSPoMBnMmEt1YrBi0WBFkW1v378CQ7A59DIXylFtirTuBBfBw6KGY7xTbQHPLcsYY2ci26T06M9XXoPHsGDDFzoR62K5dhv34ND+kPuidNQRu5by8vRUuqFnfFyWii0eHrTbJVbqQ1j9tyKf4BU/jz9VFL6EcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/f058b/IMG_1251.png&quot;
-        srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/c26ae/IMG_1251.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/c35b1/IMG_1251.avif 158w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/2c8de/IMG_1251.avif 315w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/5d31c/IMG_1251.avif 630w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/51250/IMG_1251.avif 714w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/81b7c/IMG_1251.webp 158w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/6ea66/IMG_1251.webp 315w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/8aab1/IMG_1251.webp 630w,
+/static/51ae8b9ec5559f6d199fb53cbb3869e1/80c40/IMG_1251.webp 714w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/c26ae/IMG_1251.png 158w,
 /static/51ae8b9ec5559f6d199fb53cbb3869e1/6bdcf/IMG_1251.png 315w,
 /static/51ae8b9ec5559f6d199fb53cbb3869e1/f058b/IMG_1251.png 630w,
 /static/51ae8b9ec5559f6d199fb53cbb3869e1/d67ca/IMG_1251.png 714w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/51ae8b9ec5559f6d199fb53cbb3869e1/f058b/IMG_1251.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;1.2.2. 런타임 데이터 영역 (Runtime Data Area)&lt;/h3&gt;
 &lt;h4&gt;1.2.2.1. 메서드 영역 (Method Area)&lt;/h4&gt;
@@ -3620,38 +4013,55 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/795feb412047a387190074d74c2dc3ea/8cdda/IMG_1253.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
+      &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
     style=&quot;padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABn0lEQVR42oVSR6uCQQzc/38Se8OLChZUFNsHdj0pCBYsqHjRmx7sDR2Z8PbxyXtgYEh2k51sisKPvF4v0bvdDrFYDJFIBJlMBolEQuxKpYJCoSB2KBRCNBrFer3+eEtRzWYTZjQaDXmYy+UE+XxeYBgGSqWSJIjH4ygWiyiXy2i1WvKuXq+j0+lAWSwW2Gy2DzgcDtFOpxMul0vOtAna+my322G1WiWWPIFAAIrZzuczLpeL6OfzicFgAK/Xi81mg/1+L/dsxel0QjabhcfjwXa7xfV6lXfUh8MB1WoViiUsFguMRiMMh0PMZjP0ej34/X7cbjfpy3Q6FVIKSyUhz4xl8n6/L6QsXyWTSWnufD7HZDLBarWSABIyiA2nX5ObCZfLJcbjMbrd7iehFpZLYWaWzCA9Re0jIX0ssd1uyxA5jOPx+J1Q/8q8GiR0u9243+94PB6/PaRw2oqTqdVqAjaVGdPptEyXa8F1MPuCwaBMmHup14ya/lQqBcV+6FXQIJnP5/tzTzBe+7g2BG2uTzgchuIqsMFm8O6/+28+4g0dU+eePuTfFwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;jvm&quot;
-        title=&quot;&quot;
-        src=&quot;/static/795feb412047a387190074d74c2dc3ea/f058b/IMG_1253.png&quot;
-        srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/c26ae/IMG_1253.png 158w,
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/c35b1/IMG_1253.avif 158w,
+/static/795feb412047a387190074d74c2dc3ea/2c8de/IMG_1253.avif 315w,
+/static/795feb412047a387190074d74c2dc3ea/5d31c/IMG_1253.avif 630w,
+/static/795feb412047a387190074d74c2dc3ea/59707/IMG_1253.avif 945w,
+/static/795feb412047a387190074d74c2dc3ea/16f03/IMG_1253.avif 1168w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/81b7c/IMG_1253.webp 158w,
+/static/795feb412047a387190074d74c2dc3ea/6ea66/IMG_1253.webp 315w,
+/static/795feb412047a387190074d74c2dc3ea/8aab1/IMG_1253.webp 630w,
+/static/795feb412047a387190074d74c2dc3ea/a70f5/IMG_1253.webp 945w,
+/static/795feb412047a387190074d74c2dc3ea/2768a/IMG_1253.webp 1168w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/795feb412047a387190074d74c2dc3ea/c26ae/IMG_1253.png 158w,
 /static/795feb412047a387190074d74c2dc3ea/6bdcf/IMG_1253.png 315w,
 /static/795feb412047a387190074d74c2dc3ea/f058b/IMG_1253.png 630w,
 /static/795feb412047a387190074d74c2dc3ea/40601/IMG_1253.png 945w,
 /static/795feb412047a387190074d74c2dc3ea/8cdda/IMG_1253.png 1168w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/795feb412047a387190074d74c2dc3ea/f058b/IMG_1253.png&quot;
+            alt=&quot;jvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;jvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;실행 엔진은 다음 세 가지로 구성
 &lt;ol&gt;

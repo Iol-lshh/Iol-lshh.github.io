@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 08:50:37 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 09:19:09 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;디자인 패턴-GoF&lt;/li&gt;
 &lt;li&gt;클린코드, 클린아키텍처-로버트 C. 마틴&lt;/li&gt;
@@ -424,7 +424,184 @@
 &lt;li&gt;&lt;strong&gt;복제 로그 (Replication Log)&lt;/strong&gt;: 데이터베이스 클러스터에서 복제 상태를 기록.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JVM]]></title><description><![CDATA[Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 JDK…]]></description><link>https://iol-lshh.github.io/java/JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[GraalVM, JVM 비교]]></title><description><![CDATA[GraalVM이란? GraalVM 특징 네이티브 Java 코드 실행 GraalVM에서 Java 코드 실행 방식 GraalVM 아키텍처 AOT 컴파일 GraalVM vs JVM 1. GraalVM이란? GraalVM은 Ahead-Of-Time (AOT…]]></description><link>https://iol-lshh.github.io/java/GraalVM_vs_JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/GraalVM_vs_JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM이란?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM 특징&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;네이티브 Java 코드 실행&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM에서 Java 코드 실행 방식&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM 아키텍처&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM vs JVM&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;1. GraalVM이란?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;은 &lt;strong&gt;Ahead-Of-Time (AOT) 컴파일&lt;/strong&gt; 기능을 가진 고성능 JDK입니다.&lt;/li&gt;
+&lt;li&gt;기존 JIT 컴파일러를 대체하는 &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통해 Java 애플리케이션의 성능을 크게 향상시킵니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;애플리케이션 지연(latency)&lt;/strong&gt; 을 줄이고, &lt;strong&gt;가비지 컬렉션 시간&lt;/strong&gt;을 단축하며, &lt;strong&gt;최대 처리량&lt;/strong&gt;을 높입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;2. GraalVM 특징&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;낮은 리소스 사용&lt;/strong&gt;: 네이티브 이미지는 런타임 시 기존 JVM이 필요 없으므로 메모리와 CPU 사용량이 적습니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;향상된 보안&lt;/strong&gt;: AOT 컴파일 시 정적 분석을 수행하여 런타임 클래스 로딩 및 리플렉션과 같은 공격 표면을 줄입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;빠른 시작&lt;/strong&gt;: 네이티브 바이너리는 바이트코드 해석이나 JIT 컴파일이 필요 없으므로 즉시 시작됩니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;컴팩트한 패키징&lt;/strong&gt;: 네이티브 이미지는 필요한 애플리케이션 코드와 종속성만 포함하여 크기를 줄입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;프레임워크 지원&lt;/strong&gt;: Quarkus, Micronaut, Spring Boot와 통합되어 최적화된 애플리케이션 제작 가능.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;클라우드 플랫폼 지원&lt;/strong&gt;: AWS Lambda, Google Cloud, Azure 등 주요 플랫폼에서 GraalVM을 지원.&lt;/li&gt;
+&lt;li&gt;GraalVM은 &lt;strong&gt;빠른 시작 시간&lt;/strong&gt;, &lt;strong&gt;낮은 메모리 사용량&lt;/strong&gt;, &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;, &lt;strong&gt;다중 언어 지원&lt;/strong&gt;을 제공하여 뛰어난 선택지로 자리 잡고 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;3. 네이티브 Java 코드 실행&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM의 개선점을 살펴보기 전에 &lt;strong&gt;JDK&lt;/strong&gt;가 네이티브 Java 코드를 실행하는 방식을 이해해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Java의 WORA 원칙&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;WORA&lt;/strong&gt;: 한 번 작성하면, 어디서나 실행 가능(Write Once, Run Anywhere).&lt;/li&gt;
+&lt;li&gt;Java 코드는 한 번 작성하면, 기계 유형에 상관없이 호환 가능한 JVM에서 실행할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;실행 프로세스&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;소스 코드&lt;/strong&gt; → JDK가 이를 &lt;strong&gt;바이트코드&lt;/strong&gt;로 컴파일.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;바이트코드&lt;/strong&gt; → JVM이 이를 실행.&lt;/li&gt;
+&lt;li&gt;JVM 내부 단계:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;   - &lt;strong&gt;클래스 로딩(Class Loading)&lt;/strong&gt;: 바이트코드를 로딩하여 실행 준비.
+   - &lt;strong&gt;바이트코드 검증(Byte Code Verification)&lt;/strong&gt;: 바이트코드가 안전한지 검증.
+   - &lt;strong&gt;JIT 컴파일(Just-In-Time Compilation)&lt;/strong&gt;: 런타임 시 바이트코드를 네이티브 코드로 변환하여 성능 최적화.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;실행 흐름&lt;/strong&gt;:  &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;소스 코드 -&gt; JDK -&gt; 바이트코드 -&gt; JVM&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;4. GraalVM에서 Java 코드 실행 방식&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM은 Java의 기본 실행 방식을 따르지만, &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통합하여 JIT 및 AOT 컴파일 성능을 향상시킵니다.&lt;/li&gt;
+&lt;li&gt;기존 JVM의 C2 컴파일러를 대체하여 &lt;strong&gt;최적화된 컴파일&lt;/strong&gt; 및 &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;을 지원합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;5. GraalVM 아키텍처&lt;/h2&gt;
+&lt;h3&gt;1. &lt;strong&gt;Java HotSpot VM&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM의 기반 계층으로, 다음을 제공합니다:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  - &lt;strong&gt;JIT 컴파일&lt;/strong&gt;
+  - &lt;strong&gt;가비지 컬렉션&lt;/strong&gt;
+  - &lt;strong&gt;스레드 관리&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAAgAPtFWpEuoJKOhsAgBABoJQBOmUABfHr3QCtwUAAD+8hLet41lcxyzBe8meeY+NE1QC31nt6XV07NURDgm9OGZgd3tBl5Fgj9jPDYO5ZEmpY6hiaxYd4AAAA==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/c35b1/IMG_1265.avif 158w,
+/static/2af60833174db70a53b2c33bb63a1159/2c8de/IMG_1265.avif 315w,
+/static/2af60833174db70a53b2c33bb63a1159/5d31c/IMG_1265.avif 630w,
+/static/2af60833174db70a53b2c33bb63a1159/ec170/IMG_1265.avif 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
+/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
+/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
+/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
+/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
+/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
+/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp&quot;
+            alt=&quot;graalvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;graalvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;2. &lt;strong&gt;GraalVM 컴파일러 계층&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;다중 언어 JIT 컴파일러&lt;/strong&gt;로, Java 및 기타 언어에 최적화된 컴파일을 제공합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;을 지원하여 네이티브 이미지를 생성합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3. &lt;strong&gt;언어 구현 프레임워크 계층&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM은 여러 프로그래밍 언어를 지원합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Truffle 프레임워크&lt;/strong&gt;와 &lt;strong&gt;LLVM 런타임&lt;/strong&gt;을 통해 다중 언어 런타임을 구축할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;6. AOT 컴파일&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일(Ahead-Of-Time Compilation)&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  - Java 애플리케이션을 런타임 이전에 네이티브 실행 파일로 변환.
+  - &lt;strong&gt;장점&lt;/strong&gt;:
+    - 빠른 시작 시간.
+    - 낮은 메모리 사용량.
+    - 런타임 공격 표면 감소로 보안 강화.
+  - Quarkus, Micronaut 같은 프레임워크에서 마이크로서비스를 최적화하는 데 사용됩니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;7. GraalVM vs JVM&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;기능&lt;/strong&gt;            &lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;                      &lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;기존 JVM&lt;/strong&gt;  &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;시작 시간&lt;/strong&gt;        &lt;/td&gt;
+&lt;td&gt;매우 빠름 (AOT 네이티브 이미지)&lt;/td&gt;
+&lt;td&gt;느림 (JIT 컴파일 필요)        &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;메모리 사용량&lt;/strong&gt;    &lt;/td&gt;
+&lt;td&gt;적음 (네이티브 이미지)           &lt;/td&gt;
+&lt;td&gt;많음                         &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;성능&lt;/strong&gt;            &lt;/td&gt;
+&lt;td&gt;향상된 컴파일러로 최적화&lt;/td&gt;
+&lt;td&gt;JIT로 최적화되었지만 GraalVM보다는 낮음&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;언어 지원&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;다중 언어 (Python, Ruby 등)      &lt;/td&gt;
+&lt;td&gt;Java 또는 JVM 언어 중심&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;애플리케이션 패키징&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;컴팩트한 네이티브 실행 파일&lt;/td&gt;
+&lt;td&gt;JVM 런타임 필요              &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;클라우드 지원&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;AWS Lambda 등 주요 플랫폼 지원   &lt;/td&gt;
+&lt;td&gt;제한적                       &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[JVM]]></title><description><![CDATA[Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 JDK…]]></description><link>https://iol-lshh.github.io/java/JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 &lt;strong&gt;JDK(Java Development Kit)&lt;/strong&gt;, &lt;strong&gt;JRE(Java Runtime Environment)&lt;/strong&gt;, &lt;strong&gt;JVM(Java Virtual Machine)&lt;/strong&gt; 를 이해하는 것이 중요합니다.  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -1019,184 +1196,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;h2&gt;네이티브 메서드 라이브러리 (Native Method Libraries)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;실행 엔진에서 필요한 &lt;strong&gt;C/C++ 기반 네이티브 라이브러리&lt;/strong&gt;의 모음입니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[GraalVM, JVM 비교]]></title><description><![CDATA[GraalVM이란? GraalVM 특징 네이티브 Java 코드 실행 GraalVM에서 Java 코드 실행 방식 GraalVM 아키텍처 AOT 컴파일 GraalVM vs JVM 1. GraalVM이란? GraalVM은 Ahead-Of-Time (AOT…]]></description><link>https://iol-lshh.github.io/java/GraalVM_vs_JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/GraalVM_vs_JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM이란?&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM 특징&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;네이티브 Java 코드 실행&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM에서 Java 코드 실행 방식&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM 아키텍처&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM vs JVM&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2&gt;1. GraalVM이란?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;은 &lt;strong&gt;Ahead-Of-Time (AOT) 컴파일&lt;/strong&gt; 기능을 가진 고성능 JDK입니다.&lt;/li&gt;
-&lt;li&gt;기존 JIT 컴파일러를 대체하는 &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통해 Java 애플리케이션의 성능을 크게 향상시킵니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;애플리케이션 지연(latency)&lt;/strong&gt; 을 줄이고, &lt;strong&gt;가비지 컬렉션 시간&lt;/strong&gt;을 단축하며, &lt;strong&gt;최대 처리량&lt;/strong&gt;을 높입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;2. GraalVM 특징&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;낮은 리소스 사용&lt;/strong&gt;: 네이티브 이미지는 런타임 시 기존 JVM이 필요 없으므로 메모리와 CPU 사용량이 적습니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;향상된 보안&lt;/strong&gt;: AOT 컴파일 시 정적 분석을 수행하여 런타임 클래스 로딩 및 리플렉션과 같은 공격 표면을 줄입니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;빠른 시작&lt;/strong&gt;: 네이티브 바이너리는 바이트코드 해석이나 JIT 컴파일이 필요 없으므로 즉시 시작됩니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;컴팩트한 패키징&lt;/strong&gt;: 네이티브 이미지는 필요한 애플리케이션 코드와 종속성만 포함하여 크기를 줄입니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;프레임워크 지원&lt;/strong&gt;: Quarkus, Micronaut, Spring Boot와 통합되어 최적화된 애플리케이션 제작 가능.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;클라우드 플랫폼 지원&lt;/strong&gt;: AWS Lambda, Google Cloud, Azure 등 주요 플랫폼에서 GraalVM을 지원.&lt;/li&gt;
-&lt;li&gt;GraalVM은 &lt;strong&gt;빠른 시작 시간&lt;/strong&gt;, &lt;strong&gt;낮은 메모리 사용량&lt;/strong&gt;, &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;, &lt;strong&gt;다중 언어 지원&lt;/strong&gt;을 제공하여 뛰어난 선택지로 자리 잡고 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;3. 네이티브 Java 코드 실행&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM의 개선점을 살펴보기 전에 &lt;strong&gt;JDK&lt;/strong&gt;가 네이티브 Java 코드를 실행하는 방식을 이해해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Java의 WORA 원칙&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;WORA&lt;/strong&gt;: 한 번 작성하면, 어디서나 실행 가능(Write Once, Run Anywhere).&lt;/li&gt;
-&lt;li&gt;Java 코드는 한 번 작성하면, 기계 유형에 상관없이 호환 가능한 JVM에서 실행할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;실행 프로세스&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;소스 코드&lt;/strong&gt; → JDK가 이를 &lt;strong&gt;바이트코드&lt;/strong&gt;로 컴파일.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;바이트코드&lt;/strong&gt; → JVM이 이를 실행.&lt;/li&gt;
-&lt;li&gt;JVM 내부 단계:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;   - &lt;strong&gt;클래스 로딩(Class Loading)&lt;/strong&gt;: 바이트코드를 로딩하여 실행 준비.
-   - &lt;strong&gt;바이트코드 검증(Byte Code Verification)&lt;/strong&gt;: 바이트코드가 안전한지 검증.
-   - &lt;strong&gt;JIT 컴파일(Just-In-Time Compilation)&lt;/strong&gt;: 런타임 시 바이트코드를 네이티브 코드로 변환하여 성능 최적화.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;실행 흐름&lt;/strong&gt;:  &lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;소스 코드 -&gt; JDK -&gt; 바이트코드 -&gt; JVM&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;4. GraalVM에서 Java 코드 실행 방식&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM은 Java의 기본 실행 방식을 따르지만, &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통합하여 JIT 및 AOT 컴파일 성능을 향상시킵니다.&lt;/li&gt;
-&lt;li&gt;기존 JVM의 C2 컴파일러를 대체하여 &lt;strong&gt;최적화된 컴파일&lt;/strong&gt; 및 &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;을 지원합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;5. GraalVM 아키텍처&lt;/h2&gt;
-&lt;h3&gt;1. &lt;strong&gt;Java HotSpot VM&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM의 기반 계층으로, 다음을 제공합니다:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  - &lt;strong&gt;JIT 컴파일&lt;/strong&gt;
-  - &lt;strong&gt;가비지 컬렉션&lt;/strong&gt;
-  - &lt;strong&gt;스레드 관리&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAAgAPtFWpEuoJKOhsAgBABoJQBOmUABfHr3QCtwUAAD+8hLet41lcxyzBe8meeY+NE1QC31nt6XV07NURDgm9OGZgd3tBl5Fgj9jPDYO5ZEmpY6hiaxYd4AAAA==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/c35b1/IMG_1265.avif 158w,
-/static/2af60833174db70a53b2c33bb63a1159/2c8de/IMG_1265.avif 315w,
-/static/2af60833174db70a53b2c33bb63a1159/5d31c/IMG_1265.avif 630w,
-/static/2af60833174db70a53b2c33bb63a1159/ec170/IMG_1265.avif 828w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
-/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
-/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
-/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
-/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
-/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
-/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
-            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-            type=&quot;image/webp&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp&quot;
-            alt=&quot;graalvm&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;graalvm&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;h3&gt;2. &lt;strong&gt;GraalVM 컴파일러 계층&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;다중 언어 JIT 컴파일러&lt;/strong&gt;로, Java 및 기타 언어에 최적화된 컴파일을 제공합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;을 지원하여 네이티브 이미지를 생성합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;3. &lt;strong&gt;언어 구현 프레임워크 계층&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM은 여러 프로그래밍 언어를 지원합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Truffle 프레임워크&lt;/strong&gt;와 &lt;strong&gt;LLVM 런타임&lt;/strong&gt;을 통해 다중 언어 런타임을 구축할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;6. AOT 컴파일&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일(Ahead-Of-Time Compilation)&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  - Java 애플리케이션을 런타임 이전에 네이티브 실행 파일로 변환.
-  - &lt;strong&gt;장점&lt;/strong&gt;:
-    - 빠른 시작 시간.
-    - 낮은 메모리 사용량.
-    - 런타임 공격 표면 감소로 보안 강화.
-  - Quarkus, Micronaut 같은 프레임워크에서 마이크로서비스를 최적화하는 데 사용됩니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;7. GraalVM vs JVM&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;기능&lt;/strong&gt;            &lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;                      &lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;기존 JVM&lt;/strong&gt;  &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;시작 시간&lt;/strong&gt;        &lt;/td&gt;
-&lt;td&gt;매우 빠름 (AOT 네이티브 이미지)&lt;/td&gt;
-&lt;td&gt;느림 (JIT 컴파일 필요)        &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;메모리 사용량&lt;/strong&gt;    &lt;/td&gt;
-&lt;td&gt;적음 (네이티브 이미지)           &lt;/td&gt;
-&lt;td&gt;많음                         &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;성능&lt;/strong&gt;            &lt;/td&gt;
-&lt;td&gt;향상된 컴파일러로 최적화&lt;/td&gt;
-&lt;td&gt;JIT로 최적화되었지만 GraalVM보다는 낮음&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;언어 지원&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;다중 언어 (Python, Ruby 등)      &lt;/td&gt;
-&lt;td&gt;Java 또는 JVM 언어 중심&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;애플리케이션 패키징&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;컴팩트한 네이티브 실행 파일&lt;/td&gt;
-&lt;td&gt;JVM 런타임 필요              &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;클라우드 지원&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;AWS Lambda 등 주요 플랫폼 지원   &lt;/td&gt;
-&lt;td&gt;제한적                       &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다&lt;/li&gt;
 &lt;li&gt;테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/li&gt;
 &lt;/ul&gt;
@@ -2042,7 +2042,9 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
+스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
+스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성
@@ -2055,9 +2057,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
-스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
-스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 &lt;strong&gt;프레임워크&lt;/strong&gt;입니다.&lt;/li&gt;
 &lt;li&gt;기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 &lt;strong&gt;의존성 주입(Dependency Injection, DI)&lt;/strong&gt;, &lt;strong&gt;제어의 역전(Inversion of Control, IoC)&lt;/strong&gt; 등을 도입하면서, 모듈 간 결합도를 낮추고 유지보수성을 높였습니다.
 &lt;ul&gt;

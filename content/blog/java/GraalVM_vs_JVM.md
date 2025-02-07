@@ -2,6 +2,7 @@
 title: GraalVM, JVM 비교
 date: 2025-01-14
 description: GraalVM, JVM 비교
+category: "java"
 ---
 
 1. **GraalVM이란?**
@@ -74,7 +75,7 @@ description: GraalVM, JVM 비교
   - **스레드 관리**
 - HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.
 
-![graalvm](img/IMG_1265.webp)
+![graalvm](./img/IMG_1265.webp)
 
 ### 2. **GraalVM 컴파일러 계층**
 

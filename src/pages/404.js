@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import PropTypes from "prop-types"
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,6 +17,17 @@ const NotFoundPage = ({ data, location }) => {
 }
 
 export const Head = () => <Seo title="404: Not Found" />
+
+NotFoundPage.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+  location: PropTypes.object.isRequired,
+}
 
 export default NotFoundPage
 

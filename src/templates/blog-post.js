@@ -1,15 +1,20 @@
 import * as React from "react"
+import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ScrollButtonContainer from "../components/button/scroll/allScrollButtonContainer"
+
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
+  const postCategory = post.frontmatter?.category || ``
+  const postTitle = post.frontmatter.title
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,7 +24,8 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <p>{postCategory}</p>
+          <h1 itemProp="headline">{postTitle}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
         <section
@@ -49,6 +55,9 @@ const BlogPostTemplate = ({
             )}
           </li>
           <li>
+            <Link to="/">목록으로</Link>
+          </li>
+          <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
@@ -57,6 +66,7 @@ const BlogPostTemplate = ({
           </li>
         </ul>
       </nav>
+      <ScrollButtonContainer previousLink={previous?.fields.slug} nextLink={next?.fields.slug}/>
     </Layout>
   )
 }
@@ -68,6 +78,41 @@ export const Head = ({ data: { markdownRemark: post } }) => {
       description={post.frontmatter.description || post.excerpt}
     />
   )
+}
+BlogPostTemplate.propTypes = {
+  data: PropTypes.shape({
+    previous: PropTypes.shape({
+      fields: PropTypes.shape({
+        slug: PropTypes.string,
+      }),
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+      }),
+    }),
+    next: PropTypes.shape({
+      fields: PropTypes.shape({
+        slug: PropTypes.string,
+      }),
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+      }),
+    }),
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string,
+      }),
+    }),
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        date: PropTypes.string,
+        category: PropTypes.string,
+        description: PropTypes.string,
+      }),
+      html: PropTypes.string,
+    }),
+  }).isRequired,
+  location: PropTypes.object.isRequired,
 }
 
 export default BlogPostTemplate
@@ -90,6 +135,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        category
         description
       }
     }

@@ -17,7 +17,8 @@ module.exports = {
     description: `Iol-lshh의 블로그`,
     siteUrl: `https://iol-lshh.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      instagram: `l__sh.h`,
+      github: `Iol-lshh`,
     },
   },
   plugins: [

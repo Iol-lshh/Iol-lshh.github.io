@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -25,10 +26,16 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        <Link to="/">home</Link>
       </footer>
     </div>
   )
+}
+Layout.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

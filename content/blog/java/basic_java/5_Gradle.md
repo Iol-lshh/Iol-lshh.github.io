@@ -2,6 +2,7 @@
 title: 5. Gradle
 date: 2025-01-13
 description: Gradle
+category: java > basic java
 ---
 
 - 패키지 관리자

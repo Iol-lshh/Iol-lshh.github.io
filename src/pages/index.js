@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ScrollButtonContainer from "../components/button/scroll/updownScrollButtonContainer"
+import PropTypes from "prop-types"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || ``
@@ -14,9 +16,7 @@ const BlogIndex = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          No blog posts found.
         </p>
       </Layout>
     )
@@ -28,6 +28,7 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
+          const category = post.frontmatter.category || ``
 
           return (
             <li key={post.fields.slug}>
@@ -37,6 +38,7 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
+                  <small>{category}</small>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
@@ -57,8 +59,36 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
+      <ScrollButtonContainer />
     </Layout>
   )
+}
+
+BlogIndex.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string,
+      }),
+    }),
+    allMarkdownRemark: PropTypes.shape({
+      nodes: PropTypes.arrayOf(
+        PropTypes.shape({
+          excerpt: PropTypes.string,
+          fields: PropTypes.shape({
+            slug: PropTypes.string,
+          }),
+          frontmatter: PropTypes.shape({
+            date: PropTypes.string,
+            title: PropTypes.string,
+            category: PropTypes.string,
+            description: PropTypes.string,
+          }),
+        })
+      ),
+    }),
+  }).isRequired,
+  location: PropTypes.object.isRequired,
 }
 
 export default BlogIndex
@@ -86,6 +116,7 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          category
           description
         }
       }

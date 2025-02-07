@@ -1,14 +1,9 @@
-/**
- * SEO component that queries for data with
- * Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
-import * as React from "react"
+import React from "react"
+import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, title, children }) => {
+const SEO = ({ title, description, image, lang = "kr", meta = [], children }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -16,10 +11,7 @@ const Seo = ({ description, title, children }) => {
           siteMetadata {
             title
             description
-            social {
-              instagram
-              github
-            }
+            siteUrl
           }
         }
       }
@@ -27,25 +19,47 @@ const Seo = ({ description, title, children }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const metaImage = image || `https://avatars.githubusercontent.com/u/37289223?v=4`
 
   return (
-    <>
-      <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
-      <meta name="description" content={metaDescription} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={metaDescription} />
-      <meta property="og:type" content="website" />
-      <meta name="instagram:card" content="summary" />
-      <meta
-        name="instagram:creator"
-        content={site.siteMetadata?.social?.instagram || ``}
-      />
-      <meta name="instagram:title" content={title} />
-      <meta name="instagram:description" content={metaDescription} />
+    <Helmet
+      htmlAttributes={{ lang }}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      meta={[
+        {
+          name: `description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: metaImage,
+        },
+      ].concat(meta)}
+    >
       {children}
-    </>
+    </Helmet>
   )
 }
+SEO.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  lang: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  children: PropTypes.node,
+}
 
-export default Seo
+export default SEO

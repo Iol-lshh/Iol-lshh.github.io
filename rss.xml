@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 06:17:22 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[글 목록 java Java 문법 JPA actuator GraalVM vs JVM javascript MSA 이론 git: branch docker RDBMS MVCC - PostgerSQL vs MySQL RDS Vue.js]]></description><link>https://iol-lshh.github.io/README/</link><guid isPermaLink="false">https://iol-lshh.github.io/README/</guid><content:encoded>&lt;h1&gt;글 목록&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;java
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;java/Java%20%EB%AC%B8%EB%B2%95.md&quot;&gt;Java 문법&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;java/JPA.md&quot;&gt;JPA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;java/Spring/actuator.md&quot;&gt;actuator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;java/GraalVM%20vs%20JVM.md&quot;&gt;GraalVM vs JVM&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;old/javascript/doc_Js_Style.md&quot;&gt;javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;old/practice/whats_msa.md&quot;&gt;MSA 이론&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;old/cicd/git/branch.md&quot;&gt;git: branch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;old/infra/docker/doc_docker.md&quot;&gt;docker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;old/db/sql/MVCC/MVCC_PostgerSQL_vs_MySQL.md&quot;&gt;RDBMS MVCC - PostgerSQL vs MySQL&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;old/infra/aws/RDS.md&quot;&gt;RDS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;old/front/vue/readme.md&quot;&gt;Vue.js&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 06:37:15 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;디자인 패턴-GoF&lt;/li&gt;
 &lt;li&gt;클린코드, 클린아키텍처-로버트 C. 마틴&lt;/li&gt;

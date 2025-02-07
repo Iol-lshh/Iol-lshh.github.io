@@ -16,6 +16,12 @@ const BlogPostTemplate = ({
   const postCategory = post.frontmatter?.category || ``
   const postTitle = post.frontmatter.title
 
+  const previousCategory = previous?.frontmatter.category ? previous.frontmatter.category + ` > ` : ``
+  const previousTotalTitle = previous?.frontmatter.title ? previousCategory + previous.frontmatter.title : ``
+
+  const nextCategory = next?.frontmatter.category ? next.frontmatter.category + ` > ` : ``
+  const nextTotalTitle = next?.frontmatter.title ? nextCategory + next.frontmatter.title : ``
+
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -50,7 +56,7 @@ const BlogPostTemplate = ({
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+                ← {previousTotalTitle}
               </Link>
             )}
           </li>
@@ -60,7 +66,7 @@ const BlogPostTemplate = ({
           <li>
             {next && (
               <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                {nextTotalTitle} →
               </Link>
             )}
           </li>
@@ -87,6 +93,7 @@ BlogPostTemplate.propTypes = {
       }),
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
+        category: PropTypes.string,
       }),
     }),
     next: PropTypes.shape({
@@ -95,6 +102,7 @@ BlogPostTemplate.propTypes = {
       }),
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
+        category: PropTypes.string,
       }),
     }),
     site: PropTypes.shape({
@@ -135,7 +143,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        category
         description
       }
     }
@@ -145,6 +152,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        category
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
@@ -153,6 +161,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        category
       }
     }
   }

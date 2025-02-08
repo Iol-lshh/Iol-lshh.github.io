@@ -14,6 +14,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-categories`,
+      options: {
+        templatePath: `${__dirname}/src/templates/category.js`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

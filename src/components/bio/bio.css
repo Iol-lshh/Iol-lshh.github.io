@@ -1,0 +1,26 @@
+.bio {
+    background-color: #f0f0f0; /* 배경색 설정 */
+    padding: 20px; /* 내부 여백 설정 */
+    border-radius: 10px; /* 모서리 둥글게 설정 */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* 하단 여백 설정 */
+  }
+  
+  .bio-avatar {
+    margin-right: 20px; /* 아바타와 텍스트 사이의 여백 설정 */
+  }
+  
+  .bio p {
+    margin: 0;
+    color: #333; /* 텍스트 색상 설정 */
+  }
+  
+  .bio a {
+    color: #007acc; /* 링크 색상 설정 */
+    text-decoration: none;
+  }
+  
+  .bio a:hover {
+    text-decoration: underline;
+  }

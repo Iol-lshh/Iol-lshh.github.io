@@ -1,0 +1,30 @@
+.blog-post-nav {
+    margin-top: 20px;
+  }
+  
+  .blog-post-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* space-between 사용 */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .blog-post-nav li {
+    flex: 1; /* 각 항목이 동일한 너비를 가지도록 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin: 0 10px;
+    white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 표시 */
+  }
+  
+  .blog-post-nav a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .blog-post-nav a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,65 @@
+.hamburger-menu {
+  position: relative;
+  z-index: 1000; /* 사이드바의 z-index를 높게 설정 */
+}
+
+.hamburger-button {
+  position: fixed; /* 버튼을 고정 위치로 변경 */
+  top: 20px; /* 화면 상단에서 20px 아래에 위치 */
+  left: 20px; /* 화면 왼쪽에서 20px 오른쪽에 위치 */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* 버튼이 사이드바 위에 표시되도록 z-index 설정 */
+  transition: left 0.3s ease; /* 애니메이션 효과 추가 */
+}
+
+.hamburger-button.shifted {
+  left: 270px; /* 사이드바가 열릴 때 버튼을 오른쪽으로 이동 */
+}
+
+.sidebar {
+  position: fixed; /* 사이드바를 고정 위치로 변경 */
+  top: 0;
+  left: 0; /* 사이드바를 왼쪽에 위치 */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(-100%); /* 초기 상태에서 사이드바를 화면 밖으로 이동 */
+  transition: transform 0.3s ease; /* 애니메이션 효과 추가 */
+  z-index: 1000; /* 사이드바의 z-index를 높게 설정 */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* 사이드바가 열릴 때 화면 안으로 이동 */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  transition: margin-left 0.3s ease; /* 애니메이션 효과 추가 */
+}
+
+.content.shifted {
+  margin-left: 250px; /* 사이드바가 열릴 때 내용을 오른쪽으로 이동 */
+}

@@ -1,26 +1,19 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import ScrollButtonContainer from "../components/button/scroll/allScrollButtonContainer"
-
+import Pagination from "../components/pagination/postPagination"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
-  const postCategory = post.frontmatter?.category || ``
+  const postCategories = post.frontmatter?.category || []
   const postTitle = post.frontmatter.title
-
-  const previousCategory = previous?.frontmatter.category ? previous.frontmatter.category + ` > ` : ``
-  const previousTotalTitle = previous?.frontmatter.title ? previousCategory + previous.frontmatter.title : ``
-
-  const nextCategory = next?.frontmatter.category ? next.frontmatter.category + ` > ` : ``
-  const nextTotalTitle = next?.frontmatter.title ? nextCategory + next.frontmatter.title : ``
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -30,7 +23,14 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <p>{postCategory}</p>
+          <p>
+            {postCategories.map((category, index) => (
+              <React.Fragment key={category}>
+                <Link to={`/categories/${category}/`}>{category}</Link>
+                {index < postCategories.length - 1 && ", "}
+              </React.Fragment>
+            ))}
+          </p>
           <h1 itemProp="headline">{postTitle}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
@@ -39,39 +39,8 @@ const BlogPostTemplate = ({
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-          <Bio />
-        </footer>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previousTotalTitle}
-              </Link>
-            )}
-          </li>
-          <li>
-            <Link to="/">목록으로</Link>
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {nextTotalTitle} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <Pagination previous={previous} next={next} />
       <ScrollButtonContainer previousLink={previous?.fields.slug} nextLink={next?.fields.slug}/>
     </Layout>
   )
@@ -85,6 +54,7 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     />
   )
 }
+
 BlogPostTemplate.propTypes = {
   data: PropTypes.shape({
     previous: PropTypes.shape({
@@ -93,7 +63,7 @@ BlogPostTemplate.propTypes = {
       }),
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
-        category: PropTypes.string,
+        category: PropTypes.arrayOf(PropTypes.string),
       }),
     }),
     next: PropTypes.shape({
@@ -102,7 +72,7 @@ BlogPostTemplate.propTypes = {
       }),
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
-        category: PropTypes.string,
+        category: PropTypes.arrayOf(PropTypes.string),
       }),
     }),
     site: PropTypes.shape({
@@ -114,7 +84,7 @@ BlogPostTemplate.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string,
         date: PropTypes.string,
-        category: PropTypes.string,
+        category: PropTypes.arrayOf(PropTypes.string),
         description: PropTypes.string,
       }),
       html: PropTypes.string,

@@ -1,33 +1,27 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout/layout'
+import Seo from '../components/seo'
 import ScrollButtonContainer from "../components/button/scroll/updownScrollButtonContainer"
 import ArticleList from "../components/article/articleList"
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `The Engineer, Aiming Fine.`
+const CategoryTemplate = ({ data, pageContext, location }) => {
+  const { category } = pageContext
+  const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <p>No blog posts found.</p>
-      </Layout>
-    )
-  }
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Seo title={`Posts in category "${category}"`} />
+      <h1>{category}</h1>
       <ArticleList posts={posts} />
       <ScrollButtonContainer />
     </Layout>
   )
 }
 
-BlogIndex.propTypes = {
+CategoryTemplate.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
@@ -53,21 +47,25 @@ BlogIndex.propTypes = {
       ),
     }),
   }).isRequired,
+  pageContext: PropTypes.shape({
+    category: PropTypes.string.isRequired,
+  }).isRequired,
   location: PropTypes.object.isRequired,
 }
 
-export default BlogIndex
-
-export const Head = () => <Seo title="All posts" />
+export default CategoryTemplate
 
 export const pageQuery = graphql`
-  {
+  query($category: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { in: [$category] } } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
       edges {
         node {
           excerpt
@@ -75,10 +73,10 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
-            category
+            date(formatString: "MMMM DD, YYYY")
             description
+            category
           }
         }
       }

@@ -3,13 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import './postPagination.css' // postPagination.css 파일 임포트
 
-const PostPagination = ({ postCategories, previous, next }) => {
-  const previousCategories = previous?.frontmatter.category ? previous.frontmatter.category.join(' > ') + ` > ` : ``
-  const previousTotalTitle = previous?.frontmatter.title ? previousCategories + previous.frontmatter.title : ``
-
-  const nextCategories = next?.frontmatter.category ? next.frontmatter.category.join(' > ') + ` > ` : ``
-  const nextTotalTitle = next?.frontmatter.title ? nextCategories + next.frontmatter.title : ``
-
+const PostPagination = ({ postCategories }) => {
   return (
     <nav className="blog-post-nav">
       <div className="categories-container">

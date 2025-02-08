@@ -40,7 +40,7 @@ const BlogPostTemplate = ({
         />
         <hr />
       </article>
-      <Pagination postCategories={postCategories} previous={previous} next={next} />
+      <Pagination postCategories={postCategories} />
       <ScrollButtonContainer previousLink={previous?.fields.slug} nextLink={next?.fields.slug}/>
     </Layout>
   )

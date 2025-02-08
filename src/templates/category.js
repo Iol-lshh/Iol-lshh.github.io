@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout/layout'
 import Seo from '../components/seo'
 import ScrollButtonContainer from "../components/button/scroll/updownScrollButtonContainer"
@@ -14,7 +14,7 @@ const CategoryTemplate = ({ data, pageContext, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={`Posts in category "${category}"`} />
-      <h1>{category}</h1>
+      <Link to={`/categories/${category}/`}>{category}</Link>
       <ArticleList posts={posts} />
       <ScrollButtonContainer />
     </Layout>

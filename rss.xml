@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2025 09:19:09 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Feb 2025 06:50:11 GMT</lastBuildDate><item><title><![CDATA[추천 도서]]></title><description><![CDATA[패러다임 디자인 패턴-GoF 클린코드, 클린아키텍처-로버트 C…]]></description><link>https://iol-lshh.github.io/etc/추천_도서/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/추천_도서/</guid><pubDate>Wed, 05 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;패러다임&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;디자인 패턴-GoF&lt;/li&gt;
 &lt;li&gt;클린코드, 클린아키텍처-로버트 C. 마틴&lt;/li&gt;
@@ -642,7 +642,7 @@
 &lt;li&gt;Java 컴파일러(&lt;code class=&quot;language-text&quot;&gt;javac&lt;/code&gt;)를 통해 소스 파일을 바이트코드(&lt;code class=&quot;language-text&quot;&gt;.class&lt;/code&gt;)로 컴파일합니다.&lt;/li&gt;
 &lt;li&gt;JVM이 바이트코드를 해석하여 네이티브 기계어로 변환하고, 실행합니다.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;./img/IMG_1260.gif&quot; alt=&quot;jvm&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/fa884e8f0fe2cb74b795ad910ccf8a8d/IMG_1260.gif&quot; alt=&quot;jvm&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;2. JRE (Java Runtime Environment)란&lt;/h2&gt;
 &lt;ul&gt;
@@ -2042,9 +2042,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
-스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
-스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성
@@ -2057,7 +2055,9 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
+스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
+스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 &lt;strong&gt;프레임워크&lt;/strong&gt;입니다.&lt;/li&gt;
 &lt;li&gt;기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 &lt;strong&gt;의존성 주입(Dependency Injection, DI)&lt;/strong&gt;, &lt;strong&gt;제어의 역전(Inversion of Control, IoC)&lt;/strong&gt; 등을 도입하면서, 모듈 간 결합도를 낮추고 유지보수성을 높였습니다.
 &lt;ul&gt;
@@ -3385,7 +3385,7 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;li&gt;상속&lt;/li&gt;
 &lt;li&gt;다형성&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;./img/IMG_1262.gif&quot; alt=&quot;oop&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/75898c4b37a11559d8ddcf17bb880d05/IMG_1262.gif&quot; alt=&quot;oop&quot;&gt;&lt;/p&gt;
 &lt;h4&gt;2.4.1.1.  &lt;strong&gt;추상화 (Abstraction)&lt;/strong&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;정의&lt;/strong&gt;: 객체의 &lt;strong&gt;핵심 특징&lt;/strong&gt;만 보여주고, &lt;strong&gt;구현 세부사항&lt;/strong&gt;은 숨기는 과정.&lt;/li&gt;
@@ -3595,7 +3595,7 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;li&gt;Java 컴파일러(&lt;code class=&quot;language-text&quot;&gt;javac&lt;/code&gt;)를 통해 소스 파일을 바이트코드(&lt;code class=&quot;language-text&quot;&gt;.class&lt;/code&gt;)로 컴파일&lt;/li&gt;
 &lt;li&gt;JVM이 바이트코드를 해석하여 네이티브 기계어로 변환하고, 실행&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;./img/IMG_1260.gif&quot; alt=&quot;jvm&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/fa884e8f0fe2cb74b795ad910ccf8a8d/IMG_1260.gif&quot; alt=&quot;jvm&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;1.1.2. JRE (Java Runtime Environment)란&lt;/h3&gt;
 &lt;ul&gt;
@@ -4161,7 +4161,7 @@ title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Animal example
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;./img/IMG_1261.gif&quot; alt=&quot;목차&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Java 문법]]></title><description><![CDATA[Java 문법 0. Java 기초 0.1 OOP 특징 0.2 OOP 설계 5원칙 SOLID 0.3 타입 0.3.1 Call by Value 0.3.2 Call by Reference 0.3.3 String 0.3.4 연산된 값 0.4 접근자 0.…]]></description><link>https://iol-lshh.github.io/java/Java_문법/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/Java_문법/</guid><pubDate>Sat, 30 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;p&gt;&lt;img src=&quot;/be9003a320411ee0b87a0baa0e143698/IMG_1261.gif&quot; alt=&quot;목차&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Java 문법]]></title><description><![CDATA[Java 문법 0. Java 기초 0.1 OOP 특징 0.2 OOP 설계 5원칙 SOLID 0.3 타입 0.3.1 Call by Value 0.3.2 Call by Reference 0.3.3 String 0.3.4 연산된 값 0.4 접근자 0.…]]></description><link>https://iol-lshh.github.io/java/Java_문법/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/Java_문법/</guid><pubDate>Sat, 30 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#java-%EB%AC%B8%EB%B2%95&quot;&gt;Java 문법&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#0-java-%EA%B8%B0%EC%B4%88&quot;&gt;0. Java 기초&lt;/a&gt;

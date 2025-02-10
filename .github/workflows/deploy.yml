@@ -29,8 +29,9 @@ jobs:
         git config --global user.name "Iol-lshh"
 
     - name: Build and deploy
-      run: npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
-
+      run: |
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        npm run deploy

@@ -21,6 +21,10 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Install dependencies
+      run: |
+        npm ci
+
     - name: Configure Git Authentication
       run: |
         git config --global user.name "Iol-lshh"

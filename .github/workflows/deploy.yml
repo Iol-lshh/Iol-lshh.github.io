@@ -13,13 +13,21 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        submodules: recursive  # 최신 submodules 옵션
+        submodules: recursive
         fetch-depth: 0
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        npm ci
+        npm install gatsby-cli
+
+    - name: Install Gatsby CLI (Global)
+      run: npm install -g gatsby-cli
 
     - name: Configure Git Authentication
       run: |
@@ -32,5 +40,6 @@ jobs:
         GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "Deploying with npm run deploy..."
-        npm run deploy
+        echo "Deploying with Gatsby..."
+        npx gatsby build --prefix-paths
+        npx gh-pages -d public

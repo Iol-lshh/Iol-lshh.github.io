@@ -38,14 +38,9 @@ jobs:
           git add content/blog
           git commit -m "chore: update submodule reference" || echo "No changes to commit"
 
-      - name: Configure Git Authentication for pushing
+      - name: Push Changes to Root Repository
         run: |
           git config --global user.name "Iol-lshh"
           git config --global user.email "markhong93@naver.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
-        
-
-      - name: Push Changes to Root Repository
-        run: |
           git push https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git main || echo "No changes to push"
 

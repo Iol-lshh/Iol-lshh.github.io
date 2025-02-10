@@ -18,6 +18,12 @@ jobs:
       - name: Check Submodule Status
         run: git submodule status
 
+      - name: Configure Git Authentication
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
+
       - name: Initialize and Update Submodules
         run: |
           git submodule init

@@ -18,11 +18,20 @@ jobs:
       - name: Check Submodule Status
         run: git submodule status
 
+      - name: Debug GitHub Secrets
+        run: |
+          if [ -z "${{ secrets.GH_PAGES_PAT }}" ]; then
+            echo "❌ GH_PAGES_PAT is not set!"
+            exit 1
+          else
+            echo "✅ GH_PAGES_PAT is set."
+          fi
+
       - name: Configure Git Authentication for updating submodule
         run: |
           git config --global user.name "Iol-lshh"
           git config --global user.email "markhong93@naver.com"
-          git remote set-url origin https://${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
 
       - name: Check Git Remote
         run: git remote -v
@@ -36,11 +45,12 @@ jobs:
         run: |
           git submodule update --remote --merge
           git add content/blog
-          git commit -m "chore: update submodule reference" || echo "No changes to commit"
+          git diff --cached --exit-code || git commit -m "chore: update submodule reference"
 
       - name: Push Changes to Root Repository
+        env:
+          GH_PAGES_PAT: ${{ secrets.GH_PAGES_PAT }}
         run: |
           git config --global user.name "Iol-lshh"
           git config --global user.email "markhong93@naver.com"
-          git push https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git main || echo "No changes to push"
-
+          git push https://x-access-token:$GH_PAGES_PAT@github.com/Iol-lshh/Iol-lshh.github.io.git main || echo "No changes to push"

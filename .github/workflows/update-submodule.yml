@@ -20,9 +20,12 @@ jobs:
 
       - name: Configure Git Authentication
         run: |
-          git config --global user.name "Iol-lshh"
-          git config --global user.email "markhong93@naver.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
+
+      - name: Check Git Remote
+        run: git remote -v
 
       - name: Initialize and Update Submodules
         run: |

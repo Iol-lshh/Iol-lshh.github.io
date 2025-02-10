@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Feb 2025 13:15:21 GMT</lastBuildDate><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 신념, 철학, 패러다임]]></title><description><![CDATA[나는 fine한 엔지니어가 되길 희망한다. 무엇이 fine…]]></description><link>https://iol-lshh.github.io/etc/Fine_Engineer의_조건-신념_철학_패러다임/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/Fine_Engineer의_조건-신념_철학_패러다임/</guid><pubDate>Sat, 08 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Feb 2025 13:39:02 GMT</lastBuildDate><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 신념, 철학, 패러다임]]></title><description><![CDATA[나는 fine한 엔지니어가 되길 희망한다. 무엇이 fine…]]></description><link>https://iol-lshh.github.io/etc/Fine_Engineer의_조건-신념_철학_패러다임/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/Fine_Engineer의_조건-신념_철학_패러다임/</guid><pubDate>Sat, 08 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -6924,7 +6924,11 @@ inventory&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span 
 &lt;h2&gt;2. 불변성&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;모든 객체는 불변성 유지를 지향한다.&lt;/li&gt;
-&lt;li&gt;원본 데이터의 객체는, 다시 새 데이터를 입력받아서만 수정한다.&lt;/li&gt;
+&lt;li&gt;원본 데이터의 객체는, 다시 새 데이터를 입력받아서만 수정한다.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;./doc_Vue_Style_Guide.md/#54-axios&quot;&gt;5.4 axios 사용하기 참조&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;2.1 배열&lt;/h3&gt;
 &lt;ul&gt;
@@ -7359,6 +7363,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;contents&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;참조&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop&quot;&gt;stackoverflow: Using async/await with a forEach loop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;www.pluralsight.com/guides/handling-nested-promises-using-asyncawait-in-react&quot;&gt;Handling Nested Promises Using Async/Await in React&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;6.4 쓰로틀링과 디바운스 처리&lt;/h3&gt;
 &lt;h4&gt;6.4.1 디바운스(Debouncing)&lt;/h4&gt;
 &lt;ul&gt;

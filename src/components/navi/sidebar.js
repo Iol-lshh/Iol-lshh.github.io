@@ -26,14 +26,14 @@ const Sidebar = () => {
       <button onClick={toggleMenu} className={`hamburger-button ${isOpen ? 'shifted' : ''}`}>
         {isOpen ? (
           <svg width="24" height="24" viewBox="0 0 24 24">
-            <line x1="4" y1="4" x2="20" y2="20" stroke="black" strokeWidth="2" />
-            <line x1="20" y1="4" x2="4" y2="20" stroke="black" strokeWidth="2" />
+            <line x1="4" y1="4" x2="20" y2="20" stroke="white" strokeWidth="2" />
+            <line x1="20" y1="4" x2="4" y2="20" stroke="white" strokeWidth="2" />
           </svg>
         ) : (
           <svg width="24" height="24" viewBox="0 0 24 24">
-            <line x1="4" y1="12" x2="20" y2="12" stroke="black" strokeWidth="2" />
-            <line x1="4" y1="6" x2="20" y2="6" stroke="black" strokeWidth="2" />
-            <line x1="4" y1="18" x2="20" y2="18" stroke="black" strokeWidth="2" />
+            <line x1="4" y1="12" x2="20" y2="12" stroke="white" strokeWidth="2" />
+            <line x1="4" y1="6" x2="20" y2="6" stroke="white" strokeWidth="2" />
+            <line x1="4" y1="18" x2="20" y2="18" stroke="white" strokeWidth="2" />
           </svg>
         )}
       </button>

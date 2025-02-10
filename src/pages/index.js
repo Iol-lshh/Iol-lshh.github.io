@@ -1,27 +1,29 @@
-import * as React from "react"
+import React from "react"
+import { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
 import ScrollButtonContainer from "../components/button/scroll/updownScrollButtonContainer"
 import ArticleList from "../components/article/articleList"
+import Search from "../components/search/search"
 import PropTypes from "prop-types"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `The Engineer, Aiming Fine.`
   const posts = data.allMarkdownRemark.edges
+  const [filteredPosts, setFilteredPosts] = useState(posts)
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <p>No blog posts found.</p>
-      </Layout>
-    )
+  const handleSearch = (filtered) => {
+    setFilteredPosts(filtered)
   }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <ArticleList posts={posts} />
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Search onSearch={handleSearch} />
+      </div>
+      <ArticleList posts={filteredPosts} />
       <ScrollButtonContainer />
     </Layout>
   )

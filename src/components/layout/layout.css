@@ -2,31 +2,31 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
   
-  .global-header {
-    background-color: #f8f9fa; /* 헤더 배경색 설정 */
-    padding: 40px 20px; /* 상하 패딩을 더 크게 설정 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
-  }
-  
-  .main-heading {
-    margin: 0;
-    font-size: 2rem;
-    width: 100%; /* 전체 너비 차지 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-    padding: 20px 0; /* 상하 패딩 추가 */
-    line-height: 1.5; /* 줄 간격 설정 */
-  }
-  
-  .global-main {
-    flex: 1;
-    background-color: #ffffff; /* 메인 배경색 설정 */
-    padding: 20px;
-  }
-  
-  .global-footer {
-    background-color: #f8f9fa; /* 푸터 배경색 설정 */
-    padding: 20px;
-    text-align: center;
-  }
+.header-container {
+  background-color: #f8f9fa; /* 헤더 배경색 설정 */
+  padding: 40px 20px; /* 상하 패딩을 더 크게 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+.main-heading {
+  margin: 0;
+  font-size: 2rem;
+  width: 100%; /* 전체 너비 차지 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  padding: 20px 0; /* 상하 패딩 추가 */
+  line-height: 1.5; /* 줄 간격 설정 */
+}
+
+.global-main {
+  flex: 1;
+  background-color: #ffffff; /* 메인 배경색 설정 */
+  padding: 20px;
+}
+
+.global-footer {
+  background-color: #f8f9fa; /* 푸터 배경색 설정 */
+  padding: 20px;
+  text-align: center;
+}

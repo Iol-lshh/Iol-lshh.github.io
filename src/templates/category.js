@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout/layout'
 import Seo from '../components/seo'
 import ScrollButtonContainer from "../components/button/scroll/updownScrollButtonContainer"
 import ArticleList from "../components/article/articleList"
+import Search from "../components/search/search"
 import PropTypes from 'prop-types'
 
 const CategoryTemplate = ({ data, pageContext, location }) => {
   const { category } = pageContext
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  const [filteredPosts, setFilteredPosts] = useState(posts)
+
+  const handleSearch = (filtered) => {
+    setFilteredPosts(filtered)
+  }
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={`Posts in category "${category}"`} />
-      <Link to={`/categories/${category}/`}>{category}</Link>
-      <ArticleList posts={posts} />
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Link to={`/categories/${category}/`}>{category}</Link>
+        <Search onSearch={handleSearch} category={category} />
+      </div>
+      <ArticleList posts={filteredPosts} />
       <ScrollButtonContainer />
     </Layout>
   )

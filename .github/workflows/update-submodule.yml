@@ -47,4 +47,5 @@ jobs:
 
       - name: Push Changes to Root Repository
         run: |
-          git push origin main || echo "No changes to push"
+          git push https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git main || echo "No changes to push"
+

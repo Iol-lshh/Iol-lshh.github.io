@@ -46,9 +46,11 @@ jobs:
           git add content/blog
           git diff --cached --exit-code || git commit -m "chore: update submodule reference"
 
-      - name: Push Changes to Root Repository
+      - name: Build Deploy
         env:
-          GH_PAGES_PAT: ${{ secrets.GH_PAGES_PAT }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
         run: |
-          git remote remove origin || true
-          git push https://x-access-token:$GH_PAGES_PAT@github.com/Iol-lshh/Iol-lshh.github.io.git main
+          echo "Deploying with Gatsby..."
+          npx gatsby build --prefix-paths
+          npx gh-pages -d public --repo "https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/iol-lshh/Iol-lshh.github.io.git"
+    

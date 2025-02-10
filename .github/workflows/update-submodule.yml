@@ -31,7 +31,7 @@ jobs:
         run: |
           git config --global user.name "Iol-lshh"
           git config --global user.email "markhong93@naver.com"
-          git remote remove origin
+          git remote remove origin || true
           git remote add origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
           git remote -v
 
@@ -50,4 +50,5 @@ jobs:
         env:
           GH_PAGES_PAT: ${{ secrets.GH_PAGES_PAT }}
         run: |
-          git push https://x-access-token:$GH_PAGES_PAT@github.com/Iol-lshh/Iol-lshh.github.io.git main || echo "No changes to push"
+          git remote remove origin || true
+          git push https://x-access-token:$GH_PAGES_PAT@github.com/Iol-lshh/Iol-lshh.github.io.git main

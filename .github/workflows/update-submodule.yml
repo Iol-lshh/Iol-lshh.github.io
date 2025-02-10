@@ -27,14 +27,13 @@ jobs:
             echo "✅ GH_PAGES_PAT is set."
           fi
 
-      - name: Configure Git Authentication for updating submodule
+      - name: Ensure Correct Git Authentication
         run: |
           git config --global user.name "Iol-lshh"
           git config --global user.email "markhong93@naver.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
-
-      - name: Check Git Remote
-        run: git remote -v
+          git remote remove origin
+          git remote add origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
+          git remote -v
 
       - name: Initialize and Update Submodules
         run: |
@@ -51,6 +50,4 @@ jobs:
         env:
           GH_PAGES_PAT: ${{ secrets.GH_PAGES_PAT }}
         run: |
-          git config --global user.name "Iol-lshh"
-          git config --global user.email "markhong93@naver.com"
           git push https://x-access-token:$GH_PAGES_PAT@github.com/Iol-lshh/Iol-lshh.github.io.git main || echo "No changes to push"

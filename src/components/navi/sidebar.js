@@ -39,6 +39,7 @@ const Sidebar = () => {
       </button>
       <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
         <ul>
+          <Link to={`/`}>전체 리스트</Link>
           {categories.map(category => (
             <li key={category}>
               <Link to={`/categories/${category}/`}>{category}</Link>

@@ -29,11 +29,13 @@ jobs:
         git config --global user.name "Iol-lshh"
 
     - name: Build
+      env:
+        GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
       run: npm run build
 
     - name: Deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+        
       run: |
         npx gh-pages -d public -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}

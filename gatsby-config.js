@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV == 'development') {
+  require('dotenv').config()
+}
 module.exports = {
   siteMetadata: {
     title: `Iol-lshh's`,

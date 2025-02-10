@@ -26,7 +26,7 @@ jobs:
       - name: Update Submodule Reference
         run: |
           git submodule update --remote --merge
-          git add content/blog  # 서브모듈 경로를 정확히 지정
+          git add content/blog
           git commit -m "chore: update submodule reference" || echo "No changes to commit"
 
       - name: Push Changes to Root Repository

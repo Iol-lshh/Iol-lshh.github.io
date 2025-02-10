@@ -1,24 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import './articleList.css' // CSS 파일을 임포트
+import ArticlePagination from './articlePagination' // ArticlePagination 컴포넌트 임포트
 
 const ArticleList = ({ posts }) => {
-  const [currentPage, setCurrentPage] = useState(1)
+  const [currentPosts, setCurrentPosts] = useState([])
   const postsPerPage = 10
 
-  // Calculate the indices for the current page
-  const indexOfLastPost = currentPage * postsPerPage
-  const indexOfFirstPost = indexOfLastPost - postsPerPage
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
-
-  // Calculate total pages
-  const totalPages = Math.ceil(posts.length / postsPerPage)
-
-  // Reset currentPage to 1 when posts change
   useEffect(() => {
-    setCurrentPage(1)
-  }, [posts])
+    setCurrentPosts(posts.slice(0, postsPerPage))
+  }, [posts, postsPerPage])
 
   return (
     <>
@@ -56,18 +47,11 @@ const ArticleList = ({ posts }) => {
           )
         })}
       </ol>
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, i) => (
-          <button
-            key={i + 1}
-            onClick={() => setCurrentPage(i + 1)}
-            disabled={currentPage === i + 1}
-            className="pagination-button" // CSS 클래스 추가
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div>
+      <ArticlePagination
+        posts={posts}
+        postsPerPage={postsPerPage}
+        setCurrentPosts={setCurrentPosts}
+      />
     </>
   )
 }

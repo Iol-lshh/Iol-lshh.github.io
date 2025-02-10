@@ -29,17 +29,10 @@ jobs:
     - name: Install Gatsby CLI (Global)
       run: npm install -g gatsby-cli
 
-    - name: Configure Git Authentication
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/iol-lshh/Iol-lshh.github.io.git
-
     - name: Build Deploy
       env:
         GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         echo "Deploying with Gatsby..."
         npx gatsby build --prefix-paths
-        npx gh-pages -d public
+        npx gh-pages -d public --repo "https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/iol-lshh/Iol-lshh.github.io.git"

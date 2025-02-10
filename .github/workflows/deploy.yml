@@ -27,13 +27,9 @@ jobs:
       run: |
         git config --global user.email "markhong93@naver.com"
         git config --global user.name "Iol-lshh"
-
-    - name: Build
+  
+    - name: Build Deploy
       env:
-        GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
-      run: npm run build
-
-    - name: Deploy
-      env:
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run deploy

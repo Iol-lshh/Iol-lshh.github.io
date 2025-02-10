@@ -1,3 +1,5 @@
+require("dotenv").config({ path: "./.private.env" });
+
 module.exports = {
   siteMetadata: {
     title: `Iol-lshh's`,
@@ -122,6 +124,18 @@ module.exports = {
         background_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GA_PROPERTY_ID], // GA4 측정 ID로 변경
+        gtagConfig: {
+          anonymize_ip: true, // 사용자 IP 익명화 (GDPR 대비)
+        },
+        pluginConfig: {
+          head: true, // head에 삽입하여 로드 속도 최적화
+        },
       },
     },
   ],

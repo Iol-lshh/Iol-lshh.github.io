@@ -2,8 +2,6 @@ name: Deploy on blog submodule push
 
 on:
   push:
-    paths:
-      - 'content/blog/**'
     branches:
       - main
 

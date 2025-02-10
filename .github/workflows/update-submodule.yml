@@ -1,0 +1,31 @@
+name: Update Root Repository on Submodule Change
+
+on:
+  repository_dispatch:
+    types: [update_submodule]
+
+jobs:
+  update-root:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Root Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update Submodule Reference
+        run: |
+          git submodule update --remote --merge
+          git add submodule
+          git commit -m "chore: update submodule reference"
+
+      - name: Push Changes to Root Repository
+        run: |
+          git push origin main

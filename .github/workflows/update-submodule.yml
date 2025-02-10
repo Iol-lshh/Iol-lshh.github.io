@@ -18,7 +18,7 @@ jobs:
       - name: Check Submodule Status
         run: git submodule status
 
-      - name: Configure Git Authentication
+      - name: Configure Git Authentication for updating submodule
         run: |
           git config --global user.name "Iol-lshh"
           git config --global user.email "markhong93@naver.com"
@@ -37,6 +37,13 @@ jobs:
           git submodule update --remote --merge
           git add content/blog
           git commit -m "chore: update submodule reference" || echo "No changes to commit"
+
+      - name: Configure Git Authentication for pushing
+        run: |
+          git config --global user.name "Iol-lshh"
+          git config --global user.email "markhong93@naver.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/Iol-lshh/Iol-lshh.github.io.git
+        
 
       - name: Push Changes to Root Repository
         run: |

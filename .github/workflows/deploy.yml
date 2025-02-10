@@ -30,6 +30,6 @@ jobs:
   
     - name: Build Deploy
       env:
-          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+        GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm run deploy

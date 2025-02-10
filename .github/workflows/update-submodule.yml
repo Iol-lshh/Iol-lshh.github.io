@@ -32,3 +32,8 @@ jobs:
       - name: Push Changes to Root Repository
         run: |
           git push origin main || echo "No changes to push"
+
+      - name: Push Submodule Changes
+        run: |
+          cd content/blog
+          git push origin main || echo "No changes to push"

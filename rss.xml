@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 08:47:36 GMT</lastBuildDate><item><title><![CDATA[Agile]]></title><description><![CDATA[애자일 (Agile) 마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 08:51:56 GMT</lastBuildDate><item><title><![CDATA[Agile]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -47,10 +47,7 @@
           /&gt;
         &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;애자일 (Agile)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;마음가짐과 경험이 중요하다!&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;마음가짐과 경험이 중요하다!&lt;/p&gt;
 &lt;h3&gt;애자일 소프트웨어 개발 선언&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://agilemanifesto.org/iso/ko/manifesto.html&quot;&gt;https://agilemanifesto.org/iso/ko/manifesto.html&lt;/a&gt;&lt;/li&gt;
@@ -294,19 +291,12 @@
 &lt;li&gt;&lt;strong&gt;스크럼 이벤트&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;스프린트&lt;/li&gt;
-&lt;li&gt;계획 수립 세션&lt;/li&gt;
-&lt;li&gt;일일 스크럼&lt;/li&gt;
-&lt;li&gt;스프린트 리뷰&lt;/li&gt;
-&lt;li&gt;스프린트 회고&lt;/li&gt;
+&lt;li&gt;계획 수립 세션 ➡️ 일일 스크럼 ➡️ 스프린트 리뷰 ➡️ 스프린트 회고&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;스크럼의 가치&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;개방&lt;/li&gt;
-&lt;li&gt;존중&lt;/li&gt;
-&lt;li&gt;용기&lt;/li&gt;
-&lt;li&gt;집중&lt;/li&gt;
-&lt;li&gt;몰입&lt;/li&gt;
+&lt;li&gt;개방, 존중, 용기, 집중, 몰입&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -369,7 +359,7 @@
 &lt;/ul&gt;
 &lt;h3&gt;스크럼 산출물&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;제품 백로그 예시&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;제품 백로그&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
@@ -418,7 +408,7 @@
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;제품 백로그&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;스프린트 백로그 예시&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;스프린트 백로그&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
@@ -467,7 +457,7 @@
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;스프린트 백로그&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;증분: 스프린트 마지막에 실제로 개발이 끝나 전달되는 모든 백로그 아이템의 총합
+&lt;li&gt;&lt;strong&gt;증분&lt;/strong&gt;: 스프린트 마지막에 실제로 개발이 끝나 전달되는 모든 백로그 아이템의 총합
 &lt;ul&gt;
 &lt;li&gt;각 증분은 하나의 스프린트에서 완료된 결과(제품의 일부분)&lt;/li&gt;
 &lt;/ul&gt;

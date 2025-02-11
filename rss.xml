@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 08:42:53 GMT</lastBuildDate><item><title><![CDATA[Agile]]></title><description><![CDATA[애자일 (Agile) 마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 08:47:36 GMT</lastBuildDate><item><title><![CDATA[Agile]]></title><description><![CDATA[애자일 (Agile) 마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -47,9 +46,7 @@
             style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
           /&gt;
         &lt;/picture&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;header&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2&gt;애자일 (Agile)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;마음가짐과 경험이 중요하다!&lt;/li&gt;
@@ -3317,9 +3314,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
 &lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
 &lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
-스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
-스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성
@@ -3332,7 +3327,9 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
+스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
+스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 &lt;strong&gt;프레임워크&lt;/strong&gt;입니다.&lt;/li&gt;
 &lt;li&gt;기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 &lt;strong&gt;의존성 주입(Dependency Injection, DI)&lt;/strong&gt;, &lt;strong&gt;제어의 역전(Inversion of Control, IoC)&lt;/strong&gt; 등을 도입하면서, 모듈 간 결합도를 낮추고 유지보수성을 높였습니다.
 &lt;ul&gt;

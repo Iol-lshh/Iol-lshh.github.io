@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 08:51:56 GMT</lastBuildDate><item><title><![CDATA[Agile]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 09:00:25 GMT</lastBuildDate><item><title><![CDATA[Agile]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -1037,7 +1037,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;통찰력 도구&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;생성뼈(fishbone)
+&lt;li&gt;생선뼈(fishbone)
 &lt;ul&gt;
 &lt;li&gt;원인과 결과 다이어그램&lt;/li&gt;
 &lt;li&gt;문제의 원인을 찾기 위해 사용&lt;/li&gt;

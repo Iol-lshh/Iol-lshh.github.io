@@ -9,7 +9,56 @@
 
         gtag('config', 'G-DM0ZW7QKL9', {"anonymize_ip":true,"send_page_view":false});
       }
-      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/basic_java/">basic_java</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/etc/">etc</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/javascript/">javascript</a></li><li><a href="/categories/microservices_pattern/">microservices_pattern</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/고찰/">고찰</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/java/">java</a>, <a href="/categories/pattern/">pattern</a></p><h1 itemProp="headline">Lock 없이 동시성을 보장하는 송금 시스템 설계</h1><p>February 12, 2025</p></header><section itemProp="articleBody"><p>송금 시스템은 뭘까? 여러 사용자가 하나의 계좌에 입출금하는 것이 결국 송금 시스템이라고 볼 수 있지 않을까?</p>
+      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/basic_java/">basic_java</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/etc/">etc</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/javascript/">javascript</a></li><li><a href="/categories/microservices_pattern/">microservices_pattern</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/고찰/">고찰</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/java/">java</a>, <a href="/categories/pattern/">pattern</a></p><h1 itemProp="headline">Lock 없이 동시성을 보장하는 송금 시스템 설계</h1><p>February 12, 2025</p></header><section itemProp="articleBody"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url('data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoUAAsAPtFUo0uoJKMhsAgBABoJYgCdMoR3Ac/gxSGdQRQXhhgA+/O1XI6Q3tqkoQpLkPxFSOALWkDfdLH84ly/YP42nu6vErQizPgokAIwgWkthsEnIDBycBst+Mm/44weCC7FdzAzhaYZi6syTTqJXWB4vUPRYGUR/ShcMIdGQaAAAAA='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/c08dd620a929ab0ebf62c088badb7c57/c35b1/header.avif 158w,
+/static/c08dd620a929ab0ebf62c088badb7c57/2c8de/header.avif 315w,
+/static/c08dd620a929ab0ebf62c088badb7c57/5d31c/header.avif 630w,
+/static/c08dd620a929ab0ebf62c088badb7c57/59707/header.avif 945w,
+/static/c08dd620a929ab0ebf62c088badb7c57/51f3d/header.avif 1260w,
+/static/c08dd620a929ab0ebf62c088badb7c57/d89b9/header.avif 1792w"
+              sizes="(max-width: 630px) 100vw, 630px"
+              type="image/avif"
+            /><source
+              srcset="/static/c08dd620a929ab0ebf62c088badb7c57/81b7c/header.webp 158w,
+/static/c08dd620a929ab0ebf62c088badb7c57/6ea66/header.webp 315w,
+/static/c08dd620a929ab0ebf62c088badb7c57/8aab1/header.webp 630w,
+/static/c08dd620a929ab0ebf62c088badb7c57/a70f5/header.webp 945w,
+/static/c08dd620a929ab0ebf62c088badb7c57/4ef06/header.webp 1260w,
+/static/c08dd620a929ab0ebf62c088badb7c57/91298/header.webp 1792w"
+              sizes="(max-width: 630px) 100vw, 630px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/c08dd620a929ab0ebf62c088badb7c57/81b7c/header.webp 158w,
+/static/c08dd620a929ab0ebf62c088badb7c57/6ea66/header.webp 315w,
+/static/c08dd620a929ab0ebf62c088badb7c57/8aab1/header.webp 630w,
+/static/c08dd620a929ab0ebf62c088badb7c57/a70f5/header.webp 945w,
+/static/c08dd620a929ab0ebf62c088badb7c57/4ef06/header.webp 1260w,
+/static/c08dd620a929ab0ebf62c088badb7c57/91298/header.webp 1792w"
+            sizes="(max-width: 630px) 100vw, 630px"
+            type="image/webp"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/c08dd620a929ab0ebf62c088badb7c57/8aab1/header.webp"
+            alt="header"
+            title=""
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+    </span></p>
+<p>송금 시스템은 뭘까? 여러 사용자가 하나의 계좌에 입출금하는 것이 결국 송금 시스템이라고 볼 수 있지 않을까?</p>
 <ul>
 <li>입금: DB에 금액을 조회하고, 조회된 금액을 더하고, DB에 저장한다.</li>
 <li>출금: DB에 금액을 조회하고, 빼려는 금액보다 큰지 확인하고, 금액을 뺀 후 DB에 저장한다.</li>

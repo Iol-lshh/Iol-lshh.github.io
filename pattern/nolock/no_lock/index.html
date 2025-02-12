@@ -104,7 +104,7 @@ update를 select와 같이 하나의 쿼리로 원자적으로 처리한다.</p>
 <span class="token keyword">FROM</span>
     master m
 <span class="token keyword">INNER</span> <span class="token keyword">JOIN</span>
-    cust c
+    customer c
 <span class="token keyword">ON</span> 
     m<span class="token punctuation">.</span>id <span class="token operator">=</span> c<span class="token punctuation">.</span>id<span class="token punctuation">;</span></code></pre></div>
 <p>하지만 이 방법은 fetch-and-add 연산을 지원하는 변수에만 적용할 수 있다.

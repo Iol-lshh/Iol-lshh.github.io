@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Feb 2025 08:39:05 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Feb 2025 09:01:38 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -211,7 +211,7 @@
 &lt;li&gt;&lt;strong&gt;스크럼 마스터&lt;/strong&gt;: 프로세스 조율 및 장애물 제거
 &lt;ul&gt;
 &lt;li&gt;스크럼 마스터는 팀이 스크럼을 올바르게 수행하도록 도와주는 역할을 한다. 팀의 &lt;strong&gt;코치&lt;/strong&gt; 역할인 것이다.&lt;/li&gt;
-&lt;li&gt;외부 요인으로 인해 스크럼이 방해받을 때, 스크럼 마스터는 이를 해결할 수 있어야 한다. 심지어 &lt;strong&gt;상사와 회사의 방해로부터 스크럼을 보호해야 한다.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;외부 요인으로 인해 스크럼이 방해받을 때, 스크럼 마스터는 이를 해결할 수 있어야 한다. 심지어 &lt;strong&gt;상사와 회사의 방해로부터 스크럼을 보호해야 한다.&lt;/strong&gt;  만약 스크럼 마스터가 이를 지켜내지 못하면, 스크럼은 결국 회사의 요구에 &lt;strong&gt;맞춤화&lt;/strong&gt;되며 본래의 목적을 잃어버리게 된다. &lt;strong&gt;맞춤화된 스크럼(Customized Scrum)은 창의성과 자율성을 상실하게 되며, 결국 더 이상 스크럼이 아닌 형식적인 프로세스로 전락하고 만다.&lt;/strong&gt; 이런 방식으로 운영된 프로젝트는 대부분 실패하거나, 애자일이 의도한 효과를 발휘하지 못한다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;프로덕트 오너(PO)&lt;/strong&gt;: 요구사항 정의 및 우선순위 관리

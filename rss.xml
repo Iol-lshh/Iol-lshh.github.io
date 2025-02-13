@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Feb 2025 08:29:50 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Feb 2025 08:39:05 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -387,7 +387,49 @@
 &lt;p&gt;팀원은 매일 서로가 무엇을 하고 있는지 투명하게 공유했고, 서로 간의 피드백이 자유로웠다.&lt;/p&gt;
 &lt;p&gt;비록 3주간의 짧은 프로젝트였지만, 많은 것을 배웠다. 애자일은 무엇인가? 무엇을 위한 것인가? 어떻게 적용해야 하는가? 이 모든 것을 베스트프렉티스로 배웠다. 앞으로 나는 단순히 &apos;애자일을 한다&apos;는 것이 아니라, 애자일의 본질을 이해하고 &lt;strong&gt;팀과 조직이 함께 성장할 수 있는 환경을 만드는 개발자&lt;/strong&gt;가 되고 싶다. 애자일은 그저 방법론이 아니라, &lt;strong&gt;지속적인 개선과 협업을 통해 더 나은 개발 문화를 구축하는 철학이자 실천 방식&lt;/strong&gt;이다.&quot;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;애자일은 마음가짐이다!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./img/Pasted%20image%2020250213150524.png&quot; alt=&quot;DSU 공유&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 530px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 118.9873417721519%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsTAAALEwEAmpwYAAADHElEQVR42q1T+U8TURgsAppgEK8axSggElEwIcZ/Vo0GAblBwJ9V7kIhxisESqCl2/uk17Z0247zvZajyFVjk+n39u3uvPnmmzVlszm43X5sbTsRDscRCESwu6sjHk+zpk5FNJrE3p6B4z+TYeQUkW1jG+vExvoWnDseuFw+hMIxxGJ6GZFcx2JnEGa56XEHiQDVReH3R+HxBOHzhUkYRySaUC9HIgkFOVwg65MJswa8nhC27RocdjfsrE7NSxsCcDhc0Lh2UPEOoWk+3nfBTntcmv90Qs3pxdraJsKRopoDiKqSurL9aEo9m8lkUSjkicIhYT5fQDKZZrshpFIZ6ERKYa9UuadzrR9ep/TiXiYj+ykYhnF0KFn8z59JT+k0OYZgMIpQaJftxak4o5BIFJVURCjGOhxuFRuZbiCwqzzan6xEpCJCyaHfH4HT6VUBl/xpLpkmJ76lqaBXRChTlgi4SzmUjB0NcyKhV65Q/Nu08SshdpwepViCLYeIp/+g0AubzQ4vSVwMuUYvNZJJDVBxjg/mGDWDeTsPSmHAH+aX4kKcLRbSBgo6A5vOIi9VwmsIOO0jAT5VofzlcnnkiQQn/i0YI+L4HorjB/EznGSNKfyKJPE7ejaKhKWTB7f9aOifR+PwIm4MzKO+bxamt5+JL0W8uwCOEr5ad6P+wxw6J6240T9HzOM66zXuNbBWvZ/GpXNQTrjh5kszeDG1gq7JFbSNL+M5ye8OLShiU/e0Iq3qLuKChNNoG1vC03GrInw2YUXTsAX3ieYRC5pGiut7Q4uo6ZlRz1efRVjbO4P2j1blY9MoSUaFZJGHLKNjYhntxAO55mGt40to5uGPiAbVwddywjcbHtT1zfEFi2rRPLiA2wMLuMMqntb2HCqpPoYTFb62eXCVhB1s8yanLG2ZhZAe3uK1tGgqebfv5cG6RPzXlOt6Z/FyalUNwjw4jxa2LNOWNoW4ZXRJ+fiQkE4auS/3xF8zD1WE6T1+BfwaBra8KkutYxY8pi8tROfEivK069OqUv6E3snQxILLVFxLXKHvNbSjdWwJfwCW2HR6YB5/AAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/2a9b858ec3b26a35157861a3bc8086ba/c35b1/dsu%EA%B8%B0%EB%A1%9D.avif 158w,
+/static/2a9b858ec3b26a35157861a3bc8086ba/2c8de/dsu%EA%B8%B0%EB%A1%9D.avif 315w,
+/static/2a9b858ec3b26a35157861a3bc8086ba/0bc25/dsu%EA%B8%B0%EB%A1%9D.avif 530w&quot;
+              sizes=&quot;(max-width: 530px) 100vw, 530px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/2a9b858ec3b26a35157861a3bc8086ba/81b7c/dsu%EA%B8%B0%EB%A1%9D.webp 158w,
+/static/2a9b858ec3b26a35157861a3bc8086ba/6ea66/dsu%EA%B8%B0%EB%A1%9D.webp 315w,
+/static/2a9b858ec3b26a35157861a3bc8086ba/c2b64/dsu%EA%B8%B0%EB%A1%9D.webp 530w&quot;
+              sizes=&quot;(max-width: 530px) 100vw, 530px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/2a9b858ec3b26a35157861a3bc8086ba/c26ae/dsu%EA%B8%B0%EB%A1%9D.png 158w,
+/static/2a9b858ec3b26a35157861a3bc8086ba/6bdcf/dsu%EA%B8%B0%EB%A1%9D.png 315w,
+/static/2a9b858ec3b26a35157861a3bc8086ba/b6a9b/dsu%EA%B8%B0%EB%A1%9D.png 530w&quot;
+            sizes=&quot;(max-width: 530px) 100vw, 530px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/2a9b858ec3b26a35157861a3bc8086ba/b6a9b/dsu%EA%B8%B0%EB%A1%9D.png&quot;
+            alt=&quot;DSU 공유&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;DSU 공유&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -399,28 +441,28 @@
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/c35b1/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.avif 158w,
-/static/415d188d82ebf2a7237d45fd2198a6e5/2c8de/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.avif 315w,
-/static/415d188d82ebf2a7237d45fd2198a6e5/00294/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.avif 599w&quot;
+              srcset=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/c35b1/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.avif 158w,
+/static/415d188d82ebf2a7237d45fd2198a6e5/2c8de/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.avif 315w,
+/static/415d188d82ebf2a7237d45fd2198a6e5/00294/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.avif 599w&quot;
               sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
               type=&quot;image/avif&quot;
             /&gt;&lt;source
-              srcset=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/81b7c/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.webp 158w,
-/static/415d188d82ebf2a7237d45fd2198a6e5/6ea66/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.webp 315w,
-/static/415d188d82ebf2a7237d45fd2198a6e5/6407c/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.webp 599w&quot;
+              srcset=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/81b7c/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.webp 158w,
+/static/415d188d82ebf2a7237d45fd2198a6e5/6ea66/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.webp 315w,
+/static/415d188d82ebf2a7237d45fd2198a6e5/6407c/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.webp 599w&quot;
               sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
               type=&quot;image/webp&quot;
             /&gt;
           &lt;source
-            srcset=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/ff44c/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.jpg 158w,
-/static/415d188d82ebf2a7237d45fd2198a6e5/a6688/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.jpg 315w,
-/static/415d188d82ebf2a7237d45fd2198a6e5/d533d/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.jpg 599w&quot;
+            srcset=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/ff44c/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.jpg 158w,
+/static/415d188d82ebf2a7237d45fd2198a6e5/a6688/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.jpg 315w,
+/static/415d188d82ebf2a7237d45fd2198a6e5/d533d/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.jpg 599w&quot;
             sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
             type=&quot;image/jpeg&quot;
           /&gt;
           &lt;img
             class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/d533d/A996570A-FDBC-44F4-9E02-928C2AEC3CF0_1_105_c.jpg&quot;
+            src=&quot;/static/415d188d82ebf2a7237d45fd2198a6e5/d533d/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B4.jpg&quot;
             alt=&quot;피자데이&quot;
             title=&quot;&quot;
             loading=&quot;lazy&quot;
@@ -431,7 +473,58 @@
     &lt;/span&gt;
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;피자데이&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./img/Pasted%20image%2020250213145257.png&quot; alt=&quot;피자데이&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYElEQVR42kWUW28TVxDH97lqP0IfeW2lVjzkAYGKWkIKEpEotEgFoRahVhWqKhUJRSAugaZxLja+e31Zr3e9vqzX9q537b0SO3Hi0JKqkSpEv8yfOYcAD0dzdmfmN/+Zc3aFp/E1pJNx5LNpSJUidL2JXt9Af9CHPbRhDkxYzoCvl/+/wn+vXsIPA768wMfAsdE3KdZxUKtJEIauC8u2yRlgazLBP4eHODj8F9u7U0z397B/8DdmL/7C7vMZnh+8wM5sF+FWBGfkQDd0GD2DFx4woFyBwBxu4BFsjL39GcbbY7jeiNspJe/Mptjem2IynSB4FnDlI2+IntnjwL7VJzGUvz1Bq6kS0B0i2AoRjSOCTBBRdS9w4bgOTNvEyHcRks8LPdqPSM2A1FjcmnwsDqkdwo8iaHX5PdCLfARRQMCQAmy4lMwSO70Of/YJ6FIhn+KYwiEVZPF+6HO4S/OUKgUINrUcjEMMqU0WxBLZequkb/X4jLyj98wy9RZTT2BWzCKlDFgqZt8AWUv2kcOjFh0CsAQGZAkMzoqxFt++Y3vdaENranQwbw4nl4lDsCggnEQUOIDR1XmCRYNuU3Cj034H5G0eLcsx0SPlBo2jRdes1aarRjlP439CYIN/trPFD8AgSN800KUTHFLVyGjQvssTWes9q8tBXbqnrU4LHRLQJtug02WnvbG2DKHNVFDVTreDJsmvKVUodQW6JkPOJlCplvnSjRZvrdnWyF+jVuu85UZLI2CdinQRW7kPIZ1OoVQqIpfLoFQuolDIIZ/PQtEUiGWRw1p6g8NUrQaxlIdYLKBJIKaOWa3B4B2sPL4LIZHY5JBMJsVtlj7B9fUYpGqJEnNIZ5KQFYkUqdwyqNZQoSgy7RWoag1yrUpKG3jyaAmCKBaQTCUpWUSVHBWpzBUkkgmsrP6BtY0Y+RMcrNLFVdQqHwuDyGSr9LmxLpS6iof3bkP4/defcIdWbPku4qsPsRl7jFR8FYn1J1h+sIRUcg1iIYmimKKLm6fxZFEu5/mPoCRJKJQlGkMRFVnGvaXfIHz04Qf47NjHWPxqDgsnP8HXX3yOhVOf4pv547hyfg7fXziB6xdP4YdLp3Hj2y/x4+XTuPndGfxy7RwuL57F/Nl53Ly6iDu3ruHn6xfwGlnlco9PCTwSAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a45b4aa334194bd1c6333b561bfd9817/c35b1/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.avif 158w,
+/static/a45b4aa334194bd1c6333b561bfd9817/2c8de/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.avif 315w,
+/static/a45b4aa334194bd1c6333b561bfd9817/5d31c/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.avif 630w,
+/static/a45b4aa334194bd1c6333b561bfd9817/59707/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.avif 945w,
+/static/a45b4aa334194bd1c6333b561bfd9817/51f3d/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.avif 1260w,
+/static/a45b4aa334194bd1c6333b561bfd9817/4f10c/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.avif 4032w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/a45b4aa334194bd1c6333b561bfd9817/81b7c/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.webp 158w,
+/static/a45b4aa334194bd1c6333b561bfd9817/6ea66/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.webp 315w,
+/static/a45b4aa334194bd1c6333b561bfd9817/8aab1/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.webp 630w,
+/static/a45b4aa334194bd1c6333b561bfd9817/a70f5/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.webp 945w,
+/static/a45b4aa334194bd1c6333b561bfd9817/4ef06/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.webp 1260w,
+/static/a45b4aa334194bd1c6333b561bfd9817/b33a3/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.webp 4032w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a45b4aa334194bd1c6333b561bfd9817/c26ae/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png 158w,
+/static/a45b4aa334194bd1c6333b561bfd9817/6bdcf/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png 315w,
+/static/a45b4aa334194bd1c6333b561bfd9817/f058b/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png 630w,
+/static/a45b4aa334194bd1c6333b561bfd9817/40601/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png 945w,
+/static/a45b4aa334194bd1c6333b561bfd9817/78612/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png 1260w,
+/static/a45b4aa334194bd1c6333b561bfd9817/493ac/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png 4032w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a45b4aa334194bd1c6333b561bfd9817/f058b/%ED%94%BC%EC%9E%90%EB%8D%B0%EC%9D%B42.png&quot;
+            alt=&quot;피자데이&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;피자데이&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -443,34 +536,34 @@
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/c35b1/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.avif 158w,
-/static/daa3c2dd35a7050535f2ba57206e8828/2c8de/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.avif 315w,
-/static/daa3c2dd35a7050535f2ba57206e8828/5d31c/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.avif 630w,
-/static/daa3c2dd35a7050535f2ba57206e8828/59707/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.avif 945w,
-/static/daa3c2dd35a7050535f2ba57206e8828/e3723/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.avif 1024w&quot;
+              srcset=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/c35b1/%ED%9A%8C%EA%B3%A0.avif 158w,
+/static/daa3c2dd35a7050535f2ba57206e8828/2c8de/%ED%9A%8C%EA%B3%A0.avif 315w,
+/static/daa3c2dd35a7050535f2ba57206e8828/5d31c/%ED%9A%8C%EA%B3%A0.avif 630w,
+/static/daa3c2dd35a7050535f2ba57206e8828/59707/%ED%9A%8C%EA%B3%A0.avif 945w,
+/static/daa3c2dd35a7050535f2ba57206e8828/e3723/%ED%9A%8C%EA%B3%A0.avif 1024w&quot;
               sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
               type=&quot;image/avif&quot;
             /&gt;&lt;source
-              srcset=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/81b7c/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.webp 158w,
-/static/daa3c2dd35a7050535f2ba57206e8828/6ea66/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.webp 315w,
-/static/daa3c2dd35a7050535f2ba57206e8828/8aab1/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.webp 630w,
-/static/daa3c2dd35a7050535f2ba57206e8828/a70f5/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.webp 945w,
-/static/daa3c2dd35a7050535f2ba57206e8828/a9a89/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.webp 1024w&quot;
+              srcset=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/81b7c/%ED%9A%8C%EA%B3%A0.webp 158w,
+/static/daa3c2dd35a7050535f2ba57206e8828/6ea66/%ED%9A%8C%EA%B3%A0.webp 315w,
+/static/daa3c2dd35a7050535f2ba57206e8828/8aab1/%ED%9A%8C%EA%B3%A0.webp 630w,
+/static/daa3c2dd35a7050535f2ba57206e8828/a70f5/%ED%9A%8C%EA%B3%A0.webp 945w,
+/static/daa3c2dd35a7050535f2ba57206e8828/a9a89/%ED%9A%8C%EA%B3%A0.webp 1024w&quot;
               sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
               type=&quot;image/webp&quot;
             /&gt;
           &lt;source
-            srcset=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/ff44c/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.jpg 158w,
-/static/daa3c2dd35a7050535f2ba57206e8828/a6688/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.jpg 315w,
-/static/daa3c2dd35a7050535f2ba57206e8828/828fb/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.jpg 630w,
-/static/daa3c2dd35a7050535f2ba57206e8828/0ede0/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.jpg 945w,
-/static/daa3c2dd35a7050535f2ba57206e8828/72e01/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.jpg 1024w&quot;
+            srcset=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/ff44c/%ED%9A%8C%EA%B3%A0.jpg 158w,
+/static/daa3c2dd35a7050535f2ba57206e8828/a6688/%ED%9A%8C%EA%B3%A0.jpg 315w,
+/static/daa3c2dd35a7050535f2ba57206e8828/828fb/%ED%9A%8C%EA%B3%A0.jpg 630w,
+/static/daa3c2dd35a7050535f2ba57206e8828/0ede0/%ED%9A%8C%EA%B3%A0.jpg 945w,
+/static/daa3c2dd35a7050535f2ba57206e8828/72e01/%ED%9A%8C%EA%B3%A0.jpg 1024w&quot;
             sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
             type=&quot;image/jpeg&quot;
           /&gt;
           &lt;img
             class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/828fb/DB52B71C-5BD5-48D3-B18C-CB524EDE9E42_1_105_c.jpg&quot;
+            src=&quot;/static/daa3c2dd35a7050535f2ba57206e8828/828fb/%ED%9A%8C%EA%B3%A0.jpg&quot;
             alt=&quot;스프린트 회고&quot;
             title=&quot;&quot;
             loading=&quot;lazy&quot;
@@ -2438,7 +2531,184 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
 &lt;li&gt;&lt;strong&gt;복제 로그 (Replication Log)&lt;/strong&gt;: 데이터베이스 클러스터에서 복제 상태를 기록.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JVM]]></title><description><![CDATA[Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 JDK…]]></description><link>https://iol-lshh.github.io/java/JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[GraalVM, JVM 비교]]></title><description><![CDATA[GraalVM이란? GraalVM 특징 네이티브 Java 코드 실행 GraalVM에서 Java 코드 실행 방식 GraalVM 아키텍처 AOT 컴파일 GraalVM vs JVM 1. GraalVM이란? GraalVM은 Ahead-Of-Time (AOT…]]></description><link>https://iol-lshh.github.io/java/GraalVM_vs_JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/GraalVM_vs_JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM이란?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM 특징&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;네이티브 Java 코드 실행&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM에서 Java 코드 실행 방식&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM 아키텍처&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM vs JVM&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2&gt;1. GraalVM이란?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;은 &lt;strong&gt;Ahead-Of-Time (AOT) 컴파일&lt;/strong&gt; 기능을 가진 고성능 JDK입니다.&lt;/li&gt;
+&lt;li&gt;기존 JIT 컴파일러를 대체하는 &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통해 Java 애플리케이션의 성능을 크게 향상시킵니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;애플리케이션 지연(latency)&lt;/strong&gt; 을 줄이고, &lt;strong&gt;가비지 컬렉션 시간&lt;/strong&gt;을 단축하며, &lt;strong&gt;최대 처리량&lt;/strong&gt;을 높입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;2. GraalVM 특징&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;낮은 리소스 사용&lt;/strong&gt;: 네이티브 이미지는 런타임 시 기존 JVM이 필요 없으므로 메모리와 CPU 사용량이 적습니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;향상된 보안&lt;/strong&gt;: AOT 컴파일 시 정적 분석을 수행하여 런타임 클래스 로딩 및 리플렉션과 같은 공격 표면을 줄입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;빠른 시작&lt;/strong&gt;: 네이티브 바이너리는 바이트코드 해석이나 JIT 컴파일이 필요 없으므로 즉시 시작됩니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;컴팩트한 패키징&lt;/strong&gt;: 네이티브 이미지는 필요한 애플리케이션 코드와 종속성만 포함하여 크기를 줄입니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;프레임워크 지원&lt;/strong&gt;: Quarkus, Micronaut, Spring Boot와 통합되어 최적화된 애플리케이션 제작 가능.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;클라우드 플랫폼 지원&lt;/strong&gt;: AWS Lambda, Google Cloud, Azure 등 주요 플랫폼에서 GraalVM을 지원.&lt;/li&gt;
+&lt;li&gt;GraalVM은 &lt;strong&gt;빠른 시작 시간&lt;/strong&gt;, &lt;strong&gt;낮은 메모리 사용량&lt;/strong&gt;, &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;, &lt;strong&gt;다중 언어 지원&lt;/strong&gt;을 제공하여 뛰어난 선택지로 자리 잡고 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;3. 네이티브 Java 코드 실행&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM의 개선점을 살펴보기 전에 &lt;strong&gt;JDK&lt;/strong&gt;가 네이티브 Java 코드를 실행하는 방식을 이해해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Java의 WORA 원칙&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;WORA&lt;/strong&gt;: 한 번 작성하면, 어디서나 실행 가능(Write Once, Run Anywhere).&lt;/li&gt;
+&lt;li&gt;Java 코드는 한 번 작성하면, 기계 유형에 상관없이 호환 가능한 JVM에서 실행할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;실행 프로세스&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;소스 코드&lt;/strong&gt; → JDK가 이를 &lt;strong&gt;바이트코드&lt;/strong&gt;로 컴파일.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;바이트코드&lt;/strong&gt; → JVM이 이를 실행.&lt;/li&gt;
+&lt;li&gt;JVM 내부 단계:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;   - &lt;strong&gt;클래스 로딩(Class Loading)&lt;/strong&gt;: 바이트코드를 로딩하여 실행 준비.
+   - &lt;strong&gt;바이트코드 검증(Byte Code Verification)&lt;/strong&gt;: 바이트코드가 안전한지 검증.
+   - &lt;strong&gt;JIT 컴파일(Just-In-Time Compilation)&lt;/strong&gt;: 런타임 시 바이트코드를 네이티브 코드로 변환하여 성능 최적화.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;실행 흐름&lt;/strong&gt;:  &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;소스 코드 -&gt; JDK -&gt; 바이트코드 -&gt; JVM&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;4. GraalVM에서 Java 코드 실행 방식&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM은 Java의 기본 실행 방식을 따르지만, &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통합하여 JIT 및 AOT 컴파일 성능을 향상시킵니다.&lt;/li&gt;
+&lt;li&gt;기존 JVM의 C2 컴파일러를 대체하여 &lt;strong&gt;최적화된 컴파일&lt;/strong&gt; 및 &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;을 지원합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;5. GraalVM 아키텍처&lt;/h2&gt;
+&lt;h3&gt;1. &lt;strong&gt;Java HotSpot VM&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM의 기반 계층으로, 다음을 제공합니다:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  - &lt;strong&gt;JIT 컴파일&lt;/strong&gt;
+  - &lt;strong&gt;가비지 컬렉션&lt;/strong&gt;
+  - &lt;strong&gt;스레드 관리&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAAgAPtFWpEuoJKOhsAgBABoJQBOmUABfHr3QCtwUAAD+8hLet41lcxyzBe8meeY+NE1QC31nt6XV07NURDgm9OGZgd3tBl5Fgj9jPDYO5ZEmpY6hiaxYd4AAAA==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/c35b1/IMG_1265.avif 158w,
+/static/2af60833174db70a53b2c33bb63a1159/2c8de/IMG_1265.avif 315w,
+/static/2af60833174db70a53b2c33bb63a1159/5d31c/IMG_1265.avif 630w,
+/static/2af60833174db70a53b2c33bb63a1159/ec170/IMG_1265.avif 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
+/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
+/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
+/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
+/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
+/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
+/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp&quot;
+            alt=&quot;graalvm&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;graalvm&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;2. &lt;strong&gt;GraalVM 컴파일러 계층&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;다중 언어 JIT 컴파일러&lt;/strong&gt;로, Java 및 기타 언어에 최적화된 컴파일을 제공합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;을 지원하여 네이티브 이미지를 생성합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;3. &lt;strong&gt;언어 구현 프레임워크 계층&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GraalVM은 여러 프로그래밍 언어를 지원합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Truffle 프레임워크&lt;/strong&gt;와 &lt;strong&gt;LLVM 런타임&lt;/strong&gt;을 통해 다중 언어 런타임을 구축할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;6. AOT 컴파일&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AOT 컴파일(Ahead-Of-Time Compilation)&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  - Java 애플리케이션을 런타임 이전에 네이티브 실행 파일로 변환.
+  - &lt;strong&gt;장점&lt;/strong&gt;:
+    - 빠른 시작 시간.
+    - 낮은 메모리 사용량.
+    - 런타임 공격 표면 감소로 보안 강화.
+  - Quarkus, Micronaut 같은 프레임워크에서 마이크로서비스를 최적화하는 데 사용됩니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;7. GraalVM vs JVM&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;기능&lt;/strong&gt;            &lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;                      &lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;기존 JVM&lt;/strong&gt;  &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;시작 시간&lt;/strong&gt;        &lt;/td&gt;
+&lt;td&gt;매우 빠름 (AOT 네이티브 이미지)&lt;/td&gt;
+&lt;td&gt;느림 (JIT 컴파일 필요)        &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;메모리 사용량&lt;/strong&gt;    &lt;/td&gt;
+&lt;td&gt;적음 (네이티브 이미지)           &lt;/td&gt;
+&lt;td&gt;많음                         &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;성능&lt;/strong&gt;            &lt;/td&gt;
+&lt;td&gt;향상된 컴파일러로 최적화&lt;/td&gt;
+&lt;td&gt;JIT로 최적화되었지만 GraalVM보다는 낮음&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;언어 지원&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;다중 언어 (Python, Ruby 등)      &lt;/td&gt;
+&lt;td&gt;Java 또는 JVM 언어 중심&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;애플리케이션 패키징&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;컴팩트한 네이티브 실행 파일&lt;/td&gt;
+&lt;td&gt;JVM 런타임 필요              &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;클라우드 지원&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;AWS Lambda 등 주요 플랫폼 지원   &lt;/td&gt;
+&lt;td&gt;제한적                       &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[JVM]]></title><description><![CDATA[Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 JDK…]]></description><link>https://iol-lshh.github.io/java/JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;Java는 모바일 애플리케이션부터 대규모 엔터프라이즈 시스템까지 다양한 영역에서 사용되는 세계적으로 널리 쓰이는 프로그래밍 언어입니다. 그러나 Java 프로그램을 작성하고 실행하며 동작시키기 위해서는 Java 생태계의 세 가지 핵심 구성 요소인 &lt;strong&gt;JDK(Java Development Kit)&lt;/strong&gt;, &lt;strong&gt;JRE(Java Runtime Environment)&lt;/strong&gt;, &lt;strong&gt;JVM(Java Virtual Machine)&lt;/strong&gt; 를 이해하는 것이 중요합니다.  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -3033,184 +3303,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;h2&gt;네이티브 메서드 라이브러리 (Native Method Libraries)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;실행 엔진에서 필요한 &lt;strong&gt;C/C++ 기반 네이티브 라이브러리&lt;/strong&gt;의 모음입니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[GraalVM, JVM 비교]]></title><description><![CDATA[GraalVM이란? GraalVM 특징 네이티브 Java 코드 실행 GraalVM에서 Java 코드 실행 방식 GraalVM 아키텍처 AOT 컴파일 GraalVM vs JVM 1. GraalVM이란? GraalVM은 Ahead-Of-Time (AOT…]]></description><link>https://iol-lshh.github.io/java/GraalVM_vs_JVM/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/GraalVM_vs_JVM/</guid><pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM이란?&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM 특징&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;네이티브 Java 코드 실행&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM에서 Java 코드 실행 방식&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM 아키텍처&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM vs JVM&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2&gt;1. GraalVM이란?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;은 &lt;strong&gt;Ahead-Of-Time (AOT) 컴파일&lt;/strong&gt; 기능을 가진 고성능 JDK입니다.&lt;/li&gt;
-&lt;li&gt;기존 JIT 컴파일러를 대체하는 &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통해 Java 애플리케이션의 성능을 크게 향상시킵니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;애플리케이션 지연(latency)&lt;/strong&gt; 을 줄이고, &lt;strong&gt;가비지 컬렉션 시간&lt;/strong&gt;을 단축하며, &lt;strong&gt;최대 처리량&lt;/strong&gt;을 높입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;2. GraalVM 특징&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;낮은 리소스 사용&lt;/strong&gt;: 네이티브 이미지는 런타임 시 기존 JVM이 필요 없으므로 메모리와 CPU 사용량이 적습니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;향상된 보안&lt;/strong&gt;: AOT 컴파일 시 정적 분석을 수행하여 런타임 클래스 로딩 및 리플렉션과 같은 공격 표면을 줄입니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;빠른 시작&lt;/strong&gt;: 네이티브 바이너리는 바이트코드 해석이나 JIT 컴파일이 필요 없으므로 즉시 시작됩니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;컴팩트한 패키징&lt;/strong&gt;: 네이티브 이미지는 필요한 애플리케이션 코드와 종속성만 포함하여 크기를 줄입니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;프레임워크 지원&lt;/strong&gt;: Quarkus, Micronaut, Spring Boot와 통합되어 최적화된 애플리케이션 제작 가능.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;클라우드 플랫폼 지원&lt;/strong&gt;: AWS Lambda, Google Cloud, Azure 등 주요 플랫폼에서 GraalVM을 지원.&lt;/li&gt;
-&lt;li&gt;GraalVM은 &lt;strong&gt;빠른 시작 시간&lt;/strong&gt;, &lt;strong&gt;낮은 메모리 사용량&lt;/strong&gt;, &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;, &lt;strong&gt;다중 언어 지원&lt;/strong&gt;을 제공하여 뛰어난 선택지로 자리 잡고 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;3. 네이티브 Java 코드 실행&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM의 개선점을 살펴보기 전에 &lt;strong&gt;JDK&lt;/strong&gt;가 네이티브 Java 코드를 실행하는 방식을 이해해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Java의 WORA 원칙&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;WORA&lt;/strong&gt;: 한 번 작성하면, 어디서나 실행 가능(Write Once, Run Anywhere).&lt;/li&gt;
-&lt;li&gt;Java 코드는 한 번 작성하면, 기계 유형에 상관없이 호환 가능한 JVM에서 실행할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;실행 프로세스&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;소스 코드&lt;/strong&gt; → JDK가 이를 &lt;strong&gt;바이트코드&lt;/strong&gt;로 컴파일.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;바이트코드&lt;/strong&gt; → JVM이 이를 실행.&lt;/li&gt;
-&lt;li&gt;JVM 내부 단계:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;   - &lt;strong&gt;클래스 로딩(Class Loading)&lt;/strong&gt;: 바이트코드를 로딩하여 실행 준비.
-   - &lt;strong&gt;바이트코드 검증(Byte Code Verification)&lt;/strong&gt;: 바이트코드가 안전한지 검증.
-   - &lt;strong&gt;JIT 컴파일(Just-In-Time Compilation)&lt;/strong&gt;: 런타임 시 바이트코드를 네이티브 코드로 변환하여 성능 최적화.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;실행 흐름&lt;/strong&gt;:  &lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;소스 코드 -&gt; JDK -&gt; 바이트코드 -&gt; JVM&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;4. GraalVM에서 Java 코드 실행 방식&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM은 Java의 기본 실행 방식을 따르지만, &lt;strong&gt;Graal 컴파일러&lt;/strong&gt;를 통합하여 JIT 및 AOT 컴파일 성능을 향상시킵니다.&lt;/li&gt;
-&lt;li&gt;기존 JVM의 C2 컴파일러를 대체하여 &lt;strong&gt;최적화된 컴파일&lt;/strong&gt; 및 &lt;strong&gt;네이티브 이미지 생성&lt;/strong&gt;을 지원합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;5. GraalVM 아키텍처&lt;/h2&gt;
-&lt;h3&gt;1. &lt;strong&gt;Java HotSpot VM&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM의 기반 계층으로, 다음을 제공합니다:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  - &lt;strong&gt;JIT 컴파일&lt;/strong&gt;
-  - &lt;strong&gt;가비지 컬렉션&lt;/strong&gt;
-  - &lt;strong&gt;스레드 관리&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HotSpot VM은 Graal 컴파일러를 통합하여 기존 JVM보다 향상된 성능을 제공합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 37.9746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASoUAAgAPtFWpEuoJKOhsAgBABoJQBOmUABfHr3QCtwUAAD+8hLet41lcxyzBe8meeY+NE1QC31nt6XV07NURDgm9OGZgd3tBl5Fgj9jPDYO5ZEmpY6hiaxYd4AAAA==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/c35b1/IMG_1265.avif 158w,
-/static/2af60833174db70a53b2c33bb63a1159/2c8de/IMG_1265.avif 315w,
-/static/2af60833174db70a53b2c33bb63a1159/5d31c/IMG_1265.avif 630w,
-/static/2af60833174db70a53b2c33bb63a1159/ec170/IMG_1265.avif 828w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
-/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
-/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
-/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/2af60833174db70a53b2c33bb63a1159/81b7c/IMG_1265.webp 158w,
-/static/2af60833174db70a53b2c33bb63a1159/6ea66/IMG_1265.webp 315w,
-/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp 630w,
-/static/2af60833174db70a53b2c33bb63a1159/712de/IMG_1265.webp 828w&quot;
-            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-            type=&quot;image/webp&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/2af60833174db70a53b2c33bb63a1159/8aab1/IMG_1265.webp&quot;
-            alt=&quot;graalvm&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;graalvm&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;h3&gt;2. &lt;strong&gt;GraalVM 컴파일러 계층&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;다중 언어 JIT 컴파일러&lt;/strong&gt;로, Java 및 기타 언어에 최적화된 컴파일을 제공합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일&lt;/strong&gt;을 지원하여 네이티브 이미지를 생성합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;3. &lt;strong&gt;언어 구현 프레임워크 계층&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;GraalVM은 여러 프로그래밍 언어를 지원합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Truffle 프레임워크&lt;/strong&gt;와 &lt;strong&gt;LLVM 런타임&lt;/strong&gt;을 통해 다중 언어 런타임을 구축할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;6. AOT 컴파일&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AOT 컴파일(Ahead-Of-Time Compilation)&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;  - Java 애플리케이션을 런타임 이전에 네이티브 실행 파일로 변환.
-  - &lt;strong&gt;장점&lt;/strong&gt;:
-    - 빠른 시작 시간.
-    - 낮은 메모리 사용량.
-    - 런타임 공격 표면 감소로 보안 강화.
-  - Quarkus, Micronaut 같은 프레임워크에서 마이크로서비스를 최적화하는 데 사용됩니다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;7. GraalVM vs JVM&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;strong&gt;기능&lt;/strong&gt;            &lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;GraalVM&lt;/strong&gt;                      &lt;/th&gt;
-&lt;th&gt;&lt;strong&gt;기존 JVM&lt;/strong&gt;  &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;시작 시간&lt;/strong&gt;        &lt;/td&gt;
-&lt;td&gt;매우 빠름 (AOT 네이티브 이미지)&lt;/td&gt;
-&lt;td&gt;느림 (JIT 컴파일 필요)        &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;메모리 사용량&lt;/strong&gt;    &lt;/td&gt;
-&lt;td&gt;적음 (네이티브 이미지)           &lt;/td&gt;
-&lt;td&gt;많음                         &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;성능&lt;/strong&gt;            &lt;/td&gt;
-&lt;td&gt;향상된 컴파일러로 최적화&lt;/td&gt;
-&lt;td&gt;JIT로 최적화되었지만 GraalVM보다는 낮음&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;언어 지원&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;다중 언어 (Python, Ruby 등)      &lt;/td&gt;
-&lt;td&gt;Java 또는 JVM 언어 중심&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;애플리케이션 패키징&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;컴팩트한 네이티브 실행 파일&lt;/td&gt;
-&lt;td&gt;JVM 런타임 필요              &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;클라우드 지원&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;AWS Lambda 등 주요 플랫폼 지원   &lt;/td&gt;
-&lt;td&gt;제한적                       &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[JPA]]></title><description><![CDATA[JDBC vs JPA Spring Data JPA의 작동 방식 JPA와 ORM에 대한 베스트 프렉티스 가이드 1. JDBC vs JPA Java에서 관계형 데이터베이스를 사용할 때, JDBC(Java Database Connectivity)와 JPA…]]></description><link>https://iol-lshh.github.io/java/JPA/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JPA/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JPA]]></title><description><![CDATA[JDBC vs JPA Spring Data JPA의 작동 방식 JPA와 ORM에 대한 베스트 프렉티스 가이드 1. JDBC vs JPA Java에서 관계형 데이터베이스를 사용할 때, JDBC(Java Database Connectivity)와 JPA…]]></description><link>https://iol-lshh.github.io/java/JPA/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JPA/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;JDBC vs JPA&lt;/li&gt;
 &lt;li&gt;Spring Data JPA의 작동 방식&lt;/li&gt;
 &lt;li&gt;JPA와 ORM에 대한 베스트 프렉티스 가이드&lt;/li&gt;

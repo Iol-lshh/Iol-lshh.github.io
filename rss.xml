@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 14 Feb 2025 07:27:52 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Feb 2025 07:52:08 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Thu, 13 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -308,6 +308,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;2. &lt;strong&gt;익스트림 프로그래밍(XP, eXtreme Programming)&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;극한, 개발!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;소프트웨어 품질과 개발 속도 향상&lt;/strong&gt;에 중점을 둔 방법론으로, &lt;strong&gt;개발 프로세스의 실천 방식&lt;/strong&gt;을 강조한다. (다만, 모든 개발자가 페어 프로그래밍이나 TDD를 원활하게 수행할 수 있어야 한다.)&lt;/p&gt;
 &lt;p&gt;스크럼과 중복되는 애자일 개념들(가치, 원칙)과 XP 구성원에 대한 이야기는 생략하고, XP의 주요 실천법들을 추려봤다.&lt;/p&gt;
 &lt;ul&gt;
@@ -358,11 +359,12 @@
 &lt;blockquote&gt;
 &lt;p&gt;여기 슬프지만 자주 반복되는 이야기가 있다. 개발 팀이 XP를 적용하기 시작해서, 품질과 생산성이 극적으로 개선된다. 그런데 팀이 해체되고 팀장은 해고되고 나머지 팀원은 흩어진다. 왜 이런 일이 생길까? &lt;strong&gt;제약 이론&lt;/strong&gt;의 관점에서 보면, &lt;strong&gt;팀의 성과가 개선되면 제약 지점이 조직의 다른 곳으로 옮겨간다.&lt;/strong&gt; 새로운 제약 지점(예를 들어, 자기들이 무엇을 원하는지 충분히 빠르게 결정할 수 없는 마케팅부)은 자기들에게 시선이 쏠리는 것을 좋아하지 않는다. 사실 조직 전체의 처리능력을 걱정하는 직원은 아무도 없다. 결국 소란의 &apos;근원&apos;인 XP가 비난의 표적이 되어 제거된다. XP를 적용할 때에는 &lt;strong&gt;임원의 후원&lt;/strong&gt;을 받고 팀 &lt;strong&gt;바깥 사람들과 튼튼한 관계&lt;/strong&gt;를 맺는 것이 핵심적인데, 그 까닭은 바로 XP를 적용하여 소프트웨어 개발이 자기들의 행동을 개선하는 순간 조직 나머지 부분의 업무 구조도 바뀌기 때문이다. 만약 임원의 후원을 받지 않는다면, 인정이나 보호 없이 혼자서라도 일을 더 잘하겠다고 각오하라. (11) - Extreme programming (Beck, 2004)&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;정리&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;꼭 XP를 사용하세요. 기능 단위로 계획을 짜세요. 고객들이 관심을 가지는 기능들을 계획의 항목으로 삼아야 합니다. 릴리즈는 분기에 한번 계획하시고, 반복iteration은 더 자주 계획하세요. 우리는 두 주짜리 반복을 사용합니다. 반복이 절대로 고정된 것이 되도록 만드세요. 고객을 팀과 한 자리에 앉도록 하세요. 팀을 개방된 공간에 두세요. 폭포수 방식 개발 안에 XP를 끼워 넣어야만 하는 경우에도, XP를 사용한다면 여전히 많은 이익을 얻을 것입니다. (16) - Extreme programming (Beck, 2004)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;3. &lt;strong&gt;칸반(Kanban)&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;소프트웨어 개발뿐만 아니라 다양한 업무 관리에 적용되는 방법론으로, &lt;strong&gt;작업 흐름을 시각화&lt;/strong&gt;하고 &lt;strong&gt;WIP(Work In Progress, 진행 중인 작업)의 제한&lt;/strong&gt;을 통해 효율성을 극대화하는 방식이다.&lt;/p&gt;
+&lt;p&gt;lean thinking의 원칙을 기반으로 한, 소프트웨어 개발뿐만 아니라 다양한 업무 관리에 적용되는 방법론으로, &lt;strong&gt;작업 흐름을 시각화&lt;/strong&gt;하고 &lt;strong&gt;WIP(Work In Progress, 진행 중인 작업)의 제한&lt;/strong&gt;을 통해 효율성을 극대화하는 방식이다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;작업 흐름(Workflow) 시각화&lt;/strong&gt;
 &lt;ul&gt;
@@ -913,7 +915,7 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Lock 없이 동시성을 보장하는 방법은 다양하다. fetch-and-add, CAS, 멱등성 패턴 등이 있다. 어떤 방법이 가장 적합한지는 상황에 따라 다르다.  fetch-and-add는 간략한 구현에 적합하다. CAS는 경쟁이 적은 환경에서 적합하다. 멱등성 패턴은 멱등성을 보장하는 연산이 필요하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;Lock 없이 동시성을 보장하는 방법은 다양하다. fetch-and-add, CAS, 멱등성 패턴 등이 있다. 어떤 방법이 가장 적합한지는 상황에 따라 다르다.  fetch-and-add는 간략한 구현에 적합하다. CAS는 경쟁이 적은 환경에서 적합하다. 멱등성 패턴은 멱등성을 보장하는 연산이 필요하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile - Scrum]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_Scrum/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_Scrum/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -4094,7 +4096,22 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;패키지 관리자&lt;/li&gt;
+&lt;li&gt;명령어&lt;/li&gt;
+&lt;li&gt;의존성
+&lt;ul&gt;
+&lt;li&gt;메이븐&lt;/li&gt;
+&lt;li&gt;기본적인 설정
+&lt;ul&gt;
+&lt;li&gt;스프링 재단&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
+스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
+스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다&lt;/li&gt;
 &lt;li&gt;테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/li&gt;
 &lt;/ul&gt;
@@ -4208,22 +4225,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
 &lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
 &lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;패키지 관리자&lt;/li&gt;
-&lt;li&gt;명령어&lt;/li&gt;
-&lt;li&gt;의존성
-&lt;ul&gt;
-&lt;li&gt;메이븐&lt;/li&gt;
-&lt;li&gt;기본적인 설정
-&lt;ul&gt;
-&lt;li&gt;스프링 재단&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
-스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
-스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 &lt;strong&gt;프레임워크&lt;/strong&gt;입니다.&lt;/li&gt;
 &lt;li&gt;기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 &lt;strong&gt;의존성 주입(Dependency Injection, DI)&lt;/strong&gt;, &lt;strong&gt;제어의 역전(Inversion of Control, IoC)&lt;/strong&gt; 등을 도입하면서, 모듈 간 결합도를 낮추고 유지보수성을 높였습니다.
 &lt;ul&gt;

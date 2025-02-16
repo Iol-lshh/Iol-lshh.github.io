@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Feb 2025 10:36:29 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Feb 2025 13:49:31 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -309,7 +309,55 @@
 &lt;/ul&gt;
 &lt;h2&gt;2. &lt;strong&gt;익스트림 프로그래밍(XP, eXtreme Programming)&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;극한, 개발!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./img/extreme_programming.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 91.77215189873418%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAABkElEQVR42oWU6U7CQBSFC6UFpKxSVlE2d0UxuEcTItF38I/v/xaeSb5Jxkppky9tZ7n33DOL5/19CqImQlESgdgTRVGlrUS/Ie9lPJF4FNdiIVZiKW7Fk7gRx+JKvIoh83LbgtlGX5yKEzEXfTEQB3y71eTSlNmOungQM1F2qKH4XbwkLEkN1qKs0Cm/S1k93jGq78SFqKQpDPDOmN8UYyYHW8aZRJd4GBC0kAxoPDtEUcdpL5PA+DdiTIxiM+eM/8gNlsefCV55vI9YhEbCfPs9xO9/q1zB7CbBrVK7x0IStEgyY+tMETJHacUt64uJY/5NsH0CmPLaibJKKF857b7nrO6GSa6SWsLnotPfJfEzY+tu2eZorVHSx2Rbql0Qa0Obd0zZS9r6yWN4T7YWHQOo7zivU46it22MyfhNGSN88TE6on8IC4Kd8++nnRST7YOSmihsk6CHNSGq15yUzIvB3DI/XAwxVFEyQdWSbTLG23zWBWFW7ZNJDRSbhXnjDDd2KUsLam+eiK3S4T/z+QVZiBfOUerGAgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/50d1cec056fbe0dc3c973c0c2a3e356a/c35b1/extreme_programming.avif 158w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/2c8de/extreme_programming.avif 315w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/5d31c/extreme_programming.avif 630w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/59707/extreme_programming.avif 945w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/51f3d/extreme_programming.avif 1260w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/f696c/extreme_programming.avif 1920w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/50d1cec056fbe0dc3c973c0c2a3e356a/81b7c/extreme_programming.webp 158w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/6ea66/extreme_programming.webp 315w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/8aab1/extreme_programming.webp 630w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/a70f5/extreme_programming.webp 945w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/4ef06/extreme_programming.webp 1260w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/882b9/extreme_programming.webp 1920w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/50d1cec056fbe0dc3c973c0c2a3e356a/c26ae/extreme_programming.png 158w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/6bdcf/extreme_programming.png 315w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/f058b/extreme_programming.png 630w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/40601/extreme_programming.png 945w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/78612/extreme_programming.png 1260w,
+/static/50d1cec056fbe0dc3c973c0c2a3e356a/29114/extreme_programming.png 1920w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/50d1cec056fbe0dc3c973c0c2a3e356a/f058b/extreme_programming.png&quot;
+            alt=&quot;extreme programming&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;소프트웨어 품질과 개발 속도 향상&lt;/strong&gt;에 중점을 둔 방법론으로, &lt;strong&gt;개발 프로세스의 실천 방식&lt;/strong&gt;을 강조한다. (다만, 모든 개발자가 페어 프로그래밍이나 TDD를 원활하게 수행할 수 있어야 한다.)&lt;/p&gt;
 &lt;p&gt;스크럼과 중복되는 애자일 개념들(가치, 원칙)과 XP 구성원에 대한 이야기는 생략하고, XP의 주요 실천법들을 추려봤다.&lt;/p&gt;
 &lt;ul&gt;
@@ -2198,141 +2246,10 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
 &lt;/ul&gt;
 &lt;p&gt;이처럼 소프트웨어 엔지니어링 세계에도 새로운 성취와 패러다임이 계속해 등장하고, 기존 패러다임과 경쟁·공존하며 진화한다. 단순히 유행이나 트렌드가 아니라, 공동체가 변칙 상황을 해결하기 위해 끊임없이 진화하는 필연적인 과정인 것이다.&lt;/p&gt;
 &lt;p&gt;정리하자면, &lt;strong&gt;패러다임은 단순한 방법론이 아니라, 엔지니어링 공동체가 문제를 해결하는 방식을 규정하는 기본 원칙(fundamental principle)과 사고 방식(mindset)이다.&lt;/strong&gt; 이를 깊이 이해하는 것은 올바른 엔지니어링 신념과 철학을 형성하는 데 큰 도움이 되며, 결국 fine 엔지니어가 되기 위한 핵심 조건이다. 한 번 읽고 지나가는 것만으로는 부족하므로, 필독서를 반복적으로 탐독하고, 직접 프로젝트에 적용하며, 끊임없이 공부하고 고민해야겠다고 다시 한 번 다짐한다.&lt;/p&gt;
-&lt;p&gt;다음 글에서는 fine 엔지니어가 되기 위해 필요한 또 다른 필수 조건인 &lt;strong&gt;기계 공감&lt;/strong&gt;(Mechanical Sympathy)에 대해서 이야기할까한다. 엔지니어링 철학을 넘어, 기술적 구현 능력부터 러닝 커브, 기술 부채까지 고민을 담고자 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PG 주의사항]]></title><description><![CDATA[대부분의 문제는 초기에는 드러나지 않지만, 데이터가 많아지고 쿼리가 복잡해질수록 심각한 성능 문제로 이어질 수 있습니다.…]]></description><link>https://iol-lshh.github.io/Db/PG_주의사항/</link><guid isPermaLink="false">https://iol-lshh.github.io/Db/PG_주의사항/</guid><pubDate>Thu, 30 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;대부분의 문제는 초기에는 드러나지 않지만, 데이터가 많아지고 쿼리가 복잡해질수록 심각한 성능 문제로 이어질 수 있습니다.&lt;/li&gt;
+&lt;p&gt;다음 글에서는 fine 엔지니어가 되기 위해 필요한 또 다른 필수 조건인 &lt;strong&gt;기계 공감&lt;/strong&gt;(Mechanical Sympathy)에 대해서 이야기할까한다. 엔지니어링 철학을 넘어, 기술적 구현 능력부터 러닝 커브, 기술 부채까지 고민을 담고자 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[애플리케이션의 CQRS]]></title><description><![CDATA[Milan Jovanovic…]]></description><link>https://iol-lshh.github.io/pattern/애플리케이션의_CQRS/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/애플리케이션의_CQRS/</guid><pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Milan Jovanovic님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;1. &lt;code class=&quot;language-text&quot;&gt;work_mem&lt;/code&gt; 기본값을 그대로 사용하기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;work_mem&lt;/code&gt;은 쿼리 연산이 임시 파일을 디스크에 기록하기 전 사용할 수 있는 메모리 크기를 결정하는 설정입니다.&lt;/li&gt;
-&lt;li&gt;기본값을 유지하면 작은 데이터베이스에서는 문제가 없지만, 데이터가 많아지면 성능이 급격히 저하될 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;pgbadger&lt;/code&gt;를 활용해 로그 분석&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;pganalyze&lt;/code&gt; 같은 모니터링 시스템 사용&lt;/li&gt;
-&lt;li&gt;적절한 &lt;code class=&quot;language-text&quot;&gt;work_mem&lt;/code&gt; 값 계산 및 조정&lt;/li&gt;
-&lt;li&gt;특정 트랜잭션에서 &lt;code class=&quot;language-text&quot;&gt;SET LOCAL work_mem&lt;/code&gt;으로 값 조정 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;work_mem &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;$YOUR_INSTANCE_MEMORY &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.8&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; shared_buffers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; $YOUR_ACTIVE_CONNECTION_COUNT&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2&gt;2. 모든 애플리케이션 로직을 Postgres 함수와 프로시저에 넣기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;PostgreSQL의 함수 및 프로시저는 강력한 기능을 제공하지만, 무분별한 사용은 성능을 저하시킵니다.&lt;/li&gt;
-&lt;li&gt;특히 중첩 함수나 재귀 호출은 예상치 못한 지연과 복제 지연(replication lag)을 유발할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;간단한 함수는 괜찮지만, 가능한 한 &lt;code class=&quot;language-text&quot;&gt;IMMUTABLE&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;STABLE&lt;/code&gt;로 선언&lt;/li&gt;
-&lt;li&gt;데이터 구조 조작 및 비즈니스 로직은 애플리케이션 계층에서 처리&lt;/li&gt;
-&lt;li&gt;데이터베이스 확장성을 고려하여 부하를 최소화&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;3. 트리거를 과도하게 사용하기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;트리거는 강력하지만 효율적이지 않습니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;generated columns&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;materialized views&lt;/code&gt; 같은 대안을 고려하세요.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;BEFORE&lt;/code&gt; 트리거와 &lt;code class=&quot;language-text&quot;&gt;AFTER&lt;/code&gt; 트리거를 각각 하나씩만 사용&lt;/li&gt;
-&lt;li&gt;트리거 함수명을 통일하고, 모든 로직을 한 함수 내에 유지&lt;/li&gt;
-&lt;li&gt;트리거 내부에서 개별적으로 처리하지 말고, 일괄 처리(batch processing)를 활용&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;4. &lt;code class=&quot;language-text&quot;&gt;NOTIFY&lt;/code&gt;를 과도하게 사용하기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;NOTIFY&lt;/code&gt;는 메시지 큐를 직접 관리하지 않아도 되게 해주지만, 많은 이벤트를 처리할 때는 성능 문제가 발생할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;NOTIFY&lt;/code&gt; 대신 이벤트를 큐 테이블에 저장하고 일정 간격으로 배치 처리&lt;/li&gt;
-&lt;li&gt;이벤트 소비 속도를 조절하여 데이터베이스 부하를 줄이기&lt;/li&gt;
-&lt;li&gt;이벤트 처리 후, 데이터를 적절히 정리하여 성능 최적화&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;TABLE&lt;/span&gt; event_queue &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  id uuid &lt;span class=&quot;token keyword&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;DEFAULT&lt;/span&gt; gen_random_uuid&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  user_id uuid &lt;span class=&quot;token operator&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;REFERENCES&lt;/span&gt; users&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;CASCADE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;data&lt;/span&gt; jsonb &lt;span class=&quot;token operator&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  created_at timestamptz &lt;span class=&quot;token operator&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;DEFAULT&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  occurred_at timestamptz &lt;span class=&quot;token operator&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  acquired_at timestamptz&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  failed_at timestamptz
-&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; event_queue
-&lt;span class=&quot;token keyword&quot;&gt;SET&lt;/span&gt; acquired_at &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; id &lt;span class=&quot;token operator&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;SELECT&lt;/span&gt; id
-  &lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; event_queue
-  &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; acquired_at &lt;span class=&quot;token operator&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;BY&lt;/span&gt; occurred_at
-  &lt;span class=&quot;token keyword&quot;&gt;FOR&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; SKIP LOCKED
-  &lt;span class=&quot;token keyword&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;RETURNING&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2&gt;5. &lt;code class=&quot;language-text&quot;&gt;EXPLAIN ANALYZE&lt;/code&gt;를 실데이터에서 실행하기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EXPLAIN ANALYZE&lt;/code&gt;는 쿼리를 실제 실행하면서 실행 계획을 보여주기 때문에 프로덕션 환경에서는 조심해서 사용해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;프로덕션 데이터의 샘플을 주기적으로 백업하여 별도의 샌드박스 환경에서 분석&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EXPLAIN&lt;/code&gt;을 먼저 실행하고, 필요할 때만 &lt;code class=&quot;language-text&quot;&gt;ANALYZE&lt;/code&gt;를 추가 실행&lt;/li&gt;
-&lt;li&gt;샌드박스 환경은 프로덕션보다 작은 크기로 유지하여 성능 문제를 미리 감지&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;6. CTE(Common Table Expressions)를 서브쿼리 대신 사용하세요&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;CTE(예: &lt;code class=&quot;language-text&quot;&gt;WITH&lt;/code&gt; 쿼리)는 직관적이지만, 항상 성능이 더 좋은 것은 아닙니다.&lt;/li&gt;
-&lt;li&gt;PostgreSQL 12 이전에는 CTE가 항상 물리적으로 실행되었기 때문에 서브쿼리보다 성능이 낮은 경우가 많았습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;EXPLAIN&lt;/code&gt;을 사용하여 CTE와 서브쿼리를 비교&lt;/li&gt;
-&lt;li&gt;PostgreSQL 12 이상에서는 최적화가 자동으로 이루어지므로 큰 차이가 없을 수도 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;7. 재귀 CTE를 성능이 중요한 쿼리에 사용하기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;재귀 CTE는 우아한 해결책이지만, 데이터가 많아질수록 성능 저하가 발생합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;데이터 읽기 요청이 많다면, 미리 계산된 결과를 &lt;code class=&quot;language-text&quot;&gt;materialized view&lt;/code&gt; 또는 별도 테이블에 저장하여 조회 속도 최적화&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT&lt;/code&gt; 성능을 높이는 대신, &lt;code class=&quot;language-text&quot;&gt;INSERT&lt;/code&gt;나 &lt;code class=&quot;language-text&quot;&gt;UPDATE&lt;/code&gt; 시점에 비용을 지불하는 방식으로 설계&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;8. 외래 키(Foreign Key)에 인덱스를 추가하지 않기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;PostgreSQL은 외래 키에 자동으로 인덱스를 생성하지 않습니다. 따라서 &lt;code class=&quot;language-text&quot;&gt;JOIN&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;ON DELETE&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;ON UPDATE&lt;/code&gt; 성능이 저하될 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;외래 키가 포함된 컬럼에 명시적으로 인덱스 추가&lt;/li&gt;
-&lt;li&gt;삭제 및 갱신 작업 시 성능 저하를 방지하기 위해 정기적인 모니터링 수행&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;ON&lt;/span&gt; orders &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;customer_id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2&gt;9. &lt;code class=&quot;language-text&quot;&gt;IS NOT DISTINCT FROM&lt;/code&gt;을 인덱싱된 컬럼에 사용하기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;IS NOT DISTINCT FROM&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;NULL&lt;/code&gt;을 비교할 때 유용하지만, 인덱스를 사용할 수 없게 만듭니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;해결책&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;직접 &lt;code class=&quot;language-text&quot;&gt;NULL&lt;/code&gt; 비교 후 &lt;code class=&quot;language-text&quot;&gt;=&lt;/code&gt; 연산을 사용하는 방식으로 최적화&lt;/li&gt;
-&lt;li&gt;쿼리 실행 계획을 분석하여 성능이 저하되는지 확인&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; foo
-&lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;bar &lt;span class=&quot;token operator&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;AND&lt;/span&gt; baz &lt;span class=&quot;token operator&quot;&gt;IS&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;token operator&quot;&gt;OR&lt;/span&gt; bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; baz&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;hr&gt;
-&lt;h2&gt;결론&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;이 글에서 소개한 9가지 실수는 초기에는 문제가 되지 않지만, 데이터가 커질수록 심각한 성능 문제로 이어질 수 있습니다.&lt;/li&gt;
-&lt;li&gt;PostgreSQL을 확장 가능한 방식으로 운영하려면, 처음부터 적절한 설정과 패턴을 선택하는 것이 중요합니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[애플리케이션의 CQRS]]></title><description><![CDATA[유스 케이스는 애플리케이션의 기능을 나타냅니다: 현재 사용자 정보 가져오기 쇼핑 카트에 아이템 추가하기 주문 결제 환불하기 저는 하나의 유스 케이스(기능)를 중심으로 코드를 구조화합니다. CQRS와 함께하는 유스 케이스 Command…]]></description><link>https://iol-lshh.github.io/pattern/애플리케이션의_CQRS/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/애플리케이션의_CQRS/</guid><pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;유스 케이스는 애플리케이션의 기능을 나타냅니다:&lt;/p&gt;
+&lt;p&gt;유스 케이스는 애플리케이션의 기능을 나타냅니다:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;현재 사용자 정보 가져오기&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;쇼핑 카트에 아이템 추가하기&lt;/strong&gt;&lt;/li&gt;
@@ -2387,7 +2304,10 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
             style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
           /&gt;
         &lt;/picture&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[API 베스트 프렉티스]]></title><description><![CDATA[1. 리소스 상태 전이 메커니즘 진정한 무상태성은 각 요청이 완전한 컨텍스트를 포함해야 함. 서버는 요청 간 클라이언트 세션 상태를 유지하지 않음. 리소스 상태 전이가 애플리케이션 흐름을 주도함. 2. 하이퍼미디어 제어 (HATEOAS…]]></description><link>https://iol-lshh.github.io/pattern/API_베스트_프렉티스/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/API_베스트_프렉티스/</guid><pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[API 베스트 프렉티스]]></title><description><![CDATA[Nina Fernanda Duran님의 링크드인 게시글을 참조했습니다.…]]></description><link>https://iol-lshh.github.io/pattern/API_베스트_프렉티스/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/API_베스트_프렉티스/</guid><pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Nina Fernanda Duran님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -2489,9 +2409,10 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;RFC 7807&lt;/code&gt; (Problem Details) 구현.&lt;/li&gt;
 &lt;li&gt;일관된 에러 응답.&lt;/li&gt;
 &lt;li&gt;일시적 실패 처리 패턴.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[데이터 캐싱]]></title><description><![CDATA[이 다이어그램은 일반적인 아키텍처에서 데이터가 캐싱되는 위치를 설명합니다. 데이터는 여러 계층에 걸쳐 캐싱됩니다.  1. 클라이언트 애플리케이션 HTTP 응답은 브라우저에서 캐싱될 수 있습니다. 흐름: 처음 데이터 요청 시, HTTP…]]></description><link>https://iol-lshh.github.io/pattern/데이터_캐싱/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/데이터_캐싱/</guid><pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;이 다이어그램은 일반적인 아키텍처에서 데이터가 캐싱되는 위치를 설명합니다. 데이터는 &lt;strong&gt;여러 계층&lt;/strong&gt;에 걸쳐 캐싱됩니다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[데이터 캐싱]]></title><description><![CDATA[ByteByteGo의 링크드인 게시글을 참조했습니다. 이 다이어그램은 일반적인 아키텍처에서 데이터가 캐싱되는 위치를 설명합니다. 데이터는 여러 계층에 걸쳐 캐싱됩니다.  1. 클라이언트 애플리케이션 HTTP…]]></description><link>https://iol-lshh.github.io/pattern/데이터_캐싱/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/데이터_캐싱/</guid><pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;ByteByteGo의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;이 다이어그램은 일반적인 아키텍처에서 데이터가 캐싱되는 위치를 설명합니다. 데이터는 &lt;strong&gt;여러 계층&lt;/strong&gt;에 걸쳐 캐싱됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -4109,10 +4030,12 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다 테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다&lt;/li&gt;
-&lt;li&gt;테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/li&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[Daniel Moka님의 링크드인 게시글을 참조했습니다. 클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
+테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Daniel Moka님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
+테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;

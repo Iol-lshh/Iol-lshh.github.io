@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Feb 2025 13:49:31 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 Feb 2025 01:19:45 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/회고/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -976,7 +976,7 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Lock 없이 동시성을 보장하는 방법은 다양하다. fetch-and-add, CAS, 멱등성 패턴 등이 있다. 어떤 방법이 가장 적합한지는 상황에 따라 다르다.  fetch-and-add는 간략한 구현에 적합하다. CAS는 경쟁이 적은 환경에서 적합하다. 멱등성 패턴은 멱등성을 보장하는 연산이 필요하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile - Scrum]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/practice/agile/Agile_Scrum/</link><guid isPermaLink="false">https://iol-lshh.github.io/practice/agile/Agile_Scrum/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;Lock 없이 동시성을 보장하는 방법은 다양하다. fetch-and-add, CAS, 멱등성 패턴 등이 있다. 어떤 방법이 가장 적합한지는 상황에 따라 다르다.  fetch-and-add는 간략한 구현에 적합하다. CAS는 경쟁이 적은 환경에서 적합하다. 멱등성 패턴은 멱등성을 보장하는 연산이 필요하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile - Scrum]]></title><description><![CDATA[마음가짐과 경험이 중요하다! 애자일 소프트웨어 개발 선언 https://agilemanifesto.org/iso/ko/manifesto.html  애자일 선언 이면의 원칙  반복(iteration…]]></description><link>https://iol-lshh.github.io/회고/agile/Agile_Scrum/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/agile/Agile_Scrum/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -2083,7 +2083,7 @@ Fetch-and-Add는 개별 연산이 원자적이지만, 여러 필드를 함께 �
         &lt;/picture&gt;
     &lt;/span&gt;
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;짧은 주제&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 신념, 철학, 패러다임]]></title><description><![CDATA[나는 fine한 엔지니어가 되길 희망한다. 무엇이 fine…]]></description><link>https://iol-lshh.github.io/etc/Fine_Engineer의_조건-신념_철학_패러다임/</link><guid isPermaLink="false">https://iol-lshh.github.io/etc/Fine_Engineer의_조건-신념_철학_패러다임/</guid><pubDate>Sat, 08 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+  &lt;/figure&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 신념, 철학, 패러다임]]></title><description><![CDATA[나는 fine한 엔지니어가 되길 희망한다. 무엇이 fine…]]></description><link>https://iol-lshh.github.io/회고/Fine_Engineer의_조건-신념_철학_패러다임/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/Fine_Engineer의_조건-신념_철학_패러다임/</guid><pubDate>Sat, 08 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -3298,6 +3298,122 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;h2&gt;네이티브 메서드 라이브러리 (Native Method Libraries)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;실행 엔진에서 필요한 &lt;strong&gt;C/C++ 기반 네이티브 라이브러리&lt;/strong&gt;의 모음입니다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[Daniel Moka님의 링크드인 게시글을 참조했습니다. 클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
+테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Daniel Moka님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
+테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGeO/KdIqFEg2A//8QAGhABAAIDAQAAAAAAAAAAAAAAAwECAAQTFP/aAAgBAQABBQLaulX6tgzMjsKkP2XNS02Dz0WfEWGcFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAeEAACAgICAwAAAAAAAAAAAAAAAQIREpExMjNCcf/aAAgBAQAGPwJqLaXw7PRC+aJpTaR5JbE5O2Zyu2e2zGPB/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFhEFH/2gAIAQEAAT8hplA140wbsoQOOAeRKBPljlg0u60ztApdT7P/2gAMAwEAAgADAAAAEAMIPP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExUfBBYXGhsf/aAAgBAQABPxDdAkBxnpMnL6lzVFsU3AyDKU0RYz+IdAAUt1Zs1ERem3aL8XyMA0Uvbluf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/c35b1/IMG_1263.avif 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/2c8de/IMG_1263.avif 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/5d31c/IMG_1263.avif 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/c9875/IMG_1263.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/81b7c/IMG_1263.webp 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/6ea66/IMG_1263.webp 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/8aab1/IMG_1263.webp 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/d00b9/IMG_1263.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/ff44c/IMG_1263.jpg 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/a6688/IMG_1263.jpg 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg 800w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg&quot;
+            alt=&quot;test&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;test&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;깨끗한 테스트의 특징&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;단순함 (Simple)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트 자체에 복잡한 로직이 없어야 합니다.&lt;/li&gt;
+&lt;li&gt;테스트는 실행 흐름을 쉽게 이해할 수 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;불필요한 데이터 숨기기 (Hides Irrelevant Data)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트의 핵심 목적과 관련 없는 데이터는 숨기거나 단순화해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AAA 구조 준수 (Follows the AAA Structure)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Arrange&lt;/strong&gt;: 테스트 준비(데이터와 상태 설정).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Act&lt;/strong&gt;: 테스트 대상 코드 실행.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assert&lt;/strong&gt;: 실행 결과 검증.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;테스트 간 독립성 유지 (Isolated)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;각 테스트는 다른 테스트와 완전히 독립적이어야 합니다.&lt;/li&gt;
+&lt;li&gt;외부 상태나 공유 리소스에 의존하지 않아야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;설명적인 이름 (Descriptive Test Name)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트 이름만 보고도 테스트의 목적과 동작을 명확히 알 수 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;의미 있는 검증 (Meaningful Assertions)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;검증은 테스트의 핵심 목적과 직결되어야 하며, 불필요한 검증을 피해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;F.I.R.S.T. 원칙 준수 (F.I.R.S.T. Principle)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: 테스트는 빠르게 실행되어야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: 다른 테스트와 독립적이어야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: 어디서 실행하든 항상 같은 결과를 반환해야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: 테스트 결과는 성공 또는 실패로 명확히 나타나야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: 테스트는 코드를 작성하기 전에 설계되어야 합니다(TDD).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;현실적이고 대표적인 데이터 사용 (Uses Realistic and Representative Data)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;실제 환경과 유사한 데이터를 사용하여 테스트 신뢰성을 높입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
+&lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
+&lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JPA]]></title><description><![CDATA[JDBC vs JPA Spring Data JPA의 작동 방식 JPA와 ORM에 대한 베스트 프렉티스 가이드 1. JDBC vs JPA Java에서 관계형 데이터베이스를 사용할 때, JDBC(Java Database Connectivity)와 JPA…]]></description><link>https://iol-lshh.github.io/java/JPA/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JPA/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;JDBC vs JPA&lt;/li&gt;
 &lt;li&gt;Spring Data JPA의 작동 방식&lt;/li&gt;
@@ -4030,123 +4146,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[Daniel Moka님의 링크드인 게시글을 참조했습니다. 클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
-테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;Daniel Moka님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
-테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGeO/KdIqFEg2A//8QAGhABAAIDAQAAAAAAAAAAAAAAAwECAAQTFP/aAAgBAQABBQLaulX6tgzMjsKkP2XNS02Dz0WfEWGcFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAeEAACAgICAwAAAAAAAAAAAAAAAQIREpExMjNCcf/aAAgBAQAGPwJqLaXw7PRC+aJpTaR5JbE5O2Zyu2e2zGPB/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFhEFH/2gAIAQEAAT8hplA140wbsoQOOAeRKBPljlg0u60ztApdT7P/2gAMAwEAAgADAAAAEAMIPP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExUfBBYXGhsf/aAAgBAQABPxDdAkBxnpMnL6lzVFsU3AyDKU0RYz+IdAAUt1Zs1ERem3aL8XyMA0Uvbluf/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/c35b1/IMG_1263.avif 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/2c8de/IMG_1263.avif 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/5d31c/IMG_1263.avif 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/c9875/IMG_1263.avif 800w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/81b7c/IMG_1263.webp 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/6ea66/IMG_1263.webp 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/8aab1/IMG_1263.webp 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/d00b9/IMG_1263.webp 800w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/ff44c/IMG_1263.jpg 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/a6688/IMG_1263.jpg 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg 800w&quot;
-            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-            type=&quot;image/jpeg&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg&quot;
-            alt=&quot;test&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;test&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;깨끗한 테스트의 특징&lt;/strong&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;단순함 (Simple)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트 자체에 복잡한 로직이 없어야 합니다.&lt;/li&gt;
-&lt;li&gt;테스트는 실행 흐름을 쉽게 이해할 수 있어야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;불필요한 데이터 숨기기 (Hides Irrelevant Data)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트의 핵심 목적과 관련 없는 데이터는 숨기거나 단순화해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;AAA 구조 준수 (Follows the AAA Structure)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Arrange&lt;/strong&gt;: 테스트 준비(데이터와 상태 설정).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Act&lt;/strong&gt;: 테스트 대상 코드 실행.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Assert&lt;/strong&gt;: 실행 결과 검증.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;테스트 간 독립성 유지 (Isolated)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;각 테스트는 다른 테스트와 완전히 독립적이어야 합니다.&lt;/li&gt;
-&lt;li&gt;외부 상태나 공유 리소스에 의존하지 않아야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;설명적인 이름 (Descriptive Test Name)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트 이름만 보고도 테스트의 목적과 동작을 명확히 알 수 있어야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;의미 있는 검증 (Meaningful Assertions)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;검증은 테스트의 핵심 목적과 직결되어야 하며, 불필요한 검증을 피해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;F.I.R.S.T. 원칙 준수 (F.I.R.S.T. Principle)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: 테스트는 빠르게 실행되어야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: 다른 테스트와 독립적이어야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: 어디서 실행하든 항상 같은 결과를 반환해야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: 테스트 결과는 성공 또는 실패로 명확히 나타나야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: 테스트는 코드를 작성하기 전에 설계되어야 합니다(TDD).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;현실적이고 대표적인 데이터 사용 (Uses Realistic and Representative Data)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;실제 환경과 유사한 데이터를 사용하여 테스트 신뢰성을 높입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
-&lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
-&lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성

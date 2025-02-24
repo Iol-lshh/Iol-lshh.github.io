@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Feb 2025 06:10:27 GMT</lastBuildDate><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Feb 2025 06:16:30 GMT</lastBuildDate><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -734,10 +734,10 @@
 &lt;p&gt;세련된 방법이지만, 그만한 가치를 갖고 있어야 한다.&lt;/p&gt;
 &lt;p&gt;비즈니스 로직상에 여러 애그리거트를 트랜잭션 하나에 묶더라도, 애그리거트들을 확실하게 나누는 것이 중요하다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;DDD는 단순한 설계 기법이 아니라, &lt;strong&gt;비즈니스 도메인에 대한 깊은 이해&lt;/strong&gt;와 이를 소프트웨어에 &lt;strong&gt;정확하게 반영하는 과정&lt;/strong&gt;이다. 이 과정에서 도메인 모델을 코드로 &lt;strong&gt;그대로 구현&lt;/strong&gt;하고, 변화에 유연한 구조를 유지하는 것이 핵심이다.&lt;/p&gt;
-&lt;p&gt;이번 강의를 통해, DDD가 단순히 복잡한 개념이 아니라 &lt;strong&gt;도메인의 본질을 명확하게 정의&lt;/strong&gt;하고, &lt;strong&gt;유지보수성과 확장성을 높이는 방법론&lt;/strong&gt;임을 다시 한번 깨달았다. 특히 &lt;strong&gt;경계 컨텍스트&lt;/strong&gt;(Bounded Context)를 통한 분리, &lt;strong&gt;애그리게이트&lt;/strong&gt;(Aggregate)를 이용한 트랜잭션 일관성 유지, 엔티티와 값 객체 사례 비교 등, 실무에서 고려해야 할 중요한 원칙들을 배울 수 있었다.&lt;/p&gt;
-&lt;p&gt;물론 DDD는 만능이 아니다. DDD를 도입하려면 비즈니스 도메인의 복잡성을 고려하고, 필요에 따라 전술적 패턴과 전략적 패턴을 조합해야 한다. 실무에서는 DDD의 모든 요소를 적용하는 것이 아니라, 팀과 조직의 상황에 맞게 유연하게 접근하는 것이 중요하다. 엔지니어링이란 실용적인 것이 무엇보다 중요하다.&lt;/p&gt;
-&lt;p&gt;이번 강의를 통해 배운 패턴들을 실무에 적용해보며, 도메인 모델을 더욱 깊이 고민하고 발전시켜 나가야겠다. DDD는 여전히 쉽지 않지만, 그 어려움은 단순한 복잡함이 아니라, &lt;strong&gt;도메인을 올바르게 이해하고 표현하는 과정&lt;/strong&gt;이라는 점을 깨달았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/회고/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;DDD는 &lt;strong&gt;비즈니스 도메인에 대한 깊은 이해&lt;/strong&gt;와 이를 소프트웨어에 &lt;strong&gt;정확하게 반영하는 과정&lt;/strong&gt;이다. 이 과정에서 도메인 모델을 코드로 &lt;strong&gt;그대로 구현&lt;/strong&gt;하고, 변화에 유연한 구조를 유지하는 것이 핵심이다.&lt;/p&gt;
+&lt;p&gt;이번 강의를 통해, DDD가 단순히 복잡한 개념이 아니라 &lt;strong&gt;도메인의 본질을 명확하게 정의&lt;/strong&gt;하고, &lt;strong&gt;유지보수성과 확장성을 높이는 방법론&lt;/strong&gt;임을 깨달았다. 특히 &lt;strong&gt;경계 컨텍스트&lt;/strong&gt;(Bounded Context)를 통한 분리, &lt;strong&gt;애그리게이트&lt;/strong&gt;(Aggregate)를 이용한 트랜잭션 일관성 유지, 엔티티와 값 객체 사례 비교 등, 실무에서 고려해야 할 중요한 원칙들을 배울 수 있었다.&lt;/p&gt;
+&lt;p&gt;물론 DDD는 만능이 아니다. DDD를 도입하려면 비즈니스 도메인의 복잡성을 고려하고, 필요에 따라 전술적 패턴과 전략적 패턴을 조합해야 한다. 실무에서는 DDD의 모든 요소를 적용하는 것이 아니라, &lt;strong&gt;팀과 조직의 상황에 맞게 유연하게 접근&lt;/strong&gt;하는 것이 중요하다. &lt;strong&gt;엔지니어링이란 실용적이고 실천적인 것&lt;/strong&gt;이 무엇보다 중요하다. (XP도 그렇고 DDD도 그렇고, 결국 실용적이고 실천적인 패턴들의 모음집이라는 사실!)&lt;/p&gt;
+&lt;p&gt;이번 강의를 통해 배운 패턴들을 실무에 적용해보며, 도메인 모델을 더욱 깊이 고민하고 발전시켜 나가야겠다. DDD는 여전히 쉽지 않지만, 그 어려움은 단순한 복잡함이 아니라, &lt;strong&gt;도메인을 올바르게 이해하고 표현하는 과정&lt;/strong&gt;이니까!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/회고/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -4885,7 +4885,9 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
 &lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
 &lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
+스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
+스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성
@@ -4898,9 +4900,7 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[6. 테스트]]></title><description><![CDATA[단위 테스트
-스프링 부트 테스트]]></description><link>https://iol-lshh.github.io/java/basic_java/6_테스트/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/6_테스트/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;단위 테스트
-스프링 부트 테스트&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[4. SpringBoot]]></title><description><![CDATA[스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 프레임워크입니다. 기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 의존성 주입(Dependency Injection…]]></description><link>https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/4_SpringBoot/</guid><pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;스프링(SPRING)은 자바(Java) 기반의 엔터프라이즈 애플리케이션 개발을 단순화하고 유연하게 만들기 위해 등장한 &lt;strong&gt;프레임워크&lt;/strong&gt;입니다.&lt;/li&gt;
 &lt;li&gt;기존 JEE(J2EE)가 가진 복잡한 설정 문제를 해결하기 위해 &lt;strong&gt;의존성 주입(Dependency Injection, DI)&lt;/strong&gt;, &lt;strong&gt;제어의 역전(Inversion of Control, IoC)&lt;/strong&gt; 등을 도입하면서, 모듈 간 결합도를 낮추고 유지보수성을 높였습니다.
 &lt;ul&gt;

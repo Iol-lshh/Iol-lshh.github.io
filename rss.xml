@@ -1,4 +1,743 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 Feb 2025 01:19:45 GMT</lastBuildDate><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/회고/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Feb 2025 06:01:18 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://iol-lshh.github.io/무제 파일/</link><guid isPermaLink="false">https://iol-lshh.github.io/무제 파일/</guid><content:encoded></content:encoded></item><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAABQAwCdASoUAAsAPtFUo0uoJKMhsAgBABoJYwCdABhCZrrK2AD+3ue/R3FxwfaoPBC5CWMJ9aqF37GhHdw90PiwhLCvgW4Xs1b1+Zg3XbHwAA==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a8c2bbc8ed624553902b3fab542ad7c8/c35b1/header.avif 158w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/2c8de/header.avif 315w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/5d31c/header.avif 630w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/59707/header.avif 945w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/51f3d/header.avif 1260w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/d89b9/header.avif 1792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/a8c2bbc8ed624553902b3fab542ad7c8/81b7c/header.webp 158w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/6ea66/header.webp 315w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/8aab1/header.webp 630w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/a70f5/header.webp 945w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/4ef06/header.webp 1260w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/91298/header.webp 1792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a8c2bbc8ed624553902b3fab542ad7c8/81b7c/header.webp 158w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/6ea66/header.webp 315w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/8aab1/header.webp 630w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/a70f5/header.webp 945w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/4ef06/header.webp 1260w,
+/static/a8c2bbc8ed624553902b3fab542ad7c8/91298/header.webp 1792w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a8c2bbc8ed624553902b3fab542ad7c8/8aab1/header.webp&quot;
+            alt=&quot;header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;도메인&lt;/strong&gt;: 사용자가 프로그램을 사용하는 주제 영역.&lt;br&gt;
+소프트웨어의 본질은, 사용자를 위해 &lt;strong&gt;도메인에 관련된 문제를 해결&lt;/strong&gt;하는 능력에 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD는 늘 어렵게 느껴졌지만, 이번 강의를 통해 조금은 이해할 수 있게 되었다.&lt;/p&gt;
+&lt;p&gt;다음 책의 내용들을 추가 참조하여 내용을 정리했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;에반스, 에릭. (2011). &lt;em&gt;도메인 주도 설계: 소프트웨어의 복잡성을 다루는 지혜&lt;/em&gt; (이대엽, 역). 위키북스. (원저는 2004년에 출판)&lt;/li&gt;
+&lt;li&gt;버논, 반. (2017). &lt;em&gt;도메인 주도 설계 핵심: 핵심을 간추린 비즈니스 중심의 설계로 소프트웨어 개발 프로젝트 성공하기&lt;/em&gt; (박현철 &amp;#x26; 전장호, 역). 에이콘출판사. (원저는 2016년에 출판)&lt;/li&gt;
+&lt;li&gt;버논, 반. (2016). &lt;em&gt;도메인 주도 설계 구현&lt;/em&gt; (윤창석 &amp;#x26; 황예진, 역). 에이콘출판사. (원저는 2013년에 출판)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;도메인 주도 설계에서 구현은 매우 중요하다. 다만 구현 하나하나가 매우 많은 지면을 차지할 것이므로, 본 글은 DDD에 대한 진짜 의미 전달을 목적으로 내용을 정리했다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;도메인 주도 설계(Domain Driven Design, DDD)는 에릭 에반스가 2003년 출판한 동명의 책으로 부터 시작되었다.&lt;/p&gt;
+&lt;p&gt;DDD란 뭘까? 위키백과로 DDD를 찾아봤다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DDD&lt;/strong&gt; ( &lt;strong&gt;도메인 주도 설계&lt;/strong&gt;)는 해당 도메인과 일치하도록 소프트웨어를 모델링하는 데 중점을 둔 소프트웨어 설계 접근 방식이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;여기서 중요한 단어가 두 개 나온다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;도메인&lt;/strong&gt;: 주요 소프트웨어 설계 접근 방식 중 하나로, 해당 도메인의 전문가로부터 받은 입력을 바탕으로 도메인에 맞게 소프트웨어를 모델링하는 데 중점을 둔다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;모델&lt;/strong&gt;: 객체, 사람 또는 시스템을 &lt;strong&gt;정보적으로 표현한 것&lt;/strong&gt;으로, 원본을 대신하는 역할을 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DDD는 단일 통합 모델을 사용하는 개념에 반대하며, 대신 대규모 시스템을 &lt;strong&gt;경계 컨텍스트&lt;/strong&gt;(Bounded Context)로 나누고, 각 컨텍스트가 자체적인 모델을 갖도록 한다. 도메인 주도 설계에서는 &lt;strong&gt;소프트웨어 코드의 구조와 언어(클래스 이름, 메서드, 변수 등)가 비즈니스 도메인과 일치해야 한다.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;도메인 모델&lt;/strong&gt;(Domain Model)이란, 사용자가 프로그램을 사용하는 주제 영역 안에서&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;당면한 문제를 해결하는 것과 &lt;strong&gt;관련된 측면을 추상화&lt;/strong&gt;하고&lt;/li&gt;
+&lt;li&gt;중요하지 않은 세부사항은 생략하는 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DDD는 비즈니스 도메인을 분석하여 정리한 도메인 모델을 그대로 코드로 구현하는 접근 방식이다. 즉, &quot;&lt;strong&gt;도메인 모델 = 코드&lt;/strong&gt;&quot;가 되어야 하며, 코드 구조가 비즈니스 로직과 일치해야 한다. 다시말해, &lt;strong&gt;동작하는 도메인 모델&lt;/strong&gt;을 만들어내는 과정인 것이다. 때문에 &lt;strong&gt;변화에 유연한 구조&lt;/strong&gt;를 유지해야하며, 다음 원칙을 따라야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;코드를 최대한 도메인 모델을 &lt;strong&gt;표현하기 좋게&lt;/strong&gt; 만들어야 한다.&lt;/li&gt;
+&lt;li&gt;도메인 모델은 코드로 &lt;strong&gt;구현하기 쉬운&lt;/strong&gt; 모델이어야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그렇지 못하다면, 올바르게 만들어진 모델이 아니다. 이해 관계자들이 모두 이해 가능한 개념이 쓰여야 한다. 이를 유비쿼터스 언어라고 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;유비쿼터스 언어(Ubiquitous Language)&lt;/strong&gt;: 모든 팀 구성원들이 사용하는 언어&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;개발 용어&lt;/li&gt;
+&lt;li&gt;사업 용어&lt;/li&gt;
+&lt;li&gt;회사 내부 용어&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 중에서 서로 소통해야할 용어들을 공유하여 유비쿼터스 용어로 사용한다. 유비쿼터스 언어는 도메인 모델 뿐만 아니라 코드에서도 동일하게 사용 되어야 한다. 이를 통해 개발자와 비즈니스 전문가 간의 소통이 수월해진다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;DDD는 모델에 기술적 요소가 들어가서는 안된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;에릭 에반스의 DDD는 당시의 OOP와 Agile의 영향을 많이 받았다. 때문에 DDD 자체는 특정 프로그래밍 패러다임이나 소프트웨어 개발 방법론을 강요하지는 않지만, 구현 가이드라인으로써 OOP와 Agile의 관점에서 보고 있다.&lt;/p&gt;
+&lt;p&gt;당시 엔터프라이즈 자바 빈즈(분산 객체)가 유행했는데, 이때문에 소프트웨어가 인프라스트럭처에 종속적이었고, 도메인과 기술적 요소가 혼재되어있었다.&lt;/p&gt;
+&lt;p&gt;마틴 파울러가 엔터프라이즈 애플리케이션 아키텍처 패턴을 제시하여, 인프라스트럭처와 퍼시스턴스 레이어를 도메인과 관심사 분리하는 패턴을 제시했으며, 이 철학을 바탕으로 Java 진영에 나온 두 가지 프레임워크, 스프링과 JPA는 인프라스트럭처와 퍼시스턴스 레이어가 비즈니스와 관심사 분리하도록 도와주게 된다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;도메인은 &lt;strong&gt;불변식&lt;/strong&gt;(Invariant)을 기준으로 설계되어야 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;불변식&lt;/strong&gt;(Invariant): 시스템이 항상 유지해야 하는 핵심 규칙&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;도메인은 비즈니스 로직을 불변식으로 설계해야 한다.&lt;/p&gt;
+&lt;p&gt;일관성에는 두가지가 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transactional Consistency (강력한 일관성)&lt;/li&gt;
+&lt;li&gt;Eventual Consistency (최종적 일관성)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;도메인은 Aggregate를 갖게되는데, 도메인은 이 Aggregate 내부에서는 Transactional Consistency를 갖춰야만 한다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;또한 DDD는 &lt;strong&gt;모델 주도 설계&lt;/strong&gt;(Model Driven Design)가 이루어져야 하며, 이때문에 &lt;strong&gt;XP&lt;/strong&gt;가 동반되어야 한다.&lt;/p&gt;
+&lt;p&gt;도메인 모델 = 설계 = 코드&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;도메인 모델의 변경은 코드의 변경을 필요로 한다.&lt;/li&gt;
+&lt;li&gt;코드의 변경은 도메인 모델의 변경을 필요로 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;코드와 모델이 함께 진화&lt;/strong&gt;해야 하므로, 변경이 있을 때마다 &lt;strong&gt;코드와 모델을 함께 업데이트하는 프로세스가 필요&lt;/strong&gt;하다. 요구사항이나, 코드와 설계의 변경이 있을 때 점진적으로 설계와 소프트웨어의 배포가 즉시 반영되어야 한다. 즉각적인 리팩터링이 필요한 것이다. 반복적인 리팩터링은 도메인 모델을 &lt;strong&gt;심층 모델&lt;/strong&gt;(Deep Model)과 &lt;strong&gt;유연한 설계&lt;/strong&gt;(Supple Design)으로 &lt;strong&gt;도약&lt;/strong&gt;(Breakthrough)하도록 돕는다.&lt;/p&gt;
+&lt;p&gt;이에 대한 실천 방법론이 XP(애자일의 소프트웨어 개발 방법론 프레임워크)이다.&lt;/p&gt;
+&lt;p&gt;(XP의 지속적인 통합(Continuous Integration)과 리팩터링 원칙을 적용하면, 도메인 모델과 코드 간의 싱크를 유지하는 데 큰 도움이 될 것이다.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;앞 부분이 DDD에 대한 기초 개념이었다면, DDD 핵심 내용은 도메인 주도 설계를 구현하는 패턴들에 대한 가이드이다. (OOP와 Agile의 관점에서 본)&lt;/p&gt;
+&lt;p&gt;크게 두가지 패턴으로 분류된다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0UlEQVR42o1SaYsaURCc//9xw2aDsFHEFUXZGBFlgzGDILgB74OMB5kZL7wZx/uqbPXyNgnkQxqKN93Tr7q6+2mWZYHo9XpotVoIh8NIJBLQv+mIRqN4evqCh4cgdF1HKpVCKBTC/f1H3N19kNhwOIRpmlA82mg0wmQywXw+x3g8RjabFSKe8XhcyAOBANLpNJLJpJyxWAyRSATFYhGO42A6nQrIpZ1OJ3Fsy0a324UqQLB6v9/H8XjE9XqF664xm82wWCzeBFBdu92WXHJph8MB+Xz+pepn+P1+BINB3N6+x+PjJ/h8Png8Hkm+XC4v6r6KYsa9Xq/kUunNzTtkMhmcz+dXhdvtVhwqYQFiv98LCU8aFTKHMULdY5xQcY0k6/VaHCYQJOHJmOu6+JeRfLPZ/BUjsWbbNsyfpvxcrVZoNpuwTAu73Q7L5RKGYQi5usDXwJkRxg9D5s5Z0kRho9FAuVyWOZGgVqthMBhI+4zlcjlZkLJ6vY7n5+8oFAqy5Uqlgk6n85uQ7VId50aFJKIix3n9ZsvMUQqphiq5XXbBe5znGyE/+AyojGACCavVKjgOkvyvyQzJyqqUXiqV5LWzdbZEXy2HS1Cgoj+h4uzoF+IrJ5UxkzNNAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/78de93ecb6276cbe7dd253c173cd3c20/c35b1/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.avif 158w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/2c8de/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.avif 315w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/5d31c/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.avif 630w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/59707/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.avif 945w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/542bc/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.avif 960w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/78de93ecb6276cbe7dd253c173cd3c20/81b7c/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.webp 158w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/6ea66/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.webp 315w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/8aab1/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.webp 630w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/a70f5/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.webp 945w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/e46b2/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.webp 960w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/78de93ecb6276cbe7dd253c173cd3c20/c26ae/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.png 158w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/6bdcf/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.png 315w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/f058b/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.png 630w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/40601/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.png 945w,
+/static/78de93ecb6276cbe7dd253c173cd3c20/d9199/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.png 960w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/78de93ecb6276cbe7dd253c173cd3c20/f058b/DDD%ED%8C%A8%ED%84%B4_%EB%91%90%EA%B0%80%EC%A7%80.png&quot;
+            alt=&quot;두가지 DDD패턴 분류&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;두가지 DDD패턴 분류&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;전략적 패턴&lt;/strong&gt;(Strategic Pattern): 소프트웨어 시스템의 고수준 설계 패턴&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;전술적 패턴&lt;/strong&gt;(Tactical Pattern): 각 경계 컨텍스트(Bounded Context) 내의 구현 패턴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;전략적 패턴&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;비즈니스 도메인을 이해하기 쉽게 정의(Ubiquitous Language)&lt;/li&gt;
+&lt;li&gt;경계 컨텍스트(Bounded Context)를 정의&lt;/li&gt;
+&lt;li&gt;컨텍스트 간의 관계를 매핑&lt;/li&gt;
+&lt;li&gt;비즈니스의 핵심 요구사항을 중심으로 작업을 조직 및 구성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;경계 컨텍스트 Bounded Context&lt;/h3&gt;
+&lt;p&gt;각 모델의 적용가능성의 범위 정의. 같은 BC 안에서는 도메인 모델의 내적 일관성을 단일화(unification)해야 한다.&lt;/p&gt;
+&lt;p&gt;Bounded Context는 물리적이라기 보단, 논리적 분리이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;쓰이는 목적 - 컨텍스트가 다른데, 같이 쓰면 문제가 생긴다!&lt;/li&gt;
+&lt;li&gt;경계 컨텍스트는 정합성을 신경 쓰지 않는다. 컨텍스트를 분리하면 정합성을 맞출 필요도 없다.&lt;/li&gt;
+&lt;li&gt;조직과 영속성 레이어까지 분리하는게 Bounded Context를 더 직관적이게 만들어준다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;BC 사이에 관계도 중요하다. 조직적인 협업 관계를 논의해야 한다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.12658227848101%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABP0lEQVR42n2SCa6CQAxA5/4XNBEkuLCrILso1rwmQ9Dv/CbNQKfzuhpxSF3Xkue59H0vz+dTpmmS1+uld5xWv8Wsf3Dg8ePxkKZppCxLPYMgkO12q3AE++l0cgO5mOdZDUmSSBiGH04EIJAF3G43KYpCuq7TIGuwsQ5VVanD9XpVBYLjMAya0fl81hMQvojv++J53l8g2fGQnqVpqifQLMu0lwTCvtvtVNu2XVpi27AAoY/juJS8LhM7SkYEAASAANZGKz6AOG02Gy3le0BAyWK/3+sQAFE62XG37q1VY8vlcg0jAMOhbO6xsTrH41GzIxF8yDiKIm0FDOPaQ1syAcnscrksQb/3kYCA8TUuGEM4HA7qTDZ828n/Jz+BRKJPlEaZ/KP0y367wM6S7/e77idAehXHsWbNUFh+1ukX8A1y0qcpgeLXDQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/01d52b7c9448fa94c98b5aa4f7c6179d/c35b1/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.avif 158w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/2c8de/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.avif 315w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/5d31c/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.avif 630w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/59707/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.avif 945w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/b248f/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.avif 1026w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/01d52b7c9448fa94c98b5aa4f7c6179d/81b7c/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.webp 158w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/6ea66/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.webp 315w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/8aab1/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.webp 630w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/a70f5/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.webp 945w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/1dc52/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.webp 1026w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/01d52b7c9448fa94c98b5aa4f7c6179d/c26ae/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.png 158w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/6bdcf/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.png 315w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/f058b/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.png 630w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/40601/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.png 945w,
+/static/01d52b7c9448fa94c98b5aa4f7c6179d/eb3fa/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.png 1026w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/01d52b7c9448fa94c98b5aa4f7c6179d/f058b/%EB%82%B4%EB%B9%84%EA%B2%8C%EC%9D%B4%EC%85%98%EB%A7%B5.png&quot;
+            alt=&quot;경계 컨텍스트&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;경계 컨텍스트&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;모델이 적용되는 컨텍스트를 명시적으로 정의하라. 컨텍스트의 경계를 팀 조직, 애플리케이션의 특정 부분에서의 사용법, 코드 기반이나 데이터베이스 스키마와 같은 물리적인 형태의 관점에서 명시적으로 설정하라. 이 경계 내에서는 모델을 엄격하게 일관된 상태로 유지하고 경계 바깥의 이슈 때문에 초점이 흐려지거나 혼란스러워져서는 안 된다. (14) - 도메인 주도 설계(에반스, 2004)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Context Map&lt;/h3&gt;
+&lt;p&gt;서로 다른 컨텍스트 간의 관계를 정의하고 프로젝트상의 모든 모델 컨텍스트를 아우르는 전체적인 뷰 (어그리거트와는 다르다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;프로젝트의 컨텍스트와 각 컨텍스트 간의 관계의 전체적인 개관을 제공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.16455696202532%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4klEQVR42o2TywqEMAxF8/+/KC5EFyK48v3McApXMoVhDIR22puT28jYfd9+HEfKfd+d3/8CjTIPA7Rt2wO8rutLnBdKF02c5/loDMA8z76uaxIsy5KgJGKaUaDkLHfLOTr2NgyDV1XldV2nteu6p1vf9+lcQREpV4IQGMCQcYE7nI3j6NM0pYxPi44BoGfPKijJ3qADpZBAqFnGp9JQa1EU3jSNl2Xpbdu6GNRZPmwu8uAON3KHEzVklRH25i9CjQAzDqAag2anF74CxpHED5O7fA0UKD7v1x/gNRBA/GC/4gODeGOyPw6h7wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/7d2355852b778bd8c97cfed2e7866f76/c35b1/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.avif 158w,
+/static/7d2355852b778bd8c97cfed2e7866f76/2c8de/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.avif 315w,
+/static/7d2355852b778bd8c97cfed2e7866f76/5d31c/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.avif 630w,
+/static/7d2355852b778bd8c97cfed2e7866f76/4c41f/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.avif 850w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/7d2355852b778bd8c97cfed2e7866f76/81b7c/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.webp 158w,
+/static/7d2355852b778bd8c97cfed2e7866f76/6ea66/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.webp 315w,
+/static/7d2355852b778bd8c97cfed2e7866f76/8aab1/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.webp 630w,
+/static/7d2355852b778bd8c97cfed2e7866f76/10237/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.webp 850w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/7d2355852b778bd8c97cfed2e7866f76/c26ae/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.png 158w,
+/static/7d2355852b778bd8c97cfed2e7866f76/6bdcf/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.png 315w,
+/static/7d2355852b778bd8c97cfed2e7866f76/f058b/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.png 630w,
+/static/7d2355852b778bd8c97cfed2e7866f76/ae694/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.png 850w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/7d2355852b778bd8c97cfed2e7866f76/f058b/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5.png&quot;
+            alt=&quot;컨텍스트 맵&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;컨텍스트 맵&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;예컨데, 온라인 쇼핑몰에서 주문 관리 시스템과 결제 시스템은 별도의 Bounded Context로 나뉘며, 주문 시스템은 결제 시스템과 고객-공급자 관계(Customer-Supplier)를 맺는다.&lt;/p&gt;
+&lt;p&gt;매핑의 종류는 다음과 같이 나타난다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Partnership&lt;/strong&gt;: 두 BC가 성공과 실패를 같이 한다면, 협업 관계가 나타나야 한다. 개발과 integration의 공동 관리를 위한 조정된 기획 과정이 필요하며, 공통 인터페이스를 만든다. 상호의존적 기능을 일정을 세워 같은 릴리스에 완성하도록 한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shared Kernel&lt;/strong&gt;: 모델과 공유된 부분이 상호의존성을 형성한다. 명시적 공유를 하게 된다. 커널은 최대한 작게 유지하는 것이 좋다. 이 공유 영역은 반드시 상의를 통해 변경한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.78481012658227%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABSklEQVR42qWTAY6CQAxF5/6n8gxyAYlCFBEIIgiC3bwmn7BEQzbbpBlmptP/+2nD+/22YRis6zpfx3G0aZpsbcThWxaUiODX62V937u3bWvP59MBcBlgxOmcb+IEFjj4ZATwGDAAqqqyuq7nPc4371WhJ/xGXSyw+/1up9PJ0jT1xOvS2W8mpGQSUc7lcrEsy+x8Plscx77CamkqO4j2WiuVhV2vV2d4OBx8xQGQLErI+wCTx+NhTdM4KwKkj5z7/X5vu93Ooiiy4/Ho5VOmQOeEHKh1EL0oil9/V3/ydrtZnueuYVmWHgO49BQJT8ilAnAhq50+ybA23pEjaLP8YxhJkyTxVUy5o3xVJQLKQWzY6vylppSOozcA0p579jPDb7YsdzkhYg2I2ksTt8nw2/TATBMi/QD8U8L1JGnepbm3jf3D1G7SmNH7Aa3Dmm4kYRvEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/683a8b9a5d7260c9822ea8b98b0f51de/c35b1/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.avif 158w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/2c8de/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.avif 315w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/5d31c/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.avif 630w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/aaa96/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.avif 742w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/683a8b9a5d7260c9822ea8b98b0f51de/81b7c/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.webp 158w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/6ea66/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.webp 315w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/8aab1/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.webp 630w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/28367/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.webp 742w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/683a8b9a5d7260c9822ea8b98b0f51de/c26ae/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.png 158w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/6bdcf/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.png 315w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/f058b/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.png 630w,
+/static/683a8b9a5d7260c9822ea8b98b0f51de/0f2bc/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.png 742w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/683a8b9a5d7260c9822ea8b98b0f51de/f058b/%EA%B3%B5%EC%9C%A0%EC%98%81%EC%97%AD.png&quot;
+            alt=&quot;Shared Kernel&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Shared Kernel&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Customer-Supplier&lt;/strong&gt;: 두 팀이 UpStream과 DownStream의 관계를 갖는다. 업스트림은 다운스트림의 요구를 수용한다. 업스트림의 계획은 다운스트림의 우선순위에 영향을 준다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conformist&lt;/strong&gt;: 업스트림이 다운스트림의 요구사항을 제공해줄 동기가 없다. 다운스트림은 업스트림의 모델을 준수해야한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anticorruption Layer, AL&lt;/strong&gt;: 변환 계층이 방어적 성격을 띈다. 다운스트림이 업스트림 기능을 보유 도메인 모델의 컨텍스트에 맞게 변환한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 33.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA90lEQVR42k2R147FMAhE/f8fl+c8RYrSe++Fm4MWaZGQMQzDYLthGGSaJtn3Xd73lfu+5bouWeZZqK3rqnly1PDjOLRn/jD7tsnzPOpgnHwGIIoiyfNcC5AQMwRQkiRKgEFuhL7vy7Iscp6nYjmdTQdAEaNgyqkxAGWc26cIVZxpmip50zQSx7HiXRiG4nmeJiG3tWkmB2Hbtgruuk7qulYShgZBoDVTTp9DKk4zE1mPRlMFYVEUmuNuK/M0VVUpzkwJAfZ9r4TErDKOo5RlqTEgYms0QgwhWZapCJ6ImmMKCliFN/z/o6gwVfbD+PmnEGIG4cQo/AHmph3fp9qZwQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/24a756a2276057f5d7abd505d57ec460/c35b1/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.avif 158w,
+/static/24a756a2276057f5d7abd505d57ec460/2c8de/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.avif 315w,
+/static/24a756a2276057f5d7abd505d57ec460/5d31c/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.avif 630w,
+/static/24a756a2276057f5d7abd505d57ec460/59707/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.avif 945w,
+/static/24a756a2276057f5d7abd505d57ec460/681e4/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.avif 1016w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/24a756a2276057f5d7abd505d57ec460/81b7c/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.webp 158w,
+/static/24a756a2276057f5d7abd505d57ec460/6ea66/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.webp 315w,
+/static/24a756a2276057f5d7abd505d57ec460/8aab1/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.webp 630w,
+/static/24a756a2276057f5d7abd505d57ec460/a70f5/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.webp 945w,
+/static/24a756a2276057f5d7abd505d57ec460/adbc1/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.webp 1016w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/24a756a2276057f5d7abd505d57ec460/c26ae/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.png 158w,
+/static/24a756a2276057f5d7abd505d57ec460/6bdcf/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.png 315w,
+/static/24a756a2276057f5d7abd505d57ec460/f058b/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.png 630w,
+/static/24a756a2276057f5d7abd505d57ec460/40601/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.png 945w,
+/static/24a756a2276057f5d7abd505d57ec460/f4281/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.png 1016w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/24a756a2276057f5d7abd505d57ec460/f058b/%EC%98%A4%EB%A5%98%EB%B0%A9%EC%A7%80%EA%B3%84%EC%B8%B5.png&quot;
+            alt=&quot;Anticorruption Layer&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Anticorruption Layer&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Open Host Service, OHS&lt;/strong&gt;: 업스트림은 프로토콜을 정의하고 이를 제공한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Public Language&lt;/strong&gt;: 문서화된 공유 언어를 제공하며, 필요에 맞춰 변환을 수행한다. OHS와 같이 쓰이기도 한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Separate Ways&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;요구사항 정의는 무자비하다. 두 기능성 집합 사이에 유의미한 관계가 없다면, 두 컨텍스트를 완전히 분리한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 78.48101265822784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAABTUlEQVR42pWUiY6DMAxE8/8/CRIql7jEfWf3RZqKhZZtLVk5SMbjcYyxv7bvu/NvjPPrutplWdyIs2f4uG2b829MII/Hw8Zx7O6zNkQYx/EjQBhwTuyGYbBRFNk0Td2ab4bNuq5vASUJl5qmsWVZOu/7/pmqJDMcyLLsFkxZEBwQ7rRt6/bO2puu62xVVW8BASOg53k2CAI7TZPbk2ZnM0R8BajIXCQo7DRShDzP7TzPF6kuKXMABtJMRdAaEACLonhW+gJINBkpEcD3fVc9GB11UhHePTWnIRXDiA4gIzIgOvNzaneNYFRFtEySxLFlBBhQ5gQVs//MHHWTZjjs2JN/2knm3Jcw09MAVO9PIy5ZJBHfVCBz16uAcokiUSDSp8JIAGMBHgtnXgEdWaAtALg6ROvjn+ZPykcTI/qbVHhvYhiGoWPInD2CnjX8Adnx6Nd94fHMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/96c4b2e4e36ece28ce1c604abc43ae13/c35b1/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.avif 158w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/2c8de/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.avif 315w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/5d31c/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.avif 630w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/7d2e5/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.avif 798w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/96c4b2e4e36ece28ce1c604abc43ae13/81b7c/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.webp 158w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/6ea66/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.webp 315w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/8aab1/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.webp 630w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/ce206/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.webp 798w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/96c4b2e4e36ece28ce1c604abc43ae13/c26ae/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.png 158w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/6bdcf/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.png 315w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/f058b/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.png 630w,
+/static/96c4b2e4e36ece28ce1c604abc43ae13/898f6/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.png 798w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/96c4b2e4e36ece28ce1c604abc43ae13/f058b/%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A7%B5_%EC%A2%85%EB%A5%98_%EC%83%81%EB%8C%80%EC%88%98%EC%9A%94.png&quot;
+            alt=&quot;컨텍스트맵의 종류와 상대수요&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;컨텍스트맵의 종류와 상대수요&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;서브 도메인(SubDomain)과 증류(Distillation)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;서브도메인&lt;/strong&gt;(SubDomain): 전체 비즈니스 도메인의 하위 부분. 하나의 논리적 도메인 모델을 나타낸다. 바운디드 컨텍스트 안에는 다양한 서브도메인이 존재할 수 있다. 되도록 하나의 바운디드 컨텍스트에 하나의 서브도메인이 존재하게 한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;증류&lt;/strong&gt;(Distillation): 구성 요소를 분리하여 핵심 가치를 추출하는 과정.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;서브 도메인들의 유형은 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;핵심 도메인&lt;/strong&gt;(Core Domain): 사업의 성공을 결정하는 핵심 도메인
+&lt;ul&gt;
+&lt;li&gt;사업적으로 경쟁사를 압도하기 위함. 최고의 실력자를 배정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;일반 도메인&lt;/strong&gt;(Generic Subdomain): 비즈니스에 경쟁 우위를 제공하지 않고 타사의 여러 애플리케이션에 공통으로 존재하는 도메인
+&lt;ul&gt;
+&lt;li&gt;기성 솔루션, 공표된 설계나 모델, 외주제작된 구현, 사내 구현(교육이 필요한 개발자)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;도용하라. 도용하라. 누구의 업적도 여러분의 눈을 피해가지 못하게 하라. 그저 항상 연구 중이라고 말하기만 하면 된다.&quot; (Tom Lehrer) 이것은 도메인 모델링에 대해서도 훌륭한 충고이자 Generic Subdomain을 공략할 때는 특히 그렇다.(15) - 도메인 주도 설계(에반스, 2004)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;지원 도메인&lt;/strong&gt;(Supporting Subdomain): 비즈니스에 경쟁 우위를 제공하지 않지만 비즈니스의 일부로 코어 도메인을 지원하는 도메인
+&lt;ul&gt;
+&lt;li&gt;외주로 해결하거나 개발자들의 성장을 위한 기회로 활용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 72.15189873417721%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABZUlEQVR42o2U246CUAxF+f+/4tUnn5BEw0UxaAAVvCEInawmJeCMjk2ac4Ce1d0WcOSDNU0jp9NJyrKU6/Uq35gzvuj7XrquU38+n3K5XMT3fZnP53I8Ht9COIcPQLsAkOe5VFUlRVEMqtq2VZWovd1uvyAThSjhIH6/3/Xgfr9XKKpYAe52O1ksFpp0DOIZibhPZc7j8VBAmqZyPp+1b6gDDBAnhuC6rnVPDHtiWFerlZ5XoEm3AyglG6WhGAU4+yAIZLlcasxms5E4jjUWs95PhmK9QillALFW0BpLaApZx4OZTBk65R0Oh6EUwLPZTMIw1GQAcPqJWtbXwUwUAuUgMHt1AHAPQ2kURVoue/rJM2L/BI5L32634nmeqkWFJbIybfLr9Xro41sgAMpHCWVjTJ4ymaa1A5AN7iPwFT7+ijASua6r8I+f3reGsiRJBvX/Ank1eG0oLcsyddTYng/h3c/iB5DgQw68Ck7MAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/85ddab0b25d81a4fd2bb015a06799401/c35b1/Dilstillation.avif 158w,
+/static/85ddab0b25d81a4fd2bb015a06799401/2c8de/Dilstillation.avif 315w,
+/static/85ddab0b25d81a4fd2bb015a06799401/5d31c/Dilstillation.avif 630w,
+/static/85ddab0b25d81a4fd2bb015a06799401/59707/Dilstillation.avif 945w,
+/static/85ddab0b25d81a4fd2bb015a06799401/5b55c/Dilstillation.avif 952w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/85ddab0b25d81a4fd2bb015a06799401/81b7c/Dilstillation.webp 158w,
+/static/85ddab0b25d81a4fd2bb015a06799401/6ea66/Dilstillation.webp 315w,
+/static/85ddab0b25d81a4fd2bb015a06799401/8aab1/Dilstillation.webp 630w,
+/static/85ddab0b25d81a4fd2bb015a06799401/a70f5/Dilstillation.webp 945w,
+/static/85ddab0b25d81a4fd2bb015a06799401/60b07/Dilstillation.webp 952w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/85ddab0b25d81a4fd2bb015a06799401/c26ae/Dilstillation.png 158w,
+/static/85ddab0b25d81a4fd2bb015a06799401/6bdcf/Dilstillation.png 315w,
+/static/85ddab0b25d81a4fd2bb015a06799401/f058b/Dilstillation.png 630w,
+/static/85ddab0b25d81a4fd2bb015a06799401/40601/Dilstillation.png 945w,
+/static/85ddab0b25d81a4fd2bb015a06799401/7e4a6/Dilstillation.png 952w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/85ddab0b25d81a4fd2bb015a06799401/f058b/Dilstillation.png&quot;
+            alt=&quot;Dilstillation&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;Dilstillation&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;전술적 패턴&lt;/h2&gt;
+&lt;p&gt;개별 구성 요소를 &lt;strong&gt;설계하고 구축하는 방식&lt;/strong&gt;에 초점을 맞춘다.
+크게 두가지로 나뉜다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;도메인을 표현&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Entity&lt;/li&gt;
+&lt;li&gt;값 객체(Value Object)&lt;/li&gt;
+&lt;li&gt;Service&lt;/li&gt;
+&lt;li&gt;Association&lt;/li&gt;
+&lt;li&gt;Module&lt;/li&gt;
+&lt;li&gt;Event&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;생명주기를 관리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;애그리게이트(Aggregate)&lt;/li&gt;
+&lt;li&gt;Repository&lt;/li&gt;
+&lt;li&gt;Factory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;애그리거트(Aggregate)&lt;/h3&gt;
+&lt;p&gt;엔티티들과 VO들의 묶음. 엔티티 중 하나를 애그리거트 루트라고 한다.&lt;/p&gt;
+&lt;p&gt;애그리거트에는 다음 네가지가 중요하다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;비즈니스 &lt;strong&gt;불변식&lt;/strong&gt;(Invariant)&lt;/li&gt;
+&lt;li&gt;단순하고 작은 애그리거트 설계&lt;/li&gt;
+&lt;li&gt;애그리거트 간 식별자를 통한 참조&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;결과적 일관성&lt;/strong&gt;을 통한 애그리거트 간의 갱신&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;애그리거트에서 가장 중요한 것은 &lt;strong&gt;트랜잭션 일관성&lt;/strong&gt;(Transactional Consistency)일 것이다. 애그리거트는 캡슐화되어 &lt;strong&gt;불변식&lt;/strong&gt;을 보호해야 한다. 애그리거트는 일관성있는 트랜잭션 경계를 형성하며, 트랜잭션 제어가 끝날때, 애그리거트 내부의 모든 구성 요소는 비즈니스 규칙(&lt;strong&gt;불변식&lt;/strong&gt;)에 따라 일관성 있게 처리되어야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;책임 주도 설계(Responsibility Driven Desgin) - 기능 요구사항&lt;/li&gt;
+&lt;li&gt;계약에 의한 설계(Design By Contract) - 불변식&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;다른 애그리거트와 상호작용시, &lt;strong&gt;ID 참조&lt;/strong&gt;를 통해 작용해야 한다. (애그리게이트 간 참조를 ID 기반으로 하면 결합도가 낮아진다.) 그리고 &lt;strong&gt;최종적 일관성&lt;/strong&gt;(Eventual Consistency)을 이용해 다른 애그리거트를 갱신한다.&lt;/p&gt;
+&lt;p&gt;애그리거트는 엔티티와 값 객체로 구성된다.&lt;/p&gt;
+&lt;h4&gt;엔티티(Entity)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;동일성&lt;/strong&gt;(identical)
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;식별성&lt;/strong&gt;(identity)을 가진다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;연속성&lt;/strong&gt;(continuity)을 갖는다.
+&lt;ul&gt;
+&lt;li&gt;상태와 상태의 변경, &lt;strong&gt;가변성&lt;/strong&gt;(variable)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DomainEntity&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;DomainEntity&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ID&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ID&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token comment&quot;&gt;// 엔티티는 고유한 ID로 동일성을 보장&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;  
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+       &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;  
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;값 객체(Value Object)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;불변성&lt;/strong&gt;(Immutable)을 가지는 모델
+&lt;ul&gt;
+&lt;li&gt;복잡성을 줄이기 위한 목적&lt;/li&gt;
+&lt;li&gt;작은 개념으로 설계&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;동등성&lt;/strong&gt;(equal)
+&lt;ul&gt;
+&lt;li&gt;속성에만 관심이 있음&lt;/li&gt;
+&lt;li&gt;고유한 식별성이 없으며, 값 형태로 캡슐화된 속성을 비교함으로써 동일함을 결정.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ValueObject&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ValueObject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;  
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt; that &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sameValueAs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;that&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sameValueAs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;T&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;other &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+       &lt;span class=&quot;token comment&quot;&gt;// 속성의 값들의 비교로 동등성 판단&lt;/span&gt;
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getEqualityFields&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getEqualityFields&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Override&lt;/span&gt;  
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getEqualityFields&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getEqualityFields&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+       &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getClass&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getDeclaredFields&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  
+          &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;field &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+             &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+                field&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setAccessible&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+                &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; field&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;IllegalAccessException&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;  
+                &lt;span class=&quot;token keyword&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;RuntimeException&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+             &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;  
+          &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toArray&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;  
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;하나의 속성 또는 한 줄이더라도, 명확하게 뜯어내는 것이 코드를 명료한 도메인 개념화를 만들어준다!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;하나의 속성 =&gt; 하나의 VO&lt;/li&gt;
+&lt;li&gt;한줄의 기술적 로직 =&gt; 추상화된 의미를 나타내는 메서드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Factory&lt;/h3&gt;
+&lt;p&gt;애그리거트를 대신 생성해주는 역할.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;복잡한 생성 불변식을 캡슐화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;애그리게이트 생성 시 여러 개의 도메인 객체가 함께 초기화되어야 하는 경우, Factory를 사용하면 객체 생성을 캡슐화하고 생성 로직을 깔끔하게 유지할 수 있다.&lt;/p&gt;
+&lt;p&gt;Factory는 반드시 stand alone일 필요는 없으나 (다른 애그리거트가 논리적인 Factory 역할을 맡아도 된다. 예: 장바구니 - 주문의 관계), 의존성 문제가 커지면 stand alone factory로 다룬다.&lt;/p&gt;
+&lt;h3&gt;Repository&lt;/h3&gt;
+&lt;p&gt;애그리거트의 라이프사이클에서 중간에 영속화해주는 역할.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;애그리거트 단위의 repository 추가&lt;/li&gt;
+&lt;li&gt;루트에 대해서만 repository 제공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;영속화 시점에서 연관관계에 대해 생각해보지 않을 수 없다.&lt;/p&gt;
+&lt;h3&gt;연관관계(Assosication)&lt;/h3&gt;
+&lt;p&gt;어떤 객체에 대해, 탐색 가능(trabersable)한 관계. 단순화되어야 한다. 도메인 관점 논리적 단방향으로 잡을 것&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;탐색 방향 부여&lt;/li&gt;
+&lt;li&gt;한정자(qualifier)를 추가하여 효과적으로 다중성 줄이기&lt;/li&gt;
+&lt;li&gt;중요하지 않은 연관 관계 제거하기&lt;/li&gt;
+&lt;li&gt;제 3의 객체(repository)를 통해, 연관관계를 끊어버릴 수 있다.
+&lt;ul&gt;
+&lt;li&gt;도메인 로직은 &lt;strong&gt;상태 변경&lt;/strong&gt;이 목적이다!&lt;/li&gt;
+&lt;li&gt;데이터 조회는 별개로 생각해야만 한다!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;복잡성 감소를 위해 ID를 이용해 참조.
+&lt;ul&gt;
+&lt;li&gt;애그리거트 외부는 리포지토리를 통해 탐색.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;내부는 양방향 객체 참조를 통해 탐색한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;JPA 엔티티는 매핑 그 이상도 이하도 아니다. &lt;strong&gt;DDD 엔티티는 행위다&lt;/strong&gt;. 같을 수도 있고, 분리해서 쓸 수도 있다. 중요한 것은, 엔지니어링은 실용적이어야 한다.&lt;/p&gt;
+&lt;h3&gt;Service&lt;/h3&gt;
+&lt;p&gt;도메인 서비스 (애플리케이션 서비스와 다르다.)&lt;/p&gt;
+&lt;p&gt;특정 애그리게이트(Aggregate)나 엔티티(Entity)에 속하지 않는, &lt;strong&gt;도메인 로직을 캡슐화하는 서비스 객체&lt;/strong&gt;. 어떤 애그리거트에 로직을 넘기기 애매할때, 서비스에 넣는다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;도메인 로직 누수 =&gt; 도메인 서비스 추출
+&lt;ul&gt;
+&lt;li&gt;여러 개의 애그리게이트에 걸친 도메인 로직&lt;/li&gt;
+&lt;li&gt;엔티티가 책임지기 어려운 복잡한 연산&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;때문에 다음과 같은 특징을 갖는다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;순수한 도메인 로직&lt;/strong&gt;으로 구성 - 비즈니스 규칙과 정책을 구현하며, 데이터베이스 접근이나 외부 시스템 호출 같은 인프라 로직은 포함하지 않는다. (cf. 애플리케이션 서비스)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stateless&lt;/strong&gt; 객체 - 상태를 가지는 경우, 해당 상태는 애그리게이트에 있어야 하므로 도메인 서비스보다는 엔티티로 설계하는 것이 바람직함.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Event&lt;/h3&gt;
+&lt;p&gt;도메인 이벤트&lt;/p&gt;
+&lt;p&gt;도메인 모델의 &lt;strong&gt;상태 변화를 알리는 객체&lt;/strong&gt;. &lt;strong&gt;비즈니스 로직을 더 느슨하게 결합하고, 확장 가능하게 설계&lt;/strong&gt;하기 위함.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;여러 애그리게이트 간의 결합도를 낮추기 위함
+&lt;ul&gt;
+&lt;li&gt;한 애그리게이트에서 발생한 변화가 다른 애그리게이트의 동작을 필요로 할 때, 직접 호출하면 강한 결합이 발생한다.&lt;/li&gt;
+&lt;li&gt;도메인 이벤트를 사용하면 &lt;strong&gt;애그리게이트 간 직접적인 의존성을 줄이고, 독립적으로 동작&lt;/strong&gt;할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;세련된 방법이지만, 그만한 가치를 갖고 있어야 한다.&lt;/p&gt;
+&lt;p&gt;비즈니스 로직상에 여러 애그리거트를 트랜잭션 하나에 묶더라도, 애그리거트들을 확실하게 나누는 것이 중요하다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;DDD는 단순한 설계 기법이 아니라, &lt;strong&gt;비즈니스 도메인에 대한 깊은 이해&lt;/strong&gt;와 이를 소프트웨어에 &lt;strong&gt;정확하게 반영하는 과정&lt;/strong&gt;이다. 이 과정에서 도메인 모델을 코드로 &lt;strong&gt;그대로 구현&lt;/strong&gt;하고, 변화에 유연한 구조를 유지하는 것이 핵심이다.&lt;/p&gt;
+&lt;p&gt;이번 강의를 통해, DDD가 단순히 복잡한 개념이 아니라 &lt;strong&gt;도메인의 본질을 명확하게 정의&lt;/strong&gt;하고, &lt;strong&gt;유지보수성과 확장성을 높이는 방법론&lt;/strong&gt;임을 다시 한번 깨달았다. 특히 &lt;strong&gt;경계 컨텍스트&lt;/strong&gt;(Bounded Context)를 통한 분리, &lt;strong&gt;애그리게이트&lt;/strong&gt;(Aggregate)를 이용한 트랜잭션 일관성 유지, 엔티티와 값 객체 사례 비교 등, 실무에서 고려해야 할 중요한 원칙들을 배울 수 있었다.&lt;/p&gt;
+&lt;p&gt;물론 DDD는 만능이 아니다. DDD를 도입하려면 비즈니스 도메인의 복잡성을 고려하고, 필요에 따라 전술적 패턴과 전략적 패턴을 조합해야 한다. 실무에서는 DDD의 모든 요소를 적용하는 것이 아니라, 팀과 조직의 상황에 맞게 유연하게 접근하는 것이 중요하다. 엔지니어링이란 실용적인 것이 무엇보다 중요하다.&lt;/p&gt;
+&lt;p&gt;이번 강의를 통해 배운 패턴들을 실무에 적용해보며, 도메인 모델을 더욱 깊이 고민하고 발전시켜 나가야겠다. DDD는 여전히 쉽지 않지만, 그 어려움은 단순한 복잡함이 아니라, &lt;strong&gt;도메인을 올바르게 이해하고 표현하는 과정&lt;/strong&gt;이라는 점을 깨달았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Agile 정리와 회고]]></title><description><![CDATA[나는 단 3주 만에 3년 치의 경험을 했다. 애자일은 단순한 개발 프로세스가 아니라, 개발 방식과 협업 문화를 혁신하는 철학이자 실천 방식이었다. 나는 2024년 12월 30일부터 2025년 1월 1…]]></description><link>https://iol-lshh.github.io/회고/agile/Agile_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/agile/Agile_회고/</guid><pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -3298,122 +4037,6 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;h2&gt;네이티브 메서드 라이브러리 (Native Method Libraries)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;실행 엔진에서 필요한 &lt;strong&gt;C/C++ 기반 네이티브 라이브러리&lt;/strong&gt;의 모음입니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[Daniel Moka님의 링크드인 게시글을 참조했습니다. 클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
-테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;Daniel Moka님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
-테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGeO/KdIqFEg2A//8QAGhABAAIDAQAAAAAAAAAAAAAAAwECAAQTFP/aAAgBAQABBQLaulX6tgzMjsKkP2XNS02Dz0WfEWGcFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAeEAACAgICAwAAAAAAAAAAAAAAAQIREpExMjNCcf/aAAgBAQAGPwJqLaXw7PRC+aJpTaR5JbE5O2Zyu2e2zGPB/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFhEFH/2gAIAQEAAT8hplA140wbsoQOOAeRKBPljlg0u60ztApdT7P/2gAMAwEAAgADAAAAEAMIPP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExUfBBYXGhsf/aAAgBAQABPxDdAkBxnpMnL6lzVFsU3AyDKU0RYz+IdAAUt1Zs1ERem3aL8XyMA0Uvbluf/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/c35b1/IMG_1263.avif 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/2c8de/IMG_1263.avif 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/5d31c/IMG_1263.avif 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/c9875/IMG_1263.avif 800w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/81b7c/IMG_1263.webp 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/6ea66/IMG_1263.webp 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/8aab1/IMG_1263.webp 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/d00b9/IMG_1263.webp 800w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/ff44c/IMG_1263.jpg 158w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/a6688/IMG_1263.jpg 315w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg 630w,
-/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg 800w&quot;
-            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-            type=&quot;image/jpeg&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg&quot;
-            alt=&quot;test&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;test&lt;/p&gt;&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;strong&gt;깨끗한 테스트의 특징&lt;/strong&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;단순함 (Simple)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트 자체에 복잡한 로직이 없어야 합니다.&lt;/li&gt;
-&lt;li&gt;테스트는 실행 흐름을 쉽게 이해할 수 있어야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;불필요한 데이터 숨기기 (Hides Irrelevant Data)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트의 핵심 목적과 관련 없는 데이터는 숨기거나 단순화해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;AAA 구조 준수 (Follows the AAA Structure)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Arrange&lt;/strong&gt;: 테스트 준비(데이터와 상태 설정).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Act&lt;/strong&gt;: 테스트 대상 코드 실행.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Assert&lt;/strong&gt;: 실행 결과 검증.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;테스트 간 독립성 유지 (Isolated)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;각 테스트는 다른 테스트와 완전히 독립적이어야 합니다.&lt;/li&gt;
-&lt;li&gt;외부 상태나 공유 리소스에 의존하지 않아야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;설명적인 이름 (Descriptive Test Name)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트 이름만 보고도 테스트의 목적과 동작을 명확히 알 수 있어야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;의미 있는 검증 (Meaningful Assertions)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;검증은 테스트의 핵심 목적과 직결되어야 하며, 불필요한 검증을 피해야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;F.I.R.S.T. 원칙 준수 (F.I.R.S.T. Principle)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: 테스트는 빠르게 실행되어야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: 다른 테스트와 독립적이어야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: 어디서 실행하든 항상 같은 결과를 반환해야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: 테스트 결과는 성공 또는 실패로 명확히 나타나야 합니다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: 테스트는 코드를 작성하기 전에 설계되어야 합니다(TDD).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;현실적이고 대표적인 데이터 사용 (Uses Realistic and Representative Data)&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;실제 환경과 유사한 데이터를 사용하여 테스트 신뢰성을 높입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
-&lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
-&lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JPA]]></title><description><![CDATA[JDBC vs JPA Spring Data JPA의 작동 방식 JPA와 ORM에 대한 베스트 프렉티스 가이드 1. JDBC vs JPA Java에서 관계형 데이터베이스를 사용할 때, JDBC(Java Database Connectivity)와 JPA…]]></description><link>https://iol-lshh.github.io/java/JPA/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/JPA/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;JDBC vs JPA&lt;/li&gt;
 &lt;li&gt;Spring Data JPA의 작동 방식&lt;/li&gt;
@@ -4146,7 +4769,123 @@ output: Hello, World&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&
 &lt;li&gt;매우 큰 결과 세트를 처리할 때는 스트리밍을 사용하여 모든 데이터를 메모리에 로드하지 않고 처리하세요.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;  &lt;span class=&quot;token annotation punctuation&quot;&gt;@Query&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SELECT u FROM User u&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+  &lt;span class=&quot;token class-name&quot;&gt;Stream&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;streamAllUsers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[clean test suite]]></title><description><![CDATA[Daniel Moka님의 링크드인 게시글을 참조했습니다. 클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
+테스트는 코드 품질의 핵심입니다. 깨끗한 테스트는 다음과 같은 특징을 가져야 합니다  깨끗한 테스트의 특징 단순함 (Simple…]]></description><link>https://iol-lshh.github.io/pattern/clean_test_suite/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/clean_test_suite/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;Daniel Moka님의 링크드인 게시글을 참조했습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;클린 코드 팁: 깨끗한 테스트 없이는 깨끗한 코드를 가질 수 없다
+테스트는 코드 품질의 핵심입니다. &lt;strong&gt;깨끗한 테스트&lt;/strong&gt;는 다음과 같은 특징을 가져야 합니다&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAb/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGeO/KdIqFEg2A//8QAGhABAAIDAQAAAAAAAAAAAAAAAwECAAQTFP/aAAgBAQABBQLaulX6tgzMjsKkP2XNS02Dz0WfEWGcFT//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAeEAACAgICAwAAAAAAAAAAAAAAAQIREpExMjNCcf/aAAgBAQAGPwJqLaXw7PRC+aJpTaR5JbE5O2Zyu2e2zGPB/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFhEFH/2gAIAQEAAT8hplA140wbsoQOOAeRKBPljlg0u60ztApdT7P/2gAMAwEAAgADAAAAEAMIPP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExUfBBYXGhsf/aAAgBAQABPxDdAkBxnpMnL6lzVFsU3AyDKU0RYz+IdAAUt1Zs1ERem3aL8XyMA0Uvbluf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/c35b1/IMG_1263.avif 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/2c8de/IMG_1263.avif 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/5d31c/IMG_1263.avif 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/c9875/IMG_1263.avif 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/81b7c/IMG_1263.webp 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/6ea66/IMG_1263.webp 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/8aab1/IMG_1263.webp 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/d00b9/IMG_1263.webp 800w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/ff44c/IMG_1263.jpg 158w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/a6688/IMG_1263.jpg 315w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg 630w,
+/static/1986d3cb805efc2e6ce210d5e1464a98/4b190/IMG_1263.jpg 800w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/1986d3cb805efc2e6ce210d5e1464a98/828fb/IMG_1263.jpg&quot;
+            alt=&quot;test&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;test&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;깨끗한 테스트의 특징&lt;/strong&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;단순함 (Simple)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트 자체에 복잡한 로직이 없어야 합니다.&lt;/li&gt;
+&lt;li&gt;테스트는 실행 흐름을 쉽게 이해할 수 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;불필요한 데이터 숨기기 (Hides Irrelevant Data)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트의 핵심 목적과 관련 없는 데이터는 숨기거나 단순화해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AAA 구조 준수 (Follows the AAA Structure)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Arrange&lt;/strong&gt;: 테스트 준비(데이터와 상태 설정).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Act&lt;/strong&gt;: 테스트 대상 코드 실행.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assert&lt;/strong&gt;: 실행 결과 검증.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;테스트 간 독립성 유지 (Isolated)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;각 테스트는 다른 테스트와 완전히 독립적이어야 합니다.&lt;/li&gt;
+&lt;li&gt;외부 상태나 공유 리소스에 의존하지 않아야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;설명적인 이름 (Descriptive Test Name)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트 이름만 보고도 테스트의 목적과 동작을 명확히 알 수 있어야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;의미 있는 검증 (Meaningful Assertions)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;검증은 테스트의 핵심 목적과 직결되어야 하며, 불필요한 검증을 피해야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;F.I.R.S.T. 원칙 준수 (F.I.R.S.T. Principle)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;: 테스트는 빠르게 실행되어야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Independent&lt;/strong&gt;: 다른 테스트와 독립적이어야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repeatable&lt;/strong&gt;: 어디서 실행하든 항상 같은 결과를 반환해야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-validating&lt;/strong&gt;: 테스트 결과는 성공 또는 실패로 명확히 나타나야 합니다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timely&lt;/strong&gt;: 테스트는 코드를 작성하기 전에 설계되어야 합니다(TDD).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;현실적이고 대표적인 데이터 사용 (Uses Realistic and Representative Data)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;실제 환경과 유사한 데이터를 사용하여 테스트 신뢰성을 높입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트를 &lt;strong&gt;일급 시민&lt;/strong&gt;으로 다루세요.  &lt;/li&gt;
+&lt;li&gt;테스트는 코드의 품질을 지탱하는 중요한 자산입니다.  &lt;/li&gt;
+&lt;li&gt;클린 테스트는 코드 변경 시 문제를 쉽게 발견하고, 자신감 있게 리팩터링할 수 있도록 도와줍니다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[5. Gradle]]></title><description><![CDATA[패키지 관리자 명령어 의존성 메이븐 기본적인 설정 스프링 재단]]></description><link>https://iol-lshh.github.io/java/basic_java/5_Gradle/</link><guid isPermaLink="false">https://iol-lshh.github.io/java/basic_java/5_Gradle/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;패키지 관리자&lt;/li&gt;
 &lt;li&gt;명령어&lt;/li&gt;
 &lt;li&gt;의존성

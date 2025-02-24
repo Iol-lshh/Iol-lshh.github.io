@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Feb 2025 07:19:16 GMT</lastBuildDate><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Feb 2025 07:32:19 GMT</lastBuildDate><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -60,6 +60,7 @@
 &lt;/ul&gt;
 &lt;p&gt;도메인 주도 설계에서 구현은 매우 중요하다. 다만 구현 하나하나가 매우 많은 지면을 차지할 것이므로, 본 글은 DDD에 대한 진짜 의미 전달을 목적으로 내용을 정리했다.&lt;/p&gt;
 &lt;hr&gt;
+&lt;h2&gt;DDD란?&lt;/h2&gt;
 &lt;p&gt;도메인 주도 설계(Domain Driven Design, DDD)는 에릭 에반스가 2003년 출판한 동명의 책으로 부터 시작되었다.&lt;/p&gt;
 &lt;p&gt;DDD란 뭘까? 위키백과로 DDD를 찾아봤다.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -83,7 +84,9 @@
 &lt;li&gt;코드를 최대한 도메인 모델을 &lt;strong&gt;표현하기 좋게&lt;/strong&gt; 만들어야 한다.&lt;/li&gt;
 &lt;li&gt;도메인 모델은 코드로 &lt;strong&gt;구현하기 쉬운&lt;/strong&gt; 모델이어야 한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;그렇지 못하다면, 올바르게 만들어진 모델이 아니다. 이해 관계자들이 모두 이해 가능한 개념이 쓰여야 한다. 이를 유비쿼터스 언어라고 한다.&lt;/p&gt;
+&lt;p&gt;그렇지 못하다면, 올바르게 만들어진 모델이 아니다. 다음은 DDD에 대한 핵심 고려사항이다.&lt;/p&gt;
+&lt;h3&gt;유비쿼터스 언어(Ubiquitous Language)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이해 관계자들이 모두 이해 가능한 개념&lt;/strong&gt;이 쓰여야 한다. 이를 유비쿼터스 언어라고 한다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;유비쿼터스 언어(Ubiquitous Language)&lt;/strong&gt;: 모든 팀 구성원들이 사용하는 언어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -93,12 +96,12 @@
 &lt;li&gt;회사 내부 용어&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;이 중에서 서로 소통해야할 용어들을 공유하여 유비쿼터스 용어로 사용한다. 유비쿼터스 언어는 도메인 모델 뿐만 아니라 코드에서도 동일하게 사용 되어야 한다. 이를 통해 개발자와 비즈니스 전문가 간의 소통이 수월해진다.&lt;/p&gt;
-&lt;hr&gt;
+&lt;h3&gt;관심사 분리&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;DDD는 모델에 기술적 요소가 들어가서는 안된다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;에릭 에반스의 DDD는 당시의 OOP와 Agile의 영향을 많이 받았다. 때문에 DDD 자체는 특정 프로그래밍 패러다임이나 소프트웨어 개발 방법론을 강요하지는 않지만, 구현 가이드라인으로써 OOP와 Agile의 관점에서 보고 있다.&lt;/p&gt;
 &lt;p&gt;당시 엔터프라이즈 자바 빈즈(분산 객체)가 유행했는데, 이때문에 소프트웨어가 인프라스트럭처에 종속적이었고, 도메인과 기술적 요소가 혼재되어있었다.&lt;/p&gt;
 &lt;p&gt;마틴 파울러가 엔터프라이즈 애플리케이션 아키텍처 패턴을 제시하여, 인프라스트럭처와 퍼시스턴스 레이어를 도메인과 관심사 분리하는 패턴을 제시했으며, 이 철학을 바탕으로 Java 진영에 나온 두 가지 프레임워크, 스프링과 JPA는 인프라스트럭처와 퍼시스턴스 레이어가 비즈니스와 관심사 분리하도록 도와주게 된다.&lt;/p&gt;
-&lt;hr&gt;
+&lt;h3&gt;불변식&lt;/h3&gt;
 &lt;p&gt;도메인은 &lt;strong&gt;불변식&lt;/strong&gt;(Invariant)을 기준으로 설계되어야 한다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;불변식&lt;/strong&gt;(Invariant): 시스템이 항상 유지해야 하는 핵심 규칙&lt;/p&gt;
@@ -110,7 +113,7 @@
 &lt;li&gt;Eventual Consistency (최종적 일관성)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;도메인은 Aggregate를 갖게되는데, 도메인은 이 Aggregate 내부에서는 Transactional Consistency를 갖춰야만 한다.&lt;/p&gt;
-&lt;hr&gt;
+&lt;h3&gt;모델 주도 설계&lt;/h3&gt;
 &lt;p&gt;또한 DDD는 &lt;strong&gt;모델 주도 설계&lt;/strong&gt;(Model Driven Design)가 이루어져야 하며, 이때문에 &lt;strong&gt;XP&lt;/strong&gt;(eXtreme Programming)가 동반되어야 한다.&lt;/p&gt;
 &lt;p&gt;도메인 모델 = 설계 = 코드&lt;/p&gt;
 &lt;ul&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Feb 2025 04:54:14 GMT</lastBuildDate><item><title><![CDATA[토스 서버개발자가 들려주는 시니어의 성장 회고]]></title><description><![CDATA[최근 경력이 쌓여가며, 고민에 빠졌다. 최근, 나는 주니어에서 벗어나 미들로 성장해야 하는 시기에 접어들었다. 하지만, 어떤 역할을 해야 할지, 무엇을 준비해야 할지 혼란스러웠다. 중간에 차세대 PI(Process Innovation…]]></description><link>https://iol-lshh.github.io/회고/토스_20250224_세션/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/토스_20250224_세션/</guid><pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Feb 2025 05:00:32 GMT</lastBuildDate><item><title><![CDATA[토스 서버개발자가 들려주는 시니어의 성장 회고]]></title><description><![CDATA[최근 경력이 쌓여가며, 고민에 빠졌다. 최근, 나는 주니어에서 벗어나 미들로 성장해야 하는 시기에 접어들었다. 하지만, 어떤 역할을 해야 할지, 무엇을 준비해야 할지 혼란스러웠다. 중간에 차세대 PI(Process Innovation…]]></description><link>https://iol-lshh.github.io/회고/토스_20250224_세션/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/토스_20250224_세션/</guid><pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -153,12 +153,11 @@
 &lt;p&gt;또한 돌이켜보니, 환경과 사람(동료와 CEO)이 따라줘야 한다.
 시니어가 될 수록 몸 담는 회사가 중요해진다. CEO의 의사결정이 중요해지기 때문이다. (조직 구조, 성장 가능성)&lt;/p&gt;
 &lt;p&gt;회사의 성장이 개인의 성장을 강제적으로 끌어올릴 수 있다.&lt;/p&gt;
-&lt;p&gt;DRI, Directly Responsible Individual
-완전한 위임을 통하여 해당 업무에 대해서 최종적인 의사결정권을 가지는 자. 이때 최종 결정을 한다는 것은 독단적인 판단을 한다는 것이 아니라, 최대한 많은 정보와 의견 속에서 결정한다는 것을 의미한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DRI, Directly Responsible Individual&lt;/strong&gt;: 완전한 위임을 통하여 해당 업무에 대해서 최종적인 의사결정권을 가지는 자. 이때 최종 결정을 한다는 것은 독단적인 판단을 한다는 것이 아니라, 최대한 많은 정보와 의견 속에서 결정한다는 것을 의미한다.&lt;/p&gt;
 &lt;p&gt;일 잘하는 사람의 결과는 동일하다. 방식이 다를 뿐이다. 그 사람이 만든 결과가 정말 좋은지. 지속적으로 좋아지는지, 노력하는지.&lt;/p&gt;
 &lt;p&gt;시니어의 기준은, 기술적인 것도 있지만, 신규 서비스에 대해서 누구에게 믿고 맡길 수 있느냐를 기준으로 둔다. 그 사람이 주는 그동안의 퍼포먼스, 역량의 히스토리로 판단하게 된다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;여러모로 더 복잡해졌다. 하지만 모르는 것조차 모르던 때보다 낫다. 세 분의 이야기 공통적인 것이 있었다. 세션의 곳곳에 애자일과 도메인에 대한 이야기가 있었다. 기술적인 소양과 더불어 방법론과 요구사항 정의, 도메인 설계 대해서 꾸준히 익히고 실천하자.&lt;/p&gt;
+&lt;p&gt;여러모로 더 복잡해졌다. 하지만 모르는 것조차 모르던 때보다 낫다. 세 분의 이야기에는 공통적인 것이 있다. 곳곳에 애자일과 도메인에 대한 이야기가 있었다. 기술적인 소양과 더불어 방법론과 요구사항 정의, 도메인 설계 대해서 꾸준히 익히고 실천해야한다고 느꼈다.&lt;/p&gt;
 &lt;p&gt;그리고, &lt;strong&gt;시니어의 기준&lt;/strong&gt;이라는 것이 너무 멋지다. &lt;strong&gt;과정과 관계없이 믿을 수 있는 결과를 만들어내는 사람&lt;/strong&gt;. 기술적, 비즈니스적 신뢰를 모두 갖춘 사람이란 뜻일 것이다. 그런 사람이 되기 위해서 나의 과정은 어떻게 만들어 나아가야 할지 고민해보자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;

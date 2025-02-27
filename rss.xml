@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Feb 2025 08:02:36 GMT</lastBuildDate><item><title><![CDATA[EAA 정리와 회고]]></title><description><![CDATA[애플리케이션 아키텍처는 회사마다 세부적으로는 다르지만, 비슷한 양상을 띈다. 프레젠테이션 계층 비즈니스 로직 계층 데이터 액세스 계층 마틴 파울러는 엔터프라이즈 애플리케이션 아키텍처 패턴(Patterns of Enterprise Application…]]></description><link>https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Feb 2025 14:55:56 GMT</lastBuildDate><item><title><![CDATA[EAA 정리와 회고]]></title><description><![CDATA[애플리케이션 아키텍처는 회사마다 세부적으로는 다르지만, 비슷한 양상을 띈다. 프레젠테이션 계층 비즈니스 로직 계층 데이터 액세스 계층 마틴 파울러는 엔터프라이즈 애플리케이션 아키텍처 패턴(Patterns of Enterprise Application…]]></description><link>https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -214,7 +214,7 @@
           /&gt;
         &lt;/picture&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;도메인 모델에 익숙해지면, 복잡한 논리를 체계적으로 관리할 수 있는 다양한 기법의 활용이 가능해진다. 예컨데 정책에 대한 다형성을 형성할 수 있다. 트랜잭션 스크립트는 매 정책에 대해 중복 로직과 복잡한 분기를 형성해야 할 것이다.&lt;/p&gt;
+&lt;p&gt;도메인 모델에 익숙해지면, 복잡한 논리를 체계적으로 관리할 수 있는 다양한 기법의 활용이 가능해진다. 예컨데 정책에 대한 다형성을 형성할 수 있다. (cf. 트랜잭션 스크립트는 매 정책에 대해 중복 로직과 복잡한 분기를 형성해야 할 것이다.)&lt;/p&gt;
 &lt;p&gt;도메인 모델이 풍성해질수록 객체지향 모델과 관계형 데이터베이스 간의 불일치 문제(O/R impedance mismatch)로 인해 &lt;strong&gt;매핑 복잡성&lt;/strong&gt;이 증가한다. ORM을 사용하면 객체-관계 임피던스 불일치 문제를 완화할 수 있지만, 성능 최적화, Lazy Loading, 캐싱과 같은 추가적인 고려가 필요하다. 대신 정교한 데이터 원본 계층은 거의 고정 비용이므로, 상당한 비용이나 시간을 들여 한번만 제대로 만들면 유지보수성을 크게 높일 수 있다.&lt;/p&gt;
 &lt;h5&gt;테이블 모듈&lt;/h5&gt;
 &lt;p&gt;언뜻 보기에 도메인 모델과 비슷해 보인다. 테이블 모듈은 객체 모델을 기반으로 하지 않고 테이블 단위의 데이터를 관리하는 방식이다. 도메인 모델이 각 레코드마다 객체를 갖는다면, 테이블 모듈은 &lt;strong&gt;하나의 인스턴스가 테이블 전체&lt;/strong&gt;를 다룬다.&lt;/p&gt;

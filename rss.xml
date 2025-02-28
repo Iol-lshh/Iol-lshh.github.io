@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Feb 2025 14:55:56 GMT</lastBuildDate><item><title><![CDATA[EAA 정리와 회고]]></title><description><![CDATA[애플리케이션 아키텍처는 회사마다 세부적으로는 다르지만, 비슷한 양상을 띈다. 프레젠테이션 계층 비즈니스 로직 계층 데이터 액세스 계층 마틴 파울러는 엔터프라이즈 애플리케이션 아키텍처 패턴(Patterns of Enterprise Application…]]></description><link>https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2025 06:15:43 GMT</lastBuildDate><item><title><![CDATA[EAA 정리와 회고]]></title><description><![CDATA[애플리케이션 아키텍처는 회사마다 세부적으로는 다르지만, 비슷한 양상을 띈다. 프레젠테이션 계층 비즈니스 로직 계층 데이터 액세스 계층 마틴 파울러는 엔터프라이즈 애플리케이션 아키텍처 패턴(Patterns of Enterprise Application…]]></description><link>https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -3812,7 +3812,53 @@ A: 린은 완벽을 추구하는 반면에 애자일은 불완전한 정보로 �
 &lt;p&gt;나는 처음으로 운전하는 법을 배운 날을 생생하게 기억한다. 어머니와 나는 캘리포니아 치코 근처의 5번 고속도로를 달리고 있었는데, 이 도로는 평탄한 땅에 직선 도로가 지평선까지 쭉 곧게 뻗어나간다. 어머니는 조수석에 앉은 내게 손을 뻗어 운전대를 잡아 보도록 하셨다. 그리고 운전대를 돌리는 것이 자동차의 방향에 어떻게 영향을 미치는지 내가 느끼게 해주셨다. 그런 다음 내게 &quot;이렇게 해보렴. 차가 길의 정중앙에 놓이도록 해서 그 방향으로 쭉 뻗어나가면 저 지평선에 바로 맞닿을 수 있게 해라.&quot;라고 말씀하셨다.&lt;br&gt;
 나는 도로를 흘끗흘끗 내다보며 조심스럽게 방향을 잡았다. 나는 차가 정확히 길 한가운데에서 차선 중앙으로만 가도록 했다. 꽤 잘 하고 있었다. 그러다가 아주 잠깐 정신을 딴 데 팔았더니...&lt;br&gt;
 차가 길 옆 자갈을 스치는 소리에 나는 번쩍 제정신이 들었다. 어머니는 부드럽게 차를 다시 길에 돌려놓으셨다 (지금 생각해 보니 그때 당신의 용기는 정말 놀랍다.) 내 심장은 두근거렸다. 어머니는 이런 경험을 하게 만든 다음에야 진짜 운전법을 가르쳐 주셨다. &lt;strong&gt;&quot;운전은 차를 똑바른 방향으로 가도록 맞추어 놓고 그대로 두는 게 아니야. 운전은 계속 신경을 쓰면서 이번에는 이쪽으로 조금, 다음에는 저쪽으로 조금씩 방향을 고치면서 가능거지.&quot;&lt;/strong&gt; (2)&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Lock 없이 동시성을 보장하는 송금 시스템 설계]]></title><description><![CDATA[송금 시스템은 뭘까? 여러 사용자가 하나의 계좌에 입출금하는 것이 결국 송금 시스템이라고 볼 수 있지 않을까? 입금: DB에 금액을 조회하고, 조회된 금액을 더하고, DB에 저장한다. 출금: DB…]]></description><link>https://iol-lshh.github.io/pattern/nolock/no_lock/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/nolock/no_lock/</guid><pubDate>Wed, 12 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAECAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB7NksRkKAD//EABoQAAEFAQAAAAAAAAAAAAAAABEAAhAgITL/2gAIAQEAAQUCZxAwIU//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ah//xAAZEAADAQEBAAAAAAAAAAAAAAAAAREhEFH/2gAIAQEAAT8hWI/dJgxSiMChcZT/2gAMAwEAAgADAAAAEOTPff/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EABsQAAMBAQADAAAAAAAAAAAAAAABIRFBMVFh/9oACAEBAAE/EPYDNh8BrKLePhLNF4UfkaKI18P/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/d9e051bf0a35e4842c73fed9346dc8d6/c35b1/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.avif 158w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/2c8de/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.avif 315w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/5d31c/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.avif 630w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/59707/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.avif 945w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/b866d/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.avif 1206w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/d9e051bf0a35e4842c73fed9346dc8d6/81b7c/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.webp 158w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/6ea66/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.webp 315w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/8aab1/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.webp 630w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/a70f5/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.webp 945w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/b732a/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.webp 1206w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/d9e051bf0a35e4842c73fed9346dc8d6/ff44c/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.jpg 158w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/a6688/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.jpg 315w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/828fb/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.jpg 630w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/0ede0/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.jpg 945w,
+/static/d9e051bf0a35e4842c73fed9346dc8d6/0c02e/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.jpg 1206w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/d9e051bf0a35e4842c73fed9346dc8d6/828fb/xp%EB%A5%BC%EC%95%84%EB%8A%94%EC%A0%95%EC%83%81%EC%9D%B8.jpg&quot;
+            alt=&quot;xp      &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Lock 없이 동시성을 보장하는 송금 시스템 설계]]></title><description><![CDATA[송금 시스템은 뭘까? 여러 사용자가 하나의 계좌에 입출금하는 것이 결국 송금 시스템이라고 볼 수 있지 않을까? 입금: DB에 금액을 조회하고, 조회된 금액을 더하고, DB에 저장한다. 출금: DB…]]></description><link>https://iol-lshh.github.io/pattern/nolock/no_lock/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/nolock/no_lock/</guid><pubDate>Wed, 12 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

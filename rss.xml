@@ -1,4 +1,167 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2025 06:15:43 GMT</lastBuildDate><item><title><![CDATA[EAA 정리와 회고]]></title><description><![CDATA[애플리케이션 아키텍처는 회사마다 세부적으로는 다르지만, 비슷한 양상을 띈다. 프레젠테이션 계층 비즈니스 로직 계층 데이터 액세스 계층 마틴 파울러는 엔터프라이즈 애플리케이션 아키텍처 패턴(Patterns of Enterprise Application…]]></description><link>https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 Mar 2025 17:28:24 GMT</lastBuildDate><item><title><![CDATA[Transaction과 Isolation과 Lock 정리]]></title><description><![CDATA[애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성과 활동성이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까? ACID. 트랜잭션의 일관성(Consistency)은 데이터베이스 시스템의 원자성(Atomicity…]]></description><link>https://iol-lshh.github.io/db/Isolation과_Lock_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/db/Isolation과_Lock_정리/</guid><pubDate>Sun, 02 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQBACdASoUAAsAPtFUo0uoJKMhsAgBABoJZgCdMoMsdEQt2+zLN9C/OMAAAP2nG+lVaUfsSBPaPkjvMq/GCefxgSJ4dOpNEVoFvycqcMEr/tpkabRq32r7o8hywj54J3SdwCk/KjSRMkFdXVUdD/mPiQaD5Of+ggAAAA==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/2348beda19c372af4c87f3b83d447c1f/c35b1/isolation_header.avif 158w,
+/static/2348beda19c372af4c87f3b83d447c1f/2c8de/isolation_header.avif 315w,
+/static/2348beda19c372af4c87f3b83d447c1f/5d31c/isolation_header.avif 630w,
+/static/2348beda19c372af4c87f3b83d447c1f/59707/isolation_header.avif 945w,
+/static/2348beda19c372af4c87f3b83d447c1f/51f3d/isolation_header.avif 1260w,
+/static/2348beda19c372af4c87f3b83d447c1f/d89b9/isolation_header.avif 1792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/2348beda19c372af4c87f3b83d447c1f/81b7c/isolation_header.webp 158w,
+/static/2348beda19c372af4c87f3b83d447c1f/6ea66/isolation_header.webp 315w,
+/static/2348beda19c372af4c87f3b83d447c1f/8aab1/isolation_header.webp 630w,
+/static/2348beda19c372af4c87f3b83d447c1f/a70f5/isolation_header.webp 945w,
+/static/2348beda19c372af4c87f3b83d447c1f/4ef06/isolation_header.webp 1260w,
+/static/2348beda19c372af4c87f3b83d447c1f/91298/isolation_header.webp 1792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/2348beda19c372af4c87f3b83d447c1f/81b7c/isolation_header.webp 158w,
+/static/2348beda19c372af4c87f3b83d447c1f/6ea66/isolation_header.webp 315w,
+/static/2348beda19c372af4c87f3b83d447c1f/8aab1/isolation_header.webp 630w,
+/static/2348beda19c372af4c87f3b83d447c1f/a70f5/isolation_header.webp 945w,
+/static/2348beda19c372af4c87f3b83d447c1f/4ef06/isolation_header.webp 1260w,
+/static/2348beda19c372af4c87f3b83d447c1f/91298/isolation_header.webp 1792w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/webp&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/2348beda19c372af4c87f3b83d447c1f/8aab1/isolation_header.webp&quot;
+            alt=&quot;isolation header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성과 활동성이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까?&lt;/p&gt;
+&lt;p&gt;ACID. 트랜잭션의 일관성(Consistency)은 데이터베이스 시스템의 원자성(Atomicity)과 격리성(Isolation)에 기대어 구현될 수 있다.&lt;/p&gt;
+&lt;p&gt;[Designing Data-Intensive Applications, Kleppmann]&lt;/p&gt;
+&lt;p&gt;RDBMS의 동작을 살펴보자.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;엔진에 따라서 세부사항이 다르겠지만, 개념은 비슷하게 동작된다.&lt;/p&gt;
+&lt;p&gt;우선 Lock에 대해서 알아야 한다.&lt;/p&gt;
+&lt;p&gt;데이터 소스 계층에 속하는 데이터베이스 시스템은 또한 하나의 소프트웨어이다. 애플리케이션 부분과 파일 시스템 부분으로 되어있다. 애플리케이션은 데이터를 파일 시스템으로 넣기 위해 메모리를 사용하고, 메모리는 스레드에 대하여 공유 자원이다.&lt;/p&gt;
+&lt;p&gt;동시성 제어가 필요해지는 것이다. 운영체제는 임계 구역을 보호하기 위해 Lock을 제공하며, 데이터베이스 시스템은 이를 확장하여 자체적인 동시성 제어 기법을 적용한다.&lt;/p&gt;
+&lt;p&gt;참고로.. Lock은 기술적으로 &lt;strong&gt;자원(Resource)의 개념&lt;/strong&gt;으로 이해해야 한다. Mutex나 Semaphore를 생각하면 이해하기 쉽다. Lock을 건다는 것은 획득의 개념이라는 것을 리마인드하고 분류해보자.&lt;/p&gt;
+&lt;p&gt;개념적으로 생각해봤을 때, 데이터베이스는 다음 락을 구현해야 할 것이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Read Lock&lt;/strong&gt;: 다른 사용자가 같이 읽는 것은 허용하지만 변경하는 것은 허용하지 않음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Update Lock&lt;/strong&gt;: 다른 사용자가 읽는 것, 변경하는 것 모두 허용하지 않음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 Read Lock과 Update Lock을 구현하기 위해 좀 더 명확하게 이야기해보자. 읽기, 수정하기 같은 What관점의 단어가 아니라 기술적인 How 관점의 단어를 써보면 이렇다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Shared Lock&lt;/strong&gt;(공유 락, S-Lock): S-Lock을 획득한 자원에 대해, 다른 트랜잭션은 S-Lock을 획득할 수 있다. (공유되는 Lock 자원임)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Exclusive Lock&lt;/strong&gt;(배타 락, X-Lock): X-Lock을 획득한 자원에 대해,
+&lt;ul&gt;
+&lt;li&gt;다른 트랜잭션은 어떤 락과도 호환되지 않는다. (배타적인 Lock 자원임)&lt;/li&gt;
+&lt;li&gt;X-Lock을 획득한 자원에 대해 어떤 Lock도 획득 불가능하며, S-Lock을 획득한 자원에 대해서도 X-Lock을 획득할 수도 없다. (호환 안되니까)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이 두 Lock의 기능은 한결같다. 원자적이란 말이다. 왜 원자적이라는 표현을 했냐고? 안그런 Lock이 있기때문이다. 그런 Lock도 있다고..??&lt;/p&gt;
+&lt;p&gt;자 여기 문제를 보자.&lt;/p&gt;
+&lt;p&gt;서버 애플리케이션 티어에서 생각해봤을때, 트랜잭션 안에서 일관성을 지키려면 어떻게 처리되어야 할까? Pessimistic Lock? 트랜잭션 안에서 &lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt; 쿼리를 쓰면 돼요! 궁금한게 있다. 혹시, 트랜잭션의 격리 레벨을 바꿔가며 적용해봤나?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;일단 이런 트랜잭션 간에 발생 가능한 문제들에 대해서 정확한 정의를 하고 가자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dirty Read&lt;/strong&gt;: 다른 트랜잭션에서 아직 커밋되지 않은 데이터를 읽는 현상.
+&lt;ul&gt;
+&lt;li&gt;딴 트랜잭션에서 뭔가 쓰기 작업을 하고 아직 Commit도 안했는데, 읽히는 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Non-Repeatable Read&lt;/strong&gt;: 같은 트랜잭션 내에서 동일한 쿼리를 두 번 실행했을 때, &lt;strong&gt;결과가 달라지는&lt;/strong&gt; 현상.
+&lt;ul&gt;
+&lt;li&gt;딴 트랜잭션에서 Update하고 Commit 한거다. 내 트랜잭션은 아직 끝나지도 않았는데, 다시 읽어보면 Commit된 Update 내용으로 바뀌어 있는 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phantom Read&lt;/strong&gt;: 같은 트랜잭션 내에서 동일한 조건의 쿼리를 실행했을 때, 이전에는 없던 &lt;strong&gt;새로운 행&lt;/strong&gt;이 나타나는 현상.
+&lt;ul&gt;
+&lt;li&gt;그러니까, 딴 트랜잭션에서 Insert하고 Commit 한거다. 다시 읽어보면, 원래 있던 데이터들은 똑같은데, Commit된 Insert 내용들이 갑자기 등장한 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;왜 이런 문제가 생긴다는 걸까? 일반적으로 격리 레벨(Isolation Level)은 이 문제 해결에 따라 네 가지 레벨로 정의된다. (MVCC 구현 방법에 대해서는 RDBMS마다 다르므로 개념적으로 기술했다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;READ UNCOMMITTED&lt;/strong&gt;: 커밋 안된 것도 읽음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;READ COMMITTED&lt;/strong&gt;: 최소한 커밋 된 것만 읽음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REPEATABLE READ&lt;/strong&gt;: 반복해서 같은 쿼리로 읽었을 때 결과가 같음&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SERIALIZABLE&lt;/strong&gt;: 직렬화 수준의 동기적인 트랜잭션&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;다음은 어디서나 볼 수 있는 흔한 정리표다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;격리 수준&lt;/th&gt;
+&lt;th&gt;더티 리드 (Dirty Read)&lt;/th&gt;
+&lt;th&gt;비반복 읽기 (Non-Repeatable Read)&lt;/th&gt;
+&lt;th&gt;팬텀 리드 (Phantom Read)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;READ UNCOMMITTED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;🛑 가능&lt;/td&gt;
+&lt;td&gt;🛑 가능&lt;/td&gt;
+&lt;td&gt;🛑 가능&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;READ COMMITTED&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;✅ 방지됨&lt;/td&gt;
+&lt;td&gt;🛑 발생 가능&lt;/td&gt;
+&lt;td&gt;🛑 발생 가능&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;REPEATABLE READ&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;✅ 방지됨&lt;/td&gt;
+&lt;td&gt;✅ 방지됨&lt;/td&gt;
+&lt;td&gt;🛑 발생 가능&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;SERIALIZABLE&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;✅ 방지됨&lt;/td&gt;
+&lt;td&gt;✅ 방지됨&lt;/td&gt;
+&lt;td&gt;✅ 방지됨&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;좀 더 자세히 들어가보자. 격리 레벨은 트랜잭션 하에서 조회되는 레코드들에 대해서 동일한 Lock을 제공하는 것으로 구현된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;쓰기 작업은 무조건 &lt;strong&gt;X-Lock&lt;/strong&gt;을 획득한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;READ UNCOMMITTED&lt;/strong&gt;: 조회되는 레코드들에 대해서 S-Lock조차 획득하지 않음.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;READ COMMITTED&lt;/strong&gt;: 조회되는 레코드들에 대해서 S-Lock 획득. 단, &lt;strong&gt;조회가 끝나는 순간 곧바로 S-Lock 반환&lt;/strong&gt;. 이러니 다른 트랜잭션이 Update 하는걸 막지 못하는거다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REPEATABLE READ&lt;/strong&gt;: 조회되는 레코드들에 대해서 &lt;strong&gt;트랜잭션이 끝날때까지&lt;/strong&gt; S-Lock 획득. Insert하는 레코드는 모르니, 팬텀리드를 막을 수 없다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SERIALIZABLE&lt;/strong&gt;: 조회되는 레코드들마다 트랜잭션이 끝날때까지 &lt;strong&gt;모든 읽는 범위&lt;/strong&gt; S-Lock(RangeS-S, 공유 키 범위 + 공유 리소스)을 획득. 쓰기 또한 범위 X-Lock(RangeX-X, 배타 키 범위 + 배타 리소스) 획득. 한 트랜잭션이라도 해당 범위를 갱신하려고 하면 대기 발생.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+이제 왜 트랜잭션간에 발생할 수 있는 부작용에 대해서 격리 레벨마다, 방지 되는지 이해된다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt; 쿼리는 조회 행에 대해 X-Lock을 획득하게 된다. &lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt;로 비관적 락을 구현하게 되면, 동일한 행을 조회하는 다른 트랜잭션이 S-Lock을 얻지 못하게 되고, &lt;strong&gt;READ COMMITTED의 단순 조회(read)에서도 Deadlock이 발생할 수 있다.&lt;/strong&gt; 설사 프로토콜을 잘 정립해서 사내 전역적으로 프로토콜에 대한 컨벤션을 잘 따른다 해도, 트래픽이 높아지면 병목지점이 될 확률이 매우 높다.&lt;/p&gt;
+&lt;p&gt;&quot;우리는 CQRS로 해결할꺼에요. 읽을땐 NoSQL로 읽고, 쓸때마다 NoSQL로 복사해 넣어줄 겁니다. 디비지움은 충분히 빠르거든요!&quot; CQRS는 단순히 읽기(read) 부하를 줄이는 방법일 뿐, 쓰기(write) 충돌을 해결하는 방식이 아니다. 데이터 정합성을 중요시하는 도메인의 트랜잭션 환경에서는 결과적 일관성(eventual consistency)만으로 문제를 해결할 수 없으며, 데이터 불일치 문제를 초래할 가능성이 크다.&lt;/p&gt;
+&lt;p&gt;MySQL에서는 이러한 동시성 문제를 해결할 수 있는 적절한 Lock 메커니즘을 제공하지 않는다. MSSQL과 PostgreSQL에서 찾을 수 있었는데, PostgreSQL보다 MSSQL에서의 해결책이 좀 더 원인을 명확하게 설명해주고, PostgreSQL 방식이 해결책 구현 방안을 단순하게 보여준다. 먼저 MSSQL부터 살펴보자.&lt;/p&gt;
+&lt;p&gt;MSSQL은 &lt;strong&gt;Update Lock&lt;/strong&gt;이라는 특별한 Lock 메커니즘을 제공한다. (정말 직관적인 명칭이 아닐수도 없다. 글 초반에 트랜잭션 시스템이 구현해야 할 두 가지 Lock(Read, Update)에 대해 정리했었다. 마이크로소프트는 종종 자체적인 방식으로 기능을 설계하지만, 이번만큼은 상당히 직관적인 개념 정의의 기능이 아닐 수 없다.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Update Lock&lt;/strong&gt;(U-Lock): U-Lock을 획득한 자원에 대해, 다른 트랜잭션의 U-Lock, X-Lock 획득을 방지한다. S-Lock은 허용된다. U-Lock은 Update 가능성이 있는 단위에 대해 걸어두고, 실제 Update 쿼리 동작시에 Exclusive Lock으로 바뀐다. &lt;strong&gt;전환되는 시점이 트랜잭션 격리 레벨에 따라 다르다.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;S-Lock과 X-Lock의 실제 적용 시점을 분리해서, &lt;strong&gt;U-Lock을 얻고 있는 동안에도 단순 조회의 경우엔 가능하도록 열어둔 것&lt;/strong&gt;이다. 물론 트랜잭션 격리 레벨에 따라 U-Lock도 더 높은 제한의 Lock을 따라가겠지만. &lt;strong&gt;Read Lock 획득이 중요한 시스템에서 교착 상태를 매우 줄이고, 시스템의 활동성(liveness)을 크게 제공하게 된다.&lt;/strong&gt; (비관적 락이라는 것에는 변함 없다. 또한 필요에 따라 CQRS를 추가적으로 적용하는 것도 좋을 것이다.)&lt;/p&gt;
+&lt;p&gt;PostgreSQL에서는 Advisory Lock을 제공하며, 이는 MSSQL의 U-Lock과는 달리, 데이터 행(row)이 아닌 애플리케이션에서 직접 관리하는 논리적 리소스를 대상으로 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Advisory Lock&lt;/strong&gt;: 애플리케이션 수준에서 정의할 수 있는 사용자 지정 잠금 방식이다. Advisory Lock은 DB 내부의 기본적인 락 메커니즘과 독립적으로 동작하며, 개발자가 직접 &lt;strong&gt;S-Lock과 유사한 공유 잠금(shared lock) 동작을 설계할 수 있다.&lt;/strong&gt; (cf. 분산락, Distributed Lock)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;U-Lock과 Advisory Lock은 접근 방식이 다르지만, 동일한 아이디어로 문제를 해결한다.  두 방식 모두 트랜잭션에서 락을 획득하되, U-Lock과 X-Lock의 획득을 제한하면서도 S-Lock과는 공유할 수 있도록 동작하게 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[EAA 정리와 회고]]></title><description><![CDATA[애플리케이션 아키텍처는 회사마다 세부적으로는 다르지만, 비슷한 양상을 띈다. 프레젠테이션 계층 비즈니스 로직 계층 데이터 액세스 계층 마틴 파울러는 엔터프라이즈 애플리케이션 아키텍처 패턴(Patterns of Enterprise Application…]]></description><link>https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/EAA/EAA_정리와_회고/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

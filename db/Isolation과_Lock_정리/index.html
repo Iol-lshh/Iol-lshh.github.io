@@ -9,7 +9,7 @@
 
         gtag('config', 'G-DM0ZW7QKL9', {"anonymize_ip":true,"send_page_view":false});
       }
-      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/agile/">agile</a></li><li><a href="/categories/basic_java/">basic_java</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/javascript/">javascript</a></li><li><a href="/categories/microservices_pattern/">microservices_pattern</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/조영호님_강의/">조영호님_강의</a></li><li><a href="/categories/회고/">회고</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/DB/">DB</a>, <a href="/categories/book/">book</a></p><h1 itemProp="headline">Transaction과 Isolation과 Lock 정리</h1><p>March 02, 2025</p></header><section itemProp="articleBody"><p><span
+      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/agile/">agile</a></li><li><a href="/categories/basic_java/">basic_java</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/javascript/">javascript</a></li><li><a href="/categories/microservices_pattern/">microservices_pattern</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/조영호님_강의/">조영호님_강의</a></li><li><a href="/categories/회고/">회고</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/DB/">DB</a>, <a href="/categories/book/">book</a></p><h1 itemProp="headline">Isolation과 Lock 정리</h1><p>March 02, 2025</p></header><section itemProp="articleBody"><p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
     >
@@ -58,9 +58,10 @@
           />
         </picture>
     </span></p>
-<p>애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성과 활동성이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까?</p>
-<p>ACID. 트랜잭션의 일관성(Consistency)은 데이터베이스 시스템의 원자성(Atomicity)과 격리성(Isolation)에 기대어 구현될 수 있다.</p>
-<p>[Designing Data-Intensive Applications, Kleppmann]</p>
+<p>애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성(Consistency)과 활동성(Liveness)이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까?</p>
+<blockquote>
+<p>ACID. 트랜잭션의 일관성(Consistency)은 데이터베이스 시스템의 원자성(Atomicity)과 격리성(Isolation)에 기대어 구현될 수 있다. - [Designing Data-Intensive Applications, Kleppmann]</p>
+</blockquote>
 <p>RDBMS의 동작을 살펴보자.</p>
 <hr>
 <p>엔진에 따라서 세부사항이 다르겠지만, 개념은 비슷하게 동작된다.</p>

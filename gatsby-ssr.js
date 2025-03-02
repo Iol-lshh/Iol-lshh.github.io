@@ -9,4 +9,11 @@
  */
 exports.onRenderBody = ({ setHtmlAttributes }) => {
   setHtmlAttributes({ lang: `kr` })
+  setHeadComponents([
+    <meta
+      key="google-site-verification"
+      name="google-site-verification"
+      content="LEo1xOpJzzFOmdUP87JG6WS6yz0DY9eO0Eh8tfT29CU"
+    />,
+  ])
 }

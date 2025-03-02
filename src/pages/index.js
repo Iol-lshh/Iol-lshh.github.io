@@ -1,5 +1,4 @@
-import React from "react"
-import { useState } from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
@@ -60,7 +59,13 @@ BlogIndex.propTypes = {
 
 export default BlogIndex
 
-export const Head = () => <Seo title="All posts" />
+export const Head = ({ location }) => (
+  <Seo 
+    title="All posts" 
+    description="The Engineer, Aiming Fine - 개발과 엔지니어링에 관한 Iol-lshh의 블로그입니다."
+    location={location} 
+  />
+)
 
 export const pageQuery = graphql`
   {

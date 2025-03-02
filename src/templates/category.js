@@ -64,6 +64,17 @@ CategoryTemplate.propTypes = {
 
 export default CategoryTemplate
 
+export const Head = ({ pageContext, location }) => {
+  const { category } = pageContext
+  return (
+    <Seo
+      title={`${category} 카테고리의 모든 글`}
+      description={`${category} 카테고리에 속한 모든 글 목록입니다.`}
+      location={location}
+    />
+  )
+}
+
 export const pageQuery = graphql`
   query($category: String!) {
     site {

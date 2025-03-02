@@ -46,12 +46,37 @@ const BlogPostTemplate = ({
   )
 }
 
-export const Head = ({ data: { markdownRemark: post }, location }) => {
+export const Head = ({ data, location }) => {
+  const { site, markdownRemark: post } = data;
+  let imageUrl = null;
+  
+  if (post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData) {
+    const imageData = post.frontmatter.featuredImage.childImageSharp.gatsbyImageData;
+    imageUrl = `${site.siteMetadata.siteUrl}${imageData.images.fallback.src}`;
+  } 
+  else if (post.images && post.images.length > 0) {
+    const imageData = post.images[0].childImageSharp.gatsbyImageData;
+    imageUrl = `${site.siteMetadata.siteUrl}${imageData.images.fallback.src}`;
+  }
+  else {
+    const imgRegex = /<img[^>]+src=["']?([^"'\s>]+)["']?[^>]*>/g;
+    const match = imgRegex.exec(post.html);
+    if (match && match[1]) {
+      imageUrl = match[1];
+      if (!imageUrl.startsWith('http')) {
+        // 절대 경로인지 확인 (슬래시로 시작하는지)
+        imageUrl = imageUrl.startsWith('/') 
+          ? `${site.siteMetadata.siteUrl}${imageUrl}`
+          : `${site.siteMetadata.siteUrl}/${imageUrl}`;
+      }
+    }
+  }
   return (
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
       location={location}
+      image={imageUrl}
     />
   )
 }
@@ -79,6 +104,7 @@ BlogPostTemplate.propTypes = {
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
         title: PropTypes.string,
+        siteUrl: PropTypes.string,
       }),
     }),
     markdownRemark: PropTypes.shape({
@@ -87,8 +113,10 @@ BlogPostTemplate.propTypes = {
         date: PropTypes.string,
         category: PropTypes.arrayOf(PropTypes.string),
         description: PropTypes.string,
+        featuredImage: PropTypes.object,
       }),
       html: PropTypes.string,
+      images: PropTypes.array,
     }),
   }).isRequired,
   location: PropTypes.object.isRequired,
@@ -105,17 +133,28 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
       html
+      images {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
         category
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

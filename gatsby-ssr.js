@@ -1,3 +1,5 @@
+const React = require("react")
+
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -7,7 +9,7 @@
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
+exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: `kr` })
   setHeadComponents([
     <meta

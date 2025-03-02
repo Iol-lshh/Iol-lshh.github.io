@@ -104,6 +104,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter
       fields: Fields
+      images: [File] @fileByRelativePath
     }
 
     type Frontmatter {
@@ -111,6 +112,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       date: Date @dateformat
       category: [String]
+      featuredImage: File @fileByRelativePath
     }
 
     type Fields {

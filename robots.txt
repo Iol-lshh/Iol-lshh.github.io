@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://iol-lshh.github.io/sitemap.xml
+Sitemap: https://iol-lshh.github.io/sitemap/sitemap-index.xml
 Host: https://iol-lshh.github.io

@@ -9,7 +9,7 @@ module.exports = {
       summary: `The Engineer, Aiming Fine.`,
     },
     description: `Iol-lshh의 블로그`,
-    siteUrl: `https://iol-lshh.github.io/`,
+    siteUrl: `https://iol-lshh.github.io`,
     social: {
       instagram: `l__sh.h`,
       github: `Iol-lshh`,
@@ -17,6 +17,42 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => {
+            return {
+              url: `${site.siteMetadata.siteUrl}${node.path}`,
+              changefreq: `weekly`,
+              priority: 0.7,
+            }
+          })
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://iol-lshh.github.io',
+        sitemap: 'https://iol-lshh.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-plugin-categories`,
       options: {
@@ -127,29 +163,20 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [process.env.GA_PROPERTY_ID], // GitHub Actions의 secrets에서 가져온 값 사용
+        trackingIds: [process.env.GA_PROPERTY_ID],
         gtagConfig: {
-          anonymize_ip: true, // 사용자 IP 익명화 (GDPR 대비)
+          anonymize_ip: true,
         },
         pluginConfig: {
-          head: true, // head에 삽입하여 로드 속도 최적화
+          head: true,
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://iol-lshh.github.io',
-        sitemap: 'https://iol-lshh.github.io/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
-    `gatsby-plugin-sitemap`,
   ],
 }

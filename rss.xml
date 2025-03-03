@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Mar 2025 18:28:52 GMT</lastBuildDate><item><title><![CDATA[Isolation과 Lock 정리]]></title><description><![CDATA[애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성(Consistency)과 활동성(Liveness)이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까? 보통 ACID를 말한다. Atomicity…]]></description><link>https://iol-lshh.github.io/db/Isolation과_Lock_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/db/Isolation과_Lock_정리/</guid><pubDate>Sun, 02 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Mar 2025 06:56:19 GMT</lastBuildDate><item><title><![CDATA[Isolation과 Lock 정리]]></title><description><![CDATA[애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성(Consistency)과 활동성(Liveness)이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까? 보통 ACID를 말한다. Atomicity…]]></description><link>https://iol-lshh.github.io/db/Isolation과_Lock_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/db/Isolation과_Lock_정리/</guid><pubDate>Sun, 02 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -1817,7 +1817,57 @@
 &lt;h5&gt;암시적 잠금 (Implicit Lock)&lt;/h5&gt;
 &lt;p&gt;잠금 획득 코드 한줄 깜박하면, 전체 오프라인 잠금 체계가 무력화될 수 있다. 제대로 읽기 잠금을 얻으려 하지 않거나, 버전 카운트를 제대로 하지 않거나 할 수 있다. 잠금을 제대로 해제하지 않으면 생산성이 떨어진다. 또한 오프라인 동시성 관리는 테스트가 까다로워 테스트에서 감지되지 않을 확률이 높다.&lt;/p&gt;
 &lt;p&gt;이런 실수를 아예 할 수 없게, 애플리케이션이 암시적으로 처리하는 것이 암시적 잠금이다. &lt;strong&gt;프레임워크, 계층 상위 형식, 코드 생성의 조합&lt;/strong&gt;을 활용하여 암시적 잠금을 구현한다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;img/%EC%95%94%EC%8B%9C%EC%A0%81%20%EC%9E%A0%EA%B8%88.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6992bca339062cda797c4a9ae9b48111/15d18/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.31645569620254%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABT0lEQVR42p2TB27DMAxFdf+LuoinDC95sXqMaSiOWzQlQIhD/FySk0j7vktRFPKVZdI0jcpl5DzPT72uaymiXpaFZPEeNu/9eQcMyBngOI4yDIPM86wyPE2ThBBkgg8de9d1etrdOfpPQIwEresq27apvCyLOtd4mg9W2XymHz6SgeUQyAhTOicOiACI1tq2PRNC4zCqjr2Nfk0wBXG0WVWVcv54SB3PM+hoizkxMxsFNPS9VlWWpc5WfRHL0d5ytMZp5Zts/rRFCBvJUsamS4EwUC0BtEhmbOi0ZUBXsmRGLnWklTEfk/vYngVh93HW3LXl/Aj4WxW0S8UAUfHQP7thIeEA/wjQ2reRoFOtLe4NMC39+Uh3SefLc7IlMeu7Rb0A6o84SrcvxUXAr0F/WgpgvvEvXw+gMAetiPbu6N9L+RjQnsodYbfP/+a7xH0DgjSafEtdUmMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6992bca339062cda797c4a9ae9b48111/dc87c/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.avif 158w,
+/static/6992bca339062cda797c4a9ae9b48111/383b4/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.avif 315w,
+/static/6992bca339062cda797c4a9ae9b48111/d0061/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.avif 630w,
+/static/6992bca339062cda797c4a9ae9b48111/5d4cc/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.avif 752w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/6992bca339062cda797c4a9ae9b48111/5787a/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.webp 158w,
+/static/6992bca339062cda797c4a9ae9b48111/89f54/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.webp 315w,
+/static/6992bca339062cda797c4a9ae9b48111/4d353/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.webp 630w,
+/static/6992bca339062cda797c4a9ae9b48111/19374/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.webp 752w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6992bca339062cda797c4a9ae9b48111/dda05/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.png 158w,
+/static/6992bca339062cda797c4a9ae9b48111/679a3/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.png 315w,
+/static/6992bca339062cda797c4a9ae9b48111/50637/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.png 630w,
+/static/6992bca339062cda797c4a9ae9b48111/15d18/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.png 752w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6992bca339062cda797c4a9ae9b48111/50637/%EC%95%94%EC%8B%9C%EC%A0%81_%EC%9E%A0%EA%B8%88.png&quot;
+            alt=&quot;      &quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;

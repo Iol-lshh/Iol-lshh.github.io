@@ -18,42 +18,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-            allSitePage {
-              nodes {
-                path
-              }
-            }
-          }
-        `,
-        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.nodes.map(node => {
-            return {
-              url: `${site.siteMetadata.siteUrl}${node.path}`,
-              changefreq: `weekly`,
-              priority: 0.7,
-            }
-          })
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://iol-lshh.github.io',
-        sitemap: 'https://iol-lshh.github.io/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
-    {
       resolve: `gatsby-plugin-categories`,
       options: {
         templatePath: `${__dirname}/src/templates/category.js`,
@@ -165,6 +129,42 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => {
+            return {
+              url: `${site.siteMetadata.siteUrl}${node.path}`,
+              changefreq: `weekly`,
+              priority: 0.7,
+            }
+          })
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://iol-lshh.github.io',
+        sitemap: 'https://iol-lshh.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     {
       resolve: `gatsby-plugin-google-gtag`,

@@ -9,7 +9,7 @@ module.exports = {
       summary: `The Engineer, Aiming Fine.`,
     },
     description: `Iol-lshh의 블로그`,
-    siteUrl: `https://iol-lshh.github.io`,
+    siteUrl: `https://iol-lshh.github.io/`,
     social: {
       instagram: `l__sh.h`,
       github: `Iol-lshh`,
@@ -133,50 +133,28 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-            allSitePage {
-              nodes {
-                path
-              }
-            }
-          }
-        `,
-        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.nodes.map(node => {
-            return {
-              url: `${site.siteMetadata.siteUrl}${node.path}`,
-              changefreq: `weekly`,
-              priority: 0.7,
-            }
-          })
+        output: '/sitemap',
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://iol-lshh.github.io',
-        sitemap: 'https://iol-lshh.github.io/sitemap.xml',
+        sitemap: 'https://iol-lshh.github.io/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [process.env.GA_PROPERTY_ID],
-        gtagConfig: {
-          anonymize_ip: true,
-        },
-        pluginConfig: {
-          head: true,
-        },
-      },
+    ...(process.env.GA_PROPERTY_ID ? [{
+  resolve: `gatsby-plugin-google-gtag`,
+  options: {
+    trackingIds: [process.env.GA_PROPERTY_ID],
+    gtagConfig: {
+      anonymize_ip: true,
     },
+    pluginConfig: {
+      head: true,
+    },
+  },
+}] : []),
   ],
 }

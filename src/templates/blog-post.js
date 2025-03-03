@@ -77,6 +77,16 @@ export const Head = ({ data, location }) => {
       description={post.frontmatter.description || post.excerpt}
       location={location}
       image={imageUrl}
+      meta={[
+        {
+          name: "article:published_time",
+          content: post.frontmatter.date,
+        },
+        {
+          name: "article:tag",
+          content: Array.isArray(post.frontmatter.tags) ? post.frontmatter.tags.join(", ") : (post.frontmatter.tags || ""),
+        },
+      ]}
     />
   )
 }

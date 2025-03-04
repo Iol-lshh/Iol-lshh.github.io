@@ -128,6 +128,63 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: '/sitemap',
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+            allMarkdownRemark {
+              nodes {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  date
+                }
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({site}) => site?.siteMetadata?.siteUrl || 'https://iol-lshh.github.io',
+        resolvePages: ({ allSitePage, allMarkdownRemark }) => {
+          const mdPathMap = {};
+          
+          allMarkdownRemark.nodes.forEach(node => {
+            if (node.fields && node.fields.slug) {
+              mdPathMap[node.fields.slug] = node.frontmatter.date;
+            }
+          });
+          
+          return allSitePage.nodes.map(page => {
+            const dateValue = mdPathMap[page.path];
+            
+            return {
+              ...page,
+              lastmod: dateValue || null
+            };
+          });
+        },
+        serialize: ({ path, lastmod, site }) => {
+          const baseUrl = 'https://iol-lshh.github.io';
+          const entry = {
+            url: baseUrl + path,
+            changefreq: `weekly`,
+            priority: path === '/' ? 1.0 : 0.7
+          };
+          
+          if (lastmod) {
+            entry.lastmod = lastmod;
+          }
+          
+          return entry;
+        }
       },
     },
     {

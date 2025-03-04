@@ -55,6 +55,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
   categories = [...new Set(categories)]
 
+  console.log(`Creating category pages:`, categories)
   categories.forEach(category => {
     console.log(`Creating category page: /categories/${category}/`)
     createPage({

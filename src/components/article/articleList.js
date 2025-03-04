@@ -38,6 +38,15 @@ const ArticleList = ({ posts }) => {
                   className="post-list-item"
                   itemScope
                   itemType="http://schema.org/Article"
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: '100%',
+                    border: '1px solid #eee',
+                    borderRadius: '8px',
+                    padding: '1rem',
+                    transition: 'transform 0.2s ease-in-out',
+                  }}
                 >
                   <header>
                     <small>{postCategory.join(', ')}</small>

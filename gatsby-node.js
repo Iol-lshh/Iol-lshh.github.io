@@ -164,3 +164,26 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.xml$/,
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[name].[ext]",
+                outputPath: "sitemap",
+                publicPath: "/sitemap",
+                mimetype: "application/xml", // MIME 타입 설정
+              },
+            },
+          ],
+        },
+      ],
+    },
+  });
+};

@@ -61,5 +61,10 @@ jobs:
         run: |
           echo "Deploying with Gatsby..."
           npx gatsby build --prefix-paths
-          npx gh-pages -d public --repo "https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/iol-lshh/Iol-lshh.github.io.git"
-    
+
+          # ✅ .nojekyll 파일 강제 생성
+          touch public/.nojekyll
+          echo "✅ .nojekyll file created in public directory"
+
+          # ✅ gh-pages 배포 (숨김파일 포함)
+          npx gh-pages -d public --repo "https://x-access-token:${{ secrets.GH_PAGES_PAT }}@github.com/iol-lshh/Iol-lshh.github.io.git" --dotfiles

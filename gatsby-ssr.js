@@ -17,5 +17,10 @@ exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
       name="google-site-verification"
       content="LEo1xOpJzzFOmdUP87JG6WS6yz0DY9eO0Eh8tfT29CU"
     />,
+    <meta
+      key="google-adsense-account" 
+      name="google-adsense-account" 
+      content="ca-pub-7552001811620900"
+    />
   ])
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Mar 2025 02:37:56 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Mar 2025 03:44:14 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -74,12 +74,12 @@
 &lt;hr&gt;
 &lt;p&gt;페더스는 소프트웨어 코드를 변경하는 이유를 네 가지라고 봤다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;새로운 기능(feature)의 추가&lt;/li&gt;
-&lt;li&gt;버그 수정&lt;/li&gt;
-&lt;li&gt;설계 개선&lt;/li&gt;
-&lt;li&gt;자원 이용의 최적화&lt;/li&gt;
+&lt;li&gt;새로운 기능의 추가 (new feature)&lt;/li&gt;
+&lt;li&gt;버그 수정 (bug fix)&lt;/li&gt;
+&lt;li&gt;설계 개선 (refactoring)&lt;/li&gt;
+&lt;li&gt;자원 이용의 최적화 (optimizing)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;New Feature vs Bug Patch&lt;/h3&gt;
+&lt;h3&gt;New Feature vs Bug Fix&lt;/h3&gt;
 &lt;p&gt;새 기능 추가인지, 버그 수정인지는 주관적인 관점이다. 진짜는 &lt;strong&gt;동작에 수정(behavioral change)이 있는지&lt;/strong&gt;다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;동작(behavior)은 소프트웨어에서 가장 중요한 것이다. 사용자가 원하는 것이 바로 이 동작이기 때문이다. 우리가 동작을 추가하면 사용자는 소프트웨어를 좋아한다. 하지만 사용자가 원하는 동작을 변경하거나 삭제하면, 사용자들은 우리를 더 이상 신뢰하지 않는다. (1) - Working Effectively with Legacy Code (Feathers, 2004)&lt;/p&gt;

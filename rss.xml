@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Mar 2025 02:08:58 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Mar 2025 02:26:10 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -86,7 +86,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;하지만 동작 수정도 기준이 모호하다. 그래서 페더스는 &lt;strong&gt;코드의 변경이 있을 때, 동작을 변경하는 것&lt;/strong&gt;이라 간주하고, 새로운 코드를 추가하고 호출할 뿐이라면 동작 추가라고 간주하자고 했다.&lt;/p&gt;
 &lt;h3&gt;Refactoring&lt;/h3&gt;
-&lt;p&gt;동작 변경 없이 설계를 개선하는 행위. 변경 관점에서 리팩토링을 할 때 가장 중요한 것은 리팩토링 전후에 기능상의 변경이 없어야 한다는 점이다. 의미 보존(semantic-preserving)이 되어야 한다.&lt;/p&gt;
+&lt;p&gt;동작 변경 없이 설계를 개선하는 행위. 변경 관점에서 리팩토링을 할 때 가장 중요한 것은 리팩토링 전후에 &lt;strong&gt;기능상의 변경이 없어야 한다&lt;/strong&gt;는 점이다. &lt;strong&gt;의미 보존&lt;/strong&gt;(semantic-preserving)이 되어야 한다.&lt;/p&gt;
 &lt;h3&gt;Optimizing&lt;/h3&gt;
 &lt;p&gt;리팩토링이 기능을 동일하게 유지하며 유지 보수성을 개선하기 위해 프로그램의 구조를 바꾸는 것이라면, 최적화는 프로그램의 시간이나 자원 사용량 등의 정량적 수치의 개선을 위한 것을 의미한다.&lt;/p&gt;
 &lt;table&gt;
@@ -142,11 +142,11 @@
 &lt;/blockquote&gt;
 &lt;p&gt;지양하자. 부채에 따라 테스트를 작성하지 않아도 되는 것이 옳은가? 스크립트일 뿐이니까? 고민해보자.&lt;/p&gt;
 &lt;h3&gt;Cover and Modify&lt;/h3&gt;
-&lt;p&gt;보호 후 수정하기 방식에 대해 회귀 테스트(regression test)를 이야기한다. 문제는 이 회귀 테스트를 애플리케이션 수준의 테스트로만 간주하는 경향이 있다는 것인데, 여기에는 이런 문제가 있다.&lt;/p&gt;
+&lt;p&gt;보호 후 수정하기 방식에 대해 &lt;strong&gt;회귀 테스트&lt;/strong&gt;(regression test)를 이야기한다. 문제는 이 회귀 테스트를 애플리케이션 수준의 테스트로만 간주하는 경향이 있다는 것인데, 여기에는 이런 문제가 있다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;오류 위치&lt;/strong&gt;: 테스트 루틴이 테스트 대상으로부터 멀어질수록, 테스트 실패가 의미하는 바가 모호해진다. 테스트 실패 위치를 특정하기위해, 테스트 입력 값을 확인하고, 오류 내용을 확인하고, 입력에서 출력까지 경로를 분석해야한다. 이 과정에서 많은 비용이 소모된다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;실행 시간&lt;/strong&gt;: 테스트 루틴의 길이가 길어질수록 실행하는 데 오랜 시간이 소모된다. 테스트 실행 자체를 망설이게 되며, 지나치게 오래 걸리는 테스트는 실행도 하지 않게 된다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;커버리지&lt;/strong&gt;: 파편화된 코드 조각들을 실행시키는 연결 관계는 파악하기 어렵다. 많은 분기와 중복된 코드들, 복잡한 서브 루틴 모음들은 상위 단계의 테스트 루틴을 위해 상당한 양의 선행 작업을 필요로 하게 된다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;오류 위치&lt;/strong&gt;: 테스트 루틴이 &lt;strong&gt;테스트 대상으로부터 멀어질수록, 테스트 실패가 의미하는 바가 모호해진다.&lt;/strong&gt; 테스트 실패 위치를 특정하기위해, 테스트 입력 값을 확인하고, 오류 내용을 확인하고, 입력에서 출력까지 경로를 분석해야한다. 이 과정에서 많은 비용이 소모된다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;실행 시간&lt;/strong&gt;: 테스트 루틴의 길이가 길어질수록 &lt;strong&gt;실행하는 데 오랜 시간이 소모된다.&lt;/strong&gt; 테스트 실행 자체를 망설이게 되며, 지나치게 오래 걸리는 테스트는 실행도 하지 않게 된다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;커버리지&lt;/strong&gt;: 파편화된 코드 조각들을 실행시키는 &lt;strong&gt;연결 관계를 파악하기 어렵다.&lt;/strong&gt; 많은 분기와 중복된 코드들, 복잡한 서브 루틴 모음들은 상위 단계의 테스트 루틴을 위해 상당한 양의 선행 작업을 필요로 하게 된다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;가장 큰 문제는 이런 문제들로 인해, 테스트를 &lt;strong&gt;자주 실행하지 않게 된다&lt;/strong&gt;는 것이다. 정말 필요로 하다는 것을 알지만, 효용은 낮고 비용은 높기 때문이다. 단위 테스트는 이런 점들을 보완한다.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -183,7 +183,7 @@
 &lt;p&gt;리팩터링의 중요성을 알았다. 그럼 무엇을 리팩터링 해야할까?&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;악취&lt;/h3&gt;
-&lt;p&gt;코드가 바람직하지 않아 악취가 난다고 한다. 그렇다면 어떤 것이 바람직하지 않은 코드인가? 개발자가 설마 일부러 악취를 처음부터 만들진 않을 것이다. 소프트웨어는 유지보수되면서 요구사항에 의해 변화되고, 그러면서 코드는 풍성해지고 빈약해지고 맥락이 바뀌길 반복한다. 그런 변화는 코드를 의도와 어긋나게 만든다. 이것이 악취의 본질인 것이다. 다음은 파울러가 말하는 악취의 패턴들과 해결책이다.&lt;/p&gt;
+&lt;p&gt;코드가 바람직하지 않아 악취가 난다고 한다. 그렇다면 어떤 것이 바람직하지 않은 코드인가? 개발자가 설마 일부러 악취를 처음부터 만들진 않을 것이다. 소프트웨어는 유지보수 되면서 요구사항에 의해 변화되고, 그러면서 코드는 풍성해지고 빈약해지고 맥락이 바뀌길 반복한다. 그런 &lt;strong&gt;변화는 코드를 의도와 어긋나게 만든다.&lt;/strong&gt; 이것이 악취의 본질인 것이다. 다음은 파울러가 말하는 악취의 패턴들과 해결책이다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;기이한 작명&lt;/strong&gt;: 이상한 이름은 맥락을 잘 표현하도록 바꿔줘야 한다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;코드 중복&lt;/strong&gt;: DRY하라. 서브 루틴이나 슈퍼 클래스로 올려라.&lt;/li&gt;

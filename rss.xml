@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 12:21:17 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 12:47:32 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -250,7 +250,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;코드 변경을 하려면 테스트 코드를 배치해야 한다. 그런데 테스트 코드를 배치하려면 코드 변경이 필요할 때가 많다. (2) - Working Effectively with Legacy Code (Feathers, 2004)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;기본 타입 매개변수와 인터페이스 추출이라는 방법을 사용한다. 의존 관계를 제거함으로써 영향도 높은 코드 변경의 안전성을 담보하면서 테스트 루틴을 작성하는 것이다. 정리하면 다음과 같다.&lt;/p&gt;
+&lt;p&gt;페더스는 의존 관계를 제거함으로써 영향도 높은 코드 변경의 안전성을 담보하면서 테스트 루틴을 작성하는 방법을 설명한다. 전체적인 순서를 정리하면 다음과 같다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;변경 지점을 식별한다.&lt;/li&gt;
 &lt;li&gt;테스트 루틴을 작성할 위치를 찾는다.&lt;/li&gt;
@@ -605,8 +605,9 @@
 문서화 테스트는 대체로 &apos;화창한 날&apos; 테스트다. 특별한 조건을 테스트하지 않고, &lt;strong&gt;특정 동작이 유지되는지 검증&lt;/strong&gt;할 뿐이다. 문서화 테스트를 통해 코드를 이동하거나 추출한 리팩토링이 기존 동작을 유지한다고 유추할 수 있다. (13) - Working Effectively with Legacy Code (Feathers, 2004)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
+&lt;p&gt;엔지니어링 업계에는 이런 말이 있다.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;어떤 것이 잘 작동하면 변경할 필요가 없다.&lt;/p&gt;
+&lt;p&gt;&quot;어떤 것이 잘 작동하면 변경할 필요가 없다.&quot;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;긁어 부스럼 만들지 말라는 것인데, 이 말이 맞을까?&lt;/p&gt;
 &lt;p&gt;고무 풍선과 그 고무 풍선에 공기를 지속적으로 주입하는 기계가 있다. 고무 풍선이 터지기 전까지는 &lt;strong&gt;잘 작동&lt;/strong&gt;하는 것으로 보인다. 하지만 터지고 나서 고무 풍선을 고치는 것은 매우 난해한 일이다. 커져가는 고무 풍선을 &lt;strong&gt;그저 두는 것은 위험한 일&lt;/strong&gt;이다. 그렇다면 고무 풍선이 터지지 않게, 표면에 테이프를 붙이고 &lt;strong&gt;신중하게&lt;/strong&gt; 바늘 구멍을 내서 공기를 조금씩 빼내는 것은 어떤가? 감탄스러우나, 넌센스임이 분명하다. 진짜 필요한 것은, &lt;strong&gt;적절한 시기&lt;/strong&gt;가 되어 고무 풍선에 공기가 다 찼을 때, 공기를 주입하는 기계로부터 공기가 빠지지 않도록 풍선의 주입구를 잘 붙잡고 빼내는 것이다. 이런 행위가 &lt;strong&gt;리팩터링&lt;/strong&gt;이며, 공기가 빠지는 변화를 막기 위해 주입구를 잘 붙잡는 행위가 &lt;strong&gt;테스트&lt;/strong&gt;인 것이다. 이것은 너무나도 당연한 이치이다.&lt;/p&gt;

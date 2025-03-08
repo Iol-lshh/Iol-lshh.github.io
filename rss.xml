@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 11:11:59 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 11:22:33 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -380,15 +380,14 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;전방 추론&lt;/strong&gt;(resoning forward): &lt;strong&gt;먼저 객체들을 조사&lt;/strong&gt;하고 이 객체들이 제대로 동작하지 않을 경우 어떤 영향을 미치게 되는지 추론한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;전방 추론은 테스트 루틴의 최적 위치를 찾는 기법의 기초다. 전방 추론을 통해 영향 다이어그램의 단순화를 목표로 한다.&lt;/p&gt;
-&lt;p&gt;코드의 영향 전파는 세 가지 방법으로 이루어진다.&lt;/p&gt;
+&lt;p&gt;전방 추론은 테스트 루틴의 최적 위치를 찾는 기법의 기초다. 전방 추론을 통해 영향 다이어그램의 단순화를 목표로 한다. 전방 추론을 위해 코드의 영향 전파를 파악해 봤을때, 코드의 영향 전파는 세 가지 방법으로 이루어진다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;호출 코드가 사용하는 반환 값&lt;/li&gt;
 &lt;li&gt;매개변수로 전달된 객체를 변경&lt;/li&gt;
 &lt;li&gt;정적 또는 전역 변수를 변경&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이 외의 방법도 있다. 관점 구조는 시스템의 다른 곳에 있는 코드의 동작에 영향을 미친다.&lt;/p&gt;
-&lt;p&gt;영향을 탐색하는 방법은 다음과 같다.&lt;/p&gt;
+&lt;p&gt;(이 외의 방법도 있다. 관점 구조는 시스템의 다른 곳에 있는 코드의 동작에 영향을 미친다.)&lt;/p&gt;
+&lt;p&gt;이런 영향을 탐색하는 방법은 다음과 같다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;변경 대상 메서드를 식별한다.&lt;/li&gt;
 &lt;li&gt;메서드가 &lt;strong&gt;반환 값&lt;/strong&gt;을 가진다면, 이 메서드를 호출하는 코드를 탐색한다.&lt;/li&gt;
@@ -499,7 +498,7 @@
     &lt;/span&gt;
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;영향 스케치 - 개선후&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;영향을 차단하여 단순화하자. 객체간의 영향을 단순화하는 것을 캡슐화라고 한다. 캡슐화는 영향 받는 경로를 정의하고, 이외의 영향은 차단하게 된다. 객체지향의 &lt;strong&gt;캡슐화&lt;/strong&gt;가 &lt;strong&gt;영향을 단순화하고 추론을 도와준다&lt;/strong&gt;는 것을 알 수 있다. (cf. 애그리거트)&lt;/p&gt;
+&lt;p&gt;영향을 차단하여 단순화하자. 객체간의 영향을 차단하여 단순화하는 것을 캡슐화라고 한다. 캡슐화는 영향 받는 경로를 정의하고, 이외의 영향은 차단하게 된다. 즉, 객체지향의 &lt;strong&gt;캡슐화&lt;/strong&gt;가 &lt;strong&gt;영향을 단순화하고 추론을 도와준다&lt;/strong&gt;는 것을 알 수 있다. (cf. 애그리거트)&lt;/p&gt;
 &lt;h3&gt;교차 지점&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;교차 지점&lt;/strong&gt;:  특정 변경에 의해 영향을 감지할 수 있는 프로그램 내의 위치&lt;/li&gt;

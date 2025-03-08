@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 12:04:27 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 12:21:17 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -258,6 +258,12 @@
 &lt;li&gt;테스트 루틴을 작성한다.&lt;/li&gt;
 &lt;li&gt;변경 및 리팩터링을 수행한다.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;이를 위해서는 다음의 방법들을 알아야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;의존 관계를 끊는 방법&lt;/li&gt;
+&lt;li&gt;영향을 분석하는 방법&lt;/li&gt;
+&lt;li&gt;테스트 루틴을 작성하는 방법&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;의존 관계 끊기&lt;/h3&gt;
 &lt;p&gt;왜 의존관계를 제거하는 걸까? 두 가지 이유로 인해 의존 관계를 제거한다.&lt;/p&gt;
 &lt;ul&gt;
@@ -588,16 +594,16 @@
 &lt;li&gt;객체의 라이프사이클 동안 항상 참이어야 하는 조건이 있는지 확인한다. 이런 조건을 &lt;strong&gt;불변 조건&lt;/strong&gt;이라고 한다. 불변 조건을 검증하기 위한 테스트 루틴을 작성한다. 불변 조건을 발견하기 위해 클래스를 리팩토링해야 할 수도 있다. 리팩토링을 통해 코드의 바람직한 모습에 대한 새로운 지식을 얻게 되기도 한다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;(이 과정은 모든 분기에 대해 이루어져야 한다. 이런 과정은 지난하다. 그래서 분기가 악취의 하나인 것 같다.)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;리팩토링 할 때는 일반적으로 두 가지를 확인해야 한다. 리팩토링 후에 &lt;strong&gt;기존 동작이 유지&lt;/strong&gt; 되는지와 다&lt;strong&gt;른 코드와의 관계가 올바른지&lt;/strong&gt; 여부다.&lt;br&gt;
-문서화 테스트는 대체로 &apos;화창한 날&apos; 테스트다. 특별한 조건을 테스트하지 않고, &lt;strong&gt;특정 동작이 유지되는지 검증&lt;/strong&gt;할 뿐이다. 문서화 테스트를 통해 코드를 이동하거나 추출한 리팩토링이 기존 동작을 유지한다고 유추할 수 있다. (13) - Working Effectively with Legacy Code (Feathers, 2004)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;마지막으로 문서화 테스트에 대한 원칙이다.&lt;/p&gt;
+&lt;p&gt;마지막으로 문서화 테스트에 대한 원칙을 정리해본다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;변경 대상 부분을 위한 테스트 루틴을 작성한다. &lt;strong&gt;코드의 동작을 이해&lt;/strong&gt;하는 데 필요해 보이는 테스트 케이스를 가급적 많이 작성한다.&lt;/li&gt;
 &lt;li&gt;테스트 루틴을 작성한 후, &lt;strong&gt;변경하려는 구체적인 코드들&lt;/strong&gt;을 조사하고 이에 관련된 테스트 루틴을 작성한다.&lt;/li&gt;
 &lt;li&gt;기능을 추출하거나 이동할 경우, &lt;strong&gt;기존의 동작이나 동작 간의 관계를 검증&lt;/strong&gt;하는 테스트를 개별적으로 작성한다. 이를 통해 이동 대상 코드가 실행 되는지, 그리고 적절히 관계를 유지하는지 검증한다. 검증이 끝난 후에 코드를 이동한다.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;리팩토링 할 때는 일반적으로 두 가지를 확인해야 한다. 리팩토링 후에 &lt;strong&gt;기존 동작이 유지&lt;/strong&gt; 되는지와 &lt;strong&gt;다른 코드와의 관계가 올바른지&lt;/strong&gt; 여부다.&lt;br&gt;
+문서화 테스트는 대체로 &apos;화창한 날&apos; 테스트다. 특별한 조건을 테스트하지 않고, &lt;strong&gt;특정 동작이 유지되는지 검증&lt;/strong&gt;할 뿐이다. 문서화 테스트를 통해 코드를 이동하거나 추출한 리팩토링이 기존 동작을 유지한다고 유추할 수 있다. (13) - Working Effectively with Legacy Code (Feathers, 2004)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;어떤 것이 잘 작동하면 변경할 필요가 없다.&lt;/p&gt;

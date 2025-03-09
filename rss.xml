@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Mar 2025 12:47:32 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 09 Mar 2025 06:36:41 GMT</lastBuildDate><item><title><![CDATA[Legacy Code와 Refactoring의 정리와 회고]]></title><description><![CDATA[근래 드는 생각이, 나는 좋은 코드, 깔끔한 코드가 무엇인지 모르겠다... 최근 엔터프라이즈 애플리케이션 아키텍처 패턴(Fowler, 2002)도 읽어보고 DDD와 XP 도 열심히 찾아봤다. 그러면서 느낀 점이 있었다. 좋은 코드를 향한 여정 P of…]]></description><link>https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/refactoring_legacy/LegacyCode_Refactoring_정리와_회고/</guid><pubDate>Fri, 07 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -101,7 +101,7 @@
 &lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
 &lt;th&gt;New Feature&lt;/th&gt;
-&lt;th&gt;Bug Patch&lt;/th&gt;
+&lt;th&gt;Bug Fix&lt;/th&gt;
 &lt;th&gt;Refactoring&lt;/th&gt;
 &lt;th&gt;Optimizing&lt;/th&gt;
 &lt;/tr&gt;
@@ -195,7 +195,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;리팩터링의 중요성을 알았다. 그럼 무엇을 리팩터링 해야할까?&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2&gt;악취 - 리팩토링이 필요한 레거시 코드&lt;/h2&gt;
+&lt;h2&gt;악취 - 리팩터링이 필요한 레거시 코드&lt;/h2&gt;
 &lt;p&gt;코드가 바람직하지 않을때 &lt;strong&gt;악취&lt;/strong&gt;(smell)가 난다고 한다. 어떤 것이 바람직하지 않은 코드인가? 개발자가 설마 일부러 악취를 처음부터 만들진 않을 것이다. 소프트웨어는 유지보수 되면서 요구사항에 의해 변화되고, 그러면서 코드는 풍성해지고 빈약해지고 맥락이 바뀌길 반복한다. 그런 &lt;strong&gt;변화는 코드를 의도와 어긋나게 만든다.&lt;/strong&gt; 이것이 악취의 본질인 것이다. 다음은 파울러가 말하는 악취의 패턴들과 해결책이다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;기이한 작명&lt;/strong&gt;: 이상한 이름은 맥락을 잘 표현하도록 바꿔줘야 한다.&lt;/li&gt;

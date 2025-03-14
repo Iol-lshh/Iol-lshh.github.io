@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 Mar 2025 07:47:09 GMT</lastBuildDate><item><title><![CDATA[Isolation과 Lock 정리]]></title><description><![CDATA[트랜잭션과 ACID 애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성(Consistency)과 활동성(Liveness)이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까? 보통 ACID를 말한다. Atomicity…]]></description><link>https://iol-lshh.github.io/db/Isolation과_Lock_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/db/Isolation과_Lock_정리/</guid><pubDate>Mon, 10 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 14 Mar 2025 04:56:41 GMT</lastBuildDate><item><title><![CDATA[Isolation과 Lock 정리]]></title><description><![CDATA[트랜잭션과 ACID 애플리케이션은 트랜잭션 일관성을 갖춰야 한다. 트랜잭션은 정합성(Consistency)과 활동성(Liveness)이 모두 고려되어야 한다. 트랜잭션을 어떻게 구현해야 할까? 보통 ACID를 말한다. Atomicity…]]></description><link>https://iol-lshh.github.io/db/Isolation과_Lock_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/db/Isolation과_Lock_정리/</guid><pubDate>Mon, 10 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -253,17 +253,19 @@ MySQL(innoDB)과 PostgreSQL은 MVCC(undo log)를 통해 트랜잭션 격리를 �
 &lt;li&gt;&lt;strong&gt;REPEATABLE READ&lt;/strong&gt;: 트랜잭션 시작 시점에 &lt;strong&gt;새로운 Read View를 생성&lt;/strong&gt;하고 트랜잭션 종료 후 휘발&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;SERIALIZABLE&lt;/strong&gt;: 트랜잭션 시작 시 Read View 생성. 읽기 시 범위에 S-Next-Key Lock을 획득하며 트랜잭션 종료까지 유지. 쓰기 시 X-Next-Key Lock 획득&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;MySQL Update Lock의 부재&lt;/h3&gt;
+&lt;h3&gt;MySQL Update Lock 구현 방식&lt;/h3&gt;
 &lt;p&gt;MySQL은 MVCC를 활용하여, 동시성을 확보했다. 하지만 자원의 경합 상태에 이르렀을 때, 동기화를 필요로 한다. 이때 잠금을 사용하게 된다. MySQL은 Lock을 두 가지 제공해준다. S-Lock과 X-Lock이다. 이를 쿼리로 명시적으로 획득한다면 다음과 같다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt;: 트랜잭션 동안 조회 레코드에 X-Lock 획득&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR SHARE&lt;/code&gt;: 트랜잭션 동안 조회 레코드에 공유 락(S-Lock) 획득&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt;: 트랜잭션 동안 조회 레코드에 배타 락(Exclusive Lock, X-Lock) 획득&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR SHARE&lt;/code&gt;: 트랜잭션 동안 조회 레코드에 공유 락(Shared Lock, S-Lock) 획득&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;잠금은 비즈니스 트랜잭션이 &lt;strong&gt;데이터를 로드하기 전에 잠금을 획득해야 한다&lt;/strong&gt;. 잠근 데이터의 &lt;strong&gt;최신 버전을 얻는다는 보장이 없다면, 잠금을 획득할 필요가 없다&lt;/strong&gt;. 즉 비관적 락이 필요하다면, &lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt; X-Lock을 획득 해야만 하는 것이다.&lt;/p&gt;
-&lt;p&gt;문제는 &lt;strong&gt;조회 행에 대해 X-Lock을 획득&lt;/strong&gt;하게 되면, 동일한 행을 조회하는 다른 트랜잭션이 S-Lock을 얻지 못하게 되고, &lt;strong&gt;READ COMMITTED의 단순 조회(read)에서도 Deadlock이 발생할 수 있다.&lt;/strong&gt; 설사 프로토콜을 잘 정립해서 사내 전역적으로 프로토콜에 대한 컨벤션을 잘 따른다 해도, 트래픽이 높아지면 병목지점이 될 확률이 매우 높다.&lt;/p&gt;
-&lt;p&gt;&quot;우리는 CQRS로 해결할꺼에요. 읽을땐 NoSQL로 읽고, 쓸때마다 NoSQL로 복사해 넣어줄 겁니다. 디비지움은 충분히 빠르거든요!&quot; CQRS는 읽기(read) 부하를 줄이는 방법일 뿐, 쓰기(write) 충돌을 해결하는 방식이 아니다. 데이터 정합성을 중요시하는 도메인의 트랜잭션 환경에서는 결과적 일관성(eventual consistency)만으로 문제를 해결할 수 없으며, 데이터 불일치 문제를 초래할 가능성이 크다. (물론 CQRS도 이제 설명하는 아이디어를 반영 했다면 아주 좋다.)&lt;/p&gt;
-&lt;p&gt;MSSQL의 U-Lock 아이디어를 적용할 때다.&lt;/p&gt;
-&lt;p&gt;PostgreSQL은 MySQL과 유사한 방식의 MVCC로 트랜잭션을 구현했다. Lock에도 S-Lock과 X-Lock만이 존재하는데, 대신 Advisory Lock을 제공한다. 이는 MSSQL의 U-Lock과는 달리, 데이터 행(row)이 아닌 애플리케이션에서 직접 관리하는 논리적 리소스를 대상으로 한다.&lt;/p&gt;
+&lt;p&gt;잠금은 비즈니스 트랜잭션이 &lt;strong&gt;데이터를 로드하기 전에 잠금을 획득해야 한다&lt;/strong&gt;. 잠근 데이터의 &lt;strong&gt;최신 버전을 얻는다는 보장이 없다면, 잠금을 획득할 필요가 없다&lt;/strong&gt;. 즉 비관적 락이 필요하다면, &lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt; X-Lock을 획득 해야한다. 이때 개념적으로 MSSQL의 U-Lock 아이디어를 적용이 가능하다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;그냥 읽는다&lt;/strong&gt;: 최종적 일관성을 지키면 되는 경우에 해당한다. 수정이 일어나는 트랜잭션을 기다리지 않고 바로 읽고 싶을 때 사용한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;읽을 때, S-Lock을 획득한다&lt;/strong&gt;: 정합성이 매우 중요하여, 수정이 일어나는 트랜잭션을 기다려야 할 때 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;PostgreSQL은 MySQL과 유사한 방식의 MVCC로 트랜잭션을 구현한다. Lock에도 S-Lock과 X-Lock만이 존재하는데, 대신 Advisory Lock을 제공한다. 이는 MSSQL의 U-Lock과는 달리, 데이터 행(row)이 아닌 애플리케이션에서 직접 관리하는 논리적 리소스를 대상으로 한다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Advisory Lock&lt;/strong&gt;: 애플리케이션 수준에서 정의할 수 있는 사용자 지정 잠금 방식이다. Advisory Lock은 DB 내부의 기본적인 락 메커니즘과 독립적으로 동작하며, 개발자가 직접 &lt;strong&gt;U-Lock과 유사한 저장 잠금(update lock) 동작을 설계할 수 있다.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -3632,7 +3634,7 @@ MySQL을 쓴다면, 이 아이디어를 이용하여 애플리케이션 레벨�
 &lt;p&gt;시니어의 기준은, 기술적인 것도 있지만, 신규 서비스에 대해서 누구에게 믿고 맡길 수 있느냐를 기준으로 둔다. 그 사람이 주는 그동안의 퍼포먼스, 역량의 히스토리로 판단하게 된다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;여러모로 더 복잡해졌다. 하지만 모르는 것조차 모르던 때보다 낫다. 세 분의 이야기에는 공통적인 것이 있다. 곳곳에 애자일과 도메인에 대한 이야기가 있었다. 기술적인 소양과 더불어 방법론과 요구사항 정의, 도메인 설계 대해서 꾸준히 익히고 실천해야한다고 느꼈다.&lt;/p&gt;
-&lt;p&gt;그리고, &lt;strong&gt;시니어의 기준&lt;/strong&gt;이라는 것이 너무 멋지다. &lt;strong&gt;과정과 관계없이 믿을 수 있는 결과를 만들어내는 사람&lt;/strong&gt;. 기술적, 비즈니스적 신뢰를 모두 갖춘 사람이란 뜻일 것이다. 그런 사람이 되기 위해서 나의 과정은 어떻게 만들어 나아가야 할지 고민해보자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DDD 정리와 회고]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD_정리와_회고/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;그리고, &lt;strong&gt;시니어의 기준&lt;/strong&gt;이라는 것이 너무 멋지다. &lt;strong&gt;과정과 관계없이 믿을 수 있는 결과를 만들어내는 사람&lt;/strong&gt;. 기술적, 비즈니스적 신뢰를 모두 갖춘 사람이란 뜻일 것이다. 그런 사람이 되기 위해서 나의 과정은 어떻게 만들어 나아가야 할지 고민해보자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DDD 정리]]></title><description><![CDATA[도메인: 사용자가 프로그램을 사용하는 주제 영역. 소프트웨어의 본질은, 사용자를 위해 도메인에 관련된 문제를 해결하는 능력에 있다. 2025년 2월 16일과 23일, 이틀에 걸쳐 조영호님의 ‘DDD의 사실과 오해’ 강의를 들었다. DDD…]]></description><link>https://iol-lshh.github.io/회고/ddd/DDD_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ddd/DDD_정리/</guid><pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

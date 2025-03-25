@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Mar 2025 08:25:40 GMT</lastBuildDate><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 기계공감]]></title><description><![CDATA[나는 Fine Engineer…]]></description><link>https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</guid><pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Mar 2025 08:31:57 GMT</lastBuildDate><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 기계공감]]></title><description><![CDATA[나는 Fine Engineer…]]></description><link>https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</guid><pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -99,7 +99,7 @@
 &lt;p&gt;추상화는 세부 구현에 대한 상상의 범위를 극도로 피상적으로 제한시켜 관심사 범위를 고정시킨다. 해당 범위 안에 제한된 극도의 상상력은 창발적 사고를 일어나게 하며, 이것은 고도로 아름다운 패턴을 만들어 낸다.&lt;/p&gt;
 &lt;p&gt;다만 때론 이런 추상화가 고도로 아름다운 똥덩어리를 만들게 하기도 한다. 그러한 것을 보통 망상이라고 부른다. 왤까? 현실성이 결여되었기 때문이다. 올바른 추상화적 사고를 위해서는 기계공감을 필요로 한다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2&gt;기계공감&lt;/h2&gt;
+&lt;h2&gt;&lt;a href=&quot;https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.mechanical-sympathy.en.html&quot;&gt;기계공감&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;레이싱 드라이버가 되려면 엔지니어가 될 필요는 없지만, 기계적 공감 능력은 있어야 합니다. - Jackie Stewart&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Mar 2025 11:56:01 GMT</lastBuildDate><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 기계공감]]></title><description><![CDATA[나는 Fine Engineer…]]></description><link>https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</guid><pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Mar 2025 08:51:20 GMT</lastBuildDate><item><title><![CDATA[Fine Engineer가 되기 위한 조건: 기계공감]]></title><description><![CDATA[나는 Fine Engineer…]]></description><link>https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/Fine_Engineer-mechanic_sympathy/</guid><pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -6233,7 +6233,7 @@ MySQL을 쓴다면, 이 아이디어를 이용하여 애플리케이션 레벨�
 &lt;blockquote&gt;
 &lt;p&gt;모델이 적용되는 컨텍스트를 명시적으로 정의하라. 컨텍스트의 경계를 팀 조직, 애플리케이션의 특정 부분에서의 사용법, 코드 기반이나 데이터베이스 스키마와 같은 물리적인 형태의 관점에서 명시적으로 설정하라. 이 경계 내에서는 모델을 엄격하게 일관된 상태로 유지하고 경계 바깥의 이슈 때문에 초점이 흐려지거나 혼란스러워져서는 안 된다. (14) - 도메인 주도 설계(에반스, 2004)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Context Map&lt;/h3&gt;
+&lt;h4&gt;Context Map&lt;/h4&gt;
 &lt;p&gt;서로 다른 컨텍스트 간의 관계를 정의하고 프로젝트상의 모든 모델 컨텍스트를 아우르는 전체적인 뷰 (어그리거트와는 다르다.)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;프로젝트의 컨텍스트와 각 컨텍스트 간의 관계의 전체적인 개관을 제공&lt;/li&gt;
@@ -6473,11 +6473,10 @@ MySQL을 쓴다면, 이 아이디어를 이용하여 애플리케이션 레벨�
     &lt;/span&gt;
     &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;컨텍스트맵의 종류와 상대수요&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
-&lt;h3&gt;서브 도메인(SubDomain)과 증류(Distillation)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;서브도메인&lt;/strong&gt;(SubDomain): 전체 비즈니스 도메인의 하위 부분. 하나의 &lt;strong&gt;논리적 도메인 모델&lt;/strong&gt;을 나타낸다. 되도록 하나의 서브도메인에 하나의 바운디드 컨텍스트가 이상적이다. (서브 도메인과 바운디드 컨텍스트의 관계는 &apos;클래스 - 객체&apos; 관계에 비유해볼 수 있다.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;증류&lt;/strong&gt;(Distillation): 구성 요소를 분리하여 핵심 가치를 추출하는 과정.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3&gt;서브 도메인(SubDomain)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;서브도메인&lt;/strong&gt;(SubDomain): 전체 비즈니스 도메인의 하위 부분. 하나의 &lt;strong&gt;논리적 도메인 모델&lt;/strong&gt;을 나타낸다. 되도록 하나의 서브도메인에 하나의 바운디드 컨텍스트가 이상적이다. (서브 도메인과 바운디드 컨텍스트의 관계는 &apos;클래스 - 객체&apos; 관계에 비유해볼 수 있다.)&lt;/p&gt;
+&lt;h4&gt;증류(Distillation)&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;증류&lt;/strong&gt;(Distillation): 구성 요소를 분리하여 핵심 가치를 추출하는 과정.&lt;/p&gt;
 &lt;p&gt;서브 도메인들의 유형은 다음과 같다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;핵심 도메인&lt;/strong&gt;(Core Domain): 사업의 성공을 결정하는 핵심 도메인

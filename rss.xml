@@ -1,29 +1,366 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Apr 2025 06:11:12 GMT</lastBuildDate><item><title><![CDATA[Continuous Integration 번역]]></title><description><![CDATA[원본: Continuous Integration (Martin Fowler, 2024) 지속적 통합(Continuous Integration…]]></description><link>https://iol-lshh.github.io/translation/martinfowler/Continuous_Integration/Continuous_Integration/</link><guid isPermaLink="false">https://iol-lshh.github.io/translation/martinfowler/Continuous_Integration/Continuous_Integration/</guid><pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Apr 2025 08:41:34 GMT</lastBuildDate><item><title><![CDATA[Continuous Integration 번역]]></title><description><![CDATA[원본: Continuous Integration (Martin Fowler, 2024) 지속적 통합(Continuous Integration…]]></description><link>https://iol-lshh.github.io/translation/martinfowler/Continuous_Integration/Continuous_Integration/</link><guid isPermaLink="false">https://iol-lshh.github.io/translation/martinfowler/Continuous_Integration/Continuous_Integration/</guid><pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;원본: &lt;a href=&quot;https://martinfowler.com/articles/continuousIntegration.html&quot;&gt;Continuous Integration (Martin Fowler, 2024)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;지속적 통합(Continuous Integration)은 소프트웨어 개발 관행으로, 팀의 각 구성원이 자신의 변경 사항을 동료들의 변경 사항과 함께 코드베이스에 &lt;strong&gt;하루에 최소 한 번 이상 병합하는 것&lt;/strong&gt;을 의미한다. 이러한 각 통합은 &lt;strong&gt;자동화된 빌드&lt;/strong&gt;(테스트 포함)를 통해 검증되어, 통합 오류를 가능한 한 빠르게 발견할 수 있도록 한다. 많은 팀들은 이 방식이 &lt;strong&gt;배포 지연의 위험을 줄이고&lt;/strong&gt;, &lt;strong&gt;통합에 드는 노력을 줄이며&lt;/strong&gt;, &lt;strong&gt;새로운 기능을 빠르게 확장할 수 있는 건강한 코드베이스를 유지하는 실천을 가능하게 한다&lt;/strong&gt;는 점을 발견하게 된다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;나는 대형 소프트웨어 프로젝트를 처음 본 경험을 아직도 생생하게 기억한다. 당시 나는 영국의 한 대형 전자회사에서 여름 인턴십을 하고 있었고, 내 매니저는 QA 부서 소속이었다. 그는 나를 데리고 현장을 안내해주었고, 우리는 커다랗고 우울한, 창문도 없는 창고 같은 공간에 들어섰다. 그곳에는 칸막이 책상 안에서 일하는 사람들이 가득했다. 그는 이 프로그래머들이 몇 년 동안 특정 소프트웨어를 위한 코드를 작성해왔고, 지금은 프로그래밍은 끝난 상태이며, 각자 작성한 단위들을 통합하고 있는 중이라고 말했다. 그리고 이 통합 작업이 이미 몇 달째 계속되고 있다고 했다. 가이드에 따르면, &lt;strong&gt;이 통합 작업이 언제 끝날지 아무도 정확히 알 수 없다고 했다.&lt;/strong&gt; 이 경험을 통해 나는 소프트웨어 프로젝트에서 흔히 벌어지는 한 가지 사실을 배웠다: &lt;strong&gt;여러 개발자의 작업을 통합하는 일은 오래 걸리고 예측하기 어려운 과정이라는 것.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;요즘은 이렇게 오랜 기간 통합에 갇혀 있는 팀 이야기를 들은 적은 거의 없지만, 그렇다고 해서 &lt;strong&gt;통합이 아무런 고통 없이 이루어지는 과정이라는 뜻은 아니다.&lt;/strong&gt;  예를 들어, 한 개발자가 며칠간 새로운 기능을 작업하면서 공용 메인 브랜치로부터 변경 사항을 주기적으로 자신의 기능 브랜치에 반영해왔다고 하자. 그녀가 이제 곧 자신의 변경 사항을 푸시하려는 찰나, 메인 브랜치에 &lt;strong&gt;큰 규모의 변경이 들어오고&lt;/strong&gt;, 그 변경은 &lt;strong&gt;그녀가 사용하던 코드 일부를 수정한 상태&lt;/strong&gt;다. 그녀는 이제 기능 마무리를 하려던 계획을 접고, &lt;strong&gt;자신의 작업을 그 변경과 어떻게 통합할지 고민하는 일&lt;/strong&gt;로 전환해야 한다. 이 변경은 동료에게는 좋은 변화일 수 있지만, 그녀에게는 그렇지 않을 수 있다. 운이 좋다면 그 변경의 복잡성은 &lt;strong&gt;단순히 소스 코드를 병합하는 데서 끝나겠지만&lt;/strong&gt;, 운이 나쁘다면 그 변화는 &lt;strong&gt;응용 프로그램을 실행해야만 드러나는 미묘한 오류&lt;/strong&gt;를 야기할 수도 있고, 그녀는 익숙하지 않은 코드를 디버깅하느라 시간을 써야 할지도 모른다.&lt;/p&gt;
-&lt;p&gt;적어도 위의 시나리오에서는, 그녀가 &lt;strong&gt;풀 리퀘스트를 제출하기 전에&lt;/strong&gt; 문제를 발견할 수 있다는 점이 위안이 된다.&lt;br&gt;
-풀 리퀘스트 자체도 충분히 부담스러운 일이다 — 변경 사항을 검토해줄 누군가를 기다리는 동안 말이다.&lt;br&gt;
-리뷰는 시간이 걸릴 수 있고, 그동안 그녀는 &lt;strong&gt;다음 기능 작업으로 맥락을 전환(context-switch)&lt;/strong&gt; 해야 한다.&lt;br&gt;
-그 시점에 복잡한 통합 문제가 생긴다면, 그것은 매우 불안한 경험이 될 수 있으며, &lt;strong&gt;리뷰 과정을 더욱 지연&lt;/strong&gt;시키게 된다.  그리고 그게 끝이 아닐 수도 있다. &lt;strong&gt;통합 테스트는 종종 풀 리퀘스트가 머지된 이후에야 실행되기 때문&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;p&gt;적어도 위의 시나리오에서는, 그녀가 &lt;strong&gt;풀 리퀘스트를 제출하기 전에&lt;/strong&gt; 문제를 발견할 수 있다는 점이 위안이 된다. 풀 리퀘스트 자체도 충분히 부담스러운 일이다 — 변경 사항을 검토해줄 누군가를 기다리는 동안 말이다. 리뷰는 시간이 걸릴 수 있고, 그동안 그녀는 &lt;strong&gt;다음 기능 작업으로 맥락을 전환(context-switch)&lt;/strong&gt; 해야 한다. 그 시점에 복잡한 통합 문제가 생긴다면, 그것은 매우 불안한 경험이 될 수 있으며, &lt;strong&gt;리뷰 과정을 더욱 지연&lt;/strong&gt;시키게 된다. 그리고 그게 끝이 아닐 수도 있다. &lt;strong&gt;통합 테스트는 종종 풀 리퀘스트가 머지된 이후에야 실행되기 때문&lt;/strong&gt;이다.&lt;/p&gt;
 &lt;p&gt;시간이 지나면서, 이 팀은 &lt;strong&gt;핵심 코드에 중요한 변경을 가하는 것이 이런 문제를 유발한다는 사실을 깨닫게 될 수도 있다.&lt;/strong&gt;  그리고 그래서 그런 변경을 아예 하지 않게 될 수도 있다.  하지만 그렇게 되면, &lt;strong&gt;정기적인 리팩터링이 이루어지지 않게 되고&lt;/strong&gt;,  결국 코드베이스 전체에 **쌓여가는 불순물(cruft)**을 방치하게 된다. 이후에 이런 &lt;strong&gt;지저분한 코드베이스를 마주한 사람들&lt;/strong&gt;은  &quot;도대체 코드가 왜 이렇게 되어버린 걸까?&quot;라고 의문을 갖게 되지만,  그에 대한 답은 종종 이렇게 나온다:  &lt;strong&gt;통합 과정이 너무 고통스럽고 마찰이 커서, 사람들이 그 불순물을 치울 의욕조차 잃어버렸기 때문&lt;/strong&gt;이다.&lt;/p&gt;
 &lt;p&gt;하지만 반드시 그렇게 될 필요는 없다. 내 동료들이 ThoughtWorks에서 진행한 대부분의 프로젝트들, 그리고 전 세계의 많은 다른 팀들은 &lt;strong&gt;통합을 별일 아닌 것으로 여긴다.&lt;/strong&gt; 개별 개발자의 작업은 &lt;strong&gt;공용 프로젝트 상태와 몇 시간밖에 차이 나지 않으며&lt;/strong&gt;, 그 작업은 &lt;strong&gt;수 분 안에 다시 통합&lt;/strong&gt;될 수 있다. 통합 과정에서 발생하는 오류는 &lt;strong&gt;빠르게 발견되고&lt;/strong&gt;, 또한 &lt;strong&gt;빠르게 수정될 수 있다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;이러한 차이는 &lt;strong&gt;비싸고 복잡한 도구&lt;/strong&gt;에서 비롯된 것이 아니다. 그 핵심은 &lt;strong&gt;팀의 모든 사람이, 최소 하루에 한 번 이상, 관리되는 소스 코드 저장소에 자주 통합하는 단순한 실천&lt;/strong&gt;에 있다. 이러한 실천을 **&quot;지속적 통합(Continuous Integration, CI)&quot;**이라고 하며, 어떤 사람들은 이를 **&quot;트렁크 기반 개발(Trunk-Based Development)&quot;**이라고 부르기도 한다.&lt;/p&gt;
-&lt;p&gt;이 글에서 나는 &lt;strong&gt;지속적 통합이 무엇인지, 그리고 그것을 잘 실천하려면 어떻게 해야 하는지&lt;/strong&gt;를 설명한다. 이 글을 쓰는 데는 두 가지 이유가 있다.
-첫째, 항상 새로운 사람들이 이 직업에 들어오고 있으며, &lt;strong&gt;그들에게 그 우울한 창고 같은 상황을 어떻게 피할 수 있는지를 보여주고 싶기 때문&lt;/strong&gt;이다.
-둘째, 이 주제는 &lt;strong&gt;명확하게 설명될 필요가 있다&lt;/strong&gt;, 왜냐하면 &lt;strong&gt;지속적 통합은 매우 많이 오해받고 있는 개념&lt;/strong&gt;이기 때문이다. 많은 사람들이 자신들이 CI를 하고 있다고 말하지만, 그들의 작업 흐름을 자세히 들어보면 &lt;strong&gt;중요한 요소들이 빠져 있는 경우가 많다.&lt;/strong&gt; &lt;strong&gt;지속적 통합을 명확히 이해하는 것&lt;/strong&gt;은 서로의 커뮤니케이션에 도움이 된다. 우리가 일하는 방식을 설명할 때, 상대방이 무엇을 기대해야 할지 알 수 있기 때문이다. 또한, 사람들이 &lt;strong&gt;자신의 개발 경험을 더욱 향상시킬 수 있는 여지가 있다는 사실을 깨닫는 데도 도움이 된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;이 글에서 나는 &lt;strong&gt;지속적 통합이 무엇인지, 그리고 그것을 잘 실천하려면 어떻게 해야 하는지&lt;/strong&gt;를 설명한다. 이 글을 쓰는 데는 두 가지 이유가 있다. 첫째, 항상 새로운 사람들이 이 직업에 들어오고 있으며, &lt;strong&gt;그들에게 그 우울한 창고 같은 상황을 어떻게 피할 수 있는지를 보여주고 싶기 때문&lt;/strong&gt;이다. 둘째, 이 주제는 &lt;strong&gt;명확하게 설명될 필요가 있다&lt;/strong&gt;, 왜냐하면 &lt;strong&gt;지속적 통합은 매우 많이 오해받고 있는 개념&lt;/strong&gt;이기 때문이다. 많은 사람들이 자신들이 CI를 하고 있다고 말하지만, 그들의 작업 흐름을 자세히 들어보면 &lt;strong&gt;중요한 요소들이 빠져 있는 경우가 많다.&lt;/strong&gt; &lt;strong&gt;지속적 통합을 명확히 이해하는 것&lt;/strong&gt;은 서로의 커뮤니케이션에 도움이 된다. 우리가 일하는 방식을 설명할 때, 상대방이 무엇을 기대해야 할지 알 수 있기 때문이다. 또한, 사람들이 &lt;strong&gt;자신의 개발 경험을 더욱 향상시킬 수 있는 여지가 있다는 사실을 깨닫는 데도 도움이 된다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;나는 이 글을 &lt;strong&gt;처음에는 2001년에 작성&lt;/strong&gt;했고, &lt;strong&gt;2006년에 한 차례 업데이트&lt;/strong&gt;했다. 그 이후로 소프트웨어 개발 팀의 일반적인 기대치는 크게 변화했다. 내가 1980년대에 보았던 &lt;strong&gt;몇 개월씩 이어지던 통합 과정은 이제는 아득한 과거의 기억&lt;/strong&gt;이 되었고, 버전 관리나 빌드 스크립트 같은 기술들도 이제는 보편화되었다. 그래서 나는 &lt;strong&gt;20년의 경험을 바탕으로, 지속적 통합의 가치를 다시 확인하며&lt;/strong&gt;, 2023년에 이 글을 &lt;strong&gt;지금의 개발 팀들을 위해 다시 썼다.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;Building a Feature with Continuous Integration&lt;/h2&gt;
 &lt;p&gt;지속적 통합이 무엇이고 어떻게 작동하는지를 가장 쉽게 설명하는 방법은, &lt;strong&gt;작은 기능 하나를 개발하는 과정을 예로 들어 보여주는 것&lt;/strong&gt;이다. 나는 현재 마법 물약을 제조하는 대형 업체와 함께 일하고 있으며, 그들의 제품 품질 시스템을 확장하여 물약의 효과가 얼마나 오래 지속되는지를 계산하는 기능을 개발 중이다. 이미 시스템에는 12종류의 물약이 등록되어 있고, 우리는 여기에 비행 물약(flying potions)을 위한 로직을 추가하려고 한다. (너무 일찍 효과가 사라지면 고객 유지율이 심각하게 떨어진다는 사실을 배웠기 때문이다.) 비행 물약은 몇 가지 새로운 변수를 도입하는데, 그 중 하나는 2차 혼합 시점의 moon phase이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/064693f677ee05c42581f05def83dab1/4466a/ci01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4UlEQVR42oWQi27CMAxF+/+ft5c0sY2BEC3QhKQhzcNJLi4ZEwVNs2TZsnOPHTe4sRII+TiiaFddOSAX/GWlFBDlWa2pHdZNgSFpKZA3CvlboOwGICZ49pzzAzBwvdsbxB/oNKC5Jh9fPaQwIBdBnhA5Jt5u5Lj4FFA8rL6dQw+9nfUuQKKE98UBm62GsR5qcNDs5uRZcMLL2w5Sjr9bXM3xsG2rGajQCwHvfQXKo8RytYbWmuE0Ew6DwdPzK4SQD1+2NsIYz5p4gaWUKnBKQgg8kW94dys7WnRdi5Z9Ev1nZ/L81QBRz4qDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/064693f677ee05c42581f05def83dab1/dc87c/ci01.avif 158w,
+/static/064693f677ee05c42581f05def83dab1/383b4/ci01.avif 315w,
+/static/064693f677ee05c42581f05def83dab1/d0061/ci01.avif 630w,
+/static/064693f677ee05c42581f05def83dab1/20e2c/ci01.avif 945w,
+/static/064693f677ee05c42581f05def83dab1/9eba6/ci01.avif 1260w,
+/static/064693f677ee05c42581f05def83dab1/18d4c/ci01.avif 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/064693f677ee05c42581f05def83dab1/5787a/ci01.webp 158w,
+/static/064693f677ee05c42581f05def83dab1/89f54/ci01.webp 315w,
+/static/064693f677ee05c42581f05def83dab1/4d353/ci01.webp 630w,
+/static/064693f677ee05c42581f05def83dab1/0f41d/ci01.webp 945w,
+/static/064693f677ee05c42581f05def83dab1/f27a3/ci01.webp 1260w,
+/static/064693f677ee05c42581f05def83dab1/d07a0/ci01.webp 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/064693f677ee05c42581f05def83dab1/dda05/ci01.png 158w,
+/static/064693f677ee05c42581f05def83dab1/679a3/ci01.png 315w,
+/static/064693f677ee05c42581f05def83dab1/50637/ci01.png 630w,
+/static/064693f677ee05c42581f05def83dab1/fddb0/ci01.png 945w,
+/static/064693f677ee05c42581f05def83dab1/f46b1/ci01.png 1260w,
+/static/064693f677ee05c42581f05def83dab1/4466a/ci01.png 1740w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/064693f677ee05c42581f05def83dab1/50637/ci01.png&quot;
+            alt=&quot;ci01&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;나는 먼저 &lt;strong&gt;가장 최신의 제품 소스 코드를 내 로컬 개발 환경으로 가져온다.&lt;/strong&gt;  이를 위해 중앙 저장소에서 현재 메인라인을 &lt;code class=&quot;language-text&quot;&gt;git pull&lt;/code&gt; 명령으로 받아온다.&lt;/p&gt;
 &lt;p&gt;소스 코드를 내 환경에 가져온 후, &lt;strong&gt;제품을 빌드하는 명령어를 실행한다.&lt;/strong&gt; 이 명령은 내 개발 환경이 올바르게 설정되어 있는지를 확인하고, 소스를 컴파일하여 실행 가능한 제품으로 만들고, 제품을 시작한 뒤 &lt;strong&gt;포괄적인 테스트 스위트 전체를 실행&lt;/strong&gt;한다. 이 작업은 &lt;strong&gt;몇 분밖에 걸리지 않으며&lt;/strong&gt;, 그동안 나는 &lt;strong&gt;어떻게 새로운 기능을 추가할지 코드를 탐색&lt;/strong&gt;하기 시작한다. 이 빌드는 거의 실패하지 않지만, 그래도 혹시 모르니 항상 해본다. &lt;strong&gt;만약 빌드가 실패한다면, 변경을 시작하기 전에 그 사실을 알고 싶은&lt;/strong&gt; 것이다. &lt;strong&gt;실패한 빌드 위에 작업을 얹으면, 그 실패가 내 변경 때문인 줄 알고 혼란스러울 수 있기 때문이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e991b4b2e4c411be18eddb16780c966b/4466a/ci02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA8UlEQVR42oVQa2+DMAzk//+7aaombaioezRtCYRXQl7OzQTBNvFhJ1m2Yvvu4iJNDvFDgUTPuc2ZvjpQo3FAoJ/wESkSwlL/QpEJPxViq5FMQJosknZILuaBlAAbImi0oLcHqJKIZ4l0ruE6g5uc4P02m1BsRVk1mG04mHJMXFYK10uLwMtOGfh6hGcjxHu11Oj6eRfPhIvCaylhjN8bGyyLnF4eWXCaHXp2OkxrNPwrceuZsINsGp61K2GrWlSXdyjVMbnf7S8YhgFPzyfuqYOY1h4jC4TgM1mMcSVcCudcfiT6e2Rj+E53gasQuf8fvgGMWtNlsU9f+wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e991b4b2e4c411be18eddb16780c966b/dc87c/ci02.avif 158w,
+/static/e991b4b2e4c411be18eddb16780c966b/383b4/ci02.avif 315w,
+/static/e991b4b2e4c411be18eddb16780c966b/d0061/ci02.avif 630w,
+/static/e991b4b2e4c411be18eddb16780c966b/20e2c/ci02.avif 945w,
+/static/e991b4b2e4c411be18eddb16780c966b/9eba6/ci02.avif 1260w,
+/static/e991b4b2e4c411be18eddb16780c966b/18d4c/ci02.avif 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e991b4b2e4c411be18eddb16780c966b/5787a/ci02.webp 158w,
+/static/e991b4b2e4c411be18eddb16780c966b/89f54/ci02.webp 315w,
+/static/e991b4b2e4c411be18eddb16780c966b/4d353/ci02.webp 630w,
+/static/e991b4b2e4c411be18eddb16780c966b/0f41d/ci02.webp 945w,
+/static/e991b4b2e4c411be18eddb16780c966b/f27a3/ci02.webp 1260w,
+/static/e991b4b2e4c411be18eddb16780c966b/d07a0/ci02.webp 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e991b4b2e4c411be18eddb16780c966b/dda05/ci02.png 158w,
+/static/e991b4b2e4c411be18eddb16780c966b/679a3/ci02.png 315w,
+/static/e991b4b2e4c411be18eddb16780c966b/50637/ci02.png 630w,
+/static/e991b4b2e4c411be18eddb16780c966b/fddb0/ci02.png 945w,
+/static/e991b4b2e4c411be18eddb16780c966b/f46b1/ci02.png 1260w,
+/static/e991b4b2e4c411be18eddb16780c966b/4466a/ci02.png 1740w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e991b4b2e4c411be18eddb16780c966b/50637/ci02.png&quot;
+            alt=&quot;ci02&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;그다음에는 내 작업 사본을 기반으로, 달의 위상을 처리하기 위한 &lt;strong&gt;변경 작업을 시작&lt;/strong&gt;한다. 이 작업에는 제품 코드를 수정하는 것뿐 아니라, &lt;strong&gt;자동화 테스트를 추가하거나 수정하는 일도 포함된다.&lt;/strong&gt; 작업하는 동안 나는 &lt;strong&gt;자주 자동화된 빌드와 테스트를 실행&lt;/strong&gt;한다. 약 한 시간 정도가 지나면, 달 위상을 처리하는 &lt;strong&gt;로직이 코드에 반영되고, 테스트도 업데이트&lt;/strong&gt;되어 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e2ed9652eafe325f762a874fa797fce0/4466a/ci03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA30lEQVR42oVQi27DIAzs/3/eVHUvaY92SpuCyiMhgcTmZlgnjU7TLB0C23ecvcGP4LCAew8qOHvwmCSZ8VcQMVJam9ymnjljFWK+BPDTGfyqkV8EewP2EXOiSr6NZSGc+gFR6o0gU8b2vkf3pmE/DMzhUjEMM5QesXtQMGa6/t067o4ezs2S51qrgsX2+97CiZvST+K2gOURpoTHZwUrpOsw+NYcZSXd0UnNQCklOulLUGktggdx5GWMpXFircXddgdj3a+Rg+x8mtamvwoSU1WPMcqdb0hB9nSqKD3/xSfCtNSD7mp9PQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e2ed9652eafe325f762a874fa797fce0/dc87c/ci03.avif 158w,
+/static/e2ed9652eafe325f762a874fa797fce0/383b4/ci03.avif 315w,
+/static/e2ed9652eafe325f762a874fa797fce0/d0061/ci03.avif 630w,
+/static/e2ed9652eafe325f762a874fa797fce0/20e2c/ci03.avif 945w,
+/static/e2ed9652eafe325f762a874fa797fce0/9eba6/ci03.avif 1260w,
+/static/e2ed9652eafe325f762a874fa797fce0/18d4c/ci03.avif 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e2ed9652eafe325f762a874fa797fce0/5787a/ci03.webp 158w,
+/static/e2ed9652eafe325f762a874fa797fce0/89f54/ci03.webp 315w,
+/static/e2ed9652eafe325f762a874fa797fce0/4d353/ci03.webp 630w,
+/static/e2ed9652eafe325f762a874fa797fce0/0f41d/ci03.webp 945w,
+/static/e2ed9652eafe325f762a874fa797fce0/f27a3/ci03.webp 1260w,
+/static/e2ed9652eafe325f762a874fa797fce0/d07a0/ci03.webp 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e2ed9652eafe325f762a874fa797fce0/dda05/ci03.png 158w,
+/static/e2ed9652eafe325f762a874fa797fce0/679a3/ci03.png 315w,
+/static/e2ed9652eafe325f762a874fa797fce0/50637/ci03.png 630w,
+/static/e2ed9652eafe325f762a874fa797fce0/fddb0/ci03.png 945w,
+/static/e2ed9652eafe325f762a874fa797fce0/f46b1/ci03.png 1260w,
+/static/e2ed9652eafe325f762a874fa797fce0/4466a/ci03.png 1740w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e2ed9652eafe325f762a874fa797fce0/50637/ci03.png&quot;
+            alt=&quot;ci03&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4fceee783bd66365c50cccd2c6f086ac/4466a/ci04.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA2ElEQVR42oVQa2+DMAzk//+8qWLbx74obdCIA4S8nJsb1KowTT3JiuXH+S4VXpBHj9QQ+DaAuxHcW2Qb8B9SYngfV7XqkURpZidN4wAhRs7LEXntHMvyFiEktNcBzqc1YUoZ9WeLXluYyYFGB21mDPKezj129bX0Hgde0VwMiGapc+kVwrvsw1FjFiUs5CFyCZaBH7H99a3K0kL4FI9RnDQXgqYeSinh8Quh6jrsD0eQMWIjrJRo0vjY1aKQ/liepgBr42p+scypsDvnJOfN0iT/1Ja4z7zDLzXT1YkdK+BoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/4fceee783bd66365c50cccd2c6f086ac/dc87c/ci04.avif 158w,
+/static/4fceee783bd66365c50cccd2c6f086ac/383b4/ci04.avif 315w,
+/static/4fceee783bd66365c50cccd2c6f086ac/d0061/ci04.avif 630w,
+/static/4fceee783bd66365c50cccd2c6f086ac/20e2c/ci04.avif 945w,
+/static/4fceee783bd66365c50cccd2c6f086ac/9eba6/ci04.avif 1260w,
+/static/4fceee783bd66365c50cccd2c6f086ac/18d4c/ci04.avif 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/4fceee783bd66365c50cccd2c6f086ac/5787a/ci04.webp 158w,
+/static/4fceee783bd66365c50cccd2c6f086ac/89f54/ci04.webp 315w,
+/static/4fceee783bd66365c50cccd2c6f086ac/4d353/ci04.webp 630w,
+/static/4fceee783bd66365c50cccd2c6f086ac/0f41d/ci04.webp 945w,
+/static/4fceee783bd66365c50cccd2c6f086ac/f27a3/ci04.webp 1260w,
+/static/4fceee783bd66365c50cccd2c6f086ac/d07a0/ci04.webp 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/4fceee783bd66365c50cccd2c6f086ac/dda05/ci04.png 158w,
+/static/4fceee783bd66365c50cccd2c6f086ac/679a3/ci04.png 315w,
+/static/4fceee783bd66365c50cccd2c6f086ac/50637/ci04.png 630w,
+/static/4fceee783bd66365c50cccd2c6f086ac/fddb0/ci04.png 945w,
+/static/4fceee783bd66365c50cccd2c6f086ac/f46b1/ci04.png 1260w,
+/static/4fceee783bd66365c50cccd2c6f086ac/4466a/ci04.png 1740w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/4fceee783bd66365c50cccd2c6f086ac/50637/ci04.png&quot;
+            alt=&quot;ci04&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;이제 내 변경 사항을 중앙 저장소에 다시 통합할 준비가 되었다. 이를 위한 첫 번째 단계는 다시 한 번 pull 하는 것이다. &lt;strong&gt;내가 작업하는 동안 동료들이 메인라인에 변경 사항을 푸시했을 가능성이 크기 때문&lt;/strong&gt;이다. 실제로 몇 가지 변경이 있었고, 나는 그것들을 내 작업 사본에 pull 해온다. 그 위에 내 변경 사항을 병합하고, 다시 빌드를 실행한다. 보통은 이 과정이 &lt;strong&gt;의례적&lt;/strong&gt;으로 느껴지지만, 이번에는 &lt;strong&gt;테스트 하나가 실패&lt;/strong&gt;한다. 그 테스트는 &lt;strong&gt;무슨 일이 잘못됐는지에 대한 힌트&lt;/strong&gt;를 제공해 주지만, 나는 &lt;strong&gt;방금 pull 한 커밋들을 살펴보는 것이 더 도움이 된다.&lt;/strong&gt; 확인해보니 누군가가 &lt;strong&gt;어떤 함수의 로직 일부를 해당 함수의 호출자로 옮겨서 조정한 것&lt;/strong&gt;이었다. 그들은 메인라인 코드에 존재하던 호출자들은 모두 수정했지만, 나는 내 변경 사항 안에서 &lt;strong&gt;새로운 호출을 추가했기 때문에&lt;/strong&gt; 그들은 그것을 볼 수 없었던 것이다. 나는 같은 방식으로 내 코드도 조정하고, 다시 빌드를 실행한다. 이번에는 빌드가 &lt;strong&gt;성공적으로 통과&lt;/strong&gt;된다.&lt;/p&gt;
 &lt;p&gt;몇 분 동안 그 문제를 정리하고 있었기 때문에, 나는 다시 한 번 pull 한다. 그리고 역시나 또 새로운 커밋이 하나 있었다. 하지만 이번에는 빌드에 아무 문제가 없어서, 나는 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;git push&lt;/code&gt;로 내 변경 사항을 중앙 저장소에 푸시할 수 있었다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bf43cf1feed44c84657abe82dc70ca68/4466a/ci05.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAxElEQVR42oWQ0Q6CMAxF+f/PMyohPgkGISPZQMCNdbuWLRjYg96w0Kzt6V0z/JCfDOgh4eseVMoY9294bUOeyMEYe+jJtsBaB+9TIn/cNM8LyBLgfLjbtCyEpn1BGzoCiTyueRsKUml2kxcdpJzjjGRq/RzQr669C7kAXG2XlTpM2gOLm4DipgjE9yXjaBjYc05CCMEcE4Gi63AvK6hhYJfLwYlUCqfzJfxTTbzjdR37+vhkR4GutebYJU0T76kJZ635pw83JdZ8ir3imQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/bf43cf1feed44c84657abe82dc70ca68/dc87c/ci05.avif 158w,
+/static/bf43cf1feed44c84657abe82dc70ca68/383b4/ci05.avif 315w,
+/static/bf43cf1feed44c84657abe82dc70ca68/d0061/ci05.avif 630w,
+/static/bf43cf1feed44c84657abe82dc70ca68/20e2c/ci05.avif 945w,
+/static/bf43cf1feed44c84657abe82dc70ca68/9eba6/ci05.avif 1260w,
+/static/bf43cf1feed44c84657abe82dc70ca68/18d4c/ci05.avif 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/bf43cf1feed44c84657abe82dc70ca68/5787a/ci05.webp 158w,
+/static/bf43cf1feed44c84657abe82dc70ca68/89f54/ci05.webp 315w,
+/static/bf43cf1feed44c84657abe82dc70ca68/4d353/ci05.webp 630w,
+/static/bf43cf1feed44c84657abe82dc70ca68/0f41d/ci05.webp 945w,
+/static/bf43cf1feed44c84657abe82dc70ca68/f27a3/ci05.webp 1260w,
+/static/bf43cf1feed44c84657abe82dc70ca68/d07a0/ci05.webp 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/bf43cf1feed44c84657abe82dc70ca68/dda05/ci05.png 158w,
+/static/bf43cf1feed44c84657abe82dc70ca68/679a3/ci05.png 315w,
+/static/bf43cf1feed44c84657abe82dc70ca68/50637/ci05.png 630w,
+/static/bf43cf1feed44c84657abe82dc70ca68/fddb0/ci05.png 945w,
+/static/bf43cf1feed44c84657abe82dc70ca68/f46b1/ci05.png 1260w,
+/static/bf43cf1feed44c84657abe82dc70ca68/4466a/ci05.png 1740w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/bf43cf1feed44c84657abe82dc70ca68/50637/ci05.png&quot;
+            alt=&quot;ci05&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b85eaffa10fba0f0015a27358068732c/4466a/ci06.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 31.645569620253163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABAElEQVR42oWQyW7DMAxE8/+fVwQpAndNU2+yK8m2bG3klLZ7SHIpgQEkLo8DHnAT5AKoGUHtiFxb8BQA5q3GPiE3e57UCJ4jUiaEkG4ROOzdjCTifgIVLbgU2EUDagLL0BIy0o8DFwr0InpV4I8ecYmoZbmX+h2QMuP43KB872AqCzsssHbGOHqobsLprHB96zCUBvqqYb41evn37YBKXFu7iCcS8Q5cbX9ejIA8SJIxEZKIiOHmgHPRQcvQGklyeRUYrSyr5ATGaiilhBN2oOo6AX6JowExxr8r7LczxuDpeII1Fo/hXMQ8p7v+DZgpb3TvvbzpYcihbupNa89/8QuZotIAE0alJAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/b85eaffa10fba0f0015a27358068732c/dc87c/ci06.avif 158w,
+/static/b85eaffa10fba0f0015a27358068732c/383b4/ci06.avif 315w,
+/static/b85eaffa10fba0f0015a27358068732c/d0061/ci06.avif 630w,
+/static/b85eaffa10fba0f0015a27358068732c/20e2c/ci06.avif 945w,
+/static/b85eaffa10fba0f0015a27358068732c/9eba6/ci06.avif 1260w,
+/static/b85eaffa10fba0f0015a27358068732c/18d4c/ci06.avif 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/b85eaffa10fba0f0015a27358068732c/5787a/ci06.webp 158w,
+/static/b85eaffa10fba0f0015a27358068732c/89f54/ci06.webp 315w,
+/static/b85eaffa10fba0f0015a27358068732c/4d353/ci06.webp 630w,
+/static/b85eaffa10fba0f0015a27358068732c/0f41d/ci06.webp 945w,
+/static/b85eaffa10fba0f0015a27358068732c/f27a3/ci06.webp 1260w,
+/static/b85eaffa10fba0f0015a27358068732c/d07a0/ci06.webp 1740w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/b85eaffa10fba0f0015a27358068732c/dda05/ci06.png 158w,
+/static/b85eaffa10fba0f0015a27358068732c/679a3/ci06.png 315w,
+/static/b85eaffa10fba0f0015a27358068732c/50637/ci06.png 630w,
+/static/b85eaffa10fba0f0015a27358068732c/fddb0/ci06.png 945w,
+/static/b85eaffa10fba0f0015a27358068732c/f46b1/ci06.png 1260w,
+/static/b85eaffa10fba0f0015a27358068732c/4466a/ci06.png 1740w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/b85eaffa10fba0f0015a27358068732c/50637/ci06.png&quot;
+            alt=&quot;ci06&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;그렇다고 해서 푸시했다고 끝난 것은 아니다. &lt;strong&gt;내가 메인라인에 푸시하면, 지속적 통합(CI) 서비스가 내 커밋을 감지하고, 변경된 코드를 CI 에이전트에 체크아웃한 뒤, 거기서 빌드를 수행&lt;/strong&gt;한다. 내 환경에서는 빌드가 잘 됐기 때문에 CI에서도 실패할 거라 예상하지는 않지만, &lt;strong&gt;&quot;내 컴퓨터에선 잘 되는데요?&quot;라는 말이 개발자들 사이에서 유명한 이유&lt;/strong&gt;는 분명히 있다. CI 빌드가 실패하는 경우는 드물지만, &lt;strong&gt;드물다는 것과 절대 없다는 건 다르다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;CI 머신의 빌드는 오래 걸리진 않지만, &lt;strong&gt;열정적인 개발자라면 벌써 다음 단계인 비행 시간 계산을 생각하기 시작할 수 있는 시간&lt;/strong&gt;이다. 하지만 나는 이제 나이도 좀 있어서, 그 시간을 &lt;strong&gt;가볍게 스트레칭도 하고 이메일도 읽으며 보낸다.&lt;/strong&gt; 곧 CI 서비스에서 모든 것이 잘됐다는 알림을 받고, 나는 다시 다음 단계 작업을 시작한다.&lt;/p&gt;
 &lt;hr&gt;
@@ -65,10 +402,8 @@
 &lt;p&gt;이런 도구들에는 종종 테스트 결과에 따라 상태를 시각적으로 보여주는 그래픽 바(progress bar)가 포함되어 있었고, 테스트가 통과하면 초록색, 실패하면 빨간색으로 바뀌는 기능이 있었다. 이로 인해 사람들은 “그린 빌드”, 혹은 “레드 바(red-bar)” 같은 표현을 쓰게 되었다.&lt;/p&gt;
 &lt;p&gt;그러한 테스트 스위트의 진짜 시험은, &lt;strong&gt;모든 테스트가 초록색으로 통과하면 제품에 심각한 버그는 없다고 확신할 수 있어야 한다는 점&lt;/strong&gt;이다. 나는 가끔 상상한다 — &lt;strong&gt;말썽꾸러기 요정&lt;/strong&gt;이 제품 코드에 간단한 수정을 가할 수 있다고 치자. 예를 들어 주석을 달거나 조건문을 반대로 바꾸는 등의 짓을 할 수 있지만, &lt;strong&gt;테스트 코드는 수정할 수 없는 존재&lt;/strong&gt;다. &lt;strong&gt;건실한 테스트 스위트라면&lt;/strong&gt;, 그 요정이 그런 장난을 칠 경우 반드시 테스트 중 하나를 실패하게 만들어야 한다. 그리고 테스트가 &lt;strong&gt;단 하나라도 실패하면 빌드는 실패한 것이다&lt;/strong&gt; — 테스트가 99.9% 초록색이라고 해도, 여전히 그것은 &lt;strong&gt;빨간색&lt;/strong&gt;이다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;자가 테스트 코드는 지속적 통합에서 너무나 중요하기 때문에, 필수 전제 조건&lt;/strong&gt;이라고 할 수 있다. 실제로 &lt;strong&gt;지속적 통합을 도입하는 데 가장 큰 장애물&lt;/strong&gt;은 종종 &lt;strong&gt;테스트에 대한 기술 부족&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;p&gt;자가 테스트 코드와 지속적 통합이 이렇게 밀접하게 연결되어 있다는 사실은 놀라운 일이 아니다. 지속적 통합은 원래 익스트림 프로그래밍(Extreme Programming, XP)의 일부로 개발되었고, &lt;strong&gt;테스트는 XP의 핵심 실천 중 하나&lt;/strong&gt;였다. 이러한 테스트는 흔히 테스트 주도 개발(Test Driven Development, TDD)의 형태로 진행되며,&lt;br&gt;
-TDD는 우리가 방금 작성한 테스트를 통과시키기 위한 코드 외에는 새 코드를 작성하지 않도록 요구한다. TDD는 지속적 통합에 &lt;strong&gt;필수적이진 않다&lt;/strong&gt;. 테스트가 반드시 제품 코드 이전에 작성되어야 하는 것은 아니고, &lt;strong&gt;통합 이전에만 작성되어 있다면&lt;/strong&gt; 괜찮다. 하지만 내 경험상, 대부분의 경우 &lt;strong&gt;TDD가 자가 테스트 코드를 작성하는 데 가장 좋은 방법&lt;/strong&gt;이었다.&lt;/p&gt;
-&lt;p&gt;테스트는 코드베이스의 상태를 자동으로 점검하는 역할을 하며, 이러한 자동 검증의 핵심 요소는 테스트지만,&lt;br&gt;
-많은 프로그래밍 환경은 &lt;strong&gt;이 외에도 다양한 검증 도구들을 제공&lt;/strong&gt;한다. 예를 들어 린터(linter)는 나쁜 코딩 습관을 감지하고, 팀의 스타일 가이드를 준수하게 도와주며, &lt;strong&gt;보안 취약점 스캐너&lt;/strong&gt;는 보안상의 약점을 찾아낼 수 있다. 이러한 도구들을 검토해서, &lt;strong&gt;테스트 외의 검증 흐름에도 포함하는 것&lt;/strong&gt;이 좋다.&lt;/p&gt;
+&lt;p&gt;자가 테스트 코드와 지속적 통합이 이렇게 밀접하게 연결되어 있다는 사실은 놀라운 일이 아니다. 지속적 통합은 원래 익스트림 프로그래밍(Extreme Programming, XP)의 일부로 개발되었고, &lt;strong&gt;테스트는 XP의 핵심 실천 중 하나&lt;/strong&gt;였다. 이러한 테스트는 흔히 테스트 주도 개발(Test Driven Development, TDD)의 형태로 진행되며, TDD는 우리가 방금 작성한 테스트를 통과시키기 위한 코드 외에는 새 코드를 작성하지 않도록 요구한다. TDD는 지속적 통합에 &lt;strong&gt;필수적이진 않다&lt;/strong&gt;. 테스트가 반드시 제품 코드 이전에 작성되어야 하는 것은 아니고, &lt;strong&gt;통합 이전에만 작성되어 있다면&lt;/strong&gt; 괜찮다. 하지만 내 경험상, 대부분의 경우 &lt;strong&gt;TDD가 자가 테스트 코드를 작성하는 데 가장 좋은 방법&lt;/strong&gt;이었다.&lt;/p&gt;
+&lt;p&gt;테스트는 코드베이스의 상태를 자동으로 점검하는 역할을 하며, 이러한 자동 검증의 핵심 요소는 테스트지만, 많은 프로그래밍 환경은 &lt;strong&gt;이 외에도 다양한 검증 도구들을 제공&lt;/strong&gt;한다. 예를 들어 린터(linter)는 나쁜 코딩 습관을 감지하고, 팀의 스타일 가이드를 준수하게 도와주며, &lt;strong&gt;보안 취약점 스캐너&lt;/strong&gt;는 보안상의 약점을 찾아낼 수 있다. 이러한 도구들을 검토해서, &lt;strong&gt;테스트 외의 검증 흐름에도 포함하는 것&lt;/strong&gt;이 좋다.&lt;/p&gt;
 &lt;p&gt;물론, &lt;strong&gt;테스트가 모든 것을 잡아낼 수 있다고 기대할 수는 없다.&lt;/strong&gt; 자주 인용되는 말처럼, 테스트는 &lt;strong&gt;버그가 없다는 것을 증명해 주지 않는다.&lt;/strong&gt; 그러나 &lt;strong&gt;완벽함이 아니더라도, 자가 테스트 가능한 빌드로부터 얻을 수 있는 이점은 충분하다.&lt;/strong&gt; 불완전한 테스트라도 &lt;strong&gt;자주 실행되면&lt;/strong&gt;, &lt;strong&gt;한 번도 작성되지 않은 완벽한 테스트보다 훨씬 낫다.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;모든 사람은 매일 메인라인에 커밋을 푸시해야 한다&lt;/h3&gt;
 &lt;p&gt;통합은 본질적으로 &lt;strong&gt;커뮤니케이션에 관한 일&lt;/strong&gt;이다. 통합을 통해 개발자는 자신이 한 변경 사항을 다른 개발자들에게 알릴 수 있고, 변경이 이루어질 때마다 자주 소통하면 &lt;strong&gt;팀원 모두가 빠르게 그 내용을 파악할 수 있다.&lt;/strong&gt;&lt;/p&gt;
@@ -145,14 +480,15 @@ TDD는 우리가 방금 작성한 테스트를 통과시키기 위한 코드 외
 &lt;h2&gt;통합 방식의 유형&lt;/h2&gt;
 &lt;p&gt;지금까지 나는 통합을 접근하는 하나의 방식을 설명해왔다. 하지만 그 방식이 &lt;strong&gt;보편적이지 않다면&lt;/strong&gt;, 당연히 &lt;strong&gt;다른 방식들&lt;/strong&gt;도 존재할 것이다. 언제나 그렇듯, 내가 제시하는 분류에는 &lt;strong&gt;경계가 모호한 면&lt;/strong&gt;이 있긴 하지만, 나는 통합을 다음 &lt;strong&gt;세 가지 스타일&lt;/strong&gt;로 나누어 생각해보는 것이 유용하다고 느낀다: &lt;strong&gt;사전 릴리스 통합(Pre-Release Integration)&lt;/strong&gt;, &lt;strong&gt;기능 브랜치(Feature Branches)&lt;/strong&gt;, 그리고 &lt;strong&gt;지속적 통합(Continuous Integration)&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;가장 오래된 방식은 내가 1980년대 창고에서 봤던 **사전 릴리스 통합(Pre-Release Integration)**이다. 이 방식은 &lt;strong&gt;통합을 프로젝트의 하나의 단계로 간주&lt;/strong&gt;하며, 이는 자연스럽게 **폭포수 모델(Waterfall Process)**의 일부분으로 받아들여진다. 이런 프로젝트에서는 작업이 여러 개의 단위로 나뉘며, 이 단위들은 &lt;strong&gt;개인이나 소규모 팀 단위로 수행&lt;/strong&gt;된다. 각 단위는 소프트웨어의 일부 기능을 담당하며, 다른 단위들과의 상호작용은 최소화되어 있다. 각 단위는 &lt;strong&gt;개별적으로 빌드되고 테스트&lt;/strong&gt;되며, (“단위 테스트(unit test)”라는 용어가 처음 사용된 배경이기도 하다.) 모든 단위가 준비되었을 때, &lt;strong&gt;하나로 통합하는 작업이 이루어진다.&lt;/strong&gt; 이 통합은 &lt;strong&gt;한 번에&lt;/strong&gt; 수행되며, 그 뒤에는 통합 테스트를 거쳐, 최종 릴리스로 이어진다. 즉, 이런 방식에서의 작업 흐름은 &lt;strong&gt;두 개의 단계&lt;/strong&gt;로 나뉜다. 먼저 &lt;strong&gt;모두가 병렬로 기능 개발을 진행하는 단계&lt;/strong&gt;, 그 다음은 &lt;strong&gt;통합이라는 단일한 작업 흐름의 단계&lt;/strong&gt;가 이어지는 것이다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;img/pri_style.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./img/pri_style.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;이 방식(사전 릴리스 통합)에서는 &lt;strong&gt;통합의 빈도가 릴리스의 빈도와 맞물려 있다.&lt;/strong&gt; 즉, 소프트웨어의 &lt;strong&gt;주요 버전이 릴리스되는 주기&lt;/strong&gt;에 따라 통합이 이루어지며, 이 주기는 보통 &lt;strong&gt;몇 달, 혹은 몇 년 단위&lt;/strong&gt;로 측정된다. 이러한 팀들은 &lt;strong&gt;긴급한 버그 수정&lt;/strong&gt;에 대해서는 별도의 프로세스를 사용하여, 정규 통합 일정과는 &lt;strong&gt;별도로 개별 릴리스&lt;/strong&gt;를 하기도 한다.&lt;/p&gt;
 &lt;p&gt;오늘날 가장 널리 쓰이는 통합 방식 중 하나는 **기능 브랜치(Feature Branches)**를 사용하는 것이다. 이 스타일에서는 기능들이 &lt;strong&gt;개인이나 소규모 팀에 할당&lt;/strong&gt;되며, 이 점은 이전의 유닛 기반 방식과 유사하다. 하지만 모든 유닛이 끝날 때까지 기다렸다가 통합하는 대신, &lt;strong&gt;기능이 완성되면 바로 메인라인에 통합&lt;/strong&gt;한다. 어떤 팀들은 &lt;strong&gt;각 기능이 통합될 때마다 프로덕션에 배포&lt;/strong&gt;하고, 다른 팀들은 &lt;strong&gt;여러 기능을 모아서 한 번에 배포&lt;/strong&gt;하기도 한다.&lt;/p&gt;
 &lt;p&gt;기능 브랜치를 사용하는 팀들은 일반적으로 &lt;strong&gt;모든 개발자가 정기적으로 메인라인을 pull&lt;/strong&gt;해 오기를 기대하지만, 이는 **세미-통합(semi-integration)**에 불과하다. 예를 들어, 내가 레베카와 각각 다른 기능을 작업하고 있다고 하자. 우리는 둘 다 매일 메인라인을 pull하고 있을지라도, &lt;strong&gt;서로의 변경 사항은 직접 보지 못한다.&lt;/strong&gt; 그러다 둘 중 하나가 기능을 완성하고 메인라인에 푸시하면, &lt;strong&gt;다른 사람은 다음 pull 시점에서야 그 코드를 보게 된다.&lt;/strong&gt; 그리고 자신의 기능 브랜치에 &lt;strong&gt;그 변경을 통합하는 작업&lt;/strong&gt;을 해야 한다.&lt;/p&gt;
 &lt;p&gt;즉, &lt;strong&gt;기능 하나가 메인라인에 푸시될 때마다&lt;/strong&gt;, 다른 모든 개발자는 자신의 브랜치에 그 변경 사항을 반영해야 하고, &lt;strong&gt;그 자체가 또 하나의 통합 작업이 되는&lt;/strong&gt; 셈이다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;img/fb_style.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./img/fb_style.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;이 방식은 **세미-통합(semi-integration)**에 불과하다. 그 이유는, &lt;strong&gt;각 개발자가 메인라인의 변경을 자신의 로컬 브랜치에 통합할 뿐&lt;/strong&gt;, &lt;strong&gt;자신의 변경 사항은 아직 메인라인에 반영되지 않았기 때문&lt;/strong&gt;이다. &lt;strong&gt;누군가가 자신의 변경을 메인라인에 푸시해야만&lt;/strong&gt;, 비로소 또 다른 세미-통합이 시작된다. 그러니까, 내가 레베카와 함께 작업하면서 우리 둘 다 &lt;strong&gt;메인라인에서 같은 변경 사항을 pull&lt;/strong&gt;해 왔다고 해도, &lt;strong&gt;그건 메인라인과 통합한 것이지, 서로의 브랜치와 통합한 건 아니다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;**지속적 통합(Continuous Integration)**에서는, &lt;strong&gt;우리 모두가 매일 메인라인에 자신의 변경을 푸시&lt;/strong&gt;하고, &lt;strong&gt;다른 사람들의 변경을 pull하여 자신의 작업에 반영&lt;/strong&gt;한다. 이 방식은 &lt;strong&gt;통합 작업이 더 자주 발생&lt;/strong&gt;하게 만들지만, &lt;strong&gt;각 통합 작업은 훨씬 더 작고 단순하다.&lt;/strong&gt; &lt;strong&gt;몇 시간 동안 작업한 코드를 병합하는 일은&lt;/strong&gt;, &lt;strong&gt;며칠 동안 작업한 코드를 병합하는 일보다 훨씬 수월하다.&lt;/strong&gt; 이것이 바로 지속적 통합이 가진 &lt;strong&gt;작고 잦은 통합의 힘&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./img/ci_style.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;지속적 통합(Continuous Integration)의 이점&lt;/h2&gt;
 &lt;p&gt;통합 방식 세 가지의 상대적 장단점을 논의할 때, 대부분의 논의는 사실상 &apos;통합의 빈도(frequency)&apos;에 관한 것이다. 사전 릴리스 통합(Pre-Release Integration)과 기능 브랜칭(Feature Branching) 모두 서로 다른 빈도로 운영될 수 있으며, 통합 방식 자체를 바꾸지 않고도 통합 빈도를 조절하는 것이 가능하다. 예를 들어 사전 릴리스 통합을 사용할 경우, 월별 릴리스와 연간 릴리스는 큰 차이가 있다. 기능 브랜칭은 일반적으로 더 높은 빈도로 동작하는데, 이는 각 기능이 완료되면 메인라인에 개별적으로 통합되기 때문이다. 반면, 유닛들을 묶어서 한 번에 통합하는 사전 릴리스와는 다르다. 만약 한 팀이 기능 브랜칭을 사용하면서, 모든 기능이 하루 이내에 개발 가능한 크기라면, 그 팀은 사실상 지속적 통합을 수행하고 있는 셈이다. 그러나 지속적 통합은 처음부터 &apos;고빈도 통합&apos;이라는 개념으로 정의되며, 기능 완료나 릴리스 빈도에 얽매이지 않고 통합 자체의 빈도를 하나의 목표로 삼는다.&lt;/p&gt;

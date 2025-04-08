@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Apr 2025 16:45:54 GMT</lastBuildDate><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[웹 소켓 구현은 꽤나 챌린지가 필요한 부분이다. 구현하고 나서도 오래되면 까먹기도 하고, 헷갈리기 쉽다. 그래서 서버사이드의 WebSocket 구현을 정리해봤다. WebSocket WebSocket은 내부적으로 TCP…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Apr 2025 17:50:12 GMT</lastBuildDate><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[웹 소켓 구현은 꽤나 챌린지가 필요한 부분이다. 구현하고 나서도 오래되면 까먹기도 하고, 헷갈리기 쉽다. 그래서 서버사이드의 WebSocket 구현을 정리해봤다. WebSocket WebSocket은 내부적으로 TCP…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -108,16 +108,13 @@
 &lt;td&gt;터미널&lt;/td&gt;
 &lt;td&gt;stdin, stdout, stderr&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TCP하면 HTTP를 빼놓을 수 없다.&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;TCP하면 HTTP를 빼놓을 수 없다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;HTTP&lt;/strong&gt;: 기본적으로 Stateless(무상태) 프로토콜&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;HTTP로 제공되는 서비스는 클라이언트 상태에 대해 연속성을 요구하기도 한다. 이런 구현을 세션이라고 한다.&lt;/p&gt;
+&lt;p&gt;HTTP로 제공되는 서비스는 클라이언트 상태에 대해 연속성을 요구하기도 한다. 그것을 세션이라고 한다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;세션&lt;/strong&gt;(Session): 클라이언트와 서버 간의 상태를 유지하기 위한 서버 측 저장 공간&lt;/li&gt;
 &lt;/ul&gt;

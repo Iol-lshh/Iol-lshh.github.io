@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Apr 2025 15:10:26 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Apr 2025 16:36:55 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -140,6 +140,7 @@
 &lt;p&gt;비즈니스 트랜잭션은 최종적 일관성을 가져야하는데, 이것은 동기로도 비동기로도 구현될 수 있다. 다만, 일관성을 위해서는 &lt;strong&gt;흐름의 동기화&lt;/strong&gt;(Synchronization)도 같이 생각해야한다.&lt;/p&gt;
 &lt;p&gt;동기/비동기와 블로킹/논블로킹이 &lt;strong&gt;흐름의 구조&lt;/strong&gt; 패턴이라면, 동기화는 &lt;strong&gt;일관성을 위한 흐름 제어&lt;/strong&gt;를 목적으로 한다. 먼저 동기화에 대해 알아보자.&lt;/p&gt;
 &lt;h2&gt;동기화(Synchronization)&lt;/h2&gt;
+&lt;p&gt;동기화는 동시성 시스템에서의 타이밍 조율이다.&lt;/p&gt;
 &lt;p&gt;위키백과에서는 동기화에 대해 이렇게 설명한다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt; 동기화(Synchronization)란 &lt;strong&gt;시스템이 조화를 이루어 작동하도록 이벤트를 조율하는 것&lt;/strong&gt;을 말합니다. 예를 들어, 오케스트라의 지휘자(conductor)는 오케스트라가 동기화(synchronized)되거나 &lt;strong&gt;일정한 시간(in time)에 맞춰 연주하도록 조율&lt;/strong&gt;합니다. 모든 부분이 동시에 작동하는 시스템은 동기적(synchronous) 또는 &quot;동기화된(in sync)&quot; 상태라고 하며, 그렇지 않은 경우를 &lt;a href=&quot;https://en.wikipedia.org/wiki/Asynchronous_system&quot; title=&quot;비동기 시스템&quot;&gt;비동기&lt;/a&gt;적(asynchronous)이라고 합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization&quot;&gt;동기화&lt;/a&gt;&lt;/p&gt;
@@ -148,8 +149,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;동기화는 합의에 도달하거나 특정 일련의 동작을 수행하기 위해 여러 프로세스(multiple process)가 특정 지점에서 결합(join up)하거나 핸드셰이크(handsake) 하도록 조정(coordinating)하는 작업입니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization_(computer_science)&quot;&gt;동기화(컴퓨터 과학)&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;동기화란 &lt;strong&gt;동시성(Concurrency) 시스템&lt;/strong&gt;에서 여러 실행 단위(프로세스/스레드)가 &lt;strong&gt;의도한 올바른 순서로 작업을 수행&lt;/strong&gt;하게 만드는 기술이다. 즉, &lt;strong&gt;타이밍 조율&lt;/strong&gt;이 핵심이다.&lt;/p&gt;
-&lt;p&gt;동기화란, &lt;strong&gt;동시성 시스템에서 타이밍을 조절하는 기술&lt;/strong&gt; 이라고 정의할 수 있다.&lt;/p&gt;
+&lt;p&gt;동기화란 &lt;strong&gt;동시성(Concurrency) 시스템&lt;/strong&gt;에서 여러 실행 단위(프로세스/스레드)가 &lt;strong&gt;의도한 올바른 순서로 작업을 수행&lt;/strong&gt;하게 만드는 기술이다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;“&lt;strong&gt;이 루틴 끝날 때까지 기다릴까?&lt;/strong&gt;” → 동기/비동기&lt;/li&gt;
 &lt;li&gt;“&lt;strong&gt;여러 작업이 한 자원에 접근하는데, 누가 먼저?&lt;/strong&gt;” → 동기화&lt;/li&gt;
@@ -188,31 +188,22 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2&gt;비즈니스 트랜잭션&lt;/h2&gt;
-&lt;p&gt;동기/비동기, 블락/논블락에 대해서 알아봤고, 동기화에 대해서 알아봤다. 이제 이 모든 것들을 합쳐서 비즈니스 트랜잭션을 이해할 때가 왔다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;은 사용자 요청을 받아 여러 단계를 거쳐 처리되는 논리적 트랜잭션이라고 했다. 만약 시스템이 여러 데이터베이스를 사용하고 있다면 어떻게 해야할까? 혹은 분산된 마이크로서비스로 잘게 쪼개져 있다면 어떻게 처리해야할까?&lt;/p&gt;
-&lt;p&gt;단순 쿼리 처리만 필요한 경우에는 일반적으로 &lt;strong&gt;비동기 + 논블로킹 방식이 높은 효율을 보일 것이다.&lt;/strong&gt; 하지만 비즈니스 로직을 수행해야 한다면? 비즈니스 로직의 일관성을 보장하기 위해서는, 흐름 상 ‘동기 + 블로킹’처럼 동작하는 구조가 필요하다. 실제 구현은 &lt;strong&gt;비동기 + 논블로킹&lt;/strong&gt;으로 처리하더라도, &lt;strong&gt;로직의 순서와 타이밍은 동기적인 제어가 되어야 한다.&lt;/strong&gt; (이 글은 Saga 패턴이나 보상 트랜잭션같은 분산 트랜잭션 패턴보다, 일관성 확보라는 관점에 집중한다.)&lt;/p&gt;
-&lt;p&gt;하지만 그것이 전체 비즈니스 트랜잭션을, 다수의 서비스에 걸쳐 시스템 트랜잭션을 수행하라는 말이 아니다. 타이밍 제어에 대한 전략적인 설계를 위해서는 &lt;strong&gt;분산 락&lt;/strong&gt;이 필요하다.&lt;/p&gt;
-&lt;h4&gt;분산 락&lt;/h4&gt;
-&lt;p&gt;분산 락이란, 분산 시스템에서 공유하는 자원을 이용해 Lock을 구현한 것을 의미한다. 하지만 이 분산 락을 어떻게 이용해서 비즈니스 트랜잭션을 동기화 할 수 있을까? &lt;a href=&quot;https://iol-lshh.github.io/db/Isolation%EA%B3%BC_Lock_%EC%A0%95%EB%A6%AC/&quot;&gt;MSSQL에는 Update Lock&lt;/a&gt;이란 것이 있다. 이 아이디어는 꽤나 쓸만하다.&lt;/p&gt;
-&lt;p&gt;먼저 MSSQL에서 사용하는 Lock을 알아보자.&lt;/p&gt;
+&lt;p&gt;동기/비동기, 블로킹/논블로킹, 동기화 개념까지 살펴봤다면, 이제 이 개념들이 실제 시스템에서 어떻게 조합되는지를 이해해야 한다. 그 핵심이 바로 &lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;은 사용자 요청을 받아 여러 단계를 거쳐 처리되는 &lt;strong&gt;논리적 트랜잭션 흐름&lt;/strong&gt;을 의미한다. 하나의 요청이 여러 마이크로서비스, 데이터베이스, 외부 시스템을 통과할 수 있으며, 이 복잡한 흐름 속에서도 &lt;strong&gt;사용자 관점에서 ‘동기 + 블로킹’처럼 느껴지는 예측 가능한 흐름&lt;/strong&gt;이 필요하다. 실제 구현은 대부분 &lt;strong&gt;비동기 + 논블로킹&lt;/strong&gt;으로 처리 되더라도, 다음 목표를 달성해야 한다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;배타 락&lt;/strong&gt;(Exclusive Lock): 배타 락이 획득 되었다면 어떤 다른 락도 획득 불가하다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;공유 락&lt;/strong&gt;(Shared Lock): 배타 락일 때 빼고 획득 가능하다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;업데이트 락&lt;/strong&gt;(Update Lock): 업데이트 락과 배타 락이 획득되어 있다면, 획득 불가능하다.&lt;/li&gt;
+&lt;li&gt;결과는 정해진 순서대로 도달해야 한다.&lt;/li&gt;
+&lt;li&gt;결과는 중복되지 않아야 한다.&lt;/li&gt;
+&lt;li&gt;결과를 되돌릴 수 있어야한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이렇게 단계적인 락은 쿼리에 레벨을 둘 수 있게 한다. 그렇다면 각 락이 사용되는 시점은 다음과 같을 것이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;배타 락&lt;/strong&gt;: 쓰기 시점에 사용한다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;업데이트 락&lt;/strong&gt;: 비즈니스 로직을 수행하는 시점에 사용한다. (비즈니스 로직 내부의 쿼리는 비즈니스 로직에 해당한다고 본다.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;공유 락&lt;/strong&gt;: 일관성이 중요한 쿼리에 사용한다.&lt;/li&gt;
-&lt;li&gt;락이 없음: 최종적 일관성만 중요한 쿼리에 사용한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;동기적 기법들과 분산 락 아이디어를 이용한다면, 비동기 + 논블로킹 방식을 이용한 비즈니스 트랜잭션에서 동기/비동기 * 블로킹/논블로킹 방식들을 모두 구현할 수 있다. (이것은 운영체제 내부에서 동기적 아이디어를 이용해서 동기/비동기와 블로킹/논블로킹을 구현한 것과 같은 맥락일 것이다.)&lt;/p&gt;
+&lt;p&gt;시스템 트랜잭션 수준에서는 단순히 락으로 구현되지만, &lt;strong&gt;마이크로서비스에서는 이러한 기술들이 잘 작동하지 않는다.&lt;/strong&gt; 그래서 이 동기화의 개념은, &lt;strong&gt;유스케이스 로직 수준으로 올라가야 한다.&lt;/strong&gt; 이를 단순히 동기로 처리할 수도 있으나, 직접 세가지 목표를 구현하는 것은 서비스가 복잡해질 수록 난이도가 올라가고, 성능도 떨어질 수 있다.&lt;/p&gt;
+&lt;p&gt;여기서 등장하는 것이 &lt;strong&gt;사가&lt;/strong&gt;(Saga)다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;사가 (Saga)&lt;/h2&gt;
+&lt;p&gt;사가(Saga)는 동기화 개념을 비즈니스 트랜잭션에서 비동기 메시지 방식으로 실현하는 방식이다. &lt;strong&gt;트랜잭션을 작은 단위의 지역 트랜잭션으로 분리하고&lt;/strong&gt;, 각 단계의 성공/실패 여부에 따라 &lt;strong&gt;다음 단계를 진행하거나 보상 처리&lt;/strong&gt;하는 &lt;strong&gt;비동기적이면서도 일관성 있는 트랜잭션 설계 방식&lt;/strong&gt;이다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;은 사용자 요청을 받아 여러 단계를 거쳐 처리되는 논리적 트랜잭션이다. 시스템 트랜잭션처럼 단일 DB 안에서 끝나지 않고, 여러 서브 시스템, 메시지 큐, 외부 API, 데이터 저장 등을 포함하는 &lt;strong&gt;복잡하고 긴 처리 흐름&lt;/strong&gt;을 가질 수 있다.&lt;/p&gt;
-&lt;p&gt;이런 비즈니스 트랜잭션의 흐름에서는 &lt;strong&gt;동기/비동기&lt;/strong&gt;, &lt;strong&gt;블로킹/논블로킹&lt;/strong&gt; 구조를 상황에 맞게 조합하고,&lt;br&gt;
-각 단계 간의 적절한 &lt;strong&gt;동기화&lt;/strong&gt;(synchronization) 설계로 &lt;strong&gt;신뢰성과 성능을 동시에 확보&lt;/strong&gt;해야 한다.&lt;/p&gt;
-&lt;p&gt;특히, 사용자 관점에서 이 모든 흐름은 &lt;strong&gt;순차적이며 동기적인&lt;/strong&gt; 인터페이스로 느껴져야 한다. 바로 이것이 &lt;strong&gt;최종적 일관성(eventual consistency)을 달성하는 핵심 전략&lt;/strong&gt;이며, 비즈니스 트랜잭션의 본질이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;이런 비즈니스 트랜잭션의 흐름에서는 &lt;strong&gt;동기/비동기&lt;/strong&gt;, &lt;strong&gt;블로킹/논블로킹&lt;/strong&gt; 구조를 상황에 맞게 조합하고, 각 단계 간의 적절한 &lt;strong&gt;동기화&lt;/strong&gt;(synchronization) 설계로 &lt;strong&gt;신뢰성과 성능을 동시에 확보&lt;/strong&gt;해야 한다. 이 때 서비스간 로직이 심화된다면, 사가의 도입을 고려해 볼 만 하다.&lt;/p&gt;
+&lt;p&gt;중요한 것은 &lt;strong&gt;사용자 관점에서 모든 흐름이 순차적이며 동기적인 인터페이스&lt;/strong&gt;로 느껴져야 한다. 바로 이것이 &lt;strong&gt;최종적 일관성(eventual consistency)을 달성하는 핵심 전략&lt;/strong&gt;이며, 비즈니스 트랜잭션의 본질이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

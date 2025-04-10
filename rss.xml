@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Apr 2025 13:37:33 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Apr 2025 15:02:39 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -121,7 +121,7 @@
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;동기&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;대기할 것 다 기다려가며, &lt;strong&gt;순차적으로 실행&lt;/strong&gt;한다.&lt;/td&gt;
-&lt;td&gt;대기는 결과 처리가 없으면 없다고 바로 반환, 결과에 대한 데이터가 필요하기 때문에, 결과를 받을때까지 &lt;strong&gt;반복해서 요청&lt;/strong&gt;(polling)한다.&lt;/td&gt;
+&lt;td&gt;논블로킹의 대기는 결과 처리가 없으면 없다고 바로 반환하는데, 결과가 필요하므로, 결과를 받을때까지 &lt;strong&gt;반복해서 요청&lt;/strong&gt;(polling)하는 경우다.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;비동기&lt;/strong&gt;&lt;/td&gt;

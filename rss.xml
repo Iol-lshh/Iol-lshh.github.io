@@ -1,4 +1,218 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Apr 2025 02:37:44 GMT</lastBuildDate><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[웹 소켓 구현은 꽤나 챌린지가 필요한 부분이다. 구현하고 나서도 오래되면 까먹기도 하고, 헷갈리기 쉽다. 그래서 서버의 WebSocket 기능에 대해 정리해봤다. WebSocket WebSocket은 내부적으로 TCP…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Apr 2025 13:37:33 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/437a1/header.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACy0lEQVR42j1SS08aURSeRRdNU1sF8QGjMMjAoEwrWnCGcR4OA1JFkMcAMzjKQ1S02IBa4/tVH2lCUtPa2JiYbrrQTXd1002Tpv+h/6bHapp8uTnn5nznfN+9B8E4xUTLRiqJ+mQIbuGTO5iUhc3gUp4IlWz+KbNPhtRIpzoGFYxXIAaY2QyC+lKCWuWVau/oNBWfd4dn3OESIWnA6eIzhh4BFyHOoXTC3j/U7mKN3piVz1o4FeNUpM0bV14fbNYvl47Oy1vvl48/1w7P4+XtNipl4ZT2vlD3yAwZrzn92d8Xb68Oa/hgwsypVl7F+CxiopJidkl+tZdY2B0trkVntxLzu9rySaS0EZ7ZwQMFOyBYhOqbT4d/vp13CaqZVSCF1ghKy4xcSVUOKnsf4uUdbelYrR6Nz20nF/ZG8qudYB4U8oqhb2wglDmpf9QRbHv/CGgG24iRSkja8uq7CxBMSJPPI+Wl06vsxlmrJ6bvj0IFvCgM0Tk5MEwKsae2gSacRqn47eROJt0dzHnGy3CidNKfW69f/zz5+sNEsl4xahWyKJM2eqM6O92IU0+sniYH02SnW3uDoAjpYNLwwkNqVVCqbKoSnt3Zv/xeO71W5eTN2T46mLEJahs5ZCD9eicL/EY7rXdyBlK0sODZJ1Ox+bHSRij3hk0twp9R8mJPcDKnFSbyZaeo/vpSfykXDJ54uztocN12ae4RTN4Ixqu35IFYOTqzMVpY6w2XXKFiMxl4jL14iFEPMJ+DTaxUFl2S1sFksLvdGEx3+XPAvF8ST3RubHotOLkSm92MlNZbSbERp/WET++gG6yeR4S/k4XFygKAYB8uucZrYBi6IBg/4ZDy3cNFIpAnggW7NKnv5nQEo3MwoNDYP2pmkl1DmvUfMEHDA0WAVZyCGGkhRXDS3PMfwhOsr8HibjC7G20DLc8kKLiD4Q5g23V/8xfUitYyKAZeGgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/dc87c/header.avif 158w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/383b4/header.avif 315w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/d0061/header.avif 630w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/20e2c/header.avif 945w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/9eba6/header.avif 1260w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/c68af/header.avif 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/5787a/header.webp 158w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/89f54/header.webp 315w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/4d353/header.webp 630w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/0f41d/header.webp 945w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/f27a3/header.webp 1260w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/a8642/header.webp 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/dda05/header.png 158w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/679a3/header.png 315w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/50637/header.png 630w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/fddb0/header.png 945w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/f46b1/header.png 1260w,
+/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/437a1/header.png 1536w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/4cb500d6424ae9e7ac3e6eb3f1c40a01/50637/header.png&quot;
+            alt=&quot;header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 &lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/EAA/EAA_%EC%A0%95%EB%A6%AC/&quot;&gt;POEAA&lt;/a&gt;는 이 둘을 다음으로 설명한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;시스템 트랜잭션: 애플리케이션에서 데이터베이스로 수행&lt;/li&gt;
+&lt;li&gt;비즈니스 트랜잭션: 사용자에게서 애플리케이션으로 수행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;시스템 트랜잭션은 트랜잭션하면 바로 떠오르는 그거다. 동기적으로 ACID로 처리되어야 하는 것. 비즈니스 트랜잭션은 조금 다르다. &lt;strong&gt;최종적 일관성&lt;/strong&gt;을 갖고 비동기적으로 처리될 수도 있다. 중요한 것은 &lt;strong&gt;사용자로부터 요청을 받아 애플리케이션이 비즈니스 로직을 수행&lt;/strong&gt;한다는 것이다.&lt;/p&gt;
+&lt;p&gt;비즈니스 트랜잭션을 설명하기 위해 다음 내용들을 정리할 것이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;동기(Synchronous)와 비동기(Asynchronous)&lt;/li&gt;
+&lt;li&gt;블로킹(Blocking)과 논블로킹(Non-Blocking)&lt;/li&gt;
+&lt;li&gt;동기화(Synchronization)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;동기(Synchronous) vs 비동기(Asynchronous)&lt;/h2&gt;
+&lt;p&gt;애플리케이션 단에서 동기와 비동기를 각각 한문장으로 정리하면 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;동기&lt;/strong&gt;(Synchronous): 요청하면 처리하고 알려줌.
+&lt;ul&gt;
+&lt;li&gt;요청 → 처리 → 결과가 확정되기 전까지 다음 단계 X&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;비동기&lt;/strong&gt;(Asynchronous): 요청하면 처리하겠다고 알려주고, 처리함.
+&lt;ul&gt;
+&lt;li&gt;요청 → 바로 응답 → 실제 처리와 결과 확정은 나중에&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;뭔가 이렇게 봤을때 동기와 비동기에 대해 이렇게 정의해 볼 수 있을 것 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;동기&lt;/strong&gt;는 로직의 &lt;strong&gt;흐름 자체가 차례로 이어지는 구조&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;비동기&lt;/strong&gt;는 로직의 &lt;strong&gt;흐름을 기다리지 않고 갈라지는 구조&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;동기는 ‘흐름의 질서’이고, 비동기는 ‘흐름의 독립’이다.&lt;/strong&gt; (데이터 일관성에서의 독립이 아니다!)&lt;/p&gt;
+&lt;p&gt;또한 동기와 비동기는 블로킹/논블로킹과 같이 이야기 되어야 한다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;블로킹(Blocking) vs 논블로킹(Non-Blocking)&lt;/h2&gt;
+&lt;p&gt;먼저 동기/비동기와 블로킹/논블로킹을 간단히 비교하면 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;동기/비동기&lt;/strong&gt;는 호출에 대해 &lt;strong&gt;응답하는 방식&lt;/strong&gt;이다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;블로킹/논블로킹&lt;/strong&gt;은 루틴의 처리에서 &lt;strong&gt;대기 상황에 대한 대응 방식&lt;/strong&gt;이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;대기&lt;/strong&gt;란 &lt;strong&gt;결과를 기다리는 동안 아무것도 못하고 멈추는 상태&lt;/strong&gt;를 의미한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I/O 대기. 데이터 올 때까지 멈춤 (디스크 읽기, 네트워크 응답, 파일 쓰기 등)&lt;/li&gt;
+&lt;li&gt;다른 쓰레드가 끝날 때까지 대기 (&lt;code class=&quot;language-text&quot;&gt;Thread.join()&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;락 획득, 다른 작업 단위가 잡고 있으면 대기&lt;/li&gt;
+&lt;li&gt;조건 만족될 때까지 대기 (&lt;code class=&quot;language-text&quot;&gt;sleep(5)&lt;/code&gt; 호출)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I/O건 CPU건, 쓰레드건 상관없다. 중요한건 그것을 대기 상태라고 정의했는가 이다. 그리고 이런 대기 방식에 대해 블로킹/논블로킹이 적용된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;블로킹&lt;/strong&gt;(Blocking): 루틴이 끝나서 결과 나올 때까지 기다린다. 그동안 다른 일을 하지 않는다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;논블로킹&lt;/strong&gt;(Non-Blocking): 루틴이 대기를 만나는 시점에 바로 반환한다. 결과가 없으면 “아직 없어!” 하고 끝난다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;동기/비동기와 블로킹/논블로킹을 조합해보면 다음과 같다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;블로킹&lt;/th&gt;
+&lt;th&gt;논블로킹&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;동기&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;대기할 것 다 기다려가며, &lt;strong&gt;순차적으로 실행&lt;/strong&gt;한다.&lt;/td&gt;
+&lt;td&gt;대기는 결과 처리가 없으면 없다고 바로 반환, 결과에 대한 데이터가 필요하기 때문에, 결과를 받을때까지 &lt;strong&gt;반복해서 요청&lt;/strong&gt;(polling)한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;비동기&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;작업은 독립적으로 처리한다. 결과가 필요한 시점(async - await)이 생기면 기다린다.&lt;/td&gt;
+&lt;td&gt;요청 접수 응답을 받고, 작업은 독립적으로 처리한다. 결과는 &lt;strong&gt;콜백, 이벤트 등으로 나중에 전달&lt;/strong&gt; 받는다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;비동기가 조금 헷갈리는데, JavaScript async-await을 떠올려보면 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;async의 전체 흐름은 비동기다. (비동기 + 논블로킹)&lt;/li&gt;
+&lt;li&gt;하지만 await 관점에서는 &lt;strong&gt;일시적으로 동기처럼 멈추는 구간&lt;/strong&gt;이다. (비동기 + 블로킹)&lt;/li&gt;
+&lt;li&gt;async - await은 &quot;&lt;strong&gt;대기를 만나면, 나는 이 친구 기다려서 독립적으로 실행할꺼야! 알아서 할일들 해&lt;/strong&gt;&quot; 하는 선언이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;비즈니스 트랜잭션은 최종적 일관성을 가져야하는데, 이것은 동기로도 비동기로도 구현될 수 있다. 다만, 일관성을 위해서는 &lt;strong&gt;흐름의 동기화&lt;/strong&gt;(Synchronization)도 같이 생각해야한다.&lt;/p&gt;
+&lt;p&gt;동기/비동기와 블로킹/논블로킹이 &lt;strong&gt;흐름의 구조&lt;/strong&gt; 패턴이라면, 동기화는 &lt;strong&gt;일관성을 위한 흐름 제어&lt;/strong&gt;를 목적으로 한다. 먼저 동기화에 대해 알아보자.&lt;/p&gt;
+&lt;h2&gt;동기화(Synchronization)&lt;/h2&gt;
+&lt;p&gt;위키백과에서는 동기화에 대해 이렇게 설명한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; 동기화(Synchronization)란 &lt;strong&gt;시스템이 조화를 이루어 작동하도록 이벤트를 조율하는 것&lt;/strong&gt;을 말합니다. 예를 들어, 오케스트라의 지휘자(conductor)는 오케스트라가 동기화(synchronized)되거나 &lt;strong&gt;일정한 시간(in time)에 맞춰 연주하도록 조율&lt;/strong&gt;합니다. 모든 부분이 동시에 작동하는 시스템은 동기적(synchronous) 또는 &quot;동기화된(in sync)&quot; 상태라고 하며, 그렇지 않은 경우를 &lt;a href=&quot;https://en.wikipedia.org/wiki/Asynchronous_system&quot; title=&quot;비동기 시스템&quot;&gt;비동기&lt;/a&gt;적(asynchronous)이라고 합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization&quot;&gt;동기화&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;컴퓨터 과학 관점에서 조금더 세부적으로 정의를 찾아보면 다음과 같다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;동기화는 합의에 도달하거나 특정 일련의 동작을 수행하기 위해 여러 프로세스(multiple process)가 특정 지점에서 결합(join up)하거나 핸드셰이크(handsake) 하도록 조정(coordinating)하는 작업입니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization_(computer_science)&quot;&gt;동기화(컴퓨터 과학)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;동기화란 &lt;strong&gt;동시성(Concurrency) 시스템&lt;/strong&gt;에서 여러 실행 단위(프로세스/스레드)가 &lt;strong&gt;의도한 올바른 순서로 작업을 수행&lt;/strong&gt;하게 만드는 기술이다. 즉, &lt;strong&gt;타이밍 조율&lt;/strong&gt;이 핵심이다.&lt;/p&gt;
+&lt;p&gt;동기화란, &lt;strong&gt;동시성 시스템에서 타이밍을 조절하는 기술&lt;/strong&gt; 이라고 정의할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;“&lt;strong&gt;이 루틴 끝날 때까지 기다릴까?&lt;/strong&gt;” → 동기/비동기&lt;/li&gt;
+&lt;li&gt;“&lt;strong&gt;여러 작업이 한 자원에 접근하는데, 누가 먼저?&lt;/strong&gt;” → 동기화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그렇다면 동기화는 어디에 필요할까?&lt;/p&gt;
+&lt;h3&gt;동기화가 필요한 곳&lt;/h3&gt;
+&lt;p&gt;동기화는 결국 &lt;strong&gt;동작 시점&lt;/strong&gt;에 대한 이야기다. 실행 순서를 정렬한다거나, 자원 획득을 기다리게 한다거나 하는 것이 목적이다. 크게 분류해보면 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;포크 - 조인 (Forks - Joins)&lt;/li&gt;
+&lt;li&gt;생산자 - 소비자 (Producer - Consumer)&lt;/li&gt;
+&lt;li&gt;배타적 자원 (Exclusive use resources)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Fork%E2%80%93join_model&quot; title=&quot;포크-조인 모델&quot;&gt;포크 - 조인&lt;/a&gt; (Forks - Joins)&lt;/h4&gt;
+&lt;p&gt;로직이 포크(Fork)와 조인(Join)의 형태를 갖춘다면 동기화가 필요하다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;포크&lt;/strong&gt;(Fork): 하나의 작업을 다수의 하위 작업으로 분할하는 것&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;조인&lt;/strong&gt;(Join): 다수의 작업을 하나의 작업으로 합치는 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;작업이 &lt;strong&gt;포크&lt;/strong&gt;된다는 것은 &lt;strong&gt;다수의 하위 작업으로 분할한다는 것&lt;/strong&gt;이다. 모든 하위 작업이 끝날때까지 대기하여, 작업의 결과를 전부 조인하고, 이후 로직을 실행해야 할 것이다. 이때, 포크 이후의 &lt;strong&gt;하위 작업들을 동시에 작업할 수도 있을 것&lt;/strong&gt;인데, 조인 이후의 처리를 위해서는 하위 작업들이 전부 처리될 때까지 &lt;strong&gt;타이밍을 기다려야 할 것&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;h4&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem&quot; title=&quot;생산자-소비자 문제&quot;&gt;생산자 - 소비자:&lt;/a&gt; (Producer - Consumer)&lt;/h4&gt;
+&lt;p&gt;로직이 생산자와 소비자로 분리되어 처리된다면 동기화가 필요하다,.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;생산자&lt;/strong&gt;(Producer): 데이터를 만드는 주체&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;소비자&lt;/strong&gt;(Consumer): 데이터를 소비하는 주체&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;생산자-소비자 관계에서 소비자 프로세스는 필요한 데이터가 생성될 때까지 생산자 프로세스에 종속된다. &lt;strong&gt;두 주체가 동시에 작업할 수도 있을 것&lt;/strong&gt;인데, 생산자가 데이터 생성할 때까지, 소비자는 &lt;strong&gt;타이밍을 기다려야 할 것&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;h4&gt;배타적 자원 (Exclusive use resources)&lt;/h4&gt;
+&lt;p&gt;흔히 동기화에 대해 이야기할 때, 동시성 이슈와 관련된 대표적인 동기화 이슈이다. 여러 실행 단위들이 특정 리소스에 의존하고 &lt;strong&gt;해당 리소스에 접근할 경우&lt;/strong&gt;, 한 시점에 단 하나의 실행 단위 만이 해당 리소스에 접근해야 한다. 이때 &lt;strong&gt;실행 단위들은 동시에 작업할 수도 있을 것&lt;/strong&gt; 인데, 자신의 차례가 올 때까지 &lt;strong&gt;타이밍을 기다려야 할 것&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;p&gt;세 가지 경우를 모두 분석해보았을 때, 각 작업들 자체를 직렬적인 작업으로 수행할 수도 있다. 하지만 운영체제와 시스템에 있어, 동시성을 사용하지 않는다는 것은 매우 비효율적이다. 운영체제는 가상화를 통해 한정적인 CPU를 무한하게 보이도록 설계되었다. 한번에 여러 작업을 동시에 수행하는 것 처럼 보이도록 설계되어, 작업의 효율성을 높였다. 이런 주어진 자원을 사용하지 않을 이유가 없다. &lt;strong&gt;동시성을 사용하되, 동기화를 통해 시스템의 일관성을 달성하는 것이 소프트웨어 엔지니어링의 목표&lt;/strong&gt;일 것이다.&lt;/p&gt;
+&lt;h3&gt;동기화의 구현 기법들&lt;/h3&gt;
+&lt;p&gt;여러 실행 단위가 올바른 순서로 작업을 수행해야 한다. 위 세 가지 경우를 보면 공통점이 있다. 어떤 &lt;strong&gt;임계 영역&lt;/strong&gt;(Critical Section)에 대해서 타이밍을 기다려야한다는 것이다. 이때 Lock 메커니즘을 사용하는데, Lock 메커니즘은 다음과 같이 구현될 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;스핀락&lt;/strong&gt;(Spinlock): 작업이 공유 리소스를 얻기 위해 &lt;strong&gt;짧은 시간 동안 계속 루프를 돌며 플래그를 확인&lt;/strong&gt;하는 방식이다. CPU를 계속 사용하며 대기하므로 플래그가 빠르게 바뀌는 경우에만 효율적이다. 그렇지 않으면 그냥 CPU 낭비한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;배리어&lt;/strong&gt;(Barrier): &lt;strong&gt;여러 작업이 특정 지점에 도달해야 다음 단계로 넘어갈 수 있도록 막는&lt;/strong&gt; 구조다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;세마포어&lt;/strong&gt;(Semaphore): &lt;strong&gt;접근 가능한 개수(count) 만큼만 리소스 접근을 허용&lt;/strong&gt;하고, 초과하면 대기시킨다. 바이너리 세마포어는 1개의 리소스만 허용하므로 뮤텍스와 거의 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;비즈니스 트랜잭션&lt;/h2&gt;
+&lt;p&gt;동기/비동기, 블락/논블락에 대해서 알아봤고, 동기화에 대해서 알아봤다. 이제 이 모든 것들을 합쳐서 비즈니스 트랜잭션을 이해할 때가 왔다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;은 사용자 요청을 받아 여러 단계를 거쳐 처리되는 논리적 트랜잭션이라고 했다. 만약 시스템이 여러 데이터베이스를 사용하고 있다면 어떻게 해야할까? 혹은 분산된 마이크로서비스로 잘게 쪼개져 있다면 어떻게 처리해야할까?&lt;/p&gt;
+&lt;p&gt;단순 쿼리 처리만 필요한 경우에는 일반적으로 &lt;strong&gt;비동기 + 논블로킹 방식이 높은 효율을 보일 것이다.&lt;/strong&gt; 하지만 비즈니스 로직을 수행해야 한다면? 비즈니스 로직의 일관성을 보장하기 위해서는, 흐름 상 ‘동기 + 블로킹’처럼 동작하는 구조가 필요하다. 실제 구현은 &lt;strong&gt;비동기 + 논블로킹&lt;/strong&gt;으로 처리하더라도, &lt;strong&gt;로직의 순서와 타이밍은 동기적인 제어가 되어야 한다.&lt;/strong&gt; (이 글은 Saga 패턴이나 보상 트랜잭션같은 분산 트랜잭션 패턴보다, 일관성 확보라는 관점에 집중한다.)&lt;/p&gt;
+&lt;p&gt;하지만 그것이 전체 비즈니스 트랜잭션을, 다수의 서비스에 걸쳐 시스템 트랜잭션을 수행하라는 말이 아니다. 타이밍 제어에 대한 전략적인 설계를 위해서는 &lt;strong&gt;분산 락&lt;/strong&gt;이 필요하다.&lt;/p&gt;
+&lt;h4&gt;분산 락&lt;/h4&gt;
+&lt;p&gt;분산 락이란, 분산 시스템에서 공유하는 자원을 이용해 Lock을 구현한 것을 의미한다. 하지만 이 분산 락을 어떻게 이용해서 비즈니스 트랜잭션을 동기화 할 수 있을까? &lt;a href=&quot;https://iol-lshh.github.io/db/Isolation%EA%B3%BC_Lock_%EC%A0%95%EB%A6%AC/&quot;&gt;MSSQL에는 Update Lock&lt;/a&gt;이란 것이 있다. 이 아이디어는 꽤나 쓸만하다.&lt;/p&gt;
+&lt;p&gt;먼저 MSSQL에서 사용하는 Lock을 알아보자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;배타 락&lt;/strong&gt;(Exclusive Lock): 배타 락이 획득 되었다면 어떤 다른 락도 획득 불가하다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;공유 락&lt;/strong&gt;(Shared Lock): 배타 락일 때 빼고 획득 가능하다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;업데이트 락&lt;/strong&gt;(Update Lock): 업데이트 락과 배타 락이 획득되어 있다면, 획득 불가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이렇게 단계적인 락은 쿼리에 레벨을 둘 수 있게 한다. 그렇다면 각 락이 사용되는 시점은 다음과 같을 것이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;배타 락&lt;/strong&gt;: 쓰기 시점에 사용한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;업데이트 락&lt;/strong&gt;: 비즈니스 로직을 수행하는 시점에 사용한다. (비즈니스 로직 내부의 쿼리는 비즈니스 로직에 해당한다고 본다.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;공유 락&lt;/strong&gt;: 일관성이 중요한 쿼리에 사용한다.&lt;/li&gt;
+&lt;li&gt;락이 없음: 최종적 일관성만 중요한 쿼리에 사용한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;동기적 기법들과 분산 락 아이디어를 이용한다면, 비동기 + 논블로킹 방식을 이용한 비즈니스 트랜잭션에서 동기/비동기 * 블로킹/논블로킹 방식들을 모두 구현할 수 있다. (이것은 운영체제 내부에서 동기적 아이디어를 이용해서 동기/비동기와 블로킹/논블로킹을 구현한 것과 같은 맥락일 것이다.)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;은 사용자 요청을 받아 여러 단계를 거쳐 처리되는 논리적 트랜잭션이다. 시스템 트랜잭션처럼 단일 DB 안에서 끝나지 않고, 여러 서브 시스템, 메시지 큐, 외부 API, 데이터 저장 등을 포함하는 &lt;strong&gt;복잡하고 긴 처리 흐름&lt;/strong&gt;을 가질 수 있다.&lt;/p&gt;
+&lt;p&gt;이런 비즈니스 트랜잭션의 흐름에서는 &lt;strong&gt;동기/비동기&lt;/strong&gt;, &lt;strong&gt;블로킹/논블로킹&lt;/strong&gt; 구조를 상황에 맞게 조합하고,&lt;br&gt;
+각 단계 간의 적절한 &lt;strong&gt;동기화&lt;/strong&gt;(synchronization) 설계로 &lt;strong&gt;신뢰성과 성능을 동시에 확보&lt;/strong&gt;해야 한다.&lt;/p&gt;
+&lt;p&gt;특히, 사용자 관점에서 이 모든 흐름은 &lt;strong&gt;순차적이며 동기적인&lt;/strong&gt; 인터페이스로 느껴져야 한다. 바로 이것이 &lt;strong&gt;최종적 일관성(eventual consistency)을 달성하는 핵심 전략&lt;/strong&gt;이며, 비즈니스 트랜잭션의 본질이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -55,7 +269,7 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;웹 소켓 구현은 꽤나 챌린지가 필요한 부분이다. 구현하고 나서도 오래되면 까먹기도 하고, 헷갈리기 쉽다. 그래서 서버의 WebSocket 기능에 대해 정리해봤다.&lt;/p&gt;
+&lt;p&gt;웹 소켓 구현은 꽤나 챌린지가 필요한 부분이다. 구현하고 나서도 오래되면 까먹기도 하고, 헷갈리기 쉽다. 그래서 웹 소켓을 구현하기 위해 알아야 할 것들에 대해 정리해보고, 분산 환경에서 웹소켓은 어떻게 구현해야 하는지에 대해 정리했다.&lt;/p&gt;
 &lt;h2&gt;WebSocket&lt;/h2&gt;
 &lt;p&gt;WebSocket은 내부적으로 TCP 소켓을 사용한다. 클라이언트가 WebSocket 연결을 맺으면 &lt;strong&gt;서버는 새로운 소켓 하나를 열고, 이 소켓에 파일디스크립터를 하나 할당한다.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

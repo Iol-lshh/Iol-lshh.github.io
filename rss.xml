@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Apr 2025 00:55:58 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Apr 2025 01:45:22 GMT</lastBuildDate><item><title><![CDATA[Business Transaction 정리]]></title><description><![CDATA[비즈니스 트랜잭션은 시스템 트랜잭션과 다르다. 마틴 파울러의 POEAA…]]></description><link>https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/business_transaction/business_transaction_정리/</guid><pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -222,7 +222,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;사가는 메시지 브로커와 이벤트를 수행하는 구조를 통해 이벤트 드리븐 아키텍처(Event Driven Architecture, EDA)를 구성하고, 이를 통해 비즈니스 트랜잭션에서의 동기화를 구현한다.&lt;/p&gt;
-&lt;p&gt;(이 글에서는 사가를 아주 간략하게 비즈니스 트랜잭션 관점에서 살펴봤다. 조만간 크리스 리처드슨의 MSA 책을 읽고 정리한 글에서 더 자세히 정리할 것이다.)&lt;/p&gt;
+&lt;p&gt;(이 글에서는 사가를 아주 간략하게 비즈니스 트랜잭션 관점에서 살펴봤다. 조만간 크리스 리처드슨의 MSA 저서를 읽고 정리한 글에서 더 자세히 정리할 것이다.)&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;비즈니스 트랜잭션&lt;/strong&gt;은 사용자 요청을 받아 여러 단계를 거쳐 처리되는 논리적 트랜잭션이다. 시스템 트랜잭션처럼 단일 DB 안에서 끝나지 않고, 여러 서브 시스템, 메시지 큐, 외부 API, 데이터 저장 등을 포함하는 &lt;strong&gt;복잡하고 긴 처리 흐름&lt;/strong&gt;을 가질 수 있다.&lt;/p&gt;
 &lt;p&gt;이런 비즈니스 트랜잭션의 흐름에서는 &lt;strong&gt;동기/비동기&lt;/strong&gt;, &lt;strong&gt;블로킹/논블로킹&lt;/strong&gt; 구조를 상황에 맞게 조합하고, 각 단계 간의 적절한 &lt;strong&gt;동기화&lt;/strong&gt;(synchronization) 설계로 &lt;strong&gt;신뢰성과 성능을 동시에 확보&lt;/strong&gt;해야 한다. 이 때 서비스간 로직이 심화된다면, 사가의 도입을 고려해 볼 만 하다.&lt;/p&gt;
@@ -369,8 +369,9 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;p&gt;HTTP 세션과 웹소켓은 비슷하면서도 다르다. 스프링의 &lt;code class=&quot;language-text&quot;&gt;WebSocketSession&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;HttpSession&lt;/code&gt; 두 개의 세부 구현을 통해 비교해보자.&lt;/p&gt;
+&lt;p&gt;HTTP 세션과 웹소켓은 비슷하면서도 다르다. 스프링의 &lt;code class=&quot;language-text&quot;&gt;WebSocketSession&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;HttpSession&lt;/code&gt; 두 개의 세부 구현의 비교를 통해, 웹소켓의 동작 방식에 대해 이해해보자.&lt;/p&gt;
 &lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;WebSocketSession&lt;/code&gt; vs &lt;code class=&quot;language-text&quot;&gt;HttpSession&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;두 가지 모두 상태를 유지한다는 점에서 동일하다. 하지만 실제 동작에는 차이가 있다. HTTP 세션은 상태를 유지할 뿐이다. 웹소켓 세션은 상태를 유지할 뿐만 아니라, 논리적 연결을 유지하기까지 한다.&lt;/p&gt;
 &lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;HttpSession&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;HTTP 요청 기반으로 동작. 요청(request)마다 세션 ID가 쿠키(JSESSIONID 등)를 통해 전달되고, 세션 저장소에서 데이터를 읽고 쓰며, 기본적으로는 서버에 캐시처럼 보관한다.&lt;/p&gt;
 &lt;p&gt;HTTP는 &lt;strong&gt;무상태(stateless)&lt;/strong&gt; 프로토콜이기 때문에 클라이언트와 서버 간의 연결 상태를 유지하지 않는다. 요청이 들어오면 다음과 같이 동작된다.&lt;/p&gt;

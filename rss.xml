@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 11:40:41 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 11:56:14 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -129,9 +129,9 @@
 &lt;p&gt;아키텍처에 따라 구현 방법이 달라지는데,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;x86&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합 ()&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;x86의 &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;은 단일 명령어로 CAS로 동작된다. ARM은 단일 명령어가 없다. 여러 명령어 조합을 통해 CAS를 구현한다.&lt;/p&gt;
+&lt;p&gt;x86의 &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;은 단일 명령어로 CAS로 동작된다. ARM은 단일 명령어가 없다. 여러 명령어 조합을 통해 CAS를 구현한다. (ARMv8-A 부터는 &lt;code class=&quot;language-text&quot;&gt;CAS&lt;/code&gt;가 생기긴 했다.)&lt;/p&gt;
 &lt;h3&gt;2.1. &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;assembly&quot;&gt;&lt;pre class=&quot;language-assembly&quot;&gt;&lt;code class=&quot;language-assembly&quot;&gt;loop:
     LDREX   r1, [addr]     ; addr의 값을 읽고 r1에 저장, exclusive로 마크

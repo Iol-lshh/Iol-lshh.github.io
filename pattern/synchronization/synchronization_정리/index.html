@@ -140,9 +140,9 @@
 <p>아키텍처에 따라 구현 방법이 달라지는데,</p>
 <ul>
 <li><strong>x86</strong>: <code class="language-text">CMPXCHG</code></li>
-<li><strong>ARM</strong>: <code class="language-text">LDREX</code> / <code class="language-text">STREX</code> 조합 ()</li>
+<li><strong>ARM</strong>: <code class="language-text">LDREX</code> / <code class="language-text">STREX</code> 조합</li>
 </ul>
-<p>x86의 <code class="language-text">CMPXCHG</code>은 단일 명령어로 CAS로 동작된다. ARM은 단일 명령어가 없다. 여러 명령어 조합을 통해 CAS를 구현한다.</p>
+<p>x86의 <code class="language-text">CMPXCHG</code>은 단일 명령어로 CAS로 동작된다. ARM은 단일 명령어가 없다. 여러 명령어 조합을 통해 CAS를 구현한다. (ARMv8-A 부터는 <code class="language-text">CAS</code>가 생기긴 했다.)</p>
 <h3>2.1. <code class="language-text">LDREX</code> / <code class="language-text">STREX</code> 조합</h3>
 <div class="gatsby-highlight" data-language="assembly"><pre class="language-assembly"><code class="language-assembly">loop:
     LDREX   r1, [addr]     ; addr의 값을 읽고 r1에 저장, exclusive로 마크

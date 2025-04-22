@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 09:10:19 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(parallesim)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 10:11:03 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallesim)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -55,7 +55,7 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(parallesim)하든 가상화(Virtualization)하든 작업 단위는 동시에 실행되어야 성능의 이점을 누릴 수 있다. 하지만 그냥 동시에 처리하기만 하는 것이 사용자가 원하는 작업을 컴퓨터가 제대로 처리한다는 의미일까? 오케스트라를 생각해보자. 오케스트라는 여러 악기들이 동시에 연주한다. 하지만 지휘자 없이 그저 동시에 연주한다는 것이 음악일까? 동시성을 위해서 동기화가 필요하다. 동기화란 오케스트라의 지휘자와 같다. 동기화가 있어야 비로소 음악이 되고, 사용자가 기대하는데로 동작하는 소프트웨어가 된다.&lt;/p&gt;
+&lt;p&gt;컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallesim)하든 가상화(Virtualization)하든 작업 단위는 동시에 실행되어야 성능의 이점을 누릴 수 있다. 하지만 그냥 동시에 처리하기만 하는 것이 사용자가 원하는 작업을 컴퓨터가 제대로 처리한다는 의미일까? 오케스트라를 생각해보자. 오케스트라는 여러 악기들이 동시에 연주한다. 하지만 지휘자 없이 그저 동시에 연주한다는 것이 음악일까? 동시성을 위해서 동기화가 필요하다. 동기화란 오케스트라의 지휘자와 같다. 동기화가 있어야 비로소 음악이 되고, 사용자가 기대하는데로 동작하는 소프트웨어가 된다.&lt;/p&gt;
 &lt;p&gt;다음을 차례대로 정리해보겠다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;동기화(Synchronization)&lt;/li&gt;
@@ -68,13 +68,13 @@
 &lt;h2&gt;1. 동기화(Synchronization)&lt;/h2&gt;
 &lt;p&gt;동기화는 &lt;strong&gt;동시성(Concurrency) 환경에서의 실행 단위들의 타이밍 조율&lt;/strong&gt;이다.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt; 동기화(Synchronization)란 &lt;strong&gt;시스템이 조화를 이루어 작동하도록 이벤트를 조율하는 것&lt;/strong&gt;을 말합니다. 예를 들어, 오케스트라의 지휘자(conductor)는 오케스트라가 동기화(synchronized)되거나 &lt;strong&gt;일정한 시간(in time)에 맞춰 연주하도록 조율&lt;/strong&gt;합니다. 모든 부분이 동시에 작동하는 시스템은 동기적(synchronous) 또는 &quot;동기화된(in sync)&quot; 상태라고 하며, 그렇지 않은 경우를 &lt;a href=&quot;https://en.wikipedia.org/wiki/Asynchronous_system&quot; title=&quot;비동기 시스템&quot;&gt;비동기&lt;/a&gt;적(asynchronous)이라고 합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization&quot;&gt;동기화&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; 동기화(Synchronization)란 &lt;strong&gt;시스템이 조화를 이루어 작동하도록 이벤트를 조율하는 것&lt;/strong&gt;을 말합니다. 예를 들어, 오케스트라의 지휘자(conductor)는 오케스트라가 동기화(synchronized)되거나 &lt;strong&gt;일정한 시간(in time)에 맞춰 연주하도록 조율&lt;/strong&gt;합니다. 모든 부분이 동기화되어 작동하는 시스템은 동기적(synchronous) 또는 &quot;동기화된(in sync)&quot; 상태라고 하며, 그렇지 않은 경우를 &lt;a href=&quot;https://en.wikipedia.org/wiki/Asynchronous_system&quot; title=&quot;비동기 시스템&quot;&gt;비동기&lt;/a&gt;적(asynchronous)이라고 합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization&quot;&gt;동기화&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;컴퓨터 과학 관점에서 조금더 세부적으로 정의를 찾아보면 다음과 같다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;동기화는 합의에 도달하거나 특정 일련의 동작을 수행하기 위해 &lt;strong&gt;여러 프로세스&lt;/strong&gt;(multiple process)가 특정 지점에서 결합(join up)하거나 핸드셰이크(handsake) 하도록 조정(coordinating)하는 작업입니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization_(computer_science)&quot;&gt;동기화(컴퓨터 과학)&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;다시 말해, 동기화란 &lt;strong&gt;여러 실행 단위&lt;/strong&gt;(프로세스/스레드)가 &lt;strong&gt;의도한 올바른 순서로 작업을 수행&lt;/strong&gt;하게 만드는 기술이다. 그렇다면 동기화는 어디에 필요할까? 먼저 동시성(Concurrency)이 무엇인지 알아야 한다.&lt;/p&gt;
+&lt;p&gt;다시 말해, 동기화란 &lt;strong&gt;여러 실행 단위&lt;/strong&gt;(프로세스/스레드)가 &lt;strong&gt;의도한 올바른 순서로 작업을 수행&lt;/strong&gt;하게 만드는 개념이다. 그렇다면 동기화는 어디에 필요할까? 먼저 동시성(Concurrency)이 무엇인지 알아야 한다.&lt;/p&gt;
 &lt;h3&gt;1.1. 동시성(Concurrency)&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;동시성은 시스템이 동시 실행 또는 시간 공유(time-sharing, 컨텍스트 전환(context switching)), 리소스 공유 및 상호 작용 관리를 통해 &lt;strong&gt;여러 작업을 실행할 수 있는 능력&lt;/strong&gt;을 의미합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Concurrency_(computer_science)&quot;&gt;동시성(컴퓨터 과학)&lt;/a&gt;&lt;/p&gt;

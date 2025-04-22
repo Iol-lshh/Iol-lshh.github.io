@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 11:56:14 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 12:04:58 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -410,6 +410,7 @@
 &lt;li&gt;&lt;strong&gt;블로킹&lt;/strong&gt;(Blocking): 루틴이 끝나서 결과 나올 때까지 기다린다. 그동안 작업 단위는 다른 일을 하지 않는다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;논블로킹&lt;/strong&gt;(Non-Blocking): 루틴이 대기를 만나는 시점에 바로 반환한다. 작업 단위는 반환되어 다른 일을 한다.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;4.3. 조합&lt;/h3&gt;
 &lt;p&gt;동기/비동기와 블로킹/논블로킹을 조합해보면 다음과 같다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;동기(Synchronous) + 블로킹(Blocking)

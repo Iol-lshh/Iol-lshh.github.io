@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 10:11:03 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallesim)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Apr 2025 11:40:41 GMT</lastBuildDate><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -55,7 +55,7 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallesim)하든 가상화(Virtualization)하든 작업 단위는 동시에 실행되어야 성능의 이점을 누릴 수 있다. 하지만 그냥 동시에 처리하기만 하는 것이 사용자가 원하는 작업을 컴퓨터가 제대로 처리한다는 의미일까? 오케스트라를 생각해보자. 오케스트라는 여러 악기들이 동시에 연주한다. 하지만 지휘자 없이 그저 동시에 연주한다는 것이 음악일까? 동시성을 위해서 동기화가 필요하다. 동기화란 오케스트라의 지휘자와 같다. 동기화가 있어야 비로소 음악이 되고, 사용자가 기대하는데로 동작하는 소프트웨어가 된다.&lt;/p&gt;
+&lt;p&gt;컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization)하든 작업 단위는 동시에 실행되는 것으로 보여야 성능의 이점을 누릴 수 있다. 하지만 그냥 동시에 처리하기만 하는 것이 사용자가 원하는 작업을 컴퓨터가 제대로 처리한다는 의미일까? 오케스트라를 생각해보자. 오케스트라는 여러 악기들이 동시에 연주한다. 하지만 지휘자 없이 그저 동시에 연주한다는 것이 음악일까? 동시성을 위해서 동기화가 필요하다. 동기화란 오케스트라의 지휘자와 같다. 동기화가 있어야 비로소 음악이 되고, 사용자가 기대하는데로 동작하는 소프트웨어가 된다.&lt;/p&gt;
 &lt;p&gt;다음을 차례대로 정리해보겠다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;동기화(Synchronization)&lt;/li&gt;
@@ -115,7 +115,7 @@
 &lt;p&gt;세 가지 경우를 모두 분석해보았을 때, 각 작업들 자체를 직렬적인 작업으로 수행할 수도 있다. 하지만 운영체제와 시스템에 있어, 동시성을 사용하지 않는다는 것은 매우 비효율적이다. 운영체제는 가상화를 통해 한정적인 CPU를 무한하게 보이도록 설계되었다. 한번에 여러 작업을 동시에 수행하는 것 처럼 보이도록 설계되어, 작업의 효율성을 높였다. 이런 주어진 자원을 사용하지 않을 이유가 없다. &lt;strong&gt;동시성을 사용하되, 동기화를 통해 시스템의 일관성을 달성하는 것이 소프트웨어 엔지니어링의 목표&lt;/strong&gt;일 것이다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;2. 어셈블리어 레벨의 동기화&lt;/h2&gt;
-&lt;p&gt;어셈블리어 레벨에서 동기화는 원자적 연산으로 구현한다. 이를 CAS라고 한다.&lt;/p&gt;
+&lt;p&gt;어셈블리어 레벨에서 동기화는 &lt;strong&gt;원자적 연산&lt;/strong&gt;(Atomic Operation)으로 구현한다. 이를 CAS라고 한다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;CAS&lt;/strong&gt; (Compare-And-Swap): 데이터 변경 시점에 데이터 비교를 확인하여, 일치하면 교체한다.&lt;/li&gt;
 &lt;/ul&gt;
@@ -129,7 +129,7 @@
 &lt;p&gt;아키텍처에 따라 구현 방법이 달라지는데,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;x86&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합 ()&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;x86의 &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;은 단일 명령어로 CAS로 동작된다. ARM은 단일 명령어가 없다. 여러 명령어 조합을 통해 CAS를 구현한다.&lt;/p&gt;
 &lt;h3&gt;2.1. &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합&lt;/h3&gt;
@@ -152,7 +152,12 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2&gt;3. 단일 시스템 레벨의 동기화&lt;/h2&gt;
-&lt;p&gt;시스템 레벨에서 동기화는 &lt;strong&gt;특정 지점에서 동시 액세스를 방지하는 방식으로 보호&lt;/strong&gt;한다. 이 보호 영역을 &lt;strong&gt;임계 영역&lt;/strong&gt;(Critical Section)이라고 한다. 임계 영역은 한 번에 두 개 이상의 실행 단위(프로세스나 스레드)가 들어갈 수 없으며, 다른 실행 단위는 첫 번째 실행 단위가 임계 영역을 벗어날 때까지 일시 중단한다.&lt;/p&gt;
+&lt;p&gt;시스템 레벨에서의 동기화 또한 실행 단위들이 &lt;strong&gt;특정 지점&lt;/strong&gt;에서 &lt;strong&gt;일관성&lt;/strong&gt; 있는 실행 흐름을 유지하도록 제어하는 것으로 구현된다. 이는 두 가지 방식으로 이루어진다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;작업 단위 간의 실행 시점을 맞춤 (sync point)&lt;/li&gt;
+&lt;li&gt;공유 자원에 대한 접근을 조정 (critical section)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;공유 자원 보호가 필요한 경우, 이 보호 영역을 &lt;strong&gt;임계 영역&lt;/strong&gt;이라고 한다. 임계 영역은 한 번에 두 개 이상의 실행 단위(프로세스나 스레드)가 들어갈 수 없으며, 다른 실행 단위는 선행 실행 단위가 임계 영역을 벗어날 때까지 대기한다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; &quot;
@@ -201,14 +206,14 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이런 임계 영역을 이용해 동기화는 다음과 같은 방법으로 구현된다.&lt;/p&gt;
+&lt;p&gt;이런 동기화 지점은 다음과 같은 방법으로 구현된다.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;스핀락(Spinlock)&lt;/li&gt;
-&lt;li&gt;배리어(Barrier)&lt;/li&gt;
-&lt;li&gt;세마포어(Semaphore)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;스핀락(Spinlock)&lt;/strong&gt; – 임계 영역 보호를 위한 락 기반 메커니즘&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;배리어(Barrier)&lt;/strong&gt; – 실행 단위 간의 타이밍 동기화를 위한 동기화 지점&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;세마포어(Semaphore)&lt;/strong&gt; – 공유 자원 접근 수 제어 또는 동기 조건 조율&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4&gt;3.1. 스핀락(Spinlock)&lt;/h4&gt;
-&lt;p&gt;실행 단위가 임계영역에 접근 가능할 때까지 루프(&quot;스핀&quot;)에서 대기하며 반복적으로 확인한다. 일반적으로 &lt;strong&gt;활성 상태를 유지&lt;/strong&gt;하기 때문에, &lt;strong&gt;일종의 바쁜 대기&lt;/strong&gt;(busy waiting)에 해당한다. 대신, 스핀락은 &lt;strong&gt;운영 체제의 프로세스 재스케줄링이나 컨텍스트 전환으로 인한 오버헤드를 방지&lt;/strong&gt;할 수 있다. 스레드가 짧은 시간 동안만 차단될 때 효율적이다.&lt;/p&gt;
+&lt;p&gt;실행 단위가 락을 획득 가능할 때까지 루프(&quot;스핀&quot;)에서 대기하며 반복적으로 확인한다. 일반적으로 &lt;strong&gt;활성 상태를 유지&lt;/strong&gt;하기 때문에, &lt;strong&gt;일종의 바쁜 대기&lt;/strong&gt;(busy waiting)에 해당한다. 대신, 스핀락은 &lt;strong&gt;운영 체제의 프로세스 재스케줄링이나 컨텍스트 전환으로 인한 오버헤드를 피할 수 있다.&lt;/strong&gt; 스레드가 짧은 시간 동안만 차단될 때 효율적이다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 496px; &quot;
@@ -258,7 +263,7 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;3.2. 배리어(Barrier)&lt;/h4&gt;
-&lt;p&gt;모든 실행 단위들이 이 임계영역에서 중지되며, 모든 실행 단위들이 이 지점에 도달할 때까지 대기시킨다. 이 대기에 대한 플래그를 &lt;strong&gt;래치&lt;/strong&gt;(latch, 걸쇠)라고 하며 상승(raised, 막힘)/하강(lowered, 열림) 두 상태가 있다. Count-down Latch로 자주 쓰이며, 0 값이 되었을 때 래치는 하강 상태가 된다.&lt;/p&gt;
+&lt;p&gt;모든 실행 단위들이 이 동기화 지점에서 중지되며, 모든 실행 단위들이 이 지점에 도달할 때까지 대기시킨다. 예로 &lt;strong&gt;래치&lt;/strong&gt;(latch, 걸쇠)가 있다. &lt;strong&gt;대기에 대한 플래그&lt;/strong&gt;를 래치라고 하며 상승(raised, 막힘)/하강(lowered, 열림) 두 상태가 있다. Count-down Latch로 자주 쓰이며, 0 값이 되었을 때 래치는 하강 상태가 된다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 328px; &quot;
@@ -308,7 +313,7 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;3.3. 세마포어(Semaphore)&lt;/h4&gt;
-&lt;p&gt;임계 영역에 진입 가능한 한도를 정의하고, 진입 가능 여부를 획득되거나 반환한다. 필요한 경우 진입이 가능해질 때까지 기다린다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;자원 접근 가능 개수나 동기 조건을 제어하는 동기화 도구&lt;/strong&gt;로, 진입 가능한 한도를 정의하고, 진입 가능 여부를 획득되거나 반환한다. 필요한 경우 진입이 가능해질 때까지 기다린다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 368px; &quot;

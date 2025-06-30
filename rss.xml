@@ -1,29 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Jun 2025 12:06:47 GMT</lastBuildDate><item><title><![CDATA[레이어드 아키텍처 정리]]></title><description><![CDATA[나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API…]]></description><link>https://iol-lshh.github.io/회고/layered/layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/layered/layered/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API 인터페이스 부분과 같은 &lt;strong&gt;변경이 적은 경계나 외부 환경에 대한 경계&lt;/strong&gt;가 아닌, 동일 하위 도메인 단위 내의 애플리케이션 레이어 유스케이스 단위에서 경계를 굳이 인터페이스와 구현으로 분리할 필요가 있을까? 호출 시그니처가 바뀌거나, 유스케이스 로직이 바뀐다는 것은 곧 새로운 유스케이스가 된다는 의미가 아닐까?&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 30 Jun 2025 12:31:37 GMT</lastBuildDate><item><title><![CDATA[레이어드 아키텍처 정리]]></title><description><![CDATA[나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API…]]></description><link>https://iol-lshh.github.io/회고/layered/layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/layered/layered/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dcbec7e96a71986435bf98a953fb4b95/437a1/header.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACw0lEQVR42iWSWW/aaBSGfdFv9YcJi11sKKsTh8UBY1aDQ1hiCCTBpIRkkiaZlk5KMpMh20jTm6pS1f9dUKVHOjfP0fvq6HBAyoNADvjTQNwBIRPHGzBkArkMlCpQSiBcWSPmwbsaiFlvAhkQzL5ZyzkoGxzODlHChitiFlDKZLsHMwOQ6qB0H+WGSB/RrAPVPZDpw0h17UQqUDHhuxpO2BzWetiY0MoMZQ/gVg9oDi6+Z7UZ2ftI2p9IdYYNFzc/wHT/dwBK2nizs4JudjgcrbGV3byiK680hXmXty6E/c/ByUNo9ow7n/iDO7r357pFboT1EckMyHYfJVpILq6XidqhpZl3fyE4fyHrEtvXuPtZOXsWj/+mB/d8d06qZ6R2ztvXrH7FDJckmiS0gwIaRyMmjpT5zIHQvA64S2F0T5xb/8lSmjyw7twzvGfOLd/+6OkvvL0vQnnG1F0aKWLZQJLOoXCJxWssWfcUTyT3UZo+CaO76IfX1PnSN7gNjP/xu/8Gpi+BwyUrn9HcIUs1cbQqxMo0pHO6YUWztl+zadrxVM5l90k+e5FPH99OHoKjO99w4R8/vD199XXmSOuhSGlj00objaTe8MeK3KHTa7WdcL5Lk02fcSw6t+HpUrtYNhf/TZ7/j58/ho4WrHEpFI692R6KN8J662K8n8zbnmiRE7VGutJNmfu8akdqrti+WbWVZi/W47ejr9+lk6Vn95qvnAbrp1JhQNSWrLdVc49ETSSmORDK44jpSVk0tctv93hjzO/eCO9fxS8//fMfbHBH63/wRdejD2nCQrEaU5tIKSApu742EjNrwiZSW+sH2OrgnUPeuvRPnoKXX4XunOaPyWYbp2ycaKBoFYV2oJSBQQ1uJDi4EV8NFNxGcgErBonXV/msMGblKTOOqNYh0QpR8lgpYCmNfCrypVY+9MagN/4Ll6eKQ3uCDnUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/dcbec7e96a71986435bf98a953fb4b95/dc87c/header.avif 158w,
+/static/dcbec7e96a71986435bf98a953fb4b95/383b4/header.avif 315w,
+/static/dcbec7e96a71986435bf98a953fb4b95/d0061/header.avif 630w,
+/static/dcbec7e96a71986435bf98a953fb4b95/20e2c/header.avif 945w,
+/static/dcbec7e96a71986435bf98a953fb4b95/9eba6/header.avif 1260w,
+/static/dcbec7e96a71986435bf98a953fb4b95/c68af/header.avif 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/dcbec7e96a71986435bf98a953fb4b95/5787a/header.webp 158w,
+/static/dcbec7e96a71986435bf98a953fb4b95/89f54/header.webp 315w,
+/static/dcbec7e96a71986435bf98a953fb4b95/4d353/header.webp 630w,
+/static/dcbec7e96a71986435bf98a953fb4b95/0f41d/header.webp 945w,
+/static/dcbec7e96a71986435bf98a953fb4b95/f27a3/header.webp 1260w,
+/static/dcbec7e96a71986435bf98a953fb4b95/a8642/header.webp 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/dcbec7e96a71986435bf98a953fb4b95/dda05/header.png 158w,
+/static/dcbec7e96a71986435bf98a953fb4b95/679a3/header.png 315w,
+/static/dcbec7e96a71986435bf98a953fb4b95/50637/header.png 630w,
+/static/dcbec7e96a71986435bf98a953fb4b95/fddb0/header.png 945w,
+/static/dcbec7e96a71986435bf98a953fb4b95/f46b1/header.png 1260w,
+/static/dcbec7e96a71986435bf98a953fb4b95/437a1/header.png 1536w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/dcbec7e96a71986435bf98a953fb4b95/50637/header.png&quot;
+            alt=&quot;header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API 인터페이스 부분과 같은 &lt;strong&gt;변경이 적은 경계나 외부 환경에 대한 경계&lt;/strong&gt;가 아닌, 동일 하위 도메인 단위 내의 애플리케이션 레이어 유스케이스 단위에서 경계를 굳이 인터페이스와 구현으로 분리할 필요가 있을까? 호출 시그니처가 바뀌거나, 유스케이스 로직이 바뀐다는 것은 곧 새로운 유스케이스가 된다는 의미가 아닐까?&lt;/p&gt;
 &lt;p&gt;다만 레이어드 아키텍처에 대해서는 중요하게 생각한다. &lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/EAA/EAA_%EC%A0%95%EB%A6%AC/&quot;&gt;POEAA&lt;/a&gt;에서 마틴 파울러는 비즈니스 로직을 구현하는 방식 세 가지를 소개한다. 그 중 두 가지가 바로 &lt;strong&gt;트랜잭션 스크립트&lt;/strong&gt;, &lt;strong&gt;도메인 모델&lt;/strong&gt; 패턴이다. 이 두 가지 방식을 구현하는 방법이 단순 레이어드 아키텍처이든 헥사고날이든, 적절한 레이어드의 구성은 필수인 것은 누구도 부정하기 힘들 것이다.&lt;/p&gt;
 &lt;p&gt;과거 레이어드 아키텍처와 객체지향, MVC 같은 개념 사이에서 많은 혼동이 있었다. 오랜 시간이 지나서야 정리된 개념을 예제와 함께 총정리했다. 이 과정에서 배움의 과정에서의 잘못된 생각과 그것이 바로 잡힌 과정을 예제들과 같이 회고한다.&lt;/p&gt;
 &lt;p&gt;순서는 다음과 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
 &lt;ol&gt;
 &lt;li&gt;MVC (Model - View - Controller)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
 &lt;li&gt;멀티 티어 아키텍처 (Multitier Architecture)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
 &lt;li&gt;서비스&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;4&quot;&gt;
 &lt;li&gt;객체 지향 설계&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;역사적 초기 모델인 MVC로 시작하여, 물리적에서 논리적으로, 그리고 더 추상화하고 복잡한 논리를 단순하게 처리할 수 있는 방향으로 글을 전개했다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;1. MVC&lt;/h2&gt;

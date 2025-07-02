@@ -74,7 +74,6 @@
 <li>MVC (Model - View - Controller)</li>
 <li>멀티 티어 아키텍처 (Multitier Architecture)</li>
 <li>서비스</li>
-<li>객체 지향 설계</li>
 </ol>
 <p>역사적 초기 모델인 MVC로 시작하여, 물리적에서 논리적으로, 그리고 더 추상화하고 복잡한 논리를 단순하게 처리할 수 있는 방향으로 글을 전개했다.</p>
 <hr>
@@ -213,7 +212,7 @@
 <p>이 방식이 차후 웹 애플리케이션에 적용되어, 서버에서 사이트의 View를 제공해주는 초기 형태의 SSR(Server Side Rendering)이 된다.</p>
 <hr>
 <h2>2. 멀티 티어 아키텍처 (Multi Tier Architecture)</h2>
-<p>점차 애플리케이션이 점차 복잡해짐에 따라, 물리적인 단위에 따라 Presentation, Logic, Data를 <a href="https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture">여러 Tier</a>로 구분하게 된다.</p>
+<p>애플리케이션이 복잡해짐에 따라, 물리적인 단위에 따라 Presentation, Logic, Data를 <a href="https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture">여러 Tier</a>로 구분하게 된다.</p>
 <ul>
 <li><strong>Presentation Tier</strong> - 사용자의 접근 제어</li>
 <li><strong>Logic Tier</strong> - 애플리케이션 기능 제어</li>
@@ -280,7 +279,7 @@
     <figcaption class="gatsby-resp-image-figcaption"><p>일반적으로 채택되는 3-Tier 구조</p></figcaption>
   </figure></p>
 <p>개발 환경의 변화에 따라서, 과거 로컬 애플리케이션의 MVC는 웹 환경이 되면서 영속성과 서버, 클라이언트가 분리된 3-Tier로 세분화되었다. 그리고 더 나아가 Front End, Back End, Data 처리 등으로 티어는 더 세분화된다.</p>
-<p>여기서 주의할 점은 Tier와 Layer의 차이다. 해당 단어에 대해 단체들이 어떻게 정의하느냐에 따라 다를 수 있다. 한국어로 번역하면 둘다 계층이다. 마틴 파울러는 <a href="https://martinfowler.com/bliki/PresentationDomainDataLayering.html">해당 글</a>에서 "These layers are logical layers not physical tiers."라고 이야기하고 있다. 즉 Layer라는 것은 한가지 관심사에 대해 책임을 지는 논리적 계층을 의미하며, 이는 물리적 계층을 의미하는 Tier와는 다르다.</p>
+<p>여기서 주의할 점은 Tier와 Layer의 차이다. 해당 단어에 대해 단체들이 어떻게 정의하느냐에 따라 다를 수 있다. 한국어로 번역하면 둘다 계층이다. 마틴 파울러는 <a href="https://martinfowler.com/bliki/PresentationDomainDataLayering.html">해당 글</a>에서 "These layers are logical layers not physical tiers."라고 이야기하고 있다. 즉 Layer라는 것은 한가지 관심사에 대해 책임을 지는 논리적 계층을 의미하며, 이는 물리적 계층을 의미하는 Tier와는 다르다고 보겠다.</p>
 <h3>2.1. 레이어드 아키텍처 (Layered Architecture)</h3>
 <p>일반적으로 엔터프라이즈의 실제 운영 환경, 또는 부트 캠프에서 처음 배우는 레이어드 아키텍처는 다음과 같을 것이다.</p>
 <ul>
@@ -373,7 +372,7 @@
 <p>이 중, 온전히 애플리케이션 레이어 서비스에 해당하는 트랜잭션 스크립트, 오퍼레이션 스크립트에 대해 정리했다. 다른 서비스 패턴에 대해서는 다른 주제와 함께 다음 기회에 서술하겠다.</p>
 <h3>3.1. 트랜잭션 스크립트 (Transaction Script)</h3>
 <p>트랜잭션 스크립트를 설명하기 앞서 절차 지향 프로그래밍(Procedural Programming) 또는 구조적 프로그래밍(Structured Programming)이라 하는 것에 대해 먼저 생각해보자.</p>
-<p>엉클 밥은 <a href="https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/clean_architecture/clean_architecture_%EC%A0%95%EB%A6%AC/">클린 아키텍처</a>를 설명하기 위해 프로그래밍 패러다임 세 가지에 대해 설명한다. 그 중 첫 번째로 나오는 것이 구조적 프로그래밍이다. <strong>순차</strong>sequence, <strong>분기</strong>selection, <strong>반복</strong>iteration만을 이용한 루틴을 이용한 프로그래밍 방법을 의미한다. 제어흐름의 <strong>직접적인 전환</strong>에 대한 규칙을 의미한다.</p>
+<p>엉클 밥은 <a href="https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/clean_architecture/clean_architecture_%EC%A0%95%EB%A6%AC/">클린 아키텍처</a>를 설명하기 위해 프로그래밍 패러다임 세 가지에 대해 설명한다. 그 중 첫 번째로 나오는 것이 구조적 프로그래밍이다. <strong>순차</strong>sequence, <strong>분기</strong>selection, <strong>반복</strong>iteration으로 만든 루틴을 이용한 프로그래밍 방법을 의미한다. 제어흐름의 <strong>직접적인 전환</strong>에 대한 규칙을 의미한다.</p>
 <p>트랜잭션 스크립트는 구조적 프로그래밍 요소를 이용하여 로직을 빠르게 구현한다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -628,9 +627,9 @@
 <p>도메인 모델에 대한 이야기는 할 것이 너무 많다. 도메인 모델에 대한 더 자세한 설명은 <a href="https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/EAA/EAA_%EC%A0%95%EB%A6%AC/">EAA 정리</a>와 <a href="https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/ddd/DDD_%EC%A0%95%EB%A6%AC/">DDD 정리</a>에서 확인할 수 있다.</p>
 <h4>3.2.2. 서브 트랜잭션 스크립트</h4>
 <p>다음 코드는 서비스가 하위 서비스를 부르고 있다.</p>
-<p>코드의 중복을 없애기 위한 방법으로 서비스가 서비스를 부르게 작성하는 상황에서 생기는 순환성을 방지하기 위한 목적에서 <code class="language-text">@Service</code>어노테이션을 재정의하고 <code class="language-text">level</code>이란 속성을 추가했다. <code class="language-text">level</code>의 값이 높을수록 상위 계층이며, 좀 더 파사드 서비스다. <code class="language-text">level</code> 값이 낮은 서비스는 높은 값의 서비스를 참조하지 못한다.</p>
+<p>코드의 중복을 없애기 위한 방법으로 서비스가 서비스를 부르게 작성하는 상황에서 생기는 순환성을 방지하기 위한 목적에서 <code class="language-text">@Service</code>어노테이션을 재정의하고 <code class="language-text">level</code>이란 속성을 추가했다. <code class="language-text">level</code>의 값이 높을수록 상위 계층이며, 좀 더 파사드 서비스다. <code class="language-text">level</code> 값이 낮은 서비스는 높은 값의 서비스를 참조하지 못하도록 어노테이션 프로세서를 작성했다.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Service</span><span class="token punctuation">(</span>level <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OrderOrchestratorService2</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OrderService2</span> <span class="token punctuation">{</span>
 
 	<span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">ItemService1</span> itemService<span class="token punctuation">;</span>
     <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">OrderService</span> orderService<span class="token punctuation">;</span>
@@ -641,16 +640,16 @@
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Service</span><span class="token punctuation">(</span>level <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ItemService1</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">final</span> <span class="token class-name">ItemRepository</span> itemRepository<span class="token punctuation">;</span>
-    <span class="token keyword">final</span> <span class="token class-name">PointService</span> pointService<span class="token punctuation">;</span>
-    <span class="token keyword">final</span> <span class="token class-name">ProductService</span> productService<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">ItemRepository</span> itemRepository<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">PointService</span> pointService<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">ProductService</span> productService<span class="token punctuation">;</span>
 
 	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 <span class="token punctuation">}</span></code></pre></div>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Service</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ItemService</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">final</span> <span class="token class-name">ItemRepository</span> itemRepository<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">ItemRepository</span> itemRepository<span class="token punctuation">;</span>
 
 	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 <span class="token punctuation">}</span></code></pre></div>
@@ -663,7 +662,7 @@
 <span class="token punctuation">}</span></code></pre></div>
 <p>위 코드는 내가 경력 초창기에 짰던 코드이다. 얼핏 보기에 깔끔해보이고, 순환성 방지도 좋을 것 같다. 지금 다시 봤을 때, 이 코드는 안티패턴이라고 생각한다. 무엇이 문제일까?</p>
 <p>문제에 앞서, 레이어드 아키텍처가 무엇인지 다시 떠올려볼 필요가 있다. <strong>각 레이어가 그 이름에 걸맞은 관심사만을 적절하게 담당하고 있는가</strong>? 단순히 서비스가 서비스를 호출하는 구조는 레이어의 관심사를 명확하게 분리한 것이 아니다. 애초에 왜 파사드 서비스를 작성하는가. 트랜잭션 스크립트 방식의 한계가 온 것이 아닌지, 파사드 서비스가 <strong>레이어로써의 책임을 명백하게 정의</strong>하지 못한다면, 그 구조가 기술부채이고 응급처치가 아니었는지 되돌아볼 필요가 있다.</p>
-<p>때문에 위 방식은 안티 패턴이다. 비즈니스 복잡도가 더 올라가면, 서비스 레벨을 정하는 규칙은유지보수의 난이도만 더 올릴 뿐이다.</p>
+<p>때문에 위 방식은 안티 패턴이다. 비즈니스 복잡도가 더 올라가면, 서비스 레벨을 정하는 규칙은 유지보수의 난이도만 더 올릴 뿐이다.</p>
 <p>적절한 시점에 도메인 모델 설계와 커맨드 호출자, 워크플로우 커넥터 등의 서비스 구현 방법으로 리팩터링하여 기술 부채를 해소해야한다.</p>
 <hr>
 <p>레이어드 아키텍처는 단순히 계층을 나누는 기술적 구조가 아니라, <strong>복잡한 애플리케이션의 관심사를 구분하고 유지보수성을 높이기 위한 사고 방식</strong>이다. 그저 Controller, Service, Repository를 나누는 데에서 멈춘다면, 그것은 패턴이 아니라 형식에 불과하다. 중요한 건 <strong>각 계층이 어떤 책임을 가지며, 그것을 어떻게 지켜내는가</strong>이다.</p>

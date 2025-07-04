@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 02 Jul 2025 04:14:17 GMT</lastBuildDate><item><title><![CDATA[레이어드 아키텍처 정리]]></title><description><![CDATA[나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API…]]></description><link>https://iol-lshh.github.io/회고/layered/layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/layered/layered/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Jul 2025 08:36:44 GMT</lastBuildDate><item><title><![CDATA[레이어드 아키텍처 정리]]></title><description><![CDATA[나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API…]]></description><link>https://iol-lshh.github.io/회고/layered/layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/layered/layered/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -420,8 +420,8 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;서비스는 유효성 검사 로직과 계산, 조건문을 비롯해 기능을 구현하는 로직들을 모두 포함한다. 때문에 메소드가 길어지며, 코드 중복의 가능성이 높아진다. 트랜잭션 스크립트는 대개 점차 복잡해지며 유지 보수가 어려워진다.&lt;/p&gt;
-&lt;p&gt;또한 내부 리소스(파일 시스템, 파일 타입, 데이터베이스, 애플리케이션 API 등)에 결합도가 높다. 내부 리소스의 변경시, 서비스 코드 또한 변경을 필요하게 된다.&lt;/p&gt;
+&lt;p&gt;트랜잭션 스크립트는 유효성 검사 로직과 계산, 조건문을 비롯해 기능을 구현하는 로직들을 모두 포함한다. &lt;strong&gt;모든 애플리케이션의 동작 과정이 한 눈에 들어온다&lt;/strong&gt;. 하지만 메소드가 길어지며, &lt;strong&gt;코드 중복&lt;/strong&gt;의 가능성이 높아진다. 트랜잭션 스크립트는 대개 점차 복잡해지며 유지 보수가 어려워진다.&lt;/p&gt;
+&lt;p&gt;또한 내부 리소스(파일 시스템, 파일 타입, 데이터베이스, 애플리케이션 API 등)에 &lt;strong&gt;결합도가 높다&lt;/strong&gt;. 내부 리소스의 변경시, 서비스 코드 또한 변경을 필요하게 된다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Service&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TransferService&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
@@ -454,7 +454,7 @@
         log&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Transferred {} from {} to {}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; amount&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fromAccountId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; toAccountId&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;예제의 트랜잭션 스크립트 서비스는 트랜잭션의 관리, 데이터의 조회와 저장, 비즈니스 로직, 데이터의 상태 수정까지 모든 애플리케이션이 동작해야할 요구사항들을 처리하고 있다. 이런 서비스를 Fat Service라고 부르기도 한다. 애플리케이션의 모든 동작이 한눈에 들어온다.&lt;/p&gt;
+&lt;p&gt;예제의 트랜잭션 스크립트 서비스는 트랜잭션의 관리, 데이터의 조회와 저장, 비즈니스 로직, 데이터의 상태 수정까지 모든 애플리케이션이 동작해야할 요구사항들을 처리하고 있다. 이런 서비스를 Fat Service라고 부르기도 한다.&lt;/p&gt;
 &lt;h3&gt;3.2. 오퍼레이션 스크립트 패턴 (Operation Script)&lt;/h3&gt;
 &lt;p&gt;트랜잭션 스크립트로 작성된 서비스는 구현이 간단하다. 하지만 비즈니스 로직에 &lt;strong&gt;여러 조건과 분기가 늘어나면&lt;/strong&gt; 코드도 더 복잡해지고, 길어지며, 시간이 지날수록 유지 보수가 힘들어지고 일부 코드 조각은 다른 서비스에 그대로 복사되어 사용된다. &lt;strong&gt;중복된 코드&lt;/strong&gt;는 동기화가 어렵고 불일치가 발생할 가능성이 커진다.&lt;/p&gt;
 &lt;p&gt;이런 문제를 해결하기 위해, 일부 코드 조각을 &lt;strong&gt;작은 메소드로 추출&lt;/strong&gt;한다. 분리된 코드 조각은 일반적으로 &lt;strong&gt;관심사를 분리하여 별도의 계층으로&lt;/strong&gt; 집어넣고, 서비스를 최대한 얇게 만드는 방법이 올바를 것이다.&lt;/p&gt;
@@ -650,12 +650,12 @@
 	&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위 코드는 내가 경력 초창기에 짰던 코드이다. 얼핏 보기에 깔끔해보이고, 순환성 방지도 좋을 것 같다. 지금 다시 봤을 때, 이 코드는 안티패턴이라고 생각한다. 무엇이 문제일까?&lt;/p&gt;
-&lt;p&gt;문제에 앞서, 레이어드 아키텍처가 무엇인지 다시 떠올려볼 필요가 있다. &lt;strong&gt;각 레이어가 그 이름에 걸맞은 관심사만을 적절하게 담당하고 있는가&lt;/strong&gt;? 단순히 서비스가 서비스를 호출하는 구조는 레이어의 관심사를 명확하게 분리한 것이 아니다. 애초에 왜 파사드 서비스를 작성하는가. 트랜잭션 스크립트 방식의 한계가 온 것이 아닌지, 파사드 서비스가 &lt;strong&gt;레이어로써의 책임을 명백하게 정의&lt;/strong&gt;하지 못한다면, 그 구조가 기술부채이고 응급처치가 아니었는지 되돌아볼 필요가 있다.&lt;/p&gt;
+&lt;p&gt;문제에 앞서, 레이어드 아키텍처가 무엇인지 다시 떠올려볼 필요가 있다. “&lt;strong&gt;각 레이어가 그 이름에 걸맞은 관심사만을 적절하게 담당하고 있는가&lt;/strong&gt;?” 단순히 서비스가 서비스를 호출하는 구조는 레이어의 관심사를 명확하게 분리한 것이 아니다. 애초에 왜 파사드 서비스를 작성하는가. 트랜잭션 스크립트 방식의 한계가 온 것이 아닌지, 파사드 서비스가 &lt;strong&gt;레이어로써의 책임을 명백하게 정의&lt;/strong&gt;하지 못한다면, 그 구조가 기술부채이고 응급처치가 아니었는지 되돌아볼 필요가 있다.&lt;/p&gt;
 &lt;p&gt;때문에 위 방식은 안티 패턴이다. 비즈니스 복잡도가 더 올라가면, 서비스 레벨을 정하는 규칙은 유지보수의 난이도만 더 올릴 뿐이다.&lt;/p&gt;
 &lt;p&gt;적절한 시점에 도메인 모델 설계와 커맨드 호출자, 워크플로우 커넥터 등의 서비스 구현 방법으로 리팩터링하여 기술 부채를 해소해야한다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;레이어드 아키텍처는 단순히 계층을 나누는 기술적 구조가 아니라, &lt;strong&gt;복잡한 애플리케이션의 관심사를 구분하고 유지보수성을 높이기 위한 사고 방식&lt;/strong&gt;이다. 그저 Controller, Service, Repository를 나누는 데에서 멈춘다면, 그것은 패턴이 아니라 형식에 불과하다. 중요한 건 &lt;strong&gt;각 계층이 어떤 책임을 가지며, 그것을 어떻게 지켜내는가&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;p&gt;트랜잭션 스크립트로 시작된 서비스 로직이 점차 오퍼레이션 스크립트로 발전하고, 결국 도메인 모델과 그 철학으로 녹아드는 과정은 필수다.&lt;/p&gt;
+&lt;p&gt;레이어드 아키텍처는 단순히 계층을 나누는 기술적 구조가 아니라, &lt;strong&gt;복잡한 애플리케이션의 관심사를 구분하고 유지보수성을 높이기 위한 문제 해결 방식&lt;/strong&gt;이다. 그저 Controller, Service, Repository를 나누는 데에서 멈춘다면, 그것은 패턴이 아니라 형식에 불과하다. 중요한 건 &lt;strong&gt;각 계층이 어떤 책임을 가지며, 그것을 어떻게 지켜내는가&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;p&gt;트랜잭션 스크립트로 시작된 서비스 로직이 점차 오퍼레이션 스크립트로 발전하고, 결국 도메인 모델과 그 철학으로 녹아드는 과정을 고민해야한다.&lt;/p&gt;
 &lt;p&gt;&quot;레이어드&quot;가 중요한 게 아니라, &lt;strong&gt;왜 레이어링했는지가 중요하다&lt;/strong&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Test Double 정리]]></title><description><![CDATA[테스트가 중요하다는 것은 이제 누구나 아는 사실일 것이다. 테스트 작성에 있어서 빼놓을 수 없는 것이 테스트 더블(Test double…]]></description><link>https://iol-lshh.github.io/pattern/testdouble/testdouble_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/testdouble/testdouble_정리/</guid><pubDate>Wed, 23 Apr 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;

@@ -461,8 +461,8 @@ alsa <span class="token operator">=</span>
   output_device <span class="token operator">=</span> <span class="token string">"plughw:3,0"</span><span class="token punctuation">;</span>  // ALSA 디바이스 명시
   mixer_control_name <span class="token operator">=</span> <span class="token string">"none"</span><span class="token punctuation">;</span>  // 혹은 iFi DAC이 가진 mixer 이름 <span class="token punctuation">(</span>없으면 none<span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
-<p><code class="language-text">mixer_control</code>에 <code class="language-text">none</code>을 주었다.
-디지털 볼륨과 아날로그 볼륨</p>
+<p><code class="language-text">mixer_control</code>에 <code class="language-text">none</code>을 주었다. IFI Zen Air DAC는 고정된 노브를 통해 조절되는 아날로그 볼륨을 갖고 있다. 가성비 모델이라 노브가 디지털 신호에 의해 조정되지는 않거니와, DAC를 컨트롤할 것을 주지 않는다. 때문에 <code class="language-text">none</code> 설정값을 주었다.</p>
+<p>볼륨에는 디지털 볼륨과 아날로그 볼륨 두 가지가 있다. 아날로그 볼륨은 프리 앰프가 조절하는 아날로그 신호의 크기 증폭 정도를 의미한다. 디지털 볼륨이란 디지털 신호에서의 볼륨 크기를 의미한다. 디지털 볼륨이 줄어들면 소스의 손실이 생긴다. 때문에 Bluetooth 스피커나 액티브 스피커도, DAC 앰프 일체형 기기에서도 고급 기종일수록 내부에 아날로그 볼륨으로 설계 되어있다. (심지어 어떤 DAC는 소스기기에서 볼륨 크기를 변경시, 디지털 볼륨을 변경하지 못하게 막고, 아날로그 볼륨이 변경 되도록 설계되어있기도 하다.)</p>
 <h3>실행</h3>
 <div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token comment"># shairport sync 실행 (백그라운드)</span>
 shairport-sync <span class="token parameter variable">-d</span></code></pre></div>
@@ -480,7 +480,7 @@ aplay <span class="token parameter variable">-D</span> plughw:3,0 --dump-hw-para
 <span class="token comment"># ALSA 디바이스 실시간 모니터링 (전송 확인) `cat /proc/asound/cardX/pcm0p/sub0/hw_params`</span>
 <span class="token function">cat</span> /proc/asound/card3/pcm0p/sub0/hw_params</code></pre></div>
 <hr>
-<p>지금도 이 구성을 통해 Mr. Green Apple의 ‘Coffee’를 들으며 글을 마무리 중이다. 블루투스가 제공할 수 없는 밀도감, 그리고 저음을 진동으로 체감하는 만족감은 직접 구성한 이 시스템 덕분이다.</p>
+<p>지금도 이 구성을 통해 Mr. Green Apple의 ‘Coffee’를 들으며 글을 마무리 중이다. 블루투스가 제공할 수 없는 밀도감, 그러면서도 아이폰으로 간편히 조작하는 이 만족감은 직접 구성한 시스템 덕분이다.</p>
 <blockquote>
 <p>음악이 없는 삶은 잘못된 삶이며, 피곤한 삶이며, 유배당한 삶이기도 하다.</p>
 <ul>

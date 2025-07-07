@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Jul 2025 19:38:01 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Jul 2025 20:30:31 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -450,8 +450,8 @@ alsa &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
   output_device &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;plughw:3,0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  // ALSA 디바이스 명시
   mixer_control_name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;none&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  // 혹은 iFi DAC이 가진 mixer 이름 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;없으면 none&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;mixer_control&lt;/code&gt;에 &lt;code class=&quot;language-text&quot;&gt;none&lt;/code&gt;을 주었다.
-디지털 볼륨과 아날로그 볼륨&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;mixer_control&lt;/code&gt;에 &lt;code class=&quot;language-text&quot;&gt;none&lt;/code&gt;을 주었다. IFI Zen Air DAC는 고정된 노브를 통해 조절되는 아날로그 볼륨을 갖고 있다. 가성비 모델이라 노브가 디지털 신호에 의해 조정되지는 않거니와, DAC를 컨트롤할 것을 주지 않는다. 때문에 &lt;code class=&quot;language-text&quot;&gt;none&lt;/code&gt; 설정값을 주었다.&lt;/p&gt;
+&lt;p&gt;볼륨에는 디지털 볼륨과 아날로그 볼륨 두 가지가 있다. 아날로그 볼륨은 프리 앰프가 조절하는 아날로그 신호의 크기 증폭 정도를 의미한다. 디지털 볼륨이란 디지털 신호에서의 볼륨 크기를 의미한다. 디지털 볼륨이 줄어들면 소스의 손실이 생긴다. 때문에 Bluetooth 스피커나 액티브 스피커도, DAC 앰프 일체형 기기에서도 고급 기종일수록 내부에 아날로그 볼륨으로 설계 되어있다. (심지어 어떤 DAC는 소스기기에서 볼륨 크기를 변경시, 디지털 볼륨을 변경하지 못하게 막고, 아날로그 볼륨이 변경 되도록 설계되어있기도 하다.)&lt;/p&gt;
 &lt;h3&gt;실행&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# shairport sync 실행 (백그라운드)&lt;/span&gt;
 shairport-sync &lt;span class=&quot;token parameter variable&quot;&gt;-d&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -469,7 +469,7 @@ aplay &lt;span class=&quot;token parameter variable&quot;&gt;-D&lt;/span&gt; plu
 &lt;span class=&quot;token comment&quot;&gt;# ALSA 디바이스 실시간 모니터링 (전송 확인) `cat /proc/asound/cardX/pcm0p/sub0/hw_params`&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; /proc/asound/card3/pcm0p/sub0/hw_params&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;지금도 이 구성을 통해 Mr. Green Apple의 ‘Coffee’를 들으며 글을 마무리 중이다. 블루투스가 제공할 수 없는 밀도감, 그리고 저음을 진동으로 체감하는 만족감은 직접 구성한 이 시스템 덕분이다.&lt;/p&gt;
+&lt;p&gt;지금도 이 구성을 통해 Mr. Green Apple의 ‘Coffee’를 들으며 글을 마무리 중이다. 블루투스가 제공할 수 없는 밀도감, 그러면서도 아이폰으로 간편히 조작하는 이 만족감은 직접 구성한 시스템 덕분이다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;음악이 없는 삶은 잘못된 삶이며, 피곤한 삶이며, 유배당한 삶이기도 하다.&lt;/p&gt;
 &lt;ul&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Jul 2025 03:31:46 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Jul 2025 00:33:52 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -356,7 +356,7 @@
           &lt;img
             class=&quot;gatsby-resp-image-image&quot;
             src=&quot;/static/9e7c099034f01bcc0e579ee492ac5129/83b6b/%EB%AC%BC%EB%A6%AC.jpg&quot;
-            alt=&quot;오른쪽부터 A2+, Zen Air DAC, Raspberry Pi 4&quot;
+            alt=&quot;왼쪽부터 Audioengine A2+, Zen Air DAC, Raspberry Pi 4&quot;
             title=&quot;&quot;
             loading=&quot;lazy&quot;
             decoding=&quot;async&quot;
@@ -365,7 +365,7 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;오른쪽부터 A2+, Zen Air DAC, Raspberry Pi 4&lt;/p&gt;&lt;/figcaption&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;왼쪽부터 Audioengine A2+, Zen Air DAC, Raspberry Pi 4&lt;/p&gt;&lt;/figcaption&gt;
   &lt;/figure&gt;&lt;/p&gt;
 &lt;h4&gt;스피커&lt;/h4&gt;
 &lt;p&gt;내가 쓰는 스피커는 두개다. 둘다 오디오엔진의 것으로 A2+와 S8이다.&lt;/p&gt;

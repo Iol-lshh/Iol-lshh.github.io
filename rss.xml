@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Jul 2025 03:18:48 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Jul 2025 05:39:24 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -241,6 +241,57 @@
 &lt;li&gt;DAC, 프리앰프, 파워앰프가 디지털 신호를 적절한 아날로그 신호로 변환 및 증폭한다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;스피커는 클 수록 느린 떨림인 저음을 잘 내어주고, 자연스러운 소리를 낸다. 대신 그만큼 큰 전력의 전기 신호를 필요로 한다. 한편 DAC와 앰프단은 디지털 데이터를 어떤 아날로그 신호로 내어줄지 결정하기 때문에, 음의 톤을 결정짓는다. 때문에 DAC와 앰프단, 스피커는 그 매칭 또한 중요하다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e136f4bd4088dfb9c2a03d2a2cf7b441/c6e3d/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.43037974683544%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpklEQVR42g2R209SAQCHj4kXOoAoeI7AgXPg3M/hXOQmdxAhtIShyJQUNe3izHSzpmkpldrMmvXUQ5trrZvrZrbabK2ylUu3th57qKdey7+heP22b9/2+wEwXGtFYZowywLhkGiBx1kKpXCExBGfy56IehtFph7Smc1GmxVlGYKmcQw1ISYYhvWAGYHsrFWyEzYMIWyWaNAd9jlKgiQw48cLt68vnjl5jCJxn9sp2jnUgnA0KYs8TRMYigDGUhmBKCuKWRA7SwRcdrdASYzN6+BXF+a337y8cWXOL9LN7hLD1BqNydggMzaBMJOYATBAWodIhZocHpmL+eSS7GnkZJ4SeSERSR7NDeQy+WTA3x71B10ST+M4ZhRJhLMZOSsMsDiyWhwbH85lDoUyLf7WiFeyM6SNOjF8bnT04szM8vTUcme6N+Ryhj1OiWcEhsBRRKVWyRQCeBrZO9emU1Efh1siDo4nMYkhJZLdXN/5++ffz1/7v3/sz06uFDJpjyQSqJm2Wmwo4neIZrgG6O+IswRerVSFXdL6zctDXUdwDKNxcmRkdmn5/uTEal9vsdB9enfnayIWg7SaGlA51Jd//3pTFuxAwklCsE6tUmm1Go/MGyBd6QNtrc5kgNuj7KmeplTSqdfX57KdDQ0QCB5UKBSlzaOhgNkAAyKiA9WgorKyrk5TUaEAQWVdbU15RTWNGyf6HUuTodHBcLUSLCsrg+r1IAgeKFdUVVWp1SpYBwKM1ZRP+5NhYbArMpCJFDpCqbgz0sRn2wIdbYHu9mBXW7AnFToc8w5km9MtrnTc3ZsOZZO+Vh8HBGnL1trZbxvF76+W9p5d+rJ+4dPj2Xf3ZrYfze1tXN19vrDztPjx4fzei5XP64tba1Nv757/8GD+ya3xsXz8P49ypvxqSqEhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/e136f4bd4088dfb9c2a03d2a2cf7b441/dc87c/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.avif 158w,
+/static/e136f4bd4088dfb9c2a03d2a2cf7b441/383b4/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.avif 315w,
+/static/e136f4bd4088dfb9c2a03d2a2cf7b441/de264/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.avif 500w&quot;
+              sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/e136f4bd4088dfb9c2a03d2a2cf7b441/5787a/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.webp 158w,
+/static/e136f4bd4088dfb9c2a03d2a2cf7b441/89f54/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.webp 315w,
+/static/e136f4bd4088dfb9c2a03d2a2cf7b441/4be29/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.webp 500w&quot;
+              sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/e136f4bd4088dfb9c2a03d2a2cf7b441/dda05/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.png 158w,
+/static/e136f4bd4088dfb9c2a03d2a2cf7b441/679a3/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.png 315w,
+/static/e136f4bd4088dfb9c2a03d2a2cf7b441/c6e3d/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.png 500w&quot;
+            sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/e136f4bd4088dfb9c2a03d2a2cf7b441/c6e3d/%EC%9B%94%EB%93%9C%EB%AA%B0_%EC%8A%A4%ED%94%BC%EC%BB%A4.png&quot;
+            alt=&quot;월드몰에 있는 한 카페의 대형 스피커. 상단의 트위터와 하단의 우퍼가 스테레오로 구성되어 있다. 이 정도 스피커의 소리는 자연의 소리다. 다만 제대로 스피커를 구동하려면 앰프의 전력소모가 엄청날 것이다. 한겨울에 난방 안틀어도 후끈후끈 할 듯.&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;&lt;p&gt;월드몰에 있는 한 카페의 대형 스피커. 상단의 트위터와 하단의 우퍼가 스테레오로 구성되어 있다. 이 정도 스피커의 소리는 자연의 소리다. 다만 제대로 스피커를 구동하려면 앰프의 전력소모가 엄청날 것이다. 한겨울에 난방 안틀어도 후끈후끈 할 듯.&lt;/p&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;2. 내 Airplay 네트워크 플레이어 구성&lt;/h2&gt;
 &lt;p&gt;다음과 같은 순서로 이야기 해보려고 한다.&lt;/p&gt;
 &lt;ol&gt;

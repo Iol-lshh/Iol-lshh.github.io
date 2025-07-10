@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Jul 2025 05:39:24 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Jul 2025 06:26:28 GMT</lastBuildDate><item><title><![CDATA[airplay 네트워크 플레이어 구성 회고]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/shairport-sync/shairport-sync/</guid><pubDate>Mon, 07 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -526,7 +526,61 @@ aplay &lt;span class=&quot;token parameter variable&quot;&gt;-D&lt;/span&gt; plu
 &lt;ul&gt;
 &lt;li&gt;우상의 황혼 (프리드리히 니체, 1889)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[레이어드 아키텍처 정리]]></title><description><![CDATA[나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API…]]></description><link>https://iol-lshh.github.io/회고/layered/layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/layered/layered/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5bf963cdb5641aef7934c37ef46c01c5/601e5/applemusic.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 168.35443037974682%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5bf963cdb5641aef7934c37ef46c01c5/dc87c/applemusic.avif 158w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/383b4/applemusic.avif 315w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/d0061/applemusic.avif 630w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/20e2c/applemusic.avif 945w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/1c1b0/applemusic.avif 1146w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5bf963cdb5641aef7934c37ef46c01c5/5787a/applemusic.webp 158w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/89f54/applemusic.webp 315w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/4d353/applemusic.webp 630w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/0f41d/applemusic.webp 945w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/925b7/applemusic.webp 1146w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5bf963cdb5641aef7934c37ef46c01c5/dda05/applemusic.png 158w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/679a3/applemusic.png 315w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/50637/applemusic.png 630w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/fddb0/applemusic.png 945w,
+/static/5bf963cdb5641aef7934c37ef46c01c5/601e5/applemusic.png 1146w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5bf963cdb5641aef7934c37ef46c01c5/50637/applemusic.png&quot;
+            alt=&quot;applemusic&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[레이어드 아키텍처 정리]]></title><description><![CDATA[나는 헥사고날 아키텍처에 대해서 잘 알지 못한다. 그것이 좋은지도 의구심이 든다. 고수준의 의존성이나 외부 공개 언어(Public Language)로 제공하는 API…]]></description><link>https://iol-lshh.github.io/회고/layered/layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/layered/layered/</guid><pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

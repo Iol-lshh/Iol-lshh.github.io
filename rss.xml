@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Jul 2025 06:09:03 GMT</lastBuildDate><item><title><![CDATA[실전 TDD 회고]]></title><description><![CDATA[어떤 분이 쓰신 글을 읽었는데, “시간이 부족해서 테스트 코드 짤 시간이 없어요”는 이제 변명이 되지 못한다는 것이다. AI…]]></description><link>https://iol-lshh.github.io/회고/tdd/tdd/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/tdd/tdd/</guid><pubDate>Sun, 13 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;어떤 분이 쓰신 글을 읽었는데, “&lt;strong&gt;시간이 부족해서 테스트 코드 짤 시간이 없어요&lt;/strong&gt;”는 이제 변명이 되지 못한다는 것이다. AI의 도입이, &apos;&lt;strong&gt;딸깍&lt;/strong&gt;&apos;으로 테스트 코드를 작성해주기 때문이다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Jul 2025 06:26:38 GMT</lastBuildDate><item><title><![CDATA[실전 TDD 회고]]></title><description><![CDATA[어떤 분이 쓰신 글을 읽었는데, “시간이 부족해서 테스트 코드 짤 시간이 없어요”는 이제 변명이 되지 못한다는 것이다. AI…]]></description><link>https://iol-lshh.github.io/회고/tdd/tdd/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/tdd/tdd/</guid><pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5e28d8b96018dbc64f86ccfd15632f20/437a1/header.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4klEQVR42h1R6U8TcRRc7CLd7m5/e9/3lu4uFUogVBRqoRQKBAKi0YCUo4oHqBwGapGYAKIt4VTwgyaCiYYYE6Mm+gn921xMXibzZWbevAfJEU+P1apuTI56suVgrDI10ne8OXewOn24/vD16szbl3MftgtHu8XXGwujw0PJdNqJNzGaHSR5SDSjxoVazYlJlsNrNgz4GwNdfz6Vv79f/3VcOj3Z+fpuY/3Z41xuuCPbLboNlZR8PkxXArrifBCiZYOUNZQRQ5QARC3EKt292d+f9/9+2f95VLqXH2lta09cSdc3J+1YXLLdKoKHAjAeRuOeAaGsRCmmGPE0L655dVLEk6q9uostE/nxTFcH4FVOMbSIQ3JiFWDCnERw4tXs5a3inZP9AqTXxBUnxmoWEBSMEzFWDNE8ygi8brnx+uqamBV1OFmzauosUweMoFr2t4Pi6fGLj6VZCAgySvOUrPniMC+jDM9qJqcaom4aUcd2PdNxsgPX8vnc2sK46bidVxI/Dp7uPp3MDaQgwbBpRcdYwXdRnVi6f6gx2SZZEUEzWEkVDYsWZUqQsm1Nk8P9um2X5keKU4M9qcZEQw3EqLoadRtaU9dy+enF5aW18s3b9514A07RimXjNAOjYRgjgiTLawYvCp3JxvTl+o6W+r5MMzQ0MjpbWF55UX5e2l5cfXnr7kwilQGcgJEUyfGVaNgfOBQGLO9DIIhCQRylGNeNjA+lodLu3ubem7XyVn760aX2DCOpCEFhFIORNALIimAogGAwCmAECyCob1SFE4EQgGDkek8rtLG59WB2PpFMcYru12NllVN1PzmIEzCCwiEc/i+oxMA5BPPxrEIY9LY1vpofhlo6MoLun1eXDEs0bb+YzxlZxWnOXwEhaJzlfR4iGZ8HUECx9Nhgaq8wtl8chyTT1qod2bTVSFQ+E5uCYTFn+QYpSLSkAE4keInwP0oy1bb2ZKLvcCW/s5TbLYz9A9H5mp3P29QWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/5e28d8b96018dbc64f86ccfd15632f20/dc87c/header.avif 158w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/383b4/header.avif 315w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/d0061/header.avif 630w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/20e2c/header.avif 945w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/9eba6/header.avif 1260w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/c68af/header.avif 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/5e28d8b96018dbc64f86ccfd15632f20/5787a/header.webp 158w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/89f54/header.webp 315w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/4d353/header.webp 630w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/0f41d/header.webp 945w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/f27a3/header.webp 1260w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/a8642/header.webp 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/5e28d8b96018dbc64f86ccfd15632f20/dda05/header.png 158w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/679a3/header.png 315w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/50637/header.png 630w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/fddb0/header.png 945w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/f46b1/header.png 1260w,
+/static/5e28d8b96018dbc64f86ccfd15632f20/437a1/header.png 1536w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/5e28d8b96018dbc64f86ccfd15632f20/50637/header.png&quot;
+            alt=&quot;header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;어떤 분이 쓰신 글을 읽었는데, “&lt;strong&gt;시간이 부족해서 테스트 코드 짤 시간이 없어요&lt;/strong&gt;”는 이제 변명이 되지 못한다는 것이다. AI의 도입이, &apos;&lt;strong&gt;딸깍&lt;/strong&gt;&apos;으로 테스트 코드를 작성해주기 때문이다.&lt;/p&gt;
 &lt;p&gt;애플리케이션 코드를 온전히 바이브 코딩하기엔 불안하다.애플리케이션 코드를 AI에 의존해 전적으로 작성하는 건 여전히 불안하다. 비즈니스 로직과 직결되기 때문이다. 하지만 테스트는 비교적 부담이 적다. 결정적인 장애로 이어지지 않고, 설령 품질이 낮더라도 나중에 참고하여 새로 작성할 수 있기 때문이다. 물론 지나치게 의존성이 많고 유지보수가 어려운 &apos;나쁜 테스트&apos;는 피해야 하지만, &lt;strong&gt;테스트는 없는 것보다, 못생긴게 훨씬 낫다&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;내게 &lt;strong&gt;레거시 코드란, 단순히 테스트 루틴이 없는 코드&lt;/strong&gt;다.&lt;br&gt;

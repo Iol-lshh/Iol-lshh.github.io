@@ -39,10 +39,9 @@
 <ol>
 <li>원하는 결과물 샘플을 제공한다.</li>
 <li>원하는 요구사항을 제공한다.</li>
-<li>결과물을 수정하며 적절한 체인을 쌓아 올린다.</li>
+<li>결과물을 수정한다.</li>
 </ol>
 <p>이런 방식에 따라 테스트 코드를 작성하는데 여러 IDE와 여러 AI 툴들이 있겠지만, 나는 커서를 사용하고 있다. 커서와 함께 바이브 코딩을 진행했다.</p>
-<h4>1. 샘플링</h4>
 <p>루퍼스 템플릿에는 테스트 예제가 있다. 이 예제를 결과물 샘플로 제공할 것이다. 그 예제를 기반으로 새로운 채팅을 연다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -196,66 +195,50 @@
         </picture>
   </a>
     </span></p>
-<p>스파이로 만들라고 했는데, 자기 마음대로 spy를 지워버렸다. 이런 부분을 수정하며 테스트를 완성시킨다. 그리곤 서비스 단위테스트를 하나 더 만들어놓고는 mock을 덕지덕지 바르고는 verify 하고 있다.</p>
-<p>그래도 첫 삽은 떴다. 이 결과물을 AI를 통해 고친다면, 꽤 오래 걸릴 것이다. 이후 코드는 직접 수정하는 것이 효과적이다.</p>
-<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@SpringBootTest</span>
-<span class="token keyword">class</span> <span class="token class-name">UsersServiceTest</span> <span class="token punctuation">{</span>
+<p>스파이로 만들라고 했는데, 자기 마음대로 spy를 지워버렸다. 이런 부분을 수정하며 테스트를 완성시킨다. 그리곤 서비스 단위 테스트를 하나 더 만들어놓고는 mock을 덕지덕지 바르고는 verify 하고 있다.</p>
+<p>그래도 첫 삽은 떴다. 이 결과물을 AI를 통해 고친다면, 꽤 오래 걸릴 것이다. <strong>이후 코드는 직접 수정</strong>하는 것이 효과적이다.</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Nested</span>
+<span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"회원가입"</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> register <span class="token punctuation">{</span>
+	<span class="token annotation punctuation">@Test</span>
+	<span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"회원 가입시 User 저장이 수행된다. ( spy 검증 )"</span><span class="token punctuation">)</span>
+	<span class="token keyword">void</span> <span class="token function">saveUser_whenUserRegisters</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">var</span> spyUsersRepository <span class="token operator">=</span> <span class="token function">spy</span><span class="token punctuation">(</span>usersRepository<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">UsersService</span> spyUsersService <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UsersService</span><span class="token punctuation">(</span>spyUsersRepository<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token annotation punctuation">@Autowired</span>
-    <span class="token keyword">private</span> <span class="token class-name">UsersService</span> usersService<span class="token punctuation">;</span>
-    <span class="token annotation punctuation">@Autowired</span>
-    <span class="token keyword">private</span> <span class="token class-name">UsersRepository</span> usersRepository<span class="token punctuation">;</span>
-    <span class="token annotation punctuation">@Autowired</span>
-    <span class="token keyword">private</span> <span class="token class-name">DatabaseCleanUp</span> databaseCleanUp<span class="token punctuation">;</span>
-    
-    <span class="token annotation punctuation">@AfterEach</span>
-    <span class="token keyword">void</span> <span class="token function">tearDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        databaseCleanUp<span class="token punctuation">.</span><span class="token function">truncateAllTables</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+		<span class="token comment">// act</span>
+		<span class="token class-name">UsersModel</span> result <span class="token operator">=</span> spyUsersService<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span>
+				<span class="token class-name">Gender</span><span class="token punctuation">.</span><span class="token constant">MALE</span><span class="token punctuation">,</span>
+				<span class="token string">"1993-04-09"</span><span class="token punctuation">,</span>
+				<span class="token string">"test@gmail.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token annotation punctuation">@Nested</span>
-    <span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"회원가입"</span><span class="token punctuation">)</span>
-    <span class="token keyword">class</span> register <span class="token punctuation">{</span>
-        <span class="token annotation punctuation">@Test</span>
-        <span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"회원 가입시 User 저장이 수행된다. ( spy 검증 )"</span><span class="token punctuation">)</span>
-        <span class="token keyword">void</span> <span class="token function">saveUser_whenUserRegisters</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">var</span> spyUsersRepository <span class="token operator">=</span> <span class="token function">spy</span><span class="token punctuation">(</span>usersRepository<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token class-name">UsersService</span> spyUsersService <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UsersService</span><span class="token punctuation">(</span>spyUsersRepository<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">// verify</span>
+		<span class="token function">verify</span><span class="token punctuation">(</span>spyUsersRepository<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">existsByLoginId</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">verify</span><span class="token punctuation">(</span>spyUsersRepository<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token function">any</span><span class="token punctuation">(</span><span class="token class-name">UsersModel</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">assertNotNull</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span> result<span class="token punctuation">.</span><span class="token function">getLoginId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
 
-            <span class="token comment">// act</span>
-            <span class="token class-name">UsersModel</span> result <span class="token operator">=</span> spyUsersService<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span>
-                    <span class="token class-name">Gender</span><span class="token punctuation">.</span><span class="token constant">MALE</span><span class="token punctuation">,</span>
-                    <span class="token string">"1993-04-09"</span><span class="token punctuation">,</span>
-                    <span class="token string">"test@gmail.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token annotation punctuation">@Test</span>
+	<span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"이미 가입된 ID로 회원가입 시도 시, 실패한다."</span><span class="token punctuation">)</span>
+	<span class="token keyword">void</span> <span class="token function">failToRegister_whenLoginIdAlreadyExists</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token comment">// arrange</span>
+		usersService<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span>
+				<span class="token class-name">Gender</span><span class="token punctuation">.</span><span class="token constant">MALE</span><span class="token punctuation">,</span>
+				<span class="token string">"1993-04-09"</span><span class="token punctuation">,</span>
+				<span class="token string">"test@gmail.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-            <span class="token comment">// verify</span>
-            <span class="token function">verify</span><span class="token punctuation">(</span>spyUsersRepository<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">existsByLoginId</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token function">verify</span><span class="token punctuation">(</span>spyUsersRepository<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token function">any</span><span class="token punctuation">(</span><span class="token class-name">UsersModel</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token function">assertNotNull</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token function">assertEquals</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span> result<span class="token punctuation">.</span><span class="token function">getLoginId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+		<span class="token comment">// act</span>
+		<span class="token class-name">CoreException</span> exception <span class="token operator">=</span> <span class="token function">assertThrows</span><span class="token punctuation">(</span><span class="token class-name">CoreException</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">{</span>
+			usersService<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span>
+					<span class="token class-name">Gender</span><span class="token punctuation">.</span><span class="token constant">FEMALE</span><span class="token punctuation">,</span>
+					<span class="token string">"1993-04-09"</span><span class="token punctuation">,</span>
+					<span class="token string">"test@naver.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        <span class="token annotation punctuation">@Test</span>
-        <span class="token annotation punctuation">@DisplayName</span><span class="token punctuation">(</span><span class="token string">"이미 가입된 ID로 회원가입 시도 시, 실패한다."</span><span class="token punctuation">)</span>
-        <span class="token keyword">void</span> <span class="token function">failToRegister_whenLoginIdAlreadyExists</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token comment">// arrange</span>
-            usersService<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span>
-                    <span class="token class-name">Gender</span><span class="token punctuation">.</span><span class="token constant">MALE</span><span class="token punctuation">,</span>
-                    <span class="token string">"1993-04-09"</span><span class="token punctuation">,</span>
-                    <span class="token string">"test@gmail.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-            <span class="token comment">// act</span>
-            <span class="token class-name">CoreException</span> exception <span class="token operator">=</span> <span class="token function">assertThrows</span><span class="token punctuation">(</span><span class="token class-name">CoreException</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">{</span>
-                usersService<span class="token punctuation">.</span><span class="token function">register</span><span class="token punctuation">(</span><span class="token string">"testUser"</span><span class="token punctuation">,</span>
-                        <span class="token class-name">Gender</span><span class="token punctuation">.</span><span class="token constant">FEMALE</span><span class="token punctuation">,</span>
-                        <span class="token string">"1993-04-09"</span><span class="token punctuation">,</span>
-                        <span class="token string">"test@naver.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-            <span class="token comment">// assert</span>
-            <span class="token function">assertEquals</span><span class="token punctuation">(</span>exception<span class="token punctuation">.</span><span class="token function">getErrorType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">ErrorType</span><span class="token punctuation">.</span><span class="token constant">CONFLICT</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
+		<span class="token comment">// assert</span>
+		<span class="token function">assertEquals</span><span class="token punctuation">(</span>exception<span class="token punctuation">.</span><span class="token function">getErrorType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token class-name">ErrorType</span><span class="token punctuation">.</span><span class="token constant">CONFLICT</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>최초의 테스트 작성은 완벽하지 않아도 된다. 테스트의 본질은 요구사항에 대한 <strong>인수</strong>와 리팩터링에 대한 <strong>회귀 방지</strong>다. 두 가지 본질을 가장 우선시하며, 읽기 좋도록 있는 힘을 다해 깔끔하게 작성하면 된다. 그리고 점차 요구사항과 도메인이 뚜렷해지면서 결함을 최대한 없앨 수 있게 테스트를 향상시켜야 할 것이다.</p>
 <p>이 때에 적절한 테스트 더블을 사용해야 한다. 위 예제에는 다양한 종류의 테스트 더블을 사용하고 있다. 테스트 더블은 <a href="https://iol-lshh.github.io/pattern/testdouble/testdouble_%EC%A0%95%EB%A6%AC/">이 곳</a>에 정리했었으므로, 여기서는 자세히 이야기하지 않는다.</p>

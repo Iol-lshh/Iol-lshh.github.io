@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Jul 2025 06:26:38 GMT</lastBuildDate><item><title><![CDATA[실전 TDD 회고]]></title><description><![CDATA[어떤 분이 쓰신 글을 읽었는데, “시간이 부족해서 테스트 코드 짤 시간이 없어요”는 이제 변명이 되지 못한다는 것이다. AI…]]></description><link>https://iol-lshh.github.io/회고/tdd/tdd/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/tdd/tdd/</guid><pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Jul 2025 06:51:09 GMT</lastBuildDate><item><title><![CDATA[실전 TDD 회고]]></title><description><![CDATA[어떤 분이 쓰신 글을 읽었는데, “시간이 부족해서 테스트 코드 짤 시간이 없어요”는 이제 변명이 되지 못한다는 것이다. AI의 도입이, '딸깍'으로 테스트 코드를 작성해주기 때문이다. 애플리케이션 코드를 AI…]]></description><link>https://iol-lshh.github.io/회고/tdd/tdd/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/tdd/tdd/</guid><pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -56,12 +56,12 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;어떤 분이 쓰신 글을 읽었는데, “&lt;strong&gt;시간이 부족해서 테스트 코드 짤 시간이 없어요&lt;/strong&gt;”는 이제 변명이 되지 못한다는 것이다. AI의 도입이, &apos;&lt;strong&gt;딸깍&lt;/strong&gt;&apos;으로 테스트 코드를 작성해주기 때문이다.&lt;/p&gt;
-&lt;p&gt;애플리케이션 코드를 온전히 바이브 코딩하기엔 불안하다.애플리케이션 코드를 AI에 의존해 전적으로 작성하는 건 여전히 불안하다. 비즈니스 로직과 직결되기 때문이다. 하지만 테스트는 비교적 부담이 적다. 결정적인 장애로 이어지지 않고, 설령 품질이 낮더라도 나중에 참고하여 새로 작성할 수 있기 때문이다. 물론 지나치게 의존성이 많고 유지보수가 어려운 &apos;나쁜 테스트&apos;는 피해야 하지만, &lt;strong&gt;테스트는 없는 것보다, 못생긴게 훨씬 낫다&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;애플리케이션 코드를 AI에 의존해 전적으로 작성하는 건 여전히 불안하다. 비즈니스 로직과 직결되기 때문이다. 하지만 테스트는 비교적 부담이 적다. 결정적인 장애로 이어지지 않고, 설령 품질이 낮더라도 나중에 참고하여 새로 작성할 수 있기 때문이다. 물론 지나치게 의존성이 많고 유지보수가 어려운 &apos;나쁜 테스트&apos;는 피해야 하지만, &lt;strong&gt;테스트는 없는 것보다, 못생긴게 훨씬 낫다&lt;/strong&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;내게 &lt;strong&gt;레거시 코드란, 단순히 테스트 루틴이 없는 코드&lt;/strong&gt;다.&lt;br&gt;
 테스트 루틴이 없는 코드는 나쁜 코드다. 코드가 얼마나 훌륭하게 작성돼 있는지 여부와는 상관없다. &lt;strong&gt;아무리 깔끔하고 객체 지향적이며 캡슐화가 잘돼 있어도 소용없다.&lt;/strong&gt; 테스트 루틴이 있으면, 코드의 동작을 빠르게 검증하며 수정할 수 있다. 테스트 루틴이 없으면 우리가 작성하고 있는 코드가 좋아지고 있는지, 나빠지고 있는지 제대로 알 수 없다. - Working Effectively with Legacy Code (Feathers, 2004)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;테스트 코드가 TDD로만 이루어진 것은 아니다. 테스트 코드의 본질적인 목적은 &lt;strong&gt;회귀 방지&lt;/strong&gt;와 &lt;strong&gt;인수&lt;/strong&gt;다. 이에 대해서는 개략적으로 &lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/test/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A0%95%EB%A6%AC/&quot;&gt;이전 글&lt;/a&gt;에서 정리했다.&lt;/p&gt;
+&lt;p&gt;테스트 코드가 TDD로만 이루어진 것은 아니다. 테스트 코드의 본질적인 목적은 &lt;strong&gt;회귀 방지&lt;/strong&gt;와 &lt;strong&gt;인수&lt;/strong&gt;다. 이에 대해서는 개략적으로 &lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/test/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A0%95%EB%A6%AC/&quot;&gt;이전 글&lt;/a&gt;에서 정리했으므로 넘어간다.&lt;/p&gt;
 &lt;p&gt;어쨌든, 이번에 루퍼스라는 과정에서 TDD 파트를 공부하게 되었다. 그러면서 바이브 코딩을 통해 TDD 빠르게 작성하는 프로세스를 갖춰보고자 하는 포부를 가져봤다. 이번엔 TDD에 대해 간략히 설명하고, 내가 작성한 방식에 대해 이야기해보려고 한다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;TDD 기초&lt;/h2&gt;
@@ -87,7 +87,7 @@
 &lt;li&gt;원하는 요구사항을 제공한다.&lt;/li&gt;
 &lt;li&gt;결과물을 수정한다.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;이런 방식에 따라 테스트 코드를 작성하는데 여러 IDE와 여러 AI 툴들이 있겠지만, 나는 커서를 사용하고 있다. 커서와 함께 바이브 코딩을 진행했다.&lt;/p&gt;
+&lt;p&gt;이런 순서에 따라 테스트 코드를 작성하는데 여러 IDE와 여러 AI 툴들이 있겠지만, 나는 커서를 사용하고 있다.&lt;/p&gt;
 &lt;p&gt;루퍼스 템플릿에는 테스트 예제가 있다. 이 예제를 결과물 샘플로 제공할 것이다. 그 예제를 기반으로 새로운 채팅을 연다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -337,18 +337,18 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;테스트는 내가 직접 보고 원하는대로 작성했으니, 테스트를 통과시키는 회귀 방지와 함께 코드를 고친다.&lt;/p&gt;
-&lt;p&gt;여기서 느낄 수 있는 주의점이 있다. 유스케이스 테스트는 &lt;strong&gt;블랙박스 테스트&lt;/strong&gt; 형태를 지향해야 한다. 위키백과에서 각각의 정의를 가져왔다.&lt;/p&gt;
+&lt;p&gt;여기서 느낄 수 있는 주의점이 있다. 유스케이스 테스트는 &lt;strong&gt;블랙박스 테스트&lt;/strong&gt; 형태를 지향해야 한다는 것. 블랙박스 테스트와 이와 대비되는 화이트박스 테스트에 대한 정의를 위키백과에서 가져왔다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Black-box_testing&quot;&gt;&lt;strong&gt;블랙박스 테스트&lt;/strong&gt;&lt;/a&gt;: &lt;strong&gt;블랙박스 테스트는 때때로&lt;/strong&gt; &lt;strong&gt;사양 기반 테스트&lt;/strong&gt; 라고도 하며 애플리케이션의 내부 구조나 작동 방식을 들여다보지 않고 기능을 검사하는 소프트웨어 테스트 방법&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/White-box_testing&quot;&gt;&lt;strong&gt;화이트박스 테스트&lt;/strong&gt;&lt;/a&gt;: &lt;strong&gt;화이트박스 테스트 (&lt;/strong&gt; &lt;strong&gt;클리어 박스 테스트&lt;/strong&gt; , &lt;strong&gt;글래스 박스 테스트&lt;/strong&gt; , &lt;strong&gt;투명 박스 테스트&lt;/strong&gt; , &lt;strong&gt;구조 테스트&lt;/strong&gt; 라고도 함)는 애플리케이션의 기능이 아닌 내부 구조나 작동 방식을 테스트하는 소프트웨어 테스트 방법&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;화이트박스 테스트&lt;/strong&gt;는 일반적으로 블랙박스 테스트에 비해 회귀 방지에 좋지만, 리팩터링 내성에 취약하며, &lt;strong&gt;블랙박스 테스트&lt;/strong&gt;는 이와 반대다. TDD의 목적은 요구사항을 리팩터링해가며 구현하는 것이다. 내부가 어떻게 변화될지 모른다. 최대한 블랙박스 테스트를 지향하여 작성해야 한다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;화이트박스 테스트&lt;/strong&gt;는 일반적으로 블랙박스 테스트에 비해 회귀 방지에 좋지만, 리팩터링 내성에 취약하며, &lt;strong&gt;블랙박스 테스트&lt;/strong&gt;는 이와 반대다. TDD의 목적은 &lt;strong&gt;변화&lt;/strong&gt;에 적응하며 요구사항을 빠르고 적절하게 &lt;strong&gt;구현&lt;/strong&gt;하는 것이다. 내부가 어떻게 변할지 모른다. 최대한 블랙박스 테스트를 지향하여 작성해야 한다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;유스케이스 TDD 이후&lt;/h2&gt;
 &lt;h3&gt;도메인 테스트&lt;/h3&gt;
-&lt;p&gt;도메인 모델로 가는 것은 리펙토링에 해당한다고 생각한다. 루퍼스 과제는 요구사항이 기능 구현과 도메인 모델에서 필요한 것이 관심사에 따라 명확하게 제공된다. 하지만 현실세계 실무는 요구사항을 줄 때 관심사가 구분되지 않는다.&lt;/p&gt;
-&lt;p&gt;때문에 이를 생각해서 유스케이스에 대한 블랙박스 테스트로 우선 작성하고, 도메인 모델과 도메인 테스트를 작성했다.&lt;/p&gt;
-&lt;p&gt;이 때에는 모든 공유 자원들을 떼어내고 단위 테스트로써 작성했다.&lt;/p&gt;
+&lt;p&gt;도메인 모델로 가는 것은 리펙토링에 해당한다고 생각한다. 루퍼스 과제는 요구사항이 기능 구현과 도메인 모델에서 필요한 것이 관심사에 따라 명확하게 제공된다. 하지만 현실세계에서는 요구사항을 줄 때 관심사가 구분되지 않는다.&lt;/p&gt;
+&lt;p&gt;때문에 이를 반영해서 유스케이스에 대한 블랙박스 테스트 + 통합 테스트로 우선 작성하고, 이후 도메인 모델과 도메인 테스트를 작성했다.&lt;/p&gt;
+&lt;p&gt;도메인 테스트 작성에는 모든 공유 자원들을 떼어내는 단위 테스트로써 작성했다. (사실 도메인 모델에서는 공유자원이 쓰이지도 않았다.)&lt;/p&gt;
 &lt;h3&gt;E2E 테스트&lt;/h3&gt;
 &lt;p&gt;유스케이스와 도메인 테스트까지 모두 완성했다는 것은 애플리케이션이 완성되었음을 의미한다.&lt;/p&gt;
 &lt;p&gt;이 때, 반드시 추가적으로 필요한 테스트가 있다. 애플리케이션의 사용자가 애플리케이션을 사용하기 위해서는 적절한 인터페이스를 제공해야한다. 인터페이스가 적절하지 않는다면, 아무리 잘 만들어진 애플리케이션이라도 무용지물이다. 때문에 이런 인터페이스들에 대한 테스트를 작성해줘야한다.&lt;/p&gt;

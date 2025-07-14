@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Jul 2025 06:51:09 GMT</lastBuildDate><item><title><![CDATA[실전 TDD 회고]]></title><description><![CDATA[어떤 분이 쓰신 글을 읽었는데, “시간이 부족해서 테스트 코드 짤 시간이 없어요”는 이제 변명이 되지 못한다는 것이다. AI의 도입이, '딸깍'으로 테스트 코드를 작성해주기 때문이다. 애플리케이션 코드를 AI…]]></description><link>https://iol-lshh.github.io/회고/tdd/tdd/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/tdd/tdd/</guid><pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 블로그]]></description><link>https://iol-lshh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Jul 2025 07:08:43 GMT</lastBuildDate><item><title><![CDATA[실전 TDD 회고]]></title><description><![CDATA[어떤 분이 쓰신 글을 읽었는데, “시간이 부족해서 테스트 코드 짤 시간이 없어요”는 이제 변명이 되지 못한다는 것이다. AI의 도입이, '딸깍'으로 테스트 코드를 작성해주기 때문이다. 애플리케이션 코드를 AI…]]></description><link>https://iol-lshh.github.io/회고/tdd/tdd/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/tdd/tdd/</guid><pubDate>Mon, 14 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -73,11 +73,65 @@
 &lt;li&gt;&lt;strong&gt;그린&lt;/strong&gt;: 기능을 구현한다. 테스트 코드는 성공한다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;리팩토링&lt;/strong&gt;: 애플리케이션의 유지보수가 용이하도록 코드 품질을 높인다.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2f149311855c7771b8e52c5e24e0b9c4/f1720/tdd.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6klEQVR42m2Sz0sbQRTH/e8EobaSUzBtUKqFCqIpAWtMemgEA0njKVhMC7UIObSNoK16EBVqIZqgpttqxE3apgnZNKk7m3V3ZjY709nduN0EH3OYH9/Pe9/3mD7aE4QYi1KV50vBYCkQuC4UnPfO6OslKcWNxu94/Lvbfen3X0xMcENDP0IhlssW3AabD6jEnw0Pf3O5yrHYudd75vFUEonC6OjXgQEplzVUun5rZYIp5aKJc+8DWK2y89Xenri/z9S6qvA+3+U9lyYBZ/0ObKXbyrc9L64aPwWnQWLuoCCsxWe3jzcNMdG7YVP6PI2nVhDbaFgTRVESRUWWW62WbuaOHCTnNiM22YHtIfhXUWTdgBHG+Xye47gjMwAw3L7+sjqdDipYNRHSBbPiMyl0Jwpf7WrsDgCpVqvV6/VKtcIUB8XM5PvA7Ma8qErdsEmXm2R8GU6twJElWKrrdi+GkTaO775kK7y9mPt1aj51wyoiT1Pobkx9lIQCINaorAotKIc+RcZST2bWw1VQs6fYGZhVAyjkXUYbjELWfLbY/itTQWoyw3MfF+6/fZzKrf2Rm7bn3h9mWTji2+NJtX8BPVwG0x/C7jdjvvSzz3zGwsj/+fZ8z5s+IabZor5xjHcKh7nyyTVSnF3Y8D9uW7OsZmah/AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/2f149311855c7771b8e52c5e24e0b9c4/dc87c/tdd.avif 158w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/383b4/tdd.avif 315w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/d0061/tdd.avif 630w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/20e2c/tdd.avif 945w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/c509e/tdd.avif 1024w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/2f149311855c7771b8e52c5e24e0b9c4/5787a/tdd.webp 158w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/89f54/tdd.webp 315w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/4d353/tdd.webp 630w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/0f41d/tdd.webp 945w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/44907/tdd.webp 1024w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/2f149311855c7771b8e52c5e24e0b9c4/dda05/tdd.png 158w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/679a3/tdd.png 315w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/50637/tdd.png 630w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/fddb0/tdd.png 945w,
+/static/2f149311855c7771b8e52c5e24e0b9c4/f1720/tdd.png 1024w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/2f149311855c7771b8e52c5e24e0b9c4/50637/tdd.png&quot;
+            alt=&quot;tdd&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;때문에 TDD의 테스트는 블랙 박스와 같다. 어떤 로직이 만들어질지 아직 상상은 안가지만, 요구사항에 맞는 결과를 미리 짜놓고, 구현하기 시작하니 오버 엔지니어링을 막고, 회귀를 방지하는 큰 효과를 가지고 있다.&lt;/p&gt;
 &lt;p&gt;이런 관점에서 보면, TDD를 이상적으로 적용하려면 &lt;strong&gt;도메인 설계&lt;/strong&gt;와 &lt;strong&gt;요구사항 정의&lt;/strong&gt;가 선행되어야 한다. 하지만 현실적으로 도메인 설계가 잘 이뤄지는 회사가 어디 있겠는가. 현실적으로 기능 단위의 요구사항을 먼저 정의하고, 그에 맞는 인터페이스로 TDD를 적용하는 것이 실용적이다. 결국 서비스 계층이나 유스케이스 수준에서 TDD를 수행하는 것이 가장 수월하게 느껴진다.&lt;/p&gt;
 &lt;p&gt;그렇기에 나는 애플리케이션의 기능 로직 단에서 TDD를 수행한다. 이후 나머지 필요한 테스트들(도메인 모델, E2E, 경계 등)을 추가로 작성했다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2&gt;바이브 TDD 프로세스&lt;/h2&gt;
+&lt;h2&gt;TDD 프로세스 (feat. 바이브 코딩)&lt;/h2&gt;
 &lt;p&gt;본 예제는 루퍼스 학습 과정에서 제공되는 템플릿을 이용했다. 이 템플릿은 컨테이너 디비를 이용하기 쉽게 도와준다. 또한 &lt;code class=&quot;language-text&quot;&gt;tearDown()&lt;/code&gt; 함수가 데이터를 전부 비워주도록 하여, 테스트의 독립성을 보장해준다. 컨테이너 디비가 일종의 페이크 객체 역할을 해주므로, 통합 테스트이지만 공유 자원(영속성이나 외부 자원)이 상당히 독립되게 된다.&lt;/p&gt;
 &lt;h3&gt;RED&lt;/h3&gt;
 &lt;p&gt;이런 도구들을 이용해 빠르게 애플리케이션의 요구사항 기능을 먼저 테스트로 작성한다. 이것이 TDD의 Red다. 하지만 요구사항만 보고 기능의 테스트를 완성시키기가 좀 막막할 수도 있다. 원래 빈 종이에 첫 선을 그리는게 가장 어렵지 않은가. 이럴 때 AI 조수가 있다면 어떨까?&lt;/p&gt;
@@ -241,8 +295,7 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;스파이로 만들라고 했는데, 자기 마음대로 spy를 지워버렸다. 이런 부분을 수정하며 테스트를 완성시킨다. 그리곤 서비스 단위 테스트를 하나 더 만들어놓고는 mock을 덕지덕지 바르고는 verify 하고 있다.&lt;/p&gt;
-&lt;p&gt;그래도 첫 삽은 떴다. 이 결과물을 AI를 통해 고친다면, 꽤 오래 걸릴 것이다. &lt;strong&gt;이후 코드는 직접 수정&lt;/strong&gt;하는 것이 효과적이다.&lt;/p&gt;
+&lt;p&gt;스파이로 만들라고 했는데, 자기 마음대로 spy를 지워버렸다. 그리곤 서비스 단위 테스트를 하나 더 만들어놓고는 mock을 덕지덕지 바르고는 verify 하고 있다. 이런 부분은 수정이 필요하다. 이 결과물을 AI를 통해 고친다면, 꽤 오래 걸릴 것이다. &lt;strong&gt;이후 코드는 직접 수정&lt;/strong&gt;하는 것이 빠르다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Nested&lt;/span&gt;
 &lt;span class=&quot;token annotation punctuation&quot;&gt;@DisplayName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;회원가입&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; register &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -286,8 +339,8 @@
 		&lt;span class=&quot;token function&quot;&gt;assertEquals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;exception&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getErrorType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ErrorType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;CONFLICT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;최초의 테스트 작성은 완벽하지 않아도 된다. 테스트의 본질은 요구사항에 대한 &lt;strong&gt;인수&lt;/strong&gt;와 리팩터링에 대한 &lt;strong&gt;회귀 방지&lt;/strong&gt;다. 두 가지 본질을 가장 우선시하며, 읽기 좋도록 있는 힘을 다해 깔끔하게 작성하면 된다. 그리고 점차 요구사항과 도메인이 뚜렷해지면서 결함을 최대한 없앨 수 있게 테스트를 향상시켜야 할 것이다.&lt;/p&gt;
-&lt;p&gt;이 때에 적절한 테스트 더블을 사용해야 한다. 위 예제에는 다양한 종류의 테스트 더블을 사용하고 있다. 테스트 더블은 &lt;a href=&quot;https://iol-lshh.github.io/pattern/testdouble/testdouble_%EC%A0%95%EB%A6%AC/&quot;&gt;이 곳&lt;/a&gt;에 정리했었으므로, 여기서는 자세히 이야기하지 않는다.&lt;/p&gt;
+&lt;p&gt;최초의 테스트 작성은 완벽하지 않아도 된다. 테스트의 본질은 요구사항에 대한 &lt;strong&gt;인수&lt;/strong&gt;와 리팩터링에 대한 &lt;strong&gt;회귀 방지&lt;/strong&gt;다. 두 가지 본질을 가장 우선시하며, 읽기 좋도록 있는 힘을 다해 깔끔하게 작성하면 된다.&lt;/p&gt;
+&lt;p&gt;때문에 최초 작성 시점에 AI 조수의 활약이 적절하다고 느꼈다. 다만 점차 요구사항과 도메인이 뚜렷해지면 결함을 최대한 없앨 수 있게 테스트를 향상시켜야 할 것인데, 이때부터는 정교한 완성을 위해 엔지니어의 역량이 중요할 것이다.&lt;/p&gt;
 &lt;h3&gt;Green&lt;/h3&gt;
 &lt;p&gt;아마 AI가 어느정도 테스트를 작성하며 필요한 파일과 클래스들을 미리 작성해두었을 것이다.
 이 파일들을 열어보며 하나씩 제대로 구현한다.&lt;/p&gt;

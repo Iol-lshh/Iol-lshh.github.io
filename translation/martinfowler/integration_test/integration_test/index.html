@@ -9,102 +9,66 @@
 
         gtag('config', 'G-DM0ZW7QKL9', {"anonymize_ip":true,"send_page_view":false});
       }
-      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/agile/">agile</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/cicd/">cicd</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/test/">test</a></li><li><a href="/categories/번역/">번역</a></li><li><a href="/categories/정리/">정리</a></li><li><a href="/categories/조영호님_강의/">조영호님_강의</a></li><li><a href="/categories/취미/">취미</a></li><li><a href="/categories/회고/">회고</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/번역/">번역</a>, <a href="/categories/test/">test</a></p><h1 itemProp="headline">On the Diverse And Fantastical Shapes of Testing 번역</h1><p>July 18, 2025</p></header><section itemProp="articleBody"><ul>
-<li>원본: <a href="https://martinfowler.com/articles/2021-test-shapes.html">On the Diverse And Fantastical Shapes of Testing(Martin Fowler, 2021.06.02)</a></li>
+      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/agile/">agile</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/cicd/">cicd</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/test/">test</a></li><li><a href="/categories/번역/">번역</a></li><li><a href="/categories/정리/">정리</a></li><li><a href="/categories/조영호님_강의/">조영호님_강의</a></li><li><a href="/categories/취미/">취미</a></li><li><a href="/categories/회고/">회고</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/번역/">번역</a>, <a href="/categories/test/">test</a></p><h1 itemProp="headline">Integration Test 번역</h1><p>July 18, 2025</p></header><section itemProp="articleBody"><ul>
+<li>원본: <a href="https://martinfowler.com/bliki/IntegrationTest.html">Integration Test(Martin Fowler, 2018.01.16)</a></li>
 </ul>
-<p>최근 트위터 등에서 팀이 테스트 노력을 어떻게 분배해야 하는지에 대한 논의가 다시 활발해졌습니다. 특히 팀 브레이는 자동화된 테스팅을 진지하게 받아들여야 한다고 설득력 있게 주장합니다. 제 글에 익숙한 분이라면 제가 그에게 전적으로 동의한다는 것을 아실 것입니다.</p>
-<p>그의 게시물에서 그가 제기한 요점 중 하나는 다음 두 이미지와 관련이 있습니다:</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 469px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/598d7c326ff8daa3384ac341887c46ff/ad3dc/testing_trophy.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 153.1645569620253%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAfCAIAAABoLHqZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEmElEQVR42o1V62/bVBTv/8XGpq2b1sL62L7xBW1oAiRAVIiVoW1AmzWtykpUoM+ppWu3iQ0xpFE2FcjyatLXRh+JEztxHMeO4+bpxG/HdjhOQlu1GXB0fH3u8f3d43vu757bks/lx4eH19Y3UBTF8fhfm5vBIFJmw6ahVV8hqm5G86qu6y0AHhtxRFAsvZuhUwyVYkRRrCi8aZpHUA2PYVbVimmBVVXL5gsphiGIBMumkzRTzJB6KVobbFZfLRbYMAxZlgVBKJfLEJPnBUWWdEU8GKohhnrQY4FlWUExLB4nSJKEZUObSJBpdjeCojSdoig6EkFBwc4lnPEYkkzS9SksMM/zgcDKTjC0tbWN4ziAkXAYwzCSTIZCSDQag7kweIHgsXAkAmPq6bDAoihBkmFoKsVomlb932KB4eE4DpbKcSWQoiAXBaUsKqKsrG68hHTUEmc2B0M0WCqCIMFgMI7jMSKJElSYyhG73PPf/xAF8d8iVyo6rG1jfQPDiXCCQXCKoBhYdShGkplyqiAgGM6m00fjW2Bwwb8piqJVdEXTJUUDC0SSlVQML2bzZcn6bIENowm4QR8wzLrXKBIEtfgkfmcicW8us7oqlcv1QYYBM5iHwQ2XpvAowjx+iI+Prg3ZNh1frw3bd0aGqLt3sh6nls/UWbe/VXUY/PCLdcQ199OfjknXt9Ou72cWRyZ+G5lYvD2+NHoHuk7HhHNs1vvkOZ0u1KeobVUNPLsUab32rLPP2WFzn+93ne9zdfa7Om2g7o5aF/zQPXd96dJtD1sQAAKZboFXAGHav3zebV/usvtAuwcDlg6tNIzBwAWw7f6uAe/FIf/ZL9w35l/AiYDUtBTL4lvDnjf6vV23PF2DgbNXfz7+zuixy47Xr3x38v2pY5e+ee3t4RPvjbX2LHTZ/R02z8VB38nPnT+6YxAV1qzbH26euem6MODtHlh+88bTMz33Wz9eOH7ZceLdsTM9C6c+mDn94WzbtV/ga/ct73mb98KAO0jkLDA8HC9dGfWfuuFq6/O09fnabf72W4F223Jbv88yatrWv3zuK/jqPX3d+SRAWDtTsbhtbf1OPPvJ+PKn4yu9U6u9kytXa/rZ9Dp063bv1Erv5OpHo77pxWB1b6vMf1iiqSqd2I1sUdg2Ewux0SCztRYNviRioXQ0lI5spWLhFFco7dF0nySNtlotcUIUTYc26dAm8/TXFZ8bCW+zyBbF0Hlgba2AmU3p2ahZkMJspoTu4HgQw7axBM4CuffGNOf2PsOBAJooJB7JxJyIz0j5naZHugm4PrvA+vXkjE7fN+h5iXygyKWj9fAIuGbLAquS8zq9oKfuGcwDnZoRWbfx32BwGaaQelplF0Jex9Kjm2vP7Ap5V0vOy2X6UPBDYMuQCiEtMWXSP0j4dAEZ49DxCjljJKdF6rGuVw7iG0fSKhy6JaqmCZk1LetSM14t6zW5AKhe8BuFQCXnUcXMHrh2MGrVs1jkeEGA6yKXz/OCWCoLXImH9vBNZe7dVSbcMBWrAOo6LyklUS6JCi+p0HKCJMgKJ8pQz2qQJgKoSkX/G9HZVFacPpi8AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <picture>
-          <source
-              srcset="/static/598d7c326ff8daa3384ac341887c46ff/dc87c/testing_trophy.avif 158w,
-/static/598d7c326ff8daa3384ac341887c46ff/383b4/testing_trophy.avif 315w,
-/static/598d7c326ff8daa3384ac341887c46ff/1538a/testing_trophy.avif 469w"
-              sizes="(max-width: 469px) 100vw, 469px"
-              type="image/avif"
-            /><source
-              srcset="/static/598d7c326ff8daa3384ac341887c46ff/5787a/testing_trophy.webp 158w,
-/static/598d7c326ff8daa3384ac341887c46ff/89f54/testing_trophy.webp 315w,
-/static/598d7c326ff8daa3384ac341887c46ff/7e2a2/testing_trophy.webp 469w"
-              sizes="(max-width: 469px) 100vw, 469px"
-              type="image/webp"
-            />
-          <source
-            srcset="/static/598d7c326ff8daa3384ac341887c46ff/dda05/testing_trophy.png 158w,
-/static/598d7c326ff8daa3384ac341887c46ff/679a3/testing_trophy.png 315w,
-/static/598d7c326ff8daa3384ac341887c46ff/ad3dc/testing_trophy.png 469w"
-            sizes="(max-width: 469px) 100vw, 469px"
-            type="image/png"
-          />
-          <img
-            class="gatsby-resp-image-image"
-            src="/static/598d7c326ff8daa3384ac341887c46ff/ad3dc/testing_trophy.png"
-            alt="testing trophy"
-            title=""
-            loading="lazy"
-            decoding="async"
-            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-          />
-        </picture>
-  </a>
-    </span></p>
+<p>통합 테스트는 독립적으로 개발된 소프트웨어 단위가 서로 연결되었을 때 올바르게 작동하는지 확인합니다. 이 용어는 소프트웨어 산업의 광범위한 기준에 비추어 볼 때도 모호해져서, 제가 글을 쓸 때 사용을 꺼려왔습니다. 특히, 많은 사람들은 통합 테스트가 필연적으로 광범위하다고 가정하지만, 더 좁은 범위로 수행될 때 더 효과적일 수 있습니다.</p>
+<p>이런 경우들이 종종 그렇듯이, 역사를 조금 살펴보는 것이 가장 좋습니다. 제가 통합 테스트에 대해 처음 배웠을 때, 1980년대였고 폭포수 모델이 소프트웨어 개발 사고의 지배적인 영향을 미치고 있었습니다. 대규모 프로젝트에서는 시스템의 다양한 모듈의 인터페이스와 동작을 명세하는 설계 단계가 있었습니다. 모듈은 개발자들이 프로그래밍하도록 할당되었습니다. 한 프로그래머가 단일 모듈을 담당하는 것이 드물지 않았지만, 이 모듈은 몇 달이 걸릴 정도로 충분히 컸습니다. 이 모든 작업은 독립적으로 이루어졌고, 프로그래머가 작업이 완료되었다고 믿으면 QA에 넘겨 테스트를 진행했습니다.</p>
+<p>테스트의 첫 부분은 단위 테스트로, 설계 단계에서 만들어진 명세에 따라 해당 모듈 자체를 테스트하는 것이었습니다. 일단 이 작업이 완료되면, 통합 테스트로 넘어가 다양한 모듈을 전체 시스템 또는 중요한 서브시스템으로 결합했습니다.</p>
+<p>이름이 시사하듯이, 통합 테스트의 요점은 <strong>여러 개별적으로 개발된 모듈이 예상대로 함께 작동하는지 테스트하는 것</strong>입니다. 이는 많은 모듈을 활성화하고 그 모든 모듈에 대해 더 높은 수준의 테스트를 실행하여 함께 작동하는지 확인하는 방식으로 수행되었습니다. 이러한 모듈은 단일 실행 파일의 일부일 수도 있고, 독립적일 수도 있습니다.</p>
+<p>2010년대의 관점에서 보면, 이것들은 두 가지 다른 것을 혼동했습니다:</p>
+<p>• 개별적으로 개발된 모듈이 제대로 함께 작동하는지 테스트하는 것</p>
+<p>• 여러 모듈로 구성된 시스템이 예상대로 작동하는지 테스트하는 것</p>
+<p>이 두 가지는 혼동하기 쉬웠습니다. 결국, 쇼핑 카트와 카탈로그 모듈을 모두 단일 환경에서 활성화하고 두 모듈을 모두 사용하는 테스트를 실행하지 않고는 어떻게 테스트할 수 있었겠습니까?</p>
+<p>2010년대의 관점은 1980년대에는 거의 고려되지 않았던 또 다른 대안을 제시합니다. 이 대안에서는 쇼핑 카트와 카탈로그 모듈의 통합을 쇼핑 카트 코드 중 카탈로그와 상호작용하는 부분을 <strong>카탈로그의 <a href="https://martinfowler.com/bliki/TestDouble.html">테스트 더블</a>(TestDouble)에 대해 실행</strong>함으로써 테스트합니다. 테스트 더블이 카탈로그의 충실한 복제본이라면, 전체 카탈로그 인스턴스를 활성화하지 않고도 카탈로그의 모든 상호작용 동작을 테스트할 수 있습니다. 이것은 모놀리식 애플리케이션의 별도 모듈인 경우에는 큰 문제가 아니지만, 카탈로그가 자체 빌드 도구, 환경 및 네트워크 연결을 필요로 하는 별도 서비스인 경우에는 큰 문제가 됩니다. 서비스의 경우, 이러한 테스트는 인-프로세스 테스트 더블에 대해 실행되거나, Mountebank와 같은 것을 사용하여 와이어를 통한 더블에 대해 실행될 수 있습니다.</p>
+<p>더블에 대해 통합 테스트를 수행할 때의 명백한 문제는 그 더블이 진정으로 충실한가 하는 것입니다. 그러나 이는 <a href="https://martinfowler.com/bliki/ContractTest.html">계약 테스트</a>(ContractTests)를 사용하여 별도로 테스트할 수 있습니다.</p>
+<p>좁은 범위의 통합 테스트와 계약 테스트를 이 조합으로 사용하면, 실제 서비스 인스턴스에 대해 테스트를 실행하지 않고도 외부 서비스와의 통합에 확신을 가질 수 있으며, 이는 빌드 프로세스를 크게 용이하게 합니다. 이렇게 하는 팀은 여전히 모든 실제 서비스를 사용하는 일종의 엔드투엔드 시스템 테스트를 수행할 수 있지만, 그렇더라도 매우 제한된 경로만 테스트하는 최종 스모크 테스트에 불과합니다. 또한 <a href="https://martinfowler.com/articles/qa-in-production.html">프로덕션 환경에서의 성숙한 QA 역량</a>을 갖추는 것도 도움이 되며, QA 역량이 충분히 성숙하다면 엔드투엔드 시스템 테스트가 전혀 수행되지 않을 수도 있습니다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
     >
       <a
     class="gatsby-resp-image-link"
-    href="/static/0aea98fe0ad5066fcd31d3f6ead05e5b/eefce/honeycomb.png"
+    href="/static/26d0fc216e4a9e79bf2ec3252105d519/b4095/integration.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABk0lEQVR42o2STW+CQBCGOXv27MUfISbWo/HsUX9ok54am7bWmipUBKlStdqKwLKLlI9dlY5QjUmp8Tm8O1nmnZksw5XL5Vqtls/nc7lcNpvNZDLc5TQajXq9XqlUqtUqKNQqHuD5YqFQ4Hm+VCpdpcG5rtts3imKIgiiLCvDoQo6Go0laaCqb31JEkWx1xMgLYqi3W4XncBtNhvHcVCMbeNYbRDLQnBgjCFYLBZ2DMYEEnzfTwpxyZGQ1DsGXsAcjx4vT3N+O0dpbLdb3fbaymdTnE50h9JNalqK2Q+oPLU6I6s91B/lRWeMepqJyPe+/xlzMpRJvI6GhCnpauhFQ+IEdzSsLckfb5oZrQNx5vTn7kN/fvsyhliYuTPDvchsEe9ZNbqa/fqxLyG820+qOdl3Pjv28bWWyO2OzZuWcn3fb8lf8GYhZRc9WEJAmaQt24MZdv3/ctLNIfwcxihlQUhhiyilME6KmTGmxxjGStdXhmEma0QIgfWKlRzWC8f3TvIpDEMOSq5jYHtBPc+DVtFl/ABvzvw4FIb03QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABXElEQVR42pVRy07DMBDMT/IvcED8AOLEEXHvgRsIFQ4gISTaQwUlCoJKpSokOA8ndfyIXccJ65hSVKkHolUSr2dmx2OvbVtT17ZM3RjT/ufxgFPE4SKJSIrYArtu05jGaoGormvdNM1WMisymqc0z+Cn1kvoinJB0i9bGEFJzlYGNeCtXOfRgyEVK2XFJU4lp7DtyCWOhaBkHnGUQUcrRXBCCwwDAO9gHhiEDw2mw509TYXzo5VUMM0of/f4ef8EOhUtWYYEyWmRclIspUV6XIsguCNvk+h2hFFkOtttd0o6eeVjvybMnXiUFUhI698Yl4KX5+HN2ZGKESz6p4fT8cByYR9eSrZar6Tap5cJipPfpSWTMHy+vJoPBhePQV4WWop1mg7UZcPCWfU5Mx9zU1XrtBMU93u9GS4Ohj6rLW7jWtyca//84f3extFF9UPewG27UqaoUByE/wK+AfXYPLT2Ioj/AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <picture>
           <source
-              srcset="/static/0aea98fe0ad5066fcd31d3f6ead05e5b/dc87c/honeycomb.avif 158w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/383b4/honeycomb.avif 315w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/d0061/honeycomb.avif 630w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/0e567/honeycomb.avif 720w"
+              srcset="/static/26d0fc216e4a9e79bf2ec3252105d519/dc87c/integration.avif 158w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/383b4/integration.avif 315w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/d0061/integration.avif 630w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/20e2c/integration.avif 945w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/a330b/integration.avif 1111w"
               sizes="(max-width: 630px) 100vw, 630px"
               type="image/avif"
             /><source
-              srcset="/static/0aea98fe0ad5066fcd31d3f6ead05e5b/5787a/honeycomb.webp 158w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/89f54/honeycomb.webp 315w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/4d353/honeycomb.webp 630w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/aced9/honeycomb.webp 720w"
+              srcset="/static/26d0fc216e4a9e79bf2ec3252105d519/5787a/integration.webp 158w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/89f54/integration.webp 315w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/4d353/integration.webp 630w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/0f41d/integration.webp 945w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/37c56/integration.webp 1111w"
               sizes="(max-width: 630px) 100vw, 630px"
               type="image/webp"
             />
           <source
-            srcset="/static/0aea98fe0ad5066fcd31d3f6ead05e5b/dda05/honeycomb.png 158w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/679a3/honeycomb.png 315w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/50637/honeycomb.png 630w,
-/static/0aea98fe0ad5066fcd31d3f6ead05e5b/eefce/honeycomb.png 720w"
+            srcset="/static/26d0fc216e4a9e79bf2ec3252105d519/dda05/integration.png 158w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/679a3/integration.png 315w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/50637/integration.png 630w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/fddb0/integration.png 945w,
+/static/26d0fc216e4a9e79bf2ec3252105d519/b4095/integration.png 1111w"
             sizes="(max-width: 630px) 100vw, 630px"
             type="image/png"
           />
           <img
             class="gatsby-resp-image-image"
-            src="/static/0aea98fe0ad5066fcd31d3f6ead05e5b/50637/honeycomb.png"
-            alt="honeycomb"
+            src="/static/26d0fc216e4a9e79bf2ec3252105d519/50637/integration.png"
+            alt="integration"
             title=""
             loading="lazy"
             decoding="async"
@@ -113,134 +77,18 @@
         </picture>
   </a>
     </span></p>
-<p>이 두 "기형적인 덩어리"(misshapen blobs)는 기존의 테스트 피라미드 이미지에 대한 반응입니다:</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 560px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/9fb1239f60102e5f755ad103cabd2e7c/360ab/test_pyramid.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACR0lEQVR42l1STWwSURDm4sGrBw8eGmNiPHrz6kFtUq3G0tZW2qKtvxdjPHgxarxVD/4kWm0ttBSrQrBQ0irITyvKjzVoWrrCogToAstPl91ld+EtC8v6FjQ1nUzmzZuZL9+beaNAfM6lOU02n6RwTJKkhiwSqAuPI/M9nlEz5ofBuhxrQKfAFpLFOIKH1jNroAYUkeCX1YArnYzEfzTrRBHam8GJ/Zbzp5fv7jUPGhPLMCKIdWjDWQTNheNELJqPAAEopKbwZZZIxVu+DV/faVAfst3q8jxss1w9sHA9XaFbqRyT5aqs9E8UYpOK55gCFpOdmtgeWGtz+vY4PLvtS/ucn3d9cA9+/1kT5WfjpQzLs83uZNQWc25DBj/Bcjtcwcsodu1X6gySuIRiI2jq4Ep4OJqE2SydYf9nbh0VjqEyiTwFOt75Dhu9vebAWXOg2+RTmfwjJr/K4D2idX0NpelyrsQz28EA9rwRo+678R4NMaQv9E8XujWkchIq3avl+qaqSg130ZCORTmxvB3MiwC3fmL6ZmiVjuyfpi+8Zu+9L91ZhEqqXxEq3aZaT3dpk0ZXWRIkcQssT4KXeOzlAqWcIs7piwMz5JW3zCM388DJjDqo4VlyQEcO6enOyfgbBwtrm8P7y1ytVMIr7t8OB3fDutkxRnS+II4/J44+JY49I9rHiifGi6cmiJPj4LY9hH5DCTRbwuWBSw2FIIre+VnE64QXkSyDjxEwtwosa8AaAosIsIV5u6xCEJOqdbhV1Rr8zVqL+Q+qxRrwCkGrbAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <picture>
-          <source
-              srcset="/static/9fb1239f60102e5f755ad103cabd2e7c/dc87c/test_pyramid.avif 158w,
-/static/9fb1239f60102e5f755ad103cabd2e7c/383b4/test_pyramid.avif 315w,
-/static/9fb1239f60102e5f755ad103cabd2e7c/2653b/test_pyramid.avif 560w"
-              sizes="(max-width: 560px) 100vw, 560px"
-              type="image/avif"
-            /><source
-              srcset="/static/9fb1239f60102e5f755ad103cabd2e7c/5787a/test_pyramid.webp 158w,
-/static/9fb1239f60102e5f755ad103cabd2e7c/89f54/test_pyramid.webp 315w,
-/static/9fb1239f60102e5f755ad103cabd2e7c/7c84e/test_pyramid.webp 560w"
-              sizes="(max-width: 560px) 100vw, 560px"
-              type="image/webp"
-            />
-          <source
-            srcset="/static/9fb1239f60102e5f755ad103cabd2e7c/dda05/test_pyramid.png 158w,
-/static/9fb1239f60102e5f755ad103cabd2e7c/679a3/test_pyramid.png 315w,
-/static/9fb1239f60102e5f755ad103cabd2e7c/360ab/test_pyramid.png 560w"
-            sizes="(max-width: 560px) 100vw, 560px"
-            type="image/png"
-          />
-          <img
-            class="gatsby-resp-image-image"
-            src="/static/9fb1239f60102e5f755ad103cabd2e7c/360ab/test_pyramid.png"
-            alt="test pyramid"
-            title=""
-            loading="lazy"
-            decoding="async"
-            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-          />
-        </picture>
-  </a>
-    </span></p>
-<p>이 이미지들의 요점은 다양한 유형의 테스트, 특히 단위 테스트와 더 광범위한 테스트 사이의 균형에 우리가 기울여야 할 노력의 양을 나타내는 것입니다. 피라미드는 대부분의 테스트를 단위 테스트로 수행해야 한다고 주장하는 반면, 벌집과 트로피는 단위 테스트의 양을 상대적으로 적게 하고 주로 통합 테스트에 집중해야 한다고 말합니다.</p>
-<p>이 논의에서 제가 가진 두 번째로 큰 문제는 사람들이 단위 테스트와 통합 테스트의 차이를 무엇으로 보는지 명확하지 않아 논의가 불투명해진다는 것입니다.</p>
-<p>"단위 테스트"와 "통합 테스트"라는 용어는 대부분의 소프트웨어 용어의 모호한 기준에 비추어 볼 때도 항상 다소 불분명했습니다. 제가 원래 이해했던 바에 따르면, 이들은 주로 조직적인 문제였습니다. 대규모 폭포수 소프트웨어 프로젝트 시절로 돌아가 봅시다. 저는 몇 달 동안 코드 덩어리를 작업하고 있습니다. 혼자 작업할 수도 있고, 소규모 팀에서 작업할 수도 있습니다. 어느 쪽이든 저는 이 코드 덩어리를 이웃 부분과 상대적으로 분리되어 작업할 수 있는 개념적 단위로 생각합니다. 코딩을 마친 후에는 단위 테스트 팀에 넘겨줄 수 있으며, 그 팀은 그 단위를 단독으로 테스트합니다. 이 테스트가 작동하도록 한두 달이 지난 후에, 우리는 그것을 이웃 부분과 통합하고 시스템의 더 큰 부분, 또는 실제로 전체 시스템에 대해 통합 테스트를 수행할 수 있습니다. 핵심적인 차이점은 단위 테스트는 나/우리의 코드를 <strong>격리하여</strong> 테스트하는 반면, 통합 테스트는 우리의 코드가 <strong>별도로 개발된 코드와 어떻게 작동하는지</strong> 테스트한다는 것입니다.</p>
-<p>오늘날 많은 사람들은 <a href="https://martinfowler.com/bliki/ExtremeProgramming.html">익스트림 프로그래밍</a>(Extreme Programming)의 일환으로 켄트 벡(Kent Beck)이 개척한 Xunit 계열의 테스팅 도구를 통해 단위 테스트를 접하게 되었습니다. 켄트는 "단위 테스트"라는 용어를 개발자가 일상 업무의 일환으로 작성하는 테스트를 지칭하는 데 사용했습니다.</p>
-<blockquote>
-<p>프로그래머는 프로그램의 작동에 대한 자신감이 프로그램 자체의 일부가 될 수 있도록 단위 테스트를 작성합니다. 고객은 프로그램의 작동에 대한 자신감이 프로그램의 일부가 될 수 있도록 기능 테스트를 작성합니다.</p>
-<ul>
-<li>켄트 벡 (익스트림 프로그래밍 해설, 1판)</li>
-</ul>
-</blockquote>
-<p>켄트의 원래 구상에서 "단위 테스트"는 별도의 테스트 팀이 아닌 프로그래머가 작성한 모든 것을 의미한다는 점에 주목하세요. <a href="https://martinfowler.com/bliki/C3.html">C3</a>에서 우리가 단위 테스트를 작성할 때, 우리는 보통 단일 클래스의 동작에 초점을 맞추곤 했습니다. 하지만 우리는 필요한 모든 의존성을 가지고 해당 객체를 생성하여 메서드를 실행할 수 있도록 테스트 픽스처를 설정했습니다. 다른 객체들도 실행되긴 했지만, 우리는 이 테스트에서는 다른 모든 코드가 올바르게 작동하고 있다고 가정했습니다 (그리고 보통 다른 코드들도 자체 테스트를 가지고 있었습니다).</p>
-<p>저는 "단위 테스트"라는 용어의 사용에 대해 상당한 논의가 있었던 것을 기억합니다. 한 테스트 전문가는 켄트의 이러한 용어 사용을 맹렬히 비난했습니다. 우리는 그에게 단위 테스트를 어떻게 정의할 것인지 물었고, 그의 대답은 "제 교육 과정 첫날 오전에 단위 테스트의 24가지 다른 정의를 다룹니다"와 같았습니다.</p>
-<p>(XP에서 영감을 받은 단위 테스트의 초기부터 "단위 테스트"라는 용어를 싫어하고 대신 "마이크로 테스트" 또는 "프로그래머 테스트"와 같은 이름을 사용할 것을 제안하는 사람들이 있었습니다.)</p>
-<p>많은 사람들에게 이 문제에서 가장 큰 쟁점은 이러한 의존적인 객체들이었습니다. 만약 제가 주문 객체를 테스트하는데, 이 객체가 고객 객체와 협력한다면, 고객 객체의 버그로 인해 주문 객체 테스트가 실패할 수 있습니다. 이는 협력하는 객체를 모의 객체(mock), 스텁(stub) 또는 다른 종류의 <a href="https://martinfowler.com/bliki/TestDouble.html">테스트 더블</a>(Test Double)로 대체하는 다른 스타일의 단위 테스트 작성으로 이어졌습니다. 저는 이후 이러한 <a href="https://martinfowler.com/bliki/UnitTest.html">단위 테스트</a> 스타일을 <strong>사회적</strong>(sociable)이고 <strong>고립적</strong>(solitary)이라고 설명하는 것이 유용하다는 것을 알게 되었습니다.</p>
-<p>(제이 필즈(Jay Fields)가 "고립적(solitary)"과 "사회적(sociable)"이라는 용어를 고안했습니다.)</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/1c1d226b91a1e28df3bc2e1ab1da04e9/fe4e9/sociable_solitary.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 27.848101265822784%; position: relative; bottom: 0; left: 0; display: block;"
-  ></span>
-  <picture>
-          <source
-              srcset="/static/1c1d226b91a1e28df3bc2e1ab1da04e9/dc87c/sociable_solitary.avif 158w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/383b4/sociable_solitary.avif 315w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/d0061/sociable_solitary.avif 630w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/20e2c/sociable_solitary.avif 945w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/9eba6/sociable_solitary.avif 1260w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/60459/sociable_solitary.avif 1380w"
-              sizes="(max-width: 630px) 100vw, 630px"
-              type="image/avif"
-            /><source
-              srcset="/static/1c1d226b91a1e28df3bc2e1ab1da04e9/5787a/sociable_solitary.webp 158w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/89f54/sociable_solitary.webp 315w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/4d353/sociable_solitary.webp 630w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/0f41d/sociable_solitary.webp 945w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/f27a3/sociable_solitary.webp 1260w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/ed3ec/sociable_solitary.webp 1380w"
-              sizes="(max-width: 630px) 100vw, 630px"
-              type="image/webp"
-            />
-          <source
-            srcset="/static/1c1d226b91a1e28df3bc2e1ab1da04e9/dda05/sociable_solitary.png 158w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/679a3/sociable_solitary.png 315w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/50637/sociable_solitary.png 630w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/fddb0/sociable_solitary.png 945w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/f46b1/sociable_solitary.png 1260w,
-/static/1c1d226b91a1e28df3bc2e1ab1da04e9/fe4e9/sociable_solitary.png 1380w"
-            sizes="(max-width: 630px) 100vw, 630px"
-            type="image/png"
-          />
-          <img
-            class="gatsby-resp-image-image"
-            src="/static/1c1d226b91a1e28df3bc2e1ab1da04e9/50637/sociable_solitary.png"
-            alt="sociable solitary"
-            title=""
-            loading="lazy"
-            decoding="async"
-            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-          />
-        </picture>
-  </a>
-    </span></p>
-<p>이러한 구분과 얽혀 XP 단위 테스트 관행의 두 가지 학파가 성장했는데, 저는 이를 <a href="https://martinfowler.com/articles/mocksArentStubs.html"><strong>클래식</strong>(classic)과 <strong>모키스트</strong>(mockist)</a>라고 부릅니다. 클래식 XP 단위 테스트는 우리가 원래 사용했던 사회적 접근 방식을 따르는 반면, 모키스트 스타일은 고립적 테스트를 선호합니다.</p>
-<p>그러므로 피라미드(pyramids)와 벌집(honeycombs) 논쟁으로 돌아가서, 벌집과 유사한 형태를 옹호하는 사람들의 글을 읽을 때, 저는 보통 그들이 모의 객체(mocks)의 과도한 사용을 비판하고 그것이 야기하는 다양한 문제에 대해 이야기하는 것을 듣습니다. 이로부터 저는 그들의 "단위 테스트" 정의가 제가 <strong>고립적 단위 테스트</strong>(solitary unit test)라고 부르는 것에 특정적으로 해당한다고 추론합니다. 마찬가지로 그들의 통합 테스트 개념은 제가 <strong>사회적 단위 테스트</strong>(sociable unit test)라고 부르는 것과 매우 흡사하게 들립니다. 이는 제가 들어본 테스트 피라미드에 대한 어떤 설명도 단위 테스트를 사회적이거나 고립적인 것으로 간주하기 때문에, 피라미드 대 벌집 논쟁을 무의미하게 만듭니다.</p>
-<p>"단위 테스트"가 엄격하게 정의된 것처럼 보이게 만드는 <a href="https://martinfowler.com/bliki/IntegrationTest.html">통합 테스트</a>의 정의 때문에 이러한 의미론적 그림은 더욱 혼란스러워집니다. 여기서 얻을 수 있는 교훈은 누군가가 다양한 테스트 범주에 대해 이야기하기 시작할 때, 그들이 사용하는 단어의 의미를 더 깊이 파고들어야 한다는 것입니다. 왜냐하면 당신이 읽었던 것과 똑같은 의미로 그 단어들을 사용하지 않을 것이기 때문입니다.</p>
-<p>만약 제 글에 주의를 기울이셨다면, 제가 이전에 단위 테스트와 통합 테스트에 대한 명확성 부족이 벌집/피라미드 논의에서 제가 가진 두 번째로 큰 문제라고 언급했음을 눈치채셨을 것입니다. 제 가장 큰 문제는 다음 인용문으로 잘 요약됩니다.</p>
-<blockquote>
-<p>사람들은 어떤 유형의 테스트를 몇 퍼센트 작성해야 하는지에 대해 논쟁하는 것을 좋아하지만, 그것은 주의를 분산시키는 일입니다. 경계를 명확히 설정하고, 빠르고 안정적으로 실행되며, 유용한 이유로만 실패하는 표현력 있는 테스트를 작성하는 팀은 거의 없습니다. 대신 여기에 집중하세요. -- 저스틴 설스(Justin Searls)</p>
-</blockquote></section><hr/></article><nav class="blog-post-nav"><div class="categories-container">categories:<ul><li class="post-categories"><a href="/categories/번역/">번역</a>, <a href="/categories/test/">test</a></li></ul></div></nav><div style="display:flex;flex-direction:row;align-items:center;position:fixed;bottom:20px;right:20px"><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/translation/bdd/introducing_bdd/">←</a><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/">🏠</a><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/translation/martinfowler/integration_test/integration_test/">→</a></div></main><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:75px;height:75px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:75px;height:75px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" data-src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p><strong><a href="/">Iol-lshh</a></strong><br/>The Engineer, Aiming Fine.<br/><a href="https://github.com/Iol-lshh"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub badge"/></a> <a href="https://www.linkedin.com/in/성혁-홍-06372b214"><img src="https://img.shields.io/badge/linkedin-007CC3?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn badge"/></a> <a href="https://www.instagram.com/l__sh.h"><img src="https://img.shields.io/badge/instagram-FF0069?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram badge"/></a></p></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/translation/martinfowler/diverse_test/on_the_diverse_and_fantastical_shapes_of_test/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<p>문제는 우리가 (최소한) 통합 테스트를 구성하는 두 가지 다른 개념을 가지고 있다는 것입니다.</p>
+<p>좁은 통합 테스트(narrow integration tests)</p>
+<p>• 내 서비스에서 별도 서비스와 통신하는 코드 부분만 실행합니다.
+• 해당 서비스의 테스트 더블을 사용합니다 (인-프로세스 또는 원격).
+• 따라서 단위 테스트보다 범위가 크지 않은 (일반적으로 단위 테스트와 동일한 테스트 프레임워크로 실행되는) 많은 좁은 범위의 테스트로 구성됩니다.</p>
+<p>넓은 통합 테스트(broad integration tests)</p>
+<p>• 모든 서비스의 라이브 버전을 필요로 하며, 상당한 테스트 환경과 네트워크 접근이 필요합니다.
+• 상호작용을 담당하는 코드뿐만 아니라 모든 서비스를 통과하는 코드 경로를 실행합니다.</p>
+<p>그리고 "통합 테스트"가 "넓은 통합 테스트"만을 의미한다고 생각하는 상당수의 소프트웨어 개발자들이 있으며, 이로 인해 좁은 방식을 사용하는 사람들과 마주쳤을 때 많은 혼란을 야기합니다.</p>
+<p>만약 유일한 통합 테스트가 넓은 범위의 테스트라면, 좁은 스타일을 탐구하는 것을 고려해야 합니다. 이는 테스트 속도, 사용 편의성 및 복원력을 크게 향상시킬 가능성이 높기 때문입니다. 좁은 통합 테스트는 범위가 제한적이므로 매우 빠르게 실행되는 경우가 많아, <a href="https://martinfowler.com/bliki/DeploymentPipeline.html">배포 파이프라인</a>(DeploymentPipeline)의 초기 단계에서 실행될 수 있으며, 문제가 발생했을 때 더 빠른 피드백을 제공합니다.</p>
+<p>이러한 용어 혼란만으로도 충분하지 않은데, 2010년대 후반에 또 다른 "통합 테스트" 용법이 생겨나면서 상황이 악화되었습니다. 이는 단위 테스트의 의미가 분기되면서 발생했습니다. 어떤 사람들은 단위 테스트를 제가 '고립된 단위 테스트(solitary unit test)'라고 부르는 방식으로 정의하는데, 이는 테스트 대상 이외의 모든 프로그램 요소가 테스트 더블로 대체되는 것을 의미합니다. 이러한 좁은 정의를 기반으로 일부 저자들은 "통합 테스트"를 '사교적인 단위 테스트(sociable unit tests)'를 의미한다고 정의합니다.</p>
+<p>이 모든 것이 제가 "통합 테스트"란 단어의 사용을 경계하는 이유입니다. 제가 이 용어를 읽을 때, 저자가 실제로 어떤 종류를 의미하는지 알기 위해 더 많은 문맥을 찾습니다. 제가 넓은 통합 테스트에 대해 이야기할 때는 "시스템 테스트" 또는 "E2E 테스트"라는 용어를 선호합니다. 좁은 통합 테스트에 대해서는 더 나은 이름이 없으므로 그 용어를 사용합니다.("좁은"이라는 단어를 붙여서 독자에게 그 특성을 이해시키려고합니다.) 저는 두 가지 종류의 "단위 테스트"는 구분이 필요할 때만 '고립된/사교적인'이라는 용어를 사용합니다.</p></section><hr/></article><nav class="blog-post-nav"><div class="categories-container">categories:<ul><li class="post-categories"><a href="/categories/번역/">번역</a>, <a href="/categories/test/">test</a></li></ul></div></nav><div style="display:flex;flex-direction:row;align-items:center;position:fixed;bottom:20px;right:20px"><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/translation/martinfowler/diverse_test/on_the_diverse_and_fantastical_shapes_of_test/">←</a><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/">🏠</a><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/translation/martinfowler/mock_vs_stub/mock_vs_stub/">→</a></div></main><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:75px;height:75px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:75px;height:75px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" data-src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p><strong><a href="/">Iol-lshh</a></strong><br/>The Engineer, Aiming Fine.<br/><a href="https://github.com/Iol-lshh"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub badge"/></a> <a href="https://www.linkedin.com/in/성혁-홍-06372b214"><img src="https://img.shields.io/badge/linkedin-007CC3?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn badge"/></a> <a href="https://www.instagram.com/l__sh.h"><img src="https://img.shields.io/badge/instagram-FF0069?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram badge"/></a></p></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/translation/martinfowler/integration_test/integration_test/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >

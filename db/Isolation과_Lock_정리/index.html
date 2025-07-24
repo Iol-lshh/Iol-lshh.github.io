@@ -207,7 +207,7 @@ MySQL(innoDB)과 PostgreSQL은 MVCC(undo log)를 통해 트랜잭션 격리를 �
 <li>ex) <code class="language-text">[TRX_ID: 1001 | Space ID: 5 | Page No: 123 | Offset: 64 | Data: balance=50 | Log Type: MLOG_WRITE]</code> (의사코드)</li>
 </ul>
 </li>
-<li><strong>Undo Log</strong>: <strong>Undo는</strong> 마지막으로 변경한 내용을 지우고 이전 상태로 되돌리는 행위로, 이를 위해 이전 상태를 저장해두는 로그 파일(<code class="language-text">ibdata1</code> 또는 <code class="language-text">undo tablespaces</code>).
+<li><strong>Undo Log</strong>: <strong>Undo는</strong> 마지막으로 변경한 내용을 지우고 이전 상태로 되돌리는 행위로, 이를 위해 이전 상태를 저장해두는 로그 파일(<code class="language-text">ibdata1</code> 또는 <code class="language-text">undo tablespaces</code>).
 <ul>
 <li>ex) <code class="language-text">[TRX_ID: 1001 | Space ID: 5 | Page No: 123 | Offset: 64 | Before Image: balance=100 | Log Type: MLOG_UNDO_UPDATE | Prev Undo Pointer: NULL]</code> (의사코드)</li>
 </ul>

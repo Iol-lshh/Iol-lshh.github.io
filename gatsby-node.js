@@ -187,3 +187,54 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   });
 };
+
+// 마크다운 파일에서 유효하지 않은 문자 제거
+exports.onPreBootstrap = ({ actions }) => {
+  const fs = require('fs');
+  const path = require('path');
+  
+  // 유효하지 않은 XML 문자들을 제거하는 함수
+  const cleanInvalidChars = (content) => {
+    // XML 1.0에서 허용되지 않는 문자들 제거
+    return content
+      .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '') // 제어 문자들
+      .replace(/[\uFFFE\uFFFF]/g, '') // BOM 문자들
+      .replace(/[\uD800-\uDFFF]/g, ''); // 서로게이트 쌍
+  };
+
+  // content 디렉토리의 모든 마크다운 파일 처리
+  const processMarkdownFiles = (dir) => {
+    const files = fs.readdirSync(dir);
+    
+    files.forEach(file => {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      
+      if (stat.isDirectory()) {
+        processMarkdownFiles(filePath);
+      } else if (file.endsWith('.md')) {
+        try {
+          let content = fs.readFileSync(filePath, 'utf8');
+          const originalContent = content;
+          
+          // 유효하지 않은 문자 제거
+          content = cleanInvalidChars(content);
+          
+          // 변경사항이 있으면 파일 업데이트
+          if (content !== originalContent) {
+            fs.writeFileSync(filePath, content, 'utf8');
+            console.log(`Cleaned invalid characters from: ${filePath}`);
+          }
+        } catch (error) {
+          console.error(`Error processing file ${filePath}:`, error);
+        }
+      }
+    });
+  };
+
+  // content 디렉토리 처리
+  const contentDir = path.join(__dirname, 'content');
+  if (fs.existsSync(contentDir)) {
+    processMarkdownFiles(contentDir);
+  }
+};

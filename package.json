@@ -48,6 +48,8 @@
     "url": "https://github.com/Iol-lshh/Iol-lshh.github.io.git"
   },
   "scripts": {
+    "clean:markdown": "node scripts/clean-markdown.js",
+    "prebuild": "npm run clean:markdown",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",

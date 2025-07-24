@@ -129,9 +129,6 @@ module.exports = {
       options: {
         output: '/',
         createLinkInHead: true,
-        exclude: ['/404/', '/404.html'],
-        sitemapSize: 5000,
-        format: 'xml',
         query: `
           {
             site {
@@ -188,10 +185,7 @@ module.exports = {
           }
           
           return entry;
-        },
-        format: 'xml',
-        exclude: ['/404/', '/404.html'],
-        sitemapSize: 5000
+        }
       },
     },
     {

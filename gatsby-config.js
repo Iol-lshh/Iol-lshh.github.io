@@ -127,8 +127,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: '/sitemap',
+        output: '/',
         createLinkInHead: true,
+        exclude: ['/404/', '/404.html'],
+        sitemapSize: 5000,
+        format: 'xml',
         query: `
           {
             site {
@@ -185,15 +188,24 @@ module.exports = {
           }
           
           return entry;
-        }
+        },
+        format: 'xml',
+        exclude: ['/404/', '/404.html'],
+        sitemapSize: 5000
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://iol-lshh.github.io',
-        sitemap: 'https://iol-lshh.github.io/sitemap/sitemap-index.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
+        sitemap: 'https://iol-lshh.github.io/sitemap-index.xml',
+        policy: [
+          { 
+            userAgent: '*', 
+            allow: '/',
+            disallow: ['/404/', '/404.html']
+          }
+        ]
       }
     },
     ...(process.env.GA_PROPERTY_ID ? [{

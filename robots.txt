@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://iol-lshh.github.io/sitemap/sitemap-index.xml
+Disallow: /404/
+Disallow: /404.html
+Sitemap: https://iol-lshh.github.io/sitemap-index.xml
 Host: https://iol-lshh.github.io

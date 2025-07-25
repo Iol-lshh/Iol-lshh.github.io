@@ -93,22 +93,20 @@ module.exports = {
                     imagePath = null; // 이미지가 아예 없으면 null
                   }
                 }
+                const enclosure = imagePath ? {
+                  url: imagePath.startsWith('http') ? imagePath : site.siteMetadata.siteUrl + imagePath,
+                  type: 'image/jpeg',
+                  size: 0
+                } : null;
+
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  enclosure: enclosure,
                   custom_elements: [
-                    { "content:encoded": node.html },
-                    ...(imagePath ? [{
-                      "media:content": {
-                        _attr: {
-                          url: imagePath.startsWith('http') ? imagePath : site.siteMetadata.siteUrl + imagePath,
-                          medium: "image"
-                        }
-                      }
-                    }] : []),
-                    { "media:description": node.excerpt }
+                    { "content:encoded": node.html }
                   ]
                 });
               });
@@ -141,6 +139,7 @@ module.exports = {
             categories: ["Technology", "Programming", "Software Engineering"],
             pubDate: new Date().toUTCString(),
             ttl: 60,
+
           },
         ],
       },

@@ -83,10 +83,16 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map(node => {
-                // HTML에서 첫 번째 이미지 URL 추출
-                const imgMatch = node.html.match(/<img[^>]+src="([^"]+)"/);
-                const firstImageUrl = imgMatch ? imgMatch[1] : null;
-                
+                // frontmatter.image가 있으면 그걸 사용, 없으면 본문에서 첫 번째 이미지 사용
+                let imagePath = node.frontmatter.image;
+                if (!imagePath) {
+                  const firstImgMatch = node.html.match(/<img[^>]+src=\"([^\"]+)\"/);
+                  if (firstImgMatch && firstImgMatch[1]) {
+                    imagePath = firstImgMatch[1];
+                  } else {
+                    imagePath = null; // 이미지가 아예 없으면 null
+                  }
+                }
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
@@ -94,18 +100,18 @@ module.exports = {
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [
                     { "content:encoded": node.html },
-                    ...(firstImageUrl ? [
-                      { "media:content": {
+                    ...(imagePath ? [{
+                      "media:content": {
                         _attr: {
-                          url: firstImageUrl.startsWith('http') ? firstImageUrl : site.siteMetadata.siteUrl + firstImageUrl,
+                          url: imagePath.startsWith('http') ? imagePath : site.siteMetadata.siteUrl + imagePath,
                           medium: "image"
                         }
-                      }},
-                      { "media:description": node.excerpt }
-                    ] : [])
-                  ],
-                })
-              })
+                      }
+                    }] : []),
+                    { "media:description": node.excerpt }
+                  ]
+                });
+              });
             },
             query: `{
               allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
@@ -118,8 +124,6 @@ module.exports = {
                   frontmatter {
                     title
                     date
-                    image
-                    description
                   }
                 }
               }

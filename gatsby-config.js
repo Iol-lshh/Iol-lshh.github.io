@@ -83,12 +83,27 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map(node => {
+                // HTML에서 첫 번째 이미지 URL 추출
+                const imgMatch = node.html.match(/<img[^>]+src="([^"]+)"/);
+                const firstImageUrl = imgMatch ? imgMatch[1] : null;
+                
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [
+                    { "content:encoded": node.html },
+                    ...(firstImageUrl ? [
+                      { "media:content": {
+                        _attr: {
+                          url: firstImageUrl.startsWith('http') ? firstImageUrl : site.siteMetadata.siteUrl + firstImageUrl,
+                          medium: "image"
+                        }
+                      }},
+                      { "media:description": node.excerpt }
+                    ] : [])
+                  ],
                 })
               })
             },
@@ -103,12 +118,25 @@ module.exports = {
                   frontmatter {
                     title
                     date
+                    image
+                    description
                   }
                 }
               }
             }`,
             output: "/rss.xml",
             title: "Iol-lshh's Blog RSS Feed",
+            description: "Iol-lshh의 기술 블로그 RSS 피드",
+            feed_url: "https://iol-lshh.github.io/rss.xml",
+            site_url: "https://iol-lshh.github.io",
+            image_url: "https://iol-lshh.github.io/icon.png",
+            managingEditor: "Iol-lshh",
+            webMaster: "Iol-lshh",
+            copyright: "2025 Iol-lshh",
+            language: "ko",
+            categories: ["Technology", "Programming", "Software Engineering"],
+            pubDate: new Date().toUTCString(),
+            ttl: 60,
           },
         ],
       },

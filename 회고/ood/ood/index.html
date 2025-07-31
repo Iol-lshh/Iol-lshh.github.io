@@ -140,7 +140,7 @@ End;</code></pre></div>
 <p><strong>요리사 관찰하기</strong><br>
 토마토 소스를 휘젓는 요리사를 지켜보고 있다고 상상해 보자. 요리사가 정확히 5분 동안 소스를 젓는 것을 시계를 사용해 측정한다. 이 결과를 보고 여러분은 토마토 소스는 항상 5분 동안 저어야 한다는 결론을 내린다. 그러고 나서 집으로 돌아와서 이 과정을 따라하며 5분 동안 소스를 저어도 소스는 여전히 토마토 스프처럼 묽다. 시간이 중요한 요인이 아니었던 것이다. 여러분은 적절한 농도가 될 때까지 소스를 저었다는 점을 놓친 것이다.</p>
 </blockquote>
-<p>먼저, <strong>도메인 언어</strong>를 배워야한다. 스테판 호퍼는 도메인 언어를 배우기 위해서는 소프트웨어 시스템이나 기술적 전문 용어가 없는 순수한 스토리에 집중하라고 말하고 있다. 기술적인 용어들은 <strong>비즈니스를 ==오염==시키고</strong>, 세분성과 범위를 망가뜨리기 때문이다.</p>
+<p>먼저, <strong>도메인 언어</strong>를 배워야한다. 스테판 호퍼는 도메인 언어를 배우기 위해서는 소프트웨어 시스템이나 기술적 전문 용어가 없는 순수한 스토리에 집중하라고 말하고 있다. 기술적인 용어들은 <strong>비즈니스를 <em>오염</em>시키고</strong>, 세분성과 범위를 망가뜨리기 때문이다.</p>
 <p>언어를 배우기 위해서 <strong>있는-그대로</strong>(As-is)인 도메인 스토리로 출발하여, <strong>있게-될</strong>(To-be) 도메인 스토리로 이동해야 한다. 또한 이 과정에서 <strong>거칠게-세분화</strong>(Coarse-grained)한 도메인 스토리에서 시작하여, <strong>잘게-세분화</strong>(Fine-grained)된 스토리로 나아가라고 하고 있다. 이런 과정에서 도출된 유비쿼터스 언어들을 용어집(glossary)에 작성한다.</p>
 <h4>도메인 스토리텔링 프로세스</h4>
 <p>정리하면 다음과 같은 순서로 이루어져야 한다.</p>
@@ -210,7 +210,6 @@ End;</code></pre></div>
         </picture>
   </a>
     </span></p>
-<p>그리고 잘게 세분화해야한다.</p>
 <h5>2. fine-grained, as-is, analog</h5>
 <p>위에서 06, 07, 08에 대한 내용을 세분화했다. 조금 더 과정이 세밀하게 보이게 된다.</p>
 <p><span
@@ -271,7 +270,7 @@ End;</code></pre></div>
   </a>
     </span></p>
 <h5>3. fine-grained, to-be, analog</h5>
-<p>불필요한 부분을 잘라내어 <strong>업무 효율화</strong>와 <strong>필요하지만 없었던 프로세스</strong>를 정리한다.</p>
+<p>불필요한 부분을 잘라내어 <strong>업무 효율화</strong>와 <strong>필요하지만 없었던 프로세스</strong>를 추가하고 정리한다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
@@ -394,11 +393,11 @@ End;</code></pre></div>
 <p>도메인 스토리와 <strong>휴리스틱</strong>(Heuristic, 어림짐작하기)에 맡긴다. 제대로 작성된 도메인 스토리는 <strong>도메인 전문가 관점</strong>에서 활동이 어디에 속하는지 시각적으로 보여준다. 특히 <strong>행위자 관점</strong>에서 보았을 때 서브 도메인이 여러 활동으로 구성되는 것을 볼 수 있다.</p>
 <p>경계에는 이런 <strong>지표</strong>(indicator)가 드러난다.</p>
 <ul>
-<li>Actor <strong>스스로 결과 생성</strong>: Actor는 여러 관련 활동을 독립적으로 완료해 의미 있는 결과를 생성한다. 서브 도메인은 단일 Actor의 행동으로 되어있다.</li>
-<li><strong>단방향</strong> 정보 <strong>흐름</strong>: Actor에서 다른 이해관계자로 책임 이양 과정(<strong>데이터의 흐름)이 단방향</strong>이다.</li>
+<li><strong>Actor 스스로 결과 생성</strong>: Actor는 여러 관련 활동을 독립적으로 완료해 의미 있는 결과를 생성한다. 서브 도메인은 단일 Actor의 행동으로 되어있다.</li>
+<li><strong>단방향 정보 흐름</strong>: Actor에서 다른 이해관계자로 책임 이양 과정(<strong>데이터의 흐름)이 단방향</strong>이다.</li>
 <li><strong>다른 촉발점</strong>: 도메인 스토리와 <strong>무관한 지원 활동</strong>: 아래 그림의 10번이 이에 해당한다. 도메인 전문가는 10번 활동이 반드시 필요한 활동이라고 말한다. 하지만 어느 다른 Actor도 관여하지 않는다. 이것은 전혀 다른 하위 도메인일 가능성이 높다.</li>
-<li><strong>언어</strong>의 차이: 동일한 작업 객체를 Actor간에 다르게 부른다. 또는 같은 이름이 다른 의미로 사용된다.</li>
-<li><strong>같은 것</strong>을 <strong>다른 용도</strong>로 사용: 동일한 작업 객체가 완전히 다른 업무에 사용된다. 아래 그림에서 '계약'에 대해 <em>고객은 '서명'이란 행위</em>에 사용하고, <em>위험관리자는 '심사'란 행위</em>에 사용한다.</li>
+<li><strong>언어의 차이</strong>: 동일한 작업 객체를 Actor간에 다르게 부른다. 또는 같은 이름이 다른 의미로 사용된다.</li>
+<li><strong>같은 것을 다른 용도로 사용</strong>: 동일한 작업 객체가 완전히 다른 업무에 사용된다. 아래 그림에서 '계약'에 대해 <em>고객은 '서명'이란 행위</em>에 사용하고, <em>위험관리자는 '심사'란 행위</em>에 사용한다.</li>
 </ul>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -479,16 +478,8 @@ End;</code></pre></div>
 <p>불변식 설계를 위해서는 도메인 스토리에 그려진 <strong>동사</strong>(verb)들을 살펴봐야한다.</p>
 <ul>
 <li>Actor는 목표를 달성하기위해 <strong>무엇</strong>(what)을 하고 있는가?</li>
-<li>Actor는 작업 객체를 <strong>어떻게 처리</strong>하는가? (절차, 전략, 행위 중심)
-<ul>
-<li><em>고객 정보</em>를 검증 프로세스를 통해 <strong>검토</strong>하고 <strong>승인</strong>한다.</li>
-</ul>
-</li>
-<li>Actor는 <strong>어떤 방법</strong>으로 작업 객체를 <strong>다루는가</strong>? (도구, 수단, 방식 중심)
-<ul>
-<li><em>고객 정보</em>를 <strong>검증 프로세스를 통해</strong> 검토하고 승인한다.</li>
-</ul>
-</li>
+<li>Actor는 작업 객체를 <strong>어떻게 처리</strong>하는가? (절차, 전략, 행위 중심) => <em>고객 정보</em>를 검증 프로세스를 통해 <strong>검토</strong>하고 <strong>승인</strong>한다.</li>
+<li>Actor는 <strong>어떤 방법</strong>으로 작업 객체를 <strong>다루는가</strong>? (도구, 수단, 방식 중심) => <em>고객 정보</em>를 <strong>검증 프로세스를 통해</strong> 검토하고 승인한다.</li>
 <li>Actor는 어떻게 정보를 교환하고 <strong>협력</strong>하는가?</li>
 </ul>
 <p>이제 직접 도메인 모델을 만들어보자. 다음은 위에서 그려낸 도메인 스토리의 1, 2, 3, 4, 5 로 이루어진 서브 도메인을 도메인 모델링하는 과정이다.</p>

@@ -1,33 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Aug 2025 02:07:03 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Aug 2025 01:55:19 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[Generic과 변성]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/pattern/generic/generic/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/generic/generic/</guid><pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;hr&gt;
-&lt;h2&gt;변성&lt;/h2&gt;
-&lt;h3&gt;무공변&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;다형성 예제&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;공변&lt;/h3&gt;
-&lt;h3&gt;반공변&lt;/h3&gt;
-&lt;h3&gt;상속 - 오버라이딩에서의 변성 관계&lt;/h3&gt;
-&lt;p&gt;이처럼 열심히 변성에 대해서 정리해봤다. 하지만, 사실 제네릭은 불공변이다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;제네릭은 불공변&lt;/h2&gt;
-&lt;p&gt;여태까지 변성에 대해서 잘 정리하고 갑자기 본편인 제네릭은 불공변이라니! 이게 무슨소리요. 할 수 있다. 내 생각에 제네릭을 온전히 이해하기 위해선, 변성을 이해하고, 제네릭과 분리해서 사고할 수 있어야, 제네릭을 온전히 알 수 있다고 생각했다.&lt;/p&gt;
-&lt;p&gt;제네릭을 불공변이다.&lt;/p&gt;
-&lt;p&gt;불공변이 뭘까? 변성을 갖지 않는다는 것이다. 제네릭은 복잡한 공변 구조와 상관 없이 제네릭에 의한 판단을 갖는다.&lt;/p&gt;
-&lt;p&gt;먼저 컬렉션 예제를 보자.&lt;/p&gt;
-&lt;h3&gt;컬렉션과 제네릭&lt;/h3&gt;
-&lt;p&gt;컬렉션에서의 제네릭을 알았으니,
-좀 더 일반화 시켜 클래스에세의 제네릭을 살펴보자.&lt;/p&gt;
-&lt;h3&gt;클래스와 제네릭&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;상태&lt;/li&gt;
-&lt;li&gt;생성자&lt;/li&gt;
-&lt;li&gt;메서드&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;자, 여기까지 왔으면 이제 최종 국면이다.
-제네릭을 적용한 클래스에 다형성을 뿌려보자.&lt;/p&gt;
-&lt;h3&gt;다형성과 제네릭&lt;/h3&gt;
-&lt;hr&gt;
-&lt;p&gt;제네릭은 복잡한 주제다. 하지만 제네릭을 알고 쓴다면, 다형성을 풍부하고 추상적으로 활용 가능하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[설계: 객체와 도메인]]></title><description><![CDATA[객체 지향 프로그래밍(Object Oriented Programming, OOP)은 IT…]]></description><link>https://iol-lshh.github.io/회고/ood/ood/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ood/ood/</guid><pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/e18beb7ad7c00121099c9c4589920a8c/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Aug 2025 03:31:00 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Aug 2025 03:19:20 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[설계: 객체와 도메인]]></title><description><![CDATA[객체 지향 프로그래밍(Object Oriented Programming, OOP)은 IT…]]></description><link>https://iol-lshh.github.io/회고/ood/ood/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ood/ood/</guid><pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/e18beb7ad7c00121099c9c4589920a8c/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

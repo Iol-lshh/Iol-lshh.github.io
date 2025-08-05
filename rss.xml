@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Aug 2025 03:31:00 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Aug 2025 03:19:20 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[설계: 객체와 도메인]]></title><description><![CDATA[객체 지향 프로그래밍(Object Oriented Programming, OOP)은 IT…]]></description><link>https://iol-lshh.github.io/회고/ood/ood/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ood/ood/</guid><pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/e18beb7ad7c00121099c9c4589920a8c/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Tue, 05 Aug 2025 15:14:07 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 05 Aug 2025 15:02:28 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[설계: 객체와 도메인]]></title><description><![CDATA[객체 지향 프로그래밍(Object Oriented Programming, OOP)은 IT…]]></description><link>https://iol-lshh.github.io/회고/ood/ood/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ood/ood/</guid><pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/e18beb7ad7c00121099c9c4589920a8c/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -8526,6 +8526,7 @@ MySQL(innoDB)과 PostgreSQL은 MVCC(undo log)를 통해 트랜잭션 격리를 �
 &lt;li&gt;&lt;strong&gt;SERIALIZABLE&lt;/strong&gt;: 조회되는 레코드들마다 트랜잭션이 끝날때까지 &lt;strong&gt;모든 읽는 범위&lt;/strong&gt; S-Lock(RangeS-S, 공유 키 범위 + 공유 리소스)을 획득. 쓰기 또한 범위 X-Lock(RangeX-X, 배타 키 범위 + 배타 리소스) 획득. 한 트랜잭션이라도 해당 범위를 갱신하려고 하면 대기 발생. (PG는 스냅샷 방식을 쓰지만, 아이디어는 동일하다고 본다.)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;(MSSQL도 MVCC를 옵션(SNAPSHOT Isolation)으로 제공하지만, SNAPSHOT 격리 레벨까지 이야기 하면 MySQL보다 먼저 이야기 하는 이유가 없으니, 우선 여기까지만 이야기하자.)&lt;/p&gt;
+&lt;h3&gt;MSSQL Lock&lt;/h3&gt;
 &lt;p&gt;MSSQL은 &lt;strong&gt;Update Lock&lt;/strong&gt;이라는 특별한 Lock 메커니즘을 제공한다. (정말 직관적인 명칭이 아닐수도 없다. 글 초반에 트랜잭션 시스템이 구현해야 할 두 가지 Read/Update Lock에 대해 정리했었다. 마이크로소프트는 종종 자체적인 방식으로 기능을 설계하지만, 이번만큼은 상당히 직관적인 개념 정의의 기능이 아닐 수 없다.)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Update Lock&lt;/strong&gt;(U-Lock): U-Lock을 획득한 자원에 대해, 다른 트랜잭션의 U-Lock, X-Lock 획득을 방지한다. S-Lock은 허용된다. U-Lock은 Update 가능성이 있는 단위에 대해 걸어두고, 실제 Update 쿼리 동작시에 X-Lock으로 바뀐다.&lt;/li&gt;
@@ -8564,6 +8565,7 @@ MySQL(innoDB)과 PostgreSQL은 MVCC(undo log)를 통해 트랜잭션 격리를 �
 &lt;li&gt;&lt;strong&gt;DB_TRX_ID&lt;/strong&gt;: 모든 레코드에는 &lt;code class=&quot;language-text&quot;&gt;DB_TRX_ID&lt;/code&gt;라는 숨겨진 시스템 열이 있어, 이 레코드를 마지막으로 수정한 트랜잭션 ID를 저장한다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Read View&lt;/strong&gt;: 특정 트랜잭션이 데이터를 읽을 때, 그 시점에서 생성되는 데이터의 &lt;strong&gt;스냅샷&lt;/strong&gt;(snapshot). 메모리에 저장되며, 트랜잭션이 종료되면 휘발된다.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;ReadView&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;ReadView&lt;/strong&gt;는 다음으로 구성된다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;활성 트랜잭션 리스트&lt;/strong&gt;: Read View가 생성된 시점에서 아직 커밋되지 않은 트랜잭션들의 ID 목록&lt;/li&gt;
@@ -8612,7 +8614,7 @@ MySQL(innoDB)과 PostgreSQL은 MVCC(undo log)를 통해 트랜잭션 격리를 �
 &lt;li&gt;&lt;strong&gt;REPEATABLE READ&lt;/strong&gt;: 트랜잭션 시작 시점에 &lt;strong&gt;새로운 Read View를 생성&lt;/strong&gt;하고 트랜잭션 종료 후 휘발&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;SERIALIZABLE&lt;/strong&gt;: 트랜잭션 시작 시 Read View 생성. 읽기 시 범위에 S-Next-Key Lock을 획득하며 트랜잭션 종료까지 유지. 쓰기 시 X-Next-Key Lock 획득&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;MySQL Update Lock 구현 방식&lt;/h3&gt;
+&lt;h3&gt;MySQL Lock&lt;/h3&gt;
 &lt;p&gt;MySQL은 MVCC를 활용하여, 동시성을 확보했다. 하지만 자원의 경합 상태에 이르렀을 때, 동기화를 필요로 한다. 이때 잠금을 사용하게 된다. MySQL은 Lock을 두 가지 제공해준다. S-Lock과 X-Lock이다. 이를 쿼리로 명시적으로 획득한다면 다음과 같다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;SELECT ... FOR UPDATE&lt;/code&gt;: 트랜잭션 동안 조회 레코드에 배타 락(Exclusive Lock, X-Lock) 획득&lt;/li&gt;

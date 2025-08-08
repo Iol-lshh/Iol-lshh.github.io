@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 08 Aug 2025 07:12:59 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 08 Aug 2025 07:00:35 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[동시성: 하드웨어, 운영체제, 애플리케이션 해부]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/concurrency/concurrency_layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/concurrency/concurrency_layered/</guid><pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/a94d15c70b544acb0985fc0fe76f99a5/50637/latency.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;애플리케이션의 품질을 판단하는 지표에는 여러 가지가 있다. 기능적 요구사항뿐 아니라, 비기능적인 요소인 디자인 패턴, 개발 철학, 도메인 주도 설계, 그리고 &lt;strong&gt;성능&lt;/strong&gt;은 품질을 결정짓는 핵심 요소다.그리고 이 성능을 결정하는 핵심 요소는 &lt;strong&gt;동시성&lt;/strong&gt;이다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 08 Aug 2025 07:22:32 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 08 Aug 2025 07:10:01 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[동시성: 하드웨어, 운영체제, 애플리케이션 해부]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/concurrency/concurrency_layered/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/concurrency/concurrency_layered/</guid><pubDate>Thu, 07 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/6d146162552f9f577728b55372aee875/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6d146162552f9f577728b55372aee875/437a1/header.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0UlEQVR42iWQ6W9MUQDFX0gwXWQ6M2+Z+7Y7b7/37bO2s3U6e59WW6UtoYKUImk6xFKK0UQRJLbEEopEgk/4D73Wyfn6O+fkECIHIAdkHkg8UAVOFTkN8qrIQsDoKcHRZaxArCu2iS0TmxiFti3TdWzPcwmsQgurGGueY9gOSqdtW5dcpMxN1tdXz84GTV1VEELGnjBClmXaloWxmU17hOfj0c5EJWiNdydqnUblSNt1kG/j6W7dd21d1wxDD9kQ+G+MkeeYx440Ht2+TBiGbGZ813ORbft+Ol+vOh5K0lQ40ncdWUrJEkxBESQZRZakFOzWi9sbV76/3fr14TEhiDw0Td2xMqWck7Gz5VwhjWiKnA7aJxeOLczPBp1mt1WfCjqqIkUikVtXl/98ffHzw/bH53eJS+c79zcWd96s/t7pBUHJ2F0KKTKRBEy9VpmZmuy06q1GbWF+zsIohDfXL/zeebbZW8lnfeLt9smt2yc2ry/+/bx25XxbkTlRZCmSpGkqnF0uFsql0VOLxzHS47HYSDR69dzi8ZmuKAhHO1Xi4c3ZYjmfGys9f7B8d30mRsVpOsGxgAVMIh5jaDrJ0DzHsgDswiNRAIBrGb2VpS8v7xPPNufazYKGndVzwav+ggLB8NBg+FC7URsrZMO3BJ4Ls8hEGEoxNDXVKr/a6v1496h/Y5XoXwvWVtrLS7UnG3OfHi+Zhrhv336STBi6ls9mRvPZZr1WLRfHK8WwHwrs+6e3vr3uXzwz75o6ceF05eW9mad3pvu97qXTVaRxseHIyHBkMHJgaODQSPRw2AZFoTExDkVR5MGTe2uTjYoui3kPE54nTTftUlYZc6UxR7KkpMzGFTah8ZSUjIH4MHl4IMwaGjg4OHCIJhMu1vQUn3NRwbcISwZ5DKuu3Mxp5RBOMbpAGQKFIYNh0hDoPVMqlxDpKE9FLVXI2HrGNnKe+Q9/8qbMjbr8PAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6d146162552f9f577728b55372aee875/dc87c/header.avif 158w,
+/static/6d146162552f9f577728b55372aee875/383b4/header.avif 315w,
+/static/6d146162552f9f577728b55372aee875/d0061/header.avif 630w,
+/static/6d146162552f9f577728b55372aee875/20e2c/header.avif 945w,
+/static/6d146162552f9f577728b55372aee875/9eba6/header.avif 1260w,
+/static/6d146162552f9f577728b55372aee875/c68af/header.avif 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/6d146162552f9f577728b55372aee875/5787a/header.webp 158w,
+/static/6d146162552f9f577728b55372aee875/89f54/header.webp 315w,
+/static/6d146162552f9f577728b55372aee875/4d353/header.webp 630w,
+/static/6d146162552f9f577728b55372aee875/0f41d/header.webp 945w,
+/static/6d146162552f9f577728b55372aee875/f27a3/header.webp 1260w,
+/static/6d146162552f9f577728b55372aee875/a8642/header.webp 1536w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6d146162552f9f577728b55372aee875/dda05/header.png 158w,
+/static/6d146162552f9f577728b55372aee875/679a3/header.png 315w,
+/static/6d146162552f9f577728b55372aee875/50637/header.png 630w,
+/static/6d146162552f9f577728b55372aee875/fddb0/header.png 945w,
+/static/6d146162552f9f577728b55372aee875/f46b1/header.png 1260w,
+/static/6d146162552f9f577728b55372aee875/437a1/header.png 1536w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6d146162552f9f577728b55372aee875/50637/header.png&quot;
+            alt=&quot;header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;애플리케이션의 품질을 판단하는 지표에는 여러 가지가 있다. 기능적 요구사항뿐 아니라, 비기능적인 요소인 디자인 패턴, 개발 철학, 도메인 주도 설계, 그리고 &lt;strong&gt;성능&lt;/strong&gt;은 품질을 결정짓는 핵심 요소다.그리고 이 성능을 결정하는 핵심 요소는 &lt;strong&gt;동시성&lt;/strong&gt;이다.&lt;/p&gt;
 &lt;p&gt;이 글에서는 성능 요소를 향상시키기 위한 접근법을 살펴보고, 그 핵심 개념인 &lt;strong&gt;동시성&lt;/strong&gt;을 소개한다. 이후 동시성이 하드웨어와 운영체제 계층에서 어떻게 구현되는지 확인하고, 이런 지식을 통해 애플리케이션 계층에서 동시성을 고려한 작업을 위해서 고려해야할 지점들을 특정짓는다. 이 글은 애플리케이션에서 운영체제와 하드웨어까지 동시성 동작을 꿰뚫어 볼 수 있는 휴리스틱을 갖는 초석이 될 것이다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;성능 해부&lt;/h2&gt;
@@ -1623,8 +1680,8 @@ CPU 성능 향상을 위해 과거에는 클럭 속도를 높이는 방식이 �
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;동시성에 대해서 알아보고, 세 계층 하드웨어 - 운영체제 - 애플리케이션에서 성능 향상을 위해 동시성이 적용되는 부분들에 대해 살펴봤다. 동시성은 시스템의 성능을 결정짓는 중요한 포인트이기에 반드시 정리되어야 할 주제였다. 특히 세밀한 동시성의 활용을 위해서는 내가 작성한 애플리케이션 계층의 행위가, 운영체제에서 그리고 하드웨어에서 어떻게 동작할지 꿰뚫는 휴리스틱을 가질 수 있어야 한다. 그리고 이런 적절한 동시성 활용은 한정된 자원에서 시스템의 성능 품질 향상을 위해 필수 요소다.&lt;/p&gt;
-&lt;p&gt;본래 동기화에 대한 이야기까지 하려 했으나, 지면이 길어져 해당 내용은 다음글에서 작성하려고 한다. 추가로 그로킹 동시성이란 책 너무 좋다. 운영체제와 동시성, 그리고 성능에 대한 휴리스틱을 갖기에 아주 도움을 준다. 이 글은 내 관점에서 책에서 중요하다고 본 부분들을 정리한 것이니, 저자의 본래 관점을 읽어보는 것을 추천한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[설계: 객체와 도메인]]></title><description><![CDATA[객체 지향 프로그래밍(Object Oriented Programming, OOP)은 IT…]]></description><link>https://iol-lshh.github.io/회고/ood/ood/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ood/ood/</guid><pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/e18beb7ad7c00121099c9c4589920a8c/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;동시성에 대해서 알아보고, 세 계층 하드웨어 - 운영체제 - 애플리케이션에서 성능 향상을 위해 동시성이 적용되는 부분들에 대해 살펴봤다. 동시성은 시스템의 성능을 결정짓는 중요한 포인트이기에 반드시 정리되어야 할 주제였다. 특히 세밀한 동시성의 활용을 위해서는 내가 작성한 애플리케이션 계층의 행위가, 운영체제에서 그리고 하드웨어에서 어떻게 동작할지 &lt;strong&gt;꿰뚫는 휴리스틱&lt;/strong&gt;을 가질 수 있어야 한다. 그리고 이런 적절한 동시성 활용은 한정된 자원에서 시스템의 성능 품질 향상을 위해 필수 요소다.&lt;/p&gt;
+&lt;p&gt;본래 동기화에 대한 이야기까지 하려 했으나, 지면이 길어져 해당 내용은 다음글에서 작성하려고 한다. 추가로 그로킹 동시성이란 책 너무 좋다. 운영체제와 동시성, 그리고 성능에 대한 휴리스틱을 갖기에 도움을 준다. 이 글은 내 관점에서 책에서 중요하다고 본 부분들을 정리한 것이니, 저자의 본래 관점을 읽어보는 것을 추천한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[설계: 객체와 도메인]]></title><description><![CDATA[객체 지향 프로그래밍(Object Oriented Programming, OOP)은 IT…]]></description><link>https://iol-lshh.github.io/회고/ood/ood/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/ood/ood/</guid><pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/e18beb7ad7c00121099c9c4589920a8c/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

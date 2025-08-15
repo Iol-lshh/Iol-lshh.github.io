@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 Aug 2025 05:49:21 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 Aug 2025 05:36:14 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[성능 과학: 인덱스와 캐시]]></title><description><![CDATA[왜 '컴퓨터 과학'에는 '과학'이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 '컴퓨팅 기기(연산 기계)에 대해 과학적 방법을 이용한 학문'이다. 과학적 방법(Scientific Method)은 최소 1…]]></description><link>https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</guid><pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/94f600b4974e4fd92dc15094363b6daa/50637/scientific_method.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;왜 &apos;컴퓨터 과학&apos;에는 &apos;과학&apos;이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 &apos;컴퓨팅 기기(연산 기계)에 대해 &lt;strong&gt;과학적 방법&lt;/strong&gt;을 이용한 학문&apos;이다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 Aug 2025 06:18:42 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 15 Aug 2025 06:05:27 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[성능 과학: 인덱스와 캐시]]></title><description><![CDATA[왜 '컴퓨터 과학'에는 '과학'이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 '컴퓨팅 기기(연산 기계)에 대해 과학적 방법을 이용한 학문'이다. 과학적 방법(Scientific Method)은 최소 1…]]></description><link>https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</guid><pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/94f600b4974e4fd92dc15094363b6daa/50637/scientific_method.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;왜 &apos;컴퓨터 과학&apos;에는 &apos;과학&apos;이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 &apos;컴퓨팅 기기(연산 기계)에 대해 &lt;strong&gt;과학적 방법&lt;/strong&gt;을 이용한 학문&apos;이다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;과학적 방법&lt;/strong&gt;(Scientific Method)은 최소 17세기부터 과학을 수행할 때 참조되어 온 &lt;strong&gt;경험적 지식 획득 방법&lt;/strong&gt;입니다. 이 방법은 고대와 중세 시대부터 발전해왔으며, 관찰과 엄격한 회의주의를 바탕으로 합니다. 인지적 가정이 관찰 해석을 왜곡할 수 있기 때문에, 과학적 탐구는 귀납적 추론을 통해 검증 가능한 가설을 만들고, &lt;strong&gt;실험&lt;/strong&gt;과 &lt;strong&gt;통계 분석&lt;/strong&gt;을 통해 이를 검증하며, 결과에 따라 가설을 조정하거나 폐기합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Scientific_method&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -924,21 +924,21 @@
 &lt;ul&gt;
 &lt;li&gt;쓰기 전략
 &lt;ul&gt;
-&lt;li&gt;Write-Through: &lt;strong&gt;동작 방식&lt;/strong&gt;: 애플리케이션이 데이터를 쓸 때 &lt;strong&gt;캐시와 데이터베이스에 동시에 기록&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Write-Back: 쓰기 시 &lt;strong&gt;캐시에만 기록&lt;/strong&gt;하고, 이후 비동기적으로 DB에 반영.&lt;/li&gt;
-&lt;li&gt;Write Around: 쓰기 시 &lt;strong&gt;캐시를 건너뛰고 DB에만 기록&lt;/strong&gt;, 읽기 요청이 들어올 때만 캐시에 적재.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Write-Through&lt;/strong&gt;: &lt;strong&gt;동작 방식&lt;/strong&gt;: 애플리케이션이 데이터를 쓸 때 &lt;strong&gt;캐시와 데이터베이스에 동시에 기록&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Write-Back&lt;/strong&gt;: 쓰기 시 &lt;strong&gt;캐시에만 기록&lt;/strong&gt;하고, 이후 비동기적으로 DB에 반영.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Write Around&lt;/strong&gt;: 쓰기 시 &lt;strong&gt;캐시를 건너뛰고 DB에만 기록&lt;/strong&gt;, 읽기 요청이 들어올 때만 캐시에 적재.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;읽기 전략
 &lt;ul&gt;
-&lt;li&gt;Read-Through: 캐시를 통해 읽기를 수행. 캐시에 없으면 캐시가 직접 DB에서 읽어와 저장한 뒤 반환.&lt;/li&gt;
-&lt;li&gt;Look Aside: 애플리케이션이 먼저 캐시 조회 → 없으면 DB 조회 후 캐시에 적재&lt;/li&gt;
-&lt;li&gt;Refresh-Ahead: 캐시 데이터의 TTL(만료 시간)이 가까워지면 &lt;strong&gt;백그라운드에서 미리 갱신&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read-Through&lt;/strong&gt;: 캐시를 통해 읽기를 수행. 캐시에 없으면 캐시가 직접 DB에서 읽어와 저장한 뒤 반환.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Look Aside&lt;/strong&gt;: 애플리케이션이 먼저 캐시 조회 → 없으면 DB 조회 후 캐시에 적재&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refresh-Ahead&lt;/strong&gt;: 캐시 데이터의 TTL(만료 시간)이 가까워지면 &lt;strong&gt;백그라운드에서 미리 갱신&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;수동 삭제
 &lt;ul&gt;
-&lt;li&gt;CacheEvict: 캐시 데이터를 &lt;strong&gt;명시적으로 제거&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CacheEvict&lt;/strong&gt;: 캐시 데이터를 &lt;strong&gt;명시적으로 제거&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

@@ -9,7 +9,8 @@
 
         gtag('config', 'G-DM0ZW7QKL9', {"anonymize_ip":true,"send_page_view":false});
       }
-      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/agile/">agile</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/cicd/">cicd</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/test/">test</a></li><li><a href="/categories/번역/">번역</a></li><li><a href="/categories/실험/">실험</a></li><li><a href="/categories/요구사항/">요구사항</a></li><li><a href="/categories/정리/">정리</a></li><li><a href="/categories/조영호님_강의/">조영호님_강의</a></li><li><a href="/categories/취미/">취미</a></li><li><a href="/categories/회고/">회고</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/회고/">회고</a>, <a href="/categories/실험/">실험</a></p><h1 itemProp="headline">성능 과학: 인덱스와 캐시</h1><p>August 14, 2025</p></header><section itemProp="articleBody"><p>왜 '컴퓨터 과학'에는 '과학'이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 '컴퓨팅 기기(연산 기계)에 대해 <strong>과학적 방법</strong>을 이용한 학문'이다.</p>
+      </script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><div class="hamburger-menu"><button class="hamburger-button "><svg width="24" height="24" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"></line><line x1="4" y1="6" x2="20" y2="6" stroke="white" stroke-width="2"></line><line x1="4" y1="18" x2="20" y2="18" stroke="white" stroke-width="2"></line></svg></button><nav class="sidebar "><ul><a href="/">전체 리스트</a><li><a href="/categories/DB/">DB</a></li><li><a href="/categories/agile/">agile</a></li><li><a href="/categories/book/">book</a></li><li><a href="/categories/cicd/">cicd</a></li><li><a href="/categories/java/">java</a></li><li><a href="/categories/pattern/">pattern</a></li><li><a href="/categories/test/">test</a></li><li><a href="/categories/번역/">번역</a></li><li><a href="/categories/실험/">실험</a></li><li><a href="/categories/요구사항/">요구사항</a></li><li><a href="/categories/정리/">정리</a></li><li><a href="/categories/조영호님_강의/">조영호님_강의</a></li><li><a href="/categories/취미/">취미</a></li><li><a href="/categories/회고/">회고</a></li></ul></nav><div class="content "></div></div><header class="global-header"><div class="header-container"><h1 class="main-heading"><a href="/">Iol-lshh&#x27;s</a></h1></div></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><p><a href="/categories/회고/">회고</a>, <a href="/categories/실험/">실험</a></p><h1 itemProp="headline">성능 과학: 인덱스와 캐시</h1><p>August 14, 2025</p></header><section itemProp="articleBody"><h1>성능 과학: 인덱스와 캐시</h1>
+<p>왜 '컴퓨터 과학'에는 '과학'이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 '컴퓨팅 기기(연산 기계)에 대해 <strong>과학적 방법</strong>을 이용한 학문'이다.</p>
 <blockquote>
 <p><strong>과학적 방법</strong>(Scientific Method)은 최소 17세기부터 과학을 수행할 때 참조되어 온 <strong>경험적 지식 획득 방법</strong>입니다. 이 방법은 고대와 중세 시대부터 발전해왔으며, 관찰과 엄격한 회의주의를 바탕으로 합니다. 인지적 가정이 관찰 해석을 왜곡할 수 있기 때문에, 과학적 탐구는 귀납적 추론을 통해 검증 가능한 가설을 만들고, <strong>실험</strong>과 <strong>통계 분석</strong>을 통해 이를 검증하며, 결과에 따라 가설을 조정하거나 폐기합니다. - <a href="https://en.wikipedia.org/wiki/Scientific_method">위키백과</a></p>
 </blockquote>
@@ -696,42 +697,45 @@
     >
       <a
     class="gatsby-resp-image-link"
-    href="/static/e6cc8c6bad6e4a5e147b56fccc82dcef/39600/likecount_aftertuning.png"
+    href="/static/e3d165ff93a31ea99c7d4e244f6041ca/60f98/likecount_aftertuning.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 101.26582278481011%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkElEQVR42o1U23bbIBD0bzQXW+IiQAgQwrId9/+/azogJydpnNYPc8BgDbs7s7vL04g4OgxaN7wcuobXQ/9lv+/EQ9h1QsK4CWG00CRUysEQUhnuLQY1QknbSD9jf/iB8NALdELgFCeUnHFa33A+/kYMM44x4TpnLCnB+YApzvBTaqsyDodeNnwn7Lcf9dJZg/VYUMoFYZpwIeEpZYQ0Iy1HrhlxXrgu8CFB6OFLST4IZ+9IEBBsRgkLcipQrG8oBUZ7HDr5aMpbyFWcNTMKX1jPjJGvO2MZ9SbOw6JshD0yI/QxoGMKmiIoaaj6gF6ob3X6D6GAHT0Mo9lXm+w7PN3wi3jeb2ef8fz6s5VahEINuC6R6h6R0pE1GzAOBqNhlNY1hQfn+fD0gV5qvHb9fcIDL4KzyCEgzwVzXrBQjIkqB54t6cQaU+GQG5aZ9vEJ3kQ+GiA1PRschBm2lCvOacKVdrmkKwoJlrXAO0cHyKZwRbPWDV2vGvpeb35kg+z7GmG1A/9QJo8yR1gzITsqbRKtNEJKtVnlc3rVMrezv9PeCX4gpYRl2wkK83K7qI98abd2diN59+I9UewwtNQOLLIQQ7NLx/3AfhZyaKi9LHle93WtgtT1LqFSmn2bsM5nnMMF0S+Yp8I+PqH4ld0zs65vWKcz/JhwDCfenRHdfJ/Q0RqxTRq+rKqZHdP3UNo2O2np2sSx1Urj2BStNbxnmUb4xFpUhd9Kal4b3WYF7yP9x71jfxOOd3qwLd199/N83AmlUOtYU+8ZkaofCQ1tRs5Jeox3lllo6/8pxgdhHQonzsGY1zZt8pTbcIghsvCbUO/t91AvD4xgjR4Th6hiFEaPbVzVSaNZt1rLRwdDJfwDoOs8vagsPecAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 128.48101265822785%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAAsTAAALEwEAmpwYAAADiklEQVR42o1VWZLaSBTsa0w0QnvtqyQaHDhi7n+qnKwSDdiNp/3xKKmQst6SmXr7uUSsziAZg5N3mMcZzXFA2444tsNTjNwbftv7Gm9GKijlMBHocOxwaHo0bc9rrsd93aOr8S1gOXmcJTZmdwoWszDwMiLIBC1cPcwr3qsEJ2I95E9RAbt+5E2H1VqcU0LOG87nKy4fV1gbccmBB3n8u2XEEJDWD+TlhFzXPUJe0Y8T2m7EW/lpuwFiFghaYwsRKW2IywZHwB8xIymLpBWENghxqeF84rrChwzPe+MCSnJ3QC1kzcTZhMWe4HXCyZ1ZboaJEYNROPK5Q9PVqP2t6+O+ltwSteODZbqrs8jM8BKuzGqBsg4iWQxiZohvB7IDdjs9Cm1+sF/WORgT6mA8BxF5HZSElJZZZ2S9wgj/glbDYyhd30NOM4zSOM668q2tvPv1pVd7XzMkoLUeUmhMw1B70rx6+Pi4LsT/7NnLksdZYfGeSrEszUGOhgD9TRn7Wiopz3bdxNjXOtDb/i+AZUobB3LOCR+nC0JaK+cuOeIUPTwnrH0kVQpFMiyvyxrCAu8ypLZVXXfAmuUwIeqSqUOOJPdyxZYJHlZYzWFJSa4amNlDTRZqtuiHGRMPm6yqmT5NmX2kpleCOZuxmQ8Y6aHJy5lknkdJAIFpUhVM3qLrJwxSMOS97B2QIflC6eEaSGh/YbYszyVmp0kfVclfSX38jL3EpphJ0z/RhmBlqtkaXGll1nmCUBm9QNfujd8HMvwdsQ/8OZAGhmqQQuGdZR2a9q9efglYMrNUQtN2eL9ps3Du8MKeDk+6fWVdFXDgdK0N0Nqz7A2L2SgxUsSkKrO1GAUlaDjp8p81sZpHnXJPjTPKegestsXmn+KF1nVh6aGSeyF4MdhgOByardKuAtUDabgzlVVM10omM7sHYPFAXfwuLTivS522EhP+aY73Ej8n+869d/b3vXnsfym5DMSRR4m9dJ7OQsv68Cs/Abm6imRmpbySpeeeExYLP2qeKpko2d81/VZ+zpEgsXw/6DbU6DCS/YyZziOk4Ytc+bKcZCV36Xsh9bOG74B9MVYqZGF2gh+kolPrIgGpDuNp8xsU7yXJXdpjaf0jgf/oNkX8W3B1MJJyq+pgo4u0NLMydOqR4GMvb7Tq/5+H51D06+gm5etG66JDS06taFYwk3kiIMucBvktWAH8D7pL6y61dmmwAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <picture>
           <source
-              srcset="/static/e6cc8c6bad6e4a5e147b56fccc82dcef/dc87c/likecount_aftertuning.avif 158w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/383b4/likecount_aftertuning.avif 315w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/d0061/likecount_aftertuning.avif 630w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/3bcc4/likecount_aftertuning.avif 700w"
+              srcset="/static/e3d165ff93a31ea99c7d4e244f6041ca/dc87c/likecount_aftertuning.avif 158w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/383b4/likecount_aftertuning.avif 315w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/d0061/likecount_aftertuning.avif 630w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/20e2c/likecount_aftertuning.avif 945w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/80cb4/likecount_aftertuning.avif 1122w"
               sizes="(max-width: 630px) 100vw, 630px"
               type="image/avif"
             /><source
-              srcset="/static/e6cc8c6bad6e4a5e147b56fccc82dcef/5787a/likecount_aftertuning.webp 158w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/89f54/likecount_aftertuning.webp 315w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/4d353/likecount_aftertuning.webp 630w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/fa73e/likecount_aftertuning.webp 700w"
+              srcset="/static/e3d165ff93a31ea99c7d4e244f6041ca/5787a/likecount_aftertuning.webp 158w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/89f54/likecount_aftertuning.webp 315w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/4d353/likecount_aftertuning.webp 630w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/0f41d/likecount_aftertuning.webp 945w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/fab20/likecount_aftertuning.webp 1122w"
               sizes="(max-width: 630px) 100vw, 630px"
               type="image/webp"
             />
           <source
-            srcset="/static/e6cc8c6bad6e4a5e147b56fccc82dcef/dda05/likecount_aftertuning.png 158w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/679a3/likecount_aftertuning.png 315w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/50637/likecount_aftertuning.png 630w,
-/static/e6cc8c6bad6e4a5e147b56fccc82dcef/39600/likecount_aftertuning.png 700w"
+            srcset="/static/e3d165ff93a31ea99c7d4e244f6041ca/dda05/likecount_aftertuning.png 158w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/679a3/likecount_aftertuning.png 315w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/50637/likecount_aftertuning.png 630w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/fddb0/likecount_aftertuning.png 945w,
+/static/e3d165ff93a31ea99c7d4e244f6041ca/60f98/likecount_aftertuning.png 1122w"
             sizes="(max-width: 630px) 100vw, 630px"
             type="image/png"
           />
           <img
             class="gatsby-resp-image-image"
-            src="/static/e6cc8c6bad6e4a5e147b56fccc82dcef/50637/likecount_aftertuning.png"
+            src="/static/e3d165ff93a31ea99c7d4e244f6041ca/50637/likecount_aftertuning.png"
             alt="likecount aftertuning"
             title=""
             loading="lazy"
@@ -747,48 +751,48 @@
     >
       <a
     class="gatsby-resp-image-link"
-    href="/static/f9d26d5fb6254532af663442d794f0d0/f7145/explain_aftertuning.png"
+    href="/static/ae772539e7dd96a70f723e4187900928/dbbc9/explain_aftertuning.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 30.37974683544304%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3UlEQVR42oWR3ZaDIAyEfZDdVvwHQVBA7e77P9dski497elFL8YkyvmYiVU/aoQtYUsH1rgj7TeZnd+whA16XtANE+qmw6VuPqr6viqothdAzCdSPqgeAuaZL/JrRNP1+LrU4PPPegPyo3ycjBWXxS0rJoaf8CFidgGjnsGp2n4kvTuvSsOxZucJtv+7u4PENc12CRTf0Tn9AF1V+wRTrw5r1UEb9wBlgpy3X6np+KHYGcZ6ij7IiriWvogvESA3HOG+y5WiZtlbWJP8IE+V37E4trELLFdyPExGVOB/ovuxp4kMPrIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    style="padding-bottom: 44.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABR0lEQVR42mWS21KEMBBE+RC5328hEAJx1bJK33y3yv//kXF6gEXch95sAXOmeyZeUTakx5nGyYoms7IWkdKGmlaJul5TWbWU5ZUozSoKwuRBnh/GFCc59WoSoBpwLjTbZzKzY20NtmaLNK+bnoEl+UH8CMQPXoRRSk2jBDbA8WgYMItGAZ5CCoDzopa6A+wfwAP65EfSWemZlHklbd9JmxdxN2gjDg3DxC07H8St4hFs4CjOTiCEB34QUV525D6+yX3+kH37EpjeZ3xEh44meNZ2A0tfgYiARciH00TruvIsl31RiGkl6mydLClJS1YhRlAPlxcgYiMyFoRixMK5Lcfdb4DZ4/ZqpKruLnP0/m8Jc8TZ8CZRpP9sGCfAW5NVkrTsFAbwHwnvQNjf7lcpQiQULe5G1vEV4phytfb5Ifo5w0VmiDv9C7t2D6LeMKoOAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <picture>
           <source
-              srcset="/static/f9d26d5fb6254532af663442d794f0d0/dc87c/explain_aftertuning.avif 158w,
-/static/f9d26d5fb6254532af663442d794f0d0/383b4/explain_aftertuning.avif 315w,
-/static/f9d26d5fb6254532af663442d794f0d0/d0061/explain_aftertuning.avif 630w,
-/static/f9d26d5fb6254532af663442d794f0d0/20e2c/explain_aftertuning.avif 945w,
-/static/f9d26d5fb6254532af663442d794f0d0/9eba6/explain_aftertuning.avif 1260w,
-/static/f9d26d5fb6254532af663442d794f0d0/f1397/explain_aftertuning.avif 1797w"
+              srcset="/static/ae772539e7dd96a70f723e4187900928/dc87c/explain_aftertuning.avif 158w,
+/static/ae772539e7dd96a70f723e4187900928/383b4/explain_aftertuning.avif 315w,
+/static/ae772539e7dd96a70f723e4187900928/d0061/explain_aftertuning.avif 630w,
+/static/ae772539e7dd96a70f723e4187900928/20e2c/explain_aftertuning.avif 945w,
+/static/ae772539e7dd96a70f723e4187900928/9eba6/explain_aftertuning.avif 1260w,
+/static/ae772539e7dd96a70f723e4187900928/bf896/explain_aftertuning.avif 2464w"
               sizes="(max-width: 630px) 100vw, 630px"
               type="image/avif"
             /><source
-              srcset="/static/f9d26d5fb6254532af663442d794f0d0/5787a/explain_aftertuning.webp 158w,
-/static/f9d26d5fb6254532af663442d794f0d0/89f54/explain_aftertuning.webp 315w,
-/static/f9d26d5fb6254532af663442d794f0d0/4d353/explain_aftertuning.webp 630w,
-/static/f9d26d5fb6254532af663442d794f0d0/0f41d/explain_aftertuning.webp 945w,
-/static/f9d26d5fb6254532af663442d794f0d0/f27a3/explain_aftertuning.webp 1260w,
-/static/f9d26d5fb6254532af663442d794f0d0/64b19/explain_aftertuning.webp 1797w"
+              srcset="/static/ae772539e7dd96a70f723e4187900928/5787a/explain_aftertuning.webp 158w,
+/static/ae772539e7dd96a70f723e4187900928/89f54/explain_aftertuning.webp 315w,
+/static/ae772539e7dd96a70f723e4187900928/4d353/explain_aftertuning.webp 630w,
+/static/ae772539e7dd96a70f723e4187900928/0f41d/explain_aftertuning.webp 945w,
+/static/ae772539e7dd96a70f723e4187900928/f27a3/explain_aftertuning.webp 1260w,
+/static/ae772539e7dd96a70f723e4187900928/6eae7/explain_aftertuning.webp 2464w"
               sizes="(max-width: 630px) 100vw, 630px"
               type="image/webp"
             />
           <source
-            srcset="/static/f9d26d5fb6254532af663442d794f0d0/dda05/explain_aftertuning.png 158w,
-/static/f9d26d5fb6254532af663442d794f0d0/679a3/explain_aftertuning.png 315w,
-/static/f9d26d5fb6254532af663442d794f0d0/50637/explain_aftertuning.png 630w,
-/static/f9d26d5fb6254532af663442d794f0d0/fddb0/explain_aftertuning.png 945w,
-/static/f9d26d5fb6254532af663442d794f0d0/f46b1/explain_aftertuning.png 1260w,
-/static/f9d26d5fb6254532af663442d794f0d0/f7145/explain_aftertuning.png 1797w"
+            srcset="/static/ae772539e7dd96a70f723e4187900928/dda05/explain_aftertuning.png 158w,
+/static/ae772539e7dd96a70f723e4187900928/679a3/explain_aftertuning.png 315w,
+/static/ae772539e7dd96a70f723e4187900928/50637/explain_aftertuning.png 630w,
+/static/ae772539e7dd96a70f723e4187900928/fddb0/explain_aftertuning.png 945w,
+/static/ae772539e7dd96a70f723e4187900928/f46b1/explain_aftertuning.png 1260w,
+/static/ae772539e7dd96a70f723e4187900928/dbbc9/explain_aftertuning.png 2464w"
             sizes="(max-width: 630px) 100vw, 630px"
             type="image/png"
           />
           <img
             class="gatsby-resp-image-image"
-            src="/static/f9d26d5fb6254532af663442d794f0d0/50637/explain_aftertuning.png"
+            src="/static/ae772539e7dd96a70f723e4187900928/50637/explain_aftertuning.png"
             alt="explain aftertuning"
             title=""
             loading="lazy"
@@ -798,7 +802,7 @@
         </picture>
   </a>
     </span></p>
-<p>그럼에도 불구하고 성능은 그리 좋아지지 못했다. 이를 해결하기 위한 다른 방안이 있을 것이다. 다만 최대한 심플한 해결책을 적용해야 유지보수의 성능을 높이고, 결함 비율을 낮출 수 있다. 그런 방법 중 하나가 캐시라고 생각한다.</p>
+<p>Covering index로 많이 줄였다. 297ms가 최선일까? 이를 해결하기 위한 다른 방안이 있을 것이다. 다만 최대한 심플한 해결책을 적용해야 유지보수의 성능을 높이고, 결함 비율을 낮출 수 있다. 그런 방법 중 하나가 캐시라고 생각한다.</p>
 <h3>실험 2 - 애플리케이션에 적절한 <strong>캐시</strong> 전략을 적용</h3>
 <p>이 좋아요 수 순의 상품 목록에 캐시를 적용했다. 목록 조회에 대해 상품을 JSON으로 넣어두고, 가져오도록 수정했다.</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Transactional</span><span class="token punctuation">(</span>readOnly <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>  

@@ -377,12 +377,139 @@
   </a>
     </span></p>
 <h4>Connection Timeout</h4>
-<p>연결 타임아웃은</p>
+<p>왜 연결과 읽기에 대한 타임아웃을 분리했을까? 외부 시스템은 API의 형태로 연결되기 마련일 텐데, 앞서 살펴본 HTTP의 경우 지연시간이 생기는 부분은 크게 세 부분으로 볼 수 있다.</p>
+<ol>
+<li>3-hand shaking</li>
+<li>data request - response</li>
+<li>4-hand shaking</li>
+</ol>
+<p>HTTP는 TCP라는 전송계층의 통신 프로토콜로 만들어져있다. TCP는 두 엔드포인트의 안전한 연결을 위해 만들어진 프로토콜이다. 이 프로토콜은 3-hand-shaking이라는 과정을 통해 연결을 확정짓는다. 도메인을 찾아가고 마침내 3-hand-shaking을 통해 원격의 노드들이 연결을 동기화한 시점까지를 고려하는 것이 Connection Timeout이다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/619b6b17403e340c7ee2fa2c43146cb3/c6e3d/tcp_con.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.56962025316456%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/klEQVR42oWR2a6CQBBE+f+/4pk3IRIBZU+AyCYQNmU8zhBjvDG3HiY9NV3V1aAJIbZt42zb1rKs2+2mGAUhQREEQRiG7+vj8eDU1H2e577vq6p6C76wLIvneVEU4ZKmKZNo1oqiSJLENE1d14/HY9M0dV2v65rnue/7aKiVmJ7T6WQYBgEh98kIyrK8Xq9ZlnElEo7U5/MZX3iMDocDprze73eM6KHWhmFgTzJjQTA6qJH5EnEc0zCOI6/wX7u8xK0EMuwvlwtzID0JFkNJwmmauq77/Fov8acTFool2CgxSBDNdV3HcWzbZmfqffL2B+IH+CMqIyl2sfiNf+2e6AcCsd00EckAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/619b6b17403e340c7ee2fa2c43146cb3/dc87c/tcp_con.avif 158w,
+/static/619b6b17403e340c7ee2fa2c43146cb3/383b4/tcp_con.avif 315w,
+/static/619b6b17403e340c7ee2fa2c43146cb3/de264/tcp_con.avif 500w"
+              sizes="(max-width: 500px) 100vw, 500px"
+              type="image/avif"
+            /><source
+              srcset="/static/619b6b17403e340c7ee2fa2c43146cb3/5787a/tcp_con.webp 158w,
+/static/619b6b17403e340c7ee2fa2c43146cb3/89f54/tcp_con.webp 315w,
+/static/619b6b17403e340c7ee2fa2c43146cb3/4be29/tcp_con.webp 500w"
+              sizes="(max-width: 500px) 100vw, 500px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/619b6b17403e340c7ee2fa2c43146cb3/dda05/tcp_con.png 158w,
+/static/619b6b17403e340c7ee2fa2c43146cb3/679a3/tcp_con.png 315w,
+/static/619b6b17403e340c7ee2fa2c43146cb3/c6e3d/tcp_con.png 500w"
+            sizes="(max-width: 500px) 100vw, 500px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/619b6b17403e340c7ee2fa2c43146cb3/c6e3d/tcp_con.png"
+            alt="tcp con"
+            title=""
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<p>이런 tcp 연결의 3-hand-shaking에서 다음 응답이 오지 않는다면, 재시도를 수행한다. 이런 수행에 대한 기준은 TCP 레이어(OS)에서 이루어진다. 이때 얼마나 기다려야 하는지에 대한 값을 RTO(Retransmission Timeout)이라고 한다. 이 RTO안에 ACK를 받지 못하면, 다시 재전송을 하는 것이다.</p>
+<p>RTO는 RTT(Round Trip Time, 두 엔드포인트 간 패킷 전송에 필요한 시간)을 기준으로 설정되는데, 두 엔드포인트 사이의 RTT가 1초라면, 최소한 1초의 RTO가 주어져야 한다는 의미다. 단, 처음 연결을 맺을 때는 RTT를 알 수 없기 때문에 <strong>InitRTO</strong>라는 기본 값이 주어진다. <strong>리눅스는 이를 1초로 구현</strong>해두었다. 그리고 이 <strong>RTO는 실패에 대해서 초기 RTO를 기준으로 2배씩 증가</strong>(backoff)한다.</p>
+<p>때문에 Connection Timeout을 설정하는 첫 걸음은, 엔드포인트 간의 최소-최대 RTT가 몇인지 알아야 한다. 이 <strong>'SYN -> SYN + ACK -> ACK' 세 차례의 과정을 계산</strong>할 수 있다. 이 계산이 끝나고 나서야, <strong>Connection을 위해 몇번이나 재시도하게 할까</strong>에 대한 고민이 필요하다. 그 계산이 녹아들어간 것이 Connection Timeout이다.</p>
+<h4>Read Timeout</h4>
+<p>Connection Timeout이 최소 1RTT 몇 번 수행할지에 대한 고민이었다면, Read Timeout은 HTTP Request 요청으로부터 서버가 HTTP Response를 보내기까지 걸리는 총 시간이다. 단순하게 생각하면 '요청이 모두 전달되는 시간 + 서버의 작업 시간 + 응답의 첫 데이터가 들어오는 시간' 이라고 볼 수 있다.</p>
+<p>여기서는 이미 TCP 레벨에서 패킷 연결이 되었으므로, 더이상 OS가 개입하지 않는다. HTTP Response가 없어도 재요청하지 않는다.</p>
+<p>타임아웃을 설정함으로써, 내 애플리케이션이 무작정 응답을 기다리게 되진 않았다. 근데 여기서 다시 고민해볼 것이 있다. 만약 외부 시스템이 다운되어서 동작을 하지 않는다. 이 때에도 Timeout을 무작정 기다리게 하는게 올바를까?</p>
 <h3>CircuitBreaker</h3>
-<p>어떤 설계가 필요할까?
-멱등적 처리</p>
-<p>결제의 진정한 트랜잭션(거래)은 우리 서비스도, PG도 아니다. VAN과 카드사에서 일어난다.</p>
-<hr></section><hr/></article><nav class="blog-post-nav"><div class="categories-container">categories:<ul><li class="post-categories"><a href="/categories/정리/">정리</a>, <a href="/categories/회고/">회고</a></li></ul></div></nav><div style="display:flex;flex-direction:row;align-items:center;position:fixed;bottom:20px;right:20px"><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/회고/performance_science/performance-science_index_cache/">←</a><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/">🏠</a></div></main><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:75px;height:75px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:75px;height:75px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" data-src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p><strong><a href="/">Iol-lshh</a></strong><br/>The Engineer, Aiming Fine.<br/><a href="https://github.com/Iol-lshh"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub badge"/></a> <a href="https://www.linkedin.com/in/성혁-홍-06372b214"><img src="https://img.shields.io/badge/linkedin-007CC3?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn badge"/></a> <a href="https://www.instagram.com/l__sh.h"><img src="https://img.shields.io/badge/instagram-FF0069?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram badge"/></a></p></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/회고/resilience/resilience/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<p>서킷브레이커는 회로 차단기를 의미한다. 회로가 닫힌(closed) 상태에서 전기가 흐르지만, 회로가 열린(open) 상태에서 전기의 흐름이 차단된다. 이런 구조는 누전기 등에 사용된다.</p>
+<p>애플리케이션에서 이런 패턴을 적용할 수 있다. 애플리케이션의 서킷 브레이커는 3가지 상태를 가진다.</p>
+<ul>
+<li><strong>CLOSED</strong>: 기능하는 상태</li>
+<li><strong>OPEN</strong>: 기능을 멈춘 상태</li>
+<li><strong>HALF_OPEN</strong>: 기능을 점검하는 상태</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/723b15c1cb1bb5f739807d23301dbe9e/e3f12/circuitbreaker.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.911392405063296%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVR42oWQiQrDMAxD8/+f2ZYe9E7v0+MZXLp1bIGQxJZkKU5+rPM85TiO687+txwE20Yy4jRN0nWdpGkqfd9LXdeybZsMw6C9bxx3n/rZhJjnuXjvVYwT4SRJpCgKFd33/V0QEM2qqh72cbAsi4LXdX30qZngFRlClmU6jcY8zxoTd+M4Kok6OMg45E70e2z7awcxiiJpmkbKstSIcRxLGIZab9tWxTkZHASBivLmG4gPloQMdEwBgBtA5og3Q/gO+xKG4R434MDAtUTUX4iHIdeFMJ1RAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/723b15c1cb1bb5f739807d23301dbe9e/dc87c/circuitbreaker.avif 158w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/383b4/circuitbreaker.avif 315w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/d0061/circuitbreaker.avif 630w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/20e2c/circuitbreaker.avif 945w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/9eba6/circuitbreaker.avif 1260w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/cdf53/circuitbreaker.avif 1806w"
+              sizes="(max-width: 630px) 100vw, 630px"
+              type="image/avif"
+            /><source
+              srcset="/static/723b15c1cb1bb5f739807d23301dbe9e/5787a/circuitbreaker.webp 158w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/89f54/circuitbreaker.webp 315w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/4d353/circuitbreaker.webp 630w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/0f41d/circuitbreaker.webp 945w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/f27a3/circuitbreaker.webp 1260w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/8515d/circuitbreaker.webp 1806w"
+              sizes="(max-width: 630px) 100vw, 630px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/723b15c1cb1bb5f739807d23301dbe9e/dda05/circuitbreaker.png 158w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/679a3/circuitbreaker.png 315w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/50637/circuitbreaker.png 630w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/fddb0/circuitbreaker.png 945w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/f46b1/circuitbreaker.png 1260w,
+/static/723b15c1cb1bb5f739807d23301dbe9e/e3f12/circuitbreaker.png 1806w"
+            sizes="(max-width: 630px) 100vw, 630px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/723b15c1cb1bb5f739807d23301dbe9e/50637/circuitbreaker.png"
+            alt="circuitbreaker"
+            title=""
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<p>서킷브레이커는 <strong>기능적으로 실패를 캐싱</strong>한다고 볼 수 있다. Timeout을 기다리지 않고, 실패를 캐싱함으로써 애플리케이션이 불필요한 자원 소모를 방지한다.</p>
+<hr>
+<p>결제의 진정한 트랜잭션(거래)은 우리 서비스도, PG도 아니다. VAN과 카드사에서 일어난다. 우리의 서비스가 모놀리식으로 되어있다. 하지만 전체 결제 과정으로 본다면, 이미 겹겹이 쌓인 마이크로서비스 구조로 각각 관심사는 분리되어 비동기로 진행된다.</p>
+<p>이때 데이터의 동기화를 통해 각 마이크로서비스는 협업해야한다. 이런 도메인 흐름을 이해하고, 각 동기화 지점을 구현해야한다.</p>
+<p>그리고 이 지점의 구현에서 장애가 서로에게 전파되는 것을 막아야한다. 엔터프라이즈 애플리케이션 아키텍처 패턴은 세가지로 이루어져있다. 비즈니스 모델, 데이터 정합성, 동작. 보통 비즈니스 모델과 데이터의 정합성의 중요함에 대해서는 모두가 쉽게 인지한다. 하지만 애플리케이션의 성능과 장애 방지에 해당하는 동작은 어려운 부분이다. 경쟁사를 이기기 위한 방법이 뭘까? 이 어려운 부분을 공략하는 것이 경쟁력을 갖는 부분일 것이다.</p>
+<p>그리고 동시성과 동기화에 대한 이야기는 이벤트로 흘러간다..</p></section><hr/></article><nav class="blog-post-nav"><div class="categories-container">categories:<ul><li class="post-categories"><a href="/categories/정리/">정리</a>, <a href="/categories/회고/">회고</a></li></ul></div></nav><div style="display:flex;flex-direction:row;align-items:center;position:fixed;bottom:20px;right:20px"><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/회고/performance_science/performance-science_index_cache/">←</a><a style="height:40px;padding:10px 20px;font-size:16px;background-color:#cccccc;color:#fff;border:none;border-radius:5px;cursor:pointer;text-align:center;text-decoration:none" rel="prev" href="/">🏠</a></div></main><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:75px;height:75px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:75px;height:75px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" data-src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" data-srcset="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b6b44/37289223.avif 75w,/static/179bd9e7e40104be0b9ab37501b8078d/17bed/37289223.avif 150w" sizes="75px"/><source type="image/webp" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/b86b1/37289223.webp 75w,/static/179bd9e7e40104be0b9ab37501b8078d/46f41/37289223.webp 150w" sizes="75px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="75px" decoding="async" loading="lazy" src="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png" srcSet="/static/179bd9e7e40104be0b9ab37501b8078d/5fcef/37289223.png 75w,/static/179bd9e7e40104be0b9ab37501b8078d/b9b59/37289223.png 150w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p><strong><a href="/">Iol-lshh</a></strong><br/>The Engineer, Aiming Fine.<br/><a href="https://github.com/Iol-lshh"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub badge"/></a> <a href="https://www.linkedin.com/in/성혁-홍-06372b214"><img src="https://img.shields.io/badge/linkedin-007CC3?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn badge"/></a> <a href="https://www.instagram.com/l__sh.h"><img src="https://img.shields.io/badge/instagram-FF0069?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram badge"/></a></p></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/회고/resilience/resilience/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >

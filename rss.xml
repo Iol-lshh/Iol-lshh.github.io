@@ -1,4 +1,260 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Aug 2025 04:50:14 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 18 Aug 2025 04:37:02 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[성능 과학: 인덱스와 캐시]]></title><description><![CDATA[성능 과학: 인덱스와 캐시 왜 '컴퓨터 과학'에는 '과학'이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 '컴퓨팅 기기(연산 기계)에 대해 과학적 방법을 이용한 학문'이다. 과학적 방법(Scientific Method)은 최소 1…]]></description><link>https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</guid><pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/94f600b4974e4fd92dc15094363b6daa/50637/scientific_method.png" length="0" type="image/jpeg"/><content:encoded>&lt;h1&gt;성능 과학: 인덱스와 캐시&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Aug 2025 08:27:43 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 22 Aug 2025 08:14:21 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[회복 탄력성(Resilience) 정리]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/resilience/resilience/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/resilience/resilience/</guid><pubDate>Mon, 18 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/c46ccce9f8ce606b553114777c2c6351/50637/domain_story.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;나는 역사 이야기를 선호한다. 과거 이벤트들의 패턴을 알면, 시대의 잘못된 흐름을 경계하고 올바른 미래를 쫓으려는 눈이 생기기 때문이다. 예컨데 중국의 역사와 문화는 장대하고 유구하다. 하지만 그들은 분서갱유와 문화대혁명 같은 역사를 지우려는 장애 상황을 반복했다. 역사의 유실은 인류에게 큰 손실이다. 역사의 흐름에도 장애 방지가 있으면 좋을텐데..&lt;/p&gt;
+&lt;p&gt;여기 내가 언젠가 알게된 중국 역사서의 한 구절이 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;질풍지경초 엄상식정목(疾风知劲草, 严霜识贞木) - 송서 열전&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;모진 바람이 불어야 억센 풀을 알고, 된 서리가 내려야 곧은 나무를 안다. 어려움과 역경 속에서 진정한 가치를 지닌 사람이 드러난다는 의미다.&lt;/p&gt;
+&lt;p&gt;시스템도 마찬가지다. 엔터프라이즈 애플리케이션은 가용성을 중요시한다. 이런 가용성은 비즈니스 모델에 따라, 서비스의 중단 뿐만 아니라 지연 또한 보상이 필요한 장애로 취급하기도 한다.(Service Level Agreement, SLA) 심지어 &lt;a href=&quot;http://glinden.blogspot.com/2006/11/marissa-mayer-at-web-20.html?m=1&quot;&gt;아마존은 100ms의 지연이 1%의 매출 손실을 일으킬 것이라 예측했다.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;예상하지 못한 장애가 일어났을때, 버티는 시스템과 무너지는 시스템이 있다. 이번 글의 주제는 장애에 대처하는 방법, &lt;strong&gt;회복 탄력성&lt;/strong&gt;(Resilience)이다.&lt;/p&gt;
+&lt;p&gt;인프라나 시스템 아키텍처 범위보다는, 애플리케이션 티어 관점에서 &lt;em&gt;내부 제어에는 결함이 없다는 가정 하&lt;/em&gt;에, &lt;strong&gt;외부 서비스&lt;/strong&gt;와의 연동 지연 장애와 서킷브레이커, 타임 아웃, 재시도와 폴백 설계에 대해 배우고 고민한 것을 정리했다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;상태 동기화 설계&lt;/h2&gt;
+&lt;p&gt;외부 서비스와의 연동에서 가장 중요한게 뭘까? 연동하는 외부 시스템은 여러 유형이 있을 것이다. 메신저와 같은 알림 에이전트가 있을 수도 있고, PaymentGateway(PG)와 같은 결제 게이트웨이가 있을 수 있다. 이런 유형들은 비즈니스에 따라 쓰임새가 다르겠지만, 가장 중요한 것은 유스케이스 흐름에 따른 적절한 &lt;strong&gt;상태 동기화&lt;/strong&gt;이다.&lt;/p&gt;
+&lt;p&gt;그렇다면 상태 동기화를 어떻게 처리할 것인가하는 질문이 남아있다. 여기엔 해답이 되는 키워드가 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;동기 vs 비동기&lt;/li&gt;
+&lt;li&gt;블로킹 vs 논블로킹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;동기화에 대해서는 &lt;a href=&quot;https://iol-lshh.github.io/pattern/synchronization/synchronization_%EC%A0%95%EB%A6%AC/&quot;&gt;여기&lt;/a&gt;에 작성해두었다. 그러므로 자세한 설명은 생략한다. 이전에는 이런 외부 시스템에 대해, 단순히 일관성으로 묶인(like 트랜잭션) 동기적인 요청으로 처리했을 수 있다. 하지만 단순한 동기적 시스템 설계는 그 자체로 결함 요소가 많다. 내가 책임지지 않는 유스케이스 구성 요소에 대해서, 낙관적인 설계는 그 자체로 불필요한 비용이 될 수 있다&lt;/p&gt;
+&lt;p&gt;결국 외부 서비스와의 연동은 비동기적 처리가 자연스럽다. 여기서는 루퍼스 교육과정에서 만난 PG 연동 예제를 통해 설명을 풀어나가보려고 한다.&lt;/p&gt;
+&lt;h3&gt;도메인 스토리 관점&lt;/h3&gt;
+&lt;p&gt;우선은 &lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/design/design-usecase/&quot;&gt;도메인 스토리 관점&lt;/a&gt;에서 생각해보자. 애플리케이션의 모든 기능들은 중요하다. 하지만, 그 중 더 중요한 몇몇 서브 도메인들이 있다. 이런 서브 도메인들 중엔 &apos;결제&apos;가 있다.&lt;/p&gt;
+&lt;p&gt;왜 결제가 중요한가. 엔터프라이즈 애플리케이션은 &apos;거래&apos;(transaction)라는 비즈니스를 목적으로 한다. 그리고 이런 거래의 마지막은 유저와 어드민간의 계약에 대한 서명 처리, 즉 &apos;결제&apos;다. 때문에 모든 애플리케이션은 결제에 대해서 예민하게, 또한 최대한 처리 가능하도로 설계되어야 한다.&lt;/p&gt;
+&lt;p&gt;시스템 관점의 도메인 스토리를 그려보면 다음과 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c46ccce9f8ce606b553114777c2c6351/ba399/domain_story.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 98.73417721518987%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABp0lEQVR42p1U7Y6CMBDs+7+UT+DFX8YfRi54YhSEQKHle29npZ4QLhE2aaR1mc7szqJoRaRpSlpr6rqe+r6XM/xiqaVgeOnncqHH4yGAVVWTMZa8b4/CMFwG2HUdNU1DdV3LAri1lkEryvNcntUcAydjGgABq9PpRNfrdWBYjfIXMbS2pLZtqSzLF3hdN6McNWWUZZkkTwNAAIRs1CpJEqpZ/lSNepfath35vk8pg3aTRMP1saUVwOASUJzEs2VSKCQYNcNtRVG89ngZCzmwScvPT+nPRkxrj1y12Wxot9sNsjo6Ho8vS2id0+Fw4CZ4lPNFTdNKzvl8ptvtJs+4vCgMbbdftN/v/xi6QMFRL3erMUYYxVyzZjh3TXFs8Z9m20Ddx13OWDIMjEvA7n6/C0Pnv1GXp7WY26PDYICI45jdoAdX6JEitWRKdF7Iy25aKl45n60ytjiA64nwPI8uQSCS3+UunhRpBrMDSzCGdarJECwCdP4Mw4iiKBIwV79VgI4ZTI7uYv/v6H1aR3z/pCEsd27m1Zovts+TEnBT5mIVoBaTm1nAX2PBJ3Ok/1AEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/c46ccce9f8ce606b553114777c2c6351/dc87c/domain_story.avif 158w,
+/static/c46ccce9f8ce606b553114777c2c6351/383b4/domain_story.avif 315w,
+/static/c46ccce9f8ce606b553114777c2c6351/d0061/domain_story.avif 630w,
+/static/c46ccce9f8ce606b553114777c2c6351/20e2c/domain_story.avif 945w,
+/static/c46ccce9f8ce606b553114777c2c6351/0eb2d/domain_story.avif 1250w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/c46ccce9f8ce606b553114777c2c6351/5787a/domain_story.webp 158w,
+/static/c46ccce9f8ce606b553114777c2c6351/89f54/domain_story.webp 315w,
+/static/c46ccce9f8ce606b553114777c2c6351/4d353/domain_story.webp 630w,
+/static/c46ccce9f8ce606b553114777c2c6351/0f41d/domain_story.webp 945w,
+/static/c46ccce9f8ce606b553114777c2c6351/7c429/domain_story.webp 1250w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/c46ccce9f8ce606b553114777c2c6351/dda05/domain_story.png 158w,
+/static/c46ccce9f8ce606b553114777c2c6351/679a3/domain_story.png 315w,
+/static/c46ccce9f8ce606b553114777c2c6351/50637/domain_story.png 630w,
+/static/c46ccce9f8ce606b553114777c2c6351/fddb0/domain_story.png 945w,
+/static/c46ccce9f8ce606b553114777c2c6351/ba399/domain_story.png 1250w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/c46ccce9f8ce606b553114777c2c6351/50637/domain_story.png&quot;
+            alt=&quot;domain story&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;유저와 시스템 간, 시스템과 PG서비스 간의 각 액트는 모두 동기적인 요청으로 이루어져있다. 하지만 전체 과정에서 봤을때, 비동기적으로 분리된 서비스들이 상태를 동기화 하려는 블로킹 지점들을 갖고 있다. 위 도메인 스토리에 확장 요소를 더한 도메인 스토리를 그려보면 다음과 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/016be6a6e5a907dcb9c444a5e6acd8b9/1c989/domain_story_extended.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 131.0126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAAsTAAALEwEAmpwYAAACFklEQVR42qVVi46iQBD0//9vL9HEzXp3grxUQGDefVWDeGTXywo3SScDM1S/qouNrFhlWUpd10/PNkuAnPPRkiSR6/Uq3nsxxohRWvI0lcvl8jpgCEE0Puay1kbj0lpLj2hPcHI+n18HdM6JsQAMIh8fB8mzHBEGMX0vFhEuTpnp9f0gHpE2bSuDHkEIyLPFgEyxHxSRxQMkdF00o/W6piikpZmaVlIdDnI7nSQoJQalWAXIdB0iQ3dig2gGUc/TfQrI4n++FAFRt4AuoyeSpicpiiLe/cLDydu0UvBpTlqe0YFqb+IQEUFSpFtV1Rda0TbzyGgEU6iNte7hyOJZoQFTRJOTp5Py/r6X/X7/SDXLsjgFfB4AlOe5lMcEBDaPOxw9kjhgb93ouMwLyXB3s91uhTZ6lgg4pUyQAzr6++cvaauz+PvHTJdjxvsOZK/h4Mfbm+x2u9e6PEXlh2F0jOb4idgoRVlW/27KfD9/vtaNdPiYxM4QdXE84tBLg/e3W/e4u4CHvTRNG/esrb5HyPJovWKWSWICsjFt00iFElC6GuznfFwkDhQFLpKafKXa1PeoVwnsjWJATYx1DTHVWNe1gAPUxhgbRy9JjpFWfLcaUCGiWEOkTiMgHaz/p3gXI6LydH0XR9Stla+/PymHppSYqDyK7rfy9d1impM4cP9fv9GRPiHOe6TNp6laBchFcSAXn8nXH1rvASiWZYpsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/016be6a6e5a907dcb9c444a5e6acd8b9/dc87c/domain_story_extended.avif 158w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/383b4/domain_story_extended.avif 315w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/d0061/domain_story_extended.avif 630w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/20e2c/domain_story_extended.avif 945w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/b693a/domain_story_extended.avif 1014w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/016be6a6e5a907dcb9c444a5e6acd8b9/5787a/domain_story_extended.webp 158w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/89f54/domain_story_extended.webp 315w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/4d353/domain_story_extended.webp 630w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/0f41d/domain_story_extended.webp 945w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/a99da/domain_story_extended.webp 1014w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/016be6a6e5a907dcb9c444a5e6acd8b9/dda05/domain_story_extended.png 158w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/679a3/domain_story_extended.png 315w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/50637/domain_story_extended.png 630w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/fddb0/domain_story_extended.png 945w,
+/static/016be6a6e5a907dcb9c444a5e6acd8b9/1c989/domain_story_extended.png 1014w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/016be6a6e5a907dcb9c444a5e6acd8b9/50637/domain_story_extended.png&quot;
+            alt=&quot;domain story extended&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이 도메인 스토리는 아래의 유스케이스로 작성될 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- 일차 액터: 유저  
+- 선조건:  
+	- 유저는 로그인 상태다.  
+    - 유저는 주문을 위한 (상품, 갯수) 리스트를 가진 상태다.  
+    - 시스템은 pg 결제 시스템과 연동되어 있다.  
+- 최소 보증: 클라이언트는 실패 상태 메시지를 받는다.  
+- 성공 보증: 유저는 pg 결제를 승인하면, 주문이 완료된다.  
+- 주요 성공 시나리오  
+    - 1.유저는 주문 리스트를 통해 주문을 요청한다. 
+    - 2.서버는 주문 정보를 영속화한다.
+    - 3.유저에게 주문 접수를 응답한다.
+    - 4.서버는 주문 거래를 PG 서비스에 요청한다.
+    - 5.PG 서비스는 주문 거래를 접수하고, 접수된 정보를 서버에 응답한다.
+    - 6.서버는 거래 정보를 영속화한다.
+    - 7.PG 서비스는 주문 거래가 완료되어 콜백한다.
+    - 8.서버는 PG 서비스에 주문 정보를 요청한다.
+    - 9.PG는 주문 정보를 서버에 제공한다.
+    - 10.서버는 주문을 완료 처리한다.
+- 확장  
+    - 4a.pg 결제 시스템으로부터 결제 진행 요청이 실패한다면, **서킷브레이커-리트라이**를 진행한다.  
+	    - 4a1.pg 결제 시스템에 주문 식별자로 결제 상태를 확인한다.
+	    - 4a2.pg 결제가 진행되지 않았다면, 결제 진행 요청을 재시도 한다.
+	    - 4a3.이 진행은 최대 3회까지 재시도 한다.
+	    - 4a4.재시도 후에도 결제 진행 요청이 실패한다면, 주문은 결제 실패 상태로 갱신되고, INTERNAL_SERVER_ERROR 상태 코드를 반환한다.
+	    - 4a5.7a4는 후순위 pg 시스템이 제공된다면, 서킷브레이커 패턴으로 대체한다.  
+    - 4b.pg 결제 시스템으로부터 결제 진행 요청이  timeout 상태에 이르면, **서킷브레이커-리트라이**를 진행한다.  
+    - 4c.pg 결제 시스템으로부터 pending 상태가 반환된다면, 주문은 결제 대기중 상태로 유지된다.  
+    - 7a.서버는 스케줄을 통해, db에서 주문 중 결제 대기중 상태인 주문 목록을 조회하고 이후 시퀀스를 진행한다.  
+	    - 7a1.스케줄은 주문으로 부터 5분 뒤의 결제 대기중 주문에 대해서만 진행한다.  
+    - 9a.pg 결제 시스템에서 결제 정보를 조회할 수 없다면, 주문을 결제 실패 상태로 갱신한다.  
+    - 9b.pg 결제 시스템의 조회된 결제 상태가 결제 실패 상태라면, 주문을 결제 실패 상태로 갱신한다.  
+    - 9c.pg 결제 시스템의 조회된 결제 상태가 결제 대기 상태라면, 주문을 결제 대기 상태를 유지한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;결국 동기 요청을 통한 비동기적 처리 프로세스에서 중요한 것은, 맥락 관점에서 어느 부분을 동기화 부분으로 블로킹 하느냐이다. 이때 &apos;스탭9&apos;은 PG 시스템으로 부터 블로킹되는 동기화 부분이 될 것이며, &apos;스텝10&apos;는 결제 시스템을 데이터 소스로써 취급하여, 상태를 동기화하는 부분이 된다.&lt;/p&gt;
+&lt;p&gt;이런 비동기 시스템의 처리에서 ’스텝9‘ 이후의 비동기 후처리는 내 시스템의 DB에 쓰는 거래 장부의 마무리 기록 작업이기 때문에 중요하다. 다만 이 부분은 외부 서비스 연동 관점에서, PG라는 데이터 소스에서 ‘&lt;strong&gt;읽기&lt;/strong&gt;’를 하는 동작에 불과하다.&lt;/p&gt;
+&lt;p&gt;데이터 정합의 장애가 발생 가능한 지점은 PG에 쓰기 요청을 보낼때, 즉 &apos;스탭7&apos;이다.&lt;/p&gt;
+&lt;h3&gt;비동기 블로킹 쓰기 요청&lt;/h3&gt;
+&lt;p&gt;멀리 떨어져 있는 것은 본질적으로 비동기적으로 동작한다. HTTP를 살펴보면, 이런 비동기적 과정 속에서 데이터를 동기적으로 공유하고자 여러 과정을 수행한다. 전송 계층(TCP)부터 살펴보면 다음과 같다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/20b0dca5f6a56d79b64ad58434e5a695/cdbba/http.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 124.68354430379746%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/20b0dca5f6a56d79b64ad58434e5a695/dc87c/http.avif 158w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/383b4/http.avif 315w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/d0061/http.avif 630w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/20e2c/http.avif 945w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/9eba6/http.avif 1260w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/3189a/http.avif 1924w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/20b0dca5f6a56d79b64ad58434e5a695/5787a/http.webp 158w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/89f54/http.webp 315w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/4d353/http.webp 630w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/0f41d/http.webp 945w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/f27a3/http.webp 1260w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/b98cf/http.webp 1924w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/20b0dca5f6a56d79b64ad58434e5a695/dda05/http.png 158w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/679a3/http.png 315w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/50637/http.png 630w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/fddb0/http.png 945w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/f46b1/http.png 1260w,
+/static/20b0dca5f6a56d79b64ad58434e5a695/cdbba/http.png 1924w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/20b0dca5f6a56d79b64ad58434e5a695/50637/http.png&quot;
+            alt=&quot;http&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;HTTP에서 클라이언트는 TCP의 3-Hand-Shake를 통해서 멀리 떨어진 서로가 &lt;strong&gt;연결을 동기화&lt;/strong&gt;하고, 데이터를 주고 받는다.&lt;/p&gt;
+&lt;p&gt;유비해서 바라보면, PG와의 연동 또한 매우 유사한 패턴을 갖추고 있음이 보인다. 아이디어가 똑같기 때문이다. PG라는 비동기적 동작에 대해, 블로킹해서 ACK 스러운 상태 동기화적인 답변을 받는 것이 안전하다. 어쩔수 없다 내 제어 밖의 네트워크를 사이에 두고 있으니까.&lt;/p&gt;
+&lt;p&gt;다만 이것이 끝이 아니다. 다른 서비스와 &lt;strong&gt;동기화&lt;/strong&gt;하는 지점을 갖고있다는 것은, 그 서비스의 장애가 내 서비스의 장애로 넘어올 수 있음을 의미한다. &lt;strong&gt;외부 시스템에 대한 데이터 동기화는 가져가되, 장애의 동기화는 막아야한다&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;장애 동기화 방지&lt;/h2&gt;
+&lt;p&gt;이런 비동기적인 엔터프라이즈 애플리케이션 간의 데이터 동기화 작업은 비동기적인 시스템 간의 데이터 정합성을 위한 것이다. 이것은 본질적으로 데이터 정합성이라는 동기성을 위해, 동시성이라는 병렬 동작 성능을 희생하는 것이다. 무엇이 희생된걸까? 다음 주의사항이 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;영속성 자원 고갈&lt;/li&gt;
+&lt;li&gt;스레드 자원 고갈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;영속성 자원 고갈&lt;/h3&gt;
+&lt;p&gt;스프링 부트 앱은 RDBMS에 기대어, 비즈니스 로직에 ACID를 달성한다. ACID를 달성한 엔터프라이즈 애플리케이션은 안정적이다. 스프링 부트 앱은 빠르고 안정적이게 RDBMS를 사용하기 위해 연결 과정에서 오는 오버헤드를 제거하려고 한다. 그 노력의 일환으로 DB 커넥션 풀을 갖고, 유저의 요청에 대해 커넥션을 제공한다.&lt;/p&gt;
+&lt;p&gt;특히 애플리케이션 로직에서 트랜잭션이 시작되면, 트랜잭션이 끝날때까지 스레드는 DB 커넥션을 점유한다. 뿐만 아니라 커넥션 중 DB로 요청이 시작되면 DB와 세션이 맺어지며, DB의 자원도 점유한다. 장기 트랜잭션은 트랜잭션이 길어짐에 따라 많은 자원들을 하나의 스레드가 점유하고 있는 것을 의미한다.&lt;/p&gt;
+&lt;p&gt;CPU는 처리가 매우 빠르다. 하지만 파일 시스템, 네트워크 요청과 응답으로 갈 수록 느려진다. &lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/concurrency/concurrency_layered/&quot;&gt;이 차이가 어느정도일까?&lt;/a&gt; CPU의 한 사이클 처리가 &lt;strong&gt;1초&lt;/strong&gt;라고 했을때, 하드 디스크의 I/Osms &lt;strong&gt;1~9개월&lt;/strong&gt;이고, 네트워크 지연(샌프란시스코 ~ 뉴욕)은 &lt;strong&gt;5년&lt;/strong&gt;에 해당한다.&lt;/p&gt;
+&lt;p&gt;외부 시스템과의 연동 처리가 일어나는 곳은 반드시 Transaction 범위 바깥이어야 한다.&lt;/p&gt;
+&lt;h3&gt;스레드 자원 고갈&lt;/h3&gt;
+&lt;p&gt;외부 시스템으로 인해 영속성 자원이 고갈되는 것은 막았다. 하지만 아직 스레드의 자원이 고갈되고 있다. 어떻게 해야할까?&lt;/p&gt;
+&lt;p&gt;영속화하는 데이터베이스는 내부에 실제 구현이 어떻게 되어있던지 간에, 데이터의 정합성을 위해서는 &lt;strong&gt;쓰기 작업의 동기화&lt;/strong&gt;가 필요하다. 때문에 일종의 단일장애지점(Single Point of Failure, SPOF)이라 볼 수 있다. 애플리케이션의 경우엔 상황이 좀 낫다. 스케일아웃이라는 동시성-병렬적 전략을 이용해 자원을 늘리기 비교적 용이하다. 하지만 외부 시스템으로 인해 우리 자원을 낭비하는게 옳은 선택일까?&lt;/p&gt;
+&lt;p&gt;-- 작성중 --&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;재시도&lt;/li&gt;
+&lt;li&gt;서킷 브레이커 적용&lt;/li&gt;
+&lt;li&gt;폴백 처리&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;하지만 신뢰할 수 없다. 상태 확인&lt;/p&gt;
+&lt;p&gt;그들의 서비스가 우리 서비스의 장애로 번져야하는가?&lt;/p&gt;
+&lt;p&gt;어떤 설계가 필요할까?
+멱등적 처리&lt;/p&gt;
+&lt;p&gt;결제의 진정한 트랜잭션(거래)은 우리 서비스도, PG도 아니다. VAN과 카드사에서 일어난다.&lt;/p&gt;
+&lt;hr&gt;</content:encoded></item><item><title><![CDATA[성능 과학: 인덱스와 캐시]]></title><description><![CDATA[성능 과학: 인덱스와 캐시 왜 '컴퓨터 과학'에는 '과학'이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 '컴퓨팅 기기(연산 기계)에 대해 과학적 방법을 이용한 학문'이다. 과학적 방법(Scientific Method)은 최소 1…]]></description><link>https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/performance_science/performance-science_index_cache/</guid><pubDate>Thu, 14 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/94f600b4974e4fd92dc15094363b6daa/50637/scientific_method.png" length="0" type="image/jpeg"/><content:encoded>&lt;h1&gt;성능 과학: 인덱스와 캐시&lt;/h1&gt;
 &lt;p&gt;왜 &apos;컴퓨터 과학&apos;에는 &apos;과학&apos;이란 단어가 붙을 수 있는 것일까? 컴퓨터 과학이란 &apos;컴퓨팅 기기(연산 기계)에 대해 &lt;strong&gt;과학적 방법&lt;/strong&gt;을 이용한 학문&apos;이다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;과학적 방법&lt;/strong&gt;(Scientific Method)은 최소 17세기부터 과학을 수행할 때 참조되어 온 &lt;strong&gt;경험적 지식 획득 방법&lt;/strong&gt;입니다. 이 방법은 고대와 중세 시대부터 발전해왔으며, 관찰과 엄격한 회의주의를 바탕으로 합니다. 인지적 가정이 관찰 해석을 왜곡할 수 있기 때문에, 과학적 탐구는 귀납적 추론을 통해 검증 가능한 가설을 만들고, &lt;strong&gt;실험&lt;/strong&gt;과 &lt;strong&gt;통계 분석&lt;/strong&gt;을 통해 이를 검증하며, 결과에 따라 가설을 조정하거나 폐기합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Scientific_method&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;

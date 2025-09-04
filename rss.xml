@@ -1,4 +1,366 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Fri, 29 Aug 2025 05:57:41 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 29 Aug 2025 05:43:22 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[애플리케이션 이벤트]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/event/application_event/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/event/application_event/</guid><pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/096acde5f1ad93c5fc114f100691ca45/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Sep 2025 19:07:53 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 04 Sep 2025 18:53:46 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[카프카 테스트 작성하기]]></title><description><![CDATA[카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다. 예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned…]]></description><link>https://iol-lshh.github.io/회고/kafka/kafka_test/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/kafka/kafka_test/</guid><pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.ioimg/diagram-apache-kafka.svg" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned.) - 레오나르도 다빈치&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;심지어 예술은 예쁘기라도 하지, 코드는 분석해야하는... 그저 부채다. 그런 코드로 쌓아올린 애플리케이션은 믿을 수 없다. 때문에 테스트를 작성해야한다.&lt;/p&gt;
+&lt;p&gt;하지만 어떻게, 내 애플리케이션을 테스트하는데, 다른 애플리케이션에서 발행하는 이벤트에 대한 테스트를 작성 가능할까?&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;분해&lt;/h2&gt;
+&lt;p&gt;어떤 부분을 테스트 할 것인가? 비즈니스 로직을 테스트하는 것인가, api를 테스트하는 것인가.
+카프카를 이용하는 부분을 테스트한다는 의미는 인터페이스에 대한 이야기라고 생각한다. 카프카는 브로커로부터 이벤트를 컨슘하여 애플리케이션 내부로 전달하는 핸들링 인터페이스라고 보기 때문이다.&lt;/p&gt;
+&lt;p&gt;카프카를 테스트한다는 것은 애플리케이션의 유스케이스에서 조금 벗어나있다. 내가 테스트하고 싶은 것은, 카프카의 구성 설정에 따른 이야기다. 전체 플로우의 이벤트 발행자(Publisher)에 해당하는 카프카의 프로듀서(Producer) 부분에는 별로 관심이 없다. 알아서 잘 발행하겠지...&lt;/p&gt;
+&lt;p&gt;문제는 브로커와 플로우의 이벤트 구독자(Subscriber)에 해당하는 카프카의 컨슈머(Consumer)다.&lt;/p&gt;
+&lt;p&gt;브로커는 토픽과 파티션으로 구성된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;토픽: 논리적 경로&lt;/li&gt;
+&lt;li&gt;파티션: 물리적 경로&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;img/diagram-apache-kafka.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;파티션과 컨슈머는 1:1 일때, 병목이 없다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/61e6571a55a130d2943534887e6857c5/871fd/one_one.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.25316455696203%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQklEQVR42j2U+U8bRwCF+eNbmoLADhjft9f2rm/v+thd3xivMUfsYLDLkQjSKEFJD6kUaAvh63gtZaRPM/PL6L15b2ZFH7yhbJ2hDk4oC9TBlOLuGM2aUhJrrT3g+emJxajtdyiMGmjHHRv1qG2jHXcpHDap9husFPamVC4fKM/+ZEvbZz3TJtydUzn/C/X8jlC5zcP9HS/P38gfN/FZRRy6xHolhtNMsVlPsFlLkLnoEtWzrJSsU5T9d6TMfeTmAenGiFxvgqQPSA+vkOp7/PN4D99eKE+6yGOdtB4n15Ep9DL2nKhGSU8M4kZBKBycUbBmXM5Psfb6tJsm46NDZidjHJLKekjhfH7Gh+sb1lI+nNE1vh7IzM0AM8PPTT/B1+MsO1qYeLMkFA5nxFoToimFkKTgDScIJRV8kTg7xR7x2p5tmecXMiOTkJlADq8SD60SDfyIEl9DibzCVYsh2QcKdandU/IVg6xmkFF1VLNLplzDo/YJFhv88dsXHu7ukXYrhE0Jo+TBqPgxNJ9NveTG30qTaBSXlvOCheVBv4deq3IyGXMxm+KUNByxAu/fXXL76TMbSojt+AafrSSTitvmsh3mdiTjUoNLy+WF5fYJzkACj5THlyzgSeRYcwXx1w+RWwfLUITl6plFcqTiCawSljYJJTZsXL4f8LblpeWFwkx/ytHBCNMwKZdVrOGQ0dDClTFwpSt8/HAjbP/OdlnCnXJy0QpzoLoFO5wYAa46UTzVyFJhUdxhujfFbHfR6g2yJY1ao01VN3HKOm6lyqePv9oHBo0cfjWAVfGi57aoZ1/TUT0MxN4lqpP4blmk7I0kCSazIuEcUaXElj+Kv7ov+mjx+PC33cPiWJRXdC8W/Akl7bSRUw7CwVV8rYXlRSji2S2qc305ZyhCMWsVTidveH9+hiNetHv4y+xU9PCanyUvjtArvogevhWBvNXcXAn7t4cKO2poqXCRcKw3x5Mu481U8coaPjFvxXK4a4dEq30e75cKc8ctosOCcLFJWNkiJL8mktkmIPZu8WJiZp4VtbVHrNojqnW/E1E7RCs9YoJUqcbTf//an0OpUyOiiysxi0TMgk3YyBMRxJsFZC3P/4apdGPjKmu5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/61e6571a55a130d2943534887e6857c5/dc87c/one_one.avif 158w,
+/static/61e6571a55a130d2943534887e6857c5/383b4/one_one.avif 315w,
+/static/61e6571a55a130d2943534887e6857c5/d0061/one_one.avif 630w,
+/static/61e6571a55a130d2943534887e6857c5/6ad16/one_one.avif 696w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/61e6571a55a130d2943534887e6857c5/5787a/one_one.webp 158w,
+/static/61e6571a55a130d2943534887e6857c5/89f54/one_one.webp 315w,
+/static/61e6571a55a130d2943534887e6857c5/4d353/one_one.webp 630w,
+/static/61e6571a55a130d2943534887e6857c5/657d2/one_one.webp 696w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/61e6571a55a130d2943534887e6857c5/dda05/one_one.png 158w,
+/static/61e6571a55a130d2943534887e6857c5/679a3/one_one.png 315w,
+/static/61e6571a55a130d2943534887e6857c5/50637/one_one.png 630w,
+/static/61e6571a55a130d2943534887e6857c5/871fd/one_one.png 696w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/61e6571a55a130d2943534887e6857c5/50637/one_one.png&quot;
+            alt=&quot;one one&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;파티션은 하나의 물리적인 빨대와 같다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;소스(프로듀서)로 부터 파티션이란 빨대를 컨슈머가 물고있는데, 다른 파티션도 이 컨슈머가 담당한다면, 번갈아가며 빨대를 물어야 한다. 병목이 된다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/48d0bef0b8b8f0894944e7143b28ff40/39600/less_consumer.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.25316455696203%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADOUlEQVR42mWUWW8aZxSG+cH9A72oWqmpmrZ2vCvGgNnMMiwznmGYBQYGMIsNGKiNiY23OG3qtJVVVYri3U8/7LSS1YtHZ/RdvDrnPe8Zj17rkK0PkWs/k6n0yVQHpN0eSn2HtHhTnTo83HN/d4+yYZNqWcibBbJbNpmWTVZ8y1tFkk2TQqOCR27skj/6hPbmLxZym0ylXULVffLjj6j7fxPSytxcXwpuSHULeBsyM1aMKT3MvJNk2ogyX0wgHVSQHA2P0hgitY5IFDeRSm2Szpbots+a2SDePCRu1bm7ueb2+hZl4JIe2EhmBKUiodZSyOUEMTNMtG+SKet4svU9lOaIo/0hzY0q5aLFYLvNaKfHdGSdV8EUhwf7vDs74xv/LN9Pf8lFV2JoLjM0lnnfivFLW2JGCyBXTTxq6w0hp8dKKIY3HGfJH2ElnGDBG2BJ3SD22OEVV5dXvEoH+GH1J6L+7wisvMDv/Za14EuCvhcsFGJPgkpzj2RtD8NxUa0SilHErjbRTIcF2cWftfnjwzlbrU2WjDgJN0HN8FE2/ZRFrdkBSnkfr8tJshVjspQ9MhtDdvrblEsOOXWdbqdNv9tmLmkxF5WpVVx+P/8gRp7jq6+/4H01RDs7S0cwLvg4dgLMqH7hvTUZeUS4vMP8qhg5LrMi8MayTC2HWFTrzIbSXH76yMWfF3iNBPFunoC2SsgIEzRCgjA+NUC4k39ayqTDrGBvZ0DFdbFMg35vm0GvK/zKEs1XOf/tV8YHY1JtG+1sS9BGFWif0d91UN+2kIrqxMMR8eouuu0I/wpIik7OLpFRdQJWm6WkzsnRoVjM3aPg+onw9/j/yMcNIShyuC5GjpQH+CJxfNHkI2FJZjm4xsuwxqLw8O52kkMRbHEd6mkL7eQ5OYFy8llQboxQRHRODka06jWKZp7hoMfBcMBiyiZuN4XYFbc3t6Q7BbS3m+ROn6ML1k+bpJwcnszGLgF3xExEYT6hsyCY1B9XU7y2eoRy7n+Ca00d6bBKevycjCAxdsV1yXjsWoukVUOy6481YT6RKojTMyoim474N9zz8PBAriI6LiiiE+3xbv8lVcoRs2XsSol/AB8RgFnT29QXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/48d0bef0b8b8f0894944e7143b28ff40/dc87c/less_consumer.avif 158w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/383b4/less_consumer.avif 315w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/d0061/less_consumer.avif 630w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/3bcc4/less_consumer.avif 700w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/48d0bef0b8b8f0894944e7143b28ff40/5787a/less_consumer.webp 158w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/89f54/less_consumer.webp 315w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/4d353/less_consumer.webp 630w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/fa73e/less_consumer.webp 700w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/48d0bef0b8b8f0894944e7143b28ff40/dda05/less_consumer.png 158w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/679a3/less_consumer.png 315w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/50637/less_consumer.png 630w,
+/static/48d0bef0b8b8f0894944e7143b28ff40/39600/less_consumer.png 700w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/48d0bef0b8b8f0894944e7143b28ff40/50637/less_consumer.png&quot;
+            alt=&quot;less consumer&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;컨슈머가 파티션의 갯수보다 많으면, 남는 컨슈머는 논다. 하지만, 리밸런싱에 대비하여 오버헤드를 줄일 수 있게 도와준다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d86cea9a4590d544951b38c6b21c7ce3/62d75/above_consumer.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 82.91139240506328%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADvklEQVR42oWU2U8bZxTF/Sf3oS+V2kpppDQbARNv2DNjwGN7xuN9H4/HG7YBY2yzhR0DKS20SqMKqS8V+fVjSMhjPuno3tFIZ865537jSnS2SXYmGK2RU/XGptOnezsohTb7R8fcn6PpKdF2gdR6jbTAfTVWq06fXreItPPYvTau4uEt5ZN/Cdm7/Bo18VU20YZX1C7+Q2nusbqx6RDuHu+j7dq4zRivyxGeZxXmajFe5MPM1zX0wyaJag5XavwHy7V1otaAxXKPmFAYEc9qawulscNgNPlMeICx30btpIhZUWJ2HK2po4peqUZQxyZJs4Brsb3P2ekpw/U1uisd+t0VLk6OyFdtnsg5KrU6/3z8SHfQ5wdphpWaws26xoGtcFiX+XuSYmyH8dTjZOwyLrV3QrHeIl2soGfyaOk8RdNC0rK4M126awNH4WR/B2/DIF0IYmU85LRZB+1SkGR8Fn8z8UAYX5sSVA1CER0paqDEU0iqzvxyikB1xNpw/DjDiLAVNnzEll+ix2bRBOLqDP7gM0K9DOl6SVhuvePy8oLBag/bMum2W/x5dUmuXOPHgEG+XOWv6xua/Q7fuX+hXZW46quMCl4mAjcbOpt1hbdWjEzjXuHggreLGv4lDZ8DHY+sMqMkkOxthpNtR+HeySHGYQcpGUCShCLluQM5/IJZ31OC3fSDwuWVI3obI8x6w1FTFXUwFKtTsHhjtGj3VuHTJ0Z7W7wQq1ItSWwJRf3yAv3SArutZey8n0DLEDMUhEudA4bjLWy7QalcEagyGo1Qk3kn5ZII6OOHD7TXuvwcmadWWGCnJtFKummn3By0lmiKkB5T1oTlV/5F5uUoXmHdE9Z47ZN5JeuExXyHk50Hy6eHZM9W8etefAtPCS2+JCjsBoT9l54nSP2ssFzEFW7tcTadMljr02zY9MQe/nZ5TrZi8VMg8RDKzUMo33uf0TZlrsUe7tZCvBNKr0UoQ0vB+6hw4z1Zs0WyWCWeKaJlS+QFWShRIGCOWN8cP96UUC8n3i+Q12dJRGccVDJeIkuvvs5QNoe4DZtZvcZcos6cUeeNVsWfW+F1tCz2cPQ55QOi25b4sEwxOU8h7aGQ8jiEqtjF0JeUj4+PmQrL5+fnoj7gvj87m3Ik/jS3t7cO4cH0CGWjzLinMbVCbKTmGKbd/N6NMCwF8Fhxss0KLr5x7j7dfb0pWzXkyhKy4UFO+ZAE7ut8zE1wNYNh5nHd3d3xLdyf6fsLlooJImaGcDn5iMVyCrWWRcrFMJt1/gfo1UHvGszt0AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/d86cea9a4590d544951b38c6b21c7ce3/dc87c/above_consumer.avif 158w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/383b4/above_consumer.avif 315w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/d0061/above_consumer.avif 630w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/35094/above_consumer.avif 697w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/d86cea9a4590d544951b38c6b21c7ce3/5787a/above_consumer.webp 158w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/89f54/above_consumer.webp 315w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/4d353/above_consumer.webp 630w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/e037c/above_consumer.webp 697w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/d86cea9a4590d544951b38c6b21c7ce3/dda05/above_consumer.png 158w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/679a3/above_consumer.png 315w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/50637/above_consumer.png 630w,
+/static/d86cea9a4590d544951b38c6b21c7ce3/62d75/above_consumer.png 697w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/d86cea9a4590d544951b38c6b21c7ce3/50637/above_consumer.png&quot;
+            alt=&quot;above consumer&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;리밸런싱에 대비하여 오버헤드를 줄일 수 있게 도와준다는 게 무슨 의미일까?&lt;/p&gt;
+&lt;p&gt;만약 컨슈머 중 하나가 죽으면, 그룹 코디네이터(Group Coordinator)가 리밸런싱을 트리거한다. 이때 카프카는 STW(Stop The World)가 일어나고, 전체 시스템의 단일 장애지점으로 발전한다. 때문에 컨슈머를 파티션보다 갯수가 많게한다. 컨슈머 몇개가 놀 순 있겠지만, 컨슈머가 죽으면, 놀던(Idle) 컨슈머가 일하기 시작하면서, 이런 오버헤드를 줄인다. Lag가 쌓이는 것을 최소화할 수 있다.&lt;/p&gt;
+&lt;p&gt;카프카는 컨슈머 그룹을 둔다. 각 컨슈머 그룹은 각각의 컨슈머가 파티션에 대해 딱 한번만 호출하고자다. 컨슈머가 메시지를 읽다가 실패해도, 메시지는 유실되지 않고 새로운 컨슈머 그룹이 토픽에 붙는다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 527px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 116.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEgklEQVR42pWVaW8TVxSG/bP7papUaKEEYuLE2LFjxzPelxnPeBtv433PgtPYTnA2AqSkKlIDCRAg8PTiCLWfCozm0ehKo/eec99zzrVojQ3UwQFq7xHh2lCwRaT+O8n+lER/n5hR4+PVB968fo0+MIms5Yn0DCJ9g6gg3M0R/bxeL5Cq5bGorW0ye+LnyRn3tTZWtYWvMZ2ts/tvWNVN3r97y/nLc1KjBp5+mrtZP/fyQZaqceYykljLJA5ahAtJLFp7TLi1S6LYRKv20QXZ5gbRXBW5OiJoNPggBC9eXaBt1Yh0NYySTLkREYRnXzXrQRYbxcppEWF7RLIzYbozolzMUyrkGfQ6TLa3mJM0rKsx9qe7TB894k7IhcN3h7/WovTVBdZUG4c1if2GjLPgJ17JYtG7E3zlhyy6JZb9MRxSBIccxbroZEWpES52ZhF+Tjmz00GqRlhZvsHq6m283ttIYgPb4k84q9FrwWRnTKw1ptXtiVRMjKJJu79OvdXB4QzjDKU4/eOEZ0+e4srH8KpOxnU/PcM9Y1iR6OVXWKlFiVUy14JR4Wq9XkdNasQSCma1OsPmjrLs8vP89PlM0GlEcUcXGeZd5Px3MAJztDU7DcWGsxggXv2SsjnE5vHjDqu4QopAxerw4g3mSCYMrt5dzlLO7naQ6zHc7l/xh6zIgfkZi44buBsJkbKIUBGm6L1dnhzt02rWadZr7O1OODo6YN4uY7tlYzp8yK4w5Te/gwfyHGcjnXHBzU5phafdEHuC5VJQpPwlwtIm9hVZOBhiSURqXw2yYHfNTFHCad4cP+bi/ILMpCMMDOFx/syK6yZu501kYczSZ1PMyH9NmWA22mSKFbKCWntAodrA4Yri8kQ4bjZ4dnCEp5LEl/GwKYxoCiPaeQ+9ko9axoWnHr82RevukGhusznokM9lyKV1eu0m/W6LhVUVnyfM426Xw95AHHwCjzi7I9NDK3KXTuweY8PJUF9iWZiSqOWwxOpDpNYe1kiBRaUyw6aYzAfSSMk2QVE2lycnnHYGqJsm8sMcC6qLBxkv9rRH4GVeceLuaQQMBUu7v4FerJKptEibzWvKDTK1Dmk9Rzmq8Pb0lFfjCSUlTrpaIlspif//xaiZpIpZButrWPjKc/XihTDlmNfPTugnE9RGfZrjNZqjNRrbA1ojwWQdc9hhYzTEcvXxI//L+w9cPj7mTxFhSpFw6R7my2Gs+YCYNjHu5mSsRoDguEQor34lwk+zFy4vOR2skynESd7+EakYFDNTFHJLJVQR3ZOViGyXiZvpr6f86dNMkrPDI3RFplgNc9IJslV0syVa8KgdZFqXcYn6nBX2twq+EoWdTsgozlsURO/GxLSJC4zYfTTR0w7RKfHvEry4QG8bxH/5gUR0AU2xz9BVO35pjpUvvfytgudnL1G26mR7CqctmQ3Nxqa2yGHFy9T04szL19PmWwVf/n2GJu6U4CCFT3mApC2LwncSSLlYjtjwDnRi32PKO+G0Lm41uST6uaThKyZnrApkU0cqJEiVcvwD++nxnuai3hwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/dc87c/partition_consumer.avif 158w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/383b4/partition_consumer.avif 315w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/d26e8/partition_consumer.avif 527w&quot;
+              sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/5787a/partition_consumer.webp 158w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/89f54/partition_consumer.webp 315w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/6ece6/partition_consumer.webp 527w&quot;
+              sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/dda05/partition_consumer.png 158w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/679a3/partition_consumer.png 315w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png 527w&quot;
+            sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png&quot;
+            alt=&quot;partition consumer&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;테스트 작성&lt;/h2&gt;
+&lt;p&gt;이제 다시 돌아가서 테스트를 작성해보자. 카프카의 파티션과 컨슈머에 따른 동작을 확인해보고 싶다. 카프카가 필요하다. 스프링 애플리케이션에는 두 가지 방안이 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;임베디드 카프카 (&lt;code class=&quot;language-text&quot;&gt;@EmbededKafka&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;카프카 테스트 컨테이너&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;둘 모두 카프카를 테스트 환경에 제공한다. 하지만 둘은 조금 다르다.&lt;/p&gt;
+&lt;h4&gt;임베디드 카프카 (&lt;code class=&quot;language-text&quot;&gt;@EmbededKafka&lt;/code&gt;)&lt;/h4&gt;
+&lt;p&gt;임베디드 카프카는 JVM 안에서 Java 코드 레벨에서 시뮬레이션 한다. 속도가 빠르고, CI 파이프라인에도 부담이 적다. 하지만 실제 Kafka 환경과 다르다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@SpringBootTest&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@EmbeddedKafka&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;partitions &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        brokerProperties &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;listeners=PLAINTEXT://localhost:0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token string&quot;&gt;&quot;auto.create.topics.enable=true&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;EmbeddedKafkaIntegrationTest&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TOPIC&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;demo.internal.topic-v1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;EmbeddedKafkaBroker&lt;/span&gt; embeddedKafka&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// Spring이 주입한 EmbeddedKafkaBroker를 DynamicPropertySource에서 쓰기 위해 보관&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setEmbedded&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;EmbeddedKafkaBroker&lt;/span&gt; broker&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        embeddedKafka &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; broker&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// 컨테이너 리스너들이 브로커 준비될 때까지 기다리게 도와줌(테스트 안정화)&lt;/span&gt;
+        broker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getTopics&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;t &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ContainerTestUtils&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;waitForAssignment&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+            broker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getKafkaServers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; broker&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getPartitionsPerTopic&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@DynamicPropertySource&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;kafkaProps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;DynamicPropertyRegistry&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.bootstrap-servers&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; embeddedKafka&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getBrokersAsString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// 필요 시 테스트용 직렬화/역직렬화 기본값&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.consumer.auto-offset-reset&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;latest&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.consumer.key-deserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringDeserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.consumer.value-deserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringDeserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.producer.key-serializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringSerializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.producer.value-serializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringSerializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;KafkaTemplate&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; kafkaTemplate&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt; listener&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Test&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;produce_and_consume_with_embedded_kafka&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InterruptedException&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; key &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;order-1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; payload &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hello-embedded&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        kafkaTemplate&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;TOPIC&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; payload&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; record &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; listener&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Duration&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ofSeconds&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toMillis&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;concurrent&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;TimeUnit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MILLISECONDS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isNotNull&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isEqualTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isEqualTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;payload&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// 테스트 전용 리스너: 실제 앱 리스너 대신, 수신 메시지를 큐에 쌓아 단언하기 쉽게 함&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;BlockingQueue&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;ConsumerRecord&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LinkedBlockingQueue&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token annotation punctuation&quot;&gt;@KafkaListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;embedded-test-listener&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; topics &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TOPIC&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;ConsumerRecord&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; rec&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;offer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;rec&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@TestConfiguration&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Cfg&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token annotation punctuation&quot;&gt;@Bean&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;testListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Kafka Testcontainers&lt;/h4&gt;
+&lt;p&gt;실제 카프카를 도커 컨테이너로 띄운다. 초기화 비용은 크지만, 실제 운영 환경과 유사한 통합 테스트를 수행시킬 수 있다. 실제 카프카를 띄우는 것이기 때문에, 신뢰성이 매우 높다. 브로커 장애, 리밸런싱, 네트워크 지연을 설정하여 시뮬레이션이 가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@SpringBootTest&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@Testcontainers&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;KafkaTestcontainersIntegrationTest&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TOPIC&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;demo.internal.topic-v1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;// Confluent Kafka 이미지 사용 (버전은 프로젝트에 맞게 고정하세요)&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Container&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;KafkaContainer&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;KAFKA&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;KafkaContainer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;DockerImageName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;confluentinc/cp-kafka:7.6.1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@DynamicPropertySource&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;kafkaProps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;DynamicPropertyRegistry&lt;/span&gt; r&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.bootstrap-servers&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;KAFKA&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getBootstrapServers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.consumer.auto-offset-reset&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;latest&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.consumer.key-deserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringDeserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.consumer.value-deserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringDeserializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.producer.key-serializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringSerializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        r&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;spring.kafka.producer.value-serializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;org.apache.kafka.common.serialization.StringSerializer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// 필요 시, acks/compression/retries 등 운영과 유사하게 맞출 수 있음&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;KafkaTemplate&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; kafkaTemplate&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt; listener&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Test&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;produce_and_consume_with_testcontainers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InterruptedException&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; key &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;order-2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; payload &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hello-testcontainers&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        kafkaTemplate&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;TOPIC&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; payload&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; record &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; listener&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;poll&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Duration&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ofSeconds&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toMillis&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;&lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;util&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;concurrent&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;TimeUnit&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;MILLISECONDS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isNotNull&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isEqualTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isEqualTo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;payload&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;BlockingQueue&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;ConsumerRecord&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; queue &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LinkedBlockingQueue&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token annotation punctuation&quot;&gt;@KafkaListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;tc-test-listener&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; topics &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TOPIC&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;onMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;ConsumerRecord&lt;/span&gt;&lt;span class=&quot;token generics&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; rec&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            queue&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;offer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;rec&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token annotation punctuation&quot;&gt;@org.springframework.boot.test.context.TestConfiguration&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Cfg&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token annotation punctuation&quot;&gt;@Bean&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;testListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;TestListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;작성중...&lt;/p&gt;
+&lt;h3&gt;참조&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-kafka/reference/testing.html&quot;&gt;https://docs.spring.io/spring-kafka/reference/testing.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[애플리케이션 이벤트]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/event/application_event/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/event/application_event/</guid><pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/096acde5f1ad93c5fc114f100691ca45/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
@@ -7544,504 +7906,7 @@ aplay &lt;span class=&quot;token parameter variable&quot;&gt;-D&lt;/span&gt; plu
 &lt;hr&gt;
 &lt;p&gt;테스트 더블의 기본 개념부터 각 유형의 목적, 그리고 사용 시 주의할 점까지 정리했다. 테스트 더블은 의도를 유려하게 표현할 수 있도록 도와주는 중요한 도구다. 테스트 더블 없이는 의존성 분리에 많은 에너지를 쏟아야 하고, 그렇다고 의도를 벗어난 오용은 테스트 코드의 본질을 잃게 한다.&lt;/p&gt;
 &lt;p&gt;정리한 것을 항상 리마인드하자, 나중에 내가 짠 테스트 코드를 내가 욕하지 않는다면 성공일 것이다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/test/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A0%95%EB%A6%AC/&quot;&gt;전반적인 테스트&lt;/a&gt;에 이어 테스트 더블에 대해 정리해봤으니, 다음은 테스트 작성 장인들이 소개한 멋진 테스트 패턴들을 정리해볼 예정이다. 재밌겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Synchronization 정리]]></title><description><![CDATA[컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization…]]></description><link>https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/synchronization/synchronization_정리/</guid><pubDate>Tue, 22 Apr 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/261b3a2911406f4e91a2a0110fa0b892/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/261b3a2911406f4e91a2a0110fa0b892/437a1/header.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQUlEQVR42jVS2W7aQBRFLdieMRhogvG+YHAS7zt2XENMAk2UNE37kKpt1L5E3f7/A3oHUulodIQ4y73XHZp3kBTSgoeUiJp6r45Pu7zzeuJ0ebcn+N2pT0lRTwx7ckwpCWsusVniWcnOKtaqOvTUnQRbJIdjtx3NCiO8OF4sFW8luc2xXWnR5siu1egSAOQoesedrhk9exFTvDOwKqwmjJqOreXDt1+3n5/vv/7cfvrR3H55ePp98/j88fvf+6c/xe6RXdQjd8Pnd0OnRcaSiDmrBHHfKGgpwHIILaAwgAFHLUNqQskJrabsvJ5kdxCOjAJioTypjbQUhoTZaCWB8Wg5AQFW45HTAoAjNR2ergf22+HZ+k2wPQp33MkKLDo93uHtcp5c6f7aCFsgMDBS4v6sHCxqzm5Ys+xbFTLLrhAMzlo8r9HsHFpgE8RTd2xmmteARvFXetjK7gprKYiHdgOBQPpGroYbwV0Z2bWa7PTkamzXJBlqU4JHiQEtR4B97QjJEWwBDgNKrBfc/Nwqrp36vR5fLpY3/vrD5KyBdXQOdx5YJatnjOgTSABYW8TIISMFhCsxrWWUlqNZ1ZOirhiBEpNk3gEBtzhnjRw+FVr0sJ7BCvF+T1jPIZyBLkoML7eosZHDjwhg5HuxFPTNAuakBZ8myeSv4EV2rqXwEjFwYlSBI1gjOKH+v/bYuRidNKAk4YLHiAHpfIAEb8Qo8f5mCSLkoE/JR0JODYNJAZCDeA/SghQRydgvFgcXJTkY/QMHZWj3ld+3EQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/261b3a2911406f4e91a2a0110fa0b892/dc87c/header.avif 158w,
-/static/261b3a2911406f4e91a2a0110fa0b892/383b4/header.avif 315w,
-/static/261b3a2911406f4e91a2a0110fa0b892/d0061/header.avif 630w,
-/static/261b3a2911406f4e91a2a0110fa0b892/20e2c/header.avif 945w,
-/static/261b3a2911406f4e91a2a0110fa0b892/9eba6/header.avif 1260w,
-/static/261b3a2911406f4e91a2a0110fa0b892/c68af/header.avif 1536w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/261b3a2911406f4e91a2a0110fa0b892/5787a/header.webp 158w,
-/static/261b3a2911406f4e91a2a0110fa0b892/89f54/header.webp 315w,
-/static/261b3a2911406f4e91a2a0110fa0b892/4d353/header.webp 630w,
-/static/261b3a2911406f4e91a2a0110fa0b892/0f41d/header.webp 945w,
-/static/261b3a2911406f4e91a2a0110fa0b892/f27a3/header.webp 1260w,
-/static/261b3a2911406f4e91a2a0110fa0b892/a8642/header.webp 1536w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/261b3a2911406f4e91a2a0110fa0b892/dda05/header.png 158w,
-/static/261b3a2911406f4e91a2a0110fa0b892/679a3/header.png 315w,
-/static/261b3a2911406f4e91a2a0110fa0b892/50637/header.png 630w,
-/static/261b3a2911406f4e91a2a0110fa0b892/fddb0/header.png 945w,
-/static/261b3a2911406f4e91a2a0110fa0b892/f46b1/header.png 1260w,
-/static/261b3a2911406f4e91a2a0110fa0b892/437a1/header.png 1536w&quot;
-            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-            type=&quot;image/png&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/261b3a2911406f4e91a2a0110fa0b892/50637/header.png&quot;
-            alt=&quot;header&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;컴퓨터 과학에서 동시성(병행성, Concurrency)은 굉장히 중요하다. 병렬(Parallelism)하든 가상화(Virtualization)하든 작업 단위는 동시에 실행되는 것으로 보여야 성능의 이점을 누릴 수 있다. 하지만 그냥 동시에 처리하기만 하는 것이 사용자가 원하는 작업을 컴퓨터가 제대로 처리한다는 의미일까? 오케스트라를 생각해보자. 오케스트라는 여러 악기들이 동시에 연주한다. 하지만 지휘자 없이 그저 동시에 연주한다는 것이 음악일까? 동시성을 위해서 동기화가 필요하다. 동기화란 오케스트라의 지휘자와 같다. 동기화가 있어야 비로소 음악이 되고, 사용자의 기대대로 동작하는 소프트웨어가 된다.&lt;/p&gt;
-&lt;p&gt;다음을 차례대로 정리해보겠다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;동기화(Synchronization)&lt;/li&gt;
-&lt;li&gt;어셈블리어 레벨의 동기화&lt;/li&gt;
-&lt;li&gt;단일 시스템 레벨의 동기화&lt;/li&gt;
-&lt;li&gt;동기(Synchronous) vs 비동기(Asynchronous)&lt;/li&gt;
-&lt;li&gt;블로킹(Blocking) vs 논블로킹(Non-Blocking)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;1. 동기화(Synchronization)&lt;/h2&gt;
-&lt;p&gt;동기화는 &lt;strong&gt;동시성(Concurrency) 환경에서의 실행 단위들의 타이밍 조율&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt; 동기화(Synchronization)란 &lt;strong&gt;시스템이 조화를 이루어 작동하도록 이벤트를 조율하는 것&lt;/strong&gt;을 말합니다. 예를 들어, 오케스트라의 지휘자(conductor)는 오케스트라가 동기화(synchronized)되거나 &lt;strong&gt;일정한 시간(in time)에 맞춰 연주하도록 조율&lt;/strong&gt;합니다. 모든 부분이 동기화되어 작동하는 시스템은 동기적(synchronous) 또는 &quot;동기화된(in sync)&quot; 상태라고 하며, 그렇지 않은 경우를 &lt;a href=&quot;https://en.wikipedia.org/wiki/Asynchronous_system&quot; title=&quot;비동기 시스템&quot;&gt;비동기&lt;/a&gt;적(asynchronous)이라고 합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization&quot;&gt;동기화&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;컴퓨터 과학 관점에서 조금더 세부적으로 정의를 찾아보면 다음과 같다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;동기화는 합의에 도달하거나 특정 일련의 동작을 수행하기 위해 &lt;strong&gt;여러 프로세스&lt;/strong&gt;(multiple process)가 특정 지점에서 결합(join up)하거나 핸드셰이크(handsake) 하도록 조정(coordinating)하는 작업입니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Synchronization_(computer_science)&quot;&gt;동기화(컴퓨터 과학)&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;다시 말해, 동기화란 &lt;strong&gt;여러 실행 단위&lt;/strong&gt;(프로세스/스레드)가 &lt;strong&gt;의도한 올바른 순서로 작업을 수행&lt;/strong&gt;하게 만드는 개념이다. 그렇다면 동기화는 어디에 필요할까? 먼저 동시성(Concurrency)이 무엇인지 알아야 한다.&lt;/p&gt;
-&lt;h3&gt;1.1. 동시성(Concurrency)&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;동시성은 시스템이 동시 실행 또는 시간 공유(time-sharing, 컨텍스트 전환(context switching)), 리소스 공유 및 상호 작용 관리를 통해 &lt;strong&gt;여러 작업을 실행할 수 있는 능력&lt;/strong&gt;을 의미합니다. - &lt;a href=&quot;https://en.wikipedia.org/wiki/Concurrency_(computer_science)&quot;&gt;동시성(컴퓨터 과학)&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;운영체제를 깊이 들여다보면, &lt;strong&gt;가상화&lt;/strong&gt;(Virtualization)라는 중요한 개념이 등장한다. 실행 단위(프로세스 또는 스레드)는 결국 &lt;strong&gt;CPU 코어 위에서 처리&lt;/strong&gt;되는데, 이 CPU 코어의 수는 &lt;strong&gt;물리적으로 제한&lt;/strong&gt;되어 있다. 그런데 운영체제는 마치 &lt;strong&gt;훨씬 더 많은 작업이 동시에 실행되고 있는 것처럼&lt;/strong&gt; 보이게 만든다. 이를 가능하게 하는 기술이 바로 &lt;strong&gt;컨텍스트 전환&lt;/strong&gt;(Context Switching)이며, &lt;strong&gt;스케줄링 알고리즘&lt;/strong&gt;을 통해 각 실행 단위에 CPU 사용 시간을 짧게 나눠주는 방식이다. 이 덕분에 단일 코어에서도 여러 작업이 동시에 실행되는 것처럼 보이고, 멀티코어 환경에서는 실제로 &lt;strong&gt;여러 작업이 물리적으로 동시에 실행&lt;/strong&gt;되기도 한다. 진짜 중요한 점은, 운영체제는 단일 코어든 멀티코어든 &lt;strong&gt;사용자 입장에서 ‘동시성’을 느끼게 한다는 것&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;p&gt;이게 왜 동기화가 필요한 것일까? 여러 작업이 동시에 실행되면 어떤 일이 벌어질 수 있을까? &lt;strong&gt;경합 상태&lt;/strong&gt;(Race Condition)을 일으킬 수 있다. 작업에 대해 믿고 기대한 결과가 망가진다. 일관성이 오염되는 것이다. 하드웨어 레벨로 보면 전기 신호가 오염되는 것이고, 운영체제 레벨로 보면 자원이 오염되는 것이고, 애플리케이션 레벨로 보면 비즈니스 로직과 데이터가 오염되는 것이다. 이런 문제를 방지하기 위해, 실행 흐름을 제어하는 동기화가 필요하다.&lt;/p&gt;
-&lt;h3&gt;1.2. 동기화가 필요한 곳&lt;/h3&gt;
-&lt;p&gt;동기화는 결국 동시성 환경에서 실행 단위들의 &lt;strong&gt;동작 시점&lt;/strong&gt;(타이밍)에 대한 이야기다. 실행의 순서(&lt;strong&gt;흐름&lt;/strong&gt;)를 정렬한다거나, 자원 획득을 기다리게 한다거나 하는 곳에 쓰이게 된다. 크게 분류해보면 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;흐름&lt;/strong&gt;의 동기화
-&lt;ul&gt;
-&lt;li&gt;포크 - 조인 (Forks - Joins)&lt;/li&gt;
-&lt;li&gt;생산자 - 소비자 (Producer - Consumer)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;자원 획득&lt;/strong&gt;의 동기화
-&lt;ul&gt;
-&lt;li&gt;배타적 자원 (Exclusive use resources)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;1.2.1. &lt;a href=&quot;https://en.wikipedia.org/wiki/Fork%E2%80%93join_model&quot; title=&quot;포크-조인 모델&quot;&gt;포크 - 조인&lt;/a&gt; (Forks - Joins)&lt;/h4&gt;
-&lt;p&gt;로직이 포크(Fork)와 조인(Join)의 형태를 갖춘다면 동기화가 필요하다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;포크&lt;/strong&gt;(Fork): 하나의 작업을 다수의 하위 작업으로 분할하는 것&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;조인&lt;/strong&gt;(Join): 다수의 작업을 하나의 작업으로 합치는 것&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;작업이 &lt;strong&gt;포크&lt;/strong&gt;된다는 것은 &lt;strong&gt;다수의 하위 작업으로 분할한다는 것&lt;/strong&gt;이다. 모든 하위 작업이 끝날때까지 대기하여, 작업의 결과를 전부 조인하고, 이후 로직을 실행해야 할 것이다. 이때, 포크 이후의 &lt;strong&gt;하위 작업들을 동시에 작업할 수도 있을 것&lt;/strong&gt;인데, 조인 이후의 처리를 위해서는 하위 작업들이 전부 처리될 때까지 &lt;strong&gt;타이밍을 기다려야 할 것&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;h4&gt;1.2.2. &lt;a href=&quot;https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem&quot; title=&quot;생산자-소비자 문제&quot;&gt;생산자 - 소비자:&lt;/a&gt; (Producer - Consumer)&lt;/h4&gt;
-&lt;p&gt;로직이 생산자와 소비자로 분리되어 처리된다면 동기화가 필요하다,.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;생산자&lt;/strong&gt;(Producer): 데이터를 만드는 주체&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;소비자&lt;/strong&gt;(Consumer): 데이터를 소비하는 주체&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;생산자-소비자 관계에서 소비자 프로세스는 필요한 데이터가 생성될 때까지 생산자 프로세스에 종속된다. &lt;strong&gt;두 주체가 동시에 작업할 수도 있을 것&lt;/strong&gt;인데, 생산자가 데이터 생성할 때까지, 소비자는 &lt;strong&gt;타이밍을 기다려야 할 것&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;h4&gt;1.2.3. 배타적 자원 (Exclusive use resources)&lt;/h4&gt;
-&lt;p&gt;흔히 동기화에 대해 이야기할 때, 동시성 이슈와 관련된 대표적인 동기화가 필요한 곳이다. 여러 실행 단위들이 특정 리소스에 의존하고 &lt;strong&gt;해당 리소스에 접근할 경우&lt;/strong&gt;, 한 시점에 단 하나의 실행 단위 만이 해당 리소스에 접근해야 한다. 이때 &lt;strong&gt;실행 단위들은 동시에 작업할 수도 있을 것&lt;/strong&gt; 인데, 자신의 차례가 올 때까지 &lt;strong&gt;타이밍을 기다려야 할 것&lt;/strong&gt;이다.&lt;/p&gt;
-&lt;p&gt;세 가지 경우를 모두 분석해보았을 때, 각 작업들 자체를 직렬적인 작업으로 수행할 수도 있다. 하지만 운영체제와 시스템에 있어, 동시성을 사용하지 않는다는 것은 매우 비효율적이다. 운영체제는 가상화를 통해 한정적인 CPU를 무한하게 보이도록 설계되었다. 한번에 여러 작업을 동시에 수행하는 것 처럼 보이도록 설계되어, 작업의 효율성을 높였다. 이런 주어진 자원을 사용하지 않을 이유가 없다. &lt;strong&gt;동시성을 사용하되, 동기화를 통해 시스템의 일관성을 달성하는 것이 소프트웨어 엔지니어링의 목표&lt;/strong&gt;일 것이다.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;2. 어셈블리어 레벨의 동기화&lt;/h2&gt;
-&lt;p&gt;어셈블리어 레벨에서 동기화는 &lt;strong&gt;원자적 연산&lt;/strong&gt;(Atomic Operation)으로 구현한다. 이를 CAS라고 한다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;CAS&lt;/strong&gt; (Compare-And-Swap): 데이터 변경 시점에 데이터 비교를 확인하여, 일치하면 교체한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CAS는 일종의 &lt;strong&gt;낙관적 동시성 제어(optimistic concurrency control)&lt;/strong&gt; 방식으로 다음과 같이 동작된다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;메모리 주소 A에 저장된 값(oldValue)&lt;/strong&gt; 을 읽는다.&lt;/li&gt;
-&lt;li&gt;해당 값이 기대하는 값(expectedValue)인지 확인한다.&lt;/li&gt;
-&lt;li&gt;일치하면 새로운 값(newValue)으로 &lt;strong&gt;원자적으로 교체&lt;/strong&gt;한다.&lt;/li&gt;
-&lt;li&gt;결과적으로 성공 여부를 반환한다 (&lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;). 필요에 따라 반복 처리한다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;아키텍처에 따라 구현 방법이 달라지는데,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;x86&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;x86의 &lt;code class=&quot;language-text&quot;&gt;CMPXCHG&lt;/code&gt;은 단일 명령어로 CAS로 동작된다. ARM은 단일 명령어가 없다. 여러 명령어 조합을 통해 CAS를 구현한다. (ARMv8-A 부터는 &lt;code class=&quot;language-text&quot;&gt;CAS&lt;/code&gt;가 생기긴 했다.)&lt;/p&gt;
-&lt;h3&gt;2.1. &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 조합&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;assembly&quot;&gt;&lt;pre class=&quot;language-assembly&quot;&gt;&lt;code class=&quot;language-assembly&quot;&gt;loop:
-    LDREX   r1, [addr]     ; addr의 값을 읽고 r1에 저장, exclusive로 마크
-    ...                    ; 값 수정 로직 수행 (예: r1 = r1 + 1)
-    STREX   r2, r1, [addr] ; addr에 r1 값을 쓰기 시도, 결과를 r2에 저장
-    CMP     r2, #0         ; r2 == 0 이면 성공
-    BNE     loop           ; 실패하면 다시 시도&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4&gt;2.1.1. &lt;code class=&quot;language-text&quot;&gt;LDREX&lt;/code&gt; (Load Exclusive)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;메모리의 값을 &lt;strong&gt;읽어오며&lt;/strong&gt;, 해당 주소를 &lt;strong&gt;exclusive monitor&lt;/strong&gt;에 등록&lt;/li&gt;
-&lt;li&gt;exclusive 상태는 이후 &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 명령어가 쓰기 시도할 때 &lt;strong&gt;다른 프로세서가 그 주소를 건드리지 않았는지 확인&lt;/strong&gt;하는 데 사용한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;2.1.2. &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; (Store Exclusive)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;지정된 주소에 값을 &lt;strong&gt;쓰기 시도&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;exclusive monitor에 등록된 정보와 비교하고, 그 사이 다른 실행 단위가 그 메모리를 변경했다면 실패한다.&lt;/li&gt;
-&lt;li&gt;인터럽트나 컨텍스트 스위치가 일어나면 exclusive monitor가 리셋될 수 있기 때문에, 반드시 &lt;code class=&quot;language-text&quot;&gt;STREX&lt;/code&gt; 결과를 체크하고, 실패 시 재시도 루프가 필요하다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2&gt;3. 단일 시스템 레벨의 동기화&lt;/h2&gt;
-&lt;p&gt;시스템 레벨에서의 동기화 또한 실행 단위들이 &lt;strong&gt;특정 지점&lt;/strong&gt;에서 &lt;strong&gt;일관성&lt;/strong&gt; 있는 실행 흐름을 유지하도록 제어하는 것으로 구현된다. 이는 두 가지 방식으로 이루어진다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;작업 단위 간의 실행 시점을 맞춤 (sync point)&lt;/li&gt;
-&lt;li&gt;공유 자원에 대한 접근을 조정 (critical section)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;공유 자원 보호가 필요한 경우, 이 보호 영역을 &lt;strong&gt;임계 영역&lt;/strong&gt;이라고 한다. 임계 영역은 한 번에 두 개 이상의 실행 단위(프로세스나 스레드)가 들어갈 수 없으며, 다른 실행 단위는 선행 실행 단위가 임계 영역을 벗어날 때까지 대기한다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/22605071e1fae234da130c2b538cc848/98287/Shared_Resource_access_in_synchronization_environment.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 114.55696202531647%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaUlEQVR42o2Vh44CMQxE9/9/C4RAovfee+8dfHqWvArLcVwks0l2M56xHeMtFgsZDocynU5lMpl8tdlsJvP5XI21zcfjsYDlAXY+n+XxeMjtdlNjfr/f/fX1evX3lsul9Ho9KRQKCj4ajWQwGCihTqcjHsi8cD3jCSDG8/nU5+Fw0MMA8q7f7yvDcrmsYKfTSZrNpnitVksajYYucrmc1Go19QgL2GM4LRaLkkwmpVQqSbVaVWPPvsNRu90WD68cwBteMdbINIaw5lA6nVbQRCKh83w+r85RRNjA8gAyee4AyIxxPB5ltVpJt9uVSqWiQNvtVuPKIMYQUUCXjQvigiMPMJgAFowxTx/wN4a73U7W67Xs93vNHqw4gHSYumBvDIOAZIxgA0pcotGoxs6c4CA4/gSkREgEEgl8PB6XTCajsmHIGWIHyL8AiRNglEYoFJJUKqWZZU5ZUR58A9vL5fIdkNjAgI+JIdlELnP2+N7WvPsKyJragg31hlQM+fV6XW8Ga2Jtsj8Cwo6ysKsGsN2kzWajh2AH6McsEw+ksGlADNhEIhFNSiwW0yfADA4j+Q2QHxKANDJJeSDHygNA1tls1ge0e4syY+kDUgYA0o4ARR6FS7D5wO2TdueRTNJwiqIXQNoWHmGHwcoaAsAUOHs4xTkxtT6I5DdAGIXDYb94uRVkE2Z8THtjjzrEMSA4wawHvABywGLHQWJFucCEeBFDwHjPHCAOfrx6MCHLxIZysY5sjYCEkG2c2NWzKvgVkIZqfc3+PyhY+h+Sbc4Tx+zZ2jX2Ye8hzf5XYIvZf0xwL/jONRTyr/cD8ZfEdVUW2YMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/22605071e1fae234da130c2b538cc848/dc87c/Shared_Resource_access_in_synchronization_environment.avif 158w,
-/static/22605071e1fae234da130c2b538cc848/383b4/Shared_Resource_access_in_synchronization_environment.avif 315w,
-/static/22605071e1fae234da130c2b538cc848/834e9/Shared_Resource_access_in_synchronization_environment.avif 350w&quot;
-              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/22605071e1fae234da130c2b538cc848/5787a/Shared_Resource_access_in_synchronization_environment.webp 158w,
-/static/22605071e1fae234da130c2b538cc848/89f54/Shared_Resource_access_in_synchronization_environment.webp 315w,
-/static/22605071e1fae234da130c2b538cc848/adf5f/Shared_Resource_access_in_synchronization_environment.webp 350w&quot;
-              sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/22605071e1fae234da130c2b538cc848/dda05/Shared_Resource_access_in_synchronization_environment.png 158w,
-/static/22605071e1fae234da130c2b538cc848/679a3/Shared_Resource_access_in_synchronization_environment.png 315w,
-/static/22605071e1fae234da130c2b538cc848/98287/Shared_Resource_access_in_synchronization_environment.png 350w&quot;
-            sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
-            type=&quot;image/png&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/22605071e1fae234da130c2b538cc848/98287/Shared_Resource_access_in_synchronization_environment.png&quot;
-            alt=&quot;Shared Resource access in synchronization environment&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이런 동기화 지점은 다음과 같은 방법으로 구현된다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;스핀락(Spinlock)&lt;/strong&gt; – 임계 영역 보호를 위한 락 기반 메커니즘&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;배리어(Barrier)&lt;/strong&gt; – 실행 단위 간의 타이밍 동기화를 위한 동기화 지점&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;세마포어(Semaphore)&lt;/strong&gt; – 공유 자원 접근 수 제어 또는 동기 조건 조율&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;3.1. 스핀락(Spinlock)&lt;/h4&gt;
-&lt;p&gt;실행 단위가 락을 획득 가능할 때까지 루프(&quot;스핀&quot;)에서 대기하며 반복적으로 확인한다. 일반적으로 &lt;strong&gt;활성 상태를 유지&lt;/strong&gt;하기 때문에, &lt;strong&gt;일종의 바쁜 대기&lt;/strong&gt;(busy waiting)에 해당한다. 대신, 스핀락은 &lt;strong&gt;운영 체제의 프로세스 재스케줄링이나 컨텍스트 전환으로 인한 오버헤드를 피할 수 있다.&lt;/strong&gt; 스레드가 짧은 시간 동안만 차단될 때 효율적이다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 496px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c9f232ae62df1f1005862522452dab8b/07e2a/Spinlock.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAACRUlEQVR42o1V7W7aQBDkifIMeb38bx+oUquICoGUqHwkILBDbIxt/O3zJ9PdM0cw2LQrnexb7vZmZ8bHAD2RFyUM20NZVn1LsD8ECKKklRtcTo7HI43m3XQD/JhasL3o/NtllGWJ5/kOfzSXZnV3wcvICOHqw5JI+0LfOXD9uI0wz3MURSFHlmXyqdAkSYx7kaYJ6rpNyWA6nWI4HGI0GmE8HmMymSCKQkJW4XWpQ9CB16EOfNMMWK7fLqjrOubzOWazGcIwlMmD62ClG/i5cKF9WqjKQubruiZUKSFP4Ps+cWjhZWUhiaN+DrllLnzwfFIxREHkxzQXVIjzTEt9Quj6EeI0k60LIZqCCr56xnEskfBGIVKZC6htm+Z9UfGhUXiLkE/ebHfI86bFwA/ADFrfvsN+elIEfq2vm/coEXhZfiIVWVNQreEW2HuGHTQb6GRmx358hP/wgPxLlVZXphPg13wPN4jbCAv6KhbaDoloth7rxrAHTYPz/t5pcNlyVWO3tyVVN6IwF9feEoT0cOK2K0oSktXvVFkQD9HJBlGcyCIsFH8ArDK7QEWSCtkVK3xWue8L0M09nhc2PuhZnMytirMPPd/D7zfy4dJEFAb9PlQMBXFKpt1JBS/zSt2qKjHT9tAtr/VrJ0LFOyO9F+zTuqr6r6/bDeJuQeb1WqjegmwPLthlk7MoxCXfi/+NUFmhLy6vursFeaFpmnI4jkMC3P4NcN6yLDkY6T8LbrdbbDYbGIbRaWjXdcFX33q9lleZKvgXp7Nm3MxYLwMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/c9f232ae62df1f1005862522452dab8b/dc87c/Spinlock.avif 158w,
-/static/c9f232ae62df1f1005862522452dab8b/383b4/Spinlock.avif 315w,
-/static/c9f232ae62df1f1005862522452dab8b/ce24e/Spinlock.avif 496w&quot;
-              sizes=&quot;(max-width: 496px) 100vw, 496px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/c9f232ae62df1f1005862522452dab8b/5787a/Spinlock.webp 158w,
-/static/c9f232ae62df1f1005862522452dab8b/89f54/Spinlock.webp 315w,
-/static/c9f232ae62df1f1005862522452dab8b/ebc80/Spinlock.webp 496w&quot;
-              sizes=&quot;(max-width: 496px) 100vw, 496px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/c9f232ae62df1f1005862522452dab8b/dda05/Spinlock.png 158w,
-/static/c9f232ae62df1f1005862522452dab8b/679a3/Spinlock.png 315w,
-/static/c9f232ae62df1f1005862522452dab8b/07e2a/Spinlock.png 496w&quot;
-            sizes=&quot;(max-width: 496px) 100vw, 496px&quot;
-            type=&quot;image/png&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/c9f232ae62df1f1005862522452dab8b/07e2a/Spinlock.png&quot;
-            alt=&quot;Spinlock&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h4&gt;3.2. 배리어(Barrier)&lt;/h4&gt;
-&lt;p&gt;모든 실행 단위들이 이 동기화 지점에서 중지되며, 모든 실행 단위들이 이 지점에 도달할 때까지 대기시킨다. 예로 &lt;strong&gt;래치&lt;/strong&gt;(latch, 걸쇠)가 있다. &lt;strong&gt;대기에 대한 플래그&lt;/strong&gt;를 래치라고 하며 상승(raised, 막힘)/하강(lowered, 열림) 두 상태가 있다. Count-down Latch로 자주 쓰이며, 0 값이 되었을 때 래치는 하강 상태가 된다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 328px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8646185f049048977d28e9fa55e26fe3/0c3bc/barrier.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70.88607594936708%; position: relative; bottom: 0; left: 0; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/8646185f049048977d28e9fa55e26fe3/dc87c/barrier.avif 158w,
-/static/8646185f049048977d28e9fa55e26fe3/383b4/barrier.avif 315w,
-/static/8646185f049048977d28e9fa55e26fe3/1a884/barrier.avif 328w&quot;
-              sizes=&quot;(max-width: 328px) 100vw, 328px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/8646185f049048977d28e9fa55e26fe3/5787a/barrier.webp 158w,
-/static/8646185f049048977d28e9fa55e26fe3/89f54/barrier.webp 315w,
-/static/8646185f049048977d28e9fa55e26fe3/00091/barrier.webp 328w&quot;
-              sizes=&quot;(max-width: 328px) 100vw, 328px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/8646185f049048977d28e9fa55e26fe3/dda05/barrier.png 158w,
-/static/8646185f049048977d28e9fa55e26fe3/679a3/barrier.png 315w,
-/static/8646185f049048977d28e9fa55e26fe3/0c3bc/barrier.png 328w&quot;
-            sizes=&quot;(max-width: 328px) 100vw, 328px&quot;
-            type=&quot;image/png&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/8646185f049048977d28e9fa55e26fe3/0c3bc/barrier.png&quot;
-            alt=&quot;barrier&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h4&gt;3.3. 세마포어(Semaphore)&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;자원 접근 가능 개수나 동기 조건을 제어하는 동기화 도구&lt;/strong&gt;로, 진입 가능한 한도를 정의하고, 진입 가능 여부를 획득되거나 반환한다. 필요한 경우 진입이 가능해질 때까지 기다린다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 368px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/b86bf/semaphore.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiklEQVR42h1S21MScRjdf6uH6qHpoZlenKn3XpqpxzLzkgKJKKJOVhZoXmYQTUZJKTIvi8KCuyss7C7L5bfAsi13EAsEFRD319r3dGbO+Wa+75yDQBmWSiUW+IqlooKvryGExbOaNRJdSAnmOL/0WzT/rVohzMgybF+1ElE+6CYl8bcsywgTI3W/usaIe6M7XXQUhzcjXF5MsGyfj+ymAz0hpi9f0EAIFIJxE6LV00L56ArKhyLIux/PNegd3d5DDXp3yv40nz6hKHsup89kDIXCZDZnKBSn223jeYMWpZzLZKUXt4+/bAGzM7B1iEz/fDa4ffv16v2Xa7fGvz3xHB7v7pkxrBvHe0PsEM0MMYyKonptGx939w/c87aE5cA/b+cWdwMOFxKM4vr9RwbygeHgcSDiUW676iQgNCUSulRyJJ0Z5ziN398jCGizdZ0Ix8JWZ8HuY9fRrJRGFLWY4r871wAIK7jTgc0mkCSty/UqJYwAMJxMjjabMxAmbryU5XK5IsTFP9WaIkbKJ+VlKrIgVOeCPC+K7VZnc3MOw16wrCoYfMOwKq+3l2X7KxVCWa5Vq2HCEcctUd9evd5Avnr9fe6QzserSH5y/4gJMARha5xPi+JYLqvP5ickSe/1dlssBhCXWGy9wcxAYbka+BAiHIgJo96SYMCBDaL+YedxPluCMA3hLADaCKdmOXU8rru8nEmnnQRJuze0vi0tahlkd/QctoTgXEwXFD8VrvSxso2glE/km5ynYjE1w/QzzAAA6nrdoOQsQ0i7VqvU+zZYKuFToSM7onSKBvF1IuhhuebF+f+SZIt5oyB8zmRmM2mTKBhzeWOnk1SI09MKh29K/pUw6ajVzv4BYrMFXhH91n0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/dc87c/semaphore.avif 158w,
-/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/383b4/semaphore.avif 315w,
-/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/68c7b/semaphore.avif 368w&quot;
-              sizes=&quot;(max-width: 368px) 100vw, 368px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/5787a/semaphore.webp 158w,
-/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/89f54/semaphore.webp 315w,
-/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/3e8a2/semaphore.webp 368w&quot;
-              sizes=&quot;(max-width: 368px) 100vw, 368px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/dda05/semaphore.png 158w,
-/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/679a3/semaphore.png 315w,
-/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/b86bf/semaphore.png 368w&quot;
-            sizes=&quot;(max-width: 368px) 100vw, 368px&quot;
-            type=&quot;image/png&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/1ae8d440c171fb40bd88a5ebb5b7e4fa/b86bf/semaphore.png&quot;
-            alt=&quot;semaphore&quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;4. 동기/비동기, 블로킹/논블로킹&lt;/h2&gt;
-&lt;p&gt;프로그램을 설계하다보면 동기/비동기와 블로킹/논블로킹에 대해 고려하게 된다. 이런 동작 방식은 하위 루틴 호출과 처리 흐름의 시간적 제어에 적절한 동기화 적용으로 구현된다. (동기화의 본질은 &apos;&lt;strong&gt;동시성 환경에서 실행 흐름 제어&lt;/strong&gt;&apos;이며, 단지 &lt;code class=&quot;language-text&quot;&gt;Lock&lt;/code&gt; 사용만을 이야기하지 않는다.)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;“여러 작업이 수행 되는데, 어떻게 지휘할까?” → 동기화&lt;/li&gt;
-&lt;li&gt;“&lt;strong&gt;호출&lt;/strong&gt;한 하위 루틴, 내 루틴과 &lt;strong&gt;같이&lt;/strong&gt; 처리할까 &lt;strong&gt;독립&lt;/strong&gt;적으로 처리할까?” → 동기/비동기&lt;/li&gt;
-&lt;li&gt;“루틴 진행중에 &apos;&lt;strong&gt;대기&lt;/strong&gt;&apos;를 만났는데, 대기를 &lt;strong&gt;기다릴까&lt;/strong&gt; &lt;strong&gt;반환할까&lt;/strong&gt;?” → 블로킹/논블로킹&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;4.1. 동기(Synchronous) vs 비동기(Asynchronous)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;애플리케이션 레벨&lt;/strong&gt;에서 동기와 비동기를 각각 한문장으로 정리하면 다음과 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;동기&lt;/strong&gt;(Synchronous): 요청하면 처리하고 알려줌.
-&lt;ul&gt;
-&lt;li&gt;요청 → 처리 → 결과가 확정되기 전까지 다음 단계 X&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;비동기&lt;/strong&gt;(Asynchronous): 요청하면 처리하겠다고 알려주고, 처리함.
-&lt;ul&gt;
-&lt;li&gt;요청 → 바로 응답 → 실제 처리와 결과 확정은 나중에&lt;/li&gt;
-&lt;li&gt;“ok, 알았어 이건 내가 알아서 할게”&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;뭔가 이렇게 봤을때 동기와 비동기에 대해 이렇게 정의해 볼 수 있을 것 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;동기&lt;/strong&gt;는 로직의 &lt;strong&gt;흐름 자체가 차례로 이어지는 구조&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;비동기&lt;/strong&gt;는 로직의 &lt;strong&gt;흐름을 기다리지 않고 갈라지는 구조&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;동기는 ‘단일된 흐름’이고, 비동기는 ‘독립된 흐름’이다.&lt;/strong&gt; (데이터 일관성에서의 독립이 아니다!)&lt;/p&gt;
-&lt;p&gt;또한 동기와 비동기는 블로킹/논블로킹과 같이 이야기 되어야 한다.&lt;/p&gt;
-&lt;h3&gt;4.2. 블로킹(Blocking) vs 논블로킹(Non-Blocking)&lt;/h3&gt;
-&lt;p&gt;먼저 동기/비동기와 블로킹/논블로킹을 간단히 비교하면 다음과 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;동기/비동기&lt;/strong&gt;는 호출에 대해 &lt;strong&gt;응답하는 방식&lt;/strong&gt;이다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;블로킹/논블로킹&lt;/strong&gt;은 루틴의 처리에서 &lt;strong&gt;대기 상황에 대한 대응 방식&lt;/strong&gt;이다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;대기&lt;/strong&gt;란 &lt;strong&gt;결과를 기다리는 동안 작업 단위가 아무것도 못하고 멈추는 상태&lt;/strong&gt;를 의미한다. 다음의 경우를 보통 대기라고 본다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I/O 대기. 데이터 올 때까지 멈춤 (디스크 읽기, 네트워크 응답, 파일 쓰기 등)&lt;/li&gt;
-&lt;li&gt;다른 쓰레드가 끝날 때까지 대기 (&lt;code class=&quot;language-text&quot;&gt;Thread.join()&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;락 획득, 다른 작업 단위가 잡고 있으면 대기&lt;/li&gt;
-&lt;li&gt;조건 만족될 때까지 대기 (&lt;code class=&quot;language-text&quot;&gt;sleep(5)&lt;/code&gt; 호출)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I/O건 CPU건, 쓰레드건 상관없다. 중요한건 그것을 대기 상태라고 정의했는가 이다. 그리고 이런 대기 방식에 대해 블로킹/논블로킹이 적용된다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;블로킹&lt;/strong&gt;(Blocking): 루틴이 끝나서 결과 나올 때까지 기다린다. 그동안 작업 단위는 다른 일을 하지 않는다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;논블로킹&lt;/strong&gt;(Non-Blocking): 루틴이 대기를 만나는 시점에 바로 반환한다. 작업 단위는 반환되어 다른 일을 한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;4.3. 조합&lt;/h3&gt;
-&lt;p&gt;동기/비동기와 블로킹/논블로킹을 조합해보면 다음과 같다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;동기(Synchronous) + 블로킹(Blocking)
-&lt;ul&gt;
-&lt;li&gt;호출한 함수의 결과를 기다리며, 그 동안 다른 작업을 수행하지 않는다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;동기(Synchronous) + 논블로킹(Non-Blocking)
-&lt;ul&gt;
-&lt;li&gt;호출한 함수의 결과가 준비되지 않았다면 즉시 반환하고, 호출자가 반복적으로 상태를 확인하며 기다린다. (polling)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;비동기(Asynchronous) + 블로킹(Blocking)
-&lt;ul&gt;
-&lt;li&gt;작업을 비동기로 시작하지만, 결과를 얻기 위해 호출자가 대기한다.&lt;/li&gt;
-&lt;li&gt;ex. Java에서 &lt;code class=&quot;language-text&quot;&gt;CompletableFuture.get()&lt;/code&gt;을 호출하면, 결과가 준비될 때까지 현재 스레드를 블로킹한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;비동기(Asynchronous) + 논블로킹(Non-Blocking)
-&lt;ul&gt;
-&lt;li&gt;작업을 비동기로 시작하고, 결과를 기다리지 않으며, 완료 시 콜백 등을 통해 결과를 처리한다.&lt;/li&gt;
-&lt;li&gt;ex. JavaScript의 &lt;code class=&quot;language-text&quot;&gt;fetch()&lt;/code&gt; 함수는 데이터를 요청한 후, Promise를 반환하고, &lt;code class=&quot;language-text&quot;&gt;then()&lt;/code&gt;을 사용하여 결과를 처리한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/811ab44c25aafc8ca59100e97e8c14a1/88b03/%EB%B9%84%EA%B5%90.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.22784810126582%; position: relative; bottom: 0; left: 0; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;picture&gt;
-          &lt;source
-              srcset=&quot;/static/811ab44c25aafc8ca59100e97e8c14a1/dc87c/%EB%B9%84%EA%B5%90.avif 158w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/383b4/%EB%B9%84%EA%B5%90.avif 315w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/d0061/%EB%B9%84%EA%B5%90.avif 630w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/20e2c/%EB%B9%84%EA%B5%90.avif 945w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/9eba6/%EB%B9%84%EA%B5%90.avif 1260w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/b16ce/%EB%B9%84%EA%B5%90.avif 1920w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/avif&quot;
-            /&gt;&lt;source
-              srcset=&quot;/static/811ab44c25aafc8ca59100e97e8c14a1/5787a/%EB%B9%84%EA%B5%90.webp 158w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/89f54/%EB%B9%84%EA%B5%90.webp 315w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/4d353/%EB%B9%84%EA%B5%90.webp 630w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/0f41d/%EB%B9%84%EA%B5%90.webp 945w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/f27a3/%EB%B9%84%EA%B5%90.webp 1260w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/7e36f/%EB%B9%84%EA%B5%90.webp 1920w&quot;
-              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-              type=&quot;image/webp&quot;
-            /&gt;
-          &lt;source
-            srcset=&quot;/static/811ab44c25aafc8ca59100e97e8c14a1/dda05/%EB%B9%84%EA%B5%90.png 158w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/679a3/%EB%B9%84%EA%B5%90.png 315w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/50637/%EB%B9%84%EA%B5%90.png 630w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/fddb0/%EB%B9%84%EA%B5%90.png 945w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/f46b1/%EB%B9%84%EA%B5%90.png 1260w,
-/static/811ab44c25aafc8ca59100e97e8c14a1/88b03/%EB%B9%84%EA%B5%90.png 1920w&quot;
-            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-            type=&quot;image/png&quot;
-          /&gt;
-          &lt;img
-            class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/811ab44c25aafc8ca59100e97e8c14a1/50637/%EB%B9%84%EA%B5%90.png&quot;
-            alt=&quot;  &quot;
-            title=&quot;&quot;
-            loading=&quot;lazy&quot;
-            decoding=&quot;async&quot;
-            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-          /&gt;
-        &lt;/picture&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;동기화는 &lt;strong&gt;동시성이 적용되는 소프트웨어&lt;/strong&gt;가 효율성과 일관성을 모두 달성하기 위해 반드시 고려해야 할 과제다. 이 개념은 어셈블리, 운영체제, 애플리케이션까지 &lt;strong&gt;전 계층을 관통&lt;/strong&gt;하며 나타난다. 동기화는 &lt;strong&gt;일관성, 성능, 사용자 경험&lt;/strong&gt; 사이의 균형에 대한 고민이다.&lt;/p&gt;
-&lt;p&gt;단일 시스템 뿐만 아니라, 다중 시스템으로 이루어진 &lt;strong&gt;분산 시스템과 MSA도 동시성 환경&lt;/strong&gt;이다. 마찬가지로 여기서도 동기화를 필요로 한다. 특히 마이크로서비스 아키텍처는 네트워크 지연, 서비스 장애, 데이터 정합성 문제 등을 다루기 위해 &lt;strong&gt;서비스 간 동기화&lt;/strong&gt;, 즉 &lt;strong&gt;분산 트랜잭션&lt;/strong&gt;을 고민하게 된다. 이를 해결하기 위한 대표적인 접근이 &lt;strong&gt;사가(Saga) 패턴&lt;/strong&gt;이다. 이 부분은 차후 &lt;strong&gt;마이크로서비스&lt;/strong&gt; 아키텍처에 대한 전반적인 정리를 통해 다루겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/683918bd96939f2b9a5b248025950bb8/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;&lt;a href=&quot;https://iol-lshh.github.io/%ED%9A%8C%EA%B3%A0/test/%ED%85%8C%EC%8A%A4%ED%8A%B8_%EC%A0%95%EB%A6%AC/&quot;&gt;전반적인 테스트&lt;/a&gt;에 이어 테스트 더블에 대해 정리해봤으니, 다음은 테스트 작성 장인들이 소개한 멋진 테스트 패턴들을 정리해볼 예정이다. 재밌겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[웹소켓 정리]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/pattern/websocket/websocket_정리/</link><guid isPermaLink="false">https://iol-lshh.github.io/pattern/websocket/websocket_정리/</guid><pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/683918bd96939f2b9a5b248025950bb8/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;

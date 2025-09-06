@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 06 Sep 2025 18:01:13 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 06 Sep 2025 17:47:03 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[카프카 테스트 작성하기]]></title><description><![CDATA[카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다. 예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned…]]></description><link>https://iol-lshh.github.io/회고/kafka/kafka_test/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/kafka/kafka_test/</guid><pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.ioimg/Pasted%20image%2020250907024513.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 06 Sep 2025 18:21:15 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 06 Sep 2025 18:07:03 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[카프카 테스트 작성하기]]></title><description><![CDATA[카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다. 예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned…]]></description><link>https://iol-lshh.github.io/회고/kafka/kafka_test/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/kafka/kafka_test/</guid><pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/fcd560b54c2c8b302c94853754f94cfe/50637/diagram-apache-kafka.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned.) - 레오나르도 다빈치&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -19,7 +19,63 @@
 &lt;li&gt;토픽: 논리적 경로&lt;/li&gt;
 &lt;li&gt;파티션: 물리적 경로&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&quot;img/Pasted%20image%2020250907024513.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fcd560b54c2c8b302c94853754f94cfe/14c4e/diagram-apache-kafka.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 35.44303797468354%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABZUlEQVR42m2RS04cMRRFay1MWAC7YVORGGTEPIKIDFBQkDIIHyFmREGQDokgTdM00FVlV5fbbbt+h+eCSKBgyfJH9n33npfwxlj4itI40tJxqwyD4YRcG4z1/bSLirZt3/pK8vLQdR3OBVIRSac5u4Mbtk6v+XQ2opw7HlJFpmbkZRT1NE3zv+Ciapi5CidrUzcs5KEWZ0qVHP+dsn/5wN7VFCOu8mKOnlm0CfhQS3FP3bSYUGHlLH5IVjcOWXq3zeqHA7Se9VVDFA6NPO6oqpo80ygR8nXb30ckUYgQWD/+yfLaZ1bef2Fwp0nOJ4r9PxO+j1KcuPM+UIjDLCs4uU45urxn72KMLqzELVHRpUT24qoWwYkU+vprzLffwln2rxkKaGtdzzAThjvnIz7+GLJ5OsQIw6kwzCVFjBwZViL4enQkMfe/+dQYKG3oOY6VZZTPGWaGYi53xlOYp7V+bkhs5Mv/j7/MEyQ+xXXWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/fcd560b54c2c8b302c94853754f94cfe/dc87c/diagram-apache-kafka.avif 158w,
+/static/fcd560b54c2c8b302c94853754f94cfe/383b4/diagram-apache-kafka.avif 315w,
+/static/fcd560b54c2c8b302c94853754f94cfe/d0061/diagram-apache-kafka.avif 630w,
+/static/fcd560b54c2c8b302c94853754f94cfe/20e2c/diagram-apache-kafka.avif 945w,
+/static/fcd560b54c2c8b302c94853754f94cfe/9eba6/diagram-apache-kafka.avif 1260w,
+/static/fcd560b54c2c8b302c94853754f94cfe/b437f/diagram-apache-kafka.avif 1428w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/fcd560b54c2c8b302c94853754f94cfe/5787a/diagram-apache-kafka.webp 158w,
+/static/fcd560b54c2c8b302c94853754f94cfe/89f54/diagram-apache-kafka.webp 315w,
+/static/fcd560b54c2c8b302c94853754f94cfe/4d353/diagram-apache-kafka.webp 630w,
+/static/fcd560b54c2c8b302c94853754f94cfe/0f41d/diagram-apache-kafka.webp 945w,
+/static/fcd560b54c2c8b302c94853754f94cfe/f27a3/diagram-apache-kafka.webp 1260w,
+/static/fcd560b54c2c8b302c94853754f94cfe/051ac/diagram-apache-kafka.webp 1428w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/fcd560b54c2c8b302c94853754f94cfe/dda05/diagram-apache-kafka.png 158w,
+/static/fcd560b54c2c8b302c94853754f94cfe/679a3/diagram-apache-kafka.png 315w,
+/static/fcd560b54c2c8b302c94853754f94cfe/50637/diagram-apache-kafka.png 630w,
+/static/fcd560b54c2c8b302c94853754f94cfe/fddb0/diagram-apache-kafka.png 945w,
+/static/fcd560b54c2c8b302c94853754f94cfe/f46b1/diagram-apache-kafka.png 1260w,
+/static/fcd560b54c2c8b302c94853754f94cfe/14c4e/diagram-apache-kafka.png 1428w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/fcd560b54c2c8b302c94853754f94cfe/50637/diagram-apache-kafka.png&quot;
+            alt=&quot;diagram apache kafka&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;파티션과 컨슈머는 1:1 일때, 병목이 없다.&lt;/li&gt;
 &lt;/ol&gt;
@@ -246,7 +302,32 @@
 &lt;li&gt;컨슈머는 이벤트를 어떻게 브로커로 부터 소비할 것인가&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;프로듀서 설계&lt;/h3&gt;
+&lt;h4&gt;발행&lt;/h4&gt;
+&lt;h5&gt;ack = all&lt;/h5&gt;
+&lt;h5&gt;outbox&lt;/h5&gt;
+&lt;h5&gt;DLQ와 후처리&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;회복 전략&lt;/strong&gt;: 이벤트의 멱등성(중복 방지) 처리가 충분히 되어있다면, 이벤트 재발행을 고려할 수 있다. 다만 이때, 비즈니스의 플로우를 반드시 고려해야할 것이라고 생각한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;보상 전략&lt;/strong&gt;: 이벤트의 취소처리를 위해, 보상 트랜잭션 실행을 고려할 수 있다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;잊는다&lt;/strong&gt;: 그닥 중요하지 않다. 이후 이벤트가 유실된 이벤트의 컨텍스트를 담고 있어서, 잃어도 문제 없는 설계 할 수도 있겠다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;하지만 위 두가지는 모두 재실패의 위험을 갖고 있다. 때문에 배치를 통한 사후 처리는 고려되어야 한다고 생각한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;대사 배치(정산 배치) 전략&lt;/strong&gt;: 배치를 통해 실패된 리스트들을 한번에 처리한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;멱등성 설계&lt;/h4&gt;
+&lt;p&gt;이벤트 순서
+이벤트 키
+이벤트 포멧&lt;/p&gt;
 &lt;h3&gt;컨슈머 설계&lt;/h3&gt;
+&lt;h4&gt;오프셋&lt;/h4&gt;
+&lt;p&gt;컨슈머 그룹&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;earlist&lt;/li&gt;
+&lt;li&gt;latest&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;배치 리스너&lt;/h4&gt;
+&lt;h4&gt;멱등적 처리&lt;/h4&gt;
 &lt;hr&gt;
 &lt;h2&gt;테스트 작성 도구&lt;/h2&gt;
 &lt;p&gt;이제 테스트 도구들을 살펴보자. 카프카의 파티션과 컨슈머에 따른 동작을 확인해보고 싶다. 카프카가 필요하다. 스프링 애플리케이션에는 두 가지 방안이 있다.&lt;/p&gt;

@@ -1,24 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Sep 2025 07:22:09 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 07 Sep 2025 07:07:54 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[카프카 테스트 작성하기]]></title><description><![CDATA[카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다. 예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned…]]></description><link>https://iol-lshh.github.io/회고/kafka/kafka_test/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/kafka/kafka_test/</guid><pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/fcd560b54c2c8b302c94853754f94cfe/50637/diagram-apache-kafka.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Iol-lshh's Blog RSS Feed]]></title><description><![CDATA[Iol-lshh의 기술 블로그 RSS 피드]]></description><link>https://iol-lshh.github.io</link><image><url>https://iol-lshh.github.io/icon.png</url><title>Iol-lshh&apos;s Blog RSS Feed</title><link>https://iol-lshh.github.io</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Sep 2025 07:26:16 GMT</lastBuildDate><atom:link href="https://iol-lshh.github.io/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 07 Sep 2025 07:11:59 GMT</pubDate><copyright><![CDATA[2025 Iol-lshh]]></copyright><language><![CDATA[ko]]></language><managingEditor><![CDATA[Iol-lshh]]></managingEditor><webMaster><![CDATA[Iol-lshh]]></webMaster><ttl>60</ttl><category><![CDATA[Technology]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><item><title><![CDATA[카프카 테스트 작성하기]]></title><description><![CDATA[카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다. 예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned…]]></description><link>https://iol-lshh.github.io/회고/kafka/kafka_test/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/kafka/kafka_test/</guid><pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/1f906dde8ae999e18ddb6b2111448825/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1f906dde8ae999e18ddb6b2111448825/e1040/header.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7ElEQVR42lWRy+thYRzGzz9iY+W2o4zjllySy0JpyiXyFyiEsmBjg5Am5FIiLJCIkhK5Lf0FsxG7CbkN81vN4z2bmWfxdjrn/Xyf5/ke6uvr68//er1ez+ezXq+Xy+VisZjP58fj8Xa73e12y+VyMpkMh8NWq1UoFKj3+/0v9pvocDj8JJrNZvF4vFarLRYL8NPpFGS73a5Wq7lc7gMzYgyh+/1+PB7P5zMe5vN5MpnEPXiu12vY9no9zEKcaDRKMRhOYLfb7fF44PxFhJfpdPoHETwxaDQaNZtNdEmlUj6fj3oRIeqNCCPA7/f7zWaDkolEotPpRCKRfr8PstFoVCoVkOji9/spYEzgy+UC7Hq9AsN4ZAuFQgqFIhgMhsNhjOh2u6VSKZvNIrDX63W5XBSzIdQ7nU6Yslqt8MFutwcCAbfbLZPJhEKh2WzGOOwf5eGJwA6Hw2AwUA8iBIYzFo59OJ1OsVis0+mUSqVUKsXJZrPhhj+H/CBxwWQy6fV6iimJtFgv4MFg4PF4YMVisXg8nkAgoGkaz7idyWQYUqvVYiIafWIDhi3Wy8S2Wq2xWEyj0XC5XD6fLxKJ4MzhcL4TqdXqb0QSieSzbcCwBczszGazoY/FYgGG/CqVCrZGoxHl5XI5MDERTdN/ARSipflnecpKAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/1f906dde8ae999e18ddb6b2111448825/dc87c/header.avif 158w,
+/static/1f906dde8ae999e18ddb6b2111448825/383b4/header.avif 315w,
+/static/1f906dde8ae999e18ddb6b2111448825/d0061/header.avif 630w,
+/static/1f906dde8ae999e18ddb6b2111448825/34aa9/header.avif 792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/1f906dde8ae999e18ddb6b2111448825/5787a/header.webp 158w,
+/static/1f906dde8ae999e18ddb6b2111448825/89f54/header.webp 315w,
+/static/1f906dde8ae999e18ddb6b2111448825/4d353/header.webp 630w,
+/static/1f906dde8ae999e18ddb6b2111448825/d21eb/header.webp 792w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/1f906dde8ae999e18ddb6b2111448825/dda05/header.png 158w,
+/static/1f906dde8ae999e18ddb6b2111448825/679a3/header.png 315w,
+/static/1f906dde8ae999e18ddb6b2111448825/50637/header.png 630w,
+/static/1f906dde8ae999e18ddb6b2111448825/e1040/header.png 792w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/1f906dde8ae999e18ddb6b2111448825/50637/header.png&quot;
+            alt=&quot;header&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;카프카를 어떻게 써야하나. 나는 내가 짠 코드를 신뢰하지 않는다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;예술은 완성될 수 없다, 그저 버려질 뿐이다.. (Art is never finished, only abandoned.) - 레오나르도 다빈치&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;심지어 예술은 예쁘기라도 하지, 코드는 분석해야하는... 그저 부채다. 그런 코드로 쌓아올린 애플리케이션은 믿을 수 없다. 때문에 테스트를 작성해야한다.&lt;/p&gt;
 &lt;p&gt;8주차 루퍼스 과정은 지난 주차 애플리케이션 이벤트에 이어, 카프카에 대한 이야기다. 카프카는 분산 로그 저장소이지만, 이벤트 드리븐 아키텍처에서 메세지 브로커로 인기를 얻고있다. 가용성과 속도 측면에서 우수하기 때문이다.&lt;/p&gt;
-&lt;p&gt;하지만 그래서 고민이 시작된다. 내 애플리케이션을 테스트하는데, 다른 애플리케이션에서 발행하는 이벤트에 대한 테스트는 어떻게 작성 해야할까?&lt;/p&gt;
-&lt;p&gt;카프카가 아무리 고가용성이라지만, 네트워크는 믿을 수 없고, 내가 작성하는 코드도 동작하는지 확신할 수 없다. 자동화된 테스트 코드를 통해 안전을 보장받아야 마음이 놓인다. 방법을 찾아야 한다.&lt;/p&gt;
+&lt;p&gt;하지만 그래서 고민이 시작된다. 내 애플리케이션을 테스트하는데, 다른 애플리케이션에서 발행하는 이벤트에 대한 테스트는 어떻게 작성 해야할까? 카프카가 아무리 고가용성이라지만, 네트워크는 믿을 수 없고, 내가 작성하는 코드도 동작하는지 확신할 수 없다. 자동화된 테스트 코드를 통해 안전을 보장받아야 마음이 놓인다. 방법을 찾아야 한다.&lt;/p&gt;
+&lt;p&gt;이 글은 백엔드 개발자 관점에서 &lt;strong&gt;테스트 우선적인 사고&lt;/strong&gt;로 &lt;strong&gt;카프카를 이용한 서비스&lt;/strong&gt;를 개발하려는 시도에 대한 이야기다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;분해&lt;/h2&gt;
-&lt;p&gt;어떤 부분을 테스트 할 것인가? 비즈니스 로직을 테스트하는 것인가, api를 테스트하는 것인가.
-&apos;카프카를 이용하는 부분&apos;을 테스트한다는 것은 &apos;인터페이스&apos;에 대한 이야기라고 생각한다. 카프카는 브로커로부터 이벤트를 컨슘하여 애플리케이션 내부로 전달하는 &lt;strong&gt;핸들링 인터페이스&lt;/strong&gt;이기 때문이다.&lt;/p&gt;
+&lt;p&gt;그냥 무작정 &apos;카프카를 사용하는 서비스를 테스트하자!&apos; 하면 막막하다. 막막할땐 분해하는게 좋다. 나폴레옹 전법, Devide &amp;#x26; Conquer를 적용해보자.&lt;/p&gt;
+&lt;p&gt;어떤 부분을 테스트 할 것인가? 비즈니스 로직을 테스트하는 것인가, 인터페이스를 테스트하는 것인가.
+&apos;카프카를 이용하는 부분&apos;을 테스트한다는 것은 &apos;인터페이스&apos;에 대한 이야기라고 생각한다. 카프카를 이용하는 부분은 브로커로부터 이벤트를 컨슘하여 애플리케이션 내부로 전달하는 &lt;strong&gt;핸들링 인터페이스&lt;/strong&gt;이기 때문이다.&lt;/p&gt;
 &lt;p&gt;카프카를 테스트한다는 것은 애플리케이션의 유스케이스에서 조금 벗어나있다. 내가 테스트하고 싶은 것은, 카프카의 구성 설정에 대한 이야기다. 전체 플로우의 이벤트 발행자(Publisher)에 해당하는 카프카의 프로듀서(Producer) 부분에는 별로 관심이 없다. 알아서 잘 발행하겠지...&lt;/p&gt;
-&lt;p&gt;문제는 브로커와 플로우의 이벤트 구독자(Subscriber)에 해당하는 카프카의 컨슈머(Consumer)다.&lt;/p&gt;
+&lt;p&gt;문제는 브로커(Broker)와 구독자(Subscriber)에 해당하는 카프카의 컨슈머(Consumer)다. 분해 대상을 좀 더 특정하기 위해, 먼저 카프카의 구조를 분석해보자.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;카프카 구조&lt;/h2&gt;
 &lt;p&gt;브로커는 토픽과 파티션으로 구성된다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;토픽: 논리적 경로&lt;/li&gt;
-&lt;li&gt;파티션: 물리적 경로&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;토픽&lt;/strong&gt;(Topic): 논리적 리스트 저장소 단위&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;파티션&lt;/strong&gt;(Partition): 물리적 리스트 저장소 단위&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;이벤트를 발행하는 발행자(Publisher)를 &lt;strong&gt;프로듀서&lt;/strong&gt;(Producer)라고 하고, 구독자(Subscriber)를 &lt;strong&gt;컨슈머&lt;/strong&gt;(Consumer)라고 한다. 이런 구성원들을 그림으로 그려보면 다음과 같다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -76,6 +129,108 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;또한 카프카는 &lt;strong&gt;컨슈머 그룹&lt;/strong&gt;을 둔다. 각 컨슈머 그룹은 각각의 컨슈머가 파티션에 대해 딱 한번만 호출하고자다. 컨슈머가 메시지를 읽다가 실패해도, 메시지는 유실되지 않는다. 그리고 다른 컨슈머 그룹에 의해 별도로 읽힐 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 527px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 116.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEgklEQVR42pWVaW8TVxSG/bP7papUaKEEYuLE2LFjxzPelxnPeBtv433PgtPYTnA2AqSkKlIDCRAg8PTiCLWfCozm0ehKo/eec99zzrVojQ3UwQFq7xHh2lCwRaT+O8n+lER/n5hR4+PVB968fo0+MIms5Yn0DCJ9g6gg3M0R/bxeL5Cq5bGorW0ye+LnyRn3tTZWtYWvMZ2ts/tvWNVN3r97y/nLc1KjBp5+mrtZP/fyQZaqceYykljLJA5ahAtJLFp7TLi1S6LYRKv20QXZ5gbRXBW5OiJoNPggBC9eXaBt1Yh0NYySTLkREYRnXzXrQRYbxcppEWF7RLIzYbozolzMUyrkGfQ6TLa3mJM0rKsx9qe7TB894k7IhcN3h7/WovTVBdZUG4c1if2GjLPgJ17JYtG7E3zlhyy6JZb9MRxSBIccxbroZEWpES52ZhF+Tjmz00GqRlhZvsHq6m283ttIYgPb4k84q9FrwWRnTKw1ptXtiVRMjKJJu79OvdXB4QzjDKU4/eOEZ0+e4srH8KpOxnU/PcM9Y1iR6OVXWKlFiVUy14JR4Wq9XkdNasQSCma1OsPmjrLs8vP89PlM0GlEcUcXGeZd5Px3MAJztDU7DcWGsxggXv2SsjnE5vHjDqu4QopAxerw4g3mSCYMrt5dzlLO7naQ6zHc7l/xh6zIgfkZi44buBsJkbKIUBGm6L1dnhzt02rWadZr7O1OODo6YN4uY7tlYzp8yK4w5Te/gwfyHGcjnXHBzU5phafdEHuC5VJQpPwlwtIm9hVZOBhiSURqXw2yYHfNTFHCad4cP+bi/ILMpCMMDOFx/syK6yZu501kYczSZ1PMyH9NmWA22mSKFbKCWntAodrA4Yri8kQ4bjZ4dnCEp5LEl/GwKYxoCiPaeQ+9ko9axoWnHr82RevukGhusznokM9lyKV1eu0m/W6LhVUVnyfM426Xw95AHHwCjzi7I9NDK3KXTuweY8PJUF9iWZiSqOWwxOpDpNYe1kiBRaUyw6aYzAfSSMk2QVE2lycnnHYGqJsm8sMcC6qLBxkv9rRH4GVeceLuaQQMBUu7v4FerJKptEibzWvKDTK1Dmk9Rzmq8Pb0lFfjCSUlTrpaIlspif//xaiZpIpZButrWPjKc/XihTDlmNfPTugnE9RGfZrjNZqjNRrbA1ojwWQdc9hhYzTEcvXxI//L+w9cPj7mTxFhSpFw6R7my2Gs+YCYNjHu5mSsRoDguEQor34lwk+zFy4vOR2skynESd7+EakYFDNTFHJLJVQR3ZOViGyXiZvpr6f86dNMkrPDI3RFplgNc9IJslV0syVa8KgdZFqXcYn6nBX2twq+EoWdTsgozlsURO/GxLSJC4zYfTTR0w7RKfHvEry4QG8bxH/5gUR0AU2xz9BVO35pjpUvvfytgudnL1G26mR7CqctmQ3Nxqa2yGHFy9T04szL19PmWwVf/n2GJu6U4CCFT3mApC2LwncSSLlYjtjwDnRi32PKO+G0Lm41uST6uaThKyZnrApkU0cqJEiVcvwD++nxnuai3hwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/dc87c/partition_consumer.avif 158w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/383b4/partition_consumer.avif 315w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/d26e8/partition_consumer.avif 527w&quot;
+              sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/5787a/partition_consumer.webp 158w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/89f54/partition_consumer.webp 315w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/6ece6/partition_consumer.webp 527w&quot;
+              sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/dda05/partition_consumer.png 158w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/679a3/partition_consumer.png 315w,
+/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png 527w&quot;
+            sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png&quot;
+            alt=&quot;partition consumer&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;컨슈머는 &lt;strong&gt;오프셋&lt;/strong&gt;(Offset)으로부터 다음 메세지를 컨슘하는데, 컨슈머 그룹마다 오프셋을 다르게 가지기 때문이다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9f6742edf689aecbaf16c6d04dca0a72/07e52/consumer_offset.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.49367088607595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVR42m2R246CMBRF+f/f8mEejJIYNUiIQSIUKYUW2lKuM5ticHRmh7QQzjqXfZxpmr6tlFK5FWPs8XjklNKyFNer3u14niNgjVzlIO54PCZJAgzxONM0jaKIJElKqbjdyNcXjaL/4b7vtdZd19V1XZYlt8qyrOCcCdHc79lmk4Thb3i0muE1jTEGDMVjq9eXi5Gy03oUou1moczCr1kcKSX6RFkhRFEUvCwZ5xSjHg6GMYSPeMZxGAbwbdtWVeW67ul0wrsDe4IgmDEwlM5uobDvI6ROU21Mb2tCgNEdim232/P5jIxvbQurSsqK0t73p6ZZh7SNd3hBz4tHbzM/V8VmwWcex8Z1I9/P8hx5P6xePh2Y5HkeTjCvVcUxDQIB2PNIlmHgv+RzVaiJNuDEUhjrBlCGYbvfC0LyoviAX3teLvxGlsYKTWqcSg2MNUq1dtTB6hNeeiCEwCqQapXW0hh7a+wCsyDmA/4BVwetItC1DBMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/9f6742edf689aecbaf16c6d04dca0a72/dc87c/consumer_offset.avif 158w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/383b4/consumer_offset.avif 315w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/d0061/consumer_offset.avif 630w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/14150/consumer_offset.avif 910w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/avif&quot;
+            /&gt;&lt;source
+              srcset=&quot;/static/9f6742edf689aecbaf16c6d04dca0a72/5787a/consumer_offset.webp 158w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/89f54/consumer_offset.webp 315w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/4d353/consumer_offset.webp 630w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/0df48/consumer_offset.webp 910w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/9f6742edf689aecbaf16c6d04dca0a72/dda05/consumer_offset.png 158w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/679a3/consumer_offset.png 315w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/50637/consumer_offset.png 630w,
+/static/9f6742edf689aecbaf16c6d04dca0a72/07e52/consumer_offset.png 910w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/9f6742edf689aecbaf16c6d04dca0a72/50637/consumer_offset.png&quot;
+            alt=&quot;consumer offset&quot;
+            title=&quot;&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;파티션과 컨슈머는 여러개가 가능하고, 또 바람직하다. 병렬적인 처리를 통해 처리량을 높일 수 있기 때문. 여기에 토픽과 컨슈머들 갯수에 주의사항이 있다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;파티션과 컨슈머는 1:1 일때, 병목이 없다.&lt;/li&gt;
 &lt;/ol&gt;
@@ -186,7 +341,7 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;컨슈머가 파티션의 갯수보다 많으면, 남는 컨슈머는 논다. 하지만, 리밸런싱에 대비하여 오버헤드를 줄일 수 있게 도와준다.&lt;/li&gt;
+&lt;li&gt;컨슈머가 파티션의 갯수보다 많으면, 남는 컨슈머는 논다. 하지만, &lt;strong&gt;리밸런싱&lt;/strong&gt;(Rebalancing)에 대비하여 오버헤드를 줄일 수 있게 도와준다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -240,48 +395,71 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;리밸런싱에 대비하여 오버헤드를 줄일 수 있게 도와준다는 게 무슨 의미일까?&lt;/p&gt;
-&lt;p&gt;만약 컨슈머 중 하나가 죽으면, 그룹 코디네이터(Group Coordinator)가 리밸런싱을 트리거한다. 이때 카프카는 STW(Stop The World)가 일어나고, 전체 시스템의 단일 장애지점으로 발전한다. 때문에 컨슈머를 파티션보다 갯수가 많게한다. 컨슈머 몇개가 놀 순 있겠지만, 컨슈머가 죽으면, 놀던(Idle) 컨슈머가 일하기 시작하면서, 이런 오버헤드를 줄인다. Lag가 쌓이는 것을 최소화할 수 있다.&lt;/p&gt;
-&lt;p&gt;카프카는 컨슈머 그룹을 둔다. 각 컨슈머 그룹은 각각의 컨슈머가 파티션에 대해 딱 한번만 호출하고자다. 컨슈머가 메시지를 읽다가 실패해도, 메시지는 유실되지 않고 새로운 컨슈머 그룹이 토픽에 붙는다.&lt;/p&gt;
+&lt;p&gt;만약 컨슈머 중 하나가 죽으면, 그룹 코디네이터(Group Coordinator)가 &lt;strong&gt;리밸런싱&lt;/strong&gt;(Rebalancing)을 트리거한다. 리밸런싱이란 특정 &lt;strong&gt;컨슈머나 파티션 구성에 이슈&lt;/strong&gt;가 생겨 &lt;strong&gt;일부 메세지들의 컨슘이 안될 때&lt;/strong&gt;, &lt;strong&gt;정상적인 컨슈머가 처리되지 않고 있는 파티션들을 담당하도록 조정&lt;/strong&gt;하는 작업을 의미한다.&lt;/p&gt;
+&lt;p&gt;이때 카프카는 STW(Stop The World)가 일어나고, 전체 시스템의 단일 장애지점(SPOF, Single Point of Failure)으로 발전한다. 때문에 컨슈머를 파티션보다 갯수가 많게한다. 컨슈머 몇개가 놀 순 있겠지만, 컨슈머가 죽으면, 놀던(Idle) 컨슈머가 일하기 시작하면서, 이런 오버헤드를 줄인다. Lag(컨슈머가 메시지 프로듀서보다 얼마나 뒤처져 있는지를 나타내는 지표)가 쌓이는 것을 최소화할 수 있다.&lt;/p&gt;
+&lt;p&gt;이런 리밸런싱에 대한 부분은 분명히 중요하다. 하지만 이것은 애플리케이션의 레벨이 아니다. 마이크로 서비스의 영역이라고 본다. RDBMS로 치면, 인덱스를 설계하는 것과 같다. 애플리케이션의 읽기 속도를 향상하기 위해서는, 비즈니스를 이해하고 애플리케이션을 개발하는 개발자가 쿼리를 작성한다. 그러면서 그 쿼리의 향상을 위해 인덱스를 설계한다. 이를 카프카에 유비해본다면, 카프카의 설정을 잡는 것은 RDBMS의 인덱스를 설계하는 것과 비슷한 단계의 고민이다. 애플리케이션의 레벨은 아니지만, 서비스의 &lt;strong&gt;성능&lt;/strong&gt;에 연관 있다.&lt;/p&gt;
+&lt;p&gt;하지만 성능이 과연 애플리케이션의 테스트 코드 작성에 유의미할까? 물론 아예 없진 않을 것이다. 하지만 이것은 좀 더 &lt;strong&gt;성능 측정 영역이지, 기능 확인 - 회귀 방지와 인수 목적의 테스트 영역이 아니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;프로듀서, 브로커, 퍼블리셔의 구조를 살펴봤다. 이제 우리가 테스트 해볼 영역이 보이기 시작한다. 우리가 테스트 할 것은 구조 이전에, 이벤트를 전달하는 &lt;strong&gt;방법에 대한 설계&lt;/strong&gt;다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;이벤트 전달 방법 설계&lt;/h2&gt;
+&lt;p&gt;이벤트 전달 &lt;strong&gt;구조&lt;/strong&gt;에 대한 설계가 아니라, &lt;strong&gt;방법&lt;/strong&gt;에 대한 테스트가 필요하다. 카프카의 프로듀서와 컨슈머는 단지 메세지를 브로커에 적재하고, 소비하는 도구다. 적재와 소비 방식에는 여러가지가 있다. 이런 적재와 소비 방식을 내 비즈니스에 맞게 적절한 설계를 해야한다. 그럼으로써 이벤트 전달 방법을 구현해야한다.&lt;/p&gt;
+&lt;p&gt;그렇다면 테스트의 대상은 두 가지가 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;프로듀서는 이벤트를 어떻게 브로커에 올릴 것인가&lt;/li&gt;
+&lt;li&gt;컨슈머는 이벤트를 어떻게 브로커로 부터 소비할 것인가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;프로듀서 설계&lt;/h3&gt;
+&lt;p&gt;프로듀서는 무엇을 설계해야할까? 프로듀서는 메세지를 보내는 역할을 한다. 메세지를 브로커에 ‘제대로’ 보냈는지가 중요하다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클러스터링 된 모든 노드에 보냈는가&lt;/li&gt;
+&lt;li&gt;트랜잭션과 메세지 발행이 ACID를 가지는가&lt;/li&gt;
+&lt;li&gt;메세지 발행 실패에 어떻게 대비하는가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;카프카(브로커)는 클러스터로 만들어지기 마련인데, 카프카는 물리적으로 분리된 각 노드에 파티션을 마스터와 레플리카로 나누어 구성한다.&lt;/p&gt;
+&lt;h4&gt;ack&lt;/h4&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 527px; &quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png&quot;
+    href=&quot;/static/83f909e8f076b6f6a8401768e729ad7c/ab60d/replica.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 116.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEgklEQVR42pWVaW8TVxSG/bP7papUaKEEYuLE2LFjxzPelxnPeBtv433PgtPYTnA2AqSkKlIDCRAg8PTiCLWfCozm0ehKo/eec99zzrVojQ3UwQFq7xHh2lCwRaT+O8n+lER/n5hR4+PVB968fo0+MIms5Yn0DCJ9g6gg3M0R/bxeL5Cq5bGorW0ye+LnyRn3tTZWtYWvMZ2ts/tvWNVN3r97y/nLc1KjBp5+mrtZP/fyQZaqceYykljLJA5ahAtJLFp7TLi1S6LYRKv20QXZ5gbRXBW5OiJoNPggBC9eXaBt1Yh0NYySTLkREYRnXzXrQRYbxcppEWF7RLIzYbozolzMUyrkGfQ6TLa3mJM0rKsx9qe7TB894k7IhcN3h7/WovTVBdZUG4c1if2GjLPgJ17JYtG7E3zlhyy6JZb9MRxSBIccxbroZEWpES52ZhF+Tjmz00GqRlhZvsHq6m283ttIYgPb4k84q9FrwWRnTKw1ptXtiVRMjKJJu79OvdXB4QzjDKU4/eOEZ0+e4srH8KpOxnU/PcM9Y1iR6OVXWKlFiVUy14JR4Wq9XkdNasQSCma1OsPmjrLs8vP89PlM0GlEcUcXGeZd5Px3MAJztDU7DcWGsxggXv2SsjnE5vHjDqu4QopAxerw4g3mSCYMrt5dzlLO7naQ6zHc7l/xh6zIgfkZi44buBsJkbKIUBGm6L1dnhzt02rWadZr7O1OODo6YN4uY7tlYzp8yK4w5Te/gwfyHGcjnXHBzU5phafdEHuC5VJQpPwlwtIm9hVZOBhiSURqXw2yYHfNTFHCad4cP+bi/ILMpCMMDOFx/syK6yZu501kYczSZ1PMyH9NmWA22mSKFbKCWntAodrA4Yri8kQ4bjZ4dnCEp5LEl/GwKYxoCiPaeQ+9ko9axoWnHr82RevukGhusznokM9lyKV1eu0m/W6LhVUVnyfM426Xw95AHHwCjzi7I9NDK3KXTuweY8PJUF9iWZiSqOWwxOpDpNYe1kiBRaUyw6aYzAfSSMk2QVE2lycnnHYGqJsm8sMcC6qLBxkv9rRH4GVeceLuaQQMBUu7v4FerJKptEibzWvKDTK1Dmk9Rzmq8Pb0lFfjCSUlTrpaIlspif//xaiZpIpZButrWPjKc/XihTDlmNfPTugnE9RGfZrjNZqjNRrbA1ojwWQdc9hhYzTEcvXxI//L+w9cPj7mTxFhSpFw6R7my2Gs+YCYNjHu5mSsRoDguEQor34lwk+zFy4vOR2skynESd7+EakYFDNTFHJLJVQR3ZOViGyXiZvpr6f86dNMkrPDI3RFplgNc9IJslV0syVa8KgdZFqXcYn6nBX2twq+EoWdTsgozlsURO/GxLSJC4zYfTTR0w7RKfHvEry4QG8bxH/5gUR0AU2xz9BVO35pjpUvvfytgudnL1G26mR7CqctmQ3Nxqa2yGHFy9T04szL19PmWwVf/n2GJu6U4CCFT3mApC2LwncSSLlYjtjwDnRi32PKO+G0Lm41uST6uaThKyZnrApkU0cqJEiVcvwD++nxnuai3hwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUklEQVR42j2S3UuTcRTHnz+gm4K6qBTExBu9qQiiIIoihKhuIkEvextakRUoliazlctWzpcKtVqRvZBTF5ZdJJSR0QvhMt82tz3ucXN73Js2p3v79DjWDhzO9/zO4fv7nvP7CdapSUZHRvC43Yh2G5LkxCvLqSiKIuMTk1isNsQZichylGQyyX/7Gw4TCIZYXomxEo0rHkNYjESIxOOZxriCE4lECkdXlolFFpQ8msqTyQTRaBorHllaILa8qNRjqTO/34cgGgzY1GqmtVosNTVIRiPxVDnBb3uI60Yvjb0eNN1z6N54kINLaX1JXn/1U9fjp8Eko+4N0GKyIIwdKWI8ez2WXdv4s2EN02UnSaQJjd+DrLsgs10TIL/GT261F6s7nCE80yGRdd7JHvUsORfdHKo3I/R1faJV00N7o4mWeiOD/T8yO7KPWnl+rZOX6sdKfEhPYxfB+UCG0PDBxen7DioeOSjvlGh4MYpwrHWO/NoA++8Gyar0ce6ZrDTHUjuS+7qxZq9F2ruDma15WApyWJy2pgnjlD3xKqp9HNAFyLsa4rB2AqG1X+Jsh5PLBidl7TN0ffSkxl01yTzOQPVt3tfqGbhyh8Eb9wjJvswEprdjaHRD6Fo+o9UP024YQihpFimskjh4c5YtFSKXnrrSbwh9P0Nsrpxn960gheoABXUytrlwqr56pbX8FOO5G7Hs28lU3ia+HS1CUL8SKWl2olJUHm8SaXvnyij8MuajtMmG6oGDE20OJdpxyYuZbzOp1/OruBizSoW5tJThqir+AYWuSy8v6SEtAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;picture&gt;
           &lt;source
-              srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/dc87c/partition_consumer.avif 158w,
-/static/6b3ef6ae54b7f522496d552f4f757ab7/383b4/partition_consumer.avif 315w,
-/static/6b3ef6ae54b7f522496d552f4f757ab7/d26e8/partition_consumer.avif 527w&quot;
-              sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+              srcset=&quot;/static/83f909e8f076b6f6a8401768e729ad7c/dc87c/replica.avif 158w,
+/static/83f909e8f076b6f6a8401768e729ad7c/383b4/replica.avif 315w,
+/static/83f909e8f076b6f6a8401768e729ad7c/d0061/replica.avif 630w,
+/static/83f909e8f076b6f6a8401768e729ad7c/a768b/replica.avif 638w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
               type=&quot;image/avif&quot;
             /&gt;&lt;source
-              srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/5787a/partition_consumer.webp 158w,
-/static/6b3ef6ae54b7f522496d552f4f757ab7/89f54/partition_consumer.webp 315w,
-/static/6b3ef6ae54b7f522496d552f4f757ab7/6ece6/partition_consumer.webp 527w&quot;
-              sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+              srcset=&quot;/static/83f909e8f076b6f6a8401768e729ad7c/5787a/replica.webp 158w,
+/static/83f909e8f076b6f6a8401768e729ad7c/89f54/replica.webp 315w,
+/static/83f909e8f076b6f6a8401768e729ad7c/4d353/replica.webp 630w,
+/static/83f909e8f076b6f6a8401768e729ad7c/90f26/replica.webp 638w&quot;
+              sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
               type=&quot;image/webp&quot;
             /&gt;
           &lt;source
-            srcset=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/dda05/partition_consumer.png 158w,
-/static/6b3ef6ae54b7f522496d552f4f757ab7/679a3/partition_consumer.png 315w,
-/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png 527w&quot;
-            sizes=&quot;(max-width: 527px) 100vw, 527px&quot;
+            srcset=&quot;/static/83f909e8f076b6f6a8401768e729ad7c/dda05/replica.png 158w,
+/static/83f909e8f076b6f6a8401768e729ad7c/679a3/replica.png 315w,
+/static/83f909e8f076b6f6a8401768e729ad7c/50637/replica.png 630w,
+/static/83f909e8f076b6f6a8401768e729ad7c/ab60d/replica.png 638w&quot;
+            sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
             type=&quot;image/png&quot;
           /&gt;
           &lt;img
             class=&quot;gatsby-resp-image-image&quot;
-            src=&quot;/static/6b3ef6ae54b7f522496d552f4f757ab7/6b5a3/partition_consumer.png&quot;
-            alt=&quot;partition consumer&quot;
+            src=&quot;/static/83f909e8f076b6f6a8401768e729ad7c/50637/replica.png&quot;
+            alt=&quot;replica&quot;
             title=&quot;&quot;
             loading=&quot;lazy&quot;
             decoding=&quot;async&quot;
@@ -290,21 +468,28 @@
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이런 리밸런싱에 대한 부분은 분명히 중요하다. 하지만 이것은 애플리케이션의 레벨이 아닌 것은 맞다. 마이크로 서비스의 영역이라고 본다. RDBMS로 치면, 인덱스를 설계하는 것과 같다. 애플리케이션의 읽기 속도를 향상하기 위해서는, 비즈니스를 이해하고 애플리케이션을 개발하는 개발자가 쿼리를 작성한다. 그러면서 그 쿼리의 향상을 위해 인덱스를 설계한다. 이를 카프카에 유비해본다면, 카프카의 설정을 잡는 것은 RDBMS의 인덱스를 설계하는 것과 비슷한 단계의 고민이다. 애플리케이션의 레벨은 아니지만, 서비스의 성능에 연관 있다.&lt;/p&gt;
-&lt;p&gt;하지만 성능이 과연 애플리케이션의 테스트 코드 작성에 유의미할까? 물론 아예 없진 않을 것이다. 하지만 그것은 좀 더 성능 측정 영역이지, 기능 확인 - 회귀 방지와 인수 목적의 테스트 영역이 아니다.&lt;/p&gt;
-&lt;p&gt;그렇다면 무엇을 테스트해야하나?&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2&gt;이벤트 전달 방법 설계&lt;/h2&gt;
-&lt;p&gt;이벤트 전달 &lt;strong&gt;구조&lt;/strong&gt;에 대한 설계가 아니라, &lt;strong&gt;방법&lt;/strong&gt;에 대한 테스트가 필요하다. 카프카의 프로듀서와 컨슈머는 단지 메세지를 브로커에 적재하고, 소비하는 도구다. 적재와 소비 방식에는 여러가지가 있는다. 이런 적재와 소비 방식을 내 비즈니스에 맞게 적절한 설계를 해야한다. 그럼으로써 이벤트 전달 방법을 구현해야한다.&lt;/p&gt;
-&lt;p&gt;그렇다면 테스트의 대상은 두 가지가 된다.&lt;/p&gt;
+&lt;p&gt;프로듀서가 메세지를 쓸 때, ack 설정을 할 수 있다. Ack는 메세지를 브로커에 쓰는 것을 요청할 때, 응답의 성질을 결정한다.&lt;/p&gt;
+&lt;h5&gt;acks=0&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;프로듀서는 이벤트를 어떻게 브로커에 올릴 것인가&lt;/li&gt;
-&lt;li&gt;컨슈머는 이벤트를 어떻게 브로커로 부터 소비할 것인가&lt;/li&gt;
+&lt;li&gt;프로듀서가 브로커의 응답을 기다리지 않음&lt;/li&gt;
+&lt;li&gt;전송 즉시 성공으로 간주 → 가장 빠름&lt;/li&gt;
+&lt;li&gt;하지만 브로커 장애, 네트워크 오류 시 데이터 유실 위험 높음&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;프로듀서 설계&lt;/h3&gt;
-&lt;h4&gt;발행&lt;/h4&gt;
-&lt;h5&gt;ack = all&lt;/h5&gt;
-&lt;h5&gt;outbox&lt;/h5&gt;
+&lt;h5&gt;acks=1&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;리더 파티션(Leader Partition)의 쓰기를 확인하면 성공으로 간주&lt;/li&gt;
+&lt;li&gt;팔로워(Replica)로의 복제가 되기 전이라도 성공 처리&lt;/li&gt;
+&lt;li&gt;성능은 비교적 빠르지만, 리더가 복제 전에 장애 나면 데이터 유실 가능성 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;acks=all (또는 -1)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;리더뿐 아니라 ISR(In-Sync Replica) 전체에 기록이 반영될 때까지 대기&lt;/li&gt;
+&lt;li&gt;데이터 내구성이 가장 강력한 설정&lt;/li&gt;
+&lt;li&gt;지연(latency)이 증가할 수 있지만, 장애 상황에서도 메시지 손실을 최소화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;outbox 패턴&lt;/h4&gt;
+&lt;p&gt;아웃박스(Outbox)는 본래 우편함을 의미한다. 편지를 우편함에 넣으면, 배달원이 알아서 가져간다. Outbox 패턴은 여기서 착안한다. 메세지를 트랜잭션 안에서 특정 outbox용 테이블에 넣는다. 그리고 트랜잭션 종료 시점에 outbox의 메세지를 브로커로 보낸다. (또는 스케줄러나 Changed Data Capture, CDC를 이용한다.)&lt;/p&gt;
+&lt;p&gt;이 패턴을 통해 메세지 발행을 트랜잭션의 ACID와 동기화할 수 있다. 떠한 메세지 유실을 방지할 수 있다.&lt;/p&gt;
 &lt;h5&gt;DLQ와 후처리&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;회복 전략&lt;/strong&gt;: 이벤트의 멱등성(중복 방지) 처리가 충분히 되어있다면, 이벤트 재발행을 고려할 수 있다. 다만 이때, 비즈니스의 플로우를 반드시 고려해야할 것이라고 생각한다.&lt;/li&gt;
@@ -315,10 +500,16 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;대사 배치(정산 배치) 전략&lt;/strong&gt;: 배치를 통해 실패된 리스트들을 한번에 처리한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;멱등성 설계&lt;/h4&gt;
-&lt;p&gt;이벤트 순서
-이벤트 키
-이벤트 포멧&lt;/p&gt;
+&lt;h4&gt;멱등성(idempotence)&lt;/h4&gt;
+&lt;p&gt;보내는 메세지에 이벤트 키를 지정하면, 동일 파티션으로 쓰게 한다.&lt;/p&gt;
+&lt;p&gt;여기에 &lt;code class=&quot;language-text&quot;&gt;enable.idempotence=true&lt;/code&gt;옵션을 통해 프로듀서 ID와 메세지의 시퀀스 넘버를 통해, 중복 전송된 레코드가 브로커에 쓰지 않게 막는다.&lt;/p&gt;
+&lt;p&gt;이런 설정들을 통해 Exactly-Once에 가까운 멱등성을 구현할 수 있다.&lt;/p&gt;
+&lt;p&gt;또한 공통된 이벤트 포멧을 두어 추적 가능성을 높인다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;record&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;GlobalMessage&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; eventId&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; invokedAt&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token class-name&quot;&gt;Object&lt;/span&gt; payload
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;컨슈머 설계&lt;/h3&gt;
 &lt;h4&gt;오프셋&lt;/h4&gt;
 &lt;p&gt;컨슈머 그룹&lt;/p&gt;
@@ -329,7 +520,7 @@
 &lt;h4&gt;배치 리스너&lt;/h4&gt;
 &lt;h4&gt;멱등적 처리&lt;/h4&gt;
 &lt;hr&gt;
-&lt;h2&gt;테스트 작성 도구&lt;/h2&gt;
+&lt;h2&gt;카프카 테스트 작성 도구&lt;/h2&gt;
 &lt;p&gt;이제 테스트 도구들을 살펴보자. 카프카의 파티션과 컨슈머에 따른 동작을 확인해보고 싶다. 카프카가 필요하다. 스프링 애플리케이션에는 두 가지 방안이 있다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;임베디드 카프카 (&lt;code class=&quot;language-text&quot;&gt;@EmbededKafka&lt;/code&gt;)&lt;/li&gt;
@@ -351,6 +542,7 @@
 &lt;h3&gt;참조&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-kafka/reference/testing.html&quot;&gt;https://docs.spring.io/spring-kafka/reference/testing.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://techblog.gccompany.co.kr/%EC%B9%B4%ED%94%84%EC%B9%B4-%EC%BB%A8%EC%8A%88%EB%A8%B8-%EA%B7%B8%EB%A3%B9-%EB%A6%AC%EB%B0%B8%EB%9F%B0%EC%8B%B1-kafka-consumer-group-rebalancing-5d3e3b916c9e&quot;&gt;https://techblog.gccompany.co.kr/카프카-컨슈머-그룹-리밸런싱-kafka-consumer-group-rebalancing-5d3e3b916c9e&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[애플리케이션 이벤트]]></title><description><![CDATA[…]]></description><link>https://iol-lshh.github.io/회고/event/application_event/</link><guid isPermaLink="false">https://iol-lshh.github.io/회고/event/application_event/</guid><pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate><enclosure url="https://iol-lshh.github.io/static/096acde5f1ad93c5fc114f100691ca45/50637/header.png" length="0" type="image/jpeg"/><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
